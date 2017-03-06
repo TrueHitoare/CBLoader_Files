@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 25-March-2016
+  Updated 02-October-2016 Made Ancient Cannon a two-handed weapon again since I fixed Armbow
+	</Changelog>
+
+	<RulesElement name="Ancient Cannon" type="Weapon" internal-id="ID_AZT_WEAPON_01" source="True Hitoare" >
+		<Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+		<specific name="Full Text"> Ancient Cannon
+Superior two-handed ranged weapon
+Cost: 30 gp
+Damage: 1d10
+Proficient: +3
+Range: 20/40
+Weight: 6 lb.
+
+This mighty weapon is fastened to the arm of a warforged as an attached component. While it technically only takes up one hand, firing the weapon without using the other hand to steady it incurs a -2 penalty to the attack roll.
+The weapon hand can't be used for anything else while the weapon is attached. Attaching or detatching the weapon is done with the same action as drawing or sheathing a normal weapon would take.
+
+Properties: 
+Load Minor (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The ancient cannon is "load minor," which means it requires a minor action to load a shot into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+
+Group: 
+Crossbow (Essentially a small metal bow mounted on a stock and equipped with a mechanical trigger, a crossbow is a point-and-shoot projectile weapon. Crossbows are popular because they require little training to master, yet the heavy pull of the metal bow gives them substantial power.).
+		</specific>
+		<specific name="Weight"> 6 </specific>
+		<specific name="Gold"> 30 </specific>
+		<specific name="Range"> 20/40 </specific>
+		<specific name="Damage"> 1d10 </specific>
+		<specific name="Proficiency Bonus"> 3 </specific>
+		<specific name="_Primary End" />
+		<specific name="Weapon Category"> Superior Ranged </specific>
+		<specific name="Hands Required"> Two-Handed </specific>
+		<specific name="Item Slot"> Two-hands </specific>
+		<specific name="Group"> Crossbow </specific>
+		<specific name="Properties"> Load Minor </specific>
+This mighty weapon is fastened to the arm of a warforged as an attached component. While it technically only takes up one hand, firing the weapon without using the other hand to steady it incurs a -2 penalty to the attack roll.
+The weapon hand can't be used for anything else while the weapon is attached. Attaching or detatching the weapon is done with the same action as drawing or sheathing a normal weapon would take.
+	</RulesElement>
+	
+	<RulesElement name="Saber" type="Weapon" internal-id="ID_AZT_WEAPON_SABER" source="True Hitoare" >
+		<Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE,ID_FMP_WEAPON_GROUP_7 </Category>
+		<specific name="Full Text"> Saber
+Military one-handed melee weapon
+Cost: 15 gp
+Damage: 1d8
+Proficient: +3
+Weight: 3 lb.
+Group: 
+Heavy blade (Blades are balanced edged weapons. Heavy blades share some of the precision of light blades and some of the mass of axes. Heavy blades are used primarily for slashing cuts rather than stabs and thrusts.).
+		</specific>
+		<specific name="Weight"> 3 </specific>
+		<specific name="Gold"> 15 </specific>
+		<specific name="Damage"> 1d8 </specific>
+		<specific name="Proficiency Bonus"> 3 </specific>
+		<specific name="Weapon Category"> Military Melee </specific>
+		<specific name="Hands Required"> One-Handed </specific>
+		<specific name="Item Slot"> One-hand </specific>
+		<specific name="Group"> Heavy Blade </specific>
+	</RulesElement>
+	   
+	<!-- Add to the Crossbow group -->
+	<AppendNodes name="Weapon Group (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW)" source="Core">
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" type="Proficiency" />
+		</rules>
+	</AppendNodes>
+	
+	<!-- Add to the Heavy Blade group -->
+	<AppendNodes name="Weapon Group (Heavy Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HEAVY_BLADE)" source="Core">
+        <rules>
+            <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+        </rules>
+    </AppendNodes>
+    
+    <!-- Add to the Military Melee group -->
+    <AppendNodes name="Military Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" source="Core">
+        <rules>
+            <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+        </rules>
+    </AppendNodes>
+    
+    <!-- Add to the Military Heavy Blade group -->
+    <AppendNodes name="Military Heavy Blade" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_HEAVY_BLADE" source="Core">
+	    <rules>
+	        <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+        </rules>
+    </AppendNodes>
+    
+    <!-- Add to the One-Handed Military Heavy Blade group -->
+    <AppendNodes name="One-Handed Military Heavy Blade" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE" source="Core">
+        <rules>
+            <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+        </rules>
+    </AppendNodes>
+    
+    <!-- Add to the Military One-Handed Melee group -->
+    <AppendNodes name="Military One-Handed Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_ONE-HANDED_MELEE" source="Core">
+	    <rules>
+	        <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+        </rules>
+    </AppendNodes>
+	<!--
+	<AppendNodes name="Weapon Proficiency (Superior Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)" source="Player's Handbook">
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" type="Proficiency" />
+		</rules>
+	</AppendNodes>
+	-->
+</D20Rules>

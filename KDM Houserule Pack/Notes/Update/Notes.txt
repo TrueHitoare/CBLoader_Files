@@ -1,0 +1,15 @@
+Check Raven item
+
+Check "ability" on:
+Argent Rain
+Color Orb
+Smiting Symbol
+Shining Symbol
+
+Figure out what those categories do?
+Check if "Creating" section actually does anything
+
+Wizard's Apprentice Lv 5: Fix language selection
+
+
+At: Scholar

@@ -1,0 +1,2059 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 01-October-2016
+  Updated 12-November-2016 Put exotic armors back to their old types, since they weren't actually registering as two types
+	</Changelog>
+
+  <UpdateInfo>
+    <Version>2.0.1</Version>
+    <Filename>KDM Items.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Items.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Items.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Base Items-->
+
+
+<!--Shields-->
+
+
+
+	
+<!--Armor-->
+
+<RulesElement name="Studded Leather" type="Armor" internal-id="ID_MMA_ARMOR_000001" source="Mordenkainen's Magnificent Emporium" revision-date="00/00/0000 00:00:00 PM" >
+      <Category> ID_FMP_POWER_1225,ID_INTERNAL_CATEGORY_LEATHER </Category>
+      <specific name="Full Text"> Studded Armor
+Description: Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide. 
+To use Studded Leather, you must be proficient with Chainmail.
+
+Properties: 
+Tough (The first time in each encounter a critical hit is scored against your AC while you're wearing tough armor, the critical hit becomes a normal hit.)
+
+AC Bonus: +3
+Weight: 28 lb.
+Cost: 35 gp.
+Type: Leather
+Category: Light Armor </specific>
+      <specific name="Weight"> 28 </specific>
+      <specific name="Armor Bonus"> 3 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> - </specific>
+      <specific name="Speed"> - </specific>
+      <specific name="Gold"> 35 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Light </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Studded Leather </specific>
+      <rules>
+         <statadd name="Armor Class" value="3" type="Armor" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Chainmail)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Chainmail)" />
+      </rules>
+Studded leather is leather armor reinforced with metal studs. It provides a middle ground between hide armor and ring mail. It is more flexible than either, while its reinforced construction gives it a slight edge over hide.
+</RulesElement>   
+   
+<RulesElement name="Armor Proficiency: Studded Leather" type="Feat" internal-id="ID_MMA_FEAT_000001" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+   
+<RulesElement name="Armor Proficiency (Studded Leather)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(STUDDED_LEATHER)" source="Core" >
+</RulesElement>
+
+<RulesElement name="Ring Mail" type="Armor" internal-id="ID_MMA_ARMOR_000002" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 1:16:34 PM" >
+      <Category> ID_FMP_POWER_1225,ID_INTERNAL_CATEGORY_CHAIN </Category>
+      <specific name="Full Text"> Ring Mail
+Description: This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor's sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor.
+Ring mail is considered light armor.
+To use Ring Mail, you must be proficient with Chainmail.
+
+Properties:
+Durable 2 (The first time you take damage during an encounter, reduce that damage by an amount equal to the armor's durability rating. The armor then loses this property until you repair it during a short rest or an extended rest. Durable armor provides greater damage absorption when it is enchanted. Add the enhancement bonus of the armor to the durability rating of light armor, and add twice the enhancement bonus to the durability rating of heavy armor.)
+
+AC Bonus: +4
+Check: -1
+Weight: 40 lb.
+Cost: 40 gp.
+Type: Chainmail
+Category: Light Armor </specific>
+      <specific name="Weight"> 40 </specific>
+      <specific name="Armor Bonus"> 4 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> -1 </specific>
+      <specific name="Gold"> 40 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Light </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Ring Mail </specific>
+      <rules>
+         <statadd name="Armor Class" value="4" type="Armor" />
+         <statadd name="Armor Penalty" value="-1" type="Chain" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Chainmail)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Chainmail)" />
+      </rules>
+This flexible but sturdy armor consists of a typical suit of leather armor with a series of metal rings sewn onto its surface. The rings enhance the armor's sturdiness, improving its protective qualities while still offering the maneuverability of lightweight armor.
+</RulesElement>
+
+<RulesElement name="Armor Proficiency: Ring Mail" type="Feat" internal-id="ID_MMA_FEAT_000002" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Armor Proficiency (Ring Mail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(RING_MAIL)" source="Core" >
+</RulesElement>
+
+<RulesElement name="Banded Mail" type="Armor" internal-id="ID_MMA_ARMOR_000003" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 1:16:34 PM" >
+      <Category> ID_INTERNAL_CATEGORY_HEAVY,ID_INTERNAL_CATEGORY_CHAIN </Category>
+      <specific name="Full Text"> Banded Mail
+Description: Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit's midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible.
+To use Banded Mail, you must be proficient with Scale Armor.
+
+Properties: 
+Tough (The first time in each encounter a critical hit is scored against your AC while you're wearing tough armor, the critical hit becomes a normal hit.)
+
+AC Bonus: +6
+Check: -1
+Weight: 35 lb.
+Cost: 55 gp.
+Type: Chainmail
+Category: Heavy Armor </specific>
+      <specific name="Weight"> 35 </specific>
+      <specific name="Armor Bonus"> 6 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> -1 </specific>
+      <specific name="Speed"> - </specific>
+      <specific name="Gold"> 55 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Heavy </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Banded Mail </specific>
+      <rules>
+         <statadd name="Armor Class" value="6" type="Armor" />
+         <statadd name="Armor Penalty" value="-1" type="Chain" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Scale)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Scale)" />
+      </rules>
+Banded mail consists of a suit of chainmail reinforced with layers of metal plates arranged in strips along the suit's midsection. Banded mail offers the same level of protection as chainmail while proving lighter and more flexible.
+</RulesElement>
+
+<RulesElement name="Armor Proficiency: Banded Mail" type="Feat" internal-id="ID_MMA_FEAT_000003" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Armor Proficiency (Banded Mail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(BANDED_MAIL)" source="Core" >
+</RulesElement>
+
+<RulesElement name="Splint Mail" type="Armor" internal-id="ID_MMA_ARMOR_000004" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 1:16:34 PM" >
+      <Category> ID_INTERNAL_CATEGORY_HEAVY,ID_INTERNAL_CATEGORY_SCALE </Category>
+      <specific name="Full Text"> Splint Mail
+Description: First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor's equal. More important, its rigid construction allows it to absorb some portion of an enemy's blows.
+To use Splint Mail, you must be proficient with Plate Armor.
+
+Properties:
+Durable 3 (The first time you take damage during an encounter, reduce that damage by an amount equal to the armor's durability rating. The armor then loses this property until you repair it during a short rest or an extended rest. Durable armor provides greater damage absorption when it is enchanted. Add the enhancement bonus of the armor to the durability rating of light armor, and add twice the enhancement bonus to the durability rating of heavy armor.)
+
+AC Bonus: +7
+Speed: -1
+Weight: 55 lb.
+Cost: 50 gp.
+Type: Scale
+Category: Heavy Armor </specific>
+      <specific name="Weight"> 55 </specific>
+      <specific name="Armor Bonus"> 7 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> - </specific>
+      <specific name="Speed"> -1 </specific>
+      <specific name="Gold"> 50 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Heavy </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Splint Mail </specific>
+      <rules>
+         <statadd name="Armor Class" value="7" type="Armor" />
+         <statadd name="Speed" value="-1" type="Armor" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Plate)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Plate)" />
+      </rules>
+First developed by the dwarves, splint mail consists of vertical strips of metal bound to a thick layer of leather and chainmail. Because it is so heavy and ponderous, few other than dwarves wear it in battle. While it lacks the protective elements of plate, it is scale armor's equal. More important, its rigid construction allows it to absorb some portion of an enemy's blows.
+</RulesElement>
+   
+   
+<RulesElement name="Armor Proficiency: Splint Mail" type="Feat" internal-id="ID_MMA_FEAT_000004" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>   
+
+<RulesElement name="Armor Proficiency (Splint Mail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SPLINT_MAIL)" source="Core" >
+</RulesElement>
+
+<RulesElement name="Spiked Plate" type="Armor" internal-id="ID_MMA_ARMOR_000005" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 1:16:35 PM" >
+      <Category> ID_INTERNAL_CATEGORY_HEAVY,ID_INTERNAL_CATEGORY_PLATE </Category>
+      <specific name="Full Text"> Spiked Plate
+Description: A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.
+
+Properties: 
+Barbed (While you wear barbed armor or wield a barbed shield, a creature takes damage equal to 2 + one-half your level when you escape that creature's grab on your turn or when that creature escapes your grab. If you wear barbed armor and carry a barbed shield at the same time, the creature takes this damage only once.)
+
+AC Bonus: +8
+Check: -3
+Speed: -1
+Weight: 60 lb.
+Cost: 55 gp.
+Type: Plate
+Category: Heavy Armor </specific>
+      <specific name="Weight"> 60 </specific>
+      <specific name="Armor Bonus"> 8 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> -3 </specific>
+      <specific name="Speed"> -1 </specific>
+      <specific name="Gold"> 55 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Heavy </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Spiked Plate </specific>
+      <rules>
+         <statadd name="Armor Class" value="8" type="Armor" />
+         <statadd name="Armor Penalty" value="-3" type="Plate" />
+         <statadd name="Speed" value="-1" type="Armor" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Plate)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Plate)" />
+      </rules>
+A dwarven innovation, spiked plate is a suit of plate mail studded with sharp, metal spikes. The dwarves developed this armor to deal with subterranean beasts such as hook horrors and umber hulks that grasp and crush their prey.
+</RulesElement>
+
+<RulesElement name="Armor Proficiency: Spiked Plate" type="Feat" internal-id="ID_MMA_FEAT_000005" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Armor Proficiency (Spiked Plate)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SPIKED_PLATE)" source="Core" >
+</RulesElement>
+
+
+<RulesElement name="Full Plate" type="Armor" internal-id="ID_MMA_ARMOR_000006" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 1:16:35 PM" >
+      <Category> ID_INTERNAL_CATEGORY_HEAVY,ID_INTERNAL_CATEGORY_PLATE </Category>
+      <specific name="Full Text"> Full Plate
+Description: Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.
+To gain the use of and become proficient with Full Plate, the Armor Proficiency: Full Plate feat is required.
+
+Properties: 
+Durable 8 (The first time you take damage during an encounter, reduce that damage by an amount equal to the armor's durability rating. The armor then loses this property until you repair it during a short rest or an extended rest. Durable armor provides greater damage absorption when it is enchanted. Add the enhancement bonus of the armor to the durability rating of light armor, and add twice the enhancement bonus to the durability rating of heavy armor.)
+
+Tough (The first time in each encounter a critical hit is scored against your AC while you're wearing tough armor, the critical hit becomes a normal hit.)
+
+AC Bonus: +8
+Speed: -1
+Weight: 60 lb.
+Cost: 65 gp.
+Type: Plate
+Category: Heavy Armor </specific>
+      <specific name="Weight"> 60 </specific>
+      <specific name="Armor Bonus"> 8 </specific>
+      <specific name="Minimum Enhancement Bonus" />
+      <specific name="Check"> 0 </specific>
+      <specific name="Speed"> -1 </specific>
+      <specific name="Gold"> 65 </specific>
+      <specific name="Special" />
+      <specific name="Armor Type"> Heavy </specific>
+      <specific name="Item Slot"> Body </specific>
+      <specific name="Armor Category"> Full Plate </specific>
+      <rules>
+         <statadd name="Armor Class" value="8" type="Armor" />
+         <statadd name="Speed" value="-1" type="Armor" />
+         <statadd name="attack rolls" value="-2" requires="!Armor Proficiency (Full Plate)" />
+         <statadd name="Reflex Defense" value="-2" requires="!Armor Proficiency (Full Plate)" />
+      </rules>
+Though the dwarves are loath to admit it, human smiths crafted the first suits of full plate for the use of mounted knights. Of course, the dwarves are quick to add, they did perfect those initial, flawed designs. Among all the kinds of heavy armor, full plate offers unmatched protection and flexibility.
+To gain the use of and become proficient with Full Plate (and avoid taking a penalty to attack rolls and Reflex), the Armor Proficiency: Full Plate feat is required.
+</RulesElement>
+
+<RulesElement name="Armor Proficiency: Full Plate" type="Feat" internal-id="ID_MMA_FEAT_000006" source="Mordenkainen's Magnificent Emporium" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE) </Prereqs>
+      <print-prereqs> Proficiency with plate armor </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with full plate </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(FULL_PLATE)" type="Proficiency" />
+      </rules>
+You gain proficiency with full plate.
+</RulesElement>
+
+<RulesElement name="Armor Proficiency (Full Plate)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(FULL_PLATE)" source="Core" >
+	<rules>
+		<modify name="Full Plate" type="Armor" Field="Armor Category" value="Plate" />
+	</rules>
+</RulesElement>
+
+<AppendNodes name="Armor Proficiency (Chainmail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" source="Core" >
+	<rules>
+		<modify name="Studded Leather" type="Armor" Field="Armor Category" value="Leather" />
+		<modify name="Ring Mail" type="Armor" Field="Armor Category" value="Chain" />
+	</rules>
+</AppendNodes>
+<AppendNodes name="Armor Proficiency (Plate)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" source="Core" >
+	<rules>
+		<modify name="Splint Mail" type="Armor" Field="Armor Category" value="Scale" />
+		<modify name="Spiked Plate" type="Armor" Field="Armor Category" value="Plate" />
+	</rules>
+</AppendNodes>
+<AppendNodes name="Armor Proficiency (Scale)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" source="Core" >
+	<rules>
+		<modify name="Banded Mail" type="Armor" Field="Armor Category" value="Chain" />
+	</rules>
+</AppendNodes>
+	
+	
+	
+<!--Weapons-->
+	
+	
+	<RulesElement name="Mace" type="Weapon" internal-id="ID_FMP_WEAPON_5" source="Player&apos;s Handbook" revision-date="8/27/2010 1:16:11 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_FMP_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+      <specific name="Full Text"> Mace
+Simple one-handed melee weapon
+Cost: 5 gp
+Damage: 1d8
+Proficient: +2
+Weight: 6 lb.
+
+Properties: 
+Brutal 2 (A brutal weapon&apos;s minimum damage is higher than that of a normal weapon. When rolling the weapon&apos;s damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon&apos;s brutal value, and then use the new value.).
+
+Group: 
+Mace (Much like hammers, maces are blunt weapons that have a heavier head than handle, but they&apos;re more balanced than hammers. They&apos;re useful for delivering crushing blows.). </specific>
+      <specific name="Weight"> 6 </specific>
+      <specific name="Gold"> 5 </specific>
+      <specific name="Range" />
+      <specific name="Damage"> 1d8 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="_Primary End" />
+      <specific name="Weapon Category"> Simple Melee </specific>
+      <specific name="Hands Required"> One-Handed </specific>
+      <specific name="Item Slot"> One-hand </specific>
+      <specific name="Group"> Mace </specific>
+      <specific name="Properties"> Brutal 2 </specific>
+   </RulesElement>
+	
+	
+<!--Gear-->
+	
+	
+<RulesElement name="Flare" type="Gear" internal-id="ID_KDM_GEAR_FLARE" source="KDM" >
+      <specific name="Full Text"> Flare
+Category: Gear
+Price: 20 sp 
+Weight: .2 lb
+Description: A self-lighting disposable rod that burns to shed dim light to a radius of 5 squares for 5 minutes before burning out. You can light the flare as a minor action and throw it up to 10 squares as a free action. </specific>
+      <specific name="Weight"> .2 </specific>
+      <specific name="Gold" />
+      <specific name="Silver"> 20 </specific>
+      <specific name="Copper" />
+      <specific name="Category"> Gear </specific>
+      <specific name="_RelatedElement" />
+      <specific name="count"> 1 </specific>
+      <specific name="_Monster" />
+A self-lighting disposable rod that burns to shed dim light to a radius of 5 squares for 5 minutes before burning out. You can light the flare and/or throw it up to 10 squares as a free action.
+   </RulesElement>
+
+<RulesElement name="Sunrod" type="Gear" internal-id="ID_FMP_GEAR_7" source="Player&apos;s Handbook" >
+      <specific name="Full Text"> Sunrod
+Category: Gear
+Price: 2 gp 
+Weight: 2 lb
+Description: As a move action, you can plant this 3' crystalline rod on the ground in your space or and adjacent square. While there, it sheds bright light to a radius of 20 squares for 5 minutes before burning out. Any creature adjacent to the rod can remove it as a standard action, which destroys the rod. </specific>
+      <specific name="Weight"> 2 </specific>
+      <specific name="Gold"> 2 </specific>
+      <specific name="Silver" />
+      <specific name="Copper" />
+      <specific name="Category"> Gear </specific>
+      <specific name="_RelatedElement" />
+      <specific name="count"> 1 </specific>
+      <specific name="_Monster" />
+As a move action, you can plant this 3' crystalline rod on the ground in your space or and adjacent square. While there, it sheds bright light to a radius of 20 squares for 5 minutes before burning out. Any creature adjacent to the rod can remove it as a standard action, which destroys the rod.
+   </RulesElement>
+   
+   
+<!--Magic Items-->
+   
+
+	<RulesElement name="Gallant Armor +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5667" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:37:17 AM" >
+      <Flavor> This magnificent suit of plate mail rewards you for selflessly tending your companions. </Flavor>
+      <specific name="Level"> 27 </specific>
+      <specific name="Gold"> 1625000 </specific>
+      <specific name="Magic Item Type"> Armor </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor"> Scale, plate </specific>
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +6 AC </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use the lay on hands power on an ally, you also regain hit points equal to one-half your healing surge value. </specific>
+      <rules>
+         <statadd name="Armor Class" value="+6" type="Enhancement" />
+         <statadd name="Armor Enhancement Bonus" value="+6" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Battle Standard of Greater Healing (paragon tier)" type="Magic Item" internal-id="ID_KDM_MAGIC_ITEM_BATTLE_STANDARD_OF_GREATER_HEALING" source="KDM" >
+      <Flavor> This white flag is emblazoned with sigils of healing that restore the vitality of you and your allies. </Flavor>
+      <specific name="Level"> 13 </specific>
+      <specific name="Gold"> 17,000 </specific>
+      <specific name="Magic Item Type"> Wondrous Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter • Healing, Zone): Standard Action. When you plant the battle standard in your space or an adjacent square, it creates a zone of healing energy in a close burst 5. Whenever you or an ally spends a healing surge while in the zone, you and all allies in the zone regain 2 hit points.
+This effect lasts until the end of the encounter or until the battle standard is removed from the ground. Any character in or adjacent to a battle standard&apos;s square can remove it from the ground as a standard action. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+
+<RulesElement name="Orb of Nimble Thoughts +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8763" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:53 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 3 </specific>
+      <specific name="Gold"> 680 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Orb of Nimble Thoughts +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8764" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:53 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 8 </specific>
+      <specific name="Gold"> 3400 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +2d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Orb of Nimble Thoughts +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8765" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:53 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 13 </specific>
+      <specific name="Gold"> 17000 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +3d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Orb of Nimble Thoughts +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8766" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 18 </specific>
+      <specific name="Gold"> 85000 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +4d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Orb of Nimble Thoughts +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8767" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 23 </specific>
+      <specific name="Gold"> 425000 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +5d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Orb of Nimble Thoughts +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8768" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
+      <Flavor> This scarlet crystal lets you move across the battlefield at the speed of thought to avoid your foes&apos; attacks. </Flavor>
+      <specific name="Level"> 28 </specific>
+      <specific name="Gold"> 2125000 </specific>
+      <specific name="Magic Item Type"> Orb </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +6d6 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter * Augmentable): Move Action. You shift a number of squares equal to your Intelligence modifier.Augment 1: You regain the use of this power. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <rules>
+         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+      </rules>
+   </RulesElement>
+<!--
+   <RulesElement name="Rhythm Blade +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6985" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:18 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 3 </specific>
+      <specific name="Gold"> 680 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Rhythm Blade +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6986" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:18 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 8 </specific>
+      <specific name="Gold"> 3400 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Rhythm Blade +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6987" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:19 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 13 </specific>
+      <specific name="Gold"> 17000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Rhythm Blade +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6988" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:19 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 18 </specific>
+      <specific name="Gold"> 85000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Rhythm Blade +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6989" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:19 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 23 </specific>
+      <specific name="Gold"> 425000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Rhythm Blade +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6990" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:39:19 AM" >
+      <Flavor> Fighting with this off-hand weapon improves your defense. </Flavor>
+      <specific name="Level"> 28 </specific>
+      <specific name="Gold"> 2125000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID"> ID_FMP_ITEM_SET_3 </specific>
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage per plus </specific>
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you hit with an attack with this weapon while wielding this weapon in your off hand and another weapon in your main hand, you gain a +1 bonus to AC and Reflex until the start of your next turn. </specific>
+      <specific name="_SupportsID"> ID_FMP_ITEM_SET_3 </specific>
+      <rules>
+         <statadd name="AC" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="Reflex Defense" value="+1" condition="until the start of your next turn when you hit with an off-hand attack with Rhythm Blade" />
+         <statadd name="ID_FMP_ITEM_SET_3 Set Count" value="+1" type="Rhythm Blade" />
+      </rules>
+   </RulesElement>
+-->
+<AppendNodes name="Healer&apos;s Armor +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5696" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:37:18 AM" >
+	<rules>
+         <statadd name="Healing" value="+1" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Healer&apos;s Armor +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5697" source="Adventurer&apos;s Vault 2" >
+	<rules>
+         <statadd name="Healing" value="+2" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Healer&apos;s Armor +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5698" source="Adventurer&apos;s Vault 2" >
+	<rules>
+         <statadd name="Healing" value="+3" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Healer&apos;s Armor +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5699" source="Adventurer&apos;s Vault 2" >
+	<rules>
+         <statadd name="Healing" value="+4" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Healer&apos;s Armor +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5700" source="Adventurer&apos;s Vault 2" >
+	<rules>
+         <statadd name="Healing" value="+5" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Healer&apos;s Armor +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5701" source="Adventurer&apos;s Vault 2" >
+	<rules>
+         <statadd name="Healing" value="+6" />
+	</rules>
+</AppendNodes>
+
+
+
+<RulesElement name="Rushing Cleats (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3344" source="Adventurer&apos;s Vault" revision-date="9/1/2010 10:34:05 AM" >
+      <Flavor> These rawhide boot straps are fitted with spikes. </Flavor>
+      <specific name="Level"> 7 </specific>
+      <specific name="Gold"> 2600 </specific>
+      <specific name="Magic Item Type"> Feet Slot Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Feet </specific>
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> Gain a +2 item bonus to bull rush attacks, and increase the push or slide effect of any close or melee attack you perform by 1 square. </specific>
+</RulesElement>
+
+<RulesElement name="Githyanki Silver Weapon +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4419" source="Manual of the Planes" revision-date="9/1/2010 10:35:45 AM" >
+      <Flavor> The rune-engraved weapon assaults a creature&apos;s mind and has the power to banish it to another plane. </Flavor>
+      <specific name="Level"> 9 </specific>
+      <specific name="Gold"> 4200 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade, Heavy Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +2d8 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (At-Will • Psychic): Free Action. All damage dealt by this weapon is psychic damage. Another free action returns the damage to normal.
+Power (Daily • Teleportation): Free Action. Use this power when you hit with this weapon. The target is banished to a demiplane (save ends). It disappears from sight, cannot take actions, and cannot be targeted. On a save, the target reappears in the space it last occupied. If that space is occupied, the target returns to the nearest unoccupied space of its choosing. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+   <RulesElement name="Githyanki Silver Weapon +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4420" source="Manual of the Planes" revision-date="9/1/2010 10:35:45 AM" >
+      <Flavor> The rune-engraved weapon assaults a creature&apos;s mind and has the power to banish it to another plane. </Flavor>
+      <specific name="Level"> 14 </specific>
+      <specific name="Gold"> 21000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade, Heavy Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +3d8 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (At-Will • Psychic): Free Action. All damage dealt by this weapon is psychic damage. Another free action returns the damage to normal.
+Power (Daily • Teleportation): Free Action. Use this power when you hit with this weapon. The target is banished to a demiplane (save ends). It disappears from sight, cannot take actions, and cannot be targeted. On a save, the target reappears in the space it last occupied. If that space is occupied, the target returns to the nearest unoccupied space of its choosing. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+   <RulesElement name="Githyanki Silver Weapon +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4421" source="Manual of the Planes" revision-date="9/1/2010 10:35:45 AM" >
+      <Flavor> The rune-engraved weapon assaults a creature&apos;s mind and has the power to banish it to another plane. </Flavor>
+      <specific name="Level"> 19 </specific>
+      <specific name="Gold"> 105000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade, Heavy Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +4d8 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (At-Will • Psychic): Free Action. All damage dealt by this weapon is psychic damage. Another free action returns the damage to normal.
+Power (Daily • Teleportation): Free Action. Use this power when you hit with this weapon. The target is banished to a demiplane (save ends). It disappears from sight, cannot take actions, and cannot be targeted. On a save, the target reappears in the space it last occupied. If that space is occupied, the target returns to the nearest unoccupied space of its choosing. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+   <RulesElement name="Githyanki Silver Weapon +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4422" source="Manual of the Planes" revision-date="9/1/2010 10:35:45 AM" >
+      <Flavor> The rune-engraved weapon assaults a creature&apos;s mind and has the power to banish it to another plane. </Flavor>
+      <specific name="Level"> 24 </specific>
+      <specific name="Gold"> 525000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade, Heavy Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +5d8 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (At-Will • Psychic): Free Action. All damage dealt by this weapon is psychic damage. Another free action returns the damage to normal.
+Power (Daily • Teleportation): Free Action. Use this power when you hit with this weapon. The target is banished to a demiplane (save ends). It disappears from sight, cannot take actions, and cannot be targeted. On a save, the target reappears in the space it last occupied. If that space is occupied, the target returns to the nearest unoccupied space of its choosing. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+   <RulesElement name="Githyanki Silver Weapon +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4423" source="Manual of the Planes" revision-date="9/1/2010 10:35:45 AM" >
+      <Flavor> The rune-engraved weapon assaults a creature&apos;s mind and has the power to banish it to another plane. </Flavor>
+      <specific name="Level"> 29 </specific>
+      <specific name="Gold"> 2625000 </specific>
+      <specific name="Magic Item Type"> Weapon </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon"> Light Blade, Heavy Blade </specific>
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical"> +6d8 psychic damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (At-Will • Psychic): Free Action. All damage dealt by this weapon is psychic damage. Another free action returns the damage to normal.
+Power (Daily • Teleportation): Free Action. Use this power when you hit with this weapon. The target is banished to a demiplane (save ends). It disappears from sight, cannot take actions, and cannot be targeted. On a save, the target reappears in the space it last occupied. If that space is occupied, the target returns to the nearest unoccupied space of its choosing. </specific>
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+
+<RulesElement name="Mordant Weapon +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4310" source="P1 King of the Trollhaunt Warrens">
+    <Flavor> Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury. </Flavor>
+    <specific name="Level"> 8 </specific>
+    <specific name="Gold"> 3400 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon"> Heavy Blade, Light Blade, Spear </specific>
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +2d6 acid damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (At-Will • Acid, Poison): Free Action. All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.
+Power (Daily): Free Action. Use this power when you hit with the weapon. The target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </specific>
+    <specific name="_Rarity" />
+    <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Rarity"> Uncommon </specific>
+  </RulesElement>
+  <RulesElement name="Mordant Weapon +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4311" source="P1 King of the Trollhaunt Warrens">
+    <Flavor> Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury. </Flavor>
+    <specific name="Level"> 13 </specific>
+    <specific name="Gold"> 17000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon"> Heavy Blade, Light Blade, Spear </specific>
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +3d6 acid damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (At-Will • Acid, Poison): Free Action. All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.
+Power (Daily): Free Action. Use this power when you hit with the weapon. The target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </specific>
+    <specific name="_Rarity" />
+    <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Rarity"> Uncommon </specific>
+  </RulesElement>
+  <RulesElement name="Mordant Weapon +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4312" source="P1 King of the Trollhaunt Warrens">
+    <Flavor> Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury. </Flavor>
+    <specific name="Level"> 18 </specific>
+    <specific name="Gold"> 85000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon"> Heavy Blade, Light Blade, Spear </specific>
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +4d6 acid damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (At-Will • Acid, Poison): Free Action. All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.
+Power (Daily): Free Action. Use this power when you hit with the weapon. The target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </specific>
+    <specific name="_Rarity" />
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Rarity"> Uncommon </specific>
+  </RulesElement>
+  <RulesElement name="Mordant Weapon +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4313" source="P1 King of the Trollhaunt Warrens">
+    <Flavor> Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 425000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon"> Heavy Blade, Light Blade, Spear </specific>
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +5d6 acid damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (At-Will • Acid, Poison): Free Action. All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.
+Power (Daily): Free Action. Use this power when you hit with the weapon. The target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </specific>
+    <specific name="_Rarity" />
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Rarity"> Uncommon </specific>
+  </RulesElement>
+  <RulesElement name="Mordant Weapon +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_4314" source="P1 King of the Trollhaunt Warrens">
+    <Flavor> Tempered in the black blood of a mordant hydra, the etched steel of this weapon strikes with bitter fury. </Flavor>
+    <specific name="Level"> 28 </specific>
+    <specific name="Gold"> 2125000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon"> Heavy Blade, Light Blade, Spear </specific>
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +6d6 acid damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (At-Will • Acid, Poison): Free Action. All damage dealt by this weapon is acid damage and poison damage. Another free action returns the damage to normal.
+Power (Daily): Free Action. Use this power when you hit with the weapon. The target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </specific>
+    <specific name="_Rarity" />
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Rarity"> Uncommon </specific>
+  </RulesElement>
+
+<RulesElement name="Enshrouding Candle (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3848" source="Adventurer&apos;s Vault" revision-date="9/1/2010 10:34:53 AM" >
+      <Flavor> This everburning candle creates a dim corona of light that helps conceal you from foes. </Flavor>
+      <specific name="Level"> 7 </specific>
+      <specific name="Gold"> 2600 </specific>
+      <specific name="Magic Item Type"> Wondrous Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily • Illusion): Standard Action. When the candle is lit, it generates an illusion within the area of its illumination. Creatures within the area are invisible to those outside the area, though other features within the area appear as normal. Sound within the area is likewise inaudible to those outside. Creatures within the area are unaffected by the illusion and can perceive each other normally. Other senses are unaffected by the enshrouding candle.
+The candle burns for 8 hours or until it is extinguished (a minor action). If any character within the area of the illusion attacks, the candle is automatically extinguished. </specific>
+      <specific name="_Rarity" />
+      <specific name="Granted Powers" />
+      <specific name="Property"> This candle sheds dim light in a 2-square radius, but it never burns down. Bright light within the candle&apos;s radius is reduced to dim light. </specific>
+   </RulesElement>
+   
+   <RulesElement name="Bag of Holding (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1119" source="Player&apos;s Handbook" revision-date="9/1/2010 10:30:36 AM" >
+      <Flavor> This item appears to be a simple sack of brown canvas. </Flavor>
+      <specific name="Level"> 5 </specific>
+      <specific name="Gold"> 1000 </specific>
+      <specific name="Magic Item Type"> Wondrous Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Power" />
+      <specific name="_Rarity"> Uncommon </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> This bag can hold up to 200 pounds in weight or 20 cubic feet in volume, but it always weighs only 1 pound.
+Drawing an item from a bag of holding is a minor action. </specific>
+      <rules>
+         <statadd name="Weight" value="-199" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Symbol of Foe Turning +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6317" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:38:14 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+    <specific name="Magic Item Type"> Unselectable </specific>
+   </RulesElement>
+   <RulesElement name="Symbol of Foe Turning +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6318" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:38:14 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+    <specific name="Magic Item Type"> Unselectable </specific>
+   </RulesElement>
+   <RulesElement name="Symbol of Foe Turning +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6319" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:38:14 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+    <specific name="Magic Item Type"> Unselectable </specific>
+   </RulesElement>
+   <RulesElement name="Symbol of Foe Turning +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6320" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:38:14 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+    <specific name="Magic Item Type"> Unselectable </specific>
+   </RulesElement>
+   <RulesElement name="Symbol of Foe Turning +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_6321" source="Adventurer&apos;s Vault 2" revision-date="9/1/2010 10:38:14 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+    <specific name="Magic Item Type"> Unselectable </specific>
+   </RulesElement>
+   
+   <RulesElement name="Staff of Missile Mastery +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2976" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 2 </specific>
+      <specific name="Gold"> 520 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+	  <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +1d8 damage instead of +1d6 when using Arcane Bolt. </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +1)" value="+1" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +1" value="Add an item bonus to the damage equal to the staff's enhancement bonus (1 point)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +1)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+1" type="item" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Staff of Missile Mastery +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2977" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 7 </specific>
+      <specific name="Gold"> 2600 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +2d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+      <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +2d8 damage instead of +2d6 when using Arcane Bolt. </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +2)" value="+2" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +2" value="Add an item bonus to the damage equal to the staff's enhancement bonus (2 points)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +2)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+2" type="item" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Staff of Missile Mastery +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2978" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 12 </specific>
+      <specific name="Gold"> 13000 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +3d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+	  <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +3d8 damage instead of +3d6 when using Arcane Bolt.
+ </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +3)" value="+3" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +3" value="Add an item bonus to the damage equal to the staff's enhancement bonus (3 points)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +3)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+3" type="item" />
+      </rules>
+</RulesElement>
+<RulesElement name="Staff of Missile Mastery +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2979" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 17 </specific>
+      <specific name="Gold"> 65000 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +4d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+	  <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +4d8 damage instead of +4d6 when using Arcane Bolt. </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +4)" value="+4" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +4" value="Add an item bonus to the damage equal to the staff's enhancement bonus (4 points)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +4)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+4" type="item" />
+      </rules>
+</RulesElement>
+<RulesElement name="Staff of Missile Mastery +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2980" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 22 </specific>
+      <specific name="Gold"> 325000 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +5d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+      <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +5d8 damage instead of +5d6 when using Arcane Bolt. </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +5)" value="+5" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +5" value="Add an item bonus to the damage equal to the staff's enhancement bonus (5 points)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +5)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+5" type="item" />
+      </rules>
+</RulesElement>
+<RulesElement name="Staff of Missile Mastery +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2981" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> This dark wooden staff empowers a wizard's most basic attacks. </Flavor>
+      <specific name="Level"> 27 </specific>
+      <specific name="Gold"> 1625000 </specific>
+      <specific name="Magic Item Type"> Staff </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +6d6 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Daily): Free Action. Use this power when you cast Magic Missile or Arcane Bolt. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers" />
+      <specific name="Property"> When you use Magic Missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
+      <specific name="Property"> When you cast Arcane Bolt with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
+On a critical hit you deal +6d8 damage instead of +6d6 when using Arcane Bolt. </specific>
+      <rules>
+         <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +6)" value="+6" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +6" value="Add an item bonus to the damage equal to the staff's enhancement bonus (6 points)." />
+         <statadd name="Arcane Bolt:attack(Staff of Missile Mastery +6)" value="+1" type="item" />
+         <statadd name="Arcane Bolt:damage" value="+6" type="item" />
+      </rules>
+</RulesElement>
+
+<RulesElement name="WearingWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms" >
+  <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+</RulesElement>
+
+<RulesElement name="Force Wand +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3045" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 3 </specific>
+      <specific name="Gold"> 680 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+1" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+1" />
+         <grant name="WearingWand" type="Category" /> 
+	  </rules>
+</RulesElement>
+
+<RulesElement name="Force Wand +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3046" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 8 </specific>
+      <specific name="Gold"> 3400 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +2d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+1" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_10144" />
+         <grant name="ID_FMP_POWER_10144" type="Power" requires="!ID_FMP_POWER_10144" />
+         <statadd name="Offhand Implement Bonus" value="+2" />
+         <grant name="WearingWand" type="Category" />
+	  </rules>
+</RulesElement>
+
+<RulesElement name="Force Wand +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3047" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 13 </specific>
+      <specific name="Gold"> 17000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +3d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+2" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_10144" />
+         <grant name="ID_FMP_POWER_10144" type="Power" requires="!ID_FMP_POWER_10144" />
+         <statadd name="Offhand Implement Bonus" value="+3" />
+         <grant name="WearingWand" type="Category" />
+	  </rules>
+</RulesElement>
+
+   <RulesElement name="Force Wand +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3048" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 18 </specific>
+      <specific name="Gold"> 85000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +4d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+2" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_10144" />
+         <grant name="ID_FMP_POWER_10144" type="Power" requires="!ID_FMP_POWER_10144" />
+         <statadd name="Offhand Implement Bonus" value="+4" />
+         <grant name="WearingWand" type="Category" />
+	  </rules>
+</RulesElement>
+
+   <RulesElement name="Force Wand +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3049" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 23 </specific>
+      <specific name="Gold"> 425000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +5d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+3" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_10144" />
+         <grant name="ID_FMP_POWER_10144" type="Power" requires="!ID_FMP_POWER_10144" />
+         <statadd name="Offhand Implement Bonus" value="+5" />
+         <grant name="WearingWand" type="Category" />
+	  </rules>
+</RulesElement>
+
+   <RulesElement name="Force Wand +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3050" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 28 </specific>
+      <specific name="Gold"> 2125000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +6d8 force damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's Arcane Bolt power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_10144(Encounter) </specific>
+      <rules>
+         <statadd name="force:damage" value="+3" type="item" />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_10144" />
+         <grant name="ID_FMP_POWER_10144" type="Power" requires="!ID_FMP_POWER_10144" />
+         <statadd name="Offhand Implement Bonus" value="+6" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+</RulesElement>
+
+  <RulesElement name="Master's Wand of Magic Missile +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3087" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 4 </specific>
+      <specific name="Gold"> 840 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +1d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +1" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+1" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Master's Wand of Magic Missile +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3088" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 9 </specific>
+      <specific name="Gold"> 4200 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +2d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +2" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+2" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Master's Wand of Magic Missile +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3089" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 14 </specific>
+      <specific name="Gold"> 21000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +3d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +3" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+3" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Master's Wand of Magic Missile +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3090" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 19 </specific>
+      <specific name="Gold"> 105000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +4d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +4" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+4" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Master's Wand of Magic Missile +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3091" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 24 </specific>
+      <specific name="Gold"> 525000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +5d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +5" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+5" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Master's Wand of Magic Missile +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3092" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
+      <Flavor> Your Magic Missiles impact a foe with the force of a bull rush. </Flavor>
+      <specific name="Offhand Implement Bonus"/>
+      <specific name="Level"> 29 </specific>
+      <specific name="Gold"> 2625000 </specific>
+      <specific name="Magic Item Type"> Wand </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Requirement" />
+      <specific name="Critical"> +6d8 damage </specific>
+      <specific name="Special" />
+      <specific name="Power"> Power (Encounter): Minor Action. As the wizard's Magic Missile power. </specific>
+      <specific name="_Rarity"> Common </specific>
+      <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+      <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
+      <specific name="Property"> Any target you damage with the Magic Missile power is pushed 1 square. </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
+      <rules>
+         <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +6" value="Any target you damage is pushed 1 square." />
+		 <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
+         <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
+         <statadd name="Offhand Implement Bonus" value="+6" />
+         <grant name="WearingWand" type="Category" />
+      </rules>
+   </RulesElement>
+   
+   
+   
+
+<RulesElement name="Elven Chain Shirt (heroic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_MME_WONDROUS_9-1" source="Mordenkainen's Magnificent Emporium" revision-date="00/00/0000 00:00:00 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+</RulesElement><RulesElement name="Elven Chain Shirt (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_MME_WONDROUS_9-2" source="Mordenkainen's Magnificent Emporium" revision-date="00/00/0000 00:00:00 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+</RulesElement><RulesElement name="Elven Chain Shirt (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_MME_WONDROUS_9-3" source="Mordenkainen's Magnificent Emporium" revision-date="00/00/0000 00:00:00 AM" >
+      <specific name="InternalOnly"> 1 </specific>
+</RulesElement>
+   
+   
+   <RulesElement name="Vecna's Scepter" type="Magic Item" internal-id="ID_KDM_MAGIC_ITEM_VECNA'S_SCEPTER" source="KDM" >
+      <Flavor> Alleged to be the scepter of the Undying King, this rod allows one to command those whose usefulness has outlived them. </Flavor>
+      <specific name="Level"> 16 </specific>
+      <specific name="Gold"> 45000 </specific>
+      <specific name="Magic Item Type"> Wondrous Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special" />
+      <specific name="Property"> Gain resist 10 necrotic and a +2 item bonus to death saving throws. </specific>
+      <specific name="Power"> Power (Daily): Minor Action. Target a dead ally within 10 squares. The target becomes an undead ally until the end of the encounter. The target regains hit points equal to its bloodied value and gains the undead keyword. It is slowed, immune to disease and poison, has resist 10 necrotic and vulnerable 5 radiant, and its melee attacks deal extra necrotic damage equal to your Wisdom modifier. The target is otherwise unchanged and can act normally. At the end of the encounter, the ally dies, but can be brought back to life with the Raise Dead ritual or similar means. </specific>	  
+      <rules>
+         <statadd name="resist:necrotic" value="+10" type="resist" />
+         <statadd name="Death Saving Throws" value="+2" type="Item" />
+      </rules>
+      <specific name="_Rarity"> Rare </specific>
+      <specific name="Granted Powers" />
+   </RulesElement>
+   
+   
+   
+   <RulesElement name="Hero's Mount (Tiny)" type="Gear" internal-id="ID_KDM_GEAR_HERO'S_MOUNT_(TINY)" source="Core">
+    <specific name="Full Text"> Hero's Mount
+Category: Mount
+Price: 0 gp
+
+  Hero's Mount - Tiny beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Pintsized Powerhouse - The hero's mount counts as one size larger for determining who can ride it.
+
+Snubfighter (mount) - The hero's mount can move through the spaces of enemies Medium size or larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Strafe (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target grants combat advantage until the end of your next turn. </specific>
+    <specific name="Weight" />
+    <specific name="Gold"> 0 </specific>
+    <specific name="Silver" />
+    <specific name="Copper" />
+    <specific name="Category"> Mount </specific>
+    <specific name="_RelatedElement" />
+    <specific name="count"> 1 </specific>
+    <specific name="_Monster">  Hero's Mount - Tiny beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Pintsized Powerhouse - The hero's mount counts as one size larger for determining who can ride it.
+
+Snubfighter (mount) - The hero's mount can move through the spaces of enemies Medium size or larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Strafe (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target grants combat advantage until the end of your next turn. </specific>
+<rules>
+	<grant name="ID_KDM_COMPANION_HERO'S_MOUNT_(TINY)" type="Power" />
+</rules>
+  </RulesElement>  
+  
+  <RulesElement name="Hero's Mount (Tiny)" type="Power" internal-id="ID_KDM_COMPANION_HERO'S_MOUNT_(TINY)" source="Core">
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="Power Type"> Utility </specific>
+  <specific name="Creature"> Tiny beast (mount) </specific>
+  <specific name="Hit Points"> Your bloodied value; Healing surges 4 </specific>
+  <specific name="Initiative/Perception"> Equal to yours </specific>
+  <specific name="Defenses"> Your defenses; Resist All 5/tier </specific>
+  <specific name="Speed"> Your speed + 2 for each movement mode you possess </specific>
+  <specific name="Pintsized Powerhouse"> Can serve as a mount for a tiny creature </specific>
+  <specific name="Snubfighter (mount)"> Can move through the spaces of enemies Medium size or larger, and its movement does not provoke opportunity attacks from such creatures. </specific>
+  <specific name="Move Action (Encounter)"> The mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage; target grants CA until end of your next turn. </specific>
+	</RulesElement>
+
+  
+  
+   
+   <RulesElement name="Hero's Mount (Small)" type="Gear" internal-id="ID_KDM_GEAR_HERO'S_MOUNT_(SMALL)" source="Core">
+    <specific name="Full Text"> Hero's Mount
+Category: Mount
+Price: 0 gp
+
+  Hero's Mount - Small beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Nimble Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Snubfighter (mount) - The hero's mount can move through the spaces of enemies Large size or larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Strafe (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target grants combat advantage until the end of your next turn.  </specific>
+    <specific name="Weight" />
+    <specific name="Gold"> 0 </specific>
+    <specific name="Silver" />
+    <specific name="Copper" />
+    <specific name="Category"> Mount </specific>
+    <specific name="_RelatedElement" />
+    <specific name="count"> 1 </specific>
+    <specific name="_Monster">  Hero's Mount - Small beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Nimble Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Snubfighter (mount) - The hero's mount can move through the spaces of enemies Large size or larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Strafe (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target grants combat advantage until the end of your next turn. </specific>
+<rules>
+	<grant name="ID_KDM_COMPANION_HERO'S_MOUNT_(SMALL)" type="Power" />
+</rules>
+  </RulesElement>
+  
+  <RulesElement name="Hero's Mount (Small)" type="Power" internal-id="ID_KDM_COMPANION_HERO'S_MOUNT_(SMALL)" source="Core">
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="Power Type"> Utility </specific>
+  <specific name="Creature"> Small beast (mount) </specific>
+  <specific name="Hit Points"> Your bloodied value; Healing surges 4 </specific>
+  <specific name="Initiative/Perception"> Equal to yours </specific>
+  <specific name="Defenses"> Your defenses; Resist All 5/tier </specific>
+  <specific name="Speed"> Your speed + 2 for each movement mode you possess </specific>
+  <specific name="Nimble Charger (mount)"> The hero's mount and its rider do not provoke opportunity attacks when charging. </specific>
+  <specific name="Snubfighter (mount)"> Can move through the spaces of enemies Large size or larger, and its movement does not provoke opportunity attacks from such creatures. </specific>
+  <specific name="Move Action (Encounter)"> The mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage; target grants CA until end of your next turn. </specific>
+	</RulesElement>
+	
+	
+	
+   
+   <RulesElement name="Hero's Mount (Medium)" type="Gear" internal-id="ID_KDM_GEAR_HERO'S_MOUNT_(MEDIUM)" source="Core">
+    <specific name="Full Text"> Hero's Mount
+Category: Mount
+Price: 0 gp
+
+  Hero's Mount - Medium beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Small size and smaller or Large size and larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Trample (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+    <specific name="Weight" />
+    <specific name="Gold"> 0 </specific>
+    <specific name="Silver" />
+    <specific name="Copper" />
+    <specific name="Category"> Mount </specific>
+    <specific name="_RelatedElement" />
+    <specific name="count"> 1 </specific>
+    <specific name="_Monster">  Hero's Mount - Medium beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Small size and smaller or Large size and larger, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Trample (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy.
+Attack: Melee 0; your level +5 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+<rules>
+	<grant name="ID_KDM_COMPANION_HERO'S_MOUNT_(MEDIUM)" type="Power" />
+</rules>
+  </RulesElement>
+  
+  <RulesElement name="Hero's Mount (Medium)" type="Power" internal-id="ID_KDM_COMPANION_HERO'S_MOUNT_(MEDIUM)" source="Core">
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="Power Type"> Utility </specific>
+  <specific name="Creature"> Medium beast (mount) </specific>
+  <specific name="Hit Points"> Your bloodied value; Healing surges 4 </specific>
+  <specific name="Initiative/Perception"> Equal to yours </specific>
+  <specific name="Defenses"> Your defenses; Resist All 5/tier </specific>
+  <specific name="Speed"> Your speed + 2 for each movement mode you possess </specific>
+  <specific name="Make Way (mount)"> Can move through the spaces of enemies Small size and smaller or Large size and larger, and its movement does not provoke opportunity attacks from such creatures. </specific>
+  <specific name="Move Action (Encounter)"> The mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes this attack against that enemy:
+Attack: Melee 0; your level +5 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+	</RulesElement>
+	
+	
+	
+   
+   <RulesElement name="Hero's Mount (Large)" type="Gear" internal-id="ID_KDM_GEAR_HERO'S_MOUNT_(LARGE)" source="Core">
+    <specific name="Full Text"> Hero's Mount
+Category: Mount
+Price: 0 gp
+
+  Hero's Mount - Large beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Unstoppable Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Medium size or smaller, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Trample (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target falls prone. </specific>
+    <specific name="Weight" />
+    <specific name="Gold"> 0 </specific>
+    <specific name="Silver" />
+    <specific name="Copper" />
+    <specific name="Category"> Mount </specific>
+    <specific name="_RelatedElement" />
+    <specific name="count"> 1 </specific>
+    <specific name="_Monster">  Hero's Mount - Large beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed + 2 for each movement mode you possess
+
+Traits
+Unstoppable Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Medium size or smaller, and its movement does not provoke opportunity attacks from such creatures.
+
+Move Actions
+M Trample (Encounter)
+Effect: The hero's mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Reflex
+Hit: Half-level damage, and the target falls prone. </specific>
+<rules>
+	<grant name="ID_KDM_COMPANION_HERO'S_MOUNT_(LARGE)" type="Power" />
+</rules>
+  </RulesElement>
+  
+  <RulesElement name="Hero's Mount (Large)" type="Power" internal-id="ID_KDM_COMPANION_HERO'S_MOUNT_(LARGE)" source="Core">
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="Power Type"> Utility </specific>
+  <specific name="Creature"> Large beast (mount) </specific>
+  <specific name="Hit Points"> Your bloodied value; Healing surges 4 </specific>
+  <specific name="Initiative/Perception"> Equal to yours </specific>
+  <specific name="Defenses"> Your defenses; Resist All 5/tier </specific>
+  <specific name="Speed"> Your speed + 2 for each movement mode you possess </specific>
+  <specific name="Unstoppable Charger (mount)"> The hero's mount and its rider do not provoke opportunity attacks when charging. </specific>
+  <specific name="Make Way (mount)"> Can move through the spaces of enemies Medium size and smaller, and its movement does not provoke opportunity attacks from such creatures. </specific>
+  <specific name="Move Action (Encounter)"> The mount moves up to its speed. Each time the mount enters an enemy's space for the first time during the move, it makes the following attack against that enemy. 
+Attack: Melee 0; your level +5 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+	</RulesElement>
+	
+	
+	
+	
+   
+   <RulesElement name="Hero's Mount (Huge)" type="Gear" internal-id="ID_KDM_GEAR_HERO'S_MOUNT_(HUGE)" source="Core">
+    <specific name="Full Text"> Hero's Mount
+Category: Mount
+Price: 0 gp
+
+  Hero's Mount - Huge beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed for each movement mode you possess
+
+Traits
+Unstoppable Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Inertia (mount) - The hero's mount gains a +4 bonus to speed when charging.
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Large size or smaller, and its movement does not provoke opportunity attacks from such creatures.
+
+Free Actions
+M Charging Trample (Encounter)
+Trigger: You charge while mounted on the hero's mount.
+Effect: Each time the mount enters an enemy's space during the charge, it makes the following attack against that enemy. In addition, if the charge attack hits, the target of that attack is knocked prone.
+Attack: Melee 0; your level +6 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+    <specific name="Weight" />
+    <specific name="Gold"> 0 </specific>
+    <specific name="Silver" />
+    <specific name="Copper" />
+    <specific name="Category"> Mount </specific>
+    <specific name="_RelatedElement" />
+    <specific name="count"> 1 </specific>
+    <specific name="_Monster">  Hero's Mount - Huge beast (mount) (mount)
+   -   
+Initiative equal to yours, Perception equal to yours
+
+HP your bloodied value
+
+Healing Surges 4
+
+Defenses your defenses
+
+Resist All 5/tier
+
+Speed Your speed for each movement mode you possess
+
+Traits
+Unstoppable Charger (mount) - The hero's mount and its rider do not provoke opportunity attacks when charging.
+
+Inertia (mount) - The hero's mount gains a +4 bonus to speed when charging.
+
+Make Way (mount) - The hero's mount can move through the spaces of enemies Large size or smaller, and its movement does not provoke opportunity attacks from such creatures.
+
+Free Actions
+M Charging Trample (Encounter)
+Trigger: You charge while mounted on the hero's mount.
+Effect: Each time the mount enters an enemy's space during the charge, it makes the following attack against that enemy. In addition, if the charge attack hits, the target of that attack is knocked prone.
+Attack: Melee 0; your level +6 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+<rules>
+	<grant name="ID_KDM_COMPANION_HERO'S_MOUNT_(HUGE)" type="Power" />
+</rules>
+  </RulesElement>
+  
+  <RulesElement name="Hero's Mount (Huge)" type="Power" internal-id="ID_KDM_COMPANION_HERO'S_MOUNT_(HUGE)" source="Core">
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="Power Type"> Utility </specific>
+  <specific name="Creature"> Huge beast (mount) </specific>
+  <specific name="Hit Points"> Your bloodied value; Healing surges 4 </specific>
+  <specific name="Initiative/Perception"> Equal to yours </specific>
+  <specific name="Defenses"> Your defenses; Resist All 5/tier </specific>
+  <specific name="Speed"> Your speed for each movement mode you possess </specific>
+  <specific name="Unstoppable Charger (mount)"> The hero's mount and its rider do not provoke opportunity attacks when charging. </specific>
+  <specific name="Inertia (mount)"> Gains a +4 bonus to speed when charging. </specific>
+  <specific name="Make Way (mount)"> Can move through the spaces of enemies Large and smaller, and its movement doesn't provoke OAs from such creatures. </specific>
+  <specific name="Free Action (Encounter)"> Trigger: You charge while mounted.
+Effect: Each time the mount enters an enemy's space during the charge, it makes the following attack against that enemy. In addition, if the charge attack hits, the target of that attack falls prone.
+Attack: Melee 0; your level +6 vs. Fortitude
+Hit: Half-level damage, and the target falls prone. </specific>
+	</RulesElement>
+  
+  
+  <RulesElement name="Grant Mount Choice (Tiny)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_CHOICE_(TINY)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <select type="Class Feature" Category="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(TINY)|ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(SMALL)" />
+    </rules>  
+Gain a tiny or small mount.
+</RulesElement>
+  
+  <RulesElement name="Grant Mount Choice (Medium)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_CHOICE_(MEDIUM)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <select type="Class Feature" Category="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(LARGE)|ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(HUGE)" />
+    </rules>  
+Gain a large or huge mount.
+</RulesElement>
+  
+  
+  <RulesElement name="Grant Mount (Tiny)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(TINY)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <statadd name="FREEBEE:ID_KDM_GEAR_HERO'S_MOUNT_(TINY)" value="+1" />
+    </rules>  
+Gain a tiny mount.
+</RulesElement>
+  <RulesElement name="Grant Mount (Small)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(SMALL)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <statadd name="FREEBEE:ID_KDM_GEAR_HERO'S_MOUNT_(SMALL)" value="+1" />
+    </rules>  
+Gain a small mount.
+</RulesElement>
+  <RulesElement name="Grant Mount (Medium)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(MEDIUM)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <statadd name="FREEBEE:ID_KDM_GEAR_HERO'S_MOUNT_(MEDIUM)" value="+1" />
+    </rules>  
+Gain a medium mount.
+</RulesElement>
+  <RulesElement name="Grant Mount (Large)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(LARGE)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <statadd name="FREEBEE:ID_KDM_GEAR_HERO'S_MOUNT_(LARGE)" value="+1" />
+    </rules>  
+Gain a large mount.
+</RulesElement>
+  <RulesElement name="Grant Mount (Huge)" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GRANT_MOUNT_(HUGE)" source="Core">
+    <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+	  <statadd name="FREEBEE:ID_KDM_GEAR_HERO'S_MOUNT_(HUGE)" value="+1" />
+    </rules>  
+Gain a huge mount.
+</RulesElement>
+
+
+</D20Rules>

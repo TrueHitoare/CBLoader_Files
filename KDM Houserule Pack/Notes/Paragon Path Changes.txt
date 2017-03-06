@@ -1,0 +1,137 @@
+Paragon Multiclassing
+Agent of the Unbroken Circle
+Anathema
+Arcane Armorer
+Arcane Trickster
+Arena Champion
+Arrow of the Moonbow
+Astral Weapon
+Azure Guard
+Basilisk's Fury Adept
+Beast Stalker
+Blightspeaker
+Cerulean Adept
+Champion of Corellon
+Compassionate Healer
+Crimson Arbiter
+Crimson Hunter
+Dark Reckoner
+Darkwalker
+Death Arrow
+Demonslayer
+Dervish of Dawn
+Doomguide
+Dragonbane Pactmaker
+Dread Imperator
+Elemental Savant
+Enigmatic Mage (Evocation)
+Enigmatic Mage (Necromancy)
+Euphonic Bow
+Evermeet Warlock
+Exorcist of the Silver Flame
+Falling Needle Itinerant
+Familiar Keeper
+Favored of Mielikki
+Favored Sha'ir
+Fearbringer Thane
+Fearless Slayer
+Feytouched
+First Hunter
+Flamebrow Commander
+Flying-Blade Adept
+Fortune Blessed
+Four Winds Master
+Frenzied Berserker
+Gatekeeper of the Golden Palace
+Ghost of Eventide
+Ghostwalker
+God Fragment
+Great Weapon Master
+Grim Blackguard
+Hammer of Moradin
+Heartwarder
+Hellbringer
+Hexer
+High Forest Scout
+Hoard Raider
+Holy Conqueror
+Horizon Walker
+Incandescent Champion
+Initiate of the Dragon
+Intrepid Scout
+Keeper of the Past
+Kensei
+Knight of Celestia
+Knight of the Chalice
+Kulkor Arms Master
+Kundarak Ghorad'din
+Kundarak Watchman
+Legendary Hexblade
+Legendary Witch
+Life Stealer
+Lightwalker
+Long Night Scion
+Master Binder
+Master Infiltrator
+Master of Many Forms
+Master of Poisons
+Master of the Forge
+Master of the Starry Night
+Master Thief
+Morninglord
+Mountain Devotee
+Oak Shield
+Obsidian Stalker
+Peerless Hunter
+Planeshifter
+Platinum Templar
+Platinum Warlord
+Prince of Knaves
+Psionic Binder
+Purple Dragon Knight
+Raven Herald
+Resourceful Magician
+Relentless Slayer
+Sage of Fate's Bonds
+Scale-Breaker
+Scourge of Io
+Sea Tyrant Oracle
+Seven Fates Archer
+Shadowblade
+Shield Adept
+Silverstar
+Slayer of the Dead
+Snapping Testudo
+Sorcerous Sword
+Soul Guide
+Soul Reaper
+Steadfast Sentinel
+Steelsky Liberator
+Storm Disciple
+Storm Scourge
+Storm Speaker
+Student of Caiphon
+Sword Marshal
+Theurge of the Compact
+Tiger Claw Master
+Tome Adept
+Transcendent Perfection
+Traveler's Harlequin
+Umbriri
+Uncarnate
+Unseen Mage
+Unveiled Visage
+Valiant Cavalier
+Valiant Hexblade
+Verdant Lord
+Verdant Stalker
+Vessel of Ichor
+Voice of Thunder
+Ward Guardian
+Warrior of Spring
+Watcher of Vengeance
+Watchful Shepherd
+Weapon of Fortune
+Weaver of Chance
+Wildcat Hunter
+Wyrm-Hunter

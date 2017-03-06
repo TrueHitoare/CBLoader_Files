@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>23b-December-2013</Version>
+    <Filename>TER-11-TerraAdvena.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-11-TerraAdvena.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-11-TerraAdvena.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 03-August-2012
+ Updated 03-August-2012 Added Ontaron and Terra Advena languages
+ Updated 28-April-2013 Added the prismatic hatchling theme
+ Updated 23-December-2013 Added the prismatic hatchling feat
+</Changelog>
+	<!-- Deities -->
+   <RulesElement name="Ontaron" type="Deity" internal-id="ID_TER_DEITY_001" source="Terra Advena">
+      <Prereqs> !Deity of the Arcana domain,!Deity of the Darkness domain,!Deity of the Death domain,!Deity of the Destruction domain,!Deity of the Earth domain,!Deity of the Love domain,!Deity of the Luck domain,!Deity of the Madness domain,!Deity of the Moon domain,!Deity of the Poison domain,!Deity of the Sea domain,!Deity of the Strife domain,!Deity of the Torment domain,!Deity of the Trickery domain,!Deity of the Tyranny domain,!Deity of the Undeath domain,!Deity of the Vengeance domain,!Deity of the Wilderness domain,!Deity of the Winter domain </Prereqs>
+      <specific name="Alignment"> Lawful Good </specific>
+      <specific name="Domains"> ID_FMP_DOMAIN_2, ID_FMP_DOMAIN_3, ID_FMP_DOMAIN_4, ID_FMP_DOMAIN_9, ID_FMP_DOMAIN_10, ID_FMP_DOMAIN_11, ID_FMP_DOMAIN_12, ID_FMP_DOMAIN_13, ID_FMP_DOMAIN_14, ID_FMP_DOMAIN_20, ID_FMP_DOMAIN_22, ID_FMP_DOMAIN_23, ID_FMP_DOMAIN_24, ID_FMP_DOMAIN_26, ID_FMP_DOMAIN_32 </specific>
+      <rules>
+         <grant name="ID_FMP_DOMAIN_2" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_3" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_4" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_9" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_10" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_11" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_12" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_13" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_14" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_20" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_22" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_23" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_24" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_26" type="Domain" />
+         <grant name="ID_FMP_DOMAIN_32" type="Domain" />
+      </rules>
+Ontaron, the great eagle, lightning, watches the world; he is a single deity, no other deities.  Does allow for saints and angelic servitors, though	angels haven't been seen since humanity's 'exile'.
+Some feel that humanity is being punished, others feel Ontaron has left completely, others feel that humanity just needs to be worth them again. Lots of different takes there.
+The Great Doctrine - the heart of the chuch - says that "One should strive to give, not to take; to love, not to hate; to befriend, not to shun."
+Ontaron will forgive all sins if forgiveness is sought, save those of: attempting to ascend; selling your soul; making pacts with demons/devils (this is a descriptive, not technical, term).
+There are two primary branches of the church; Larger group believes that the purpose of the church is ministry - that it exists to spread the worship of Ontaron and also to see that make sure that his lands never lose their faith, and the second branch believes it is their mission to tirelessly oppose evil in all its forms. Group 1 is the clergy; group 2 is the Knights of the Faith; knights tends to include more adventuring types - in fact, they're almost exclusive to the Knights.  Includes clerics, paladins, avengers.  Invokers *generally* come from the other branch
+Church was largely patriarchal, though it's slowly changing.  The canonization of Lady Gethelhame, a knight of the church who led the entire human race to safety on these shores, has greatly increased the number of woman in the church hierarchy, in both branches.
+   </RulesElement>
+   
+   <!-- Languages -->
+	<RulesElement name="Draconic (TA)" type="Language" internal-id="ID_TER_LANGUAGE_01" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Draconic is the language of the dragonborn of Dragonhome, a mortal-ized version of the language of their dragon masters.
+	</RulesElement>
+	<RulesElement name="Dwarven (TA)" type="Language" internal-id="ID_TER_LANGUAGE_02" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Dwarven is the language spoken by the dwarves of Terra Advena; it is characterized by a runic alphabet and heavy use of consonants.
+	</RulesElement>
+	<RulesElement name="Feyreen (TA)" type="Language" internal-id="ID_TER_LANGUAGE_03" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Feyreen is the language of the elves - pixies, satyr, eladrin, and other creatures from beyond this realm. Kenku have adopted feyreen as their native tongue, as well.
+	</RulesElement>
+	<RulesElement name="Gargoyle (TA)" type="Language" internal-id="ID_TER_LANGUAGE_04" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Gargoyle is the language of the gargoyles of the Once-Winged Confederacies, and is only readable by gargoyles or heavily trained scholars
+	</RulesElement>
+	<RulesElement name="Giant (TA)" type="Language" internal-id="ID_TER_LANGUAGE_05" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+The language of the giants and brutish races of the frozen north, giant has no written form.
+	</RulesElement>
+	<RulesElement name="High Draconic (TA)" type="Language" internal-id="ID_TER_LANGUAGE_06" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+High Draconic is the language spoken and used for record-keeping by dragons. Non-dragons find it impossible to speak without arcane ability, though they can read, write, and understand the tongue.
+	</RulesElement>
+	<RulesElement name="Human (TA)" type="Language" internal-id="ID_TER_LANGUAGE_07" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Human is the language of the human interlopers on the western shores of Terra Advena.  There are several regional dialects, though they have grown together over the last few centuries.
+	</RulesElement>
+	<RulesElement name="Imperium (TA)" type="Language" internal-id="ID_TER_LANGUAGE_08" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Imperium is the language used by the gnolls of the Imperium of Blood and most commonly used as a trade tongue throughout most of Terra Advena.
+	</RulesElement>
+	<RulesElement name="Shyriiwook (TA)" type="Language" internal-id="ID_TER_LANGUAGE_09" source="Terra Advena">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Shyriiwook is the language of the wookiees, a language that consists as much of stance and appearance as sound. The written form is exceptionally precise.
+	</RulesElement>
+	
+	<!-- Background Alterations -->
+	<RulesElement name="Callidyrr Dragoon Longbow" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_CALLIDYRR_DRAGOON_LONGBOW" source="Terra Advena">
+		<Category> ID_FMP_CLASS_FEATURE_4271 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4271 </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+		  <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)" type="Proficiency" />
+		</rules>
+	You gain Proficiency with a Longbow.
+	</RulesElement>
+
+
+	<!-- Terra Advena Themes -->
+<RulesElement name="Primatic Hatchling" type="Theme" internal-id="ID_TER_THEME_TA_02" source="Terraism">
+<Prereqs> Dragonborn, dragon breath racial power </Prereqs>
+<print-prereqs> Dragonborn, dragon breath racial power. </print-prereqs>
+    <specific name="_DisplayPowers"> </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TER_THEME_PRISMHATCH_FEATURE-1,ID_TER_THEME_PRISMHATCH_FEATURE-2,ID_TER_THEME_PRISMHATCH_FEATURE-3 </specific>
+    <rules>
+      <grant name="ID_TER_THEME_PRISMHATCH_FEATURE-1" type="Class Feature" />
+      <grant name="ID_TER_THEME_PRISMHATCH_FEATURE-2" type="Class Feature" level="5" />
+      <grant name="ID_TER_THEME_PRISMHATCH_FEATURE-3" type="Class Feature" level="10" />
+    </rules>
+Requirements: 
+Dragonborn, dragon breath racial power.
+
+In Advena, dragonborn are a unique race in that they have multiple methods of procreation available. Scholars and priests alike suggest that the draconic humanoids are a created race, the product of dragon magic, brought forth to serve their parents at a smaller scale than the dragons themselves could operate. Whether or not that is true, it's undisputable that dragonborn are both capable of reproducing through bearing live young as well as being hatched from a specially-prepared dragon's egg.
+In modern times, nearly all dragonborn are the products of a mutual pairing - with the dragons gone from Advena, their eggs are generally unobtainable. Even before that was the case, however, a prismatic hatchling was a rare sight - where most dragon eggs could hatch several dragonborn, prismatic hatchlings are always the sole offspring. More importantly, however, is the fact that they are born of an egg that has laid fallow for years, unnoticed and unhatched. Biology suggests that the prismatics should not exist, but most dragonborn believe that their spontaneous births are not natural at all - but rather, the direct intervention of Bahamut and Tiamat, the twin draconic deities of order and chaos.
+
+PLAYING A PRISMATIC HATCHLING
+Prismatic hatchlings are extraordinarily charismatic, every one of them. It is one of the gifts granted you by the uniqueness of your birth - along with the ability to manipulate your racial breath attack to fire a riot of prismatic energies. Prismatic hatchlings usually take prominent positions in dragonborn society, becoming reknowned priests or politicians, While you, and those like you, generally do not behave as though you are superior to other dragonborn, your natural talents and gifted tongue often raise you to such stature, and as such, great things are expected. After all - you are the product of divine intervention! There must be some greater purpose to your life.
+In modern Advena, you are likely a hatchling found in an ancient dragon's hoard only recently explored or discovered, or perhaps from one of the few eggs kept in museums where dragonborn recall their past.
+</RulesElement>
+
+<RulesElement name="Level 1 Prismatic Hatchling Starting Feature" type="Class Feature" internal-id="ID_TER_THEME_PRISMHATCH_FEATURE-1" source="Dragon Magazine 413">
+    <Category> 1 </Category>
+    <Flavor> Your dragonmark lets you hunt and find things with supernatural ability. </Flavor>
+    <specific name="Short Description"> Gain radiant dragon breath and radiant exhalation power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TER_POWER_PRISMHATCH-1 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TER_POWER_PRISMHATCH-1 </specific>
+    <rules>
+		<grant name="ID_TER_POWER_PRISMHATCH-1" type="Power" />
+		<modify name="Dragon Breath" type="Power" Field="Keywords" list-addition="Radiant" />
+		<modify name="Dragon Breath" type="Power" Field="Prismatic Hatchling" value="Using this power expends your use of Radiant Exhalation for the encounter." />
+		<textstring name="ID_FMP_POWER_1448:key ability" value="Charisma" />
+    </rules>
+Your dragon breath racial power deals radiant damage, in addition to its normal type. In addition, you can use Charisma for the attack and damage rolls for your dragon breath. Finally, you gain the Radiant Exhalation power.
+</RulesElement>
+<RulesElement name="Radiant Exhalation" type="Power" internal-id="ID_TER_POWER_PRISMHATCH-1" source="Terraism">
+    <Category> ID_TER_THEME_PRISMHATCH_FEATURE-1,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You know your quarry, and will be able to chase it to the ends of the earth. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Prismatic Hatchling Feature </specific>
+    <specific name="Keywords"> Arcane, Radiant </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Target"> Each enemy in blast </specific>	
+	<specific name="Attack"> Charisma +2 vs. Reflex </specific>
+	<specific name="Hit"> Charisma modifier radiant damage, and the target takes a -2 penalty to attacks until the end of your next turn.
+Increase to +4 bonus and 2 x Charisma modifier damage at 11th level, and to +6 bonus and 3 x Charisma modifier damage at 21st level. </specific>
+    <specific name="Effect"> Each enemy in blast gains no benefit from concealment or invisibility until the end of your next turn. </specific>
+	<specific name="Special"> Using radiant exhalation expends your use of dragon breath for the encounter. </specific>
+    <specific name="Class"> ID_TER_THEME_PRISMHATCH_FEATURE-1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_PRISMHATCH_FEATURE-1 </specific>
+</RulesElement>
+
+<RulesElement name="Level 5 Prismatic Hatchling Feature" type="Class Feature" internal-id="ID_TER_THEME_PRISMHATCH_FEATURE-2" source="Terraism">
+    <Category> 5 </Category>
+    <Flavor> </Flavor>
+    <specific name="Short Description"> +2 to social checks when dealing with dragonborn </specific>
+    <specific name="Level"> 5 </specific>
+    <rules />
+You gain a +2 bonus to Bluff, Diplomacy, Intimidate, and Streetwise checks when dealing with dragonborn or those who worship Bahamut or Tiamat.
+</RulesElement>
+
+<RulesElement name="Level 10 Prismatic Hatchling Feature" type="Class Feature" internal-id="ID_TER_THEME_PRISMHATCH_FEATURE-3" source="Terraism">
+    <Category> 10 </Category>
+    <Flavor> </Flavor>
+    <specific name="Short Description"> Can use dragon breath or radiant exhalation 2/encounter </specific>
+    <specific name="Level"> 10 </specific>
+	<rules>
+		<modify name="Dragon Breath" type="Power" Field="Prismatic Hatchling" value="You can use your dragon breath or radiant exhalation powers a total of two times each encounter." />
+		<modify name="Radiant Exhalation" type="Power" Field="Prismatic Hatchling" value="You can use your dragon breath or radiant exhalation powers a total of two times each encounter." />
+	</rules>
+You can use your dragon breath or radiant exhalation powers a total of two times each encounter.
+</RulesElement>
+	
+	
+   <RulesElement name="Prismatic Gift" type="Feat" internal-id="ID_TER_FEAT_THEME_PH_001" source="Terraism" revision-date="8/27/2010 12:18:42 PM">
+		<Flavor> Your ability to manipulate rainbows of prismatic energy is not limited to just your breath - magics you perform appear in glorious swathes of colour, as well. </Flavor>
+		<Prereqs> ID_TER_THEME_TA_02 </Prereqs>
+		<print-prereqs> Prismatic Hatchling theme </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Replace damage type (acid, cold, fire, lightning, necrotic, poison, or thunder) with radiant </specific>
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Power" name="Prismatic Gift I" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power</select>
+			<select type="Power" name="Prismatic Gift II" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power II</select>
+			<select type="Power" name="Prismatic Gift III" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power III</select>
+			<select type="Power" name="Prismatic Gift IV" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power IV</select>
+			<select type="Power" name="Prismatic Gift V" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power V</select>
+			<select type="Power" name="Prismatic Gift VI" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power VI</select>
+			<select type="Power" name="Prismatic Gift VII" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power VII</select>
+			<select type="Power" name="Prismatic Gift VIII" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power VIII</select>
+			<select type="Power" name="Prismatic Gift IX" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power IX</select>
+			<select type="Power" name="Prismatic Gift X" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power X</select>
+			<select type="Power" name="Prismatic Gift XI" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power XI</select>
+			<select type="Power" name="Prismatic Gift XII" number="1" Category="Arcane" existing="true" optional="true">Prismatic Gift Power XII</select>
+			 <modify select="Prismatic Gift" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift II" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift III" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift IV" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift V" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift VI" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift VII" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift VIII" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift IX" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift X" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift XI" Field="Keywords" list-addition="Radiant" />
+			 <modify select="Prismatic Gift XII" Field="Keywords" list-addition="Radiant" />
+		</rules>
+When you learn a power that deals acid, cold, fire, lightning, necrotic, poison, or thunder damage, it loses that keyword and gains the radiant keyword and damage type, instead.
+	</RulesElement>
+
+	</D20Rules>

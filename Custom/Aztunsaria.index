@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartIndex>
+	
+	<Changelog>
+  Created 19-November-2016
+	</Changelog>
+	
+  <!-- <UpdateInfo> -->
+    <!-- <Version>1.0</Version> -->
+    <!-- <Filename>Aztunsaria.index</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/Aztunsaria.index</PartAddress> -->
+    <!-- <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/Aztunsaria.txt</VersionAddress> -->
+  <!-- </UpdateInfo> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-01-MathFix.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-01-MathFix.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-02-Races.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-02-Races.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-03-Magic-Items.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-03-Magic-Items.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-07-Feats.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-07-Feats.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-08-Themes.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-08-Themes.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-09-Gear.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-09-Gear.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-11-Misc.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-11-Misc.part</PartAddress> -->
+  <!-- </Part> -->
+  
+  <!-- <Part> -->
+    <!-- <Filename>AZT-36-Companion.part</Filename> -->
+    <!-- <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-36-Companion.part</PartAddress> -->
+  <!-- </Part> -->
+  
+</PartIndex>

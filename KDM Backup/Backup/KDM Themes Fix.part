@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+<!-- Infernal Prince -->
+<AppendNodes name="Hellfire Heart" type="Power" internal-id="ID_FMP_POWER_16052" source="Dragon Magazine 406">
+<rules>
+    <modify name="this" Field="Effect" value="The enemy takes fire damage equal to twice your Primary ability modifier. Until the start of your next turn, the enemy takes a -2 penalty to the attack rolls of attacks that include you as a target." />
+	</rules>
+  </AppendNodes>
+  <RulesElement name="Level 5 Infernal Prince Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4281" source="Dragon Magazine 406">
+    <Category> 5 </Category>
+    <Flavor> Part of your infernal inheritance is a silver tongue, and your words are honeyed lies that sway the unperceptive and weak of will. Your deceit rings especially true in the ears of mortals, a devil's favored prey. </Flavor>
+    <specific name="Short Description"> Gain +2 power bonus to Bluff checks and Diplomacy checks; once per encounter, when you make a Bluff check or a Diplomacy check made against a humanoid of the natural origin and dislike the result, you can reroll the check. You must use the second result.</specific>
+    <specific name="Level"> 5 </specific>
+		<rules>
+			<statadd name="Bluff Misc" value="+2" type="Class Feature" />
+			<statadd name="Diplomacy Misc" value="+2" type="Class Feature" />
+		</rules>
+You gain a +2 power bonus to Bluff checks and Diplomacy checks.
+	Once per encounter, when you make a Bluff check or a Diplomacy check made against a humanoid of the natural origin and dislike the result, you can reroll the check. You must use the second result.
+</RulesElement>
+<RulesElement name="Level 10 Infernal Prince Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4282" source="Dragon Magazine 406">
+    <Category> 10 </Category>
+    <Flavor> Nothing brings out the devil within you like pain. When you are wounded, your rage boils forth in a tide of flame and vengeance. </Flavor>
+    <specific name="Short Description"> The first time you become bloodied each encounter, you regain the use of hellfire heart. If you then use hellfire heart on the creature that bloodied you, the power deals extra fire damage equal to your primary ability modifier. </specific>
+    <specific name="Level"> 10 </specific>
+The first time you become bloodied each encounter, you regain the use of hellfire heart. If you then use hellfire heart on the creature that bloodied you, the power deals extra fire damage equal to your primary ability modifier.
+</RulesElement>
+<!-- <RulesElement name="Devil's Due" type="Power" internal-id="ID_TIV_POWER_DRAGON_406-1" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_INTERNAL_CATEGORY_ANY_CLASS,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,2,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_FMP_CLASS_883,ID_DAB_CLASS_1,ID_FMP_CLASS_906,ID_FMP_CLASS_907,ID_FMP_CLASS_908,ID_FMP_CLASS_909,ID_INTERNAL_CLASS_HYBRID,ID_TIV_CLASS_FH-SS_100_1,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_HYBRID_CLASS_FH-SS_100_1-1,ID_TIV_HYBRID_CLASS_FH-SS_100_2-1,ID_TIV_CLASS_FH-SS_100_3,ID_TIV_HYBRID_CLASS_FH-SS_100_3-1 </Category>
+    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </Prereqs>
+    <Flavor> You offer vital aid to your companion-at a very fair price. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Infernal Prince Utility 2 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target "> One ally </specific>
+    <specific name="Effect"> The target spends a healing surge and regains additional hit points equal to your level. Whenever you would be dealt damage this encounter while the target is conscious, the target takes the damage instead. </specific>
+    <specific name="_ThemePower"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+In the Nine Hells, nothing is given for free. Pathetic notions of compassion and camaraderie do not exist there, nor do they exist within you. You are more than willing to aid your companions in combat or offer them healing, but such assistance is not offered without compensation of equal value.
+</RulesElement>
+<RulesElement name="Liar's Lure" type="Power" internal-id="ID_TIV_POWER_DRAGON_406-2" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_INTERNAL_CATEGORY_ANY_CLASS,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION,6,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_FMP_CLASS_883,ID_DAB_CLASS_1,ID_FMP_CLASS_906,ID_FMP_CLASS_907,ID_FMP_CLASS_908,ID_FMP_CLASS_909,ID_INTERNAL_CLASS_HYBRID,ID_TIV_CLASS_FH-SS_100_1,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_HYBRID_CLASS_FH-SS_100_1-1,ID_TIV_HYBRID_CLASS_FH-SS_100_2-1,ID_TIV_CLASS_FH-SS_100_3,ID_TIV_HYBRID_CLASS_FH-SS_100_3-1 </Category>
+    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </Prereqs>
+    <Flavor> Your silver tongue and flawless feints create lethal opportunities for you and your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Infernal Prince Utility 6 </specific>
+    <specific name="Keywords"> Charm, Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Effect"> Make a single Bluff check and compare it to the passive Insight of each target. If your Bluff check exceeds a target's passive Insight, that target grants combat advantage until the end of your next turn. </specific>
+    <specific name="_ThemePower"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+Your bloodline makes you a fiendishly adept liar, and you are skilled at misleading your foes with words or with subtle body language in combat.
+</RulesElement>
+<RulesElement name="Vile Undoing" type="Power" internal-id="ID_TIV_POWER_DRAGON_406-3" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_INTERNAL_CATEGORY_ANY_CLASS,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION,10,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_FMP_CLASS_883,ID_DAB_CLASS_1,ID_FMP_CLASS_906,ID_FMP_CLASS_907,ID_FMP_CLASS_908,ID_FMP_CLASS_909,ID_INTERNAL_CLASS_HYBRID,ID_TIV_CLASS_FH-SS_100_1,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_HYBRID_CLASS_FH-SS_100_1-1,ID_TIV_HYBRID_CLASS_FH-SS_100_2-1,ID_TIV_CLASS_FH-SS_100_3,ID_TIV_HYBRID_CLASS_FH-SS_100_3-1 </Category>
+    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </Prereqs>
+    <Flavor> You allow the devil within to emerge, temporarily transforming you into a font of infernal power. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Infernal Prince Utility 10 </specific>
+    <specific name="Keywords"> Divine, Fear, Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> All enemies that can see you take a -2 penalty to attack rolls until the end of your next turn, and you assume the form of the infernal inheritor until the end of the encounter. Until this form ends, you gain darkvision, resist fire equal to 5 + half your level, and a +2 power bonus to all defenses. </specific>
+    <specific name="_ThemePower"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_406-1 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+When you let your diabolical lineage manifest, you exude a potent aura of hellish power. As a scion of a great infernal lord, you command fear and awe from your enemies.
+</RulesElement> -->
+</D20Rules>

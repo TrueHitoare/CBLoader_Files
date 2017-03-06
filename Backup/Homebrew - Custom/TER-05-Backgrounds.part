@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>23-February-2013</Version>
+    <Filename>TER-05-Backgrounds.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-05-Backgrounds.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-05-Backgrounds.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 01-August-2012 Partial fix for Versatile Individual background
+ Updated 23-February-2013 Added skill specializations to the builder and trait lists
+</Changelog>
+
+		<!-- Backgrounds -->
+	<RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" source="Core" >
+		<rules>
+			<select type="Background" number="2" optional="true" />
+			<grant name="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" type="Internal" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" source="Core" >
+		<rules>
+			<select type="Background Choice" number="2" Category="Background Benefit" optional="true" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Acrobatics" type="Background" internal-id="ID_TER_BACKGROUND_0001" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You've learned to keep your balance, slip free from restraints, and perform acrobatics stunts. Perhaps you were a cat burglar, or a circus performer. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Arcana" type="Background" internal-id="ID_TER_BACKGROUND_0002" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have picked up knowledge about magic-related lore and magic effects. You might be a scholar, a caster, or even a mage-hunter. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Athletics" type="Background" internal-id="ID_TER_BACKGROUND_0003" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have trained in physical activities that rely on muscular strength, including climbing, escaping from a grab, jumping, and swimming. You might be an outdoorsman, or a special-op soldier.</specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Bluff" type="Background" internal-id="ID_TER_BACKGROUND_0004" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You can make what&apos;s false appear to be true, what&apos;s outrageous seem plausible, and what&apos;s suspicious seem ordinary. You might be a con-artist, or perhaps a storyteller. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Diplomacy" type="Background" internal-id="ID_TER_BACKGROUND_0005" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You can influence others with your tact, subtlety, and social grace. You could be the head of a large family, someone working in a service industry, or a diplomat. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Dungeoneering" type="Background" internal-id="ID_TER_BACKGROUND_0006" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have picked up knowledge and skills related to dungeoneering - an ill-defined field of study that includes architecture and engineering, as well as small-group tactics and some small amount of monster lore. As a dungeoneer, you&apos;re possibly some sort of engineer or esoteric scholar. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Endurance" type="Background" internal-id="ID_TER_BACKGROUND_0007" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You&apos;re good at gritting your teeth and slogging through things that would be too painful for others - often physical activities, but sometimes it just covers listening to an absolute boor. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Heal" type="Background" internal-id="ID_TER_BACKGROUND_0008" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You know how to help someone recover from wounds or debilitating conditions, including disease. You may be a doctor, an alchemist, or a poisoner. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="History" type="Background" internal-id="ID_TER_BACKGROUND_0009" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have picked up knowledge related to the history of a region and beyond, which covers such things as laws, strategy, customs and traditions, and the like. You may be a barrister, a general, or a scholar. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Insight" type="Background" internal-id="ID_TER_BACKGROUND_0010" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You can discern intent and decipher body language during social interactions. You might be a political demagogue, a common confidante, or a con-artist. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Intimidate" type="Background" internal-id="ID_TER_BACKGROUND_0011" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> Make an Intimidate check to influence others through hostile actions, overt threats, and deadly persuasion. Perhaps you are a thug, a fire-and-brimstone evangelist, or just a cutthroat businessman. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Nature" type="Background" internal-id="ID_TER_BACKGROUND_0012" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have picked up knowledge and skills related to nature. You might be a hunter or farmer, a druid, or a scout. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Perception" type="Background" internal-id="ID_TER_BACKGROUND_0013" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have an eye that notices clues, detects secret doors, spots imminent dangers, finds traps, and more. You may be a spy, a detective - or even just a parent. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Religion" type="Background" internal-id="ID_TER_BACKGROUND_0014" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You have picked up knowledge about gods, religious traditions and ceremonies, divine effects, holy symbols, and theology. The obvious assumption is that you are a member of the clergy, but you could also be an interested individual, or a political figure who understands religion&apos;s role in society. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Stealth" type="Background" internal-id="ID_TER_BACKGROUND_0015" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> Make a Stealth check to conceal yourself from enemies, slink past guards, slip away without being noticed, and sneak up on people without being seen or heard. Being good at stealth suggests you may be a thief, hunter, or something similar. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Streetwise" type="Background" internal-id="ID_TER_BACKGROUND_0016" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You know how to find out what&apos;s going on, who the movers and shakers are, where to get what you need, and where not to go. You might be a guide, a bartender, or a local political figure. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Thievery" type="Background" internal-id="ID_TER_BACKGROUND_0017" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You can perform tasks that require nerves of steel and a steady hand: disabling traps, opening locks, picking pockets, and sleight of hand. You might be a mechanic, a juggler, or a thief. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Skill User </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Resilience" type="Background" internal-id="ID_TER_BACKGROUND_0018" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> Backgrounds that grant defensive bonuses. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Miscellaneous </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Combat Specialist" type="Background" internal-id="ID_TER_BACKGROUND_0019" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You learned some tricks that will serve you well in combat. </specific>
+		<specific name="Benefit"> You can select two options from a set of mix-and-match background bonuses. </specific>
+		<specific name="Campaign"> Miscellaneous </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Versatile Individual" type="Background" internal-id="ID_TER_BACKGROUND_0020" source="Custom" revision-date="10/5/2010 1:34:57 PM" >
+		<specific name="type"> Campaign </specific>
+		<specific name="Common Knowledge"> You're more capable than most of picking up various tricks. </specific>
+		<specific name="Benefit"> You can purchase a background that gives you the ability to pick up an additional multiclass. </specific>
+		<specific name="Campaign"> Miscellaneous </specific>
+		<specific name="Associated Skills" />
+		<specific name="Associated Languages" />
+	</RulesElement>
+	<RulesElement name="Acrobatics Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0101" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0001 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0001 </specific>
+		<rules>
+			<modify name="Acrobatics" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Acrobatics Misc" value="+1" />
+		</rules>
+You add Acrobatics to your class skill list, and you gain a +1 bonus to Acrobatics checks.
+	</RulesElement>
+	<RulesElement name="Acrobatics Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0102" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0001 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0001 </specific>
+		<rules>
+			<statadd name="Acrobatics Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Acrobatics checks.
+	</RulesElement>
+	<RulesElement name="Arcana Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0103" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0002 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0002 </specific>
+		<rules>
+			<modify name="Arcana" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Arcana Misc" value="+1" />
+		</rules>
+You add Arcana to your class skill list, and you gain a +1 bonus to Arcana checks.
+	</RulesElement>
+	<RulesElement name="Arcana Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0104" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0002 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0002 </specific>
+		<rules>
+			<statadd name="Arcana Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Arcana checks.
+	</RulesElement>
+	<RulesElement name="Athletics Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0105" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0003 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0003 </specific>
+		<rules>
+			<modify name="Athletics" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Athletics Misc" value="+1" />
+		</rules>
+You add Athletics to your class skill list, and you gain a +1 bonus to Athletics checks.
+	</RulesElement>
+	<RulesElement name="Athletics Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0106" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0003 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0003 </specific>
+		<rules>
+			<statadd name="Athletics Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Athletics checks.
+	</RulesElement>
+	<RulesElement name="Bluff Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0107" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0004 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0004 </specific>
+		<rules>
+			<modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Bluff Misc" value="+1" />
+		</rules>
+You add Bluff to your class skill list, and you gain a +1 bonus to Bluff checks.
+	</RulesElement>
+	<RulesElement name="Bluff Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0108" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0004 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0004 </specific>
+		<rules>
+			<statadd name="Bluff Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Bluff checks.
+	</RulesElement>
+	<RulesElement name="Diplomacy Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0109" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0005 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0005 </specific>
+		<rules>
+			<modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Diplomacy Misc" value="+1" />
+		</rules>
+You add Diplomacy to your class skill list, and you gain a +1 bonus to Diplomacy checks.
+	</RulesElement>
+	<RulesElement name="Diplomacy Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0110" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0005 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0005 </specific>
+		<rules>
+			<statadd name="Diplomacy Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Diplomacy checks.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0111" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0006 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0006 </specific>
+		<rules>
+			<modify name="Dungeoneering" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Dungeoneering Misc" value="+1" />
+		</rules>
+You add Dungeoneering to your class skill list, and you gain a +1 bonus to Dungeoneering checks.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0112" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0006 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0006 </specific>
+		<rules>
+			<statadd name="Dungeoneering Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Dungeoneering checks.
+	</RulesElement>
+	<RulesElement name="Endurance Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0113" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0007 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0007 </specific>
+		<rules>
+			<modify name="Endurance" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Endurance Misc" value="+1" />
+		</rules>
+You add Endurance to your class skill list, and you gain a +1 bonus to Endurance checks.
+	</RulesElement>
+	<RulesElement name="Endurance Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0114" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0007 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0007 </specific>
+		<rules>
+			<statadd name="Endurance Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Endurance checks.
+	</RulesElement>
+	<RulesElement name="Heal Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0115" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0008 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0008 </specific>
+		<rules>
+			<modify name="Heal" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Heal Misc" value="+1" />
+		</rules>
+You add Heal to your class skill list, and you gain a +1 bonus to Heal checks.
+	</RulesElement>
+	<RulesElement name="Heal Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0116" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0008 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0008 </specific>
+		<rules>
+			<statadd name="Heal Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Heal checks.
+	</RulesElement>
+	<RulesElement name="History Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0117" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0009 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0009 </specific>
+		<rules>
+			<modify name="History" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="History Misc" value="+1" />
+		</rules>
+You add History to your class skill list, and you gain a +1 bonus to History checks.
+	</RulesElement>
+	<RulesElement name="History Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0118" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0009 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0009 </specific>
+		<rules>
+			<statadd name="History Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to History checks.
+	</RulesElement>
+	<RulesElement name="Insight Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0119" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0010 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0010 </specific>
+		<rules>
+			<modify name="Insight" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Insight Misc" value="+1" />
+		</rules>
+You add Insight to your class skill list, and you gain a +1 bonus to Insight checks.
+	</RulesElement>
+	<RulesElement name="Insight Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0120" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0010 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0010 </specific>
+		<rules>
+			<statadd name="Insight Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Insight checks.
+	</RulesElement>
+	<RulesElement name="Intimidate Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0121" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0011 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0011 </specific>
+		<rules>
+			<modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Intimidate Misc" value="+1" />
+		</rules>
+You add Intimidate to your class skill list, and you gain a +1 bonus to Intimidate checks.
+	</RulesElement>
+	<RulesElement name="Intimidate Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0122" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0011 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0011 </specific>
+		<rules>
+			<statadd name="Intimidate Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Intimidate checks.
+	</RulesElement>
+	<RulesElement name="Nature Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0123" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0012 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0012 </specific>
+		<rules>
+			<modify name="Nature" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Nature Misc" value="+1" />
+		</rules>
+You add Nature to your class skill list, and you gain a +1 bonus to Nature checks.
+	</RulesElement>
+	<RulesElement name="Nature Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0124" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0012 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0012 </specific>
+		<rules>
+			<statadd name="Nature Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Nature checks.
+	</RulesElement>
+	<RulesElement name="Perception Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0125" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0013 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0013 </specific>
+		<rules>
+			<modify name="Perception" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Perception Misc" value="+1" />
+		</rules>
+You add Perception to your class skill list, and you gain a +1 bonus to Perception checks.
+	</RulesElement>
+	<RulesElement name="Perception Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0126" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0013 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0013 </specific>
+		<rules>
+			<statadd name="Perception Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Perception checks.
+	</RulesElement>
+	<RulesElement name="Religion Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0127" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0014 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0014 </specific>
+		<rules>
+			<modify name="Religion" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Religion Misc" value="+1" />
+		</rules>
+You add Religion to your class skill list, and you gain a +1 bonus to Religion checks.
+	</RulesElement>
+	<RulesElement name="Religion Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0128" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0014 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0014 </specific>
+		<rules>
+			<statadd name="Religion Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Religion checks.
+	</RulesElement>
+	<RulesElement name="Stealth Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0129" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0015 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0015 </specific>
+		<rules>
+			<modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Stealth Misc" value="+1" />
+		</rules>
+You add Stealth to your class skill list, and you gain a +1 bonus to Stealth checks.
+	</RulesElement>
+	<RulesElement name="Stealth Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0130" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0015 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0015 </specific>
+		<rules>
+			<statadd name="Stealth Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Stealth checks.
+	</RulesElement>
+	<RulesElement name="Streetwise Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0131" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0016 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0016 </specific>
+		<rules>
+			<modify name="Streetwise" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Streetwise Misc" value="+1" />
+		</rules>
+You add Streetwise to your class skill list, and you gain a +1 bonus to Streetwise checks.
+	</RulesElement>
+	<RulesElement name="Streetwise Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0132" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0016 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0016 </specific>
+		<rules>
+			<statadd name="Streetwise Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Streetwise checks.
+	</RulesElement>
+	<RulesElement name="Thievery Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0133" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0017 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0017 </specific>
+		<rules>
+			<modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true" />
+			<statadd name="Thievery Misc" value="+1" />
+		</rules>
+You add Thievery to your class skill list, and you gain a +1 bonus to Thievery checks.
+	</RulesElement>
+	<RulesElement name="Thievery Focus" type="Background Choice" internal-id="ID_TER_BACKGROUND_0134" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0017 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0017 </specific>
+		<rules>
+			<statadd name="Thievery Misc" value="+2" />
+		</rules>
+You gain a +2 bonus to Thievery checks.
+	</RulesElement>
+	<RulesElement name="Concentrated Health I" type="Background Choice" internal-id="ID_TER_BACKGROUND_0135" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules />
+You substitute your highest ability score for Constitution to determine your initial hit points. This counts as two choices; after choosing this, choose Concentrated Health II, now available, to receive the benefit.
+	</RulesElement>
+	<RulesElement name="Concentrated Health II" type="Background Choice" internal-id="ID_TER_BACKGROUND_0136" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018,ID_TER_BACKGROUND_0135 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+Strength" type="Level 1" />
+			<statadd name="Hit Points" value="+Dexterity" type="Level 1" />
+			<statadd name="Hit Points" value="+Intelligence" type="Level 1" />
+			<statadd name="Hit Points" value="+Wisdom" type="Level 1" />
+			<statadd name="Hit Points" value="+Charisma" type="Level 1" />
+		</rules>
+You substitute your highest ability score for Constitution to determine your initial hit points. This required you to take Concentrated Health I.
+	</RulesElement>
+	<RulesElement name="Acrobatics Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0139" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0001 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0001 </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+You can reroll any Acrobatics check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Arcana Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0140" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0002 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0002 </specific>
+You can reroll any Arcana check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Athletics Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0141" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0003 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0003 </specific>
+You can reroll any Athletics check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Bluff Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0142" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0004 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0004 </specific>
+You can reroll any Bluff check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Diplomacy Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0143" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0005 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0005 </specific>
+You can reroll any Diplomacy check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0144" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0006 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0006 </specific>
+You can reroll any Dungeoneering check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Endurance Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0145" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0007 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0007 </specific>
+You can reroll any Endurance check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Heal Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0146" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0008 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0008 </specific>
+You can reroll any Heal check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="History Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0147" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0009 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0009 </specific>
+You can reroll any History check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Insight Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0148" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0010 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0010 </specific>
+You can reroll any Insight check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Intimidate Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0149" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0011 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0011 </specific>
+You can reroll any Intimidate check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Nature Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0150" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0012 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0012 </specific>
+You can reroll any Nature check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Perception Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0151" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0013 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0013 </specific>
+You can reroll any Perception check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Religion Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0152" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0014 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0014 </specific>
+You can reroll any Religion check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Stealth Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0153" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0015 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0015 </specific>
+You can reroll any Stealth check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Streetwise Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0154" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0016 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0016 </specific>
+You can reroll any Streetwise check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Thievery Specialist" type="Background Choice" internal-id="ID_TER_BACKGROUND_0155" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0017 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0017 </specific>
+You can reroll any Thievery check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+	<RulesElement name="Weapon Training" type="Background Choice" internal-id="ID_TER_BACKGROUND_0156" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0019 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0019 </specific>
+		<rules>
+			<select type="Proficiency" number="1" Category="Simple|Military" />
+		</rules>
+You gain training in one simple or martial weapon of your choice.
+	</RulesElement>
+	<RulesElement name="Quick Uptake" type="Background Choice" internal-id="ID_TER_BACKGROUND_0157" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0019 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0019 </specific>
+		<rules>
+			<statadd name="Initiative Misc" value="+1" />
+		</rules>
+You gain a +1 bonus to Intiative.
+	</RulesElement>
+	<RulesElement name="Resistance: Acid" type="Background Choice" internal-id="ID_TER_BACKGROUND_0158" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:acid" value="+2" />
+			<statadd name="resist:acid" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:acid" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 acid (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to acid by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Cold" type="Background Choice" internal-id="ID_TER_BACKGROUND_0159" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:cold" value="+2" />
+			<statadd name="resist:cold" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:cold" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 cold (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to cold by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Fire" type="Background Choice" internal-id="ID_TER_BACKGROUND_0160" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:fire" value="+2" />
+			<statadd name="resist:fire" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:fire" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 fire (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to fire by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Lightning" type="Background Choice" internal-id="ID_TER_BACKGROUND_0161" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:lightning" value="+2" />
+			<statadd name="resist:lightning" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:lightning" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 lightning (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to lightning by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Necrotic" type="Background Choice" internal-id="ID_TER_BACKGROUND_0162" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:necrotic" value="+2" />
+			<statadd name="resist:necrotic" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:necrotic" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 necrotic (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to necrotic by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Poison" type="Background Choice" internal-id="ID_TER_BACKGROUND_0163" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:poison" value="+2" />
+			<statadd name="resist:poison" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:poison" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 poison (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to poison by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Psychic" type="Background Choice" internal-id="ID_TER_BACKGROUND_0164" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:psychic" value="+2" />
+			<statadd name="resist:psychic" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:psychic" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 psychic (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to psychic by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Resistance: Thunder" type="Background Choice" internal-id="ID_TER_BACKGROUND_0165" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0018 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0018 </specific>
+		<rules>
+			<statadd name="resist:thunder" value="+2" />
+			<statadd name="resist:thunder" value="+2" requires="Paragon Tier" />
+			<statadd name="resist:thunder" value="+2" requires="Epic Tier" />
+		</rules>
+You gain resist 2 thunder (or your existing resistance to that damage type increases by 2.)
+At 11th level, increase your resistance to thunder by 2, and at 21st, by another 2.
+	</RulesElement>
+	<RulesElement name="Good in a Pinch" type="Background Choice" internal-id="ID_TER_BACKGROUND_0166" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0019 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0019 </specific>
+		<rules>
+			<textstring name="Action Point" value="Good in a Pinch:When you spend an action point to take an extra action, you gain a +1 bonus to all rolls made during the extra action granted." />
+		</rules>
+When you spend an action point to take an extra action, you gain a +1 bonus to all rolls made during the extra action granted.
+	</RulesElement>
+	<RulesElement name="Versatile I" type="Background Choice" internal-id="ID_TER_BACKGROUND_0167" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0020 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0020 </specific>
+		<rules />
+You can multiclass to an additional class. This counts as two choices; after choosing this, choose Versatile II, now available, to receive the benefit.
+	</RulesElement>
+	<RulesElement name="Versatile II" type="Background Choice" internal-id="ID_TER_BACKGROUND_0168" source="Custom" >
+		<Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+		<Prereqs> ID_TER_BACKGROUND_0020,ID_TER_BACKGROUND_0167 </Prereqs>
+		<specific name="_SupportsID"> ID_TER_BACKGROUND_0020 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+Strength" type="Level 1" />
+			<statadd name="Hit Points" value="+Dexterity" type="Level 1" />
+			<statadd name="Hit Points" value="+Intelligence" type="Level 1" />
+			<statadd name="Hit Points" value="+Wisdom" type="Level 1" />
+			<statadd name="Hit Points" value="+Charisma" type="Level 1" />
+		</rules>
+You can multiclass to an additional class. This required you to take Versatile I.
+	</RulesElement>
+
+		<!-- Traits Rules -->
+	<RulesElement name="Trait, Level 1" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE1" source="Core" >
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL001" optional="true" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Trait, Level 2" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE2" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL002" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 3" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE3" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL003" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 4" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE4" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL004" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 5" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE5" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL005" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 6" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE6" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL006" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 7" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE7" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL007" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 8" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE8" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL008" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 9" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE9" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL009" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 10" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE10" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL010" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 11" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE11" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL011" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 12" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE12" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL012" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 13" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE13" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL013" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 14" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE14" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL014" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 15" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE15" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL015" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 16" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE16" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL016" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 17" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE17" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL017" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 18" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE18" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL018" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 19" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE19" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL019" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 20" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE20" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL020" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 21" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE21" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL021" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 22" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE22" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL022" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 23" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE23" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL023" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 24" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE24" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL024" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 25" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE25" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL025" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 26" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE26" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL026" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 27" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE27" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL027" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 28" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE28" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL028" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 29" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE29" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL029" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait, Level 30" type="Background Choice" internal-id="ID_INTERNAL_TRAIT_CHOICE30" source="Core" ><rules><select type="Background Choice" number="1" Category="ID_INTERNAL_BACKGROUND_TRAITS_XL030" optional="true" /></rules></RulesElement>
+	<RulesElement name="Trait Choice, Level 1" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL001" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="3" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 2" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL002" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 3" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL003" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 4" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL004" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 5" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL005" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 6" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL006" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 7" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL007" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 8" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL008" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 9" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL009" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 10" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL010" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 11" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL011" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 12" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL012" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 13" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL013" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 14" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL014" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 15" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL015" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 16" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL016" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 17" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL017" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 18" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL018" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 19" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL019" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 20" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL020" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 21" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL021" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 22" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL022" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 23" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL023" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 24" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL024" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 25" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL025" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 26" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL026" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 27" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL027" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 28" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL028" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 29" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL029" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+	<RulesElement name="Trait Choice, Level 30" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_XL030" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITSELECT </specific>
+		<rules>
+			<select type="Background Choice" number="1" Category="ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS" optional="true" />
+		</rules>
+Traits are character abilities and natures that cannot be put into numbers.
+	</RulesElement>
+		<!-- Traits -->
+	<RulesElement name="Adopted Race*" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0001" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have very good relations with a race other than your own, to the point that you are considered a member of this race for social purposes. You are considered to be as honorable as any other member of this race, accepted as one of their own. Among humans, this only applies to one human culture; humans are too diverse for any one nonhuman to become accepted among all of humanity.
+	</RulesElement>
+	<RulesElement name="Agent" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0002" source="Hastur.net" >
+		<Prereqs> 4th level </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have an agent who will act on your behalf and represent you. While unwilling to risk his or her life, the agent will carry out instructions to the best of his ability, and look out for your interests when you are otherwise occupied. He will also travel to represent you in other places and can be sent on missions on his own. In return, the agent expects advice, patronage, and that you use your contacts on his behalf.
+An agent is an NPC two levels lower than yours of a class and race agreed upon with the DM. If your agent is killed, you will want to retrain this talent. 
+	</RulesElement>
+	<RulesElement name="Artiste" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0003" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You get a +3 feat bonus to Actor, Dancer, Lover, Musician, Orator, and Singer. 
+	</RulesElement>
+	<RulesElement name="Authority" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0004" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You get a +3 feat bonus to Lawman, Merchant, Sailor, Soldier, and Valet.
+	</RulesElement>
+	<RulesElement name="Awe-Inspiring" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0005" source="Hastur.net" >
+		<Prereqs> Trained in Intimidate </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are very good at projecting your image, be it scary or dazzling. This is great for becoming the center of attention. You can make an Intimidate roll as a free action when someone first spots you, on a success they take note of you. They do not become friendly or hostile; they merely focus some of their attention on you. 
+	</RulesElement>
+	<RulesElement name="Blue Blood" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0006" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Your family is old and recognized for its nobility, one of the most prestigious in the land. In a campaign where most everyone is a noble (a chivalry campaign, for example) you may even be of royal blood. 
+Those who care about such things will see you as a born leader, and your career often benefits. It is easy for you to be invited to parties and social functions, and you have relatives in high places. Your word is given due consideration, you are a valuable and reliable witness, and you will mostly be assumed to have a good reason to be wherever you are doing whatever it is you are doing, even if it might seem fishy. Even those who don&apos;t respect nobility find it hard to ignore your manners and bearing, it is clear that you are a person not to be trifled with. 
+You&apos;re not automatically wealthy, some nobles are dirt poor. If you get caught with your hands dirty, Blue Blood may backfire; everyone loves a good scandal. 
+	</RulesElement>
+	<RulesElement name="Cause" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0007" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are a champion for a certain cause, and know among others dedicated to and against this cause. This gives you a set of friends and enemies depending on the exact cause you choose when taking this talent. Causes can be religious, political, or focused on some kind of activity, such as charities. They always have an element of idealism about them; a thieves guild is not a cause.
+	</RulesElement>
+	<RulesElement name="Contacts" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0008" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Contacts are persons you know and who are friendly to you and sympathetic to the same cause as you, but not your direct servants or allies. They will gladly supply information, acting as your eyes and ears. They also willingly perform services for you at normal cost, which can be a boon if they deal in something that is outlawed, rare, or otherwise hard to come by. Over time, your network of contacts grows, you gain new ones while some of your old contacts become obsolete. 
+This talent gives you a number of contacts equal to half your level, with a minimum of one contact. You generally acquire a new contact once per level, replacing an old one at odd levels and gaining a new one at even levels. Sometimes, your contacts change slower or quicker than this, but can never have more contacts than your level indicates. 
+A contact should ideally be someone you met and befriended during play. In this way, you can gain influential contacts; kings, courtiers, important heroes and other famous individuals. You can flesh out your stable of contacts with NPCs of your own invention, but these are generally not as important or influential as the ones you meet during play; typical examples are city guardsmen, traders, shopkeepers, local clergy, or minor mystics. 
+	</RulesElement>
+	<RulesElement name="Cute" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0009" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Being cute makes it easy for you to get into social events, make acquaintances, and generally be very popular in a non-domineering sort of way. There is something about you that makes others care for you if you succeed on a Charisma roll against Will defense. People would ordinarily be hostile might kidnap you instead of kill you. 
+	</RulesElement>
+	<RulesElement name="Deduction" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0010" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Once per day when you are speculating as to the best course of action or about the motivations of a given character, you can have the GM tell straight out you whether your speculation is correct or incorrect. 
+	</RulesElement>
+	<RulesElement name="Disguise" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0011" source="Hastur.net" >
+		<Prereqs> Trained in Bluff </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+With a few minutes of work you can disguise yourself as another person of your approximate size and same basic body shape. Imitating a specific individual is also possible, but takes a day of preparation and you need to find appropriate clothes, wigs etc which can be costly, especially if impersonating someone rich. Make a Bluff check opposed by passive Insight to pass inspection. 
+Normal: Anyone with Bluff can maintain a disguise, but it takes longer to don one and they will need more special materials. 
+	</RulesElement>
+	<RulesElement name="Drifter" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0012" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You spend a lot of time on the road, and have a tendency to just happen to be there when it happens. Any time another character is alone and needs help, you can show up if it&apos;s at all plausible. Even in non-dangerous scenes you have a tendency to just be there. 
+	</RulesElement>
+	<RulesElement name="Eerie" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0013" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+There is something odd and unusual about you, that makes others leave you alone. This might be a mannerism, such as talking to yourself or staring vacantly into space, or an indefinable aura. The end result is that people expect odd tings from you and around you, and will pay no heed to such occurrences unless they cause some kind of direct harm. They might think you a harmless eccentric or leave you alone out of fear. If there is a witch-hunt in the area, this can backfire; people too cowardly or reserved to do something themselves might still report on you.
+	</RulesElement>
+	<RulesElement name="Fame" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0014" source="Hastur.net" >
+		<Prereqs> Talented (Celebrity) </Prereqs>
+	  <print-prereqs> Trained in the Celebrity talent </print-prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Gain a +3 feat bonus to the Celebrity talent. 
+	</RulesElement>
+	<RulesElement name="Fans" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0015" source="Hastur.net" >
+		<Prereqs> Talented (Celebrity) </Prereqs>
+	  <print-prereqs> Trained in the Celebrity talent </print-prereqs>
+	  <Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a group of followers who look up to you, but who do not work for you. On many occasions, they will turn up and offer to help, fawn over you, or just hang around. This is often helpful, but sometimes annoying. They will not generally accompany you on adventures and never enter dungeons.
+At any time, you have a number of fans equal to your Charisma score hanging around. All your followers are NPC minions no higher than two levels lower than you. All details are determined by the DM. Rarely, a powerful person or even a monster might turn out to be a fan, in which case he or she is likely to be extra pushy and demanding. 
+	</RulesElement>
+	<RulesElement name="Fashion Sense" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0016" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have knowledge of fashions of your time and understanding of what can be worn when and to provoke which reaction. This lets you dress for every occasion, and also gives you the know-how to dress unusually without causing a scandal.
+Fashion sense most commonly applies to dress and toilette, but it can apply to art, architecture, cuisine and other cultural traits as well. 
+	</RulesElement>
+	<RulesElement name="Fixer" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0017" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have market connections, and can sell or bye almost anything, even contraband, illegal items, loot that needs to be fenced, and other goods that are normally hard to trade in. You still pay market prices; this is mainly useful if you want to keep a very low profile. 
+	</RulesElement>
+	<RulesElement name="Followers" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0018" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a group of followers who work for you. They serve in some capacity; for example as a garrison, police force, ship&apos;s crew, caravan drivers, or guild thieves. They report to you, and you can give them orders slightly outside the scope of their normal activity, but they will not generally accompany you on adventures and never enter dungeons.
+You have a number of followers equal to your Charisma score, and it they take losses they return to this number as soon as plausible - either because you get new followers, or because defeated ones return to action.
+All your followers are identical NPC minions two levels lower than you of a class and race agreed upon with the DM.
+Special: You can take this talent several times, each time getting a separate group of followers. 
+	</RulesElement>
+	<RulesElement name="Gold Digger" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0019" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are good at ingraining yourself with rich and powerful people. Having you around and spending money on you makes people feel rich and successful. This makes it easy for you to live off others and join parties and social occasions as a hanger-on. Actually gaining riches or influence will require more effort. 
+	</RulesElement>
+	<RulesElement name="Guild Member" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0020" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are a member of an established guild; a conservative organization that exists to further the professional interests of its members. A guild provides little direct help, but has facilities you can use with skills and rituals and can provide access to markets. Typical guilds for heroes are mages&apos; and thieves&apos; guilds. Guilds are a great source of trainers, aides, and expertise. They also have medical resources, act as insurers and advocates, and have a pension fund, but such services are generally of little interest to adventurers. 
+	</RulesElement>
+	<RulesElement name="Handyman" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0021" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You get a +3 feat bonus to Jeweler, Leatherworker, Mechanic, Smith, Stoneworker, and Tailor. 
+	</RulesElement>
+	<RulesElement name="Heir (Heroic)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0022" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+It is well known that Something Marvelous is coming your way. Typically, you pick a paragon perk you are about to inherit (or an epic perk if you are of paragon level). People will know you are the heir apparent and fawn over you accordingly, tough there are no direct benefits whatsoever.
+	</RulesElement>
+	<RulesElement name="Heir (Paragon)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0022b" source="Hastur.net" >
+		<Prereqs> 11th level </Prereqs>
+	  <print-prereqs> 11th level </print-prereqs>
+	  <Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+It is well known that Something Marvelous is coming your way. Typically, you pick a paragon perk you are about to inherit (or an epic perk if you are of paragon level). People will know you are the heir apparent and fawn over you accordingly, tough there are no direct benefits whatsoever.
+	</RulesElement>
+	<RulesElement name="Integrity" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0023" source="Hastur.net" >
+		<Prereqs> Good or lawful good alignment </Prereqs>
+	  <Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a great deal of integrity, and it shows. People find you to be a fair arbiter, an impartial witness, and a trustworthy leader; even if you never strive for positions of responsibility people tend to put their trust in you and turn to you when they need someone to assume responsibility.
+	</RulesElement>
+	<RulesElement name="Influential Friend" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0024" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a friend in a high position, corresponding to a perk talent one tier above your own. This can be a childhood friend, an accidental acquaintance, a lover, or otherwise someone in an official capacity who you know privately. For example, at the heroic tier, you might have an influential friend with an Army or who is a Minister, while at the paragon level your influential friend can even be a King. At the epic level, you can potentially have divine beings as your influential friend.
+Inclined to act in your favor, an influential friend has many other obligations and is unreliable. An influential friends likes you and wants to correspond with you or sped time with you, but is aware that showing you preferential treatment is somewhat irresponsible and thus does not provide the full support of a Mentor. Pressuring an influential friend can produce grand results in the short term, but can easily backlash.
+	</RulesElement>
+	<RulesElement name="Insider" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0025" source="Hastur.net" >
+		<Prereqs> Trained in Diplomacy </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are quick to learn the codes and behaviors that make you an accepted member of a social circle. Once in a group, you are quick to integrate yourself and get treated as an insider; a member rather than an associate, family rather than a friend. You are good at understanding the unwritten rules that holds a group together and exploit them. However, if you break the tenets of the group, people might suddenly realize you were never really a member at all. 
+	</RulesElement>
+	<RulesElement name="Knight" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0026" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are an acknowledged member of a warrior caste with a code to uphold. This is not nobility, but close to it. In many cultures, knighthood is a martial archetype, but it need not be; Chinese knights were martial artists and a fantasy world can easily have supernatural guardians with a similar creed. As a knight (or local equivalent) you are known to follow a code, which makes you trusted and respected. Your word is held in high regard. You can expect free room and board almost anywhere you go. People turn to you with their troubles and expect you to help. 
+	</RulesElement>
+	<RulesElement name="Lackey" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0027" source="Hastur.net" >
+		<Prereqs> 4th level </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a lackey who will provide for and serve you as long as it involves little personal risk. The lackey will travel with you, take care of your mounts or carriage, arrange for food and lodging, set up camp, stand guard, and do other domestic duties. A lackey avoids combat and only fights if sorely pressed. Sometimes, a lackey might provide more exiting services, such as opening a locked chest you bring back to camp, scouting, or acting as a foil, but never in competition with another player character. A lackey can have an interesting background or personal relationship with you.
+The lackey is an NPC two levels lower than you, of a class and race agreed upon with the DM, and designed by the DM.
+Special: You can take this talent several times, each time gaining a separate lackey. If your lackey is killed, you will want to retrain this talent. 
+	</RulesElement>
+	<RulesElement name="Linguist I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028a" source="Hastur.net" >
+		<Prereqs> Linguist I </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028b" source="Hastur.net" >
+		<Prereqs> Linguist II </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028c" source="Hastur.net" >
+		<Prereqs> Linguist III </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028d" source="Hastur.net" >
+		<Prereqs> Linguist IV </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist VI" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028e" source="Hastur.net" >
+		<Prereqs> Linguist V </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist VII" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028f" source="Hastur.net" >
+		<Prereqs> Linguist VI </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist VIII" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028g" source="Hastur.net" >
+		<Prereqs> Linguist VII </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Linguist IX" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0028h" source="Hastur.net" >
+		<Prereqs> Linguist XIII </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Language" number="1" />
+		</rules>
+Choose a language. You can now speak, read, and write this language fluently.
+	</RulesElement>
+	<RulesElement name="Lip Reading" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0029" source="Hastur.net" >
+		<Prereqs> Trained in Insight </Prereqs>
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have the ability to decipher what people are saying merely from looking at their lips moving, as long as you can get a reasonably good view of a speaker&apos;s lips and know the language. Certain parts may be obscure or missing or require an Insight roll to understand correctly. If they have reason to be careful, an Insight roll against their Bluff is required. 
+	</RulesElement>
+	<RulesElement name="Medium" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0030" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are sensitive to psychic impressions, and can often catch the mood of a place and get glimpses of important events that happened there in the past. You are aligned with a particular type of spirits, who sometime give you visions. You can use a relevant skill to seek answers from spirits, which is much the same as asking around or doing research in a library, only the answers are colored by the nature of the spirits you commune with. The origin of the spirits is mostly for flavor; they can be encountered everywhere, but are more knowledgeable about their area of origin. 
+	</RulesElement>
+	<RulesElement name="Mentor" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0031" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have mentor or employer that sees you as a trusted agent. The mentor is a constant source of information, employment opportunities, and often useless advice.
+The DM is encouraged to use the mentor as an adventure hook and patron, and might tailor benefits and rewards to the mentor&apos;s outlook on you. You can also turn to the mentor for help and advice, but a mentor will not accept being used and will avoid becoming directly involved in the action. The mentor is a powerful figure, which might or might not mean that he is a high-level character. A rich merchant, influential queen, or behind-the-scenes monster can function as a mentor just as well as the classic warrior lord or wizard sage.
+The exact details of your mentor are up to the DM and unknown to you. A mentor might have a secret agenda and use you as a pawn in it, but is rarely hostile to your ideals. 
+	</RulesElement>
+	<RulesElement name="Mistaken Identity" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0032" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Your identity are commonly mistaken; either for a specific person or for a role other than your own. You are known for traits and abilities you do not possess, based on misinterpretation, rumors, or just plain lies. A commoner fighter could be known as a magical prince, a holy man, or a demon summoner. People influenced by your Celebrity status will have heard of this false repute, and react accordingly.
+	</RulesElement>
+	<RulesElement name="Nemesis" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0033" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+Your fate and purpose is linked to a particular enemy. You and this enemy are bound to run across each other again and again, and you have a mysterious way of ending up in one-on-one encounters with this enemy. In addition, your nemesis advances in power as you do, and has an amazing ability to survive and return to fight another day. And should he die, there is always someone else on the sidelines, ready to step in.
+The DM has to approve your choice of nemesis; it is generally best to pick a nemesis you&apos;ve met during play and that proved particularly interesting, memorable, and loathsome. 
+	</RulesElement>
+	<RulesElement name="Ordained Priest" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0034" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are an ordained and recognized member of the official clergy of an important religious order. You can officiate at ceremonies and perform religious functions; this makes you a trusted individual and makes sure you are aware of the local gossip. People will naturally turn to you with spiritual and supernatural problems.
+Note that not all divine characters need to have this talent. Many clerics have internal duties within their churches and almost never meet lay people, others are free wanderers with no official sanction or responsibilities. Many churches do not have the formal structure this feat implies at all. 
+	</RulesElement>
+	<RulesElement name="Perfect Recall" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0035" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have perfect recall; years afterward, you can call up the precise words of a conversation or recall details of a room seen only at a glance. This allows you to analyze as scene from memory as though you were actually present there. You can retroactively use the Perception skill to notice things you didn&apos;t think of looking for when you were actually there, which in turn might give more information from knowledge skills.
+	</RulesElement>
+	<RulesElement name="Player" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0036" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are never seen in social circles without a beautiful companion on your arm and is known as a man or woman of the world. You are well known at night spots and get VIP treatment in most establishments. Depending on your style, your companions might be lovers, friends, artists you patronize, or just about anything else you can come up with. Your relationship with these people is congenial and warm, but never very serious; you neither expect nor give exclusive attention to any one of them. 
+	</RulesElement>
+	<RulesElement name="Power Signature" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0037" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+There is something special about the way you use powers. This is a purely visual effect and does not change what the powers actually do, but it makes your power-use distinctive and noticeable. Choose one visual effect for your powers; this can be something like flaming skulls, psychic shock waves, or celestial light. A martial character would usually have a more mundane power signature, such as carving your initials or leaving a signature item behind, tough some actually leave traces of ephemeral energy when they perform their amazing moves.
+A power signature generally makes it easier for others to recognize your handiwork. If you succeed at a Celebrity roll, people will recognize your power signature even from a distance and react accordingly. It can serve as an alibi (I could never have done that; everyone knows I leave a rose behind) or as a lead for an investigator. It is possible to fake your power signature, so it is not enough to count as evidence against you. 
+	</RulesElement>
+	<RulesElement name="Romance" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0038" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a complex and troubled romance that enhances your role in the campaign. This is not just any relationship, but one involving someone you cannot easily get together with; your king and sovereign or the daughter of an arch enemy, perhaps even a nemesis. There are usually other complications as well; unrequited love, duty, racial differences, and other hindrances. Alternatively your romance is trouble-prone, and needs constant help and attention.
+Having a quiet relationship does not need this trait; this is for a romance that takes up some actual screen time. Still, you might want to pick it for a normal relationship, just to pin it down and make it a more definite part of the game world. 
+	</RulesElement>
+	<RulesElement name="Romance-Prone" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0039" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You constantly tend to get romantically entangled, but these romances rarely last. 
+	</RulesElement>
+	<RulesElement name="Scholar" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0040" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You get a +3 feat bonus to Architect, Apothecary, Governor, Painter, Scribe, and Stargazer.
+	</RulesElement>
+	<RulesElement name="Scrounging" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0041" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a tendency to pick stuff up and keep it around for no clear reason, and an ability to find uses all this junk. This lets you improvise and scrounge for food and gear in trash bins and ruins. Use your Dungeoneering, Nature, or Streetwise for this, depending on the environment. You can come up with improvised weapons like staves, clubs and daggers, as well as makeshift tools that negate the penalty for lack of a toolkit. You do not need to exactly specify your equipment list. You can specify items that are in your pack, without specifying them ahead of time. Such an item must be reasonably common in the area, the DM can veto items he considers outrageous. It can neither weight more than 1 lb per point of Strength you have nor cost more than 5% of a magic item of your level. When you specify an item like this, you immediately pay its normal cost. 
+	</RulesElement>
+	<RulesElement name="Secret Agent" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0042" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You are the member of a secret society, a fanatic group with a specific agenda. As long as you obey all orders with enthusiasm and devote yourself to the organization, you can expect their support. Fail them even a little and things can turn sour. In general, a player character secret agent will not be given suicidal orders, but of you don&apos;t live up to the expectations of the organization, you can expect very stern reprisals indeed. You can expect the full support of the organization; this can range from payment for special missions, information, fencing your loot and other trivial services to a suicide assault against your enemies by fanatic brothers in the cult. Typical secret societies are cults, spy rings, cabals, mystic orders, and the most close-knit of criminal gangs. 
+	</RulesElement>
+	<RulesElement name="Secret Identity" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0043" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You know how to keep a low profile. Your personal life is your own, and people in general do not know who you are or what you can do. This might be because you have a secret identity or simply stand back and let your companions take the limelight. Streetwise rolls to find out things about you suffer a +10 difficulty modifier.
+If you are a Celebrity, you are a mysterious adventurer whose true identity no-one knows. Regardless of how famous you are, you won&apos;t be generally recognized unless in your heroic identity. 
+	</RulesElement>
+	<RulesElement name="Sheriff" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0044" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have law enforcement powers and can make arrests, repossess goods, hand out fines, and otherwise disperse justice. You can deputize others to act under your supervision. 
+	</RulesElement>
+	<RulesElement name="Signature Item" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0045" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You possess an item that has a great potential as a magic item. You know a special ritual to transfer the power of other magic items into your signature item.
+Choose one specific type of magic item to be your signature item. This must be a weapon, implement, suit of armor, or amulet/cloak. Your signature item does not start out with this enchantment, but you know a special variant of the Create Magic Item ritual that only works on your signature item. You can only enchant your signature item with the one enchantment you choose when you selected the item, or with a generic &quot;plus only&quot; enchantment if your level is too low to create an item of your chosen type. If your signature item is lost or destroyed, you will want to retrain this talent. 
+Special: You can take this talent several times. Each time you do, it applies to a different item.
+	</RulesElement>
+	<RulesElement name="Special Mount" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0046" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have acquired the services of a special mount, often of a type not easily found. Choose a creature of your level or lower. The mounts from Adventurer&apos;s Vault page 11 are generally available, and the DM might allow you to select a truly exotic creature if it makes sense in play. Elite, Leader, and Solo monsters are generally too strong to be special mounts. The mount will carry you in combat and allow you to use its Mount ability f you have Mounted Combat, but will not otherwise partake in adventures or fight for you except to defend itself.
+	</RulesElement>
+	<RulesElement name="Talented (Actor)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047a" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Actor talent.
+	</RulesElement>
+	<RulesElement name="Talented (Architect)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047b" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Architect talent.
+	</RulesElement>
+	<RulesElement name="Talented (Apothecary)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047c" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Apothecary talent.
+	</RulesElement>
+	<RulesElement name="Talented (Celebrity)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047d" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Celebrity talent.
+	</RulesElement>
+	<RulesElement name="Talented (Dancer)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047e" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Dancer talent.
+	</RulesElement>
+	<RulesElement name="Talented (Governor)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047f" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Governor talent.
+	</RulesElement>
+	<RulesElement name="Talented (Jeweler)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047g" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Jeweler talent.
+	</RulesElement>
+	<RulesElement name="Talented (Lawman)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047h" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Lawman talent.
+	</RulesElement>
+	<RulesElement name="Talented (Leatherworker)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047i" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Leatherworker talent.
+	</RulesElement>
+	<RulesElement name="Talented (Lover)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047j" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Lover talent.
+	</RulesElement>
+	<RulesElement name="Talented (Mechanic)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047k" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Mechanic talent.
+	</RulesElement>
+	<RulesElement name="Talented (Merchant)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047l" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Merchant talent.
+	</RulesElement>
+	<RulesElement name="Talented (Musician)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047m" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Musician talent.
+	</RulesElement>
+	<RulesElement name="Talented (Orator)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047n" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Orator talent.
+	</RulesElement>
+	<RulesElement name="Talented (Painter)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047o" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Painter talent.
+	</RulesElement>
+	<RulesElement name="Talented (Sailor)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047p" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Sailor talent.
+	</RulesElement>
+	<RulesElement name="Talented (Scribe)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047q" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Scribe talent.
+	</RulesElement>
+	<RulesElement name="Talented (Singer)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047r" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Singer talent.
+	</RulesElement>
+	<RulesElement name="Talented (Soldier)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047s" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Soldier talent.
+	</RulesElement>
+	<RulesElement name="Talented (Smith)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047t" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Smith talent.
+	</RulesElement>
+	<RulesElement name="Talented (Stargazer)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047u" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Stargazer talent.
+	</RulesElement>
+	<RulesElement name="Talented (Stoneworker)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047v" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Stoneworker talent.
+	</RulesElement>
+	<RulesElement name="Talented (Tailor)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047w" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Tailor talent.
+	</RulesElement>
+	<RulesElement name="Talented (Valet)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047x" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Valet talent.
+	</RulesElement>
+	<RulesElement name="Talented (Writer)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047y" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Writer talent.
+	</RulesElement>
+	<RulesElement name="Talented (Woodworker)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0047z" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You gain training in the Woodworker talent.
+	</RulesElement>
+	<RulesElement name="True Identity" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0048" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a secret but significant identity, and this identity is destined to become known and/or play a part in upcoming events. You can be the long-lost child of the old king, the destined savior of all lizardfolk, or a dragon bound to human form and abilities by a curse. The DM has to approve your choice, and its usually best to pick your true identity in play, once you know what the campaign is all about. 
+	</RulesElement>
+	<RulesElement name="Victim" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0049" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have a tendency to end up as a victim; when someone is to be captured, mugged, or otherwise fall victim to a subplot, it tends to be you. Taking this trait means you&apos;ll accept that the DM hand-waves situations where you fall into peril and have to be rescued or work to escape, but DMs are of course encouraged to try and make this as fun and non-disruptive as possible.
+	</RulesElement>
+	<RulesElement name="Unusual Background" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0050" source="Hastur.net" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules />
+You have an unusual or incredible background, such as having been teleported across half the world by a crazed wizard. While this does not allow you to take the DM does not want in his game, it can serve as an excuse to play something odd or unusual. Obviously, you have to take this talent at level 1. You can only respecify it if the campaign changes so that your background is no longer unusual. 
+	</RulesElement>
+		<!-- Talents -->
+
+		
+		<!-- Leveling -->
+	<AppendNodes name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" source="Core" >
+		<specific name="XP Needed"> 1000 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE1" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE2" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE3" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE4" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE5" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE6" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="7" type="Level" internal-id="ID_INTERNAL_LEVEL_7" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE7" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE8" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="9" type="Level" internal-id="ID_INTERNAL_LEVEL_9" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE9" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="10" type="Level" internal-id="ID_INTERNAL_LEVEL_10" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE10" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="11" type="Level" internal-id="ID_INTERNAL_LEVEL_11" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE11" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="12" type="Level" internal-id="ID_INTERNAL_LEVEL_12" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE12" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="13" type="Level" internal-id="ID_INTERNAL_LEVEL_13" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE13" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE14" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="15" type="Level" internal-id="ID_INTERNAL_LEVEL_15" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE15" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="16" type="Level" internal-id="ID_INTERNAL_LEVEL_16" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE16" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="17" type="Level" internal-id="ID_INTERNAL_LEVEL_17" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE17" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE18" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="19" type="Level" internal-id="ID_INTERNAL_LEVEL_19" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE19" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="20" type="Level" internal-id="ID_INTERNAL_LEVEL_20" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE20" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="21" type="Level" internal-id="ID_INTERNAL_LEVEL_21" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE21" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="22" type="Level" internal-id="ID_INTERNAL_LEVEL_22" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE22" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="23" type="Level" internal-id="ID_INTERNAL_LEVEL_23" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE23" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE24" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="25" type="Level" internal-id="ID_INTERNAL_LEVEL_25" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE25" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="26" type="Level" internal-id="ID_INTERNAL_LEVEL_26" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE26" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="27" type="Level" internal-id="ID_INTERNAL_LEVEL_27" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE27" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE28" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="29" type="Level" internal-id="ID_INTERNAL_LEVEL_29" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE29" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="30" type="Level" internal-id="ID_INTERNAL_LEVEL_30" source="Core" >
+		<rules>
+			<grant name="ID_INTERNAL_TRAIT_CHOICE30" type="Background Choice" />
+		</rules>
+	</AppendNodes>
+	
+<!-- Skill Specialties -->
+<AppendNodes name="Arcana" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ARCANA" source="Core">
+  <rules>
+	<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+  </rules>
+</AppendNodes>
+	<RulesElement name="Extraplanar Lore" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_ARCANA_ENTITIES" source="Terra Advena">
+		<Category> Arcana </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_ARCANA </specific>
+		Your studies of magic and powers have focused on the great nothing that surrounds the world and the elemental planes, and the creatures and entities that may be found there.
+	</RulesElement>
+	<RulesElement name="Fey Lore" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_ARCANA_FEY" source="Terra Advena">
+		<Category> Arcana </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_ARCANA </specific>
+		Your studies of magic and powers have focused on the fey and their realms, giving you some measure of insight into their behaviors and actions.
+	</RulesElement>
+	<RulesElement name="Manipulation and Alteration" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_ARCANA_MANIPULATION" source="Terra Advena">
+		<Category> Arcana </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_ARCANA </specific>
+		Your studies of magic and powers have focused on manipulating magical power via ritual and small cantrips.
+	</RulesElement>
+	<RulesElement name="Magical Theory" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_ARCANA_THEORY" source="Terra Advena">
+		<Category> Arcana </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_ARCANA </specific>
+		Your studies of magic and powers have focused on magical theory, such as the creation or identification of objects and effects.
+	</RulesElement>
+
+
+<AppendNodes name="Dungeoneering" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING" source="Core">
+  <rules>
+	<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+  </rules>
+</AppendNodes>
+	<RulesElement name="Aberrant Creatures" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_DUNGEONEERING_ABERRANT" source="Terra Advena">
+		<Category> Dungeoneering </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING </specific>
+		Interest - or concern over - unnatural creatures of the world, such as undead or more vile things from the depths of the world is your focus.
+	</RulesElement>
+	<RulesElement name="Structural" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_DUNGEONEERING_STRUCTURAL" source="Terra Advena">
+		<Category> Dungeoneering </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING </specific>
+		Your expertise covers practicul architecture - understanding what sorts of pressures a structure might withstand, or the most likely location of hidden rooms.
+	</RulesElement>
+	<RulesElement name="Underground Survival" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_DUNGEONEERING_SURVIVAL" source="Terra Advena">
+		<Category> Dungeoneering </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING </specific>
+		Time spent scavenging in the depths of the earth has enhanced your focus on finding sustenance and safety in such places.
+	</RulesElement>
+
+
+<AppendNodes name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" source="Core">
+  <rules>
+	<select type="Class Feature" number="1" Category="History" optional="true" />
+  </rules>
+</AppendNodes>
+	<RulesElement name="Ancient History" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_HISTORY_ANCIENT" source="Terra Advena">
+		<Category> History </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_HISTORY </specific>
+		Your studies of history have focused on the great empires of the past, long since gone from this earth.
+	</RulesElement>
+	<RulesElement name="Regional History" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_HISTORY_REGIONAL" source="Terra Advena">
+		<Category> History </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_HISTORY </specific>
+		Your studies of history have focused on the specific area you call home.
+	</RulesElement>
+	<RulesElement name="Tactical Studies" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_HISTORY_TACTICAL" source="Terra Advena">
+		<Category> History </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_HISTORY </specific>
+		Your studies of history have focused most on the great battles and wars of the past, allowing you to both answer questions about them and draw upon them for inspiration.
+	</RulesElement>
+
+
+<AppendNodes name="Nature" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_NATURE" source="Core">
+  <rules>
+	<select type="Class Feature" number="1" Category="Nature" optional="true" />
+  </rules>
+</AppendNodes>
+	<RulesElement name="Care and Tending" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_NATURE_TENDING" source="Terra Advena">
+		<Category> Nature </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_NATURE </specific>
+		You understand how best to care for and maintain various flora and fauna, as well as how to best interact with and coerce beasts of the world.
+	</RulesElement>
+	<RulesElement name="Natural Lore" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_NATURE_LORE" source="Terra Advena">
+		<Category> Nature </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_NATURE </specific>
+		You have studied the details of flora and fauna, and know both how to identify them as well as properties and uses.
+	</RulesElement>
+	<RulesElement name="Shamanism" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_NATURE_SHAMANISM" source="Terra Advena">
+		<Category> Nature </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_NATURE </specific>
+		Your studies of the world have granted you knowledge of the natural spirits of the world.
+	</RulesElement>
+	<RulesElement name="Survival" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_NATURE_SURVIVAL" source="Terra Advena">
+		<Category> Nature </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_NATURE </specific>
+		You know how to fend for yourself in the wild, finding shelter, finding and procuring game, and identifying basic foods (or poisons).
+	</RulesElement>
+
+
+<AppendNodes name="Religion" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_RELIGION" source="Core">
+  <rules>
+	<select type="Class Feature" number="1" Category="Religion" optional="true" />
+  </rules>
+</AppendNodes>
+	<RulesElement name="Ancestral Worship" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_RELIGION_DWARVEN" source="Terra Advena">
+		<Category> Religion </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_RELIGION </specific>
+		You have focused your religious studies on dwarven ancestral devotions, as well as some of their understanding of the creation of Advena.
+	</RulesElement>
+	<RulesElement name="Draconic Progenitors" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_RELIGION_DRACONIC" source="Terra Advena">
+		<Category> Religion </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_RELIGION </specific>
+		You have focused your religious studies on the draconic progenitor deities, Bahamut and Tiamat.
+	</RulesElement>
+	<RulesElement name="Ontaronism" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_RELIGION_ONTARONISM" source="Terra Advena">
+		<Category> Religion </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_RELIGION </specific>
+		You have focused your religious studies on Ontaronism, the Great Eagle who holds humanity's devotion.
+	</RulesElement>
+	<RulesElement name="Spiritualism" type="Class Feature" internal-id="ID_INTERNAL_TER_SKILL_SPEC_RELIGION_SPIRITUALISM" source="Terra Advena">
+		<Category> Religion </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_SKILL_TRAINING_RELIGION </specific>
+		You have focused your religious studies on gnoll spiritualism, learning about various extraplanar spirits that can be appeased and grant favours upon the faithful.
+	</RulesElement>
+	
+<!-- Skill Specialization Traits -->
+	<RulesElement name="Arcana Specialization I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0051a" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Arcana skill.
+	</RulesElement>
+	<RulesElement name="Arcana Specialization II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0051b" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Arcana Specialization I </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Arcana skill.
+	</RulesElement>
+	<RulesElement name="Arcana Specialization III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0051c" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Arcana Specialization II </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Arcana skill.
+	</RulesElement>
+	<RulesElement name="Arcana Specialization IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0051d" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Arcana Specialization III </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Arcana skill.
+	</RulesElement>
+	<RulesElement name="Arcana Specialization V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0051e" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Arcana Specialization IV </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Arcana" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Arcana skill.
+	</RulesElement>
+
+	<RulesElement name="Dungeoneering Specialization I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0052a" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Dungeoneering skill.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Specialization II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0052b" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Dungeoneering Specialization I </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Dungeoneering skill.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Specialization III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0052c" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Dungeoneering Specialization II </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Dungeoneering skill.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Specialization IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0052d" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Dungeoneering Specialization III </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Dungeoneering skill.
+	</RulesElement>
+	<RulesElement name="Dungeoneering Specialization V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0052e" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Dungeoneering Specialization IV </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Dungeoneering" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Dungeoneering skill.
+	</RulesElement>
+
+	<RulesElement name="History Specialization I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0053a" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="History" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the History skill.
+	</RulesElement>
+	<RulesElement name="History Specialization II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0053b" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> History Specialization I </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="History" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the History skill.
+	</RulesElement>
+	<RulesElement name="History Specialization III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0053c" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> History Specialization II </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="History" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the History skill.
+	</RulesElement>
+	<RulesElement name="History Specialization IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0053d" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> History Specialization III </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="History" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the History skill.
+	</RulesElement>
+	<RulesElement name="History Specialization V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0053e" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> History Specialization IV </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="History" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the History skill.
+	</RulesElement>
+
+	<RulesElement name="Nature Specialization I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0054a" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Nature" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Nature skill.
+	</RulesElement>
+	<RulesElement name="Nature Specialization II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0054b" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Nature Specialization I </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Nature" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Nature skill.
+	</RulesElement>
+	<RulesElement name="Nature Specialization III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0054c" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Nature Specialization II </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Nature" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Nature skill.
+	</RulesElement>
+	<RulesElement name="Nature Specialization IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0054d" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Nature Specialization III </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Nature" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Nature skill.
+	</RulesElement>
+	<RulesElement name="Nature Specialization V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0054e" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Nature Specialization IV </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Nature" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Nature skill.
+	</RulesElement>
+
+	<RulesElement name="Religion Specialization I" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0055a" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Religion" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Religion skill.
+	</RulesElement>
+	<RulesElement name="Religion Specialization II" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0055b" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Religion Specialization I </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Religion" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Religion skill.
+	</RulesElement>
+	<RulesElement name="Religion Specialization III" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0055c" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Religion Specialization II </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Religion" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Religion skill.
+	</RulesElement>
+	<RulesElement name="Religion Specialization IV" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0055d" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Religion Specialization III </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Religion" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Religion skill.
+	</RulesElement>
+	<RulesElement name="Religion Specialization V" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_TRAITS_0055e" source="Terraism" >
+		<Category> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </Category>
+		<Prereqs> Religion Specialization IV </Prereqs>
+		<specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_TRAITS_TALENTS </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Religion" optional="true" />
+		</rules>
+You have intensified your studies, granting you an additional specialty for the Religion skill.
+	</RulesElement>
+
+
+</D20Rules>

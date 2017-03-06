@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>20-April-2013</Version>
+    <Filename>TER-06-Feats.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-06-Feats.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-06-Feats.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 16-August-2012 Removed a number of powers that were in both this and the Powers file
+ Updated 16-August-2012 Added a skill power to the benefits of the Skill Training feats
+ Updated 16-September-2012 Added Bow Strike
+ Updated 16-September-2012 Added Energy Substitution
+ Updated 3-February-2013 Added Ergen's Path Student
+ Updated 24-February-2013 Added forum-suggested fix for Hide Armor Expertise
+ Updated 20-April-2013 Added single-class multiclass replacement feats
+</Changelog>
+		<!-- Single-Class Feats -->
+	<RulesElement name="Breadth of Skills" type="Feat" internal-id="ID_TER_FEAT_XC002" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Your time spent honing your craft has increased your understanding of the basics of your techniques. </Flavor>
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> ~MULTICLASS </Prereqs>
+      <print-prereqs> You must not have multiclassed </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain an at-will power from your class as an encounter power. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Power" name="Breadth of Skill" number="1" Category="$$CLASS,at-will,1" />
+			<modify select="Breadth of Skill" Field="Power Usage" value="Encounter" />
+			<select type="Skill Training" number="1" Category="$$CLASS" />
+		</rules>
+You gain an at-will power from your class as an encounter power, as well as training in a class skill. Taking this feat counts as multiclassing within your own class (and thus prevents you from taking other class-specific multiclass feats).
+	</RulesElement>
+	
+	<RulesElement name="Varied Tactics" type="Feat" internal-id="ID_TER_FEAT_SC001" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> When fighting dirty, there's never just one way to get the job done. You've learned more methods than most. </Flavor>
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Rogue, ID_TER_FEAT_XC002, !ID_TER_FEAT_SC002, !ID_TER_FEAT_SC003, !ID_TER_FEAT_SC004</Prereqs>
+		<print-prereqs> Rogue, Breadth of Skills feat, no other single-class feats </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a second rogue Tactic. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_547" />
+		</rules>
+You gain a second rogue Tactic.
+	</RulesElement>
+	
+	<RulesElement name="Commanding Warlord" type="Feat" internal-id="ID_TER_FEAT_SC002" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> You have expanded your studies of martial tactics and strategies, allowing you to adapt better to the flow of battle. </Flavor>
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Warlord, ID_TER_FEAT_XC002, !ID_TER_FEAT_SC001, !ID_TER_FEAT_SC003, !ID_TER_FEAT_SC004</Prereqs>
+		<print-prereqs> Warlord, Breadth of Skills feat, no other single-class feats </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a second Commanding Presence. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+         <select type="Class Feature" number="1" Category="Commanding Presence" />
+		</rules>
+You gain a second warlord Commanding Presence. You can apply only one Commanding Presence benefit for each action point spent.
+	</RulesElement>
+	
+	<RulesElement name="Wily Skirmisher" type="Feat" internal-id="ID_TER_FEAT_SC003" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> You understand better than most that the best way to survive a fight is to use whatever tools at hand, and have adapted to do be more able than most at such. </Flavor>
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Ranger, ID_TER_FEAT_XC002, !ID_TER_FEAT_SC001, !ID_TER_FEAT_SC002, !ID_TER_FEAT_SC004</Prereqs>
+		<print-prereqs> Ranger, Breadth of Skills feat, no other single-class feats </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a second ranger Fighting Style. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_321" />
+		</rules>
+You gain a second ranger Fighting Style.
+	</RulesElement>
+	
+	<RulesElement name="Versatile Warrior" type="Feat" internal-id="ID_TER_FEAT_SC004" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Your mastery of weapons isn't limited to just a single form any longer - you have greatly increased your versatility. </Flavor>
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Fighter, ID_TER_FEAT_XC002, !ID_TER_FEAT_SC001, !ID_TER_FEAT_SC002, !ID_TER_FEAT_SC003</Prereqs>
+		<print-prereqs> Fighter, Breadth of Skills feat, no other single-class feats </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a second fighter Talent. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1064" />
+		</rules>
+You gain a second fighter Talent.
+	</RulesElement>
+	
+<!-- Multiclass Feats -->
+	<RulesElement name="Secondary Focus" type="Feat" internal-id="ID_TER_FEAT_XC001" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_ENCOUNTER,ID_INTERNAL_CATEGORY_MULTICLASS_DAILY,ID_INTERNAL_CATEGORY_MULTICLASS_UTILITY,ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Any class-specific multiclass feat </Prereqs>
+      <print-prereqs> Any class-specific multiclass feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain an at-will power from your multiclass as an encounter power, and the ability to swap a single encounter attack, daily attack, and utility power. </specific>
+		<specific name="Special" />
+		<specific name="type"> Multiclass Encounter </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Power" name="Secondary Focus" number="1" Category="$$MULTICLASS,at-will,1" />
+			<modify select="Secondary Focus" Field="Power Usage" value="Encounter" />
+			<grant name="ID_FMP_FEAT_339" type="Feat" />
+			<grant name="ID_FMP_FEAT_340" type="Feat" />
+			<grant name="ID_FMP_FEAT_341" type="Feat" />			
+	 </rules>
+You gain an at-will power from your multiclass as an encounter power, as well as the ability to retrain to encounter/daily/utility powers from your multiclass.
+	</RulesElement>
+
+	<RulesElement name="Bow Strike" type="Feat" internal-id="ID_TER_FEAT_XC003" source="Terraism">
+		<Flavor> When you must, you can fill the air with arrows and create a killing field.</Flavor>
+		<Prereqs> Power Strike </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Expend a use of power strike to make an area burst 1 attack with a bow </specific>
+When you make a ranged basic attack with a bow against a target's AC, you can use Power Strike before making the attack roll. Instead of gaining the power's normal benefit, you may make a ranged basic attack at a -2 penalty against every target in burst 1 centered on the target of the original attack.
+	</RulesElement>
+	
+   <AppendNodes name="Skill Training (Acrobatics)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(ACROBATICS)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Arcana)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(ARCANA)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Bluff)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(BLUFF)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Diplomacy)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(DIPLOMACY)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Dungeoneering)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(DUNGEONEERING)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Endurance)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(ENDURANCE)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Heal)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(HEAL)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (History)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(HISTORY)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Insight)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(INSIGHT)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Intimidate)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(INTIMIDATE)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Nature)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(NATURE)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Perception)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(PERCEPTION)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Religion)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(RELIGION)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Stealth)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(STEALTH)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Streetwise)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(STREETWISE)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Thievery)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(THIEVERY)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+   <AppendNodes name="Skill Training (Athletics)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(ATHLETICS)" source="Player's Handbook">
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,Skill Power" />
+		</rules>
+	</AppendNodes>
+
+	<!-- Avenger Armor Alternate -->
+	<RulesElement name="Armored Avenger" type="Feat" internal-id="ID_TER_FEAT_XC004" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Prereqs> Avenger, armor of faith feature </Prereqs>
+		<print-prereqs> Avenger, armor of faith feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Lose armor of faith, gain scale proficiency and ignore penalties for heavy armor </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Feat" number="1" />
+			<statadd name="Armor of Faith Bonus" value="-3" not-wearing="armor:shield" />
+			<grant name="ID_FMP_FEAT_3121" type="Feat" />
+			<grant name="ID_FMP_FEAT_3140" type="Feat" />
+			<grant name="ID_FMP_FEAT_115" type="Feat" />			
+	 </rules>
+You follow a deity that prefers its avengers gird themselves in steel, in addition to their faith. You gain Armor Proficiency: Scale, Heavy Armor Agility, and Armor Finesse as bonus feats, and an additional bonus feat of your choice. You lose the Armor of Faith class feature.
+	</RulesElement>
+	
+	<!-- Arcane Substitution -->
+   <RulesElement name="Arcane Substitution" type="Feat" internal-id="ID_TER_FEAT_XC005" source="Arcane Power" revision-date="8/27/2010 12:18:42 PM">
+		<Prereqs> Any arcane class </Prereqs>
+		<print-prereqs> Any arcane class </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Replace damage type (acid, cold, fire, lightning, radiant, or thunder) of arcane spells </specific>
+		<specific name="Special"> You can take this feat more than once. Each time you select this feat, choose a different damage type. You can't apply this feat to the same power more than once. </specific>
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Power" name="Arcane Substitution" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power</select>
+			<select type="Power" name="Arcane Substitution II" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power II</select>
+			<select type="Power" name="Arcane Substitution III" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power III</select>
+			<select type="Power" name="Arcane Substitution IV" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power IV</select>
+			<select type="Power" name="Arcane Substitution V" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power V</select>
+			<select type="Power" name="Arcane Substitution VI" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power VI</select>
+			<select type="Power" name="Arcane Substitution VII" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power VII</select>
+			<select type="Power" name="Arcane Substitution VIII" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power VIII</select>
+			<select type="Power" name="Arcane Substitution IX" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power IX</select>
+			<select type="Power" name="Arcane Substitution X" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power X</select>
+			<select type="Power" name="Arcane Substitution XI" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power XI</select>
+			<select type="Power" name="Arcane Substitution XII" number="1" Category="Arcane" existing="true" optional="true">Arcane Substitution Power XII</select>
+			<select type="Class Feature" number="1" Category="Arcane Substitution">
+Arcane Substitution Damage Type
+			</select>
+		</rules>
+Choose acid, cold, fire, lightning, radiant or thunder. Any number of arcane powers you know can be modified to deal that damage type instead of its normal damage type and gain that keyword.
+	</RulesElement>
+   <RulesElement name="Arcane Substitution Acid" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_ACID" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Acid" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Acid" />
+      </rules>
+Your chosen power now does Acid instead of its normal damage type.
+   </RulesElement>
+   <RulesElement name="Arcane Substitution Cold" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_COLD" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Cold" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Cold" />
+      </rules>
+Your chosen power now does Cold instead of its normal damage type.
+   </RulesElement>
+   <RulesElement name="Arcane Substitution Fire" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_FIRE" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Fire" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Fire" />
+      </rules>
+Your chosen power now does Fire instead of its normal damage type.
+   </RulesElement>
+   <RulesElement name="Arcane Substitution Lightning" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_LIGHTNING" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Lightning" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Lightning" />
+      </rules>
+Your chosen power now does Lightning instead of its normal damage type.
+   </RulesElement>
+   <RulesElement name="Arcane Substitution Radiant" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_RADIANT" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Radiant" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Radiant" />
+      </rules>
+Your chosen power now does Radiant instead of its normal damage type.
+   </RulesElement>
+   <RulesElement name="Arcane Substitution Thunder" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ARCANE_SUBSTITUTION_THUNDER" source="Arcane Power">
+      <Category> ID_TER_FEAT_XC005 </Category>
+      <specific name="_SupportsID"> ID_TER_FEAT_XC005 </specific>
+      <rules>
+         <modify select="Arcane Substitution" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution II" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution III" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution IV" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution V" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution VI" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution VII" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution VIII" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution IX" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution X" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution XI" Field="Keywords" list-addition="Thunder" />
+         <modify select="Arcane Substitution XII" Field="Keywords" list-addition="Thunder" />
+      </rules>
+Your chosen power now does Thunder instead of its normal damage type.
+   </RulesElement>	
+   
+	<RulesElement name="Divine Studies" type="Feat" internal-id="ID_TER_FEAT_XC006" source="Terra Advena" revision-date="6/15/2011 10:13:53 AM">
+		<Flavor> By opening yourself to divine inspiration, you learn to do more than just smite when you attack. </Flavor>
+		<Prereqs> Level 3 Extra Dread Smite class feature </Prereqs>
+		<print-prereqs> Extra Dread Smite </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Expend use of Dread Smite to use single encounter attack power from your class </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<select type="Power" number="1" Category="$$LEVEL,ID_FMP_CLASS_4,encounter" requires="ID_FMP_CLASS_813" />
+			<modify type="Power" name="Dread Smite" field="Divine Studies" value="Expend use of Dread Smite to use single encounter attack power from your class." />
+		</rules>
+You gain an encounter attack power from your class and of your level or lower. In order to use it, you must expend (without using) one of your uses of Dread Smite for the encounter.
+	</RulesElement>
+
+	<RulesElement name="Ergen's Path Student" type="Feat" internal-id="ID_TER_FEAT_XC007" source="Terra Advena" revision-date="8/27/2010 12:18:53 PM">
+		<Category> ID_INTERNAL_CATEGORY_LESSER_STYLE </Category>
+		<Prereqs> Fighter or warlord; proficiency with greatbow or longbow </Prereqs>
+		<print-prereqs> Fighter or warlord; proficiency with greatbow or longbow </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +2 to History; can use associated powers at ranged when using style weapon </specific>
+		<specific name="Special" />
+		<specific name="type"> Lesser Style </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers"> Inevitable Wave, Knockdown Assault </specific>
+		<rules>
+			<statadd name="History Misc" value="+2" type="Feat" />
+			<modify name="Inevitable Wave" type="Power" Field="Ergen's Path Student" value="You can use this power as a ranged attack with a greatbow or longbow." />
+			<modify name="Knockdown Assault" type="Power" Field="Ergen's Path Student" value="You can use this power as a ranged attack with a greatbow or longbow." />
+			<modify name="Inevitable Wave" type="Power" Field="Attack Type" value="Melee or Ranged weapon" />
+			<modify name="Knockdown Assault" type="Power" Field="Attack Type" value="Melee or Ranged weapon" />
+		</rules>
+You gain a +2 feat bonus to History checks.
+When you are attacking with a greatbow or longbow you are proficient with and attack with a power associated with this feat, you can treat the power as a ranged attack rather than a melee attack.
+	</RulesElement>
+	
+   <RulesElement name="Hide Armor Expertise" type="Feat" internal-id="ID_FMP_FEAT_1839" source="Primal Power" revision-date="8/27/2010 12:19:29 PM">
+		<Prereqs> Con 15, any primal class, proficiency with hide armor </Prereqs>
+		<print-prereqs> Con 15, any primal class, proficiency with hide armor </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain +1 to AC when wearing hide armor </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Armor Class" value="+1" wearing="armor:hide" />
+		</rules>
+While wearing hide armor, you gain a +1 bonus to AC.
+	</RulesElement>
+   </D20Rules>

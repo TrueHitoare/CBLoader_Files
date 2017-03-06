@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<!-- New and modified magic items for Secrets of Aztunsaria -->
+	<Changelog>
+ Updated 03-August-2015 File released.
+	</Changelog>
+	<RulesElement name="Gift of the Djinn (heroic tier)" type="Magic Item" internal-id="ID_AZT_MAGIC_ITEM_0001" source="Secrets of Aztunsaria">
+		<Flavor> If you're going to be serving a djinn, best to have you speaking the local tongue, and make you well-spoken at that. </Flavor>
+		<specific name="Level"> 2 </specific>
+		<specific name="Gold"> 520 </specific>
+		<specific name="Magic Item Type"> Elemental Gift </specific>
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Gain a +1 item bonus to Bluff and Diplomacy checks. Understand and speak Primordial. </specific>
+		<rules>
+			<statadd name="Bluff Misc" value="+1" type="item" />
+			<statadd name="Diplomacy Misc" value="+1" type="item" />
+			<grant name="ID_FMP_LANGUAGE_6" type="Language" /> <!-- Primordial language -->
+		</rules>
+	</RulesElement>
+	<RulesElement name="Warp Stone" type="Magic Item" internal-id="ID_AZT_MAGIC_ITEM_0002" source="Critter Cache: Lovecraftian Bestiary">
+		<Flavor> This lumpy black stone glistens with reflected light...even though it is completely dark. </Flavor>
+		<specific name="Level"> 5 </specific>
+		<specific name="Gold"> 1000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Power"> Power (Encounter): Minor Action. You gain a +2 item bonus to AC until the end of your next turn. Until the end of your next turn, the first creature to make a ranged attack against you must roll the attack roll twice and take the worst of the two results. </specific>
+		<specific name="Property"> Eldritch Anomaly: The next ranged attack against you automatically hits. </specific>
+	</RulesElement>
+	<RulesElement name="Lore of the Jungle (heroic tier)" type="Magic Item" internal-id="ID_AZT_MAGIC_ITEM_0003" source="Secrets of Aztunsaria">
+		<Flavor> You have shown the patience and discretion to sit and listen to the Catfolk, to learn their tongue and the secrets they only tell in it. </Flavor>
+		<specific name="Level"> 2 </specific>
+		<specific name="Gold"> 520 </specific>
+		<specific name="Magic Item Type"> Primal Blessing </specific>
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Gain a +1 Item bonus to Nature and Perception checks. Understand and speak Feline. </specific>
+		<rules>
+			<statadd name="Nature Misc" value="+1" type="item" />
+			<statadd name="Perception Misc" value="+1" type="item" />
+			<grant name="ID_AZT_LANGUAGE_01" type="Language" /> <!-- Feline language -->
+		</rules>
+	</RulesElement>
+</D20Rules>

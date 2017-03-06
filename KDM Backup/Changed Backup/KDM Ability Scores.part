@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	
+	<Changelog>
+  Created 05-November-2016
+	</Changelog>
+
+	<UpdateInfo>
+		<Version>2.0</Version>
+		<Filename>KDM Ability Scores.part</Filename>
+		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Ability%20Scores.part</PartAddress>
+		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Ability%20Scores.txt</VersionAddress>
+	</UpdateInfo>
+
+	<!-- Add 1 point to every ability score instead of picking two -->
+
+	<RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" source="Core">
+	<specific name="XP Needed"> 1750 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+1750" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" source="Core">
+	<specific name="XP Needed"> 3500 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+3500" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" source="Core">
+	<specific name="XP Needed"> 10000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+10000" />
+		</rules>
+	</RulesElement>
+
+	<AppendNodes name="16" type="Level" internal-id="ID_INTERNAL_LEVEL_16" source="Core">
+		<rules>
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+		</rules>
+	</AppendNodes>
+
+	<RulesElement name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" source="Core">
+	<specific name="XP Needed"> 20000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+20000" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" source="Core">
+		<specific name="XP Needed"> 65000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+65000" />
+		</rules>
+	</RulesElement>
+
+	<AppendNodes name="26" type="Level" internal-id="ID_INTERNAL_LEVEL_26" source="Core">
+		<rules>
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+		</rules>
+	</AppendNodes>
+
+	<RulesElement name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" source="Core">
+	<specific name="XP Needed"> 150000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+			<statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+150000" />
+		</rules>
+	</RulesElement>
+
+</D20Rules>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>16-August-2012b</Version>
+    <Filename>TER-12-ClassSkills.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-12-ClassSkills.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-12-ClassSkills.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 16-August-2012
+ Updated 16-August-2012 Added an additional trained skill to every class with less than four to chose from
+ Updated 16-August-2012 Fixed sub-classes that select from their parent's skill list
+</Changelog>
+	<AppendNodes name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_2" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Warpriest" type="Class" internal-id="ID_FMP_CLASS_705" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:41 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_705" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Fighter" type="Class" internal-id="ID_FMP_CLASS_3" source="Player's Handbook" revision-date="10/12/2010 1:39:31 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_3" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Knight" type="Class" internal-id="ID_FMP_CLASS_713" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:44 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_713" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Slayer" type="Class" internal-id="ID_FMP_CLASS_716" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:45 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_716" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Mage" type="Class" internal-id="ID_FMP_CLASS_722" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 5:28:57 PM">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_722" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Bladesinger" type="Class" internal-id="ID_FMP_CLASS_883" source="Player Essentials: Neverwinter Campaign Guide">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_883" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Witch" type="Class" internal-id="ID_FMP_CLASS_908" source="Heroes of the Feywild">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_9" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Sha'ir" type="Class" internal-id="ID_FMP_CLASS_958" source="Heroes of the Elemental Chaos">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_9" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Paladin" type="Class" internal-id="ID_FMP_CLASS_4" source="Player&apos;s Handbook" revision-date="8/27/2010 12:39:55 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_4" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Swordmage" type="Class" internal-id="ID_FMP_CLASS_53" source="Forgotten Realms Player&apos;s Guide" revision-date="9/21/2010 3:26:13 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_53" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Battlemind" type="Class" internal-id="ID_FMP_CLASS_124" source="Player&apos;s Handbook 3" revision-date="9/21/2010 3:20:43 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_124" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Druid" type="Class" internal-id="ID_FMP_CLASS_126" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:40:48 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_126" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Invoker" type="Class" internal-id="ID_FMP_CLASS_127" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:40:51 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_127" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Sorcerer" type="Class" internal-id="ID_FMP_CLASS_128" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:40:54 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_128" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Avenger" type="Class" internal-id="ID_FMP_CLASS_129" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:40:56 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_129" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Warden" type="Class" internal-id="ID_FMP_CLASS_134" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:41 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_134" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Shaman" type="Class" internal-id="ID_FMP_CLASS_147" source="Player&apos;s Handbook 2" revision-date="8/31/2010 10:15:30 AM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_147" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Barbarian" type="Class" internal-id="ID_FMP_CLASS_148" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:41:07 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_148" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Seeker" type="Class" internal-id="ID_FMP_CLASS_472" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:43:14 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_472" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Runepriest" type="Class" internal-id="ID_FMP_CLASS_602" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:44:03 PM" >
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_602" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Sentinel" type="Class" internal-id="ID_FMP_CLASS_779" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_126" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Protector" type="Class" internal-id="ID_FMP_CLASS_909" source="Heroes of the Feywild">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_126" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Elementalist" type="Class" internal-id="ID_FMP_CLASS_956" source="Heroes of the Elemental Chaos">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_128" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Berserker" type="Class" internal-id="ID_FMP_CLASS_906" source="Heroes of the Feywild">
+		<rules>
+			<select type="Skill Training" number="1" Category="ID_FMP_CLASS_148" />
+		</rules>
+	</AppendNodes>
+	<AppendNodes name="Hybrid" type="Class" internal-id="ID_INTERNAL_CLASS_HYBRID" source="Core,Player's Handbook 3">
+		<rules>
+			<select type="Skill Training" number="1" Category="$$HYBRID" />
+		</rules>
+	</AppendNodes>
+</D20Rules>

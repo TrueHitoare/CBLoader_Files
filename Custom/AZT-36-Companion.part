@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+<Changelog>
+ Created 21-May-2016
+ Updated 19-November-2016 Added automatic update info
+</Changelog>
+
+  <UpdateInfo>
+    <Version>1.0</Version>
+    <Filename>AZT-36-Companion.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-36-Companion.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-36-Companion.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Djinnling approved for use by Arielle -->
+<RulesElement name="Djinnling (Secrets of Aztunsaria)" type="Familiar" internal-id="ID_AZT_FAMILIAR_1" source="Secrets of Aztunsaria">
+    <specific name="Speed"> 6 </specific>
+    <specific name="Power"> Gift of Wind: When you use an arcane daily attack power, you slide one creature adjacent to the djinnling up to 2 squares, and the djinnling shifts up to 2 squares.
+Elemental Conduit: Once per encounter, you can use your familiar's space as the origin for a close arcane attack power. </specific>
+    <specific name="Constant Benefits"> Forceful Gusts: You can slide one ally adjacent to you or to the djinnling 1 square as a minor action. </specific>
+    <specific name="Secondary Speed"> fly 4 (hover) </specific>
+		<rules>
+			<grant name="ID_TIV_FAMILIAR_DJINNLING-1" type="Power"/>
+		</rules>
+The djinnling's changeable nature does little to interfere with its willingness and ability to aid your cause.
+</RulesElement>
+
+</D20Rules>

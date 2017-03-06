@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>29-January-2013</Version>
+    <Filename>TER-13-MiscFixes.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-13-MiscFixes.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-13-MiscFixes.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Items -->
+  <!-- TER-10-Items.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+	</Changelog>
+
+<!-- Dragon Magazine 413: Character Themes: Scourges of Lolth -->
+<RulesElement name="Devotee of Terror" type="Theme" internal-id="ID_TIV_THEME_DRAGON_MAGAZINE_413-1" source="Dragon Magazine 413">
+<Prereqs> Any divine class </Prereqs>
+<print-prereqs> Any divine class. </print-prereqs>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_413-1,ID_TIV_POWER_DRAGON_413-2,ID_TIV_POWER_DRAGON_413-3 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_DRAGON_413-1,ID_TIV_CLASS_FEATURE_DRAGON_413-2,ID_TIV_CLASS_FEATURE_DRAGON_413-3 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_DRAGON_413-1" type="Class Feature" />
+      <grant name="ID_TIV_CLASS_FEATURE_DRAGON_413-2" type="Class Feature" level="5" />
+      <grant name="ID_TIV_CLASS_FEATURE_DRAGON_413-3" type="Class Feature" level="10" />
+    </rules>
+Drow society thrives on infighting, treachery, and ruthless ambition, and nowhere is this more apparent than among the priestesses of the Spider Queen. Lolth demands that the strong survive to rule the weak, and every drow house follows this most sacred of commandments. If you fall to a rival's machinations, then you did not deserve your position in the first place.
+	You were born to rule. As the daughter of a matron mother, you claimed the divine power of Lolth as your birthright, and with it you mean to advance your station and secure your destiny. You spent fifty years in training at Arach-Tinilith, but the endless cycle of ritual was not for you. You prefer the chaotic arena of your own house, battling your sisters for dominance. You excel at betrayal and don't hesitate to turn against enemies and allies alike.
+	One day, you will succeed your matron mother-most likely by the edge of a sacrificial blade. Until then, you lurk and scheme, weaving a web of intrigue.
+
+Creating:
+A house priestess treats her station as a political office foremost; she might be devoted to Lolth, but that fact is independent of her status. She is always a female drow and is usually noble. Perhaps she is a daughter of the matron mother, an adoptee from another house, or a promoted commoner. Noble drow daughters who hope to advance within the house hierarchy must demonstrate some level of divine talent, even if they are more warrior, wizard, or rogue than cleric.
+
+Requirements: 
+Any divine class.
+</RulesElement>
+</D20Rules>

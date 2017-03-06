@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Class Features.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Class Features.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Class Features.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Artificer-->
+   
+	<AppendNodes name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" source="Eberron Player&apos;s Guide" >
+	<rules>
+		<modify name="Thievery" type="Skill" Field="Key Ability" Value="Intelligence" />
+    <statadd name="Thievery" value="+ABILITYMOD(Intelligence)" type="Ability" />
+	</rules>
+   </AppendNodes>
+
+<AppendNodes name="Artificer" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_ARTIFICER" source="Eberron Player&apos;s Guide" >
+	<rules>
+		<modify name="Thievery" type="Skill" Field="Key Ability" Value="Intelligence" />
+    <statadd name="Thievery" value="+ABILITYMOD(Intelligence)" type="Ability" />
+	</rules>
+   </AppendNodes>
+   
+<!--Barbarian-->
+   
+    <RulesElement name="Barbarian Agility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1492" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Use Constitution or Charisma for AC in light armor. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <statadd name="AC" value="+Charisma modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you can use your Constitution or Charisma modifier instead of your Dexterity modifier to determine your AC.
+   </RulesElement>
+
+   <RulesElement name="Hide Armor Expertise" type="Feat" internal-id="ID_FMP_FEAT_1839" source="Primal Power" revision-date="8/27/2010 12:19:29 PM" >
+      <Prereqs> Unselectable </Prereqs>
+      <print-prereqs> Unselectable </print-prereqs>
+   </RulesElement>
+
+   <RulesElement name="Whirling Slayer" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1956" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1051,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_5249 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class"> ID_FMP_CLASS_148 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_5249 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_5249" type="Power" />
+         <grant name="ID_INTERNAL_INTERNAL_AMBIDEXTROUS" type="Internal" />
+         <statadd name="AC" value="+2" not-wearing="armor:heavy" />
+         <statadd name="Reflex Defense" value="+2" not-wearing="armor:heavy" />
+      </rules>
+You gain the whirling lunge power, and you can wield a one-handed weapon in your off hand and treat it as an off-hand weapon. In addition, once per round when your attack bloodies an enemy, you can shift 2 squares as a free action, and each enemy adjacent to you at the end of the shift grants combat advantage to you until the end of your next turn.
+While you are not wearing heavy armor, you gain a +2 bonus to AC and Reflex.
+   </RulesElement>
+   
+<!--Bard-->
+   
+   <RulesElement name="Song of Rest" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_699" source="Player&apos;s Handbook 2,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_441,1 </Category>
+      <specific name="Short Description"> At end of short rest, you and each ally regain extra HP equal to 1/2/3 * your Charisma modifier for each surge spent </specific>
+      <specific name="Level"> 1 </specific>
+When you play an instrument or sing during a short rest, you and each ally who can hear you are affected by your Song of Rest. When an affected character spends healing surges at the end of the rest, that character regains additional hit points equal to your Charisma modifier with each healing surge. A character can be affected by only one Song of Rest at a time.
+Level 11: Additional hit points equal to twice your Charisma modifier
+Level 21: Additional hit points equal to three times your Charisma modifier
+   </RulesElement>
+   
+   <RulesElement name="Multiclass Versatility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_697" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose multiclass feats from multiple classes; gain bonus multiclass feat </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_UNLIMITED_MULTICLASS" type="Internal" />
+		 <select name="Multiclass Versatility" type="Feat" number="1" category="ID_INTERNAL_CATEGORY_MULTICLASS" />
+      </rules>
+You can choose class-specific multiclass feats from more than one class; gain a bonus multiclass feat.
+   </RulesElement>
+   
+   <RulesElement name="Multiclass Mastery" type="Feat" internal-id="ID_FMP_FEAT_1202" source="Arcane Power" revision-date="8/27/2010 12:18:44 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Skill Versatility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_698" source="Player&apos;s Handbook 2,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose a Skill Versatility feature. </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select name="Skill Versatility" type="Class Feature" number="1" category="ID_KDM_SKILL_VERSATILITY_GENERALIST|ID_KDM_SKILL_VERSATILITY_SPECIALIST" />
+      </rules>
+Choose a Skill Versatility feature.
+   </RulesElement>
+   
+    <RulesElement name="Skill Versatility: Generalist" type="Class Feature" internal-id="ID_KDM_SKILL_VERSATILITY_GENERALIST" source="KDM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> +1 to untrained skill checks </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="Acrobatics Misc" value="+1" requires="!Acrobatics Skill Training" />
+         <statadd name="Arcana Misc" value="+1" requires="!Arcana Skill Training" />
+         <statadd name="Athletics Misc" value="+1" requires="!Athletics Skill Training" />
+         <statadd name="Bluff Misc" value="+1" requires="!Bluff Skill Training" />
+         <statadd name="Diplomacy Misc" value="+1" requires="!Diplomacy Skill Training" />
+         <statadd name="Dungeoneering Misc" value="+1" requires="!Dungeoneering Skill Training" />
+         <statadd name="Endurance Misc" value="+1" requires="!Endurance Skill Training" />
+         <statadd name="Heal Misc" value="+1" requires="!Heal Skill Training" />
+         <statadd name="History Misc" value="+1" requires="!History Skill Training" />
+         <statadd name="Insight Misc" value="+1" requires="!Insight Skill Training" />
+         <statadd name="Intimidate Misc" value="+1" requires="!Intimidate Skill Training" />
+         <statadd name="Nature Misc" value="+1" requires="!Nature Skill Training" />
+         <statadd name="Perception Misc" value="+1" requires="!Perception Skill Training" />
+         <statadd name="Religion Misc" value="+1" requires="!Religion Skill Training" />
+         <statadd name="Stealth Misc" value="+1" requires="!Stealth Skill Training" />
+         <statadd name="Streetwise Misc" value="+1" requires="!Streetwise Skill Training" />
+         <statadd name="Thievery Misc" value="+1" requires="!Thievery Skill Training" />
+      </rules>
+You gain a +1 bonus to untrained skill checks.
+   </RulesElement>
+   
+   <RulesElement name="Skill Versatility: Specialist" type="Class Feature" internal-id="ID_KDM_SKILL_VERSATILITY_SPECIALIST" source="KDM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Train an extra skill </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select name="Skill Versatility" type="Skill Training" number="1" />
+      </rules>
+Train an extra skill.
+   </RulesElement>
+   
+   <AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD" source="Player&apos;s Handbook 2" >
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" type="Proficiency" />
+      </rules>
+   </AppendNodes>
+   
+   <RulesElement name="Virtue of Prescience" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1347" source="Arcane Power" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_700,1 </Category>
+      <specific name="Short Description"> When an enemy hits an ally with 5 squares of you, ally adds your Wis mod to that defense until the end of the attacker&apos;s turn. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <textstring name="ranged basic:key ability" value="Charisma*" />
+      </rules>
+You can use Charisma in place of strength for the attac
+Once per encounter as an immediate interrupt, when an enemy hits one ally within 5 squares of you, you grant that ally a power bonus equal to your Wisdom modifier to the defense targeted by the triggering enemy until the end of that enemy&apos;s turn.
+
+In addition, you can use Charisma instead of Dexterity or Strength when making ranged basic attacks.
+   </RulesElement>
+   
+<!--Binder-->
+   
+   <AppendNodes name="Binder" type="Grants" internal-id="ID_INTERNAL_GRANTS_BINDER" source="Player Essentials: Heroes of Shadow">
+	<rules>
+		<grant name="ID_KDM_CLASS_FEATURE_BINDER'S_BANE" type="Class Feature" />
+		<grant name="ID_INTERNAL_COUNTSASFEATURE_WARLOCK&apos;S_CURSE" type="CountsAsFeature" />
+	</rules>
+	</AppendNodes>
+
+	<RulesElement name="Binder's Bane" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_BINDER'S_BANE" source="KDM" >
+	<!--Idea by Spinecracker-->
+		<Category> 1 </Category>
+		  <specific name="Short Description"> Gain the Binder's Bane power </specific>
+		  <specific name="_CS_ShortDescription"> @ </specific>
+		  <specific name="Level"> 1 </specific>
+		  <rules>
+			<grant name="ID_KDM_POWER_BINDER'S_BANE" type="Power" />
+		  </rules>
+	A Binder learns to harness the fell energy surrounding her targets so that she can redirect this magical energy into the spells she uses against her hapless enemies, sustaining negative effects she places on them while aiding her allies in applying their own devious tactics to the very same target.  You have this feature in place of the Warlock's Curse feature used as described in the Player's Handbook, but you still meet the prerequiste of Warlock's Curse for the purposes of aquiring feats and paragon paths.
+
+	Once per turn as a minor action, you can place a Binder's Bane on the enemy nearest to you that you can see. A bane-inflicted enemy is more likely to remain hindered or punished by you and your allies' attacks.  Each enemy afflicted by a Binder's Bane takes a -2 penalty to all saving throws. In addition, once per turn as a minor action you can designate a creature you can see that you have applied a bane to. If you do so, you can change a single effect on that creature so that if it the effect would fade at the end of your turn, that effect now fades if the creature succeeds in a saving throw at the end of your turn. Otherwise, the effect persists until the end of your next turn instead and you are free to attempt the effect again during that and any other subsequent turns.
+
+	A Binder's Bane remains in effect until the end of the encounter or until the bane-inflicted enemy drops to 0 hitpoints or fewer.
+
+	You can place a Binder's Bane on multiple targets over the course of an encounter; each bane requires the use of a minor action. You can't place a Binder's Bane on a creature that is already affected by your or another character's Warlock's Curse or Binder's Bane.
+	</RulesElement>
+
+	<RulesElement name="Binder's Bane" type="Power" internal-id="ID_KDM_POWER_BINDER'S_BANE" source="KDM" >
+	<!--Idea by Spinecracker-->
+	  <Category> ID_KDM_CLASS_FEATURE_BINDER'S_BANE,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		  <Prereqs> Unselectable </Prereqs>
+		  <specific name="Power Usage"> At-Will </specific>
+		  <specific name="_SkillPower" />
+		  <specific name="Display"> Binder's Bane Power </specific>
+		  <specific name="Keywords" />
+		  <specific name="Action Type"> Minor Action </specific>
+		  <specific name="Attack Type" />
+		  <specific name="Effect"> You place a Binder's Bane on the enemy nearest to you that you can see. Each enemy afflicted by a Binder's Bane takes a -2 penalty to all saving throws.
+
+		  In addition, once per round as a free action you can designate a creature you can see that you have applied a bane to. That creature makes a saving throw. If it fails, one effect on that creature that would fade at the end of your turn instead fades at the end of your next turn. Otherwise, the effect fades at the end of your turn as normal.
+
+	A Binder's Bane remains in effect until the end of the encounter or until the bane-afflicted enemy drops to 0 hit points or fewer.
+
+	You can place a Binder's Bane on multiple targets over the course of an encounter; each bane requires the use of a minor action. You can't place a Binder's Bane on a creature that is already affected by your or another character's Binder's Bane. </specific>
+		  <specific name="_Associated Feats" />
+		  <specific name="_ParentFeature"> ID_KDM_CLASS_FEATURE_BINDER'S_BANE </specific>
+	</RulesElement>
+	
+<!--Cleric-->
+	
+	<RulesElement name="Channel Divinity" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_324" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Invoke a channel divinity class feature or other power; encounter. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1589|ID_FMP_POWER_14292" requires="ID_FMP_CLASS_2" />
+      <select type="Power" number="1" Category="ID_FMP_POWER_146|ID_KDM_POWER_TURN_FIENDS|ID_FMP_POWER_14293|ID_FMP_POWER_7885" requires="ID_FMP_CLASS_2" />
+      <grant name="ID_FMP_POWER_1746" type="Power" requires="ID_FMP_CLASS_4" />
+      <grant name="ID_FMP_POWER_1747" type="Power" requires="ID_FMP_CLASS_4" />
+      <grant name="ID_FMP_POWER_5330" type="Power" requires="ID_FMP_CLASS_129" />
+      <grant name="ID_FMP_POWER_5331" type="Power" requires="ID_FMP_CLASS_129" />
+      <grant name="ID_FMP_POWER_5186" type="Power" requires="ID_FMP_CLASS_127" />
+    </rules>
+Once per encounter you can invoke divine power, filling yourself with the might of your patron deity. With the divine might you invoke you can wield special powers. You can also learn other uses for this feature; for instance, the divinity feats grant characters with access to the Channel Divinity class feature the ability to use additional special powers.
+Regardless of how many different uses for Channel Divinity you know, you can use only one such ability per encounter. The special ability or power you invoke works just like your other powers.
+   </RulesElement>
+   
+<!--Druid-->
+	
+   <RulesElement name="Primal Guardian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1121" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description"> When you hit a creature with a melee beast form attack, you mark that creature until the end of your next turn. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+When you hit a creature with a melee attack while in beast form, you mark that creature until the end of your next turn.
+	  
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
+   
+   <RulesElement name="Primal Predator" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1122" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description"> While not wearing heavy armor, gain +1 speed; in beast form, shift as minor action </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="Speed" value="+1" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you gain a +1 bonus to your speed.
+In addition, while you are in beast form, you can shift 1 square as a minor action.
+   </RulesElement>
+   
+   <RulesElement name="Primal Swarm" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1980" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+		 <statadd name="resist:melee" value="+ABILITYMOD(Constitution)" condition="while in beast form" />
+      </rules>
+While you are in beast form and not wearing heavy armor, melee attacks and ranged attacks deal less damage to you. When you take damage from either type of attack, the damage is reduced by your Constitution modifier.
+
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
+   
+<!--Fighter-->
+   
+	<AppendNodes name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" source="Core">
+		<Category> ID_FMP_CLASS_3 </Category>
+	</AppendNodes>
+	
+	<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+		<rules>
+			<modify name="Fighter" type="Class" field="Class Skills" value="Athletics (Str), Endurance (Con), Heal (Wis), Intimidate (Cha), Perception (Wis), Streetwise (Cha)" />
+		</rules>
+	</AppendNodes>
+	
+<!--Mage-->
+	
+	<RulesElement name="Necromancy Master" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3743" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+    <Prereqs> Necromancy Expert </Prereqs>
+    <Category> ID_FMP_CLASS_FEATURE_2872,10 </Category>
+    <Flavor> Your concentration on necromantic power increases the potency of your necrotic attacks. They bite deeply, ignoring attempts to blunt them. </Flavor>
+    <specific name="Short Description"> Your powers ignore necrotic resistance and immunity </specific>
+    <specific name="Level"> 10 </specific>
+Your arcane necromancy attack powers ignore necrotic resistance and immunity.
+	</RulesElement>
+	
+<!--Paladin-->
+	
+	<RulesElement name="Paladin" type="Class" internal-id="ID_FMP_CLASS_4" source="Player&apos;s Handbook" revision-date="8/27/2010 12:39:55 PM" >
+      <Flavor> "I am the righteous shield of Moradin and a sword in his mighty hand! I fear no evil!" </Flavor>
+      <specific name="Key Abilities"> Strength, Charisma, Wisdom </specific>
+      <specific name="Implements"> Holy Symbol </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; heavy shields, light shields </specific>
+      <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged </specific>
+      <specific name="Bonus to Defense"> +1 Fortitude, +1 Reflex, +1 Will </specific>
+      <specific name="Hit Points at 1st Level"> 15+ Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 6 </specific>
+      <specific name="Healing Surges"> 10+ Constitution Modifier </specific>
+      <specific name="Trained Skills"> Religion. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+      <specific name="Class Skills"> Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int) </specific>
+      <specific name="Build Options"> Ardent Paladin, Avenging Paladin, Protecting Paladin, Virtuous Paladin </specific>
+      <specific name="_PARSED_CLASS_FEATURE"> Channel Divinity, Divine Challenge, Lay on Hands </specific>
+      <specific name="Role"> Defender. You are extremely durable, with high hit points and the ability to wear the heaviest armor. You can issue bold challenges to foes and compel them to fight you rather than your allies. </specific>
+      <specific name="Power Source"> Divine. You are a divine warrior, a crusader and protector of your faith. </specific>
+      <specific name="Creating"> Paladins rely on Strength, Charisma, and Wisdom for most of their key abilities and powers. Constitution is useful as well, although no paladin powers are specifically based on Constitution. </specific>
+      <specific name="Class Features"> Your armor, your shield, and your weapon are the most important tools of your trade. In addition, you have the following class features. Your lay on hands class feature can be replaced by the ardent vow or the virtue&apos;s touch class feature. </specific>
+      <specific name="Supplemental"> DIVINE SANCTION
+Many new paladin powers and some of the new feats in this book subject a target to your divine sanction. Being subject to it means the target is marked by you for a duration specified in the description of the power or feat. Unless otherwise noted, the mark ends before the specified duration if someone else marks the target.
+Until the mark ends, the target takes radiant damage equal to 5 + your Charisma modifier the first time each round it makes an attack that doesn&apos;t include you as a target. The damage increases to 10 + your Charisma modifier at 11th level and 15 + your Charisma modifier at 21st level.
+Divine sanction is meant to complement divine challenge. You can use divine challenge to mark one creature and use divine sanction to mark others. Divine sanction has fewer restrictions than divine challenge so that you can easily use the two in concert.
+
+
+PALADINS AND DEITIES
+As fervent crusaders in their chosen cause, paladins must choose a deity. Paladins choose a specific faith to serve, as well as an alignment. You must choose an alignment identical to the alignment of your patron deity; a paladin of a good deity must be good, a paladin of a lawful good deity must be lawful good, and a paladin of an unaligned deity must be unaligned. Evil and chaotic evil paladins do exist in the world, but they are almost always villains, not player characters.
+	Paladins are not granted their powers directly by their deity, but instead through various rites performed when they first become paladins. Most of these rites involve days of prayer, vigils, tests and trials, and ritual purification followed by a knighting ceremony, but each faith has its own methods. This ceremony of investiture gives a paladin the ability to wield divine powers. Once initiated, the paladin is a paladin forevermore. How justly, honorably, or compassionately the paladin wields those powers from that day forward is up to him, and paladins who stray too far from the tenets of their faith are punished by other members of the faithful.
+
+Good, Lawful Good, and Unaligned Deities
+&lt;table&gt;Deity	Alignment	Areas of Influence
+Avandra	Good	Change, luck, trade, travel
+Bahamut	Lawful Good	Justice, honor, nobility, protection
+Corellon	Unaligned	Arcane magic, spring, beauty, the arts
+Erathis	Unaligned	Civilization, invention, laws
+Ioun	Unaligned	Knowledge, prophecy, skill
+Kord	Unaligned	Storms, strength, battle
+Melora	Unaligned	Wilderness, sea
+Moradin	Lawful Good	Creation, artisans, family
+Pelor	Good	Sun, summer, agriculture, time
+Raven Queen	Unaligned	Death, fate, winter
+Sehanine	Unaligned	Trickery, moon, love, autumn&lt;/table&gt; </specific>
+      <specific name="Implement"> Paladins make use of holy symbols to help channel and direct their divine powers. A paladin wearing or holding a magic holy symbol can add its enhancement bonus to attack rolls and damage rolls to powers that have the implement keyword. Without a holy symbol, a paladin can still use these powers, but he or she doesn&apos;t gain the bonus provided by the magic implement.
+	A holy avenger, a special magic weapon, can also be used as an implement for paladin powers, as well as paladin paragon path powers. These weapons are highly sought after by paladins. </specific>
+      <specific name="Powers"> Paladin powers are called prayers. In battle, paladins rely on their deities to strengthen their sword-arms and fortify them against the attacks of their enemies. </specific>
+      <specific name="Power Name"> Prayers </specific>
+      <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options" />
+      <specific name="Short Description"> A holy warrior devoted to a higher power, you smite enemies of your faith with divine power. </specific>
+      <specific name="_ParentClass" />
+      <specific name="Trait Package" />
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_PALADIN" type="Grants" />
+         <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_4" />
+         <statadd name="_LEVEL-ONE-HPS" value="+15" />
+         <statadd name="_PER-LEVEL-HPS" value="+6" />
+         <statadd name="Healing Surges" value="+10" />
+         <select type="Build" number="1" Category="$$CLASS" optional="true" />
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+         <statadd name="Will Defense Class Bonus" value="+1" />
+         <select type="Skill Training" number="3" Category="ID_FMP_CLASS_4" />
+      </rules>
+Paladins are indomitable warriors who&apos;ve pledged their prowess to something greater than themselves. Paladins smite enemies with divine authority, bolster the courage of nearby companions, and radiate as if a beacon of inextinguishable hope. Paladins are transfigured on the field of battle, exemplars of divine ethos in action.
+	To you is given the responsibility to unflinchingly stand before an enemy&apos;s charge, smiting them with your sword while protecting your allies with your sacrifice. Where others waver and wonder, your motivation is pure and simple, and your devotion is your strength. Where others scheme and steal, you take the high road, refusing to allow the illusions of temptation to dissuade you from your obligations.
+	Take up your blessed sword and sanctified shield brave warrior, and charge forward to hallowed glory!
+   </RulesElement>
+   
+<!--Rogue-->
+   
+   <RulesElement name="Sneak Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_322" source="Player&apos;s Handbook" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <Flavor> As a rogue, you fight fair only when you have no other choice. You are at your best when you have the advantage over an enemy, such as when you and an ally attack the foe from opposite sides or you deliver a surprise assault. </Flavor>
+      <specific name="Short Description"> Once per turn, if you have combat advantage and hit with a crossbow, light blade,shortbow, or sling, deal extra damage. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Usage"> turn </specific>
+      <rules>
+         <statadd name="Sneak Attack Dice" value="+2" />
+         <statadd name="Sneak Attack Dice" value="+1" requires="Paragon Tier" />
+         <statadd name="Sneak Attack Dice" value="+2" requires="Epic Tier" />
+		 <textstring name="implement:damage" value="+Sneak Attack damage" condition="once per turn (Sneak Attack)" />
+         <modify name="this" Field="Usage" value="turn" />
+      </rules>
+When you make an attack with a light blade, a hand crossbow, a shortbow, or a sling and hit an enemy granting combat advantage to you, that enemy takes extra damage based on your level (see the Sneak Attack table). You can deal this extra damage only once per turn.
+
+SNEAK ATTACK
+&lt;table&gt;Level	Extra Damage
+1-10	2d6
+11-20	3d6
+21-30	5d6&lt;/table&gt;
+   </RulesElement>
+   
+   <RulesElement name="Ruthless Ruffian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1031" source="Martial Power" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_547,1 </Category>
+      <specific name="Short Description"> Proficient with club, mace; use with Sneak Attack or rogue powers requiring light blade; +1 attack and add Str mod to damage with club or mace </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" type="Proficiency" />
+         <textstring name="ID_FMP_CLASS_6-Light Blade" value="Club" />
+         <textstring name="ID_FMP_CLASS_6-Light Blade" value="Mace" />
+         <textstring name="Sneak Attack Weapons" value="Club" />
+         <textstring name="Sneak Attack Weapons" value="Mace" />
+         <statadd name="club:damage" value="+Strength modifier" type="Ruthless Ruffian" />
+         <statadd name="mace:damage" value="+Strength modifier" type="Ruthless Ruffian" />/>
+         <statadd name="club:attack" value="+1" type="Ruthless Ruffian" />
+         <statadd name="mace:attack" value="+1" type="Ruthless Ruffian" />
+      </rules>
+You are proficient with the club and the mace, and you can use those weapons with Sneak Attack or any rogue power or rogue paragon path power that normally requires a light blade. You also gain a +1 bonus to attack rolls and a bonus to damage rolls equal to your Strength modifier when using a club or mace.
+   </RulesElement>
+   
+<!--Scout-->
+	
+	<RulesElement name="Spinning Axe Mastery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432133" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+  <Category> ID_DBB_CLASS_FEATURE_123443211,1 </Category>
+  <Flavor> The axe is a brutal weapon that you trust to deal consistent damage. Scouts who face off against the largest, toughest enemies often favor the axe fighting style. </Flavor>
+  <specific name="Short Description"> You gain a +2/4/6 bonus to weapon damage rolls while you wield an axe in your off hand. </specific>
+  <specific name="_CS_ShortDescription"> Gain +2/4/6 damage wielding off-hand axe </specific>
+  <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe" />
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe, Paragon Tier" />
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe, Epic Tier" />
+      <statadd name="two-weapon,weapon:damage" value="+Spinning Axe" requires="WearingOffHandAxe" />
+    </rules>  
+You gain a +2 bonus to weapon damage rolls while you wield an axe in your off hand. This bonus increases to +4 at 11th level and +6 at 21st level.
+</RulesElement>
+
+<!--Shaman-->
+   
+   <RulesElement name="Protector Spirit" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1251" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_855,1 </Category>
+      <specific name="Short Description"> Ally adjacent to spirit companion gains hit points equal to your Con mod with second wind or your healing power </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_5389,ID_FMP_POWER_6521 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_147 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_5389,ID_FMP_POWER_6521 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <grant name="ID_FMP_POWER_5389" type="Power" />
+         <grant name="ID_FMP_POWER_6521" type="Power" />
+      </rules>
+You draw on the strength of the bear or a similar protective spirit to defend and bolster your allies.
+Spirit Boon: Any ally adjacent to your spirit companion regains additional hit points equal to your Constitution modifier when he or she uses second wind or when you use a healing power on him or her.
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+Spirit&apos;s Shield: You gain the spirit&apos;s shield power, an attack you make through your spirit companion as an opportunity action.
+At-Will Attack Power: You gain the protecting strike power. You choose a second at-will attack power as normal.
+   </RulesElement>
+   
+   <RulesElement name="World Speaker Spirit" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2004" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_855,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_9733,ID_FMP_POWER_9736 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_147 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9733,ID_FMP_POWER_9736 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <grant name="ID_FMP_POWER_9733" type="Power" />
+         <grant name="ID_FMP_POWER_9736" type="Power" />
+      </rules>
+Spirit Boon: Any ally who provokes an opportunity attack by entering or leaving a square adjacent to your spirit companion gains a bonus to all defenses against that attack. The bonus equals your Constitution modifier.
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+World Speaker&apos;s Command: You gain the world speaker&apos;s command power, an attack you make through your spirit companion as an opportunity action.
+At-Will Attack Power: You gain the voice of battle power. You choose a second 1st-level at-will attack power as normal.
+   </RulesElement>
+   
+<!--Swordmage-->
+   
+   <RulesElement name="Swordbond" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_630" source="Forgotten Realms Player&apos;s Guide,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Bond with a blade (1 hr.); minor action to call to hand; fix as standard. </specific>
+      <specific name="Level"> 1 </specific>
+By spending 1 hour of meditation with a chosen light or heavy blade, you forge a special bond with the weapon. As a minor action, you can call your bonded weapon to your hand if you have line of effect to it.
+
+You can forge a bond with a different blade using the same meditation process (for instance, if you acquire a new blade that has magical abilities). If you forge a bond with a different blade, the old bond dissipates.
+
+If your bonded weapon is broken or damaged, you can recreate the weapon from a fragment as a standard action. (This process automatically destroys any other fragments of the weapon in existence, so you can&apos;t use it to create multiple copies of a broken weapon.)
+   </RulesElement>
+   
+<!--Vampire-->
+
+	<RulesElement name="Vampiric Reflexes" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3615" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+	  <Category> 1 </Category>
+	  <Flavor> You move with an uncanny grace that makes it difficult for foes to strike you. </Flavor>
+	  <specific name="Short Description"> Gain a +2 bonus to AC while you are wearing cloth armor or no armor and aren't using a shield </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="_CLASSNAME"> Vampire </specific>
+	  <rules>
+		<statadd name="Vampiric Reflexes" value="+2" not-wearing="armor:shield" />
+		<statadd name="AC" value="+Vampiric Reflexes" wearing="armor:cloth" />
+		<statadd name="AC" value="+Vampiric Reflexes" not-wearing="armor:" />
+	  </rules>
+	You gain a +2 bonus to AC while you are wearing cloth armor or no armor and aren't using a shield.
+	</RulesElement>
+
+<!--Warlock-->
+   
+	<AppendNodes name="Stealth" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STEALTH" source="Core">
+		<Category> ID_FMP_CLASS_7 </Category>
+	</AppendNodes>
+	
+	<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+		<rules>
+			<modify name="Warlock" type="Class" field="Class Skills" value="Arcana (Int), Bluff (Cha), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int), Stealth (Dex), Streetwise (Cha), Thievery (Dex)" />
+		</rules>
+	</AppendNodes>
+	
+<!--Wizard-->
+   
+   <RulesElement name="Missile Choice" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3037" source="House Rules Supplement" revision-date="3/7/2011 10:30:00 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain your missile option </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463, ID_FMP_POWER_10144 </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3037" />
+      </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+
+	<RulesElement name="Magic Missile" type="Class Feature" internal-id="ID_WOG_HR_CLASS_FEATURE_1" source="Player Essentials: Heroes of the Fallen Lands" revision-date="3/7/2011 10:30:00 PM">
+	  <Category> ID_FMP_CLASS_FEATURE_3037,1 </Category>
+	  <specific name="Short Description"> Gain the Magic Missile power. </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="Powers"> ID_FMP_POWER_463 </specific>
+	  <specific name="type"> At-Will </specific>
+	  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_463 </specific>
+	  <specific name="_CS_ShortDescription"> Gain the Magic Missile power </specific>
+	  <rules>
+		 <grant name="ID_FMP_POWER_463" type="Power" />
+	  </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+
+	<RulesElement name="Arcane Bolt" type="Class Feature" internal-id="ID_WOG_HR_CLASS_FEATURE_2" source="Player's Handbook" revision-date="3/7/2011 10:30:00 PM">
+	  <Category> ID_FMP_CLASS_FEATURE_3037,1 </Category>
+	  <specific name="Short Description"> Gain the Arcane Bolt power. </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="Powers"> ID_FMP_POWER_10144 </specific>
+	  <specific name="type"> At-Will </specific>
+	  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_10144 </specific>
+	  <specific name="_CS_ShortDescription"> Gain the Arcane Bolt power </specific>
+	  <rules>
+		 <grant name="ID_FMP_POWER_10144" type="Power" />
+	  </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+   
+   <AppendNodes name="Wizard" type="Grants" internal-id="ID_INTERNAL_GRANTS_WIZARD" source="Player&apos;s Handbook" >
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3037" type="Class Feature" />
+		</rules>
+   </AppendNodes>
+   
+</D20Rules>

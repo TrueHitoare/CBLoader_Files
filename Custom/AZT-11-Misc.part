@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 25-March-2016
+  Updated 19-November-2016 Added automatic update info
+	</Changelog>
+
+  <UpdateInfo>
+    <Version>1.0</Version>
+    <Filename>AZT-11-Misc.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-11-Misc.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-11-Misc.txt</VersionAddress>
+  </UpdateInfo>
+  
+	<RulesElement name="Feline" type="Language" internal-id="ID_AZT_LANGUAGE_01" source="Sabre">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Feline is the language of Catfolk.
+	</RulesElement>
+	<RulesElement name="Mer" type="Language" internal-id="ID_AZT_LANGUAGE_02" source="Sabre">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Mer is the language of many aquatic races, including Mer, Mermaids, and Sharkfolk.
+	</RulesElement>
+</D20Rules>

@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.1</Version>
+    <Filename>TER-08-Zeitgeist.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-08-Zeitgeist.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-08-Zeitgeist.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 07-November-2011
+</Changelog>
+
+	<!-- Source -->
+	<RulesElement name="Zeitgeist" type="source" internal-id="ID_MSR_ZEITGEIST" source="Core">
+		<specific name="IsBeta" />
+		<specific name="URL">http://www.enworld.org/ap/zeitgeist.html</specific>
+		<specific name="Release Date"> 7/27/2011 </specific>
+	</RulesElement>
+
+<!-- Weapons -->
+
+   <RulesElement name="Weapon Proficiency (Pistol)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PISTOL)" source="Core" >
+      <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_RANGED </Category>
+   </RulesElement>
+   <RulesElement name="Weapon Proficiency (Carbine)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARBINE)" source="Core" >
+      <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_RANGED </Category>
+   </RulesElement>
+   <RulesElement name="Weapon Proficiency (Musket)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MUSKET)" source="Core" >
+      <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_RANGED </Category>
+   </RulesElement>
+   <RulesElement name="Weapon Proficiency (Rifle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RIFLE)" source="Core" >
+      <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_RANGED </Category>
+   </RulesElement>
+   <RulesElement name="Weapon Proficiency (Bayonet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BAYONET)" source="Core" >
+      <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(POLEARM),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SPEAR),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_RANGED </Category>
+   </RulesElement>
+   <RulesElement name="Weapon Group (Firearms)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS)" source="Zeitgeist" >
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PISTOL)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARBINE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MUSKET)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RIFLE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BAYONET)" type="Proficiency" />
+      </rules>
+   </RulesElement>
+   <AppendNodes name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" source="Core" >
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PISTOL)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARBINE)" type="Proficiency" />
+      </rules>
+   </AppendNodes>
+   <RulesElement name="Implement Proficiency (Pistol)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PISTOL)" source="Zeitgeist" >
+      <Category> ID_FMP_CATEGORY_25 </Category>
+   </RulesElement>
+   <RulesElement name="Implement Proficiency (Carbine)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CARBINE)" source="Zeitgeist" >
+      <Category> ID_FMP_CATEGORY_25 </Category>
+   </RulesElement>
+   <RulesElement name="Implement Proficiency (Musket)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MUSKET)" source="Zeitgeist" >
+      <Category> ID_FMP_CATEGORY_25 </Category>
+   </RulesElement>
+   <RulesElement name="Implement Proficiency (Rifle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RIFLE)" source="Zeitgeist" >
+      <Category> ID_FMP_CATEGORY_25 </Category>
+   </RulesElement>
+   <RulesElement name="Implement Proficiency (Bayonet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BAYONET)" source="Zeitgeist" >
+      <Category> ID_FMP_CATEGORY_25 </Category>
+   </RulesElement>
+   <RulesElement name="Pistol" type="Weapon" internal-id="ID_FMP_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PISTOL)" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>  
+      <specific name="Full Text"> Pistol
+Cost: 25 gp 
+Damage: 1d6
+Proficient: +2 Range: 10/20
+Weight: 2 lb.
+
+Pistols are simple one-handed firearms.
+
+Properties:
+Load Standard (Ranged weapons fire metal ammunition by using explosive alchemicals and take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The firearm is "load standard," which means it requires a standard action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+Brutal 2 (A brutal weapon&apos;s minimum damage is higher than that of a normal weapon. When rolling the weapon&apos;s damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon&apos;s brutal value, and then use the new value.).
+High Crit (A high crit weapon deals more damage when you score a critical hit with it. A critical hit deals maximum weapon damage and an extra 1[W] at 1st thru 10th levels, an extra 2[W] at 11th thru 20th levels, and an extra 3[W] at 21st thru 30th levels. This extra damage is in addition to any critical damage the weapon supplies if it is a magic weapon.)
+
+Group:
+Firearm (Essentially a small metal tube mounted on a stock and equipped with a mechanical trigger, a firearm is a point-and-shoot projectile weapon. </specific>
+      <specific name="Weight"> 2 </specific>
+      <specific name="Gold"> 25 </specific>
+      <specific name="Range"> 10/20 </specific>
+      <specific name="Damage"> 1d6 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="Weapon Category"> Simple Ranged </specific>
+      <specific name="Hands Required"> One-Handed </specific>
+      <specific name="Item Slot"> One-hand </specific>
+      <specific name="Group"> Firearm, Crossbow </specific>
+      <specific name="Properties"> Load Standard, Brutal 2, High Crit, Off-Hand </specific>
+	  <specific name="Proficient As"> Hand Crossbow </specific>
+   </RulesElement>
+   <RulesElement name="Carbine" type="Weapon" internal-id="ID_FMP_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARBINE)" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_PROPERTY_10,ID_FMP_WEAPON_PROPERTY_4,ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+      <specific name="Full Text"> Carbine
+Cost: 25 gp 
+Damage: 1d8
+Proficient: +2
+Range: 15/30
+Weight: 4 lb.
+
+Carbines are simple two-handed firearms.
+
+Properties:
+Load Standard (Ranged weapons fire metal ammunition by using explosive alchemicals and take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The firearm is "load standard," which means it requires a standard action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+Brutal 2 (A brutal weapon&apos;s minimum damage is higher than that of a normal weapon. When rolling the weapon&apos;s damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon&apos;s brutal value, and then use the new value.).
+High Crit (A high crit weapon deals more damage when you score a critical hit with it. A critical hit deals maximum weapon damage and an extra 1[W] at 1st thru 10th levels, an extra 2[W] at 11th thru 20th levels, and an extra 3[W] at 21st thru 30th levels. This extra damage is in addition to any critical damage the weapon supplies if it is a magic weapon.)
+
+Group:
+Firearm (Essentially a small metal tube mounted on a stock and equipped with a mechanical trigger, a firearm is a point-and-shoot projectile weapon. </specific>
+      <specific name="Weight"> 4 </specific>
+      <specific name="Gold"> 25 </specific>
+      <specific name="Range"> 15/30 </specific>
+      <specific name="Damage"> 1d8 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="Weapon Category"> Simple Ranged </specific>
+      <specific name="Hands Required"> Two-Handed </specific>
+      <specific name="Item Slot"> Two-Hands </specific>
+      <specific name="Group"> Firearm, Crossbow </specific>
+      <specific name="Properties"> Load Standard, Brutal 2, High Crit </specific>
+	  <specific name="Proficient As"> Crossbow </specific>
+   </RulesElement>
+   <RulesElement name="Musket" type="Weapon" internal-id="ID_FMP_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MUSKET)" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_PROPERTY_10,ID_FMP_WEAPON_PROPERTY_4,ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+      <specific name="Full Text"> Musket
+Cost: 30 gp
+Damage: 1d10
+Proficient: +3
+Range: 20/40 
+Weight: 6 lb.
+
+Muskets are simple two-handed firearms.
+
+Properties:
+Load Standard (Ranged weapons fire metal ammunition by using explosive alchemicals and take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The firearm is "load standard," which means it requires a standard action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+Brutal 2 (A brutal weapon&apos;s minimum damage is higher than that of a normal weapon. When rolling the weapon&apos;s damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon&apos;s brutal value, and then use the new value.).
+High Crit (A high crit weapon deals more damage when you score a critical hit with it. A critical hit deals maximum weapon damage and an extra 1[W] at 1st thru 10th levels, an extra 2[W] at 11th thru 20th levels, and an extra 3[W] at 21st thru 30th levels. This extra damage is in addition to any critical damage the weapon supplies if it is a magic weapon.)
+
+Group:
+Firearm (Essentially a small metal tube mounted on a stock and equipped with a mechanical trigger, a firearm is a point-and-shoot projectile weapon. </specific>
+      <specific name="Weight"> 6 </specific>
+      <specific name="Gold"> 30 </specific>
+      <specific name="Range"> 20/40 </specific>
+      <specific name="Damage"> 1d10 </specific>
+      <specific name="Proficiency Bonus"> 3 </specific>
+      <specific name="Weapon Category"> Superior Ranged </specific>
+      <specific name="Hands Required"> Two-Handed </specific>
+      <specific name="Item Slot"> Two-Hands </specific>
+      <specific name="Group"> Firearm, Crossbow </specific>
+      <specific name="Properties"> Load Standard, Brutal 2, High Crit </specific>
+   </RulesElement>
+
+   <RulesElement name="Rifle" type="Weapon" internal-id="ID_FMP_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RIFLE)" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_PROPERTY_10,ID_FMP_WEAPON_PROPERTY_4,ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+      <specific name="Full Text"> Rifle
+Cost: 30 gp
+Damage: 1d10
+Proficient: +2
+Range: 20/40 
+Weight: 6 lb.
+
+A rifle is an improved version of the carbine - with metal casings making for faster reloading and with a grooved barrel imparting some small additional velocity, for additional distance and damage, to the bullet.
+
+Properties:
+Load Minor (Ranged weapons fire metal ammunition by using explosive alchemicals and take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The firearm is "load standard," which means it requires a standard action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+Brutal 2 (A brutal weapon&apos;s minimum damage is higher than that of a normal weapon. When rolling the weapon&apos;s damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon&apos;s brutal value, and then use the new value.).
+High Crit (A high crit weapon deals more damage when you score a critical hit with it. A critical hit deals maximum weapon damage and an extra 1[W] at 1st thru 10th levels, an extra 2[W] at 11th thru 20th levels, and an extra 3[W] at 21st thru 30th levels. This extra damage is in addition to any critical damage the weapon supplies if it is a magic weapon.)
+
+Group:
+Firearm (Essentially a small metal tube mounted on a stock and equipped with a mechanical trigger, a firearm is a point-and-shoot projectile weapon. </specific>
+      <specific name="Weight"> 5 </specific>
+      <specific name="Gold"> 30 </specific>
+      <specific name="Range"> 25/50 </specific>
+      <specific name="Damage"> 1d10 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="Weapon Category"> Superior Ranged </specific>
+      <specific name="Hands Required"> Two-Handed </specific>
+      <specific name="Item Slot"> Two-Hands </specific>
+      <specific name="Group"> Firearm, Crossbow </specific>
+      <specific name="Properties"> Load Minor, Brutal 2, High Crit </specific>
+   </RulesElement>
+   <RulesElement name="Bayonet" type="Weapon" internal-id="TER_WEAPON_03" source="Zeitgeist Custom" revision-date="8/27/2010 1:16:17 PM">
+      <Category> ID_FMP_WEAPON_PROPERTY_13,ID_FMP_WEAPON_GROUP_2,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+      <specific name="Full Text"> Bayonet (Blade)
+Superior double melee weapon
+Cost: 45 gp
+Damage: 1d10
+Proficient: +2
+Range: -
+Weight: 9 lb.
+
+A terror to behold, the bayonet combines a carbine firearm with a mounted blade, allowing the wielder to use it as a spear.
+
+Properties: 
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy.).
+
+Group: 
+Polearm (Polearms are weapons mounted at the end of long hafts. All polearms also fall into another category of weapon, usually axe, heavy blade, or spear. Polearms are reach weapons.).
+Spear (Consisting of a stabbing head on the end of a long shaft, a spear is great for lunging attacks.). </specific>
+      <specific name="Weight"> 9 </specific>
+      <specific name="Gold"> 45 </specific>
+      <specific name="Range" />
+      <specific name="Damage"> 1d10 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="_Primary End" />
+      <specific name="Weapon Category"> Superior Melee </specific>
+      <specific name="Hands Required"> One-Handed </specific>
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Group"> Polearm, Spear </specific>
+      <specific name="Properties"> Reach, Stout </specific>
+      <specific name="_Secondary End"> TER_WEAPON_04 </specific>
+A terror to behold, the bayonet combines a carbine firearm with a mounted blade, allowing the wielder to use it as a spear.
+   </RulesElement>
+   <RulesElement name="Bayonet (Carbine)" type="Weapon" internal-id="TER_WEAPON_04" source="Zeitgeist Custom" revision-date="8/27/2010 1:16:19 PM">
+      <Category> ID_FMP_WEAPON_PROPERTY_13,ID_FMP_WEAPON_PROPERTY_10,ID_FMP_WEAPON_PROPERTY_4,ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS),ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_ONE-HANDED </Category>
+      <specific name="Full Text"> Bayonet (Carbine)
+Superior double ranged weapon
+
+Damage: 1d8
+Proficient: +3
+Range: 15/30
+
+Properties: 
+Load Standard (Ranged weapons fire metal ammunition by using explosive alchemicals and take some time to load. When a weapon shows "load free" on the weapon table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The firearm is "load standard," which means it requires a standard action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power.).
+Brutal 2 (A brutal weapon's minimum damage is higher than that of a normal weapon. When rolling the weapon's damage, reroll any die that displays a value equal to or lower than the brutal value given for the weapon. Reroll the die until the value shown exceeds the weapon's brutal value, and then use the new value.).
+High Crit (A high crit weapon deals more damage when you score a critical hit with it. A critical hit deals maximum weapon damage and an extra 1[W] at 1st thru 10th levels, an extra 2[W] at 11th thru 20th levels, and an extra 3[W] at 21st thru 30th levels. This extra damage is in addition to any critical damage the weapon supplies if it is a magic weapon.)
+
+Group: 
+Firearm (Essentially a small metal tube mounted on a stock and equipped with a mechanical trigger, a firearm is a point-and-shoot projectile weapon. </specific>
+      <specific name="Weight" />
+      <specific name="Gold" />
+      <specific name="Range" />
+      <specific name="Damage"> 1d8 </specific>
+      <specific name="Proficiency Bonus"> 3 </specific>
+      <specific name="_Primary End"> ID_FMP_WEAPON_68 </specific>
+      <specific name="Weapon Category"> Superior Ranged </specific>
+      <specific name="Hands Required"> One-Handed </specific>
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Group"> Crossbow, Firearm </specific>
+      <specific name="Properties"> Off-hand </specific>
+      <specific name="InternalOnly"> 1 </specific>
+   </RulesElement>
+
+	<!-- Languages and Deities -->
+	<RulesElement name="Risuri" type="Language" internal-id="ID_FMP_LANGUAGE_1" source="Zeitgeist" revision-date="8/30/2010 3:41:50 PM" >
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Risur speaks Primordial, the language derived from the ancient speech of the original fey titans who ruled the land. Educated people of Risur often speak Common as well.
+	</RulesElement>
+	<RulesElement name="Common" type="Language" internal-id="ZEIT_LANGUAGE_1" source="Zeitgeist" revision-date="8/30/2010 3:41:50 PM" >
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Common, which served a role in Lanjyr similar to Latin in Europe, is spoken in Ber, Crisillyir, and Danor, albeit with some local variations.
+	</RulesElement>
+
+   <RulesElement name="Risuri Old Faith" type="Deity" internal-id="ZEIT_DEITY_1" source="Zeitgeist" revision-date="8/27/2010 12:28:59 PM" >
+		<Prereqs> !Deity of the Arcana domain,!Deity of the Civilization domain,!Deity of the Creation domain,!Deity of the Darkness domain,!Deity of the Death domain,!Deity of the Destruction domain,!Deity of the Earth domain,!Deity of the Fate domain,!Deity of the Hope domain,!Deity of the Justice domain,!Deity of the Knowledge domain,!Deity of the Life domain,!Deity of the Love domain,!Deity of the Madness domain,!Deity of the Moon domain,!Deity of the Poison domain,!Deity of the Protection domain,!Deity of the Sea domain,!Deity of the Skill domain,!Deity of the Storm domain,!Deity of the Strength domain,!Deity of the Strife domain,!Deity of the Sun domain,!Deity of the Torment domain,!Deity of the Trickery domain,!Deity of the Tyranny domain,!Deity of the Undeath domain,!Deity of the Vengeance domain,!Deity of the War domain,!Deity of the Wilderness domain,!Deity of the Winter domain </Prereqs>
+		<specific name="Alignment"> Good </specific>
+		<specific name="Domains"> ID_FMP_DOMAIN_2, ID_FMP_DOMAIN_10, ID_FMP_DOMAIN_16 </specific>
+		<rules>
+			<grant name="ID_FMP_DOMAIN_2" type="Domain" />
+			<grant name="ID_FMP_DOMAIN_10" type="Domain" />
+			<grant name="ID_FMP_DOMAIN_16" type="Domain" />
+		</rules>
+Risur's main religion is a mix of old human pantheism, elvish druidic rites, and reverence for local fey titans who slumber in the earth. Centuries ago many gave worship to the eladrin gods or even archfey of the Unseen Court, but such beliefs have faded since the fall of Elfaivar in the Second Victory.
+	</RulesElement>
+
+<!-- Themes (Add starting Powers)-->
+
+   <RulesElement name="Docker" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_11" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_2 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
+	  <specific name="Creating"> Bohemian working man artists and performers. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_DOCKERS_JANK </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_DOCKERS_JANK </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_DOCKERS_JANK" type="Power" />
+      </rules>
+Flint's industrial docks with their unusual conflux of peasant workers, educated engineers, and constantly arriving refugees from the wars in the border states between Danor and Drakr have in the past decade given birth to an unorthodox social movement. Graffiti artists brighten soot cloaked warehouses with colorful murals and boastful self-portraits. Dancers and musicians bolster moods in breezy bars, while amateur philosophers giddy on fey pepper entertain drunken teamsters withhumorous moral puzzles that often mock public figures.
+Occasionally these popular artists, called dockers, get it in their heads to start a riot or get a tad too precise with their criticism. The dockers and the city police have each taken their hits in these confrontations, and tensions grow higher with every accidental death, but for now Roland Stanfield, the city governor of Flint, seems to have a soft spot for these tepid anarchists. 
+Role: Leader
+
+Playing a Docker.
+The docker spirit is not limited just to those who perform in public, but extends to anyone who suffers through hard work and low wages, yet can still appreciate intelligent art for its sublime beauty. The worse conditions get for the workers in Flint, though, the more they turn to dockers for relief from their fatigue. When things get heated, every good docker needs to be able to handle himself in a scrap.
+Sometimes a docker gets in over his head, and with a little help from sympathetic bar owners or police officers he'll drop out of the scene and find a new, safer career. In this way, the docker movement has spread to pockets of the city slums and even out to the surrounding farmlands. One popular song on the docks even tells of a graffiti artist who fled to Crisillyir and is now painting cathedrals with subversive interpretations of the Clergy's doctrines
+
+Benefit: If you choose Docker as your character's theme, the party's Prestige with Flint starts at 2 instead of 1. See "Prestige," page 15. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+
+   <RulesElement name="Eschatologist" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_12" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_1 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_5 </specific>
+	  <specific name="Creating"> Philosopher devoted to the proper end of things. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_ICY_END </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_ICY_END </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_ICY_END" type="Power" />
+      </rules>
+The Heid Eschatol movement began among the dwarves of Drakr, after the scholar Vlendam Heid published a treatise on the myths of his nation and how they continued to influence modern perceptions. The book captured the culture's consciousness, particularly a section that used the legend of the Lost Riders to explain the Drakran tradition of defining civilizations and eras by how they end. In the three decades since its publication, Heid's "On the Proper Endings of Things" has given birth to a whole field of academic study devoted to finding the perfect way to end friendships and romances, business relationships, wars, serialized literature, and even one's own life.
+Heid's disciples refer to themselves as eschatologists, from the term for the study of the end of the world. Their popularity has only strengthened Drakr's existing obsession with apocalyptic prophecies and doomsaying, and has raised awareness of their beliefs in other nations. The Clergy, however, denies that the dwarven endtimes are near, and its agents take a dim view of Heid's followers.
+Role: Controller.
+
+Playing an Eschatologist.
+Dwarves from any nation likely feel some sympathy toward Heid Eschatol, and soldiers who fought in the wars in the border kingdoms between Drakr and Danor often saw enough horrors that when they came home they were comforted by the thought of an orderly judgment day. A handful of apocalyptic cults have sprung up, and increasingly their members are seen less as fringe nuts and more as just another religious sect. Only a few outside of Drakr actually believe in a literal imminent end of the world, with most adherents simply appreciating the comfort they can find by confronting death with reason instead of fear.
+Regardless of how a character was drawn to Heid's movement, he is likely to give regular thought to the future, especially to life's thresholds and endings. Every eschatologist regularly updates his will, and pays heed to his companions' desires in the event of their untimely yet unavoidable deaths. A few race toward death, but most are pragmatic and take exceptional precautions to forestall any accidental demise that might ruin their plans.
+
+Benefit: If you choose Eschatologist as your character's theme, the first time each encounter that you or one of your allies would die from a failed death saving throw, that character may choose to stabilize instead. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+
+   <RulesElement name="Gunsmith" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_13" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_3 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
+	  <specific name="Creating">  Designer and wielder of custom firearms. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_TWO_GUNS </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_TWO_GUNS </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_TWO_GUNS" type="Power" />
+         <modify name="Pistol" type="Weapon" Field="Properties" list-addition="Off-hand" />
+	 <modify name="Pistol" type="Weapon" Field="Item Slot" value="Off-hand" />
+	 <textstring name="Free Ritual" value="If you choose Gunsmith as your character's theme, you can perform the ritual enchant magic item in order to create firearms and firearm ammunition." />
+      </rules>
+Knowledge of fusils, the cylindrical weapons that use explosive alchemical reactions to propel bullets at deadly speeds has existed for centuries, but these weapons were considered inferior to existing magical attacks, which were more accurate and had less risk of accidental death. Only after the Great Malice did the Danoran military begin to refine and improve fusils. The latest innovations in these weapons, now commonly called "guns," have led to their spread into Risur and Drakr, where industrial production helps equip armies with firepower on par with a well-trained sorcerer.
+Firearms fascinate gunsmiths, who are not content simply to purchase and practice with guns. They tweak and tinker with their own refinements, and whenever two such craftsmen cross paths they bargain and deal for each other's secrets. Especially now that firearms have moved beyond the null magic lands of Danor, seemingly limitless possibilities have opened up for the development of weapons that mix spellcraft and chemistry. Flint's city governor Roland Stanfield is already planning a technological exposition where gunsmiths and other inventors can showcase their creations.
+Role: Striker.
+
+Playing a Gunsmith.
+Not all gunsmiths devote their combat training to wielding firearms; some just like to have the weapons for their aesthetic appeal, or to take advantage of the common man's fear of their power. More often, though, gunsmiths practice endlessly to improve their aim, and try to learn as many trick shots as possible to prove the superiority of their chosen killing device. Those with magical training often master rituals to enchant their pistols. One gunsmith, Lerema Kurtz, is said to be able to conjure a cannon from her petticoat pocket. 
+Many romanticize the deadly purity of guns, or decorate their weapons with baroque inlays and carvings. A few gunsmiths, however, take a bleaker view, rejecting any form of poetry. They just know guns are damned good at killing people, and that life's as good as worthless when a bullet costs less than a mug of beer.
+
+Benefit: If you choose Gunsmith as your character's theme, you can perform the ritual enchant magic item in order to create firearms and firearm ammunition. Additionally, you gain the following power at 1st level.  Additionally pistols gain the off-hand quality.
+   </RulesElement>
+   <RulesElement name="Martial Scientist" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_14" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_3 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
+	  <specific name="Creating"> Educated and analytical warrior. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_EXP_STRIKE </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_EXP_STRIKE </specific>
+      <rules>
+         <select type="Skill Training" number="1" Category="$$CLASS" requires="!History" />
+	 <grant name="ID_INTERNAL_SKILL_TRAINING_HISTORY" type="Skill Training" />
+      </rules>
+In the war academies of Danor, students speak of combat like a science. Their curriculum involves not merely practicing forms and maneuvers, but writing theses about renowned warriors, or crafting and defending theorems regarding the mechanics of swordplay. The normally reserved Danorans honor the graduates of these battle colleges like other nations honor great poets and sculptors. As those warriors have proven the efficacy of their innovative techniques, the sentiment has spread throughout Lanjyr, and other nations have founded similar schools. 
+Any brute can hurl a spear or hack through a ribcage, but students of the war academies bring reason to the savagery of war. Often rising to high military ranks, these scholars of battle study anatomy and perform autopsies to learn vulnerabilities of the body, learn physical theorems that underlie the most effective angles of attack and defense, and take time to ponder the psychological and sociological considerations of mortal conflict from the vast scope and human cost of an invasion, down to the emotional resonance and cultural significance of specific sword techniques through history.
+Role: Striker.
+
+Playing a Martial Scientist
+Danor has the greatest concentration of war colleges, but the Banhaman Academy in Risur's capital Slate has a reputation for elite siege engineers and artillerists, and the Battalion outside of Flint has a reputation for training the best wilderness forces in Lanjyr. Smaller local schools mostly serve to provide pensions for retired soldiers turned tutors, but even they have led to noteworthy theses, such as The Wounding Effectiveness of Stealthy Singular Rapier contrasted with a Twin Strike of Dual Long Swords, which provoked a very spirited debate and even a few expulsions when things got heated.
+In Drakr, emphasis is given to testing the physiological limits of endurance and surviving in battle with limited resources, as would be likely in a world-ending conflict. The Clergy in Crisillyir add a strong theological and monstrous anatomy component to the students in their military academies. The lone war college in Ber has a vast library of battle songs, which according to a disputed theory will inspire the courage and attack accuracy of soldiers, though most likely it is just meant to keep in check the often wild emotions of its bestial students.
+You should work with your DM to determine what your graduate thesis was, unless you left before finishing your education.
+
+Benefit: If you choose Martial Scientist as your character's theme, you gain training in History. If you already are trained in History, you may gain training in another skill. You are proficient in all military weapons. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+
+   <RulesElement name="Skyseer" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_15" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_2 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_4 </specific>
+	  <specific name="Creating">  Folk prophet who see the future in the stars. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_SKYSEER_VISION,ID_Zeitgeist_POWER_LOOK_SKYWARD  </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_SKYSEER_VISION,ID_Zeitgeist_POWER_LOOK_SKYWARD  </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_SKYSEER_VISION" type="Power" />
+         <grant name="ID_Zeitgeist_POWER_LOOK_SKYWARD" type="Power" />
+      </rules>
+Truly ancient lore suggests that once the mortal races were able to ravel to the stars with the aid of lost magic, much like demons and angels can be briefly summoned into this world. But for the full length of remembered history, the heavens have been nearly inscrutable. The druids, used to thinking in long terms of seasons, years, and the lifespan of trees, were the first to notice subtle connections between the movements of stars and the affairs of this world. They too were first to learn how to step through the veils that lead to the Dreaming or the Bleak Gate, and without their aid King Kelland could never have defeated the fey titans.
+For over a thousand years, the druids would gaze into the sky night after night, awaiting dreams that would grant revelations of the future. These seers, by guiding journeyers and heroes with their visions, averted many catastrophes. When the Second Victory led to Srasama's fall, the skyseers read the signs and helped hundreds of eladrin women flee their homeland so they could avoid genocide.
+In the past few centuries, however, the many orders and factions of skyseers in Risur have struggled to divine much of import from the stars. Their visions, never precise or clear to begin with, failed to foresee the rise of Danor's industry, failed to avert scores of natural disasters and man-made tragedies. The people of Risur still go through the motions of skyseer rituals, but the old druids' influence has faded. Few young people today aspire to join their once-prestigious ranks.
+Role: Leader.
+
+Playing a Skyseer.
+Those few who study to be skyseers today usually have a close mentor among the druids. Some may have spent countless nights as children staring up at the stars, before one night waking from a vivid, prophetic dream. Apprenticed to an elder skyseer, they learned the names of the stars and planets, their patterns and influence. Though precise visions are rare, it is still indisputable that magic of travel works better under the full moon, and that any ship that sets sail the night when Jiese enters retrograde within the constellation of the Mad Pirate will face great misfortune before it reaches its destination.
+Skyseers favor the night, and with a glance at the starry sky can tell time as precisely as any clock. Even in this new age of technology, most Risuri ship's captains won't sail beyond sight of shore without a skyseer aboard. Though their influence has faded somewhat, they still have strong connections with many families, villages, and organizations, and they can easily find a welcome home as long as they do not begin speaking of prophecies.
+
+Benefit: If you choose Skyseer as your character's theme, you gain the following powers at 1st level.
+   </RulesElement>
+   <RulesElement name="Spirit Medium" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_16" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_1 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_5 </specific>
+	  <specific name="Creating"> Contact and control spirits of the dead. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_SPEAK_WITH_SPIRIT,ID_Zeitgeist_POWER_UNFINISHED_BIZ </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_SPEAK_WITH_SPIRIT,ID_Zeitgeist_POWER_UNFINISHED_BIZ </specific>
+      <specific name="Creating"> Contact and control spirits of the dead. </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_SPEAK_WITH_SPIRIT" type="Power" />
+         <grant name="ID_Zeitgeist_POWER_UNFINISHED_BIZ" type="Power" />
+      </rules>
+The Danoran industrial revolution has changed the ways of war, giving even the poorest man weapons that can kill the wealthy and well equipped. Why then should not matters of the soul also move from the purview of the enlightened into the grasp of the common people? So ask spirit mediums, who wish to explain the mysteries of spirits and the afterlife so that men no longer need priests to tell them what awaits beyond death.
+Certainly, many mediums are charlatans who prey on the weakness of bereaved aristocrats. But a few have discovered how to contact the dead through a form of psionic meditation called a seance. Some will only use their talents to help those who have a sincere need to know the secrets of the dead, and will only train students who share the same worldview, but most mediums reject such insularity as smacking of organized religion, and will gladly wake the dead for a quick chat at the drop of a few coins.
+Role: Controller.
+
+Playing a Spirit Medium.
+The ability to speak with the recently departed is of great value to the Royal Homeland Constabulary, which recruits enthusiastically people with useful talents. Compared with the normal life of a medium, criminal investigators seldom have to convey messages between the dead and their living friends and relatives, though such conversations can help elicit otherwise unyielding secrets.
+
+Benefit: If you choose Spirit Medium as your character's theme, you gain the following powers at 1st level.
+   </RulesElement>
+
+   <RulesElement name="Technologist" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_17" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_1 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
+	  <specific name="Creating"> Design small contraptions. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_DISPOSABLE_SIM </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_DISPOSABLE_SIM </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_DISPOSABLE_SIM" type="Power" />
+      </rules>
+Some people cannot get enough of new technology. Those with talent tinker or create. Those without collect, study, or simply nag every engineer and inventor they meet. Whether dabblers or professionals, often these technology enthusiasts come up with ideas for devices that straddle the line between clever and impractical.
+In Danor, academies train technologists in specialized fields, while in Drakr master dwarven craftsmen guide huge stables of apprentices in the massive engineering projects. Crisillyir punishes such tinkering with holy flagellation, as do colonists in Elfaivar, whereas the native eladrin are as unsettled by technology as are the denizens of the Dreaming. A few enterprising technologists in Ber curry favor of the royal court, which responds eagerly to such intellectual pursuits.
+Role: Controller.
+
+Playing a Technologist.
+After centuries of reliance upon swords, bows, plate armor, and the occasional arcane evocation, keeping up with the modern pace of developing technology is daunting to many power groups, especially law enforcement and the military. Such groups might enlist technologists as specialists to explain unfamiliar devices, or to craft specialty weapons or tools. While the Danoran industrial revolution has mass-produced many common tools and weapons, only a few have the knowledge and talent to create custom items.
+Technologists tend to gather lots of disposable tools and weapons, so that they always have something handy in an unusual situation. Many make a point to learn a bit of magic or alchemy as well, though every technologist is inspired by a different vision of what technology can provide.
+
+Benefit: If you choose Technologist as your character's theme, you will have access to certain technological information and resources not readily available to other characters. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+
+   <RulesElement name="Vekeshi Mystic" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_18" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_4 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
+	  <specific name="Creating"> Devoted to the philosophy of slow, proper vengeance against those who oppress the weak. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_HANDS_RETRIBUTION </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_HANDS_RETRIBUTION </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_HANDS_RETRIBUTION" type="Power" />
+      </rules>
+If fatalism defines the traditional dwarven philosophy, then the cornerstone of eladrin ideology is that living well is the best revenge. After the goddess Srasama died and nearly all eladrin women perished with her, there was a great drive in Elfaivar to fight until the last man in a short-sighted bid for vengeance. As the rest of the nation whipped itself into a frenzy, however, a composer named Vekesh wrote a song of mourning that contained a simple sentiment: defeat is only tragedy if we choose to let the story end.
+While many eladrin could not be stopped from their self-destruction, Vekesh convinced some of his people that a tale that goes from defeat to revenge to death is a shameful tragedy. Revenge serves only to distract from one's grief, but is ultimately valueless. Instead, he said, a tale of defeat, resilience, and renewal is the best way to thwart their enemies' goals. The proper form of retribution, then, is to endure, rebuild from weakness, and prosper into strength.
+His guidance ensured that in at least a few isolated enclaves, the eladrin race pulled back from the brink of annihilation. In the following decades a loosely codified collection of vekeshi teachings spread throughout Lanjyr. The mantras of Vekesh have helped many cope with loss and find a new path for themselves.
+To the general public, though, "Vekeshi" is synonymous with murderer and terrorist. While the majority of Vekeshi avoid violence when possible, Vekesh believed that taking up arms is sometimes necessary to protect those at their most vulnerable. The deepest secrets of vekeshi mysticism are taught only to a rare few adherents who demonstrate a skill for battle, and the wisdom to know when to use their power.
+Role: Defender.
+
+Playing a Vekeshi Mystic.
+Anyone might casually study Vekesh's teachings for a bit of personal guidance, but to be initiated into the mystical side of the philosophy requires painful rituals. Aspirants are taken in the night across the threshold of the Dreaming, where they experience the fall of Srasama through psychic illusions, making them keepers of the shared memory of the Great Malice. Thereafter they are held in a cage for days, along with poisoned food that they must resist, so that the starvation teaches them the importance of patience. Finally, they are burnt until their skin blackens, and then are magically healed to seal in the power of the flames.
+If a vekeshi passes these trials, he rests and recovers in luxury as his teachers instruct him in the secrets of the philosophy, and drill into him the necessity of discretion. Upon leaving the Dreaming, vekeshi mystics return to their normal lives, but seek positions of power in military, law enforcement, or the underworld, where they use their authority to punish those who continually threaten people who are simply trying to make a better life for themselves.
+Vekeshi mystics seldom gather in large groups, but on certain irregular lunar holidays they slip into the Dreaming for secretive festivals. Only on the rarest occasions will a mystic be called to act openly. Donning an iconic mantle of eladrin armor and a mask that conceals his face, the mystic acts as the surrogate hand of the fallen goddess Srasama, with the sole purpose of meting out punishment against one directly responsible for large-scale suffering.
+
+Benefit: If you choose Vekeshi Mystic as your character's theme, the party's Prestige with the Unseen Court starts at 2 instead of 1. See "Prestige," page 15. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+   <RulesElement name="Yerasol Veteran" type="Theme" internal-id="ID_MSR_THEME_Zeitgeist_19" source="Zeitgeist" >
+      <specific name="Role"> ID_FMP_ROLE_4 </specific>
+	  <specific name="Power Source"> ID_FMP_POWER_SOURCE_4 </specific>
+	  <specific name="Creating"> Highly regarded war hero. </specific>
+	  <specific name="Granted Powers"> ID_Zeitgeist_POWER_DISPLAY_HEROISM </specific>
+	  <specific name="_DisplayPowers"> ID_Zeitgeist_POWER_DISPLAY_HEROISM </specific>
+      <rules>
+         <grant name="ID_Zeitgeist_POWER_DISPLAY_HEROISM" type="Power" />
+      </rules>
+The islands of the Yerasol Archipelago were perhaps the most verdant, beautiful battleground in history. During two centuries of intermittent warfare, untold thousands of soldiers from Risur and Danor died among the windblown rainforests and flowered beaches of those isles, trying to protect their homelands' exceedingly prosperous plantations. Those who survived the ones who didn't succumb to aberrant infections, crippling physical injuries, or unyielding mental trauma often turned their war time glory into profit or political clout.
+Poets of the two nations memorialized the greatest acts of heroism from the Four Yerasol Wars, the last of which ended seven years past. It's an open secret that history is written by the survivors, and many socalled war heroes were merely lucky enough to witness something brave and amazing, and not die in the process so they could take the credit for themselves. A rare few, however, demonstrated genuine heroism and lived to have their tales told by others.
+Role: Defender.
+
+Playing a Yerasol Veteran.
+Everyone knows the names of a few veterans who distinguished themselves in battle not quite famous, but certainly memorable. Every veteran of the isles has a story that made him a celebrity, though many do not enjoy recounting their tales. The fact that everyone likes a war hero doesn't lessen the trauma of having seen friends die.
+After two centuries of trial and error, though, Risur and Danor have learned to exploit these heroes of the moment, giving them cushy jobs and helping them reacclimate to civilian life. It doesn't do to have a "hero" become a drunkard and embarrass his nation, after all. The aid and adulation from their nation helps a great many Yerasol veterans become pillars of their communities. Such aid quickly dries up, though,
+should a hero ever decide to publicly criticize his homeland.
+
+Benefit: If you choose Yerasol Veteran as your character's theme, the party's Prestige with Risur starts at 2 instead of 1. See "Prestige," page 15. Additionally, you gain the following power at 1st level.
+   </RulesElement>
+   
+   <!-- Zeitgeist Theme New Powers -->
+
+    <RulesElement name="Docker's Jank" type="Power" internal-id="ID_Zeitgeist_POWER_DOCKERS_JANK" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> In a band, every musician has to know his bandmates' parts in case they need to switch places or pick up the slack. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Docker Attack </specific>
+      <specific name="Keywords"> Arcane, Teleportation </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close Burst 5 </specific>
+      <specific name="Effect"> You and a willing ally within the burst teleport and switch locations. Your ally may then use a 1st-level at-will power that can be performed as a standard action, with a +2 power bonus to his or her attack rolls. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+    <RulesElement name="Icy End of the Earth" type="Power" internal-id="ID_Zeitgeist_POWER_ICY_END" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> The world shall end in ice. As you sense the closeness of your own mortality, this undeniable doomsday manifests in your presence. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Eschatologist Attack </specific>
+      <specific name="Keywords"> Psionic, Cold, Zone </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close Burst 2 </specific>
+      <specific name="Prerequisite"> You must be bloodied to use this power. </specific>
+      <specific name="Effect"> You create a stationary zone of unnatural winter in the burst, including your own space. The zone lasts until you leave its area, until you are unconscious, or until you are not bloodied. Creatures in the zone cannot heal damage or gain temporary hit points. Creatures that start their turn in the zone take 5 cold damage. You cannot reduce the damage this power does to you in any way. (Other creatures can apply their resistances and immunities as normal.)
+Level 11: 10 cold damage.
+Level 21: 15 cold damage. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+   <RulesElement name="The Man with Two Guns is God" type="Power" internal-id="ID_Zeitgeist_POWER_TWO_GUNS" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You have discovered the coolest-looking fighting style in the world. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Gunsmith Attack </specific>
+      <specific name="Keywords"> Martial, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+	  <specific name="Target"> One creature. If you are wielding two firearms, you can target one additional creature within 5 squares of the first creature. </specific>
+      <specific name="Attack"> Primary ability vs. AC </specific>
+      <specific name="Hit"> 1[W] damage, and the target cannot take opportunity actions until the end of your next turn. If making two attacks, one target takes damage from the primary hand weapon, the other from the off-hand weapon.
+Level 11: 2[W] damage.
+Level 21: 3[W] damage. </specific>
+      <specific name="Special"> This power does not provoke opportunity attacks. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+   <RulesElement name="Expermental Strike" type="Power" internal-id="ID_Zeitgeist_POWER_EXP_STRIKE" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+      <Flavor> Scientific breakthroughs are born of both careful study and wild experimentation. Your old reliable attack technique has failed, so it's time to try option B. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Martial Scientist Attack </specific>
+      <specific name="Keywords"> Martial, Weapon </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Trigger"> You miss all targets with an at-will attack power on your turn. </specific>
+	  <specific name="Target"> Personal </specific>
+      <specific name="Effect"> You may sheathe a weapon or implement and/or draw a melee weapon. You can shift 2 squares and attempt something the rules don't cover (as detailed in the Dungeon Master's Guide), such as slicing a rope to pin an enemy with a chandelier, or smashing a pipe to spray blinding steam on an enemy. After the attack, you may sheathe a weapon and/or draw a weapon or implement. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   
+   <RulesElement name="Skyseer Vision" type="Power" internal-id="ID_Zeitgeist_POWER_SKYSEER_VISION" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You find a clear view of the night sky, focus your mind on the future, and await a prophetic dream. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Skyseer Utility </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Special Action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Prerequisite"> You can only use this power during an extended rest, and only if you can watch the night sky for an hour then sleep. </specific>
+	  <specific name="Target"> Personal </specific>
+      <specific name="Effect"> Ask up to three questions about possible courses of action in the near future. At the end of your extended rest, you awaken from sleep having received a vision regarding your questions. This functions similarly to the hand of fate ritual, with you receiving vague images that provide guidance. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   
+   <RulesElement name="Look Skyward" type="Power" internal-id="ID_Zeitgeist_POWER_LOOK_SKYWARD" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+      <Flavor> You share with your allies a glimpse of the motions of the heavens, revealing fortuitous and unfortuitous paths. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Skyseer Utility </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close Burst 5 </specific>
+	  <specific name="Target"> One Ally in burst </specific>
+      <specific name="Effect"> The ally chooses an attack power he knows, rolls a d20, and marks the result. The next time the ally would make an attack roll for that power during this encounter, he must instead use the rolled result. If the power has multiple targets or attack rolls, only the first roll is replaced.
+When the ally uses the rolled result, he can still apply effects and powers to modify the attack roll. For example, a human could still use human perseverance, an elf could still use elven accuracy, a warlord's tactical presence would still grant a bonus if the ally used an action point to use the power, and an avenger would still roll a second die and pick the better of the two results. </specific>
+       <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+    <RulesElement name="Speak with Spirit" type="Power" internal-id="ID_Zeitgeist_POWER_SPEAK_WITH_SPIRIT" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> With your urging, the spirit of a recently dead person speaks briefly with you. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Spirit Medium Utility </specific>
+      <specific name="Keywords"> Psionic </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Close burst 1 </specific>
+      <specific name="Prerequisite"> You can only use this power during an extended rest, and only if you can watch the night sky for an hour then sleep. </specific>
+	  <specific name="Target"> One creature in burst. The creature must have died within the past day, and must still be dead. </specific>
+      <specific name="Effect"> You may ask three questions of the target. For each question make an Arcana, Diplomacy, or Insight check. The DC is based on the target's level, and is Easy, Medium, or Hard depending on the target's demeanor toward you when it died and how protective it is of the knowledge. If you succeed the check, the target gives you a short answer, usually a minute or less. </specific>
+At the DM's prerogative, you could also use this power to communicate with uneasy spirits who have not yet moved on, regardless of how long ago they died. Using this power against undead, or in any combat situation for that matter, is possible but very difficult.
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+    <RulesElement name="Unfinished Business" type="Power" internal-id="ID_Zeitgeist_POWER_UNFINISHED_BIZ" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> With a manipulative whisper, you call up the spirit of a recently slain creature for one last attack. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Spirit Medium Attack </specific>
+      <specific name="Keywords"> Conjuration, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Effect"> Choose a creature that was killed or destroyed this encounter within three miles of your current location. It must still be at 0 hit points or fewer. You conjure the spirit of that creature in a square within the burst. The creature attacks with one of its at-will attacks as if it were alive. You choose the power it uses and make any decisions the power requires, such as targeting or forced movement. The creature gains a +2 power bonus to its attack rolls for this attack, and it deals full damage to insubstantial targets. After the attack, the conjured spirit is removed from play. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+     <RulesElement name="Disposable Simulacrum" type="Power" internal-id="ID_Zeitgeist_POWER_DISPOSABLE_SIM" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+      <Flavor> You pull out a pre-assembled gadget, tie it to your life force, and animate it so it can recreate one of your fighting techniques. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Technologist Attack </specific>
+      <specific name="Keywords"> Arcane, Summoning </specific>
+      <specific name="Action Type"> Minor action </specific>
+      <specific name="Attack Type"> Range 1 </specific>
+      <specific name="Effect"> Choose an at-will power you know that can be used as a standard, move, or minor action. You place a Small contraption in an unoccupied square within range. It has your defenses, speed 4, and hit points equal to half your bloodied value. The contraption cannot move on its own or manipulate items, unless the at-will power you chose lets it do so. You can give the contraption the following special command as long as it is within 10 squares of you. </specific>
+      <specific name="Effect"> Standard Action (At-Will) The contraption uses the at-will power you chose, using your normal statistics, as if you were in the contraption's square. If the power is sustainable, you can spend actions to sustain it. You cannot enhance the power with power points. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+    <RulesElement name="Hands of Retribution" type="Power" internal-id="ID_Zeitgeist_POWER_HANDS_RETRIBUTION" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_ATTACK,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+      <Flavor> The faint burning outline of a six-armed goddess hovers behind you. As enemies strike your allies, the goddess lashes out in retaliation with blades of fire. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Vekeshi Mystic Attack </specific>
+      <specific name="Keywords"> Divine, Fire, Radiant </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+	  <specific name="Trigger"> A creature you can see in the burst hits one of your allies, and the ally is bloodied before or after the attack. </specific>
+	  <specific name="Target"> The triggering creature. </specific>
+	  <specific name="Effect"> You deal fire and radiant damage to the target equal to your primary ability score modifier </specific>
+      <specific name="Special"> You can use this power once per encounter at 1st level, twice at 6th level, three times at 11th, four at 16th, five at 21st, and six at 26th, but no more than once per round. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+   <RulesElement name="Display of Heroism" type="Power" internal-id="ID_Zeitgeist_POWER_DISPLAY_HEROISM" source="Zeitgeist" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_THEME_POWER,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_779,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_790,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Seeing an ally in peril, you rush into harm's way and cover his escape. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_ThemePower" />
+      <specific name="Display"> Yerasol Veteran Utility </specific>
+      <specific name="Keywords"> Martial </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Effect"> Shift 3 squares. One bloodied or unconscious ally adjacent to you can spend a healing surge and may stand as a free action. You may then switch spaces with that ally. You and that ally gain a +2 bonus to all defenses until the end of your next turn. </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+ 
+   <!-- Paragon Paths -->
+   <!-- Heroic Feats -->
+
+   <RulesElement name="Fantastic Contraption" type="Feat" internal-id="ID_ZEITGEIST_FEAT_FANTASTIC_CONTRAPTION" source="Zeitgeist" >
+      <Prereqs> Technologist </Prereqs>
+      <print-prereqs> Technologist </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Technologist's simulacrum gains speed 6 and Strength score of 1.  </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules />
+The contraption you summon with disposable simulacrum gains a speed of 6, and a Strength score of 1. As long as it is within 10 squares of you, you can spend a move action to have it walk its speed, or spend a minor action to have it pick up or manipulate an item.
+   </RulesElement>
+
+   <RulesElement name="Firearm Expertise" type="Feat" internal-id="ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE" source="Zeitgeist" >
+      <Flavor> The firearm is a ranged weapon that uses explosive alchemicals to fire metal ammunition. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> When using a firearm: +1/2/3 (by tier) to attack rolls, may reload as minor action. </specific>
+    <rules>
+     <modify name="Pistol" type="Weapon" Field="Properties" list-addition="Load Minor" />
+     <modify name="Carbine" type="Weapon" Field="Properties" list-addition="Load Minor" />
+     <modify name="Musket" type="Weapon" Field="Properties" list-addition="Load Minor" />
+     <modify name="Rifle" type="Weapon" Field="Properties" list-addition="Load Free" />
+    </rules>
+You gain a +1 bonus to attack rolls with firearm weapons. This increases to +2 at 11th level, and to +3 at 21st level. You can load firearms as a minor action instead of by spending a standard action. When you use a power that lets you make multiple ranged attacks, reloading between the attacks takes no action. See the equipment section below for more information on firearms.
+   </RulesElement>
+
+   <RulesElement name="Weapon Focus (Firearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(FIREARM)" source="Player&apos;s Handbook" >
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FIREARMS) </specific>
+      <specific name="Short Description"> Gain +1 damage per tier with Fireamrs. </specific>
+      <specific name="Tier"> Heroic </specific>
+      <rules>
+         <statadd name="Weapon Focus (Firearm)" value="+1" />
+         <statadd name="Weapon Focus (Firearm)" value="+1" requires="Paragon Tier" />
+         <statadd name="Weapon Focus (Firearm)" value="+1" requires="Epic Tier" />
+         <statadd name="Firearm group,weapon:damage" value="+Weapon Focus (Firearm)" type="Feat" />
+      </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Firearm group.
+   </RulesElement>
+     	 
+   <RulesElement name="Weapon Proficiency (Pistol)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(PISTOL)" source="Zeitgeist">
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_FMP_INTERNAL_FEAT_WEAPON_PROFICIENCY_(PISTOL) </specific>
+      <specific name="Short Description"> Gain proficiency with the Pistol. </specific>
+      <specific name="Tier"> Heroic </specific>
+     <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PISTOL)" type="Proficiency" />
+     </rules>
+You gain proficiency with the Pistol.
+   </RulesElement>
+
+   <RulesElement name="Weapon Proficiency (Carbine)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CARBINE)" source="Zeitgeist">
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_FMP_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CARBINE) </specific>
+      <specific name="Short Description"> Gain proficiency with the Carbine. </specific>
+      <specific name="Tier"> Heroic </specific>
+     <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARBINE)" type="Proficiency" />
+     </rules>
+You gain proficiency with the Carbine.
+   </RulesElement>
+
+   <RulesElement name="Weapon Proficiency (Musket)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MUSKET)" source="Zeitgeist">
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_FMP_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MUSKET) </specific>
+      <specific name="Short Description"> Gain proficiency with the Musket. </specific>
+      <specific name="Tier"> Heroic </specific>
+     <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MUSKET)" type="Proficiency" />
+     </rules>
+You gain proficiency with the Musket.
+   </RulesElement>
+   
+   <RulesElement name="Weapon Proficiency (Rifle)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(RIFLE)" source="Zeitgeist">
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_FMP_INTERNAL_FEAT_WEAPON_PROFICIENCY_(RIFLE) </specific>
+      <specific name="Short Description"> Gain proficiency with the Rifle. </specific>
+      <specific name="Tier"> Heroic </specific>
+     <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RIFLE)" type="Proficiency" />
+     </rules>
+You gain proficiency with the Rifle.
+   </RulesElement>
+   <RulesElement name="Weapon Proficiency (Bayonet)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BAYONET)" source="Zeitgeist">
+      <specific name="_SupportsID"> ID_ZEITGEIST_FEAT_FIREARM_EXPERTISE </specific>
+      <specific name="_RequiresID"> ID_FMP_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BAYONET) </specific>
+      <specific name="Short Description"> Gain proficiency with the Bayonet. </specific>
+      <specific name="Tier"> Heroic </specific>
+     <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BAYONET)" type="Proficiency" />
+     </rules>
+You gain proficiency with the Bayonet.
+   </RulesElement>
+   
+   <!-- Mundane Items -->
+   
+      <RulesElement name="Firearm Cartrige" type="Gear" internal-id="ID_ZEITGEIST_GEAR_11" source="Zeitgeist" >
+      <specific name="Full Text"> Firearm Ammunition
+Category: Ammunition
+Price: 1 gp 
+Weight: 0.1 lb
+Description: Ammunition is  used up when you fire it from a firearm. Each cartrige contains a metal bullet and firedust powder. </specific>
+      <specific name="Weight"> 0.1 </specific>
+      <specific name="Gold"> 1 </specific>
+      <specific name="Silver" />
+      <specific name="Copper" />
+      <specific name="Category"> Ammunition </specific>
+      <specific name="_RelatedElement"> ID_ZEITGEIST_GEAR_12 </specific>
+      <specific name="count"> 1 </specific>
+      <specific name="_Monster" />
+Ammunition is  used up when you fire it from a firearm. Each cartrige contains a metal bullet and firedust powder.
+   </RulesElement>
+   
+   <RulesElement name="Firearm Cartriges" type="Gear" internal-id="ID_ZEITGEIST_GEAR_12" source="Zeitgeist" >
+      <specific name="Full Text"> Firearm Ammunition (20)
+Category: Ammunition
+Price: 1 gp 
+Weight: 2 lb
+Description: Firearm bullets come in a pouch that holds twenty paper cartriges. Each cartrige contains a metal bullet and firedust powder. </specific>
+      <specific name="Weight"> 2 </specific>
+      <specific name="Gold"> 1 </specific>
+      <specific name="Silver" />
+      <specific name="Copper" />
+      <specific name="Category"> Ammunition </specific>
+      <specific name="_RelatedElement"> ID_ZEITGEIST_GEAR_11 </specific>
+      <specific name="count"> 20 </specific>
+      <specific name="_Monster" />
+Firearm bullets come in a pouch that holds twenty paper cartriges. Each cartrige contains a metal bullet and firedust powder.
+   </RulesElement>
+   
+    <RulesElement name="Firedust, Cask" type="Gear" internal-id="ID_ZEITGEIST_GEAR_13" source="Zeitgeist">
+       <specific name="Full Text"> Firedust, Cask
+Category: Gear
+Price: 20 gp 
+Weight: 20 lb
+Description: A wooden cask containing explosive alchemical dust. </specific>
+       <specific name="Weight"> 2 </specific>
+       <specific name="Gold"> 1 </specific>
+       <specific name="Category"> Gear </specific>
+       <specific name="count"> 1 </specific>
+This alchemical dust is commonly used in the firing of firearms and cannons.
+    </RulesElement>
+
+    <RulesElement name="Pocket Watch" type="Gear" internal-id="ID_ZEITGEIST_GEAR_14" source="Zeitgeist">
+       <specific name="Full Text"> Firedust, Cask
+Category: Gear
+Price: 25 gp 
+Weight: -
+Description: An early mechanical time keeping device. </specific>
+       <specific name="Weight"> 0 </specific>
+       <specific name="Gold"> 25 </specific>
+       <specific name="Category"> Gear </specific>
+       <specific name="count"> 1 </specific>
+Commonly these devices could keep time to the nearest minute and required regular winding and maintenance to continue performing accurately. Rarely found on such devices was the ability to keep track of seconds.
+    </RulesElement>
+
+    <RulesElement name="Surgeon's Kit" type="Gear" internal-id="ID_ZEITGEIST_GEAR_16" source="Zeitgeist">
+       <specific name="Full Text"> Firedust, Cask
+Category: Gear
+Price: 50 gp 
+Weight: 2 lb
+Description: A kit containing medical tools. </specific>
+       <specific name="Weight"> 2 </specific>
+       <specific name="Gold"> 50 </specific>
+       <specific name="Category"> Gear </specific>
+       <specific name="count"> 1 </specific>
+Surgeon's kit: bone saw, debriding curette, ether, forceps, morphium, probes, retractors, scalpels, scissors, sutures and syringe.
+    </RulesElement>
+
+   <!-- Magic Items -->
+   
+   <RulesElement name="Mage-Cuffs" type="Magic Item" internal-id="ID_Zeitgeist_MAGIC_MAGE_CUFFS" source="Zeitgeist" >
+      <Flavor> Constables don't hesitate to bring out the special restraints. </Flavor>
+      <specific name="Level"> 1 </specific>
+      <specific name="Gold"> 360 </specific>
+      <specific name="Magic Item Type"> Wondrous Item </specific>
+      <specific name="Tier" />
+      <specific name="_Item_Set_ID" />
+      <specific name="Armor" />
+      <specific name="Weapon" />
+      <specific name="Item Slot" />
+      <specific name="Requirement" />
+      <specific name="Critical" />
+      <specific name="Special"> When a person wearing mage-cuffs uses any magical power (generally defined as an arcane, divine, primal, psionic, or shadow power, or equivalent non-typed abilities), the cuffs glow, make a warning whistle sound, and deal 10 damage to the wearer. A creature reduced to 0 hit points this way is knocked unconscious, not killed. </specific>
+      <specific name="Property"> Common </specific>
+	  <specific name="Power" />
+      <specific name="Granted Powers" />
+   </RulesElement>
+   
+</D20Rules>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>22-February-2013</Version>
+    <Filename>TER-01-MathFix.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-01-MathFix.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-01-MathFix.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+  Created 31-August-2011
+  Updated 03-August-2012 Altered the inherent expertise/defense bonuses to be feat bonuses so that they automatically don't stack with expertise/defense feats
+  Updated 22-February-2013 House ruled the psionic classes to use the same "don't forget" system
+</Changelog>
+
+		<!-- Leveling -->
+	<AppendNodes name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" source="Core" >
+		<rules>
+			<select type="Feat" number="1" />
+			<statadd name="Defensive Math Fix" value="+1" />
+			<statadd name="Defensive Math Fix" value="+1" requires="Paragon Tier" />
+			<statadd name="Defensive Math Fix" value="+1" requires="Epic Tier" />
+			<statadd name="Expertise" value="+1" />
+			<statadd name="Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="Fortitude Defense" value="+Defensive Math Fix" type="Feat" />
+			<statadd name="Reflex Defense" value="+Defensive Math Fix" type="Feat" />
+			<statadd name="Will Defense" value="+Defensive Math Fix" type="Feat" />
+			<statadd name="attack rolls" value="+Expertise" type="Feat" />
+		</rules>
+	</AppendNodes>
+   <RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" source="Core">
+      <specific name="XP Needed"> 1750 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+1750" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" source="Core">
+      <specific name="XP Needed"> 3500 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+3500" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="13" type="Level" internal-id="ID_INTERNAL_LEVEL_13" source="Core">
+      <specific name="XP Needed"> 8000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Encounter 13" number="1" Category="$$CLASS,encounter,13" requires="!No Level 13 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+8000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" source="Core">
+      <specific name="XP Needed"> 10000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+10000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="15" type="Level" internal-id="ID_INTERNAL_LEVEL_15" source="Core">
+      <specific name="XP Needed"> 12000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Daily 15" number="1" Category="$$CLASS,daily,15" requires="!No Level 15 Daily Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+12000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="17" type="Level" internal-id="ID_INTERNAL_LEVEL_17" source="Core">
+      <specific name="XP Needed"> 16000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Encounter 17" number="1" Category="$$CLASS,encounter,17" requires="!No Level 17 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+16000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" source="Core">
+      <specific name="XP Needed"> 20000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+20000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="19" type="Level" internal-id="ID_INTERNAL_LEVEL_19" source="Core">
+      <specific name="XP Needed"> 24000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Daily 19" number="1" Category="$$CLASS,daily,19" requires="!No Level 19 Daily Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+24000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="23" type="Level" internal-id="ID_INTERNAL_LEVEL_23" source="Core">
+      <specific name="XP Needed"> 55000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Encounter 23" number="1" Category="$$CLASS,encounter,23" requires="!No Level 23 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+55000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" source="Core">
+      <specific name="XP Needed"> 65000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+65000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="25" type="Level" internal-id="ID_INTERNAL_LEVEL_25" source="Core">
+      <specific name="XP Needed"> 75000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Daily 25" number="1" Category="$$CLASS,daily,25" requires="!No Level 25 Daily Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+75000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="27" type="Level" internal-id="ID_INTERNAL_LEVEL_27" source="Core">
+      <specific name="XP Needed"> 125000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Encounter 27" number="1" Category="$$CLASS,encounter,27" requires="!No Level 27 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+125000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" source="Core">
+      <specific name="XP Needed"> 150000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+		 <statadd name="Strength" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Constitution" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Dexterity" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Intelligence" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Wisdom" value="+1" requires="!Nonstandard Scores" />
+		 <statadd name="Charisma" value="+1" requires="!Nonstandard Scores" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+150000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="29" type="Level" internal-id="ID_INTERNAL_LEVEL_29" source="Core">
+      <specific name="XP Needed"> 175000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+		 <select type="Power" name="Power Daily 29" number="1" Category="$$CLASS,daily,29" requires="!No Level 29 Daily Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+175000" />
+      </rules>
+   </RulesElement>
+
+<!-- Psionic Rules -->
+   <RulesElement name="Augment Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_AUGMENT_POWERS" source="Core">
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <statadd name="Power Points" value="+2" />
+         <statadd name="Power Points" value="+2" requires="3 level" />
+         <statadd name="Power Points" value="+2" requires="7 level" />
+         <statadd name="Power Points" value="+1" requires="13 level" />
+         <statadd name="Power Points" value="+2" requires="17 level" />
+         <statadd name="Power Points" value="+2" requires="21 level" />
+         <statadd name="Power Points" value="+2" requires="23 level" />
+         <statadd name="Power Points" value="+2" requires="27 level" />
+         <select type="Power" name="Level 3 Augment At-Will" number="1" Category="$$CLASS,at-will,3" Level="3" />
+         <select type="Power" name="Level 7 Augment At-Will" number="1" Category="$$CLASS,at-will,7" Level="7" />
+         <select type="Power" name="Level 13 Augment At-Will" number="1" Category="$$CLASS,at-will,13" Level="13" />
+         <select type="Power" name="Level 17 Augment At-Will" number="1" Category="$$CLASS,at-will,17" Level="17" />
+         <select type="Power" name="Level 23 Augment At-Will" number="1" Category="$$CLASS,at-will,23" Level="23" />
+         <select type="Power" name="Level 17 Augment At-Will" number="1" Category="$$CLASS,at-will,27" Level="27" />
+      </rules>
+A class that chooses augmentable at-will powers in place of encounter powers, such as the psion.
+   </RulesElement>
+
+</D20Rules>

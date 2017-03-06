@@ -1,0 +1,28 @@
+Modular:
+X	Ability Scores
+O	Damage
+X	Defense Stacking
+?	Feats - Declutter
+O	Feats - Guild and Tribal
+O	Hybrid
+-	Math Fix
+O	Power Source Skills
+O	Utility
+
+Best used together:
+O	Class Features
+O-	Epic Destinies
+O-	Feats - Misc
+O	Feats - Multiclass
+O	Items
+O	MBA
+O-	Paragon Paths
+-	Powers
+X-	Racial
+X-	Themes
+
+Add:
+	All Ability Scores
+
+Unknown:
+O	Bugfix

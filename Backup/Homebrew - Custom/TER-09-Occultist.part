@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>28-April-2013</Version>
+    <Filename>TER-09-Occultist.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Occultist.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Occultist.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Occultist -->
+  <!-- TER-09-Occultist.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+</Changelog>
+  <MassAppend ids="ID_INTERNAL_SKILL_TRAINING_BLUFF,ID_INTERNAL_SKILL_TRAINING_DIPLOMACY,ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING,ID_INTERNAL_SKILL_TRAINING_ENDURANCE,ID_INTERNAL_SKILL_TRAINING_HISTORY,ID_INTERNAL_SKILL_TRAINING_INSIGHT,ID_INTERNAL_SKILL_TRAINING_INTIMIDATE,ID_INTERNAL_SKILL_TRAINING_PERCEPTION,ID_INTERNAL_SKILL_TRAINING_RELIGION">
+    <Category>TER_CLASS_004</Category>
+  </MassAppend>
+  <MassAppend ids="ID_FMP_POWER_16498,ID_FMP_POWER_10097,ID_FMP_POWER_11284,ID_FMP_POWER_11290,ID_FMP_POWER_2856,ID_FMP_POWER_11280,ID_FMP_POWER_11296,ID_FMP_POWER_11282,ID_FMP_POWER_2886,ID_FMP_POWER_2859,ID_FMP_POWER_7235,ID_FMP_POWER_7209,ID_FMP_POWER_2883,ID_FMP_POWER_3347,ID_FMP_POWER_5187,ID_FMP_POWER_7385,ID_FMP_POWER_2847,ID_FMP_POWER_7186,ID_FMP_POWER_2872,ID_FMP_POWER_12303,ID_FMP_POWER_5189,ID_FMP_POWER_5192,ID_FMP_POWER_5188,ID_FMP_POWER_11047,ID_FMP_POWER_3302,ID_FMP_POWER_2870,ID_FMP_POWER_7231,ID_FMP_POWER_11294,ID_FMP_POWER_11283,ID_FMP_POWER_7177,ID_FMP_POWER_7195,ID_FMP_POWER_7218,ID_FMP_POWER_7191,ID_FMP_POWER_3311,ID_FMP_POWER_11295,ID_FMP_POWER_3315,ID_FMP_POWER_7210,ID_FMP_POWER_5191,ID_FMP_POWER_11298,ID_FMP_POWER_7232,ID_FMP_POWER_3298,ID_FMP_POWER_7204,ID_FMP_POWER_3351,ID_FMP_POWER_3353,ID_FMP_POWER_3352,ID_FMP_POWER_7158,ID_FMP_POWER_3304,ID_FMP_POWER_11292,ID_FMP_POWER_7211,ID_FMP_POWER_11289,ID_FMP_POWER_7196,ID_FMP_POWER_10093,ID_FMP_POWER_10094,ID_FMP_POWER_7200,ID_FMP_POWER_7172,ID_FMP_POWER_2884,ID_FMP_POWER_7226,ID_FMP_POWER_7201,ID_FMP_POWER_2848,ID_FMP_POWER_2863,ID_FMP_POWER_7163,ID_FMP_POWER_2861,ID_FMP_POWER_7197,ID_FMP_POWER_2864,ID_FMP_POWER_7164,ID_FMP_POWER_7192,ID_FMP_POWER_7159,ID_FMP_POWER_10266,ID_FMP_POWER_7227,ID_FMP_POWER_12301,ID_FMP_POWER_7221,ID_FMP_POWER_7222,ID_FMP_POWER_7223,ID_FMP_POWER_931,ID_FMP_POWER_3317,ID_FMP_POWER_7214,ID_FMP_POWER_7154,ID_FMP_POWER_2879,ID_FMP_POWER_2866,ID_FMP_POWER_3308,ID_FMP_POWER_3301,ID_FMP_POWER_3341,ID_FMP_POWER_2874,ID_FMP_POWER_2850,ID_FMP_POWER_7178,ID_FMP_POWER_10267,ID_FMP_POWER_7187,ID_FMP_POWER_7151,ID_FMP_POWER_10098,ID_FMP_POWER_11285,ID_FMP_POWER_7219,ID_FMP_POWER_7188,ID_FMP_POWER_12302,ID_FMP_POWER_3350,ID_FMP_POWER_2873,ID_FMP_POWER_7160,ID_FMP_POWER_2881,ID_FMP_POWER_3355,ID_FMP_POWER_2869,ID_FMP_POWER_7220,ID_FMP_POWER_3305,ID_FMP_POWER_3318,ID_FMP_POWER_3345,ID_FMP_POWER_7236,ID_FMP_POWER_7168,ID_FMP_POWER_7165,ID_FMP_POWER_7173,ID_FMP_POWER_11045,ID_FMP_POWER_7155,ID_FMP_POWER_7166,ID_FMP_POWER_7174,ID_FMP_POWER_3346,ID_FMP_POWER_7189,ID_FMP_POWER_7237,ID_FMP_POWER_7152,ID_FMP_POWER_486,ID_FMP_POWER_7215,ID_FMP_POWER_5193,ID_FMP_POWER_7167,ID_FMP_POWER_2865,ID_FMP_POWER_3300,ID_FMP_POWER_11293,ID_FMP_POWER_7233,ID_FMP_POWER_11291,ID_FMP_POWER_7169,ID_FMP_POWER_10268,ID_FMP_POWER_7205,ID_FMP_POWER_3297,ID_FMP_POWER_7224,ID_FMP_POWER_7179,ID_FMP_POWER_7193,ID_FMP_POWER_2875,ID_FMP_POWER_3338,ID_FMP_POWER_11287,ID_FMP_POWER_7181,ID_FMP_POWER_3344,ID_FMP_POWER_11044,ID_FMP_POWER_11281,ID_FMP_POWER_3299,ID_FMP_POWER_2877,ID_FMP_POWER_7206,ID_FMP_POWER_7228,ID_FMP_POWER_7202,ID_FMP_POWER_3348,ID_FMP_POWER_3356,ID_FMP_POWER_2862,ID_FMP_POWER_5190,ID_FMP_POWER_3397,ID_FMP_POWER_7161,ID_FMP_POWER_7180,ID_FMP_POWER_7212,ID_FMP_POWER_2855,ID_FMP_POWER_7162,ID_FMP_POWER_3312,ID_FMP_POWER_7238,ID_FMP_POWER_7203,ID_FMP_POWER_11046,ID_FMP_POWER_3314,ID_FMP_POWER_3320,ID_FMP_POWER_3321,ID_FMP_POWER_2880,ID_FMP_POWER_11288,ID_FMP_POWER_7156,ID_FMP_POWER_2867,ID_FMP_POWER_7175,ID_FMP_POWER_5137,ID_FMP_POWER_5195,ID_FMP_POWER_2885,ID_FMP_POWER_7170,ID_FMP_POWER_10265,ID_FMP_POWER_3339,ID_FMP_POWER_2853,ID_FMP_POWER_2871,ID_FMP_POWER_7198,ID_FMP_POWER_7216,ID_FMP_POWER_7182,ID_FMP_POWER_3316,ID_FMP_POWER_7999,ID_FMP_POWER_7176,ID_FMP_POWER_7183,ID_FMP_POWER_7190,ID_FMP_POWER_2849,ID_FMP_POWER_10096,ID_FMP_POWER_10095,ID_FMP_POWER_2868,ID_FMP_POWER_7153,ID_FMP_POWER_2876,ID_FMP_POWER_3349,ID_FMP_POWER_3337,ID_FMP_POWER_2860,ID_FMP_POWER_7207,ID_FMP_POWER_6577,ID_FMP_POWER_7157,ID_FMP_POWER_3296,ID_FMP_POWER_3309,ID_FMP_POWER_7225,ID_FMP_POWER_7199,ID_FMP_POWER_7230,ID_FMP_POWER_7234,ID_FMP_POWER_7184,ID_FMP_POWER_7213,ID_FMP_POWER_3306,ID_FMP_POWER_7208,ID_FMP_POWER_7171,ID_FMP_POWER_3334,ID_FMP_POWER_7194,ID_FMP_POWER_7217,ID_FMP_POWER_7185">
+    <Category>TER_CLASS_004</Category>
+  </MassAppend>
+
+  <!-- Occultist Class Features -->
+	<RulesElement name="Occultist" type="Class" internal-id="TER_CLASS_004" source="Terra Advena" revision-date="8/27/2010 12:40:06 PM">
+		<Flavor> The power of the heavens is mine to command - at my discretion, my will all that shapes it. </Flavor>
+		<specific name="Key Abilities"> Charisma, Constitution, Intelligence </specific>
+		<specific name="Implements"> Ki focuses, staffs, tomes, wands </specific>
+		<specific name="Armor Proficiencies"> Cloth </specific>
+		<specific name="Weapon Proficiencies"> Dagger, quarterstaff </specific>
+		<specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+		<specific name="Hit Points at 1st Level"> 10+ Constitution Score </specific>
+		<specific name="Hit Points per Level Gained"> 4 </specific>
+		<specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+		<specific name="Trained Skills"> Arcana. From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+		<specific name="Class Skills"> Arcana (Int), Bluff (Cha), Diplomacy (Cha), Dungeoneering (Wis), Endurance (Con), History (Int), Insight (Wis), Intimidate (Cha), Perception (Wis), Religion (Int) </specific>
+		<specific name="Build Options"> Focused Arcanist, Overflowing Vessel </specific>
+		<specific name="_PARSED_CLASS_FEATURE"> Covenant Manifestation, Forceful Caster, Occultist Cantrips, Ritual Casting, Warding Invocation </specific>
+		<specific name="Role"> Controller. </specific>
+		<specific name="Power Source"> Arcane. </specific>
+		<specific name="Creating"> Occultists rely on Charisma, Intelligence, and Constitution. No occultist powers or class features depend on Strength, Dexterity, or Wisdom. </specific>
+		<specific name="Class Features"> You have the following class features. </specific>
+		<specific name="Supplemental" />
+		<specific name="Implement"> </specific>
+		<specific name="Powers"> </specific>
+		<specific name="Power Name"> Spells </specific>
+		<specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+		<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+		<specific name="_SecondaryPowerSourceElement" />
+		<specific name="Secondary Abilities" />
+		<specific name="Hybrid Talent Options" />
+		<specific name="Short Description"> An invoker variant that uses Charisma and casts as an arcane caster. </specific>
+		<specific name="Trait Package" />
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_OCCULTIST" type="Grants" />
+			<select type="Power" number="2" Category="$$CLASS,at-will,1" />
+			<textstring name="_CLASSNAME" value="TER_CLASS_003" />
+			<statadd name="_LEVEL-ONE-HPS" value="+10" />
+			<statadd name="_PER-LEVEL-HPS" value="+4" />
+			<statadd name="Healing Surges" value="+6" />
+			<statadd name="Fortitude Defense Class Bonus" value="+1" />
+			<statadd name="Will Defense Class Bonus" value="+1" />
+			<select type="Skill Training" number="4" Category="TER_CLASS_004" />
+		</rules>
+	</RulesElement>
+   <RulesElement name="Occultist" type="Grants" internal-id="ID_INTERNAL_GRANTS_OCCULTIST" source="Terra Advena">
+      <specific name="_SupportsID"> TER_CLASS_004 </specific>
+      <rules>
+         <grant name="ID_FMP_ROLE_1" type="Role" />
+         <grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" type="Proficiency" />
+         <grant name="TER_CLASS_FEATURE_OCCULT01" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_OCCULT02" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_OCCULT03" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_OCCULT03" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_OCCULT04" type="Class Feature" />
+         <grant name="ID_INTERNAL_GRANTS_OCCULTIST_IMPLEMENTS" type="Grants" />
+         <statadd name="FREEBEE:ID_FMP_GEAR_31" value="+1" />
+         <grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		 <grant name="ID_INTERNAL_COUNTSASCLASS_INVOKER" type="CountsAsClass" />
+     </rules>
+   </RulesElement>
+   <RulesElement name="Occultist Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_OCCULTIST_IMPLEMENTS" source="Terra Advena">
+      <specific name="_SupportsID"> TER_CLASS_004 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KI_FOCUSES)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TOME)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Forceful Caster" type="Class Feature" internal-id="TER_CLASS_FEATURE_OCCULT01" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Use charisma as the primary ability for invoker attacks and utility powers </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+		<textstring name="ID_FMP_POWER_16498:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10097:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11284:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11290:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2856:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11280:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11296:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11282:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2886:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2859:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7235:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7209:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2883:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3347:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5187:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7385:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2847:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7186:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2872:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12303:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5189:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5192:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5188:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11047:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3302:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2870:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7231:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11294:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11283:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7177:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7195:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7218:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7191:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3311:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11295:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3315:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7210:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5191:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11298:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7232:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3298:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7204:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3351:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3353:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3352:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7158:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3304:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11292:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7211:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11289:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7196:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10093:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10094:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7200:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7172:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2884:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7226:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7201:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2848:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2863:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7163:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2861:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7197:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2864:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7164:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7192:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7159:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10266:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7227:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12301:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7221:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7222:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7223:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_931:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3317:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7214:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7154:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2879:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2866:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3308:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3301:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3341:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2874:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2850:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7178:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10267:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7187:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7151:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10098:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11285:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7219:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7188:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12302:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3350:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2873:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7160:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2881:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3355:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2869:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7220:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3305:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3318:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3345:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7236:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7168:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7165:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7173:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11045:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7155:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7166:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7174:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3346:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7189:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7237:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7152:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_486:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7215:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5193:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7167:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2865:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3300:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11293:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7233:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11291:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7169:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10268:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7205:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3297:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7224:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7179:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7193:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2875:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3338:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11287:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7181:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3344:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11044:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11281:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3299:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2877:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7206:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7228:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7202:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3348:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3356:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2862:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5190:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3397:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7161:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7180:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7212:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2855:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7162:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3312:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7238:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7203:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11046:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3314:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3320:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3321:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2880:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11288:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7156:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2867:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7175:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5137:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5195:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2885:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7170:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10265:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3339:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2853:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2871:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7198:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7216:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7182:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3316:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7999:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7176:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7183:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7190:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2849:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10096:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10095:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2868:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7153:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2876:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3349:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3337:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_2860:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7207:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6577:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7157:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3296:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3309:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7225:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7199:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7230:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7234:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7184:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7213:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3306:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7208:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7171:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3334:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7194:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7217:key ability" value="Charisma" />
+		<modify name="Heaven's Bountiful Reward" type="Power" Field="Effect" value="The target gains temporary hit points equal to your Charisma modifier." />
+		<modify name="Prayer for Victory" type="Power" Field="Effect" value="You gain temporary hit points equal to 5 + your Charisma modifier, and you gain a +2 power bonus to AC until the end of your next turn." />
+		<modify name="Vengeful Dead" type="Power" Field="Effect" value="The target becomes an undead ally until the end of the encounter. The target regains hit points equal to its bloodied value and gains the undead keyword. It is slowed, immune to disease and poison, has resist 10 necrotic and vulnerable 5 radiant, and its melee attacks deal extra necrotic damage equal to your Charisma modifier. The target is otherwise unchanged and can act normally. At the end of the encounter, the ally dies, but can be brought back to life with the Raise Dead ritual or similar means." />
+      </rules>
+Occultists use Charisma instead of Wisdom for all invoker attacks and utility powers.
+   </RulesElement>
+   
+   <RulesElement name="Occultist Cantrips" type="Class Feature" internal-id="TER_CLASS_FEATURE_OCCULT02" source="Terra Advena" revision-date="27/02/2012 1:47:04 PM">
+      <Category> 1 </Category>
+      <Flavor> The basic tricks of magic are known as cantrips, and they are the first spells that a beginning wizard learns. The formula underlying a cantrip is so simple that each cantrip can be committed to memory and used at will once you have mastered it. </Flavor>
+      <specific name="Short Description"> Gain three cantrips of your choice. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_1217,ID_FMP_POWER_1225,ID_FMP_POWER_1227,ID_FMP_POWER_1930,ID_FMP_POWER_12731,ID_FMP_POWER_13970 </specific>
+      <specific name="Class"> ID_FMP_CLASS_9 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_1217,ID_FMP_POWER_1225,ID_FMP_POWER_1227,ID_FMP_POWER_1930,ID_FMP_POWER_12731,ID_FMP_POWER_13970 </specific>
+      <rules>
+        <modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility" />
+        <modify name="ID_FMP_POWER_1217" type="Power" Field="Class" value="ID_FMP_CLASS_9" requires="ID_FMP_RACE_20" />
+        <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Usage" value="At-Will" requires="ID_FMP_RACE_20" />
+        <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20" />
+        <select type="Power" number="3" Category="ID_FMP_CLASS_FEATURE_2870" />
+      </rules>
+Cantrips are minor spells you gain at 1st level. You can select three cantrips to use as at-will powers.
+</RulesElement>
+
+   <RulesElement name="Warding Invocation" type="Class Feature" internal-id="TER_CLASS_FEATURE_OCCULT03" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Can channel defensive power once per round </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> TER_POWER_OCCULT_01 </specific>
+      <rules>
+         <grant name="TER_POWER_OCCULT_01" type="Power" />
+      </rules>
+You gain the Warding Invocation power, which you can use once per round.
+   </RulesElement>
+
+   <RulesElement name="Occult Manifestation" type="Class Feature" internal-id="TER_CLASS_FEATURE_OCCULT04" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain a covenant manifestation </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="Covenant Manifestation" />
+      </rules>
+You gain the Covenant Manifestation of a Divine Covenant of your choice, but it applies only to invoker or arcane encounter and daily powers.
+   </RulesElement>
+
+   <!-- Class Powers -->
+   <RulesElement name="Warding Invocation" type="Power" internal-id="TER_POWER_OCCULT_01" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_004,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> As the attack hits, you throw up defensive magic, shielding you from the worst of it. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Thaumaturge Utility </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Trigger"> You are hit by an attack </specific>
+      <specific name="Effect"> You gain a +3 bonus to all defenses against the triggering attack. </specific>
+      <specific name="Special"> You can only use this power once per round </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> TER_CLASS_004 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+	<!-- At-Wills -->
+	<!-- Level 2 Utility -->
+	<!-- Level 3 Encounters -->
+	
+  <!-- Artificer Feats -->
+
+</D20Rules>

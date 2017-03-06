@@ -1,0 +1,42 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Utility.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Utility.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Utility.txt</VersionAddress>
+  </UpdateInfo>
+  
+<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+      <rules>
+     <grant name="ID_KDM_NONCOMBAT_BONUS" type="Class Feature" />
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Noncombat Bonus" type="Class Feature" internal-id="ID_KDM_NONCOMBAT_BONUS" source="KDM" >
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Class Feature" number="1" Category="ID_KDM_BONUS_UTILITY|ID_KDM_BONUS_SKILL_FEAT" optional="true" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Bonus Utility" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY" source="KDM" >	
+	<specific name="ShortDescription"> Choose a level 2 utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,2" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+	Choose a level 2 utility power for use only outside of combat.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT" source="KDM" >
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Feat" name="Bonus Skill Feat" number="1" />
+	</rules>
+	Choose a Skill Training, Skill Focus, or other noncombat feat.
+</RulesElement>
+	
+</D20Rules>

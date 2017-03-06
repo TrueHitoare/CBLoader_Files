@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>12b-April-2013</Version>
+    <Filename>TER-09-Artificer.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Artificer.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Artificer.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Artificer -->
+  <!-- TER-09-Artificer.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+</Changelog>
+  <!-- Empty out existing data -->
+   <RulesElement name="Tinkerer Artificer" type="Build" internal-id="ID_FMP_BUILD_80" source="Eberron Player&apos;s Guide" revision-date="9/21/2010 10:53:44 AM" >
+   </RulesElement>
+   <RulesElement name="Tinkerer Artificer" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_TINKERER_ARTIFICER" source="Eberron Player&apos;s Guide" >
+   </RulesElement>
+   <RulesElement name="Warrior Forge Artificer" type="Build" internal-id="ID_FMP_BUILD_96" source="Dragon Magazine 381" revision-date="9/21/2010 10:53:56 AM">
+   </RulesElement>
+   <RulesElement name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" source="Eberron Player&apos;s Guide" revision-date="8/27/2010 12:40:46 PM" >
+   </RulesElement>
+   <RulesElement name="Aggravating Force" type="Power" internal-id="ID_FMP_POWER_4131" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:05 AM">
+   </RulesElement>
+   <RulesElement name="Shielding Cube" type="Power" internal-id="ID_FMP_POWER_4133" source="Eberron Player's Guide,Adventurer's Vault 2" revision-date="8/27/2010 11:33:06 AM">
+   </RulesElement>
+   <RulesElement name="Life-Tapping Darts" type="Power" internal-id="ID_FMP_POWER_4134" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:06 AM">
+   </RulesElement>
+   <RulesElement name="Arcane Springboard" type="Power" internal-id="ID_FMP_POWER_4137" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:06 AM">
+   </RulesElement>
+   <RulesElement name="Altered Luck" type="Power" internal-id="ID_FMP_POWER_4138" source="Eberron Player's Guide,Adventurer's Vault 2" revision-date="8/27/2010 11:33:07 AM">
+   </RulesElement>
+   <RulesElement name="Ethereal Chill" type="Power" internal-id="ID_FMP_POWER_10188" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:58 AM">
+   </RulesElement>
+   <RulesElement name="Drain Speed" type="Power" internal-id="ID_FMP_POWER_10189" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:59 AM">
+   </RulesElement>
+   <RulesElement name="Halo of Thorns" type="Power" internal-id="ID_FMP_POWER_10190" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:59 AM">
+   </RulesElement>
+   <RulesElement name="Flameburst Armor" type="Power" internal-id="ID_FMP_POWER_10191" source="Dragon Magazine 381" revision-date="8/27/2010 11:53 AM">
+   </RulesElement>
+   <RulesElement name="Fireburst Armor Attack" type="Power" internal-id="ID_FMP_POWER_10192" source="Dragon Magazine 381" revision-date="8/27/2010 11:53 AM">
+   </RulesElement>
+   <RulesElement name="War Proxy" type="Power" internal-id="ID_FMP_POWER_10193" source="Dragon Magazine 381" revision-date="8/27/2010 11:53 AM">
+   </RulesElement>
+   <RulesElement name="Arcane Anchor" type="Power" internal-id="ID_FMP_POWER_10194" source="Dragon Magazine 381" revision-date="8/27/2010 11:53:01 AM">
+   </RulesElement>
+<!--
+   <RulesElement name="Shocking Feedback" type="Power" internal-id="ID_FMP_POWER_10195" source="Dragon Magazine 381" revision-date="8/27/2010 11:53:01 AM">
+   </RulesElement>
+-->
+   <RulesElement name="Hypnotic Distraction" type="Power" internal-id="ID_FMP_POWER_10196" source="Dragon Magazine 381" revision-date="8/27/2010 11:53:01 AM">
+   </RulesElement>
+   <RulesElement name="Thundering Armor" type="Power" internal-id="ID_FMP_POWER_4199" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:23 AM">
+   </RulesElement>
+   <RulesElement name="Spike Wire" type="Power" internal-id="ID_FMP_POWER_4200" source="Eberron Player's Guide,Adventurer's Vault 2" revision-date="8/27/2010 11:33:23 AM">
+   </RulesElement>
+   <RulesElement name="Caustic Rampart" type="Power" internal-id="ID_FMP_POWER_4201" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:23 AM">
+   </RulesElement>
+   <RulesElement name="Restorative Infusion" type="Power" internal-id="ID_FMP_POWER_4202" source="Eberron Player's Guide" revision-date="8/27/2010 11:33:24 AM">
+   </RulesElement>
+   <RulesElement name="Magic Weapon" type="Power" internal-id="ID_FMP_POWER_5207" source="Eberron Player's Guide" revision-date="8/27/2010 11:38:23 AM">
+   </RulesElement>
+   <RulesElement name="Unbalancing Force" type="Power" internal-id="ID_FMP_POWER_7378" source="PH Heroes: Series 2" revision-date="8/27/2010 11:45:24 AM">
+   </RulesElement>
+<!--
+   <RulesElement name="Punishing Eye" type="Power" internal-id="ID_FMP_POWER_7424" source="Dragon Magazine 374" revision-date="8/27/2010 11:45:38 AM">
+   </RulesElement>
+-->
+   <RulesElement name="Static Shock" type="Power" internal-id="ID_FMP_POWER_7636" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:41 AM">
+   </RulesElement>
+   <RulesElement name="Burning Weapons" type="Power" internal-id="ID_FMP_POWER_7637" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:41 AM">
+   </RulesElement>
+   <RulesElement name="Scouring Weapon" type="Power" internal-id="ID_FMP_POWER_7638" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:42 AM">
+   </RulesElement>
+   <RulesElement name="Icebound Sigil" type="Power" internal-id="ID_FMP_POWER_7639" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:42 AM">
+   </RulesElement>
+   <RulesElement name="Obedient Servant" type="Power" internal-id="ID_FMP_POWER_7641" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:42 AM">
+   </RulesElement>
+   <RulesElement name="Bolster Armor" type="Power" internal-id="ID_FMP_POWER_7642" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:43 AM">
+   </RulesElement>
+   <RulesElement name="Reinforced Minion" type="Power" internal-id="ID_FMP_POWER_7643" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:43 AM">
+   </RulesElement>
+<!--
+   <RulesElement name="Swift Mender" type="Power" internal-id="ID_FMP_POWER_7644" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:43 AM">
+   </RulesElement>
+-->
+   <RulesElement name="Use Magic Item" type="Power" internal-id="ID_FMP_POWER_7645" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:44 AM">
+   </RulesElement>
+   <RulesElement name="Force Infusion" type="Power" internal-id="ID_FMP_POWER_7646" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:44 AM">
+   </RulesElement>
+   <RulesElement name="Lightning Sphere" type="Power" internal-id="ID_FMP_POWER_7647" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:44 AM">
+   </RulesElement>
+   <RulesElement name="Repulsion Strike" type="Power" internal-id="ID_FMP_POWER_7648" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:45 AM">
+   </RulesElement>
+   <RulesElement name="Shadowy Figurine" type="Power" internal-id="ID_FMP_POWER_14401" source="Dragon Magazine 403">
+   </RulesElement>
+
+   <RulesElement name="Crossbow Caster" type="Feat" internal-id="ID_FMP_FEAT_2109" source="Dragon Magazine 381" revision-date="8/27/2010 12:19:46 PM">
+		<Prereqs> Unavailable </Prereqs>
+	</RulesElement>
+
+	<!-- Artificer Class Feature Updates -->
+   <RulesElement name="Empower" type="Category" internal-id="ID_TER_CATEGORY_EMPOWER" source="Core" revision-date="11/5/2009 4:54:35 PM">
+   </RulesElement>
+
+   <RulesElement name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" source="Terraism" revision-date="10/12/2010 1:39:31 PM">
+    <Flavor> "Your armor, your weapons? They are my tools to do with as I need: to protect, to heal, or to destroy." </Flavor>
+    <specific name="Key Abilities"> Intelligence, Constitution, Dexterity </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+	<specific name="Implements"> Rods, staffs, wands, weapons with which you're proficient </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 12 + Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 6 + Constitution Modifier </specific>
+    <specific name="Trained Skills"> Arcana. From the class skills list below, choose four more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Arcana (Int), Diplomacy (Cha), Dungeoneering (Wis), Heal (Wis), History (Int), Perception (Wis), Thievery (Dex) </specific>
+    <specific name="Build Options"> Battlesmith Artificer, Clockwork Arbalester, Tinkerer Artificer </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Arcane Empowerment, Combat Preparations, Healing Infusion, Ritual Casting </specific>
+    <specific name="Role"> Leader. You augment items with arcane power to enhance your allies and cripple your foes. You lean towards controller as a secondary role. </specific>
+    <specific name="Power Source"> Arcane. Your magic is predicated on knowledge of the inner workings of magical bindings and alchemy. </specific>
+    <specific name="Creating"> Artificers rely on their understanding of every item around them, and their ability to enhance those items such that they perform far beyond any reasonable expectations, to survive and prosper. Their greatest powers are time-consuming and require delicate manipulation, and so artificers reward cautious play and careful planning, making Intelligence of prime importance. Many artificers rely on Wisdom to enhance their understanding, while others rely on their Constitution to allow them to support more magical ties. </specific>
+	<specific name="Class Features"> You have the following class features. </specific>
+	<specific name="Implement"> Artificers make use of rods, staffs, and wands to help channel and direct their arcane powers. Without an implement, an artificer can still use artificer powers, including those that have the implement keyword. An artificer wielding a magic rod, staff, or wand can add its enhancement bonus to the attack rolls and the damage rolls of artificer powers, as well as artificer paragon path powers, that have the implement keyword.
+
+Some artificer powers have the weapon keyword and often require a  ranged weapon. If the ranged weapon fires ammunition, the ammunition carries the power&apos;s effect. Otherwise, the weapon carries the effect. When the attack is made, a mundane weapon returns to the artificer like a magic thrown weapon does. </specific>
+	<specific name="Powers"> Your arcane powers are called spells, though many artificers refer to spells that instill magic in objects as “infusions.” The powers here also introduce a new keyword: artifice.
+	Artifice: An artifice is an object that consists of inanimate materials that are infused with and animated by magic. It does not occupy a square unless a power states otherwise. As a minor action, you can make your artifice move a number of squares equal to your Constitution modifier, or you can shift it 1 square. The artifice&apos;s defenses equal your level + 4,and it has hit points equal to your healing surge value. If an artifice drops to 0 hit points or is consumed, it is destroyed. If the effect an artifice creates ends without the artifice being destroyed, the artifice reverts to its inert form. You can reuse an artifice that has reverted to its inert form. 
+	Many artificer powers have an additional effect - empowering - upon characters bearing items you have specially prepared ahead of time. For ease of reading, the phrase "an attuned creature" means "a creature bearing an item you have attuned". </specific>
+	<specific name="Power Name"> Spells </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="Short Description"> You use magical formulae to channel energy into items, assembling a device for any situation. </specific>
+    <rules>
+		<grant name="ID_INTERNAL_GRANTS_ARTIFICER" type="Grants" />
+		<select type="Power" number="2" Category="$$CLASS,at-will,1" />
+		<textstring name="_CLASSNAME" value="ID_FMP_CLASS_125" />
+		<statadd name="_LEVEL-ONE-HPS" value="+12" />
+		<statadd name="_PER-LEVEL-HPS" value="+5" />
+		<statadd name="Healing Surges" value="+6" />
+		<select type="Build" number="1" Category="$$CLASS" optional="true" />
+		<statadd name="Fortitude Defense Class Bonus" value="+1" />
+		<statadd name="Will Defense Class Bonus" value="+1" />
+		<select type="Skill Training" number="4" Category="ID_FMP_CLASS_125" />
+    </rules>
+Artificers treat mastery of magic like a technical skill. They see patterns in energy and matter, and they understand how to manipulate the flow of magic in and around objects and creatures. Artificers channel energy into items using magical components, diagrams, and complex chains of sigils. Their skills let them assemble a magic device for any situation. 
+
+As an artificer, you might be a formal student of magic who became interested in artifacts and arcane items. Alternatively, you could be a tinkerer who devised magic tools in a musty basement. Or perhaps you are an explorer who found your knowledge in the forgotten places of the world. Whatever the source of your talents, a passion for the technical components of magic drives you to perfect your art. 
+
+With a bandolier slung across your chest, you carry an arsenal of alchemical compounds, magic implements, mundane materials, and tools. Your weapons, implements, and other gear are inscribed with runes and mystic patterns. You mix reagents, drink potions, and craft items. You use your knowledge to infuse yourself and your allies with arcane power. And one day, your magical skills will carry you into legend.
+   </RulesElement>
+  <RulesElement name="Artificer" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARTIFICER" source="Terraism">
+    <specific name="_SupportsID"> ID_FMP_CLASS_125 </specific>
+    <rules>
+		<statadd name="FREEBEE:ID_FMP_GEAR_31" value="+1" />
+		<grant name="ID_FMP_ROLE_2" type="Role" />
+		<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+		<grant name="TER_CLASS_FEATURE_ARTI01" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_862" type="Class Feature" />
+		<grant name="TER_CLASS_FEATURE_ARTI03" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_683" type="Class Feature" />
+		<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		<grant name="ID_INTERNAL_GRANTS_ARTIFICER_IMPLEMENTS" type="Grants" />
+   </rules>
+  </RulesElement>
+   <RulesElement name="Artificer Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARTIFICER_IMPLEMENTS" source="Eberron Player&apos;s Guide" >
+      <specific name="_SupportsID"> ID_FMP_CLASS_125 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)" type="Proficiency" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Battlesmith Artificer" type="Build" internal-id="ID_FMP_BUILD_53" source="Terraism" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> ID_FMP_CLASS_125 </Category>
+      <specific name="Suggested"> Feat: Guardian Battlesmith
+Skills: Diplomacy, History, Perception, Thievery
+At-Will Powers: aggravating force, motion tether
+Encounter Power: scouring weapon
+Daily Power: burning weapons </specific>
+      <specific name="Key Abilities"> Int, Con, Wis </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_ARTI_06, TER_FEAT_ARTI_11 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_ARTI_14, TER_POWER_ARTI_13, TER_POWER_ARTI_19, TER_POWER_ARTI_20 </specific>
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BATTLESMITH_ARTIFICER" type="Build Suggestions" />
+      </rules>
+You spend some of your preparation time augmenting your armor and weapons in a more thorough fashion than you do with other equipment. As such, you are more capable of going toe-to-toe with your foes and rely on your augmented abilities to see you through situations other artificers could not manage.
+   </RulesElement>
+   <RulesElement name="Battlesmith Artificer" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_BATTLESMITH_ARTIFICER" source="Terraism" >
+      <specific name="_SupportsID"> ID_FMP_BUILD_53 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_ARTI04" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score" />
+         <suggest name="TER_FEAT_ARTI_06" type="Feat" />
+         <suggest name="TER_FEAT_ARTI_11" type="Feat" />
+         <suggest name="TER_POWER_ARTI_14" type="Power" />
+         <suggest name="TER_POWER_ARTI_13" type="Power" />
+         <suggest name="TER_POWER_ARTI_19" type="Power" />
+         <suggest name="TER_POWER_ARTI_20" type="Power" />
+         <suggest name="ID_FMP_SKILL_6" type="Skill" />
+         <suggest name="ID_FMP_SKILL_11" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+   
+   <RulesElement name="Clockwork Arbalester" type="Build" internal-id="TER_ARTI_BUILD_02" source="Terraism" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> ID_FMP_CLASS_125 </Category>
+      <specific name="Suggested"> Feat: Efficient Attunement
+Skills: Dungeoneering, History, Perception, Thievery
+At-Will Powers: magic weapon, tracing shot
+Encounter Power: halo of thorns
+Daily Power: life-tapping darts </specific>
+      <specific name="Key Abilities"> Int, Wis, Con </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_ARTI_04, TER_FEAT_ARTI_08 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_ARTI_12, TER_POWER_ARTI_15, TER_POWER_ARTI_17, TER_POWER_ARTI_21 </specific>
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_TINKERER_ARTIFICER" type="Build Suggestions" />
+      </rules>
+You spend your spare time tinkering with your crossbow, constantly seeking to improve its mechanical workings. No matter what crossbow you use, you have figured out a way to force it to load itself in between your shots, and you can use your attuned allies to home your shots.
+   </RulesElement>
+   <RulesElement name="Clockwork Arbalester" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_CLOCKWORK_ARBALESTER" source="Terraism" >
+      <specific name="_SupportsID"> TER_ARTI_BUILD_02 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_ARTI06" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_ARTI_04" type="Feat" />
+         <suggest name="TER_FEAT_ARTI_08" type="Feat" />
+         <suggest name="TER_POWER_ARTI_12" type="Power" />
+         <suggest name="TER_POWER_ARTI_15" type="Power" />
+         <suggest name="TER_POWER_ARTI_17" type="Power" />
+         <suggest name="TER_POWER_ARTI_21" type="Power" />
+         <suggest name="ID_FMP_SKILL_7" type="Skill" />
+         <suggest name="ID_FMP_SKILL_11" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Tinkerer Artificer" type="Build" internal-id="ID_FMP_BUILD_80" source="Terraism" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> ID_FMP_CLASS_125 </Category>
+      <specific name="Suggested"> Feat: Alchemical Preparations
+Skills: Dungeoneering, Heal, Perception, Thievery
+At-Will Powers: ethereal chill, unbalancing force
+Encounter Power: shielding cube
+Daily Power: flameburst armor </specific>
+      <specific name="Key Abilities"> Int, Wis, Con </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_ARTI_04, TER_FEAT_ARTI_08 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_ARTI_12, TER_POWER_ARTI_15, TER_POWER_ARTI_17, TER_POWER_ARTI_21 </specific>
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_TINKERER_ARTIFICER" type="Build Suggestions" />
+      </rules>
+During the long hours of the night, and during briefly stolen moments throughout the day, you work on preparing makeshift concoctions and tools that provide you with additional versatility and power, leaving your arcane energies free to enhance others fully.
+   </RulesElement>
+   <RulesElement name="Tinkerer Artificer" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_TINKERER_ARTIFICER" source="Terraism" >
+      <specific name="_SupportsID"> ID_FMP_BUILD_80 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_ARTI05" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_ARTI_04" type="Feat" />
+         <suggest name="TER_FEAT_ARTI_08" type="Feat" />
+         <suggest name="TER_POWER_ARTI_12" type="Power" />
+         <suggest name="TER_POWER_ARTI_15" type="Power" />
+         <suggest name="TER_POWER_ARTI_17" type="Power" />
+         <suggest name="TER_POWER_ARTI_21" type="Power" />
+         <suggest name="ID_FMP_SKILL_7" type="Skill" />
+         <suggest name="ID_FMP_SKILL_9" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Arcane Empowerment" type="Class Feature" internal-id="TER_CLASS_FEATURE_ARTI01" source="Terraism" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Attune yourself to items, allowing your powers to buff them. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Class" />
+      <rules />
+Whenever you take a short or an extended rest, you can attune a number of weapons or armor equal to your Intelligence modifier. These attunements last until you next rest. Whenever you use a power with the Empower keyword on a creature bearing one of these items, you empower them until the end of your next turn.
+Empowering a weapon grants a bonus to damage rolls equal to your Constitution or Wisdom modifier. Empowering armor grants temporary hit points equal to your Constitution or Wisdom modifier. If a target affected by your arcane empowerment bears both attuned weapons and armor, they receive both bonuses.
+   </RulesElement>
+
+   <RulesElement name="Combat Preparations" type="Class Feature" internal-id="TER_CLASS_FEATURE_ARTI03" source="Terraism" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> You prepare for battle in a specific fashion </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> TER_CLASS_FEATURE_ARTI04, TER_CLASS_FEATURE_ARTI05 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="TER_CLASS_FEATURE_ARTI03" />
+      </rules>
+The division between artificers who spend some of their attention empowering themselves, as opposed to those who focus on their allies and make do with whichever small tools they themselves can manage, is one of the key differences between artificers.
+Choose a method of combat preparations. The choice you make gives you several benefits and also provides bonuses to certain artificer powers, as detailed in those powers.
+   </RulesElement>
+  <RulesElement name="Battle Enhancements" type="Class Feature" internal-id="TER_CLASS_FEATURE_ARTI04" source="Terraism" revision-date="10/5/2010 1:47:04 PM">
+    <Category> TER_CLASS_FEATURE_ARTI03,1 </Category>
+    <specific name="Short Description"> +1 to AC, Int for melee basics, proficiency with military melee. </specific>
+    <specific name="Level"> 1 </specific>
+	<specific name="Class" />
+    <rules>
+		<statadd name="AC" value="+1" type="Battle Enhancements" wearing="weapon:" />
+		<textstring name="melee basic:key ability" value="Intelligence" />
+		<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+    </rules>
+You gain a +1 bonus to AC when wielding a melee weapon, and can use Intelligence instead of Strength for making melee basic attacks. In addition, you gain proficiency with military melee weapons.
+   </RulesElement>
+  <RulesElement name="Alchemical Preparations" type="Class Feature" internal-id="TER_CLASS_FEATURE_ARTI05" source="Terraism" revision-date="10/5/2010 1:47:04 PM">
+	<Category> TER_CLASS_FEATURE_ARTI03,1 </Category>
+	<specific name="Short Description"> Can create alchemical concoctions for free and use them for ranged basic attacks. </specific>
+	<specific name="Level"> 1 </specific>
+	<specific name="Class" />
+    <rules />
+During an extended rest, you can create a number of alchemical items of your level or lower equal to your Intelligence modifier at no cost. Each time you reach another milestone, you may create an additional item during a short rest. These alchemical concoctions are fragile, and fade to uselessness when you take an extended rest. In addition, you can use alchemical items whenever you are allowed to make a ranged basic attack.
+  </RulesElement>
+  <RulesElement name="Seeking Bolts" type="Class Feature" internal-id="TER_CLASS_FEATURE_ARTI06" source="Terraism" revision-date="10/5/2010 1:47:04 PM">
+	<Category> TER_CLASS_FEATURE_ARTI03,1 </Category>
+	<specific name="Short Description"> Gain speed loader and CA against enemies adjacent to empowered ally. </specific>
+	<specific name="Level"> 1 </specific>
+	<specific name="Class" />
+    <rules>
+         <grant name="ID_FMP_FEAT_396" type="Feat" />
+    </rules>
+When making a weapon attack with a crossbow, you have combat advantage against any creature adjacent to an empowered ally. In addition, you gain Speed Loader as a bonus feat.
+  </RulesElement>
+
+   <RulesElement name="Healing Infusion" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_862" source="Eberron Player&apos;s Guide" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Access related powers 2/encounter (3/encounter at level 16+) </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_4128,ID_FMP_POWER_7635 </specific>
+      <specific name="type"> Encounter (Special) </specific>
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_4128,ID_FMP_POWER_7635 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_4128" type="Power" />
+         <grant name="ID_FMP_POWER_7635" type="Power" />
+      </rules>
+You can create healing infusions for later use. At the end of an extended rest, you create two healing infusions that last until the end of your next extended rest. At 16th level, you instead create three healing infusions.
+
+You determine the effect of a healing infusion at the time you use the power, not at the time you create it. When you use a Healing Infusion power, you expend one of the infusions you created during your last extended rest. During a short rest, you or an ally can spend a healing surge to replenish one of the infusions expended.
+
+When you create an artificer, you can choose to take the shielding elixir power in place of the resistive formula power. If you do so, the shielding elixir healing infusion functions exactly as other healing infusions do, with regards to their use and replenishment. If you choose the shielding elixir infusion, you cannot create the resistive formula healing infusion at all.
+   </RulesElement>
+
+  <!-- Class Powers -->
+	<!-- At-Wills -->
+   <RulesElement name="Aggravating Force" type="Power" internal-id="TER_POWER_ARTI_03" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> When your infused weapon strikes an enemy, the weapon unleashes a force that rattles the foe. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Force, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier force damage, and the attack creates a zone in a burst 1 centered on the target. The zone lasts until the end of your next turn. The next time the target attacks a creature within the zone, it takes force damage equal to your Constitution modifier and falls prone after the attack is resolved.
+Level 21: 2[W] + Intelligence modifier damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Ethereal Chill" type="Power" internal-id="TER_POWER_ARTI_04" source="Terraism" revision-date="8/27/2010 11:52:58 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You align your spell with those you wove over your ally's armor, causing them to radiate an unnatural cold. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Cold, Empower, Implement </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Primary Target"> You or one ally in burst </specific>
+      <specific name="Effect"> Make a secondary attack that is a close burst 1 implement attack centered on the primary target. </specific>
+      <specific name=" Secondary Target"> Each creature in burst other than the primary target </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> Intelligence modifier cold damage.</specific>
+      <specific name="Effect"> Until the end of your next turn, any enemy that hits the primary target takes cold damage equal to your Wisdom modifier.
+Level 21: 3 + Wisdom modifier cold damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Magic Weapon" type="Power" internal-id="TER_POWER_ARTI_05" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You make a quick attack while devoting most of your attention to empowering nearby links. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence +1 vs. AC </specific>
+      <specific name="Hit"> 1[W] damage, and you empower each attuned item within 2 squares of you until the end of your next turn.
+Level 21: 2[W] damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Motion Tether" type="Power" internal-id="TER_POWER_ARTI_06" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You work a quick link between your enemy and an ally, moving one as you shove the other. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier damage and you slide the target 1 square. An ally adjacent to the target before or after the slide may shift one square.
+Level 21: 2[W] + Intelligence modifier damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Static Shock" type="Power" internal-id="TER_POWER_ARTI_07" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You imbue your opponent with a crackling arcane charge, hindering the potency of its next attack. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Implement, Lightning </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 5 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 2d6 + Intelligence modifier lightning damage. The next attack the target makes before the end of your next turn takes a penalty to the damage roll equal to your Constitution modifier.
+Level 11: Increase the penalty to damage to 3 + Constitution modifier.
+Level 21: 2d8 + Intelligence modifier damage, and increase the penalty to damage to 6 + Constitution modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Thundering Armor" type="Power" internal-id="TER_POWER_ARTI_08" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Thunder ripples outward from your implement, coalescing around you or an ally before focusing its might on a nearby enemy. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Implement, Thunder </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Primary Target"> You or one ally in burst </specific>
+      <specific name="Effect"> The primary target gains a +1 power bonus to AC until the end of your next turn.  Make a secondary attack that is a close burst 1 implement attack centered on the primary target. </specific>
+      <specific name=" Secondary Target"> One creature adjacent to the primary target in burst </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> Intelligence modifier thunder damage and the target cannot shift until the end of your next turn.
+Level 21: Twice Intelligence modifier thunder damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Tracing Shot (Artificer)" type="Power" internal-id="TER_POWER_ARTI_09" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> A line of energy follows your shot at the target, bursting with light when it arrives and making them an easy target. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier damage, and the target cannot benefit from cover or concealment (except for total concealment or superior cover) until the start of your next turn. In addition, the next ally to make a ranged attack against the target before the start of your next turn gains a +1 power bonus to the attack roll.
+Level 21: 2[W] + Intelligence modifier damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Unbalancing Force" type="Power" internal-id="TER_POWER_ARTI_10" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You point your implement and blast a foe so that it reels from your ally's attack. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Force, Implement </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d8 + Intelligence modifier force damage. The next ally who hits the target before the end of your next turn also pushes the target 1 square and knocks it prone.
+Level 21: 2d8 + Intelligence modifier force damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Charge Conduit" type="Power" internal-id="TER_POWER_ARTI_11" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You send a brief surge of arcane energy through to every attuned item near you, enhancing their capabilities for a short time. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Target"> Each attuned item in burst </specific>
+      <specific name="Effect"> Attuned weapons grant a +1 power bonus to attacks until the end of your next turn, and attuned armor grants a +1 power bonus to all defenses until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Empowering Surge" type="Power" internal-id="TER_POWER_ARTI_12" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> It takes all your concentration, but you manage to send enough power through to an item you have attuned to almost give it a mind of its own. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 5 </specific>
+      <specific name="Target"> One attuned item </specific>
+      <specific name="Effect"> If the attuned item is armor, the bearer can immediately use his second wind as a free action. If the attuned item is a weapon, the bearer can make an immediate melee basic attack using that weapon. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+	<!-- Level 1 Encounters -->
+   <RulesElement name="Drain Speed" type="Power" internal-id="TER_POWER_ARTI_13" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You bind the quickness of your enemy to the enchantments you placed on your ally, transferring speed from one to the other. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Empower, Implement, Necrotic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Primary Target"> One ally in burst </specific>
+      <specific name="Effect"> The target can shift one square as a free action. Make a secondary attack. </specific>
+      <specific name=" Secondary Target"> One creature adjacent to the primary target in burst </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d10 + Intelligence modifier necrotic damage and the target is slowed and cannot shift until the end of your next turn. The primary target gains a +2 power bonus to AC and Reflex until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Ice Shard Traps" type="Power" internal-id="TER_POWER_ARTI_14" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You spread invisible patches of ice on the battlefield. When creatures stumble into the traps, a hail of crystals erupts around them. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Cold, Conjuration, Implement </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Effect"> You conjure two ice shard traps in two different unoccupied squares on the ground within the burst. The traps are invisible to your enemies and last until the end of the encounter or until discharged. When a non-attuned creature enters a trap's square, make the following attack against that creature as a free action. Then the trap disappears. </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d4 + Intelligence modifier cold damage, and the target is slowed and grants combat advantage until the end of your next turn. </specific>
+      <specific name="Alchemical Preparations"> You create a third trap in the spell's range. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Halo of Thorns" type="Power" internal-id="TER_POWER_ARTI_15" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You enchant your ammunition with poisoning magic, and when it strikes the target, it bites deep and stings again each time they act. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Poison, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1W + Intelligence modifier poison damage, and the target is weakened until the end of your next turn. In addition, each time the target makes an attack before the end of your next turn, it takes 2 poison damage. </specific>
+      <specific name="Clockwork Arbalester"> The poison damage is equal to 1 + your Wisdom modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Infused Blow" type="Power" internal-id="TER_POWER_ARTI_16" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,1 </Category>
+      <Flavor> Before your ally can be struck, you channel raw force into your weapon and swing at the enemy, hopefully battering it away before it connects. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Force, Weapon </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Trigger"> An enemy hits an ally with a melee attack </specific>
+      <specific name="Target"> The triggering enemy </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier force damage and you push the target one square. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Magnetic Binding" type="Power" internal-id="TER_POWER_ARTI_17" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You strike your foe and release a short-term binding that draws further attacks to them. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Lightning, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier lightning damage, and one ally adjacent to the target can make a melee basic attack against the target as a free action. If that ally's attack hits, they gain a +2 power bonus to attacks against the target until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Scouring Weapon" type="Power" internal-id="TER_POWER_ARTI_18" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You infuse your weapon with acid, momentarily corroding your opponent's defenses. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Acid, Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 2[W] + Intelligence modifier acid damage, and the target takes a -2 penalty to AC until the end of your next turn. </specific>
+      <specific name="Battle Enhancements"> The penalty to AC is -2 or equal to your Constitution modifier, whichever is greater. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Shielding Cube" type="Power" internal-id="TER_POWER_ARTI_19" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You direct a specially-prepared cube, which then explodes with arcane force that settles upon your allies after a moment, warding them from harm. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Force, Implement </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 2d6 + Intelligence modifier force damage. </specific>
+      <specific name="Effect"> Each ally adjacent to the target gains a +2 power bonus to AC until the end of your next turn. </specific>
+      <specific name="Alchemical Preparations"> The bonus to AC is +2 or equal to your Wisdom modifier, whichever is greater. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Spike Wire" type="Power" internal-id="TER_POWER_ARTI_20" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You throw a bundle of barbed wire that bites into your enemy's flesh, digging deeper and deeper. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Force, Implement </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d8 + Intelligence modifier force damage. Until the end of your next turn, the target has vulnerability to all damage equal to your Wisdom modifier. Each time the target is hit by an attack that deals damage, this vulnerability increases by 1. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+	<!-- Level 1 Dailies -->
+   <RulesElement name="Burning Weapons" type="Power" internal-id="TER_POWER_ARTI_21" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Flames spread down your weapon, and then flicker and jump to those nearest that you have attuned yourself to. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Fire, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 2[W] + Intelligence modifier fire damage. </specific>
+      <specific name="Effect"> You empower each attuned weapon within 3 squares of you until the end of your next turn. In addition, until the end of the encounter, whenever you empower a weapon it deals an additional +1d6 fire damage until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Caustic Rampart" type="Power" internal-id="TER_POWER_ARTI_22" source="Terraism" revision-date="8/27/2010 11:33:23 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You spill some liquid and infuse it with energy, creating a defensive wall of acidic fumes. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Acid, Arcane, Conjuration, Implement </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Area wall 5 within 10 squares </specific>
+      <specific name="Effect"> You conjure a wall of acidic fumes. The wall can be up to 2 squares high and must rest on a solid surface, and it lasts until the end of your next turn. The wall is difficult terrain, and its squares are lightly obscured. Any non-attuned creature that enters the wall or starts its turn within or adjacent to it takes acid damage equal to 1d6 + your Intelligence modifier. A creature can take this damage only once per turn. </specific>
+      <specific name="Sustain Minor"> The wall persists. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Flameburst Armor" type="Power" internal-id="TER_POWER_ARTI_23" source="Terraism" revision-date="8/27/2010 11:53 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You inscribe a fiery rune upon your ally's armor or garments, warding them from cold and allowing you to flare the rune with very little attention. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> TER_POWER_ARTI_24 </specific>
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Empower, Fire, Implement </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee touch </specific>
+      <specific name="Primary Target"> You or one ally </specific>
+      <specific name="Effect"> You infuse the target's armor with an elemental fire spirit. Until the end of the encounter, the target gains resist 5 cold. In addition, you can use the Fireburst Armor Attack power once per round until the end of the encounter if the primary target is within 5 squares of you. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_DisplayPowers"> TER_POWER_ARTI_24 </specific>
+      <rules>
+         <grant name="TER_POWER_ARTI_24" type="Power" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Flameburst Armor Attack" type="Power" internal-id="TER_POWER_ARTI_24" source="Terraism" revision-date="8/27/2010 11:53 AM">
+      <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+      <Prereqs> Unselectable </Prereqs>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Arcane, Empower, Fire, Implement </specific>
+      <specific name="Action Type"> Minor action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Requirement"> The power Flameburst Armor must be active in order to use this power. </specific>
+      <specific name="Special"> You can use this power only once per turn. </specific>
+      <specific name="Target"> Creature you targeted with the Flameburst Armor power </specific>
+      <specific name="Effect"> Each enemy adjacent to the target takes fire damage equal to your Intelligence modifier and is marked by the target until the end of your next turn </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_ParentPower"> TER_POWER_ARTI_23 </specific>
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+   </RulesElement>
+   <RulesElement name="Icebound Sigil" type="Power" internal-id="TER_POWER_ARTI_25" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Channeling frigid energies into your weapon, you strike a foe and conjure a frozen sigil at their feet, holding them to the position and encasing them in a layer of brittle ice. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Cold, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier cold damage, and the target is immobilized and has vulnerable 5 (save ends both). </specific>
+      <specific name="Effect"> The attack creates a zone in one square occupied by the target that lasts until the end of the encounter. Whenever an enemy enters the zone, it is immobilized and has vulnerable 5 (save ends both). </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Life-Tapping Darts" type="Power" internal-id="TER_POWER_ARTI_26" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You imbue your ammunition with a draining effect, channeling vitality it into those bearing your attuned items with a golden flash. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Healing, Necrotic, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 2[W] + Intelligence modifier necrotic damage, and an attuned creature within 2 squares of the target can spend a healing surge. </specific>
+      <specific name="Effect"> Until the end of the encounter, whenever you hit an enemy with a ranged weapon attack, one attuned creature within 2 squares of that enemy regains hit points equal to your Wisdom modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Obedient Servant" type="Power" internal-id="TER_POWER_ARTI_27" source="Terraism" revision-date="8/27/2010 11:46:42 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+      <Flavor> You infuse a construct with an elemental animus and then throw it into the fray to aid your allies. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Implement, Summoning </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Effect"> You create a Medium obedient servant in an unoccupied square within range. The servant has speed 6 and +2 AC. Any marked enemy that starts its turn adjacent to the servant takes damage equal to your Constitution modifier. You can give the obedient servant the following special commands: </specific>
+      <specific name=" Free action"> As a free action, at the start of your turn, the servant can mark an enemy within 2 squares of it until the end of your next turn. </specific>
+      <specific name=" Standard action"> Melee 1 or Ranged 5; targets one creature; Intelligence + 2 vs. AC; 1d10 + Intelligence modifier damage. </specific>
+      <specific name=" Opportunity Attack"> Melee 1; targets one creature; Intelligence + 2 vs. AC; 1d10 + Intelligence modifier damage, and the target is marked until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+	<!-- Level 2 Utility -->
+   <RulesElement name="Arcane Anchor" type="Power" internal-id="TER_POWER_ARTI_27" source="Terraism" revision-date="8/27/2010 11:53:01 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+      <Flavor> You use the link between yourself and an attuned ally to transfer momentum from them to you. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane, Empower </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Trigger"> An attuned creature is affect by a push, pull, or slide effect, or is knocked prone </specific>
+      <specific name="Target"> The triggering creature </specific>
+      <specific name="Effect"> You suffer the effect of the forced movement or prone instead. </specific>
+      <specific name="Battle Enhancements"> You may make a saving throw to ignore the effect. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Arcane Springboard" type="Power" internal-id="TER_POWER_ARTI_28" source="Terraism" revision-date="8/27/2010 11:33:06 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,2 </Category>
+      <Flavor> Infusing a small square of prepared cloth with arcane energy, you create a bouncy surface that launches any who step on it. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane, Conjuration </specific>
+      <specific name="Action Type"> Move Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure an arcane springboard in a square within range, which lasts until the end of your next turn. You or any ally who enters the square can jump 2 squares. The distance jumped does not count towards a character's movement. A character can only benefit from this conjuration's effect once. </specific>
+      <specific name="Alchemical Preparations"> The distance jumped is equal to your Wisdom modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Bolster Armor" type="Power" internal-id="TER_POWER_ARTI_29" source="Terraism" revision-date="8/27/2010 11:46:43 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+      <Flavor> You touch some armor, causing it to glow as you enhance its defenses. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane, Empower </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Target"> Each armor-attuned ally in burst </specific>
+      <specific name="Effect"> Attuned armor worn by the target grants a +1 bonus to AC until the end of the encounter. When hit by an attack, the target can end this bonus as a free action to gain a +4 bonus to AC against that attack. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Instant Attunement" type="Power" internal-id="TER_POWER_ARTI_30" source="Terraism" revision-date="8/27/2010 11:53:01 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+      <Flavor> You throw together a quick binding over an ally, forming a short-term attunement with one of their items and empowering it. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Effect"> You attune yourself to a single item carried by the target, as your Arcane Empowerment class feature, and then empower the target. At the end of each of its turns, the target makes a saving throw. On a failed save, the attunement fades. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Reinforced Minion" type="Power" internal-id="TER_POWER_ARTI_31" source="Terraism" revision-date="8/27/2010 11:46:43 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+      <Flavor> You send energy to bolster one of your artifices, helping it to evade an attack that might otherwise have damaged it. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Trigger"> One of your summoned creatures within 5 squares of you is hit by an attack </specific>
+      <specific name="Effect"> The triggering attack misses the summoned creature. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Restorative Infusion" type="Power" internal-id="TER_POWER_ARTI_32" source="Terraism" revision-date="8/27/2010 11:33:24 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+      <Flavor> You infuse a comrade with a restorative compound. That ally can then redirect excess vitality to your other allies. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Utility 2 </specific>
+      <specific name="Keywords"> Arcane </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Ranged 5 </specific>
+      <specific name="Target"> You or one ally </specific>
+      <specific name="Effect"> The target gains temporary hit points equal to his or her bloodied value. As a minor action, the target can transfer any number of these temporary hit points to an ally within 5 squares of him or her. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 2 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+  <RulesElement name="Shadowy Figurine" type="Power" internal-id="TER_POWER_ARTI_33" source="Terraism,Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Your magic creates an ebon figurine cloaked in shadow. Tendrils of dim light stretch from the figurine and envelop you and your allies in obscurity. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Artificer Utility 2 </specific>
+    <specific name="Keywords"> Arcane, Conjuration </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect"> You conjure a shadowy figurine in a square within ange. The figurine lasts until the end of your next turn. While within 2 squares of the figurine, you and your allies gain partial concealment and a +4 power bonus to Stealth checks. </specific>
+    <specific name="Sustain Minor"> The figurine persists until the end of your next turn, and you can move it up to 5 squares. Before or after the movement, you empower a single creature adjacent to the figurine. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+Whether seeking to pilfer treasures from their rivals in Skyclave or exploring the perilous depths of Underhome, Gondsmen frequently use shadowy figurine to avoid unwanted attention. The diminutive carving summoned by this spell blankets you and your companions in darkness.
+</RulesElement>
+  <RulesElement name="War Proxy" type="Power" internal-id="TER_POWER_ARTI_34" source="Terraism">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You strengthen the bond between you and an item you have attuned, allowing you to channel power directly through it. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Artificer Utility 2 </specific>
+    <specific name="Keywords"> Arcane, Empower </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Effect"> Until the end of the encounter, if the target is within 10 squares of you, you can use the target's square as the origin for any arcane powers you use, instead of your own. You do not provoke opportunity attacks made through your ally's square, and each time you make in attack in that fashion, you empower all attuned items your ally is bearing. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+	<!-- Level 3 Encounters -->
+   <RulesElement name="Drain Luck" type="Power" internal-id="TER_POWER_ARTI_35" source="Terraism">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> You bind the quickness of your enemy to the enchantments you placed on your ally, transferring speed from one to the other. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Empower, Implement, Necrotic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Primary Target"> One ally in burst </specific>
+      <specific name="Effect"> Make a secondary attack that is a close burst 2 implement attack centered on the primary target. </specific>
+      <specific name=" Secondary Target"> One creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Will </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier necrotic damage and the secondary target takes a -2 penalty to each of its next attack roll, saving throw, ability check, and skill checks before the end of your next turn. The primary target gains a +2 bonus to one of each attack roll, saving throw, ability check, and skill check it makes before the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Empowering Blow" type="Power" internal-id="TER_POWER_ARTI_36" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> Your mighty blow cracks the air, generating energy that empowers everything you have attuned. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 2[W] + Intelligence modifier thunder damage, and you empower each attuned item within 5 squares of you. </specific>
+      <specific name="Battle Enhancements"> The attack deals extra damage equal to your Constitution modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Force Infusion" type="Power" internal-id="TER_POWER_ARTI_37" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> You bind concussive energy into your weapon - directed not as you strike, but at the attuned allies nearest to you. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Force, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier force damage, and each enemy adjacent to the target takes force damage equal to your Constitution modifier. </specific>
+      <specific name="Effect"> Each attuned weapon in burst 3 from the target gains the ability to push 1 on a hit until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Hypnotic Distraction" type="Power" internal-id="TER_POWER_ARTI_38" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> At your command, the energy you bound in an ally's armor begins to pulse hypnotically, drawing the attention of your enemies. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Empower, Implement, Psychic </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Primary Target"> One attuned creature in burst </specific>
+      <specific name="Effect"> Make a secondary attack that is a close burst 3 implement attack centered on the primary target. </specific>
+      <specific name=" Secondary Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Intelligence vs. Will </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier psychic damage and the target is pulled 1 square, takes a -1 penalty to attack rolls, and is marked by the primary target until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Lightning Sphere" type="Power" internal-id="TER_POWER_ARTI_39" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> The small metal ball you roll at your enemies bursts apart in an explosion of lightning, sending their limbs spasming and preventing them from reacting quickly. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Implement, Lightning </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+      <specific name="Target"> Each non-attuned creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 1d8 + Intelligence modifier lightning damage, and the target grants combat advantage and cannot take opportunity actions until the end of your next turn. </specific>
+	  <specific name="Alchemical Preparations"> The attack is only against enemies in the burst. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Repulsion Strike" type="Power" internal-id="TER_POWER_ARTI_40" source="Terraism" revision-date="8/27/2010 11:52:59 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> When you hit your foe, you release a field of resistance that you can flare later to trap them in place. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Artificer Attack 3 </specific>
+      <specific name="Keywords"> Arcane, Weapon </specific>
+      <specific name="Action Type"> Standard Action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Intelligence vs. AC </specific>
+      <specific name="Hit"> 1[W] + Intelligence modifier force damage, and the target is slowed until the end of your next turn. In addition, one time before the end of your next turn, you can slide the target two squares as an immediate reaction. </specific>
+      <specific name="Clockwork Arbalester"> If the attack hits, you push the target 1 square. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_125 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+	
+  <!-- Artificer Feats -->
+   <RulesElement name="Alchemical Genius" type="Feat" internal-id="TER_FEAT_ARTI_01" source="Terraism" >
+      <Prereqs> Artificer, alchemical preparations class feature </Prereqs>
+      <print-prereqs> Artificer, alchemical preparations class feature </print-prereqs>
+      <Flavor> Your alchemical concoctions are stronger than those made by others, even if they are fleeting. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +2 with alchemical items you create </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Alchemical items you create gain a +2 bonus to attack rolls, damage rolls, and healing done.
+   </RulesElement>
+   <RulesElement name="Empowering Infusions" type="Feat" internal-id="TER_FEAT_ARTI_02" source="Terraism" >
+      <Prereqs> Healing Infusion class feature </Prereqs>
+      <print-prereqs> Healing Infusion class feature </print-prereqs>
+      <Flavor> You can use the surge of energy provided by your infusions to empower items to which you are attuned. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Empower with your infusions </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	  <rules>
+		<modify name="Healing Infusion: Curative Admixture" type="Power" Field="Keywords" list-addition="Empower" />
+		<modify name="Healing Infusion: Resistive Formula" type="Power" Field="Keywords" list-addition="Empower" />
+	  </rules>
+Any infusions granted by your Healing Infusion class feature gain the Empower keyword.
+   </RulesElement>
+   <RulesElement name="Efficient Attunement" type="Feat" internal-id="TER_FEAT_ARTI_03" source="Terraism" >
+      <Prereqs> Artificer, Arcane Empowerment class feature </Prereqs>
+      <print-prereqs> Artificer, Arcane Empowerment class feature </print-prereqs>
+      <Flavor> You can attune more items than you would normally be able. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Attune additional items </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You can empower an additional two items when you use your arcane empowerment class feature.
+   </RulesElement>
+   <RulesElement name="Guardian Battlesmith" type="Feat" internal-id="TER_FEAT_ARTI_04" source="Terraism" >
+      <Prereqs> Artificer, battle enhancements class feature </Prereqs>
+      <print-prereqs> Artificer, battle enhancements class feature </print-prereqs>
+      <Flavor> Planning to spend time in the thick of things, you have learned to defend yourself even further. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Proficiency with hide armor and light shields </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+		</rules>
+You gain proficiency with hide armor and light shields.
+   </RulesElement>
+   <RulesElement name="Resistive Shields" type="Feat" internal-id="TER_FEAT_ARTI_05" source="Terraism" >
+      <Prereqs> Artificer, Healing Infusion: Resistive Formula power </Prereqs>
+      <print-prereqs> Artificer, Healing Infusion: Resistive Formula power </print-prereqs>
+      <Flavor> You have learned to ward your allies from the elements as well as attacks with your infusions. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Grant resist 5/10/15 to an element with resistive formula </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+		<rules>
+			<modify name="Healing Infusion: Resistive Formula" type="Power" Field="Resistive Shields" value="Targets also gain a resist 5/10/15 to cold, fire, force, lightning, necrotic, poison, radiant, or thunder until the bonus to AC ends." />
+		</rules>
+When you use your Resistive Formula infusion, the target also gains resist 5 to one of the following damage types as long as the bonus to AC is active: cold, fire, force, lightning, necrotic, poison, radiant, or thunder.
+The bonus increases to resist 10 at level 11, and resist 15 at level 21.
+   </RulesElement>
+   <RulesElement name="Warding Curatives" type="Feat" internal-id="TER_FEAT_ARTI_06" source="Terraism" >
+      <Prereqs> Artificer, Healing Infusion: Curative Admixture power </Prereqs>
+      <print-prereqs> Artificer, Healing Infusion: Curative Admixture power </print-prereqs>
+      <Flavor> You have modified your curative infusion such that it momentarily toughens the affected, preventing them from further harm. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Grant resist all with curative admixture </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+		<rules>
+			<modify name="Healing Infusion: Curative Admixture" type="Power" Field="Warding Curatives" value="Targets also gain resist equal to your Constitution or Wisdom modifier until the start of your next turn." />
+		</rules>
+When you use your Curative Admixture power, the target also gains resistance to all damage equal to your Constitution or Wisdom modifier until the start of your next turn.
+   </RulesElement>
+  
+</D20Rules>

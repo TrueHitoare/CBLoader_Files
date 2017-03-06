@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 25-June-2012 Dragonborn thunder and radiant breath types
+</Changelog>
+
+		<!-- Dragonborn -->
+   <RulesElement name="Dragon Breath Radiant" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_RADIANT" source="Player's Handbook">
+    <Category> Dragon Breath,Element Choice </Category>
+    <specific name="Short Description"> Dragon breath deals radiant damage </specific>
+    <specific name="_SupportsID"> ID_FMP_POWER_1448 </specific>
+    <rules>
+      <modify name="Dragon Breath" type="Power" Field="Keywords" list-addition="Radiant" />
+    </rules>
+Your Dragon Breath power deals radiant damage.
+   </RulesElement>
+   <RulesElement name="Dragon Breath Thunder" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_THUNDER" source="Player's Handbook">
+    <Category> Dragon Breath,Element Choice </Category>
+    <specific name="Short Description"> Dragon breath deals thunder damage </specific>
+    <specific name="_SupportsID"> ID_FMP_POWER_1448 </specific>
+    <rules>
+      <modify name="Dragon Breath" type="Power" Field="Keywords" list-addition="Thunder" />
+    </rules>
+Your Dragon Breath power deals thunder damage.
+   </RulesElement>
+	
+</D20Rules>

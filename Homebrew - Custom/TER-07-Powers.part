@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>22-February-2012</Version>
+    <Filename>TER-07-Powers.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-07-Powers.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-07-Powers.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 16-August-2012 Removed a number of feats that were in both this and the Feats file
+ Updated 22-February-2012 Made Ire Strike augment 1 not worse than the unaugmented version.
+</Changelog>
+
+		<!-- Powers -->
+	<RulesElement name="Voltaic Tracer" type="Power" internal-id="ID_TER_POWER_SOR_001" source="Custom" revision-date="8/27/2010 11:38:32 AM">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> A stream of electric current strikes your foe, leaving behind a path of light to assist your further attacks. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Implement, Lightning </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Ranged 10 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Charisma +1 vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier lightning damage, and you gain a +1 bonus to your next attack roll against the target.
+Level 21: 2d8 + Charisma modifier lightning damage. </specific>
+		<specific name="Special"> This power can be used as a ranged basic attack. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_BasicAttack"> Ranged </specific>
+		<rules>
+			<modify name="this" Field="_BasicAttack" value="Ranged" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Crashing Thunder" type="Power" internal-id="ID_TER_POWER_SOR_002" source="Custom" revision-date="8/27/2010 11:38:32 AM">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> First one foe staggers as thunder claps around his head, then another follows. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Implement, Thunder </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Ranged 20 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d6 + Charisma modifier thunder damage. Make a secondary attack.
+Level 21: 2d6 + Charisma modifier lightning damage. </specific>
+		<specific name=" Secondary Target"> One enemy within 10 squares of the primary target. </specific>
+		<specific name=" Secondary Attack"> Charisma vs. Reflex </specific>
+		<specific name=" Hit"> 1d6 + Charisma modifier thunder damage.
+Level 21: 2d6 + Charisma modifier lightning damage. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Fulminating Blast" type="Power" internal-id="ID_TER_POWER_SOR_003" source="Custom" revision-date="8/27/2010 11:53:45 AM">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You pour arcane energy into the most damaging blast you can muster </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Implement, Varies </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Ranged 10 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier + Dexterity modifier or Strength modifier damage.
+Level 21: 2d8 + Charisma modifier + Dexterity modifier or Strength modifier damage. </specific>
+		<specific name="Special"> This damage is of a single type to which you have resistance arising from your Spell Source class feature. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Mordant Shower" type="Power" internal-id="ID_TER_POWER_SOR_004" source="Custom" revision-date="8/27/2010 11:53:45 AM">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_5,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You pour arcane energy into the most damaging blast you can muster </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Acid, Arcane, Implement </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> One, two, or three creatures in blast </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d4 + Charisma modifier acid damage, and the target takes damage equal to your Strength modifier unless that enemy spends a move action at the start of its next turn doing nothing.
+Level 21: 2d4 + Charisma modifier modifier acid damage. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	
+<!-- Artificer Powers -->
+   <RulesElement name="Ire Strike" type="Power" internal-id="ID_FMP_POWER_11062" source="Player's Handbook 3" revision-date="9/21/2010 1:52:24 PM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You feel anger rising within you, and you empower a nearby ally to strike. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Ardent Attack 1 </specific>
+      <specific name="Keywords"> Augmentable, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee 1 </specific>
+      <specific name="Target"> One enemy </specific>
+      <specific name="Effect"> One ally adjacent to you can make a melee basic attack against the target as a free action. If the attack hits, the target has vulnerable 2 to all damage until the end of your next turn. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name=" Effect"> As above, but the ally can be within 5 squares of the target. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name=" Effect"> One ally within 5 squares of you can use a free action to shift to a square adjacent to the target and then make a melee basic attack against it. If the attack hits, it deals 1d8 extra damage to the target, and the target has vulnerability to all damage equal to 1 + your Charisma modifier until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_IRE_STRIKE_(AUGMENT_0),ID_INTERNAL_POWER_IRE_STRIKE_(AUGMENT_1),ID_INTERNAL_POWER_IRE_STRIKE_(AUGMENT_2) </specific>
+   </RulesElement>
+   <RulesElement name="Ire Strike (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_IRE_STRIKE_(AUGMENT_1)" source="Player's Handbook 3" revision-date="9/21/2010 1:52:24 PM">
+      <Flavor> You feel anger rising within you, and you empower a nearby ally to strike. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_11062 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Ardent Attack 1 </specific>
+      <specific name="Keywords"> Augmentable, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee 1 </specific>
+      <specific name="Target"> One enemy </specific>
+      <specific name="Effect"> One ally within 5 squares of you can make a melee basic attack against the target as a free action. If the attack hits, the target has vulnerable 2 to all damage until the end of your next turn. </specific>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_11062 </specific>
+   </RulesElement>
+
+</D20Rules>

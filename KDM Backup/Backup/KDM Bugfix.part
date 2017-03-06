@@ -1,0 +1,53 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+<!-- <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Bugfix.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Bugfix.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Bugfix.txt</VersionAddress>
+  </UpdateInfo> -->
+  
+  <AppendNodes name="Level 1 Apprentice Mage" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2867" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">
+  <Prereqs> Unselectable </Prereqs>
+</AppendNodes>
+
+<RulesElement name="Level 29 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4057" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> 29 </Category>
+  <Flavor> Your mastery of spellcasting has reached its peak. Your spellcasting outstrips the ability of most of the mightiest eladrin mages, and not even the greatest among them would think to challenge you to battle. </Flavor>
+  <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 27th level or lower, act as daily powers </specific>
+  <specific name="Level"> 29 </specific>
+  <specific name="Powers"> ID_FMP_POWER_2278,ID_FMP_POWER_186,ID_FMP_POWER_1187 </specific>
+  <specific name="Type"> Encounter </specific>
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="_CLASSNAME"> Bladesinger </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_2278,ID_FMP_POWER_186,ID_FMP_POWER_1187 </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <rules>
+    <select type="Power" name="Level 29 Daily 1" number="1" Category="ID_FMP_CLASS_9|ID_FMP_CLASS_722,ID_INTERNAL_CATEGORY_ENCOUNTER,27" />
+	<modify select="Level 29 Daily 1" Field="Power Usage" value="Daily" />
+    <select type="Power" name="Level 29 Daily 2" number="1" Category="ID_FMP_CLASS_9|ID_FMP_CLASS_722,ID_INTERNAL_CATEGORY_ENCOUNTER,27" Level="29" />
+	<modify select="Level 29 Daily 2" Field="Power Usage" value="Daily" />
+  </rules>
+You add two new wizard encounter attack powers to your spellbook. The powers must be of 27th level or lower, and the two function as daily attack powers for you.
+</RulesElement>
+   
+   <RulesElement name="Enlarge Spell" type="Feat" internal-id="ID_FMP_FEAT_1134" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM">  
+      <Prereqs> Wis 13, wizard </Prereqs>  
+      <print-prereqs> Wis 13, wizard </print-prereqs>  
+      <specific name="Tier"> Heroic </specific>  
+      <specific name="Short Description"> -2 to damage dice to increase size of blast or burst by 1 with wizard at-will or encounter attacks (power must have damage roll) </specific>  
+      <specific name="Special" />  
+      <specific name="type" />  
+      <specific name="Associated Power Info" />  
+      <specific name="Associated Powers" />  
+	  <rules> 
+	  <textstring name="ID_FMP_CLASS_9,At-Will,Area:damage" condition="for each die of damage rolled, increase the size of this blast or burst by 1" value="If you take a -2" /> 
+	  <textstring name="ID_FMP_CLASS_9,At-Will,Close:damage" condition="for each die of damage rolled, increase the size of this blast or burst by 1" value="If you take a -2" /> 
+	  <textstring name="ID_FMP_CLASS_9,Encounter,Area:damage" condition="for each die of damage rolled, increase the size of this blast or burst by 1" value="If you take a -2" /> 
+	  <textstring name="ID_FMP_CLASS_9,Encounter,Close:damage" condition="for each die of damage rolled, increase the size of this blast or burst by 1" value="If you take a -2" /> 
+	  </rules> 
+Before using a wizard at-will or encounter attack power, you can choose to take a -2 penalty to each die of damage rolled with the power to increase the size of its blast or its burst by 1.  
+	You can't use this feat on a power that doesn't roll dice for damage.  
+   </RulesElement>  
+	
+</D20Rules>

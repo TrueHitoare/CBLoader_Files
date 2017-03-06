@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+	<Changelog>
+  Created 19-May-2016 Added Magical Girl theme
+  Updated 21-May-2016 Altered Magical Girl to v1.1
+  Updated 29-May-2016 Altered Magical Girl to v1.3
+	</Changelog>
+	
+	<!-- Magical Girl -->
+	
+	<RulesElement name="Magical Girl" type="Theme" internal-id="ID_AZT_THEME_01" source="True Hitoare">
+		<Prereqs> Female, Arcane </Prereqs>
+		<print-prereqs> Female, Arcane power source </print-prereqs>
+		<specific name="_PARSED_SUB_FEATURES"> ID_AZT_CLASS_FEATURE_Magical_Girl_1,ID_AZT_CLASS_FEATURE_Magical_Girl_2,ID_AZT_CLASS_FEATURE_Magical_Girl_3 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_POWER_Magical_Girl_3,ID_AZT_POWER_Magical_Girl_4,ID_AZT_POWER_Magical_Girl_5 </specific>
+		<rules>
+			<grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_1" type="Class Feature" />
+			<grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_2" type="Class Feature" level="5" />
+			<grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_3" type="Class Feature" level="10" />
+		</rules>
+Mages come in many forms, and use magic in every way imaginable. To some, it is merely a tool, a sword and shield, and mean no hint of condescension by it. To others, it is a way of life, and every aspect of their being and lifestyle reflects their source and manner of magical power.
+There is one particular tradition of arcane magic, one that appears even without apparent transference or inspiration, particular to girls who find themselves in possession of great magical power, and a duty to perform with it. That their magic is not merely a gift or a burden, but a source of power that fuels everything about them- including beauty, dignity, and love. They are not just a girl with magical powers- they are a Magical Girl, who bears the power to harm, the power to heal, and the burden of style.
+Requirements: The style is particular to users of Arcane magic, whose style is typically self-defined; they owe no obligation to capricious gods or demanding nature, but can be used as an expression of themselves.
+For some reason that no one can truly explain, the tradition is typically exclusive to young women of any race.
+	</RulesElement>
+	
+	<RulesElement name="Level 1 Magical Girl Feature" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_1" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 1 </Category>
+		<specific name="Short Description"> Use Rods and Wands, gain Stylish Transformation and an Arcane Familiar. </specific>
+		<specific name="_DisplayPowers">ID_AZT_POWER_Magical_Girl_1</specific>
+		<rules>
+			<grant name="ID_FMP_FEAT_738" type="Feat" level="1-10" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" level="11-20" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" level="21-30" />
+			<!-- <drop name="ID_FMP_FEAT_738" type="Feat" level="11" /> -->
+			<!-- <select type="Feat" name="Familiar (Heroic)" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" default="Arcane Familiar" /> -->
+			<!-- <drop select="Familiar (Heroic)" level="11" /> -->
+			<!-- <select type="Feat" name="Familiar (Paragon)" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" default="Arcane Familiar" level="11" />
+			<drop select="Familiar (Paragon)" level="21" />
+			<select type="Feat" name="Familiar (Epic)" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" default="Arcane Familiar" level="21" /> -->
+			<!-- <grant name="ID_FMP_FEAT_738" type="Feat" level="11" />
+			<drop name="ID_FMP_FEAT_738" type="Feat" level="21" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" level="21" /> -->
+			<!-- <grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_4" type="Class Feature" level="1" />
+			<grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_5" type="Class Feature" level="11" />
+			<grant name="ID_AZT_CLASS_FEATURE_Magical_Girl_6" type="Class Feature" level="21" /> -->
+			<grant name="ID_AZT_POWER_Magical_Girl_1" type="Power" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+			<!-- <grant name="ID_FMP_FEAT_738" type="Feat" level="11" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" level="21" /> -->
+		</rules>
+Force of personality and personal style often defines a Magical Girl, and it is no surprise that they inevitably attract followers. Not only can they share their power with trusted friends, they typically find themselves with a magical companion, a familiar who often acts as a guide and mentor to understand their powers and further their quest.
+(Maybe add something about the rod use.)
+Benefit: You gain proficiency with Rods and Wands.
+You gain the Stylish Transformation power.
+You gain the Arcane Familiar feat.
+	</RulesElement>
+	
+	<!-- <RulesElement name="Magical Girl Familiar (Heroic)" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_4" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 1 </Category>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_FMP_FEAT_738" type="Feat" />
+		</rules>
+	</RulesElement>
+	
+	<RulesElement name="Magical Girl Familiar (Paragon)" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_5" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 11 </Category>
+		<specific name="Level"> 11 </specific>
+		<rules>
+			<drop name="ID_AZT_CLASS_FEATURE_Magical_Girl_4" type="Class Feature" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" />
+		</rules>
+	</RulesElement>
+	
+	<RulesElement name="Magical Girl Familiar (Epic)" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_6" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 21 </Category>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<drop name="ID_AZT_CLASS_FEATURE_Magical_Girl_5" type="Class Feature" />
+			<grant name="ID_FMP_FEAT_738" type="Feat" />
+		</rules>
+	</RulesElement> -->
+	
+	<RulesElement name="Level 5 Magical Girl Feature" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_2" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 5 </Category>
+		<specific name="Short Description"> +2 Arcana and Intimidate. </specific>
+		<specific name="Level"> 5 </specific>
+		<rules>
+			<statadd name="Arcana Misc" value="+2" />
+			<statadd name="Intimidate Misc" value="+2" />
+		</rules>
+With the assistance of their trusty familiar and growing confidence in their power, a veteran Magical Girl gains a better understanding of the nature of magic and both their own powers, and those they fight against. This confidence in their powers and themselves allows them to intimidate enemies who would not expect much from a pretty girl who seems to value style over practicality.
+Benefit: You gain a +2 power bonus to Arcana checks and Intimidate checks.
+	</RulesElement>
+	
+	<RulesElement name="Level 10 Magical Girl Feature" type="Class Feature" internal-id="ID_AZT_CLASS_FEATURE_Magical_Girl_3" source="True Hitoare" >
+		<Prereqs> Magical Girl </Prereqs>
+		<Category> 10 </Category>
+		<specific name="Short Description"> Gain the Punishment of Light power. </specific>
+		<specific name="_DisplayPowers">ID_AZT_POWER_Magical_Girl_2</specific>
+		<specific name="Level"> 10 </specific>
+		<rules>
+			<grant name="ID_AZT_POWER_Magical_Girl_2" type="Power" />
+		</rules>
+The ultimate ability of a Magical Girl is the power to concentrate light into a weapon, designed to finish a fight against a wounded foe and inflict the punishment they deserve. A Magical Girl who times such powerful magic well will find themselves restored and reinvigorated, and rarely walk away from a fight too much worse for wear.
+Benefit: You gain the Punishment of Light power.
+	</RulesElement>
+	
+  <RulesElement name="Stylish Transformation" type="Power" internal-id="ID_AZT_POWER_Magical_Girl_1" source="True Hitoare" >
+    <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0 <!-- Any Class -->,ID_FMP_CATEGORY_31 <!-- Arcane -->,ID_FMP_CATEGORY_15 <!-- Polymorph -->,ID_FMP_CATEGORY_10 <!-- Illusion -->,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+    <Prereqs> Magical Girl </Prereqs>
+    <Flavor> Invoking the source of your magical power, you shed your ordinary mortal appearance and outfit, and magically assume a form more suited for stylish combat. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Magical Girl Utility </specific>
+    <specific name="Keywords"> Arcane, Polymorph, Illusion </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Your current clothing is removed and stored in a planar pocket, and replaced with an outfit and armor of your choosing, also stored in that planar pocket.
+The appearance of the new outfit and/or armor can be customised as you desire for as long as the power is active, and any accessories, equipment and magic items will also alter their appearance to match.
+You can choose to also magically conceal your physical appearance so that, even if you do not look significantly different, you cannot be recognised by anyone unless they clearly witness the transformation or they are told of your true identity.
+The visual appearance must be chosen at character creation, or otherwise before the first use of the power, and can be changed with each level up. (Or with DM approval) The outfit will likely become slightly more elaborate with each level, and/or be drastically upgraded when reaching new tiers.
+This effect lasts until you choose to deactivate it (a free action) or until you take an Extended Rest. </specific>
+    <specific name="_ThemePower"> ID_AZT_THEME_01 </specific>
+    <specific name="Class"> ID_AZT_THEME_01 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_ParentFeature"> ID_AZT_CLASS_FEATURE_Magical_Girl_1 </specific>
+    <specific name="Power Type"> Utility </specific>
+One of the first things a Magical Girl discovers is a way to use their magic to change their appearance, in body and outfit, to match what they envision themselves to be, whether from their own imagination or to follow a tradition they treasure. The transformation is typically instant, but complex, and seems to take longer than it really does.
+  </RulesElement>
+  
+  <RulesElement name="Punishment of Light" type="Power" internal-id="ID_AZT_POWER_Magical_Girl_2" source="True Hitoare" >
+    <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0 <!-- Any Class -->,ID_FMP_CATEGORY_31 <!-- Arcane -->,ID_FMP_CATEGORY_2 <!-- Radiant -->,ID_INTERNAL_CATEGORY_NO_ACTION,10 </Category>
+    <Prereqs> Magical Girl </Prereqs>
+    <Flavor> "Your evil shall threaten the world no more, wicked fiend! Mega... Moon... PUNISHMENT!" </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Magical Girl Attack </specific>
+    <specific name="Keywords"> Arcane, Radiant </specific>
+    <specific name="Action Type"> No Action </specific>
+	<specific name="Attack Type"> Special </specific>
+	<specific name="Trigger"> You hit a bloodied enemy with an arcane attack. </specific>
+    <specific name="Target"> One bloodied enemy hit by the triggering attack. </specific>
+    <specific name="Effect"> 10 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Charisma radiant damage. If this damage reduces the target to 0 hit points, you are healed by the same amount.
+Level 21: 15 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Charisma radiant damage and healing.</specific>
+    <specific name="Requirement"> Stylish Transformation must be active to use this power. </specific>
+    <specific name="_ThemePower"> ID_AZT_THEME_01 </specific>
+    <specific name="Class"> ID_AZT_THEME_01 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="_ParentFeature"> ID_AZT_CLASS_FEATURE_Magical_Girl_3 </specific>
+With the power of light and the help of your friends, a foe you have brought to the brink can be finished off and punished for their misdeeds, as you are revitalised by the same light.
+  </RulesElement>
+  
+  <RulesElement name="Light Our Darkest Hour" type="Power" internal-id="ID_AZT_POWER_Magical_Girl_3" source="True Hitoare" >
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31 <!-- Arcane -->,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> Magical Girl </Prereqs>
+    <Flavor> "Even in our darkest hour... our light shines brightest! Their dark magic is no match for our friendship!" </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Magical Girl Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each ally in the burst </specific>
+    <specific name="Effect"> Each target can make a saving throw. In addition, each target gains a +1 power bonus to attack rolls and damage rolls until the end of your next turn. </specific>
+    <specific name="Requirement"> Stylish Transformation must be active to use this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ThemePower"> ID_AZT_THEME_01 </specific>
+    <specific name="Class"> ID_AZT_THEME_01 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+As a beacon of hope and light, your power can help your friends throw off curses and bleeding wounds to recoup their strength and save the day.
+  </RulesElement>
+  
+  <RulesElement name="Signature Move" type="Power" internal-id="ID_AZT_POWER_Magical_Girl_4" source="True Hitoare" >
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31 <!-- Arcane -->,ID_INTERNAL_CATEGORY_NO_ACTION,6 </Category>
+    <Prereqs> Magical Girl </Prereqs>
+    <Flavor> "Maximised Optimised Shimmering Blazing FIREBALL!" </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Magical Girl Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> No action </specific>
+    <specific name="Attack Type"> Personal </specific>
+	<specific name="Trigger"> You make an attack roll with an encounter or daily Arcane power and miss. </specific>
+    <specific name="Effect"> You reroll the attack roll and can use either result. </specific>
+    <specific name="Requirement"> Stylish Transformation must be active to use this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ThemePower"> ID_AZT_THEME_01 </specific>
+    <specific name="Class"> ID_AZT_THEME_01 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+You take pride in your greatest spells and most powerful techniques, announcing them loudly to friends and foes alike, and so you make sure they don't disappoint.
+  </RulesElement>
+  
+  <RulesElement name="Power of Love" type="Power" internal-id="ID_AZT_POWER_Magical_Girl_5" source="True Hitoare" >
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31 <!-- Arcane -->,ID_FMP_CATEGORY_9 <!-- Healing -->,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs> Magical Girl </Prereqs>
+    <Flavor> "No! Don't give up... don't leave me all alone! stay with me and we can fight for a better tomorrow!" </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Magical Girl Utility 10 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+	<specific name="Target"> One dying ally </specific>
+    <specific name="Effect"> You spend a healing surge but regain no hit points. Instead, the target regains hit points as if it had spent two healing surges. You must have at least one healing surge remaining to use this power. </specific>
+    <specific name="Requirement"> Stylish Transformation must be active to use this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ThemePower"> ID_AZT_THEME_01 </specific>
+    <specific name="Class"> ID_AZT_THEME_01 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+Your strength is not only your magic but your love, and your love for your allies can bring them back from the brink of death strong and ready to fight again.
+  </RulesElement>
+  
+</D20Rules>

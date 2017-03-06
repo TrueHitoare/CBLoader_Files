@@ -1,0 +1,1714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 01-October-2016
+  Updated 09-November-2016 Removed poorly-implemented attempt to make Sneak Attack show up on implement powers
+  Updated 13-November-2016 Fixed incorrectly-hidden Hide Armor Expertise feat
+  Updated 15-January-2017 Replaced Knight Shield Finesse class feature option with Armor Finesse since the former feat was obsoleted
+	</Changelog>
+
+  <UpdateInfo>
+    <Version>2.1</Version>
+    <Filename>KDM Class Features.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Class%20Features.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Class%20Features.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Artificer-->
+   
+	<AppendNodes name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" source="Eberron Player&apos;s Guide" >
+	<rules>
+		<modify name="Thievery" type="Skill" Field="Key Ability" Value="Intelligence" />
+    <statadd name="Thievery" value="+ABILITYMOD(Intelligence)" type="Ability" />
+	</rules>
+   </AppendNodes>
+
+<AppendNodes name="Artificer" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_ARTIFICER" source="Eberron Player&apos;s Guide" >
+	<rules>
+		<modify name="Thievery" type="Skill" Field="Key Ability" Value="Intelligence" />
+    <statadd name="Thievery" value="+ABILITYMOD(Intelligence)" type="Ability" />
+	</rules>
+   </AppendNodes>
+   
+<!--Barbarian-->
+   
+    <RulesElement name="Barbarian Agility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1492" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Use Constitution or Charisma for AC in light armor. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <statadd name="AC" value="+Charisma modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you can use your Constitution or Charisma modifier instead of your Dexterity modifier to determine your AC.
+   </RulesElement>
+
+   <RulesElement name="Hide Armor Expertise" type="Feat" internal-id="ID_FMP_FEAT_1839" source="Primal Power" revision-date="8/27/2010 12:19:29 PM" >
+      <!-- <specific name="InternalOnly"> 1 </specific> -->
+      <Prereqs> Unselectable </Prereqs>
+      <print-prereqs> Unselectable </print-prereqs>
+   </RulesElement>
+
+   <RulesElement name="Whirling Slayer" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1956" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1051,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_5249 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class"> ID_FMP_CLASS_148 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_5249 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_5249" type="Power" />
+         <grant name="ID_INTERNAL_INTERNAL_AMBIDEXTROUS" type="Internal" />
+         <statadd name="AC" value="+2" not-wearing="armor:heavy" />
+         <statadd name="Reflex Defense" value="+2" not-wearing="armor:heavy" />
+      </rules>
+You gain the whirling lunge power, and you can wield a one-handed weapon in your off hand and treat it as an off-hand weapon. In addition, once per round when your attack bloodies an enemy, you can shift 2 squares as a free action, and each enemy adjacent to you at the end of the shift grants combat advantage to you until the end of your next turn.
+While you are not wearing heavy armor, you gain a +2 bonus to AC and Reflex.
+   </RulesElement>
+   
+<!--Bard-->
+   
+   <RulesElement name="Song of Rest" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_699" source="Player&apos;s Handbook 2,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_441,1 </Category>
+      <specific name="Short Description"> At end of short rest, you and each ally regain extra HP equal to 1/2/3 * your Charisma modifier for each surge spent </specific>
+      <specific name="Level"> 1 </specific>
+When you play an instrument or sing during a short rest, you and each ally who can hear you are affected by your Song of Rest. When an affected character spends healing surges at the end of the rest, that character regains additional hit points equal to your Charisma modifier with each healing surge. A character can be affected by only one Song of Rest at a time.
+Level 11: Additional hit points equal to twice your Charisma modifier
+Level 21: Additional hit points equal to three times your Charisma modifier
+   </RulesElement>
+   
+   <RulesElement name="Multiclass Versatility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_697" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose multiclass feats from multiple classes; gain bonus multiclass feat </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_UNLIMITED_MULTICLASS" type="Internal" />
+		 <select name="Multiclass Versatility" type="Feat" number="1" category="ID_INTERNAL_CATEGORY_MULTICLASS" />
+      </rules>
+You can choose class-specific multiclass feats from more than one class; gain a bonus multiclass feat.
+   </RulesElement>
+   
+   <RulesElement name="Multiclass Mastery" type="Feat" internal-id="ID_FMP_FEAT_1202" source="Arcane Power" revision-date="8/27/2010 12:18:44 PM" >
+      <Prereqs> Unselectable </Prereqs>
+      <print-prereqs> Unselectable </print-prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Skill Versatility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_698" source="Player&apos;s Handbook 2,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose a Skill Versatility feature. </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select name="Skill Versatility" type="Class Feature" number="1" category="ID_KDM_SKILL_VERSATILITY_GENERALIST|ID_KDM_SKILL_VERSATILITY_SPECIALIST" />
+      </rules>
+Choose a Skill Versatility feature.
+   </RulesElement>
+   
+    <RulesElement name="Skill Versatility: Generalist" type="Class Feature" internal-id="ID_KDM_SKILL_VERSATILITY_GENERALIST" source="KDM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> +1 to untrained skill checks </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="Acrobatics Misc" value="+1" requires="!Acrobatics Skill Training" />
+         <statadd name="Arcana Misc" value="+1" requires="!Arcana Skill Training" />
+         <statadd name="Athletics Misc" value="+1" requires="!Athletics Skill Training" />
+         <statadd name="Bluff Misc" value="+1" requires="!Bluff Skill Training" />
+         <statadd name="Diplomacy Misc" value="+1" requires="!Diplomacy Skill Training" />
+         <statadd name="Dungeoneering Misc" value="+1" requires="!Dungeoneering Skill Training" />
+         <statadd name="Endurance Misc" value="+1" requires="!Endurance Skill Training" />
+         <statadd name="Heal Misc" value="+1" requires="!Heal Skill Training" />
+         <statadd name="History Misc" value="+1" requires="!History Skill Training" />
+         <statadd name="Insight Misc" value="+1" requires="!Insight Skill Training" />
+         <statadd name="Intimidate Misc" value="+1" requires="!Intimidate Skill Training" />
+         <statadd name="Nature Misc" value="+1" requires="!Nature Skill Training" />
+         <statadd name="Perception Misc" value="+1" requires="!Perception Skill Training" />
+         <statadd name="Religion Misc" value="+1" requires="!Religion Skill Training" />
+         <statadd name="Stealth Misc" value="+1" requires="!Stealth Skill Training" />
+         <statadd name="Streetwise Misc" value="+1" requires="!Streetwise Skill Training" />
+         <statadd name="Thievery Misc" value="+1" requires="!Thievery Skill Training" />
+      </rules>
+You gain a +1 bonus to untrained skill checks.
+   </RulesElement>
+   
+   <RulesElement name="Skill Versatility: Specialist" type="Class Feature" internal-id="ID_KDM_SKILL_VERSATILITY_SPECIALIST" source="KDM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Train an extra skill </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select name="Skill Versatility" type="Skill Training" number="1" />
+      </rules>
+Train an extra skill.
+   </RulesElement>
+   
+   <AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD" source="Player&apos;s Handbook 2" >
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" type="Proficiency" />
+      </rules>
+   </AppendNodes>
+   
+   <AppendNodes name="Bard" type="Class" internal-id="ID_FMP_CLASS_104" source="Player's Handbook 2" revision-date="8/27/2010 12:40:38 PM">
+		<rules>
+			<modify name="this" Field="Weapon Proficiencies" value="Simple melee, simple ranged, military ranged, longsword, rapier, scimitar, short sword" />
+		</rules>
+   </AppendNodes>
+   
+   <AppendNodes name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD" source="Heroes of the Feywild">
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" type="Proficiency" />
+      </rules>
+   </AppendNodes>
+   
+   <AppendNodes name="Skald" type="Class" internal-id="ID_FMP_CLASS_907" source="Heroes of the Feywild">
+		<rules>
+			<modify name="this" Field="Weapon Proficiencies" value="Simple melee, simple ranged, military ranged, longsword, rapier, scimitar, short sword" />
+		</rules>
+   </AppendNodes>
+   
+   <RulesElement name="Virtue of Prescience" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1347" source="Arcane Power" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_700,1 </Category>
+      <specific name="Short Description"> When an enemy hits an ally with 5 squares of you, ally adds your Wis mod to that defense until the end of the attacker&apos;s turn. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <textstring name="ranged basic:key ability" value="Charisma*" />
+      </rules>
+Once per encounter as an immediate interrupt, when an enemy hits one ally within 5 squares of you, you grant that ally a power bonus equal to your Wisdom modifier to the defense targeted by the triggering enemy until the end of that enemy&apos;s turn.
+
+In addition, you can use Charisma instead of Dexterity or Strength when making ranged basic attacks.
+   </RulesElement>
+   
+<!--Berserker-->
+   
+   <RulesElement name="Vengeful Guardian" type="Power" internal-id="ID_FMP_POWER_15848" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_4133,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>
+		<Flavor> Your nearby enemies learn the hard way that it is unwise to ignore you. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack  </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Opportunity Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An enemy subject to your defender aura either shifts or makes an attack that targets an ally of yours, without targeting you or an ally who has an active defender aura. </specific>
+		<specific name="Effect"> You make a melee basic attack against the triggering enemy and deal 1d8 extra damage to it.
+Level 11: 2d8 extra damage.
+Level 21: 3d8 extra damage. On a miss, the attack deals half damage to the triggering enemy. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4133 </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+	</RulesElement>
+   
+<!--Binder-->
+   
+   <RulesElement name="Binder" type="Class" internal-id="ID_FMP_CLASS_821" source="Player Essentials: Heroes of Shadow">
+    <specific name="Key Abilities"> Charisma; Dexterity or Intelligence </specific>
+    <specific name="Implements"> Rods, wands </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Reflex, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> From the class skills list below, choose 4 trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Arcana (Int), Bluff (Cha), Dungeoneering (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int), Streetwise (Cha), Thievery (Dex) </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Binder's Bane, Level 1 Binder Daily Power, Level 1 Pact Encounter Power, Pact Boon (Binder), Shadow Claws, Shadow Twist, Shadow Walk, Level 2 Binder Utility Power, Level 3 Pact Encounter Power, Pact Lore, Level 5 Binder Daily Power, Level 6 Binder Utility Power, Level 7 Pact Encounter Power, Summon Warlock's Ally, Level 10 Binder Utility Power, Level 13 Pact Encounter Power, Level 15 Binder Daily Power, Level 16 Binder Utility Power, Level 17 Pact Encounter Power, Level 19 Binder Daily Power, Master of Magic, Level 23 Pact Encounter Power, Greater Summon Warlock's Ally, Level 27 Pact Encounter Power, Level 29 Binder Daily Power </specific>
+    <specific name="Role"> Controller. </specific>
+    <specific name="Power Source"> Arcane. </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="Short Description"> You bend extraplanar entities to your will as a means to channel arcane power. </specific>
+    <specific name="_ParentClass"> ID_FMP_CLASS_7 </specific>
+    <specific name="Trait Package"> Star Pact (Binder), Gloom Pact (Binder), Fey Pact (Binder) </specific>
+    <specific name="_SUGGESTED_FEATS"> ID_FMP_FEAT_3522,ID_FMP_FEAT_3154,ID_FMP_FEAT_3153,ID_FMP_FEAT_3559,ID_FMP_FEAT_3147,ID_FMP_FEAT_145,ID_FMP_FEAT_3575,ID_FMP_FEAT_3142,ID_FMP_FEAT_3564,ID_FMP_FEAT_131,ID_FMP_FEAT_171,ID_FMP_FEAT_272,ID_FMP_FEAT_3137,ID_FMP_FEAT_3574,ID_FMP_FEAT_3567,ID_FMP_FEAT_3571,ID_FMP_FEAT_3573,ID_FMP_FEAT_3569,ID_FMP_FEAT_3570,ID_FMP_FEAT_3128 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_BINDER" type="Grants" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_7 (ID_FMP_CLASS_821)" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+6" />
+      <statadd name="Reflex Defense Class Bonus" value="+1" />
+      <statadd name="Will Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_821" />
+    </rules>
+Warlocks manipulate arcane power, as wizards do, but their conduit to that power is vastly different. For a warlock, it's as much about who you know as what you know—and in effect, the two are the same.
+	All warlocks gain access to their power by entering into a pact with some force or entity in which that power rests. In return for their continuing loyalty and service to the source of their power, warlocks become more adept at their craft, and the abilities they bring to the battlefield grow more lethal.
+	The type of warlock you can create with this book is the binder.
+	</RulesElement>
+   
+   <AppendNodes name="Binder" type="Grants" internal-id="ID_INTERNAL_GRANTS_BINDER" source="Player Essentials: Heroes of Shadow">
+	<rules>
+		<grant name="ID_KDM_CLASS_FEATURE_BINDER'S_BANE" type="Class Feature" />
+		<grant name="ID_INTERNAL_COUNTSASFEATURE_WARLOCK&apos;S_CURSE" type="CountsAsFeature" />
+	</rules>
+	</AppendNodes>
+
+	<RulesElement name="Binder's Bane" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_BINDER'S_BANE" source="KDM" >
+	<!--Idea by Spinecracker-->
+		<Category> 1 </Category>
+		  <specific name="Short Description"> Gain the Binder's Bane power </specific>
+		  <specific name="_CS_ShortDescription"> @ </specific>
+		  <specific name="Level"> 1 </specific>
+		  <rules>
+			<grant name="ID_KDM_POWER_BINDER'S_BANE" type="Power" />
+		  </rules>
+	A Binder learns to harness the fell energy surrounding her targets so that she can redirect this magical energy into the spells she uses against her hapless enemies, sustaining negative effects she places on them while aiding her allies in applying their own devious tactics to the very same target.  You have this feature in place of the Warlock's Curse feature used as described in the Player's Handbook, but you still meet the prerequiste of Warlock's Curse for the purposes of aquiring feats and paragon paths, and a bane placed with this feature counts as a curse for the purpose of interacting with effects that reference your Warlock's Curse.
+
+	Once per turn as a minor action, you can place a bane on the enemy nearest to you that you can see. Creatures afflicted by a bane take a -2 penalty to all saving throws.
+	
+	In addition, once per round as a free action you can designate a creature you can see that you have applied a bane to. That creature makes a saving throw. If it fails, one effect on that creature that would fade at the end of your turn instead fades at the end of your next turn. Otherwise, the effect fades at the end of your turn as normal.
+  
+	A bane remains in effect until the end of the encounter. You can place a bane on multiple enemies over the course of an encounter; each bane requires the use of a minor action. Placing a bane removes any banes already on that creature.
+  
+	</RulesElement>
+
+	<RulesElement name="Binder's Bane" type="Power" internal-id="ID_KDM_POWER_BINDER'S_BANE" source="KDM" >
+	<!--Idea by Spinecracker-->
+	  <Category> ID_KDM_CLASS_FEATURE_BINDER'S_BANE,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		  <Prereqs> Unselectable </Prereqs>
+		  <specific name="Power Usage"> At-Will </specific>
+		  <specific name="_SkillPower" />
+		  <specific name="Display"> Binder Feature </specific>
+		  <specific name="Keywords" />
+		  <specific name="Action Type"> Minor Action </specific>
+		  <specific name="Attack Type" />
+		  <specific name="Effect"> You place a bane on the enemy nearest to you that you can see. Creatures afflicted by a bane take a -2 penalty to all saving throws.
+  In addition, once per round as a free action you can designate a creature you can see that you have applied a bane to. That creature makes a saving throw. If it fails, one effect on that creature that would fade at the end of your turn instead fades at the end of your next turn. Otherwise, the effect fades at the end of your turn as normal.
+  A bane remains in effect until the end of the encounter. You can place a bane on multiple enemies over the course of an encounter; each bane requires the use of a minor action. Placing a bane removes any banes already on that creature. </specific>
+		  <specific name="_Associated Feats" />
+		  <specific name="_ParentFeature"> ID_KDM_CLASS_FEATURE_BINDER'S_BANE </specific>
+	</RulesElement>
+	
+<!--Cleric-->
+	
+	<RulesElement name="Channel Divinity" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_324" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Invoke a channel divinity class feature or other power; encounter. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1589|ID_FMP_POWER_14292" requires="ID_FMP_CLASS_2" />
+      <select type="Power" number="1" Category="ID_FMP_POWER_146|ID_KDM_POWER_TURN_FIENDS|ID_FMP_POWER_14293|ID_FMP_POWER_7885" requires="ID_FMP_CLASS_2" />
+      <grant name="ID_FMP_POWER_1746" type="Power" requires="ID_FMP_CLASS_4" />
+      <grant name="ID_FMP_POWER_1747" type="Power" requires="ID_FMP_CLASS_4" />
+      <grant name="ID_FMP_POWER_5330" type="Power" requires="ID_FMP_CLASS_129" />
+      <grant name="ID_FMP_POWER_5331" type="Power" requires="ID_FMP_CLASS_129" />
+      <grant name="ID_FMP_POWER_5186" type="Power" requires="ID_FMP_CLASS_127" />
+    </rules>
+Once per encounter you can invoke divine power, filling yourself with the might of your patron deity. With the divine might you invoke you can wield special powers. You can also learn other uses for this feature; for instance, the divinity feats grant characters with access to the Channel Divinity class feature the ability to use additional special powers.
+Regardless of how many different uses for Channel Divinity you know, you can use only one such ability per encounter. The special ability or power you invoke works just like your other powers.
+   </RulesElement>
+   
+   <RulesElement name="Healer's Lore" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_395" source="Player&apos;s Handbook,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Add Wis mod to hp healed on cleric healing powers; excess from this bonus becomes temp HP. </specific>
+      <specific name="Level"> 1 </specific>
+Your study of healing allows you to make the most of your healing prayers. When you grant healing with one of your cleric powers that has the healing keyword, add your Wisdom modifier to the hit points the recipient regains. This effect does not apply to healing from regeneration or zones. Any excess healing from this bonus above the target's maximum hit point total is applied as temporary hit points.
+   </RulesElement>
+   
+<!--Druid-->
+	
+   <RulesElement name="Primal Guardian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1121" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description"> When you hit a creature with a melee beast form attack, you mark that creature until the end of your next turn. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+When you hit a creature with a melee attack while in beast form, you mark that creature until the end of your next turn.
+	  
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
+   
+   <RulesElement name="Primal Predator" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1122" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description"> While not wearing heavy armor, gain +1 speed; in beast form, shift as minor action </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="Speed" value="+1" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you gain a +1 bonus to your speed.
+In addition, while you are in beast form, you can shift 1 square as a minor action.
+   </RulesElement>
+   
+   <RulesElement name="Primal Swarm" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1980" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+		 <statadd name="resist:melee" value="+ABILITYMOD(Constitution)" condition="while in beast form" />
+      </rules>
+While you are in beast form and not wearing heavy armor, melee attacks and ranged attacks deal less damage to you. When you take damage from either type of attack, the damage is reduced by your Constitution modifier.
+
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
+   
+<!--Elementalist-->
+   
+	  <RulesElement name="Elemental Bolt" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4333" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> You can call forth elemental energy, infuse it with the element closest to your soul, and launch the resulting projectile at an enemy. </Flavor>
+    <specific name="Short Description"> Gain the elemental bolt power </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16222 </specific>
+    <specific name="Type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="_CLASSNAME"> Elementalist </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_16222 </specific>
+    <rules>
+        <grant name="ID_FMP_POWER_16222" type="Power" />
+	</rules>
+  
+You gain the elemental bolt power.
+</RulesElement>
+  <RulesElement name="Elemental Magic" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4334" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> As you open yourself to the fury of the Plane Below, you learn that physical hardiness and mental versatility are essential for you to channel elemental power and avoid destruction. </Flavor>
+    <specific name="Short Description"> Gain damage bonus to arcane powers equal to Con mod; use Con instead of Dex or Int to determine AC; gain sorcerer at-will attack power at 9th and 19th level </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CLASSNAME"> Elementalist </specific>
+    <rules>
+        <statadd name="arcane:damage" value="+Constitution modifier" />
+        <statadd name="arcane:damage" value="+2" requires="5 level" />
+        <statadd name="arcane:damage" value="+3" requires="15 level" />
+		<statadd name="arcane:damage" value="+3" requires="25 level" />
+        <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+		<select type="Power" number="1" Category="$$Class,at-will" Level="9" />
+		<select type="Power" number="1" Category="$$Class,at-will" Level="19" />
+	</rules>
+You gain the following benefits.
+	Elemental Power: You gain a bonus to the damage rolls of arcane powers equal to your Constitution modifier. This bonus increases to 2 + your Constitution modifier at 5th level, 5 + your Constitution modifier at 15th level, and 8 + your Constitution modifier at 25th level.
+	Elemental Resilience: While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+	Elemental Versatility: At 9th level and 19th level, you gain a sorcerer at-will attack power of your choice.
+</RulesElement>
+  <RulesElement name="Elemental Specialty" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4335" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> The most important step in a novice elementalist's early days is realizing his or her favored element: air, earth, fire, or water. Your specialty shapes your identity as an elementalist, and it strongly influences other choices you make throughout your career. </Flavor>
+    <specific name="Short Description"> Gain the benefits of an elemental specialty </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4336, ID_FMP_CLASS_FEATURE_4337, ID_FMP_CLASS_FEATURE_4338, ID_FMP_CLASS_FEATURE_4339 </specific>
+    <specific name="_CLASSNAME"> Elementalist </specific>
+    <rules>
+        <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4335"/>
+    </rules>
+  
+Choose an elemental specialty. You gain the benefits of that specialty.
+</RulesElement>
+
+   <RulesElement name="Air Elementalist" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4336" source="Heroes of the Elemental Chaos">
+    <Category> ID_FMP_CLASS_FEATURE_4335,1 </Category>
+    <Flavor> You wield the howl of the storm. Wild gales and raging lightning are your weapons. With time and experience, you master powers of weather and flight. You dislike spending too much time with a roof over your head; you are most comfortable in wide-open spaces and in high places, where the winds are strong and free.
+	Air elementalists generally dislike wielding spells of elemental earth. Elemental air is the essence of movement and change. Earth feels too immobile and inflexible to an air elementalist. </Flavor>
+    <specific name="Short Description"> Gain either howling zephyr or the static charge power; elemental bolt deals lightning damage and slides hit targets 2 squares; gain resistances to lightning and choice of cold or thunder; pierce resistances of the types and amount you have; gain a fly speed or +2 and hover to existing fly speed at 23rd level </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16231,ID_FMP_POWER_16235 </specific>
+    <specific name="Type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <rules>
+	    <modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Lightning" />
+        <modify name="ID_FMP_POWER_16222" type="Power" Field="Air Elementalist" value="The attack deals lightning damage. On a hit, you slide the target 2 squares." />
+        <select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_HOWLING_ZEPHYR|ID_INTERNAL_CLASS_FEATURE_STATIC_CHARGE" />
+        <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4336" Level="25" />
+    </rules>
+  
+You gain the following features.
+	Attack Power: You gain either the howling zephyr or the static charge power.
+	Enhanced Elemental Bolt: Your elemental bolt deals lightning damage. On a hit, you slide the target 2 squares.
+	Elemental Soul: At 5th level, you gain resist 10 lightning. At 15th level, you gain a +2 bonus to saving throws against ongoing lightning damage. At 25th level, choose either cold or thunder. You gain resist 10 to the chosen damage type and a +2 bonus to saving throws against ongoing damage of that type.
+	In addition, your powers ignore resistances of all damage types you have resistance to, up to the amount of your resistance.
+	Fly: At 23rd level, you can fly up to half your speed as a move action, and if you have a fly speed, it increases by 2 and you can hover.
+</RulesElement>
+
+  <RulesElement name="Earth Elementalist" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4337" source="Heroes of the Elemental Chaos">
+    <Category> ID_FMP_CLASS_FEATURE_4335,1 </Category>
+    <Flavor> You are a master of the solid and unyielding powers of elemental earth. At your command, stone armors your body, and rock and earth erupt from the ground or materialize from thin air to batter or bury your enemies. As you gain experience, you develop the ability to shape the earth around you or even pass through solid rock.
+	Elemental air is the antithesis of earth, so you probably dislike learning spells of air. That element lacks solidity, substance, and permanence—the very qualities that lend you power over elemental earth. </Flavor>
+    <specific name="Short Description"> Gain either erupting earth or seismic shock power; elemental bolt deals acid damage and slows hit targets; at higher levels gain resist acid and your choice of fire or thunder; pierce resistances of the types and amount you have; gain burrow speed at 23rd level </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16230,ID_FMP_POWER_16234 </specific>
+    <specific name="Type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <rules>
+	    <modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Acid" />
+        <modify name="ID_FMP_POWER_16222" type="Power" Field="Earth Elementalist" value="The attack deals acid damage. On a hit, the target is slowed until the end of your next turn."/>
+        <select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_ERUPTING_EARTH|ID_INTERNAL_CLASS_FEATURE_SEISMIC_SHOCK" />
+        <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4337" Level="25" />
+    </rules>
+  
+You gain the following features.
+	Attack Power: You gain either the erupting earth or the seismic shock power.
+	Enhanced Elemental Bolt: Your elemental bolt deals acid damage. On a hit, its target is slowed until the end of your next turn.
+	Elemental Soul: At 5th level, you gain resist 10 acid. At 15th level, you gain a +2 bonus to saving throws against ongoing acid damage. At 25th level, choose either fire or thunder. You gain resist 10 to the chosen damage type and a +2 bonus to saving throws against ongoing damage of that type.
+	In addition, your powers ignore resistances of all damage types you have resistance to, up to the amount of your resistance.
+	Burrow: At 23rd level, you can burrow up to half your speed as a move action. You have tremorsense 5 while burrowing.
+</RulesElement>
+
+  <RulesElement name="Fire Elementalist" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4338" source="Heroes of the Elemental Chaos">
+    <Category> ID_FMP_CLASS_FEATURE_4335,1 </Category>
+    <Flavor> You are a living conflagration, a master of the most spectacular and destructive of all the elements. Yours is the power of the raging forest fire, the burning sun, and incinerating heat. Subtlety is not your strong suit; in battle you seek to burn down all who oppose you.
+	Fire elementalists tend to disdain powers of elemental water, which is often calming and cooling. </Flavor>
+    <specific name="Short Description"> Gain blazing cloud or ignition power; elemental bolt deals fire damage and 1d6 extra damage; at higher levels gain resist fire and your choice of lightning or thunder; pierce resistances of the types and amount you have; gain teleport move action at 23rd level </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16228,ID_FMP_POWER_16233 </specific>
+    <specific name="Type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <rules>
+	    <modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Fire" />
+        <modify name="ID_FMP_POWER_16222" type="Power" Field="Fire Elementalist" value="The attack deals fire damage, and the damage increases by 1d6." />
+        <select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_BLAZING_CLOUD|ID_INTERNAL_CLASS_FEATURE_IGNITION" />
+		<statadd name="attack" value="+1" type="power" />
+        <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4338" Level="25" />
+		<textstring name="Elemental Bolt:damage" value="+1d6" />
+	</rules>
+  
+You gain the following features.
+	Attack Power: You gain either the blazing cloud or the ignition power.
+	Enhanced Elemental Bolt: Your elemental bolt deals fire damage. On a hit, its damage increases by 1d6.
+	Elemental Soul: At 5th level, you gain resist 10 fire. At 15th level, you gain a +2 bonus to saving throws against ongoing fire damage. At 25th level, choose either lightning or thunder. You gain resist 10 to the chosen damage type and a +2 bonus to saving throws against ongoing damage of that type.
+	In addition, your powers ignore resistances of all damage types you have resistance to, up to the amount of your resistance.
+	Teleport: At 23rd level, you can teleport up to half your speed as a move action.
+</RulesElement>
+
+  <RulesElement name="Water Elementalist" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4339" source="Heroes of the Elemental Chaos">
+    <Category> ID_FMP_CLASS_FEATURE_4335,1 </Category>
+    <Flavor> You command the most subtle and mutable of the four elements. Water transforms easily to ice, mist, and steam. In the form of a gentle rain it nourishes and sustains, but as a raging flood it can scour channels through solid rock and sweep away all before it. You are especially drawn to water in motion—the ocean with its pounding surf and seething tides, and rivers and streams as they wind their way across the land to the sea.
+	You likely prefer not to use fire powers. That element burns the moisture from all it touches. </Flavor>
+    <specific name="Short Description"> Gain either deluge or ice prison power; elemental bolt deals cold damage and slides creatures adjacent to target 1 square; at higher level gain resist cold and your choice of acid or thunder; pierce resistances of the types and amount you have; gain swim speed and aquatic trait at 23rd level </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16229,ID_FMP_POWER_16232 </specific>
+    <specific name="Type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <rules>
+	    <modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Cold" />
+        <modify name="ID_FMP_POWER_16222" type="Power" Field="Water Elementalist" value="The attack deals cold damage. On a hit, you can slide each creature adjacent to its target 1 square." />
+        <select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_DELUGE|ID_INTERNAL_CLASS_FEATURE_ICE_PRISON" />
+        <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4339" Level="25" />
+    </rules>
+  
+You gain the following features.
+	Attack Power: You gain either the deluge or the ice prison power.
+	Enhanced Elemental Bolt: Your elemental bolt deals cold damage. On a hit, you can slide each creature adjacent to its target 1 square.
+	Elemental Soul: At 5th level, you gain resist 10 cold. At 15th level, you gain a +2 bonus to saving throws against ongoing cold damage. At 25th level, choose either acid or thunder. You gain resist 10 to the chosen damage type and a +2 bonus to saving throws against ongoing damage of that type.
+	In addition, your powers ignore resistances of all damage types you have resistance to, up to the amount of your resistance.
+	Swim: At 23rd level, you gain a swim speed equal to your speed + 2. You also gain the aquatic trait; you can breathe underwater, and in aquatic combat, you gain a +2 bonus to attack rolls against nonaquatic creatures.
+</RulesElement>
+
+<RulesElement name="Lvl 13 Elemental Escalation explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_13">
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." requires="!ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." requires="!ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." requires="!ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." requires="!ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power five times per encounter, but only once per round." requires="ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power five times per encounter, but only once per round." requires="ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power five times per encounter, but only once per round." requires="ID_FMP_PARAGON_PATH_962" />
+		<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power five times per encounter, but only once per round." requires="ID_FMP_PARAGON_PATH_962" />
+	</rules>
+</RulesElement>
+   
+<!--Fighter-->
+   
+	<AppendNodes name="Insight" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INSIGHT" source="Core">
+		<Category> ID_FMP_CLASS_3 </Category>
+	</AppendNodes>
+   
+	<AppendNodes name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" source="Core">
+		<Category> ID_FMP_CLASS_3 </Category>
+	</AppendNodes>
+	
+	<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+		<rules>
+			<modify name="Fighter" type="Class" field="Class Skills" value="Athletics (Str), Endurance (Con), Heal (Wis), Insight(Wis), Intimidate (Cha), Perception (Wis), Streetwise (Cha)" />
+		</rules>
+	</AppendNodes>
+	
+<!--Knight-->
+<RulesElement name="Knight" type="Class" internal-id="ID_FMP_CLASS_713" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:44 PM">
+    <specific name="Key Abilities"> Strength, Constitution </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; heavy shields, light shields </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged, military ranged </specific>
+    <specific name="Bonus to Defense"> +2 Fortitude </specific>
+    <specific name="Hit Points at 1st Level"> 15+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 6 </specific>
+    <specific name="Healing Surges"> 9+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> From the class skills list below, choose 3 trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), Intimidate (Cha) </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Battle Guardian, Defender Aura, Knight Fighter Stances, Power Strike, Armor Finesse, Spinning Deflection, Weapon Talent, Level 2 Knight Utility Power, Level 3 Improved Power Strike, Knight Combat Readiness, Weapon Mastery, Level 6 Knight Utility Power, Knight Weapon Specialization, Level 7 Extra Knight Stance, Shield Block, Greater Combat Readiness, Level 10 Knight Utility Power, Level 13 Improved Power Strike, Paragon Weapon Mastery, Bolstering Stride, Level 17 Extra Knight Stance, Devoted Knight, Knight's Valor, Relentless Knight, Epic Weapon Mastery, Spirit of War </specific>
+    <specific name="Role"> Defender. You have become a master of combat through endless hours of practice, determination, and your own sheer physical toughness. </specific>
+    <specific name="Power Source"> Martial. </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+    <specific name="Short Description"> You embody personal honor, pledging to defend the innocent from harm. </specific>
+    <specific name="_ParentClass"> ID_FMP_CLASS_3 </specific>
+    <specific name="_SUGGESTED_FEATS"> ID_FMP_FEAT_3145,ID_FMP_FEAT_131,ID_FMP_FEAT_3156,ID_FMP_FEAT_3152,ID_FMP_FEAT_3140,ID_FMP_FEAT_272,ID_FMP_FEAT_171,ID_FMP_FEAT_3121,ID_FMP_FEAT_3153,ID_FMP_FEAT_3155,ID_FMP_FEAT_109,ID_FMP_FEAT_3147,ID_FMP_FEAT_3128,ID_FMP_FEAT_3150,ID_FMP_FEAT_3119,ID_FMP_FEAT_3141,ID_FMP_FEAT_3127,ID_FMP_FEAT_3122,ID_FMP_FEAT_3138 </specific>
+    <specific name="_SUGGESTED_FEATURES"> ID_FMP_CLASS_FEATURE_2757 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_KNIGHT" type="Grants" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_3 (ID_FMP_CLASS_713)" />
+      <statadd name="_LEVEL-ONE-HPS" value="+15" />
+      <statadd name="_PER-LEVEL-HPS" value="+6" />
+      <statadd name="Healing Surges" value="+9" />
+      <statadd name="Fortitude Defense Class Bonus" value="+2" />
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_713" />
+    </rules>
+Along the borderlands, knights are the stalwart commanders of peasant militias, caravan guards, and adventuring groups. Their cunning and skill puts them in control of the battlefield and lets them minimize the onslaught of their enemies. Rampaging monsters fear a knight above almost any other attacker. While the knight locks down a formidable foe, the other members of a party close in for the kill.
+	Many knights are members of chivalrous orders, though some are independent warriors who wander wherever their hearts take them. Each order combines a rigid sense of honor and relentless training to produce  champions of the borderlands. Whenever ogres descend from the hills, when hobgoblins march from their strongholds, and when necromancers call forth armies of undead, a noble knight is the best defense an isolated community can hope for.
+	All sorts of warriors follow the path of the knight: young wanderers seeking to prove their mettle and gain full membership into a knightly order, reclusive warriors who abandon material comforts in favor of crusades for justice, or self-centered mercenaries who hope to claim treasure and power after every fight.
+	Most knights start as squires, training with orders that have heroic and historic names such as the Knights of the Watch or the Order of the Silver Dragon. Through study, martial practice, and adventuring, a squire earns the right to wear armor and bear the weapons of a knight. Orders maintain small keeps on the borderlands, from which they send out patrols, enforce the law, and repel monstrous incursions.
+</RulesElement>
+  
+  <RulesElement name="Shield Finesse" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2849" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">
+	<Prereqs> Unselectable </Prereqs>
+  </RulesElement>
+  
+  <RulesElement name="Armor Finesse" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_KNIGHT'S_ARMOR_FINESSE" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">
+    <Category> 1,ID_FMP_CLASS_FEATURE_KNIGHT </Category>
+    <Flavor> Your singular training has made your armor and shield into an extension of your body, their weight not even slowing you down. </Flavor>
+    <specific name="Short Description"> You gain the Armor Finesse feat. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Gain the Armor Finesse feat </specific>
+    <rules>
+      <grant name="ID_FMP_FEAT_3121" type="Feat" />
+    </rules>
+You gain the Armor Finesse feat.
+</RulesElement>
+	
+<!--Mage-->
+	
+	<RulesElement name="Necromancy Master" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3743" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+    <Prereqs> Necromancy Expert </Prereqs>
+    <Category> ID_FMP_CLASS_FEATURE_2872,10 </Category>
+    <Flavor> Your concentration on necromantic power increases the potency of your necrotic attacks. They bite deeply, ignoring attempts to blunt them. </Flavor>
+    <specific name="Short Description"> Your powers ignore necrotic resistance and immunity </specific>
+    <specific name="Level"> 10 </specific>
+Your arcane necromancy attack powers ignore necrotic resistance and immunity.
+	</RulesElement>
+	
+<!--Paladin-->
+	
+	<RulesElement name="Paladin" type="Class" internal-id="ID_FMP_CLASS_4" source="Player&apos;s Handbook" revision-date="8/27/2010 12:39:55 PM" >
+      <Flavor> "I am the righteous shield of Moradin and a sword in his mighty hand! I fear no evil!" </Flavor>
+      <specific name="Key Abilities"> Strength, Charisma, Wisdom </specific>
+      <specific name="Implements"> Holy Symbol </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; heavy shields, light shields </specific>
+      <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged </specific>
+      <specific name="Bonus to Defense"> +1 Fortitude, +1 Reflex, +1 Will </specific>
+      <specific name="Hit Points at 1st Level"> 15+ Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 6 </specific>
+      <specific name="Healing Surges"> 10+ Constitution Modifier </specific>
+      <specific name="Trained Skills"> Religion. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+      <specific name="Class Skills"> Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int) </specific>
+      <specific name="Build Options"> Ardent Paladin, Avenging Paladin, Protecting Paladin, Virtuous Paladin </specific>
+      <specific name="_PARSED_CLASS_FEATURE"> Channel Divinity, Divine Challenge, Lay on Hands </specific>
+      <specific name="Role"> Defender. You are extremely durable, with high hit points and the ability to wear the heaviest armor. You can issue bold challenges to foes and compel them to fight you rather than your allies. </specific>
+      <specific name="Power Source"> Divine. You are a divine warrior, a crusader and protector of your faith. </specific>
+      <specific name="Creating"> Paladins rely on Strength, Charisma, and Wisdom for most of their key abilities and powers. Constitution is useful as well, although no paladin powers are specifically based on Constitution. </specific>
+      <specific name="Class Features"> Your armor, your shield, and your weapon are the most important tools of your trade. In addition, you have the following class features. Your lay on hands class feature can be replaced by the ardent vow or the virtue&apos;s touch class feature. </specific>
+      <specific name="Supplemental"> DIVINE SANCTION
+Many new paladin powers and some of the new feats in this book subject a target to your divine sanction. Being subject to it means the target is marked by you for a duration specified in the description of the power or feat. Unless otherwise noted, the mark ends before the specified duration if someone else marks the target.
+Until the mark ends, the target takes radiant damage equal to 5 + your Charisma modifier the first time each round it makes an attack that doesn&apos;t include you as a target. The damage increases to 10 + your Charisma modifier at 11th level and 15 + your Charisma modifier at 21st level.
+Divine sanction is meant to complement divine challenge. You can use divine challenge to mark one creature and use divine sanction to mark others. Divine sanction has fewer restrictions than divine challenge so that you can easily use the two in concert.
+
+
+PALADINS AND DEITIES
+As fervent crusaders in their chosen cause, paladins must choose a deity. Paladins choose a specific faith to serve, as well as an alignment. You must choose an alignment identical to the alignment of your patron deity; a paladin of a good deity must be good, a paladin of a lawful good deity must be lawful good, and a paladin of an unaligned deity must be unaligned. Evil and chaotic evil paladins do exist in the world, but they are almost always villains, not player characters.
+	Paladins are not granted their powers directly by their deity, but instead through various rites performed when they first become paladins. Most of these rites involve days of prayer, vigils, tests and trials, and ritual purification followed by a knighting ceremony, but each faith has its own methods. This ceremony of investiture gives a paladin the ability to wield divine powers. Once initiated, the paladin is a paladin forevermore. How justly, honorably, or compassionately the paladin wields those powers from that day forward is up to him, and paladins who stray too far from the tenets of their faith are punished by other members of the faithful.
+
+Good, Lawful Good, and Unaligned Deities
+&lt;table&gt;Deity	Alignment	Areas of Influence
+Avandra	Good	Change, luck, trade, travel
+Bahamut	Lawful Good	Justice, honor, nobility, protection
+Corellon	Unaligned	Arcane magic, spring, beauty, the arts
+Erathis	Unaligned	Civilization, invention, laws
+Ioun	Unaligned	Knowledge, prophecy, skill
+Kord	Unaligned	Storms, strength, battle
+Melora	Unaligned	Wilderness, sea
+Moradin	Lawful Good	Creation, artisans, family
+Pelor	Good	Sun, summer, agriculture, time
+Raven Queen	Unaligned	Death, fate, winter
+Sehanine	Unaligned	Trickery, moon, love, autumn&lt;/table&gt; </specific>
+      <specific name="Implement"> Paladins make use of holy symbols to help channel and direct their divine powers. A paladin wearing or holding a magic holy symbol can add its enhancement bonus to attack rolls and damage rolls to powers that have the implement keyword. Without a holy symbol, a paladin can still use these powers, but he or she doesn&apos;t gain the bonus provided by the magic implement.
+	A holy avenger, a special magic weapon, can also be used as an implement for paladin powers, as well as paladin paragon path powers. These weapons are highly sought after by paladins. </specific>
+      <specific name="Powers"> Paladin powers are called prayers. In battle, paladins rely on their deities to strengthen their sword-arms and fortify them against the attacks of their enemies. </specific>
+      <specific name="Power Name"> Prayers </specific>
+      <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options" />
+      <specific name="Short Description"> A holy warrior devoted to a higher power, you smite enemies of your faith with divine power. </specific>
+      <specific name="_ParentClass" />
+      <specific name="Trait Package" />
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_PALADIN" type="Grants" />
+         <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_4" />
+         <statadd name="_LEVEL-ONE-HPS" value="+15" />
+         <statadd name="_PER-LEVEL-HPS" value="+6" />
+         <statadd name="Healing Surges" value="+10" />
+         <select type="Build" number="1" Category="$$CLASS" optional="true" />
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+         <statadd name="Will Defense Class Bonus" value="+1" />
+         <select type="Skill Training" number="3" Category="ID_FMP_CLASS_4" />
+      </rules>
+Paladins are indomitable warriors who&apos;ve pledged their prowess to something greater than themselves. Paladins smite enemies with divine authority, bolster the courage of nearby companions, and radiate as if a beacon of inextinguishable hope. Paladins are transfigured on the field of battle, exemplars of divine ethos in action.
+	To you is given the responsibility to unflinchingly stand before an enemy&apos;s charge, smiting them with your sword while protecting your allies with your sacrifice. Where others waver and wonder, your motivation is pure and simple, and your devotion is your strength. Where others scheme and steal, you take the high road, refusing to allow the illusions of temptation to dissuade you from your obligations.
+	Take up your blessed sword and sanctified shield brave warrior, and charge forward to hallowed glory!
+   </RulesElement>
+   
+   <!-- Divine Sanction -->
+	<MassAppend ids="ID_FMP_POWER_10241,ID_FMP_POWER_8097,ID_FMP_POWER_7241,ID_FMP_POWER_3271,ID_FMP_POWER_3689,ID_FMP_POWER_11049,ID_FMP_POWER_3286,ID_FMP_POWER_7248,ID_FMP_POWER_12304,ID_FMP_POWER_7254,ID_FMP_POWER_3726,ID_FMP_POWER_11050,ID_FMP_POWER_10251,ID_FMP_POWER_12305,ID_FMP_POWER_7261,ID_FMP_POWER_3274,ID_FMP_POWER_10100,ID_FMP_POWER_10252,ID_FMP_POWER_11627,ID_FMP_POWER_8157,ID_FMP_POWER_8164,ID_FMP_POWER_8167,ID_FMP_POWER_8170,ID_FMP_POWER_8105,ID_FMP_POWER_8158,ID_FMP_POWER_3258,ID_FMP_POWER_7269,ID_FMP_POWER_3729,ID_FMP_POWER_10257,ID_FMP_POWER_7280,ID_FMP_POWER_10102,ID_FMP_POWER_10258,ID_FMP_POWER_8159,ID_FMP_POWER_3281,ID_FMP_POWER_7295,ID_FMP_POWER_3737">
+  <rules>
+    <modify name="this" Field="Divine Sanction" value="Enemy is marked by you and takes 5/10/15 + your Charisma modifier radiant damage the first time each round it makes an attack that doesn’t include you." />
+    <grant name="ID_WOG_DIVINE_SANCTION_RULES_ITEM" type="Power" />
+  </rules>
+  </MassAppend>
+	<RulesElement name="Divine Sanction" type="Power" internal-id="ID_WOG_DIVINE_SANCTION_RULES_ITEM" source="Divine Power">
+  <Category> ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE </Category>
+  <Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Rules Item"> Many new paladin powers and some of the new feats subject a target to your divine sanction. Being subject to it means the target is marked by you for a duration specified in the description of the power or feat. Unless otherwise noted, the mark ends before the specified duration if someone else marks the target.
+  Until the mark ends, the target takes radiant damage equal to 5 + your Charisma modifier the first time each round it makes an attack that doesn’t include you as a target. The damage increases to 10 + your Charisma modifier at 11th level and 15 + your Charisma modifier at 21st level.
+  Divine sanction is meant to complement divine challenge. You can use divine challenge to mark one creature and use divine sanction to mark others. Divine sanction has fewer restrictions than divine challenge so that you can easily use the two in concert.</specific>
+  <specific name="Class"> ID_FMP_CLASS_4 </specific>
+  <specific name="Power Type"> Feature </specific>
+	</RulesElement> 
+   
+<!--Protector-->
+   
+   <RulesElement name="Protector" type="Class" internal-id="ID_FMP_CLASS_909" source="Heroes of the Feywild">
+      <Flavor> "I am the seeker. I am the stalker. I am the storm." </Flavor>
+      <specific name="Key Abilities"> Wisdom, Dexterity, Constitution </specific>
+      <specific name="Implements"> Staff, Totem </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather, hide </specific>
+      <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+      <specific name="Bonus to Defense"> +1 Reflex, +1 Will </specific>
+      <specific name="Hit Points at 1st Level"> 12 + Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 5 </specific>
+      <specific name="Healing Surges"> 7 + Constitution Modifier </specific>
+      <specific name="Trained Skills"> Nature. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+      <specific name="Class Skills"> Arcana (Int), Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Nature (Wis), Perception (Wis) </specific>
+      <specific name="Build Options"/>
+      <specific name="_PARSED_CLASS_FEATURE"> Nature's Growth, Druid Circle, Primal Attunement, Balance of Nature, Summon Natural Ally </specific>
+      <specific name="Role"> Controller. You have mastered the power and magic of nature, using it to create a line of defense between the natural world and those that would harm it.</specific>
+      <specific name="Power Source"> Primal. You have gained your powers through a careful study of and communion with the natural world. </specific>
+      <specific name="Creating"> A protector is a type of druid, a class introduced in Player's Handbook 2. To create a protector, use the character creation rules in the Rules Compendium or the Player's Handbook. The Character Advancement table (page 160) summarizes how many powers and feats your protector should have at each level, as well as when ability scores increase.
+A protector lacks some of the druid class features from Player's Handbook 2: Balance of Nature, Ritual Casting, and wild shape. A protector gains new class features: nature's wowth; Druid Circle, which determines the druid's Primal Aspect; Primal Attunement; and summon natural ally.	  
+Also, rather than gaining druid daily attack powers, a protector gains additional uses of summon natural ally as he or she advances in level. A protector also gains the ability to summon more powerful creatures at higher levels. </specific>
+      <specific name="Class Features"> Druids have the following class features. </specific>
+      <specific name="Supplemental"/>
+      <specific name="Implement"> Protectors employ staffs and totems as a means of focusing their primal energy. When you wield a magic staff or a magic totem, you can add its enhancement bonus to the attack rolls and the damage rolls of druid powers and druid paragon path powers that have the implement keyword. Without an implement, you can still use these powers. </specific>
+      <specific name="Powers"> Your powers are evocations that call on primal spirits to alter your physical form and hamper your enemies. </specific>
+      <specific name="Power Name"> Evocations </specific>
+      <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options" />
+      <specific name="Short Description"> One with the natural world, you can call on the fury of nature. </specific>
+      <specific name="_ParentClass" />
+      <specific name="Trait Package" />
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_PROTECTOR" type="Grants" />
+         <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_909" />
+         <statadd name="_LEVEL-ONE-HPS" value="+12" />
+         <statadd name="_PER-LEVEL-HPS" value="+5" />
+         <statadd name="Healing Surges" value="+7" />
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+         <statadd name="Will Defense Class Bonus" value="+1" />
+         <select type="Skill Training" number="3" Category="ID_FMP_CLASS_126" />
+      </rules>
+Though most people associate the Feywild with arcane magic, it is also home to some of the most pristine regions of natural growth across all of the planes. Primeval forests sit untouched by civilization since their creation, alongside mountainsides and hilltops upon which no intelligent being has ever set foot. It should be no surprise that there are those who have chosen a life of protection and guardianship over the natural treasures of the plane.
+As with all druids, protectors are the masters of The magic first shared with mortals by the primal spirits. The primal spirits might dwell chiefly in the world, but the druids of the Feywild hear their call and heed their guidance even in the fey realm. Though it might seem as though the presence of the primal spirits in the Feywild would be at a diminished level, in truth primal magic is often among the most effective tools to use in a plane infused with arcane magic. Where many of the dangers of the Feywild have evolved over the eons to deal with the omnipresent nature of arcane threats, primal magic is still untamed and unanticipated by most creatures of the plane.
+As a protector, you learned your primal magic from a druid circle, which trained you to protect nature and punish those that would do it harm. By ensuring that the land, the water, and the sky inhabited by ihe primal spirits is protected, you become a staunch defender of those who live in harmony with nature and show respect for their natural surroundings.
+You might go out into the world to seek new experiences and powerful artifacts of primal magic. Though you will stray far from your druid circle in the course of your adventures, your efforts reflect on its goals, and you will use the knowledge it has granted you to battle despoilers and defilers throughout the world and across the planes.
+	</RulesElement>
+	<RulesElement name="Protector" type="Grants" internal-id="ID_INTERNAL_GRANTS_PROTECTOR" source="Heroes of the Feywild">
+      <specific name="_SupportsID"> ID_FMP_CLASS_909</specific>
+      <rules>
+	     <grant name="ID_INTERNAL_COUNTSASCLASS_DRUID" type="CountsAsClass" />
+         <grant name="ID_FMP_ROLE_1" type="Role" />
+         <grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+         <grant name="ID_INTERNAL_SKILL_TRAINING_NATURE" type="Skill Training" />
+		 <textstring name="PowersAsClass" value="ID_FMP_CLASS_126" />
+		 <grant name="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" type="Internal"/> 
+         <grant name="ID_INTERNAL_GRANTS_PROTECTOR_IMPLEMENTS" type="Grants" />
+		 <grant name="ID_FMP_CLASS_FEATURE_4152" type="Class Feature" />
+		 <grant name="ID_FMP_CLASS_FEATURE_4155" type="Class Feature" />
+		 <grant name="ID_FMP_CLASS_FEATURE_4153" type="Class Feature" />
+		 <grant name="ID_FMP_CLASS_FEATURE_4154" type="Class Feature" />
+      </rules>
+	</RulesElement>
+	<RulesElement name="Protector" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_PROTECTOR" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_909 </specific>
+You count as a protector for meeting prerequisites.
+	</RulesElement>
+	<RulesElement name="Protector Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_PROTECTOR_IMPLEMENTS" source="Heroes of the Feywild">
+      <specific name="_SupportsID"> ID_FMP_CLASS_909 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TOTEM)" type="Proficiency" />
+      </rules>
+	</RulesElement>
+	<RulesElement name="Nature's Growth" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4152" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+      <specific name="Short Description"> One of your fundamental evocations, nature's growth allows you to bring life to even the harshest conditions and climes. The power of nature erupts at your command to hinder your foes, even as you slip through the hindrance with ease. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_PARSED_SUB_FEATURES"/>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_15852 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15852" type="Power" />
+		</rules>
+You gain the nature's growth power.
+	</RulesElement>
+	<RulesElement name="Nature's Growth" type="Power" internal-id="ID_FMP_POWER_15852" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_FEATURE_4152,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+		<Prereqs> Protector </Prereqs>
+		<Flavor> A thicket of vines, plants, and touah shrubs erupts as if from nowhere to clutch at your foes. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Druid Utility </specific>
+		<specific name="Keywords"> Primal, Zone </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+		<specific name="Special"> burst 2 at 11th level and burst 3 at 21st level </specific>
+		<specific name="Effect"> The burst creates a zone that lasts until the end of the encounter. The zone is difficult terrain for all creatures except you. You can dismiss the zone as a minor action. </specific>
+		<specific name="_ThemePower"/>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4152 </specific>
+		<specific name="Level"> 1 </specific>
+One of your fundamental evocations, nature's growth allows you to bring life to even the harshest conditions and climes. The power of nature erupts at your command to hinder your foes, even as you slip through the hindrance with ease.
+	</RulesElement>
+	<RulesElement name="Druid Circle" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4155" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> Each protector druid belongs to a druid circle, a group of like-minded servants of nature. A druid circle bears some similarity to the orders of clerics and other servants of the gods. However, the druids of your circle serve a different entity as they revere and protect the natural world.
+	  A druid circle might be a secret society of masters of primal magic, congregating to enact an agenda known only to themselves. A circle is just as likely to devote itself solely to the communities that arise along the fringe of the wilderness, acting as mystics and advisors while they channel the wisdom of the natural world. Whatever its motive and structure, each druid circle is known for the wisdom of its older members, whose counsel is sought by influential members of all cultures and races.
+	  A druid circle has a hierarchy much like that of a religious organization. At 1st level, you are an initiate of your circle. As you gain levels, you improve your standing. Even as your adventuring career brings you experience and prestige, it grants you influence with your fellow druids. With the growth of your mastery of primal magic, you gain greater understanding of the secrets kept by your order. Many druid circles guard mysteries of primal power said to have been handed down in the first days following the Dawn War. The higher you rise through the ranks, the more of these pieces of ancient lore are revealed to you. </Flavor>
+      <specific name="Short Description"> You gain the Nature's Growth power. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4156, ID_FMP_CLASS_FEATURE_4159</specific>
+	  <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4155"/>
+      </rules>
+Choose a druid circle. You gain the benefits of that circle.
+	</RulesElement>
+	<RulesElement name="Circle of Renewal" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4156" source="Heroes of the Feywild">
+	  <Category> ID_FMP_CLASS_FEATURE_4155,1 </Category>
+	  <Flavor> As a member of the Circle of Renewal, your mission is to restore places ravaged by war and unnatural threats. Druids such as you make it their cause to bring life back to parched deserts and scrublands, or to seed life for the first time in areas that have never known it.
+	  Your druid circle teaches you that the life created by your nature's growth can be used to heal the land of its wounds. The plants you draw forth even from rock or lifeless wasteland exude a primal energy that helps speed the restorative process for your allies. </Flavor>
+      <specific name="Short Description"> Primal Guardian: While not wearing heavy armor, use Con mod in place of Dex or Int mod to determine AC.
+Healing Growth: Allies within the circle or adjacent to it spending a healing surge to regain hps gain a bonus equal to your Con. modifier </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_PARSED_SUB_FEATURES"/>
+	  <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+You gain the following features.
+	Primal Guardian: While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+	Healing Growth: When any ally in your nature's growth zone or adjacent to it spends a healing surge to regain hit points, he or she regains additional hit points equal to your Constitution modifier.
+	</RulesElement>
+	<RulesElement name="Circle of Shelter" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4159" source="Heroes of the Feywild">
+	  <Category> ID_FMP_CLASS_FEATURE_4155,1 </Category>
+	  <Flavor> A druid who chooses the Circle of Shelter has made a pledge to defend the bounty of nature. Members of your druid circle watch over forests, plains, and grasslands, keeping them safe from monsters, uncaring humanoids, and dark magic. 
+	  Your druid circle teaches you to shape your nature's growth for the benefit of your allies, giving them an advantage of movement in the midst of combat. </Flavor>
+      <specific name="Short Description"> Primal Predator: While you are not wearing heavy armor, you gain a + 1 bonus to your speed.
+Unhindering Growth: Your allies ignore the difficult terrain created by your nature's growth. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_PARSED_SUB_FEATURES"/>
+	  <rules>
+         <statadd name="Speed" value="+1" type="Class Feature" not-wearing="armor:heavy" />
+      </rules>
+You gain the following features.
+	Primal Predator: While you are not wearing heavy armor, you gain a + 1 bonus to your speed.
+	Unhindering Growth: Your allies ignore the difficult terrain created by your nature's growth.
+	</RulesElement>
+	<RulesElement name="Primal Attunement" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4153" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> Your innate connection to the power of the primal spirits grants you a measure of control over the world around you. With your magic, you manipulate your surroundings to your advantage. </Flavor>
+      <specific name="Short Description"> Gain three Primal Attunement powers </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_DisplayPowers"/>
+	  <specific name="_PARSED_SUB_FEATURES"> ID_FMP_POWER_15853,ID_FMP_POWER_15855,ID_FMP_POWER_15856 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15853" type="Power" />
+			<grant name="ID_FMP_POWER_15855" type="Power" />
+			<grant name="ID_FMP_POWER_15856" type="Power" />
+		</rules>
+You gain the Air Spirit, Senses of the Wild, and Verdant Touch powers.
+	</RulesElement>
+	<RulesElement name="Summon Natural Ally" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4154" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> You count the creatures of the natural world as your allies. With magic learned from the elders of your druid circle,
+you can call one of those creatures to you at any time and across any distance. With this ally at your side, you can tip the balance of combat in your favor. </Flavor>
+      <specific name="Short Description"> Gain summon natural ally; use this power twice daily at 5th level and thrice daily at 9th level </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_15858 </specific>
+	  <specific name="_DisplayAssociates"> ID_FMP_ASSOCIATE_40,ID_FMP_ASSOCIATE_42,ID_FMP_ASSOCIATE_43,ID_FMP_ASSOCIATE_44,ID_FMP_ASSOCIATE_45,ID_FMP_ASSOCIATE_46,ID_FMP_ASSOCIATE_47,ID_FMP_ASSOCIATE_48,ID_FMP_ASSOCIATE_49,ID_FMP_ASSOCIATE_50,ID_FMP_ASSOCIATE_51,ID_FMP_ASSOCIATE_52 </specific>
+	  <rules>
+        <grant name="ID_FMP_CLASS_FEATURE_4160" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4156"/> 
+		<grant name="ID_FMP_CLASS_FEATURE_4161" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4159"/>
+		<grant name="ID_FMP_POWER_15858" type="Power"/>
+      </rules>
+You gain the summon natural ally power. Because of this feature, you do not gain a druid daily attack power at level 5, 9, 15, 19, 25, or 29. Instead, you gain the summon natural ally power at level 1. At level 5, you can use summon natural ally twice per day, and at level 9, you can use it three times per day.
+	</RulesElement>
+	<RulesElement name="Summon Natural Ally" type="Power" internal-id="ID_FMP_POWER_15858" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_FEATURE_4154,ID_INTERNAL_CATEGORY_DAILY,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You call out to the spirits of the natural world, which send a faithful creature to do your bidding. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Druid Attack </specific>
+		<specific name="Keywords"> Primal, Summoning </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Effect"> You summon a creature associated with your Primal Aspect (such as Primal Guardian or Primal Predator) and of your level or lower. The creature appears in an unoccupied space within range. It is an ally to you and your allies. 
+ The creature lacks actions of its own. Instead, you spend actions to command it mentally, choosing from the actions in the creature's description. You must have line of effect to the creature to command it. When you command the creature, you and the creature share knowledge but not senses.
+ When the creature makes a check, you make it using your game statistics, not including any temporary bonuses or penalties.
+ The creature lasts until it drops below 1 hit point, at which point you lose a healing surge (or hit points equal to your surge value if you have no surges left). Otherwise, it lasts until you dismiss it as a minor action or until the end of the encounter.</specific>
+		<specific name="Power Type"> Attack </specific>
+        <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4154 </specific>
+		<specific name="_DisplayAssociates"> ID_FMP_ASSOCIATE_40,ID_FMP_ASSOCIATE_42,ID_FMP_ASSOCIATE_43,ID_FMP_ASSOCIATE_44,ID_FMP_ASSOCIATE_45,ID_FMP_ASSOCIATE_46,ID_FMP_ASSOCIATE_47,ID_FMP_ASSOCIATE_48,ID_FMP_ASSOCIATE_49,ID_FMP_ASSOCIATE_50,ID_FMP_ASSOCIATE_51,ID_FMP_ASSOCIATE_52 </specific>
+		<specific name="Level"> 1 </specific>
+ You count the creatures of the natural world as your allies. With magic learned from the elders of your druid circle, you can call one of those creatures to you at any time and across any distance. With this ally at your side, you can tip the balance of combat in your favor. 
+ Because of this feature, you do not gain a druid daily attack power at level 5, 9, 15, 19, 25, or 29. Instead, you gain the summon natural ally power at level 1. At level 5, you can use summon natural ally twice per day, and at level 9, you can use it three times per day.
+	</RulesElement>
+	<RulesElement name="Summon Natural Ally (Primal Guardian)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4160" source="Heroes of the Feywild">
+    <Category> ID_FMP_CLASS_FEATURE_4154,1 </Category>
+    <specific name="Short Description"> Summon natural allies (see Companions character sheet) </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_DisplayAssociates"> ID_FMP_ASSOCIATE_40,ID_FMP_ASSOCIATE_42,ID_FMP_ASSOCIATE_43,ID_FMP_ASSOCIATE_44,ID_FMP_ASSOCIATE_45,ID_FMP_ASSOCIATE_46 </specific>
+  
+You can summon a creature associated with your Primal Aspect (Primal Guardian).
+	Level 1: You can use summon natural ally to summon a giant cobra or a desert hawk.
+	Level 15: You can use summon natural ally to summon a bulette or a venomous scorpion.
+	Level 29: You can use summon natural ally to summon a blue dragon wyrmling or a desert roc.
+</RulesElement>
+<RulesElement name="Summon Natural Ally (Primal Predator)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4161" source="Heroes of the Feywild">
+    <Category> ID_FMP_CLASS_FEATURE_4154,1 </Category>
+    <specific name="Short Description"> Summon natural allies (see Companions character sheet) </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_DisplayAssociates"> ID_FMP_ASSOCIATE_47,ID_FMP_ASSOCIATE_48,ID_FMP_ASSOCIATE_49,ID_FMP_ASSOCIATE_50,ID_FMP_ASSOCIATE_51,ID_FMP_ASSOCIATE_52 </specific>
+  
+You summon a creature associated with your Primal Aspect (Primal Predator)
+ Level 1: You can use summon natural ally to summon a grizzly bear or a pack wolf.
+ Level 15: You can use summon natural ally to summon a dire bear or a hunting tiger.
+ Level 29: You can use summon natural ally to summon a dire lion or a raptor behemoth.
+	</RulesElement>
+	<RulesElement name="Healing Growth" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_HEALING_GROWTH" source="Heroes of the Feywild">
+	</RulesElement>
+	<RulesElement name="Unhindering Growth" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_UNHINDERING_GROWTH" source="Heroes of the Feywild">
+	</RulesElement>
+	<RulesElement name="Giant Cobra" type="Associate" internal-id="ID_FMP_ASSOCIATE_40" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+GIANT COBRA		Summoned Creature
+Medium natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the cobra if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed 
+STANDARD
+Standard Action (poison)   At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 1d6 + your Wisdom modifier damage plus 2d6 poison damage, and the target takes a -2 penalty to attack rolls until the end of your next turn.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The cobra either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the cobra any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Desert Hawk" type="Associate" internal-id="ID_FMP_ASSOCIATE_42" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+DESERT HAWK		Summoned Creature
+Medium natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the hawk if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 , fly 8 
+STANDARD
+Standard Action  At-Will
+Effect: Before the attack, the hawk shifts up to 2 squares.
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 2d8 + your Wisdom modifier damage, and the hawk can slide the target 1 square.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The hawk either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the hawk any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Bulette" type="Associate" internal-id="ID_FMP_ASSOCIATE_43" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+BULETTE		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the bulette if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 , burrow 6 
+STANDARD
+Standard Action F At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the target is slowed until the end of your next turn.
+STANDARD
+Standard Action F Encounter
+Attack: Close Burst 1 (creatures in the burst); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the target falls prone.
+MINOR
+Minor Action F At-Will (1/round) 
+Effect: The bulette either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the bulette any commands by the end of your turn, it uses its melee attack power against an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Venomous Scorpion" type="Associate" internal-id="ID_FMP_ASSOCIATE_44" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+VENOMOUS SCORPION		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the scorpion if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action (poison)  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 2d8 + your Wisdom modifier poison damage, and the target is immobilized and takes ongoing 10 poison damage (save ends both).
+MINOR
+Minor Action At-Will (1/round) 
+Effect: The scorpion either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the scorpion any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Blue Dragon Wyrmling" type="Associate" internal-id="ID_FMP_ASSOCIATE_45" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+BLUE DRAGON WYRMLING		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the wyrmling if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 8 , fly 8 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the wyrmling marks the target until the end of your next turn.
+STANDARD
+Standard Action (lightning)   Encounter
+Attack: Close Blast 5 (creatures in the blast); your level + 5 vs. Reflex
+Hit: 4d10 + your Wisdom modifier lightning damage, and the target is dazed until the end of your next turn.
+MINOR
+Minor Action (1/round) 
+Effect: The wyrmling either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the wyrmling any commands by the end of your turn, it uses its melee attack power against an adjacent enemy if it can, preferring an enemy marked by it. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the wyrmling marks the target until the end of your next turn.
+	</RulesElement>
+	<RulesElement name="Desert Roc" type="Associate" internal-id="ID_FMP_ASSOCIATE_46" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+DESERT ROC		Summoned Creature
+Large natural  beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the roc if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 8 , fly 8 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the target is grabbed if the roc has fewer than two creatures grabbed. The grab lasts until the end of your next turn.
+Sustain Minor: The grab persists on any creature grabbed by the roc until the end of your next turn.
+MINOR
+Minor Action At-Will (1/round) 
+Effect: The roc either walks, shifts, runs, stands up, squeezes, or crawls. If the roc has a Large or smaller creature grabbed, it can pull the grabbed creature with it. The creature remains grabbed, and the roc does not provoke opportunity attacks from the grabbed creature for this movement.
+Instinctive Effect
+If you haven't given the roc any commands by the end of your turn, it sustains a grab if it is grabbing a creature. If it is not grabbing a creature, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Grizzly Bear" type="Associate" internal-id="ID_FMP_ASSOCIATE_47" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+GRIZZLY BEAR		Summoned Creature
+Medium natural beast ()
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the bear if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 2d8 + your Wisdom modifier damage, and the target is grabbed if the bear has no creatures grabbed. The grab lasts until the end of your next turn.
+Sustain Minor: The grab persists until the end of your next turn.
+MINOR
+Minor Action At-Will (1/round) 
+Effect: The bear either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the bear any commands by the end of your turn, it sustains a grab if it is grabbing a creature. If it is not grabbing a creature, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Pack Wolf" type="Associate" internal-id="ID_FMP_ASSOCIATE_48" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+PACK WOLF		Summoned Creature
+Medium natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the wolf if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 1d10 + your Wisdom modifier damage, and the target falls prone.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The wolf either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the wolf any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Dire Bear" type="Associate" internal-id="ID_FMP_ASSOCIATE_49" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+DIRE BEAR		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the bear if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Fortitude
+Hit: 4d8 + your Wisdom modifier damage, and the bear pushes the target up to 3 squares.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The bear either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the dire bear any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Hunting Tiger" type="Associate" internal-id="ID_FMP_ASSOCIATE_50" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+HUNTING TIGER		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the tiger if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action  At-Will
+Effect: The tiger shifts up to 2 squares.
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the target falls prone.
+MINOR
+Minor Action (1/round) 
+Effect: The tiger either walks, shifts, runs, stands up, squeezes, or crawls. If the tiger has either superior cover or total concealment when it ends this movement, it can make a Stealth check to hide with a +15 power bonus to the check.
+Instinctive Effect
+If you haven't given the tiger any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Dire Lion" type="Associate" internal-id="ID_FMP_ASSOCIATE_51" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+DIRE LION		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the lion if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Reflex
+Hit: 4d8 + your Wisdom modifier damage, and the target falls prone.
+STANDARD
+Standard Action (fear, thunder)  Encounter
+Attack: Close Burst 2 (enemies in the burst); your level + 5 vs. Will
+Hit: 5d8 + your Wisdom modifier thunder damage, and the target takes a -2 penalty to attack rolls until the end of your next turn.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The lion either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the lion any commands by the end of your turn, it uses its melee attack power against an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+	</RulesElement>
+	<RulesElement name="Raptor Behemoth" type="Associate" internal-id="ID_FMP_ASSOCIATE_52" source="Heroes of the Feywild">
+    <specific name="_Associated Power"> ID_FMP_POWER_15858 </specific>
+RAPTOR BEHEMOTH		Summoned Creature
+Large natural beast
+HP your bloodied value; Healing Surges none, but you can expend a healing surge for the behemoth if an effect allows it to spend one
+Defenses your defenses, not including any temporary bonuses or penalties
+Speed land 6 
+STANDARD
+Standard Action  At-Will
+Attack: Melee 1 (one creature); your level + 5 vs. Fortitude
+Hit: 4d8 + your Wisdom modifier damage.
+Effect: If the target ends its next turn within 2 squares of the behemoth, the behemoth shifts 1 square as a free action to a square adjacent to the target and deals 15 damage to it.
+MINOR
+Minor Action  At-Will (1/round) 
+Effect: The behemoth either walks, shifts, runs, stands up, squeezes, or crawls.
+Instinctive Effect
+If you haven't given the behemoth any commands by the end of your turn, it attacks an adjacent enemy if it can. Otherwise, it moves up to its speed to a square adjacent to an enemy.
+</RulesElement>
+   
+<!--Psion-->
+   
+   <RulesElement name="Psionic Augmentation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1812" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain augmentable at-wills instead of encounter powers. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_AUGMENT_POWERS" type="Internal" />
+      </rules>
+Through discipline and careful study, you have mastered a form of psionic magic that offers greater versatility than other characters command. You know a broad array of at-will powers, each of which is a conduit through which you can pour as much or as little psionic energy as you choose. You channel psionic energy into a reservoir of personal power—represented in the game as power points—that you can use to augment your at-will attack powers, replacing the encounter attack powers that other characters use.
+	
+Because of this class feature, you acquire and use powers in a slightly different manner from how most other classes do.
+	
+At-Will Attack Powers: At 1st level, you choose two at-will attack powers and one daily attack power from your class, but you don&apos;t start with any encounter attack powers from your class. You can instead augment your class at-will attack powers using power points. These powers have the augmentable keyword.
+	
+You gain new at-will attack powers from this class, instead of new encounter attack powers, as you increase in level. At 3rd level, you choose a new at-will attack power from this class. At 7th, 13th, 17th, 23rd, and 27th level, you can replace one of your at-will attack powers with another one of your level or lower. Both powers must be augmentable and from this class.
+	
+Power Points: You start with 2 power points. You gain 2 additional power points at 3rd and 7th level, and 1 additional power point at 13th level. If you gain power points from another source (such as your paragon path), add them to your power point total. You can use your power points to augment any augmentable power you have, regardless of how you gained the power.
+	
+You regain all your power points when you take a short or an extended rest.
+
+&lt;table&gt;Level	At-Will Attack Powers	Power Points
+1	Choose two	Gain 2
+3	Choose one	Gain 2 (4 total)
+7	Replace one	Gain 2 (6 total)
+13	Replace one	Gain 2 (8 total)
+17	Replace one	— (8 total)
+21	—	— (8 total)
+23	Replace one	— (8 total)
+27	Replace one	— (8 total)&lt;/table&gt;
+
+The Augmentable Keyword
+A power that has the augmentable keyword has optional augmentations, which you can use at the cost of power points. An augmentable power follows these rules, unless the power&apos;s description says otherwise.
+	
+Decide First: You must decide whether and how to augment an augmentable power when you choose to use the power, before you make any attack rolls or apply any of the power&apos;s effects.
+	
+Power Point Cost: An augmentation specifies its cost in power points. For example, “Augment 1” means you must spend 1 power point to use an augmentation. You must spend the required power points when you decide to use the augmentation.
+	
+One at a Time: You can use only one of a power&apos;s augmentations at a time, so you can&apos;t, for example, spend 3 power points to gain both the 1-point and the 2-point augmentation for a single power.
+	
+Replace Base Effects: When you augment a power, any change to the power is noted in the augmentation and replaces specific entries in the base power. An augmented version of a power is otherwise identical to the base power.
+	
+At-Will Attack Powers: When a power or some other effect lets you use an at-will attack power, you can choose to use one of your augmentable at-will attack powers, but you must use it unaugmented.
+	
+When a racial trait grants you an at-will attack power of your choice and you choose an augmentable at-will attack power, the power loses its augmentations. However, the power does not lose the augmentable keyword. This means the power is unaugmented when you use it, unless you augment it by some other means.
+   </RulesElement>
+   
+   <RulesElement name="Augment Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_AUGMENT_POWERS" source="Core" >
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <statadd name="Power Points" value="+2" />
+         <statadd name="Power Points" value="+2" requires="3 level" />
+         <statadd name="Power Points" value="+2" requires="7 level" />
+         <statadd name="Power Points" value="+2" requires="13 level" />
+         <select type="Power" name="Level 3 Augment At-Will" number="1" Category="$$CLASS,at-will,3" Level="3" />
+         <replace name="Power At-Will 7" Level="7" powerswap="$$CLASS,at-will,7" />
+         <replace name="Power At-Will 13" Level="13" powerswap="$$CLASS,at-will,13" />
+         <replace name="Power At-Will 17" Level="17" powerswap="$$CLASS,at-will,17" />
+         <replace name="Power At-Will 23" Level="23" powerswap="$$CLASS,at-will,23" />
+         <replace name="Power At-Will 27" Level="27" powerswap="$$CLASS,at-will,27" />
+      </rules>
+A class that chooses augmentable at-will powers in place of encounter powers, such as the psion.
+   </RulesElement>
+   
+<!--Rogue-->
+   
+   <RulesElement name="Sneak Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_322" source="Player&apos;s Handbook" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <Flavor> As a rogue, you fight fair only when you have no other choice. You are at your best when you have the advantage over an enemy, such as when you and an ally attack the foe from opposite sides or you deliver a surprise assault. </Flavor>
+      <specific name="Short Description"> Once per turn, if you have combat advantage and hit with a crossbow, light blade,shortbow, or sling, deal extra damage. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Usage"> turn </specific>
+      <rules>
+         <statadd name="Sneak Attack Dice" value="+2" />
+         <statadd name="Sneak Attack Dice" value="+1" requires="Paragon Tier" />
+         <statadd name="Sneak Attack Dice" value="+2" requires="Epic Tier" />
+		 <!-- <statadd name="implement:damage" value="+Sneak Attack" condition="once per turn (Sneak Attack)" /> -->
+		 <!-- <textstring name="implement:damage" value="+(Sneak Attack Dice)(Sneak Attack Die)" condition="against enemies granting CA once per turn" /> -->
+         <modify name="this" Field="Usage" value="turn" />
+      </rules>
+When you make an attack with a light blade, a hand crossbow, a shortbow, or a sling and hit an enemy granting combat advantage to you, that enemy takes extra damage based on your level (see the Sneak Attack table). You can deal this extra damage only once per turn.
+
+SNEAK ATTACK
+&lt;table&gt;Level	Extra Damage
+1-10	2d6
+11-20	3d6
+21-30	5d6&lt;/table&gt;
+   </RulesElement>
+   
+   <RulesElement name="Ruthless Ruffian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1031" source="Martial Power" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_547,1 </Category>
+      <specific name="Short Description"> Proficient with club, mace; use with Sneak Attack or rogue powers requiring light blade; +1 attack and add Str mod to damage with club or mace </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" type="Proficiency" />
+         <textstring name="ID_FMP_CLASS_6-Light Blade" value="Club" />
+         <textstring name="ID_FMP_CLASS_6-Light Blade" value="Mace" />
+         <textstring name="Sneak Attack Weapons" value="Club" />
+         <textstring name="Sneak Attack Weapons" value="Mace" />
+         <statadd name="club:damage" value="+Strength modifier" type="Ruthless Ruffian" />
+         <statadd name="mace:damage" value="+Strength modifier" type="Ruthless Ruffian" />/>
+         <statadd name="club:attack" value="+1" type="Ruthless Ruffian" />
+         <statadd name="mace:attack" value="+1" type="Ruthless Ruffian" />
+      </rules>
+You are proficient with the club and the mace, and you can use those weapons with Sneak Attack or any rogue power or rogue paragon path power that normally requires a light blade. You also gain a +1 bonus to attack rolls and a bonus to damage rolls equal to your Strength modifier when using a club or mace.
+   </RulesElement>
+   
+<!--Scout-->
+	
+	<RulesElement name="Spinning Axe Mastery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432133" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+  <Category> ID_DBB_CLASS_FEATURE_123443211,1 </Category>
+  <Flavor> The axe is a brutal weapon that you trust to deal consistent damage. Scouts who face off against the largest, toughest enemies often favor the axe fighting style. </Flavor>
+  <specific name="Short Description"> You gain a +2/4/6 bonus to weapon damage rolls while you wield an axe in your off hand. </specific>
+  <specific name="_CS_ShortDescription"> Gain +2/4/6 damage wielding off-hand axe </specific>
+  <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe" />
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe, Paragon Tier" />
+      <statadd name="Spinning Axe" value="+2" requires="WearingOffHandAxe, Epic Tier" />
+      <statadd name="two-weapon,weapon:damage" value="+Spinning Axe" requires="WearingOffHandAxe" />
+    </rules>  
+You gain a +2 bonus to weapon damage rolls while you wield an axe in your off hand. This bonus increases to +4 at 11th level and +6 at 21st level.
+	</RulesElement>
+	
+<!--Sha'ir-->
+	
+	<RulesElement name="Sha'ir" type="Class" internal-id="ID_FMP_CLASS_958" source="Heroes of the Elemental Chaos">
+    <specific name="Key Abilities"> Intelligence, Constitution </specific>
+    <specific name="Implements"> Orbs, staffs, wands </specific>
+    <specific name="Armor Proficiencies"> Cloth </specific>
+    <specific name="Weapon Proficiencies"> Dagger, quarterstaff </specific>
+    <specific name="Bonus to Defense"> +2 Will </specific>
+    <specific name="Hit Points at 1st Level"> 10+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 4 </specific>
+    <specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Arcana. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Arcana (Int), Diplomacy (Cha), Dungeoneering (Wis), History (Int), Insight (Wis), Nature (Wis), Religion (Int) </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Elemental Resistance, Gen Servant, Sha'ir Cantrips </specific>
+    <specific name="Role"> Controller. </specific>
+    <specific name="Power Source"> Arcane. Using magic granted by your gen servant, you take control of the battlefield with the raw forces of elemental energy. </specific>
+    <specific name="Creating"> A sha'ir is a type of wizard, a class introduced in the Player's Handbook. To create a sha'ir, use the character creation rules in the Rules Compendium or the Player's Handbook. The Character Advancement table summarizes how many powers and feats your sha'ir should have at each level, as well as when ability scores increase.
+	A sha'ir lacks these wizard class features from the Player's Handbook: Arcane Implement Mastery, Ritual Casting, and Spellbook. A sha'ir instead gains the class features Gen Servant and Elemental Resistance. </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="Short Description"> Drawing from the magical energy of the Elemental Chaos, these unconventional wizards exist on the fringes of the magical world. </specific>
+    <specific name="_ParentClass"> ID_FMP_CLASS_9 </specific>
+    <specific name="_DisplayName"> Wizard (Sha'ir) </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SHA'IR" type="Grants" />
+	  <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_9" />
+      <statadd name="_LEVEL-ONE-HPS" value="+10" />
+      <statadd name="_PER-LEVEL-HPS" value="+4" />
+      <statadd name="Healing Surges" value="+6" />
+      <statadd name="Will Defense Class Bonus" value="+2" />
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_9" />
+    </rules>  
+Sha'irs cull magical energy from the Elemental Chaos to power their spells. Rather than pore over ancient formulas and techniques, these wizards bargain with elemental powers for the magical knowledge they need. Sha'irs do not deal directly with these powers; instead, they rely on proxies, elemental spirits called gen servants, to negotiate on their behalf. Dispatching these servants to the Elemental Chaos each day, a sha'ir replenishes the necessary power and information to wield the forces of creation.
+	Their unconventional methods, combined with their reputation for consorting with dangerous, often violent, powers, place sha'irs on the fringes of the magical world. Other wizards regard sha'irs with scorn and distrust, believing that they cheat by circumventing the arduous training and research wizards must typically undergo. This mistrust stems from ignorance, however, for even though a sha'ir draws magic from a gen servant, a foundation in arcane training is necessary to wield the power he or she gains.
+	Since sha'irs do not clutter their minds with mystical formulas and arcane utterances, they have wider access to spells than other wizards enjoy. They need only know a spell's basic structure to request it from their gen servants. The gen servant then vanishes into the Elemental Chaos, where it bargains with more powerful elemental lords and creatures to acquire the spell the sha'ir seeks and then returns without fail to provide its master with the energy and means to cast the spell. So even though sha'irs do not employ spellbooks, they have access to the full expanse of wizards' most powerful and versatile spells.
+	The elemental powers that lend magical knowledge and energy to sha'irs do not do so without an expectation of recompense. Sha'irs often take up the adventurer's life for this reason. They work in the world and beyond as representatives, agents, and servants of their elemental masters. Many times a sha'ir does not even realize that his or her actions are furthering some elemental being's designs, and what might seem to be a normal expedition into the unknown could have consequences not realized for years to come.
+</RulesElement>
+
+<RulesElement name="Sha'ir" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHA'IR" source="Heroes of the Elemental Chaos">
+    <specific name="_SupportsID"> ID_FMP_CLASS_958 </specific>
+	<rules>
+		<grant name="ID_FMP_ROLE_1" type="Role" />
+		<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" type="Proficiency" />
+		<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		<grant name="ID_INTERNAL_GRANTS_SHA'IR_IMPLEMENTS" type="Grants" />
+        <grant name="ID_INTERNAL_COUNTSASCLASS_SHA'IR" type="CountsAsClass" />
+        <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass" />
+		<textstring name="PowersAsClass" value="ID_FMP_CLASS_9" />
+		<grant name="ID_FMP_CLASS_FEATURE_4348" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_4349" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_4350" type="Class Feature" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Sha'ir Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHA'IR_IMPLEMENTS" source="Heroes of the Elemental Chaos">
+    <specific name="_SupportsID"> ID_FMP_CLASS_958 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+    </rules>
+</RulesElement>
+
+<RulesElement name="Sha'ir" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_SHA'IR" source="Heroes of the Elemental Chaos">
+    <specific name="_SupportsID"> ID_FMP_CLASS_958 </specific>
+You count as a sha'ir for meeting prerequisites.
+</RulesElement>
+
+<RulesElement name="Gen Servant" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4348" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> Elemental magic bows to no mortal master. Only those steeped in elemental energy or who can broker with the elemental powers can coax forth its magic. You enlist the aid of a minor elemental spirit, a gen servant, to keep you supplied with the magical energy you need to cast your spells. Each day, you dispatch this servant to the Elemental Chaos to steal, beg, or borrow this energy from the greater powers residing there. When the servant returns, the energy it brings back floods into your mind.
+	A gen servant is an arcane familiar forged from your own essence and that of elemental substance until it adopts a fixed and permanent form. As with any familiar, the characteristics that your gen servant takes on depend on you. The familiar might just be an extension of your magical abilities, or it might develop a distinctive personality, aiding you with knowledge from the Plane Below. How large a part your servant plays in your adventures is up to you. </Flavor>
+    <specific name="Short Description"> Gain Arcane Familiar feat and you can choose sha'ir familiars; after an extended rest you can replace 1 wizard daily or utility power </specific>
+    <specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_FMP_FEAT_738" type="Feat" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="6" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="12" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="18" /> 
+		</rules>
+You gain the Arcane Familiar feat and one other familiar feat of your choice as bonus feats. You can choose any familiar normally available to a wizard or one of the familiars available only to sha'irs. At 6th, 12th, and 18th levels, you gain an additional familiar feat of your choice as a bonus feat.
+	At the end of each extended rest, when your familiar returns from its venture into the Elemental Chaos, you can replace one of your wizard daily attack powers or wizard utility powers with another wizard power of the same type. The new power must have a level, and its level must be the same as the old power's level.
+</RulesElement>
+
+<RulesElement name="Sha'ir Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4349" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> The magic provided by a shair's gen servant hints at the power to come, yet the sha'ir must first master the elementary, minor spells before attempting greater feats. </Flavor>
+    <specific name="Short Description"> Gain four cantrips of your choice </specific>
+    <specific name="Level"> 1 </specific>
+		<rules>
+			<select type="Power" number="4" Category="ID_FMP_CLASS_FEATURE_2870" />
+		</rules>
+You gain four cantrips of your choice.
+</RulesElement>
+
+<RulesElement name="Elemental Resistance" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4350" source="Heroes of the Elemental Chaos">
+    <Category> 1 </Category>
+    <Flavor> As you and your familiar harvest magic from the Elemental Chaos, you learn to protect yourselves and your companions from elemental damage. </Flavor>
+    <specific name="Short Description"> You and allies gain resistance to acid, cold, fire, lightning, or thunder (chosen after each short rest) equal to twice your Con mod while adjacent to your active familiar; you gain the same resistance while familiar is passive. </specific>
+    <specific name="Level"> 1 </specific>
+At the end of each short rest, choose acid, cold, fire, lightning, or thunder. Until the end of your next extended rest, you have resistance to that damage type while your familiar is in passive mode, and you and your allies have resistance to that damage type while adjacent to the familiar when it is in active mode. The resistance equals twice your Constitution modifier.
+</RulesElement>
+	
+<!--Shaman-->
+   
+   <RulesElement name="Protector Spirit" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1251" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_855,1 </Category>
+      <specific name="Short Description"> Ally adjacent to spirit companion gains hit points equal to your Con mod with second wind or your healing power </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_5389,ID_FMP_POWER_6521 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_147 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_5389,ID_FMP_POWER_6521 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <grant name="ID_FMP_POWER_5389" type="Power" />
+         <grant name="ID_FMP_POWER_6521" type="Power" />
+      </rules>
+You draw on the strength of the bear or a similar protective spirit to defend and bolster your allies.
+Spirit Boon: Any ally adjacent to your spirit companion regains additional hit points equal to your Constitution modifier when he or she uses second wind or when you use a healing power on him or her.
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+Spirit&apos;s Shield: You gain the spirit&apos;s shield power, an attack you make through your spirit companion as an opportunity action.
+At-Will Attack Power: You gain the protecting strike power. You choose a second at-will attack power as normal.
+   </RulesElement>
+   
+   <RulesElement name="World Speaker Spirit" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2004" source="Primal Power" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_855,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_9733,ID_FMP_POWER_9736 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_147 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9733,ID_FMP_POWER_9736 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+         <grant name="ID_FMP_POWER_9733" type="Power" />
+         <grant name="ID_FMP_POWER_9736" type="Power" />
+      </rules>
+Spirit Boon: Any ally who provokes an opportunity attack by entering or leaving a square adjacent to your spirit companion gains a bonus to all defenses against that attack. The bonus equals your Constitution modifier.
+In addition, while you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+World Speaker&apos;s Command: You gain the world speaker&apos;s command power, an attack you make through your spirit companion as an opportunity action.
+At-Will Attack Power: You gain the voice of battle power. You choose a second 1st-level at-will attack power as normal.
+   </RulesElement>
+   
+<!--Swordmage-->
+   
+   <RulesElement name="Swordbond" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_630" source="Forgotten Realms Player&apos;s Guide,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Bond with a blade (1 hr.); minor action to call to hand; fix as standard. </specific>
+      <specific name="Level"> 1 </specific>
+By spending 1 hour of meditation with a chosen light or heavy blade, you forge a special bond with the weapon. As a minor action, you can call your bonded weapon to your hand if you have line of effect to it.
+
+You can forge a bond with a different blade using the same meditation process (for instance, if you acquire a new blade that has magical abilities). If you forge a bond with a different blade, the old bond dissipates.
+
+If your bonded weapon is broken or damaged, you can recreate the weapon from a fragment as a standard action. (This process automatically destroys any other fragments of the weapon in existence, so you can&apos;t use it to create multiple copies of a broken weapon.)
+   </RulesElement>
+   
+<!--Vampire-->
+
+	<RulesElement name="Vampiric Reflexes" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3615" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+	  <Category> 1 </Category>
+	  <Flavor> You move with an uncanny grace that makes it difficult for foes to strike you. </Flavor>
+	  <specific name="Short Description"> Gain a +2 bonus to AC while you are wearing cloth armor or no armor and aren't using a shield </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="_CLASSNAME"> Vampire </specific>
+	  <rules>
+		<statadd name="Vampiric Reflexes" value="+2" not-wearing="armor:shield" />
+		<statadd name="AC" value="+Vampiric Reflexes" wearing="armor:cloth" />
+		<statadd name="AC" value="+Vampiric Reflexes" not-wearing="armor:" />
+	  </rules>
+	You gain a +2 bonus to AC while you are wearing cloth armor or no armor and aren't using a shield.
+	</RulesElement>
+
+<!--Warlock-->
+   
+	<AppendNodes name="Stealth" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STEALTH" source="Core">
+		<Category> ID_FMP_CLASS_7 </Category>
+	</AppendNodes>
+	
+	<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+		<rules>
+			<modify name="Warlock" type="Class" field="Class Skills" value="Arcana (Int), Bluff (Cha), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int), Stealth (Dex), Streetwise (Cha), Thievery (Dex)" />
+		</rules>
+	</AppendNodes>
+	
+<!--Witch-->
+	
+		<RulesElement name="Witch" type="Class" internal-id="ID_FMP_CLASS_908" source="Heroes of the Feywild">
+		<specific name="Key Abilities"> Intelligence, Wisdom </specific>
+		<specific name="Implements"> Orbs, staffs, wands </specific>
+		<specific name="Armor Proficiencies"> Cloth </specific>
+		<specific name="Weapon Proficiencies"> Dagger, quarterstaff </specific>
+		<specific name="Bonus to Defense"> +2 Will </specific>
+		<specific name="Hit Points at 1st Level"> 10+ Constitution Score </specific>
+		<specific name="Hit Points per Level Gained"> 4 </specific>
+		<specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+		<specific name="Trained Skills"> Arcana. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+		<specific name="Class Skills"> Arcana (Int), Diplomacy (Cha), Dungeoneering (Wis), History (Int), Insight (Wis), Nature (Wis), Religion (Int) </specific>
+		<specific name="_PARSED_CLASS_FEATURE"> Augury, Moon Coven, Witch Cantrips, Witch's Familiar </specific>
+		<specific name="Role"> Controller. You practice the first, most ancient form of arcane magic, which allows you to charm, transform, and curse your enemies. </specific>
+		<specific name="Power Source"> Arcane. </specific>
+		<specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+		<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+		<specific name="Short Description"> You practice the first, most ancient form of arcane magic, which allows you to charm, transform, and curse your enemies. </specific>
+		<specific name="_ParentClass"> ID_FMP_CLASS_9 </specific>
+		<specific name="_DisplayName"> Wizard (Witch) </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_WITCH" type="Grants" />
+			<select type="Power" number="2" Category="$$Class,at-will,1" />
+			<textstring name="_CLASSNAME" value="ID_FMP_CLASS_908" />
+			<statadd name="_LEVEL-ONE-HPS" value="+10" />
+			<statadd name="_PER-LEVEL-HPS" value="+4" />
+			<statadd name="Healing Surges" value="+6" />
+			<statadd name="Will Defense Class Bonus" value="+2" />
+			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_9" />
+		</rules>
+  
+Part religion, part ritual, and all mystery, witchcraft is an ancient practice that came about in an age before arcane magic was studied, institutionalized, and etched in writing, when monstrous titans ruled over creation and the secret of making fire was yet undiscovered. In this chaotic dark age, the gods had little influence on the titans' world. Instead of seeking their aid, the primitive peoples called out to the night for protection and power, and a voice from the darkness answered. Those who accepted its arcane gifts became the first witches, and they wielded such power as only immortals had known-seen by some jealous gods as an affront that they have never forgiven.
+	Witches gain their power from a patron who instructs them by way of a mystical familiar that comes and goes as it pleases, unbound by the strictures of the material world. The most prevalent patron among witches-the original voice from the darkness-is the moon goddess Sehanine, referred to by witches as simply the Goddess. Other entities have since seen the advantage of imbuing mortals with power, and so your patron might be an archfey, a god, an angel, a primordial, a demon lord, a devil, or another legendary being that believes it can benefit by imbuing you with a gift of arcane prowess. It might prefer to remain anonymous.
+	The circumstances by which you obtained your gift can vary widely. Some witches seek out the gift in order to fulfill a personal desire or vendetta, while others were brought up in a coven. Some receive their power after making a pact with a devil, as a warlock might do, and others have it bestowed upon them by a fairy godparent or a witch queen.
+	Though witches are common among the fey races in the Feywild, as a witch in the natural world you must be mindful of whom you trust. In the world, common folk fear your kind. Envious wizards refuse to acknowledge you as a peer and would see your wondrous powers vanish from the world, while clerics of jealous gods decree you an unholy menace, sending witch hunters to track you down and destroy you.
+	</RulesElement>
+
+	<RulesElement name="Witch" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_WITCH" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_908 </specific>
+You count as a witch for meeting prerequisites.
+	</RulesElement>
+
+	<RulesElement name="Witch" type="Grants" internal-id="ID_INTERNAL_GRANTS_WITCH" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_908 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass" />
+			<grant name="ID_FMP_ROLE_1" type="Role" />
+			<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" type="Proficiency" />
+			<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_9" />
+			<grant name="ID_INTERNAL_NO_LV1_ENCOUNTER_POWER" type="Internal" />
+			<grant name="ID_INTERNAL_NO_LV13_ENCOUNTER_POWER" type="Internal" />
+			<grant name="ID_INTERNAL_NO_LV23_ENCOUNTER_POWER" type="Internal" />
+			<grant name="ID_INTERNAL_GRANTS_WITCH_IMPLEMENTS" type="Grants" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4151" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4148" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4147" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4145" type="Class Feature" />	
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Witch Encounter 13" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_WITCH-13" source="Heroes of the Feywild" >
+		<specific name="_CS_ShortDescription"> @ </specific>
+	</RulesElement>
+
+	<RulesElement name="Witch Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_WITCH_IMPLEMENTS" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_908 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Moon Coven" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4148" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> When you create your witch, you choose a moon coven with which you are affiliated. A moon coven is a loose order of witches that share a philosophy of witchcraft. Each moon coven represents one of two phases of the moon-full or dark (new)-and symbolizes the witch's quintessential attitude toward the application of his or her craft. Each moon coven reflects a member witch's philosophy regarding the use of magic-not necessarily corresponding to the witch's alignment, since witches of all alignments are found in each coven. Nevertheless, a greater number of evil witches gravitate toward the dark moon and its powers over ill fortune and necromancy, whereas good witches more frequently affiliate themselves with the full moon coven and favor its charms and healing magic. 
+	Witches are solitary by nature, requiring little arcane instruction beyond the teachings of their familiar, and most prefer to keep their craft secret lest they be targeted by witch hunters. Therefore, a moon coven typically convenes only once during the course of a year, in an isolated location in the wilderness often near standing stones, ley lines, or other sites that thrum with arcane power, on an evening when the coven's moon phase displays in its ideal state in the dark heavens above. Despite their opposing philosophies on witchcraft, the two moon covens sometimes come together on the night of a lunar eclipse, when both are symbolically represented in the night sky. Such meetings occur only when all witches, or the world in which they live, are threatened by forces bent on their extermination. 
+	In addition to, or instead of, meeting with their moon coven, some witches gather in local covens attended by witches that inhabit the area. Such local covens are often the way new witches are initiated into the craft, and they show the initiate the way to call on a powerful entity and receive the gift of its power in the form of a familiar. These local covens usually have their own aims and goals related to their immediate surroundings, and might or  right not adhere to the philosophy of either of the moon covens. 
+	Many witches learn their craft in isolation, unaware of the presence of the fundamental moon covens, or  even of other witches. Regardless of whether a witch or a local coven identifies with a moon coven, every witch makes a choice concerning the type of witchcraft he or she wants to practice. </Flavor>
+		<specific name="Short Description"> Gain the benefits of a coven </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4149, ID_FMP_CLASS_FEATURE_4150 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4148"/>
+		</rules>
+  
+Choose a coven, and gain its benefits.
+	</RulesElement>
+
+	<RulesElement name="Dark Moon Coven" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4149" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4148,1 </Category>
+		<Flavor> The witches of the dark moon coven believe that the night is a witch's birthright. Powers over fate and darkness are theirs to command, and they strive to further their own ends at any cost. Good dark moon witches use their powers of fear, terror, and darkness against the wicked, whereas evil dark moon witches blight those that cross them with ill fortune and plague, heedless of the mortal lives that fall in their wake. Dark moon witches call on the tides and the night winds and summon the dead from their graves; they conjure objects from nowhere, or imbue them with momentary life. </Flavor>
+		<specific name="Short Description"> Gain dread presence power, chameleon's mask and spook cantrips, training in Intimidate </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14542 </specific>
+		<specific name="Type"> Encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_9 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14542 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" type="Skill Training" />
+			<grant name="ID_FMP_POWER_15851" type="Power" />
+			<grant name="ID_FMP_POWER_13971" type="Power" />
+			<grant name="ID_FMP_POWER_14542" type="Power" Level="1-12" />
+			<grant name="ID_FMP_POWER_14562" type="Power" Level="13-22" />
+			<grant name="ID_FMP_POWER_14578" type="Power" Level="23" />
+		</rules>
+  
+You gain the dread presence power, and the chameleon's mask and spook cantrips.
+	In addition, you gain training in the Intimidate skill.
+	</RulesElement>
+
+	<RulesElement name="Full Moon Coven" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4150" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4148,1 </Category>
+		<Flavor> Witches of the full moon coven believe in the sanctity of life, the tidal pull of love, and the capacity of pure beauty to enchant the eye. These witches use their powers to beguile, charm, and inspire. Many full moon witches are kind and good; others are stark, aloof, and compassionless, idealizing the image of beauty and grace but not the heart of it. When they manifest their power, full moon witches awe allies and enemies alike with the celestial majesty of  their presence. </Flavor>
+		<specific name="Short Description"> Gain glorious presence power, light and suggestion cantrips, training in Heal </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14543 </specific>
+		<specific name="Type"> Encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_9 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14543 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SKILL_TRAINING_HEAL" type="Skill Training" />
+			<grant name="ID_FMP_POWER_1225" type="Power" />
+			<grant name="ID_FMP_POWER_12731" type="Power" />
+			<grant name="ID_FMP_POWER_14543" type="Power" Level="1-12" />
+			<grant name="ID_FMP_POWER_14563" type="Power" Level="13-22" />
+			<grant name="ID_FMP_POWER_14579" type="Power" Level="23" />
+		</rules>
+  
+You gain the glorious presence power, and the light and suggestion cantrips.
+	In addition, you gain training in the Heal skill.
+	</RulesElement>
+
+	<RulesElement name="Augury" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4151" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> Because of their intimate connection with powerful otherworldly entities, witches are well versed in the arcane arts of fortune telling and prophecy. The witch's familiar instructs them in the means to look deep into the spirit world and see the patterns and images that reveal the future. Some learn to read runes, decks of cards, tea leaves, knucklebones, or weather patterns. Some gaze into crystal balls or boiling cauldrons, and some channel spirits directly into their bodies, which foretell the future. As a witch, your method of prophecy might be one of these or it could be a ritual of your own devising. Witches are said to achieve the most favorable results beneath the light of the moon. </Flavor>
+		<specific name="Short Description"> Gain the augury utility power </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15850 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_CLASS_9 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15850 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15850" type="Power" />
+		</rules>
+  
+You gain the augury power.
+	</RulesElement>
+
+	<RulesElement name="Witch Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4147" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> A witch knows a few tricks at the outset of his or her career that can be of great use even when other potent eldritch powers are also at the witch's disposal. </Flavor>
+		<specific name="Short Description"> Gain three cantrips of your choice </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility" />
+			<modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility" />
+            <modify name="ID_FMP_POWER_1217" type="Power" Field="Class" value="ID_FMP_CLASS_9" requires="ID_FMP_RACE_20" />
+            <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Usage" value="At-Will" requires="ID_FMP_RACE_20" />
+            <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20" />
+			<select type="Power" number="3" Category="ID_FMP_CLASS_FEATURE_2870" />
+		</rules>
+  
+You gain three cantrips of your choice.
+	</RulesElement>
+
+	<RulesElement name="Witch's Familiar" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4145" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> Unlike other wizards, a witch receives the gift of arcane power from a patron such as an archfey, a god, a devil, an angel, a demon, or another powerful being. The witch might or might not be aware of the patron's true identity or its reasons for bestowing power, but such entities always have their reasons, which become clear in time, for good or ill.
+	A witch's familiar takes the shape of a Tiny creature, usually a natural or a fey beast such as a cat, a serpent, or a raven, and acts as an intermediary between the witch and the patron of the witch's power. Bound to the witch's soul, this familiar instructs the witch in the use of supernatural powers. 
+	Your familiar can have as active a role as you like. Familiars have a distinct personality and a unique relationship with the witches they instruct. Your familiar might provide hints and lore, or it might be a subtle presence in the background that appears and disappears without a sound, if you prefer to downplay its role in your story. </Flavor>
+		<specific name="Short Description"> Gain Arcane Familiar Feat; after an extended rest replace one wizard daily or utility powers; at 24th level regain the use of a wizard encounter attack power when you spend an action point </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_FMP_FEAT_738" type="Feat" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="6" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="12" /> 
+			<select type="Feat" number="1" category="ID_INTERNAL_CATEGORY_FAMILIAR" level="18" /> 
+			<grant name="ID_KDM_CLASS_FEATURE_WITCH'S_FAMILIAR_ACTION" type="Class Feature" level="24" /> 
+		</rules>
+You gain the Arcane Familiar feat and one other familiar feat of your choice as bonus feats. At 6th, 12th, and 18th levels, you gain an additional familiar feat of your choice as a bonus feat.  
+	At the end of each extended rest, when you confer with your familiar you can replace one of your wizard daily attack powers or wizard utility powers with another wizard power of the same type. The new power must have a level, and its level must be the same as the old power's level.
+	When you reach level 24, your familiar enables you to regain the use of one of your expended wizard encounter attack powers whenever you spend an action point. If you do so, you gain combat advantage against every target of that power the next time you use it during the current encounter.
+	</RulesElement>
+
+	<RulesElement name="Witch's Familiar Action" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_WITCH'S_FAMILIAR_ACTION" source="Heroes of the Feywild">
+		<Category> 24 </Category>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<specific name="Level"> 24 </specific>
+		<rules>
+            <textstring name="Action Point" value="Witch's Familiar: When you spend an action point, you can regain the use of one of your expended wizard encounter attack powers. If you do so, you gain combat advantage against every target of that power the next time you use it during the current encounter." />
+		</rules>
+	</RulesElement>
+	
+<!--Wizard-->
+   
+   <RulesElement name="Missile Choice" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3037" source="House Rules Supplement" revision-date="3/7/2011 10:30:00 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain your missile option </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_463, ID_FMP_POWER_10144 </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3037" />
+      </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+
+	<RulesElement name="Magic Missile" type="Class Feature" internal-id="ID_WOG_HR_CLASS_FEATURE_1" source="Player Essentials: Heroes of the Fallen Lands" revision-date="3/7/2011 10:30:00 PM">
+	  <Category> ID_FMP_CLASS_FEATURE_3037,1 </Category>
+	  <specific name="Short Description"> Gain the Magic Missile power. </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="Powers"> ID_FMP_POWER_463 </specific>
+	  <specific name="type"> At-Will </specific>
+	  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_463 </specific>
+	  <specific name="_CS_ShortDescription"> Gain the Magic Missile power </specific>
+	  <rules>
+		 <grant name="ID_FMP_POWER_463" type="Power" />
+	  </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+
+	<RulesElement name="Arcane Bolt" type="Class Feature" internal-id="ID_WOG_HR_CLASS_FEATURE_2" source="Player's Handbook" revision-date="3/7/2011 10:30:00 PM">
+	  <Category> ID_FMP_CLASS_FEATURE_3037,1 </Category>
+	  <specific name="Short Description"> Gain the Arcane Bolt power. </specific>
+	  <specific name="Level"> 1 </specific>
+	  <specific name="Powers"> ID_FMP_POWER_10144 </specific>
+	  <specific name="type"> At-Will </specific>
+	  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+	  <specific name="_DisplayPowers"> ID_FMP_POWER_10144 </specific>
+	  <specific name="_CS_ShortDescription"> Gain the Arcane Bolt power </specific>
+	  <rules>
+		 <grant name="ID_FMP_POWER_10144" type="Power" />
+	  </rules>
+	Choose one of the following class powers at 1st level:
+	Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
+	Arcane Bolt: You launch a silvery bolt of force at an enemy (D&amp;D 4.0 Launch Magic Missile).
+	</RulesElement>
+   
+   <AppendNodes name="Wizard" type="Grants" internal-id="ID_INTERNAL_GRANTS_WIZARD" source="Player&apos;s Handbook" >
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3037" type="Class Feature" />
+		</rules>
+   </AppendNodes>
+   
+</D20Rules>

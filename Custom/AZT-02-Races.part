@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 24-May-2015
+ Updated 26-May-2015 Added missing Dex bonus to Catfolk
+ Updated 19-May-2016 Updated Sharkfolk Blood In The Water trait to +2/+4/+6
+</Changelog>
+
+    <!-- Races -->
+    <!-- Catfolk -->
+	<RulesElement name="Catfolk" type="Race" internal-id="ID_AZT_RACE_000" source="Secrets of Aztunsaria">
+		<Prereqs> ~Catfolk </Prereqs>
+		<Flavor> Graceful and agile predators of harsh lands, with a mysterious past indicated all around them </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 7 squares  </specific>
+		<specific name="Physical Qualities"> Standing at anywhere from slightly over to to significantly under human height, Catfolk are rarely bulky or stocky, but sleek, smooth and perfectly balanced. They take after the forms of all cats- strong, stripey tigers, great and proud lions, lurking jaguars and intensely smooth and silent panthers.
+
+They are found all over the Aztunsarian lands, from the jungles to the savannahs and plains and even the deserts, living in mostly tribal societies, caring not for the trappings of civilisation... not yet, at least.
+
+While they currently mostly live the same as they have for thousands of years, many are starting to realise that nearly all the intruding races see them as little more than obstacles to be removed, and they must adapt if they are to survive as anything but slaves or curiosities. </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 5&apos;2&quot;-6&apos; (160-180 cm) </specific>
+		<specific name="Average Weight"> 105-200 pounds (45-90 kg) </specific>
+		<specific name="Ability Scores"> +2 Dexterity; +2 Wisdom or +2 Charisma </specific>
+		<specific name="Languages"> Common, Feline </specific>
+		<specific name="Skill Bonuses"> +2 Acrobatics, +2 Stealth </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description"> This isn&apos;t even used anywhere, why bother filling it in? (Though if you see this in the builder somewhere, let me know where it showed up.) </specific>
+		<specific name="Racial Traits"> ID_AZT_RACIAL_TRAIT_0001, ID_FMP_RACIAL_TRAIT_4415, ID_AZT_RACIAL_TRAIT_0003 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_CATFOLK" type="Grants" />
+			<statadd name="Speed" value="+7" />
+			<textstring name="Average Height" value="5&apos; 2&quot;-6&apos;" />
+			<textstring name="Average Weight" value="105-200 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma" />
+		</rules>
+
+Play a Catfolk if you want ...
+
+ * to have the graceful and stylish appearance of a cat.
+ * to be a dextrous, deadly and agile predator at home in nature, but easily adaptable.
+ * to be a member of a race with a mysterious history that may well come to light at your hands.
+ * to be a member of a race that favors the Sorceror, Rogue and Warlock classes.
+ * to be a cat. Everybody wants to.
+	</RulesElement>
+	<RulesElement name="Catfolk" type="Grants" internal-id="ID_INTERNAL_GRANTS_CATFOLK" source="Secrets of Aztunsaria" >
+		<specific name="_SupportsID"> ID_AZT_RACE_000 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+			<grant name="ID_AZT_RACIAL_TRAIT_0001" type="Racial Trait" /> <!-- Righting Reflex -->
+			<grant name="ID_FMP_RACIAL_TRAIT_4415" type="Racial Trait" /> <!-- Elusive - From Hengeyokai -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0003" type="Racial Trait" /> <!-- Predator's Pounce -->
+			<grant name="ID_FMP_LANGUAGE_1" type="Language" /> <!-- Common language -->
+			<grant name="ID_AZT_LANGUAGE_01" type="Language" /> <!-- Feline language -->
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	
+	<!-- Catfolk Racial Features -->
+	<RulesElement name="Righting Reflex" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0001" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> Your catlike reflexes let you take falls more gracefully. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_000 </specific>
+		<rules />
+When falling or jumping down, you treat the fall as if it were 10 feet shorter than it actually is in regards to damage and how far you can try to jump down. Regardless of whether you take damage from a fall, you always land on your feet. 
+	</RulesElement>
+	
+	<RulesElement name="Elusive" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4415" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> Gain +2 racial bonus to escape checks and saving throws against Immobilize, Restrain, or Slow effects </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_000 </specific>
+		<rules>
+			<statadd name="Saving Throws" value="+2" type="Racial" condition="against effects that immobilize, restrain, or slow you and to checks made to escape a grab." />
+		</rules>
+You have a +2 racial bonus to Acrobatics checks made to escape a grab, and to saving throws against effects that Immobilize, Restrain, or Slow you.
+	</RulesElement>
+	
+	<RulesElement name="Predator&apos;s Pounce" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0003" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You have Predator&apos;s Pounce as an encounter power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_AZT_RACIALPOWER_0001 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_AZT_RACE_000 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_RACIALPOWER_0001 </specific>
+		<rules>
+			<grant name="ID_AZT_RACIALPOWER_0001" type="Power" />
+		</rules>
+You have the Predator&apos;s Pounce encounter power.
+	</RulesElement>
+	
+	<RulesElement name="Predator&apos;s Pounce" type="Power" internal-id="ID_AZT_RACIALPOWER_0001" source="Secrets of Aztunsaria">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_AZT_RACIAL_TRAIT_0003,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Flavor> Catfolk are well known for being able to make a flying leap from a standing start, to get into the fray or out of it. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Catfolk Racial Power </specific>
+		<specific name="Keywords"> Movement </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You end any Slow or Immobilized effects on you, then shift your speed. You can move through enemies with this shift, and ignore terrain effects, but you must move directly to the ending square. You may make a long jump as part of this movement without making an Athletics check. </specific>
+		<specific name="Class"> ID_AZT_RACE_000 </specific>
+		<specific name="Level" />
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0003 </specific>
+	</RulesElement>
+	
+	<!-- Sharkfolk -->
+	<RulesElement name="Sharkfolk" type="Race" internal-id="ID_AZT_RACE_001" source="Secrets of Aztunsaria">
+		<Prereqs> ~Sharkfolk </Prereqs>
+		<Flavor> Apex predators of the ocean, proud and fearless warriors, more curious and likeable than one would think </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares, swim 6  </specific>
+		<specific name="Physical Qualities"> Sharkfolk are tall, powerfully built, and often have intimidatingly oversized mouths compared to humanoid races, have scales instead of skin that run smooth one way and rough the other, and have somewhat obvious gills. Most have scars, especially the older and more successful sharkfolk, and proudly show them off at any opportunity.
+
+The actual appearance of Sharkfolk varies wildly, as each individual Sharkfolk takes after the appearance (and often to some extent personality) of their non-sentient cousins; large and straightforward great whites, striped and voracious tiger sharks, massive and easygoing whale sharks, strange-looking hammerhead sharks, and so on. Any of these can interbreed, but children tend to take after one parent in appearance, or perhaps an ancestor of either.
+
+Usually the shape of the head takes more after the shark, while the body is mostly humanoid, sometimes with a small tail, and with fins on the head, back, arms and/or legs. They usually have strong hands and large, fin-like feet to aid swimming. Most Sharkfolk are in excellent physical shape from an extremely physical lifestyle and constant swimming, which can elicit interesting reactions from surface dwellers.
+
+Most Sharkfolk wear fairly little when not on the hunt or at a social occasion. As armour, they typically wear leather or hide. (often from whales or other marine mammals, carefully cured in a process that requires they go to the surface) They do wear jewellery, usually featuring teeth and bones from dangerous aquatic creatures. (Including Sharkfolk teeth, of course. Which can include their own, as Sharkfolk are constantly regrowing sets of teeth) Gold rings and piercings are not uncommon either, as they don't rust.
+
+Sharkfolk that venture onto the surface tend to be dazzled and confused at the fashions and variety of the surface races, sometimes with hilarious results, though even more fashion-conscious sharkfolk tend to prefer ostentatious and colourful outfits that befit their personalities, decorated in their traditional style. While unused to metal armour, which generally rusts in seawater, sharkfolk warriors on land quickly learn the value of it and seek to acquire it if possible. Some even take sufficiently rustproofed suits of chainmail back underwater. (anything heavier than that tends to be more trouble than it's worth)
+		</specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 5&apos;8&quot;-7&apos;1&quot; (170-215 cm) </specific>
+		<specific name="Average Weight">  </specific>
+		<specific name="Ability Scores"> +2 Strength; +2 Wisdom or +2 Charisma </specific>
+		<specific name="Languages"> Common, Mer </specific>
+		<specific name="Skill Bonuses"> +2 Intimidate, +2 Perception </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description"> This isn&apos;t even used anywhere, why bother filling it in? (Though if you see this in the builder somewhere, let me know where it showed up.) </specific>
+		<specific name="Racial Traits"> ID_AZT_RACIAL_TRAIT_0011,ID_FMP_RACIAL_TRAIT_0012,ID_AZT_RACIAL_TRAIT_0013 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_SHARKFOLK" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="5&apos;8&quot;-7&apos;1&quot;" />
+			<textstring name="Average Weight" value="Yes" />
+			<textstring name="Size" value="Medium" />
+			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma" />
+		</rules>
+
+Play a Sharkfolk if you want ...
+
+ * to be an apex predator and peerless hunter of the ocean.
+ * to have a big, sharp, scary grin that can be weaponized.
+ * to be both intimidating but also a likeable and reliable friend.
+ * to be a member of a race that favors the Fighter, Barbarian, Warlord, and Sorcerer classes.
+	</RulesElement>
+	<RulesElement name="Sharkfolk" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHARKFOLK" source="Secrets of Aztunsaria" >
+		<specific name="_SupportsID"> ID_AZT_RACE_001 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
+			<grant name="ID_AZT_RACIAL_TRAIT_0011" type="Racial Trait" /> <!-- Aquatic -->
+			<grant name="ID_FMP_RACIAL_TRAIT_0012" type="Racial Trait" /> <!-- Blood in the Water -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0013" type="Racial Trait" /> <!-- Charging Chomp -->
+			<grant name="ID_FMP_LANGUAGE_1" type="Language" /> <!-- Common language -->
+			<grant name="ID_AZT_LANGUAGE_02" type="Language" /> <!-- Mer language -->
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	
+	<!-- Sharkfolk Racial Features -->
+	<RulesElement name="Aquatic" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0011" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You are aquatic creature; can breathe underwater and gain +2 bonus in aquatic combat </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_001--><!--,ID_AZT_RACE_002--> </specific>
+		<rules>
+			<statadd name="attack rolls" value="+2" type="racial" condition="while in aquatic combat" />
+		</rules>
+You have the aquatic trait, so you can breathe underwater. In aquatic combat, you gain a +2 bonus to attack rolls against nonaquatic creatures. 
+</RulesElement>
+
+	<RulesElement name="Blood in the Water" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_0012" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> Gain +2/+4/+6 racial bonus to damage against bloodied foes. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<rules>
+			<statadd name="Blood in the Water" value="+2" />
+			<statadd name="Blood in the Water" value="+2" requires="Paragon Tier" />
+			<statadd name="Blood in the Water" value="+2" requires="Epic Tier" />
+			<statadd name="damage rolls" value="+Blood in the Water" type="racial" condition="against bloodied foes." />
+		</rules>
+ You have a +2 racial bonus to damage rolls against bloodied foes. This bonus increases to +4 at 11th level, and +6 at 21st level.
+</RulesElement>
+
+	<RulesElement name="Charging Chomp" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0013" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You have Charging Chomp as an encounter power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_AZT_RACIALPOWER_0011 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_RACIALPOWER_0011 </specific>
+		<rules>
+			<grant name="ID_AZT_RACIALPOWER_0011" type="Power" />
+		</rules>
+You have the Charging Chomp encounter power.
+	</RulesElement>
+	
+	<RulesElement name="Charging Chomp" type="Power" internal-id="ID_AZT_RACIALPOWER_0011" source="Secrets of Aztunsaria">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_AZT_RACIAL_TRAIT_0013,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_ATTACK </Category>
+		<Flavor> With a swift and sudden charge, you tear into your foe with your sharp teeth and leave them bleeding. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sharkfolk Racial Power </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Effect"> You charge and make the following attack in place of a melee basic attack. </specific>
+		<specific name="Target"> One creature </specific>
+	    <specific name="Attack"> Strength +4 vs. AC, Constitution +4 vs. AC, or Dexterity +4 vs. AC 
+Increase to +6 bonus at 11th level, and to +8 at 21st level.
+		</specific>
+	    <specific name="Hit"> 1d6 + Strength modifier, Constitution modifier, or Dexterity modifier damage, and the target takes ongoing damage equal to your Strength modifier, Constitution modifier, or Dexterity modifier (save ends). 
+Increase to 2d6 + Strength, Constitution, or Dexterity modifier damage at 11th level, and to 3d6 + Strength, Constitution, or Dexterity modifier damage at 21st level.
+		</specific>
+	    <rules>
+	        <select type="Racial Trait" number="1" Category="Charging Chomp,Ability Choice">
+Charging Chomp Key Ability
+	        </select>
+	    </rules>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<specific name="Level" />
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0013 </specific>
+	</RulesElement>
+	
+	<RulesElement name="Charging Chomp Strength" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_CHARGING_CHOMP_STRENGTH" source="Secrets of Aztunsaria">
+    <Category> Charging Chomp,Ability Choice </Category>
+    <specific name="Short Description"> Use Str for Charging Chomp </specific>
+    <specific name="_SupportsID"> ID_AZT_RACIALPOWER_0011 </specific>
+You use Strength as your key ability with &lt;i&gt;Charging Chomp&lt;/i&gt;.
+   </RulesElement>
+  <RulesElement name="Charging Chomp Dexterity" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_CHARGING_CHOMP_DEXTERITY" source="Secrets of Aztunsaria">
+    <Category> Charging Chomp,Ability Choice </Category>
+    <specific name="Short Description"> Use Dex for Charging Chomp </specific>
+    <specific name="_SupportsID"> ID_AZT_RACIALPOWER_0011 </specific>
+You use Dexterity as your key ability with &lt;i&gt;Charging Chomp&lt;/i&gt;.
+   </RulesElement>
+  <RulesElement name="Charging Chomp Constitution" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_CHARGING_CHOMP_CONSTITUTION" source="Secrets of Aztunsaria">
+    <Category> Charging Chomp,Ability Choice </Category>
+    <specific name="Short Description"> Use Con for Charging Chomp </specific>
+    <specific name="_SupportsID"> ID_AZT_RACIALPOWER_0011 </specific>
+You use Constitution as your key ability with &lt;i&gt;Charging Chomp&lt;/i&gt;.
+   </RulesElement>
+	
+	<!-- Mermaid -->
+	<RulesElement name="Mermaid" type="Race" internal-id="ID_AZT_RACE_002" source="Secrets of Aztunsaria">
+		<Prereqs> ~Mermaid </Prereqs>
+		<Flavor> A rare, precious pearl of the aquatic races, destined to entertain or command with a beautiful voice </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares, swim 7  </specific>
+		<specific name="Physical Qualities"> Mermaid! </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 7&apos;5&quot;-8&apos;2&quot; (225-250 cm) </specific>
+		<specific name="Average Weight"> 155-250 lb. (70-110 kg) </specific>
+		<specific name="Ability Scores"> +2 Charisma; +2 Constitution or +2 Dexterity  </specific>
+		<specific name="Languages"> Common, Mer </specific>
+		<specific name="Skill Bonuses"> +2 Diplomacy, +2 Nature </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description"> This isn&apos;t even used anywhere, why bother filling it in? (Though if you see this in the builder somewhere, let me know where it showed up.) </specific>
+		<specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_641,ID_AZT_RACIAL_TRAIT_0011,ID_AZT_RACIAL_TRAIT_0021,ID_AZT_RACIAL_TRAIT_0022,ID_FMP_RACIAL_TRAIT_4115,ID_AZT_RACIAL_TRAIT_0023,ID_AZT_RACIAL_TRAIT_0024 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_MERMAID" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="7&apos;5&quot;-8&apos;2&quot;" />
+			<textstring name="Average Weight" value="155-250 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity" />
+		</rules>
+
+Play a Mermaid if you want...
+
+ * to be a beautiful mermaid, of course.
+ * to be a treasured rarity of an aquatic people.
+ * to dazzle those around you with beauty and charm, and surprise them with strength and speed.
+ * to be a member of a race that favors the Bard, Sorcerer, and Paladin classes.
+	</RulesElement>
+	<RulesElement name="Mermaid" type="Grants" internal-id="ID_INTERNAL_GRANTS_MERMAID" source="Secrets of Aztunsaria" >
+		<specific name="_SupportsID"> ID_AZT_RACE_002 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" /> <!-- Fey Origin -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0011" type="Racial Trait" /> <!-- Aquatic -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0021" type="Racial Trait" /> <!-- Water Adapted -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0022" type="Racial Trait" /> <!-- Air Swim -->
+			<grant name="ID_FMP_RACIAL_TRAIT_4115" type="Racial Trait" /> <!-- Female Only - From Hamadryad -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0023" type="Racial Trait" /> <!-- Mer Weapon Proficiency -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0024" type="Racial Trait" /> <!-- Mermaid's Song -->
+			<grant name="ID_FMP_LANGUAGE_1" type="Language" /> <!-- Common language -->
+			<grant name="ID_AZT_LANGUAGE_02" type="Language" /> <!-- Mer language -->
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	
+	<!-- Mermaid Racial Traits -->
+	<RulesElement name="Water Adapted" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0021" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You have trouble moving on land. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+ While on land, you are always considered prone unless the Air Swim power is active.
+	</RulesElement>
+	
+	<RulesElement name="Air Swim" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0022" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You have the Air Swim power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_AZT_RACIALPOWER_0021 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_RACIALPOWER_0021 </specific>
+		<rules>
+			<grant name="ID_AZT_RACIALPOWER_0021" type="Power" />
+		</rules>
+You have the Air Swim power.
+	</RulesElement>
+	
+	<RulesElement name="Air Swim" type="Power" internal-id="ID_AZT_RACIALPOWER_0021" source="Secrets of Aztunsaria">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_AZT_RACIAL_TRAIT_0022,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_MOVE_ACTION,ID_INTERNAL_CATEGORY_UTILITY </Category>
+		<Flavor> Focusing your natural magic, you make yourself able to swim through the air at a low altitude. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Mermaid Racial Power </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You stand up from prone. Until the end of your next Short Rest, you're no longer forced prone by your Water Adapted racial trait. </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+		<specific name="Level" />
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0022 </specific>
+	</RulesElement>
+
+	<RulesElement name="Female Only" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4115" source="Heroes of the Feywild" >
+		<specific name="Short Description"> All mermaids are female </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+All mermaids are female.
+	</RulesElement>
+	
+	<RulesElement name="Mer Weapon Proficiency" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0023" source="Secrets of Aztunsaria" >
+		<specific name="Short Description"> Proficiency with spear, short spear, and trident </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SPEAR)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" type="Proficiency" />
+		</rules>
+You gain proficiency with the spear, the short spear, and the trident.
+	</RulesElement>
+	
+	<RulesElement name="Mermaid's Song" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0024" source="Secrets of Aztunsaria">
+		<specific name="Short Description"> You have Mermaid's Song as an encounter power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_AZT_RACIALPOWER_0022 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_RACIALPOWER_0022 </specific>
+		<rules>
+			<grant name="ID_AZT_RACIALPOWER_0022" type="Power" />
+		</rules>
+You have the Mermaid's Song encounter power.
+	</RulesElement>
+	
+	<RulesElement name="Mermaid's Song" type="Power" internal-id="ID_AZT_RACIALPOWER_0022" source="Secrets of Aztunsaria">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_AZT_RACIAL_TRAIT_0024,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CATEGORY_6 </Category>
+		<Flavor> Rare is the mermaid not blessed with a beautiful voice, or at least a commanding one to drive your allies to fight to protect you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Mermaid Racial Power </specific>
+		<specific name="Keywords"> Charm </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Target"> Each ally in burst </specific>
+		<specific name="Effect"> Each target gains +1 power bonus to all attacks until the end of your next turn. </specific>
+		<specific name="Class"> ID_AZT_RACE_002 </specific>
+		<specific name="Level" />
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0024 </specific>
+	</RulesElement>
+	
+</D20Rules>

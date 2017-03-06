@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>20-April-2013</Version>
+    <Filename>TER-03-Races.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-03-Races.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-03-Races.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 03-August-2012 Added the Couatl race for Judith
+ Updated 16-October-2012 Added the Gargoyle race
+ Updated 07-November-2012 Made all languages a choice - none locked in by default
+ Updated 10-November-2012 Added the ibixian race, cleaned up a few gargoyle errors
+ Updated 12-November-2012 Added the wookiee race
+ Updated 12-February-2013 Added an alternate minotaur race
+ Updated 18-April-2013 Added an alternate kenku race
+ Updated 20-April-2013 Added Fey origin to kenku
+</Changelog>
+
+    <!-- Races -->
+		<!-- Aerie -->
+	<RulesElement name="Aerie" type="Race" internal-id="ID_TER_RACE_001" source="Hastur.net" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Aerie </Prereqs>
+		<Flavor> Resourceful wanderers, cunning scouts, travelers of forgotten roads </Flavor>
+		<specific name="Size"> Tiny  </specific>
+		<specific name="Speed"> 2 squares, fly 5 (Hover, Altitude limit 1)  </specific>
+		<specific name="Characteristics"> Curious, playful, chatty, nimble. Aeries are creatures of whim, and can shift from shy to extrovert or from lazy to energetic on a moment&apos;s notice. </specific>
+		<specific name="Physical Qualities"> Aeries are tiny fey, small enough to land in a human palm and have tall pointed ears, long thin limbs and a body of heroic proportions. They fly on gossamer wings trailing stardust.
+Their skin, eyes, and hair have a wide range of colors, and can change over time. Aeries living among other humanoids tend to be similar to them in coloration and generally look like small fey imitations of their larger neighbors, adopting their style of clothing, which can often look quite humorous. Aeries living near dwarfs can even sport false beards. Aeries living in the wild have a wider range of natural colors, imitating local flowers or other natural phenomena, with skin in pale pastel hues and hair and eyes of bright primary colors. Such wild aeries often go naked or dress only in garlands of feathers, leaves and flowers.
+		Aeries have lifespans comparable to humans. They are egg-laying, planting their egg in flower-buds where they magically gestate and hatch as the bud goes into bloom. At least, this is what scholars think; aeries themselves rarely discuss the matter. </specific>
+		<specific name="Playing"> 
+Concerned with enjoying fun and beauty, aeries are creatures of conflicting drives. They always seem childish and naive, but it is hard to tell if this is an act or not. In certain circumstances they can be very adult and calculating under a childish facade. Generally stay-at-homes who enjoy the good life, they can be intensely curious when not overtaken by shyness or laziness. Aeries sometimes get attached to larger folk and follow them around, often adopting manners and outfit similar to their companion.
+Aeries prosper in any place of great natural beauty or that satisfies their curiosity. A few aeries even live in cities, usually as invisible observers. In areas dominated by evil they sometimes maintain small hidden havens of beauty. Aeries love to craft beautiful and intricate things, and can get mesmerized by artful devices.
+Aeries prefer to remain out of sight of combat and only fight if their chosen glade or nest is threatened. Even then, their reaction might be to run to larger allies for help. When they do fight, aeries present a brave front and advance with spells and weapons at the ready.
+		</specific>
+		<specific name="Vision"> Normal </specific>
+		<specific name="Average Height"> 4&quot;-8&quot; (10-20 cm) </specific>
+		<specific name="Average Weight"> 2-3 ounces (30-85 grams) </specific>
+		<specific name="Ability Scores"> +2 Dexterity, +2 Charisma, or +2 Constitution </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Acrobatics, +2 Stealth </specific>
+		<specific name="Male Names"> Acorn, Brook, Buzzer, Greenhood, Leaf, Sparkle, Sureshot, Tallears, Thorn, Zap. </specific>
+		<specific name="Female Names"> Belle, Dew, Honeycup, Mist, Petal, Rosie, Star, Twinkle. </specific>
+		<specific name="Short Description"> Aeries are diminutive fey, full of wonder at the world; cheerful and curious, they enjoy putting larger creatures in their place. </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0002, ID_TER_RACIAL_TRAIT_0003, ID_TER_RACIAL_TRAIT_0004 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_AERIE" type="Grants" />
+			<statadd name="Speed" value="+2" />
+			<textstring name="Average Height" value="3&apos; 10&quot;-4&apos; 2&quot;" />
+			<textstring name="Average Weight" value="75-85 lb." />
+			<textstring name="Size" value="Small" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity|Charisma" />
+		</rules>
+
+
+Play an Aerie if you want ...
+
+	</RulesElement>
+	<RulesElement name="Aerie" type="Grants" internal-id="ID_INTERNAL_GRANTS_AERIE" source="Hastur.net" >
+		<specific name="_SupportsID"> ID_TER_RACE_001 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0002" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0003" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0004" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Tiny" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0002" source="Hastur.net" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> You are actually of tiny size, though you occupy space as a small creature. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+You can move into squares occupied by allies and enemies, and and must enter an enemy&apos;s square to attack in melee. You provoke opportunity attacks normally for doing so. You have only a fraction of the normal carrying capacity, but aerie gear is correspondingly lighter; count your carrying capacity and the weight of armor and Aerie-scaled general gear (not weapons) in ounces instead of pounds. Aeries suffer a -5 penalty on Strength checks to interact with the environment. 
+	</RulesElement>
+	<RulesElement name="Aerie Twinkle" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0003" source="Hastur.net" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Use aerie twinkle as an at-will power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_TER_POWER_0001 </specific>
+		<specific name="type"> At-Will </specific>
+		<specific name="Class" />
+		<specific name="_DisplayPowers"> ID_TER_POWER_0001(At-Will) </specific>
+		<rules>
+			<grant name="ID_TER_POWER_0001" type="Power" />
+			<modify Field="Power Usage" value="At-Will" />
+		</rules>
+You can use aerie twinkle as an at-will power.
+	</RulesElement>
+	<RulesElement name="Buzzing Flight" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0004" source="Hastur.net" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> You can fly, with altitude limit 1. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+You can fly, but only one square off the ground. This places you within reach of almost all attacks. You can still use flight to cross difficult terrain, water, and other hazards. When in flight, you dart rapidly about and take up space as if you were a Small creature. You take up a 1 square space and cannot end your movement in the same space as another creature. You have normal reach, can make melee attacks against adjacent creatures, and flank creatures normally. As long as you are flying at height 1 or less, you can make opportunity attacks normally; if you fly at greater heights you cannot make opportunity attacks. 
+	</RulesElement>
+	<RulesElement name="Aerie Twinkle" type="Power" internal-id="ID_TER_POWER_0009" source="Hastur.net" revision-date="8/27/2010 11:28:07 AM" >
+		<Category> ID_TER_RACIAL_TRAIT_0002,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<Flavor> You disappear in a twinkle of faerie dust. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Aerie Racial Power </specific>
+		<specific name="Keywords"> Illusion </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You become invisible until you attack or until the end of your next turn.  </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0002 </specific>
+	</RulesElement>
+ 
+	
+	
+		<!-- Behir -->
+	<RulesElement name="Behir" type="Race" internal-id="ID_TER_RACE_002" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Behir </Prereqs>
+		<Flavor> Miniature dragonling </Flavor>
+		<specific name="Size"> Small  </specific>
+		<specific name="Speed"> 7 squares </specific>
+		<specific name="Characteristics">  </specific>
+		<specific name="Physical Qualities">  </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Normal </specific>
+		<specific name="Average Height"> 2&apos; 4&quot;-3&apos; 8&quot; </specific>
+		<specific name="Average Weight"> 35-50 pounds </specific>
+		<specific name="Ability Scores"> +2 Dexterity, +2 Constitution, or +2 Wisdom </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Acrobatics, +2 Athletics </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0005, ID_TER_RACIAL_TRAIT_0006, ID_FMP_RACIAL_TRAIT_3162 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_BEHIR" type="Grants" />
+			<statadd name="Speed" value="+7" />
+			<textstring name="Average Height" value="2&apos; 4&quot;-3&apos; 8&quot;" />
+			<textstring name="Average Weight" value="35-50 lb." />
+			<textstring name="Size" value="Small" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity|Wisdom" />
+		</rules>
+
+
+Play a Behir if you want ...
+
+	</RulesElement>
+	<RulesElement name="Behir" type="Grants" internal-id="ID_INTERNAL_GRANTS_BEHIR" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_002 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0005" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0006" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_3162" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Extra Legs" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0005" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Behir have numerous legs along their length, varying from three to eight on each side, depending on age. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+When an attack would knock you prone, you can make a saving throw with a +2 bonus to avoid falling prone.
+	</RulesElement>
+	<RulesElement name="Conductive" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0006" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> You are flexible and can effectively change your size. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+You are extraordinarily flexible, which allows you to occupy less - or sometimes more - space than you would otherwise require. When beneficial, you can opt to occupy space as a creature one size category smaller or larger.
+	</RulesElement>
+ 
+		<!-- Couatl -->
+	<RulesElement name="Couatl" type="Race" internal-id="ID_TER_RACE_003" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Couatl </Prereqs>
+		<Flavor> Extraplanar crusaders against darkness and death who bring dazzling light wherever they go... </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 2 squares, fly 6 squares (altitude limit 1). You cannot use this fly speed if you are carrying more than a normal load. </specific>
+		<specific name="Characteristics">  </specific>
+		<specific name="Physical Qualities">  </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Normal </specific>
+		<specific name="Average Height"> 4&apos; 9&quot;-5&apos; 3&quot; </specific>
+		<specific name="Average Weight"> 90-130 pounds </specific>
+		<specific name="Ability Scores"> +2 Charisma, +2 Intelligence, or +2 Wisdom </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Insight, +2 Religion </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1138, ID_TER_RACIAL_TRAIT_0007, ID_FMP_RACIAL_TRAIT_1139, ID_TER_RACIAL_TRAIT_0008 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_COUATL" type="Grants" />
+			<statadd name="Speed" value="+2" />
+			<textstring name="Average Height" value="4&apos; 9&quot;-5&apos; 3&quot;" />
+			<textstring name="Average Weight" value="90-130 lb." />
+			<textstring name="Size" value="Small" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Charisma|Intelligence|Wisdom" />
+		</rules>
+
+
+Play a Couatl if you want ...
+
+	</RulesElement>
+	<RulesElement name="Couatl" type="Grants" internal-id="ID_INTERNAL_GRANTS_COUATL" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_003 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_FMP_RACIAL_TRAIT_1138" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0007" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0008" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Twist Free" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0007" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Coautl are long and flexible, and easily able to twist out of tight positions. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+You make saving throws against immobilized and restrained conditions at the start of your turn as well as at the end of your turn.
+	</RulesElement>
+	<RulesElement name="Radiant Glory" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0008" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the memory of a thousand lifetimes power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0002 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_003 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0002 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0002" type="Power" />
+		</rules>
+You have the radiant glory power.
+	</RulesElement>
+	<RulesElement name="Radiant Glory" type="Power" internal-id="ID_TER_RACIALPOWER_0002" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0008,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_32 </Category>
+		<Flavor> The rainbow of feathers on your back shimmer then burst forth with soothing light. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Couatl Racial Utility </specific>
+		<specific name="Keywords"> Divine, Healing, Radiant</specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Close burst 5  </specific>
+		<specific name="Target">Each enemy in the burst</specific>
+		<specific name="Attack"> Intelligence, Wisdom or Charisma +2 vs. Fortitude
+Level 11: Intelligence, Wisdom or Charisma +4 vs. Fortitude.
+Level 21: Intelligence, Wisdom or Charisma +6 vs. Fortitude. </specific>
+		<specific name="Trigger"> An enemy bloodies an ally within range. </specific>
+		<specific name="Hit"> The target takes a -2 penalty to its next attack roll. </specific>
+		<specific name="Effect"> The bloodied ally gains 3 + one-half your level hit points. </specific>
+		<specific name="Class"> ID_TER_RACE_003 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0008 </specific>
+	</RulesElement>
+ 
+		<!-- Gargoyle -->
+	<RulesElement name="Gargoyle" type="Race" internal-id="ID_TER_RACE_004" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Gargoyle </Prereqs>
+		<Flavor> Enormous living statues with powerful wings and lost arcane secrets </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares, glide 6 squares </specific>
+		<specific name="Characteristics">  </specific>
+		<specific name="Physical Qualities">  </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 5&apos; 4&quot;-5&apos; 10&quot; </specific>
+		<specific name="Average Weight"> 310-360 pounds </specific>
+		<specific name="Ability Scores"> +2 Strength, +2 Constitution or +2 Intelligence </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Arcana, +2 Endurance </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0009, ID_TER_RACIAL_TRAIT_0010, ID_TER_RACIAL_TRAIT_0012, ID_FMP_RACIAL_TRAIT_406 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_GARGOYLE" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="5&apos; 4&quot;-5&apos; 10&quot;" />
+			<textstring name="Average Weight" value="310-360 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Strength|Constitution|Intelligence" />
+		</rules>
+Enormous humanoid statues with powerful wings, gargoyles are all that remains of a race that once explored the furthest reachest of reality and magic. While they may appear bestial, the stone flaked-hide of a gargoyle hides a mind far quicker than most species, with a natural aptitude for the arcane arts. Of course, weighing over three-hundred pounds of nearly pure muscle, they have an equal aptitude for physical violence.
+
+Play a Gargoyle if you want ...
+• to be difficult to injure.
+• to be able to soar through the sky.
+• to be a member of a race that favors the artificer, warlord, and wizard classes.
+
+	</RulesElement>
+	<RulesElement name="Gargoyle" type="Grants" internal-id="ID_INTERNAL_GRANTS_GARGOYLE" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_004 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0009" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0010" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0012" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_406" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Loping Run" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0009" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Gargoyles can use their granite hands as additional legs when running. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+When you take the run action on land, increase your speed by an additional 2.
+	</RulesElement>
+	<RulesElement name="Stone Physiology" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0010" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Being made of stone gives you resist 1/2/3 and +5 to saves vs. disease. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="_gargoyle resist" value="+1" />
+			<statadd name="_gargoyle resist" value="+1" requires="Paragon Tier" />
+			<statadd name="_gargoyle resist" value="+1" requires="Epic Tier" />
+			<statadd name="resist:all" value="_gargoyle resist" type="resist" />
+			<statadd name="Saving Throws" value="+5" condition="to resist disease" />
+		</rules>
+You have resist 1. Increase this to resist 2 at level 11, and to resist 3 at level 21. In addition, you have a +5 racial bonus to saving throws against disease.
+	</RulesElement>
+	<RulesElement name="Unsleeping Watcher" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0011" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> You do not sleep, but enter a state of inactivity from which it is difficult to break free. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+You do not sleep and instead enter a state of inactivity for four hours to gain the benefits of an extended rest. While in this state, you are fully aware of your surroundings and notice approaching enemies and other events as normal, have resist 20, but must spend two standard actions to return to activity or communicate.
+	</RulesElement>
+	<RulesElement name="Assisted Flight" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0012" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the powerful leap power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0003 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_004 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0003 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0003" type="Power" />
+		</rules>
+You have the powerful leap power.
+	</RulesElement>
+	<RulesElement name="Powerful Leap" type="Power" internal-id="ID_TER_RACIALPOWER_0003" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0012,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		<Flavor> You crouch, then let your powerful legs hurl you into the air and spread your wings. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Gargoyle Racial Utility </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You move two squares up, and begin gliding. </specific>
+		<specific name="Class"> ID_TER_RACE_004 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0012 </specific>
+	</RulesElement>
+
+		<!-- Ibixian -->
+	<RulesElement name="Ibixian" type="Race" internal-id="ID_TER_RACE_005" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Ibixian </Prereqs>
+		<Flavor> Arrogant but true companions with cloven hooves and burly shoulders </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares </specific>
+		<specific name="Characteristics"> Ibixians choose leaders by combat, and the strongest and most aggressive lead the pack. Thus, leadership is transitory and prone to challenge. Both males and females assert themselves and hold these temporary positions of power. More than just fighting for leadership, however, ibixians enjoy melee combat - and just about any sort of competition. They often start fights for the sheer pleasure of fighting. An ibixian loves to brawl with or alongside others of its kind. </specific>
+		<specific name="Physical Qualities"> Ibixians resemble most humanoids inasmuch as they have two legs, two arms, a single head, and a torso. Beyond that, they're distinct from many humanoid races in that their face is very much that of a goat, with a long, broad muzzle, and they are covered entirely by shaggy fur. Moreover, instead of feet, they have cloven hooves and hocks that appear to be rear-facing knees. They are tall and powerfully built, generally stronger than most humanoids of comparable size, and surefooted.	</specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Normal </specific>
+		<specific name="Average Height"> 6&apos; 1&quot;-7&apos; 0&quot; </specific>
+		<specific name="Average Weight"> 200-280 pounds </specific>
+		<specific name="Ability Scores"> +2 Strength, +2 Constitution or +2 Dexterity </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Intimidate, +2 Perception </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0013, ID_TER_RACIAL_TRAIT_0014, ID_TER_RACIAL_TRAIT_0015, ID_TER_RACIAL_TRAIT_0016, ID_TER_RACIAL_TRAIT_0017 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_IBIXIAN" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="6&apos; 1&quot;-7&apos; 0&quot;" />
+			<textstring name="Average Weight" value="200-280 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Strength|Constitution|Dexterity" />
+		</rules>
+Brash and bold, ibixian - or “goatmen”, as they're colloquially known - are hardy mountain folk prone to decisive action and physical resolution of conflict. While not barbaric, they rarely spend time in more ‘civilized’ locales, as their attitudes are often at odds with common mores and laws. While they may resemble satyrs or fauns, ibixian are much more powerfully built, significantly furrier, and disdain the hedonism and mischief of their furry cousins. They choose their leaders - and make decisions as a group - via ritual combat, though they almost never fight to significant injury amongst themselves.
+
+Play an ibixian if you want ...
+• to be strong and wild, and fuzzier than normal races.
+• to be decisive and a bit brusque, but usually well-intentioned.
+• to be a member of a race that favors the artificer, warlord, and wizard classes.
+	</RulesElement>
+	<RulesElement name="Ibixian" type="Grants" internal-id="ID_INTERNAL_GRANTS_IBIXIAN" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_004 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0013" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0014" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0015" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0016" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0017" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Brute Force" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0013" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the brute force power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0004 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_005 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0004 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0004" type="Power" />
+		</rules>
+You have the brute force power.
+	</RulesElement>
+	<RulesElement name="Cloven Agility" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0014" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Roll twice when making Athletics check to jump or climb; ignore difficult terrain when running. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+When you make an Acrobatics check to balance, roll twice and use either result. In addition, you ignore difficult terrain when you run.
+	</RulesElement>
+	<RulesElement name="Minotaur Kin" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0015" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Can take minotaur-specific feats. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_MINOTAUR" type="CountsAsRace" />
+		</rules>
+You can take feats that have minotaur as a prerequisite (as well as those specifically for Ibixian) as long as you meet any other requirements.
+	</RulesElement>
+	<RulesElement name="Pack Fervor" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0016" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> +1 to attacks without CA against enemy adjacent to an ally. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="attack rolls" value="+1" condition="against a creature adjacent to at least one of your allies but not granting combat advantage to you" />		
+		</rules>
+You gain a +1 racial bonus to attack rolls against any enemy adjacent to at least one of your allies but not granting combat advantage to you.
+	</RulesElement>
+	<RulesElement name="Stubborn" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0017" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> +2 to saves against charm, fear, and sleep. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="Saving Throws" value="+2" type="Racial" condition="against charm, fear, and sleep" />
+		</rules>
+You gain a +2 racial bonus to saves against charm, fear, and sleep effects.
+	</RulesElement>
+
+	<RulesElement name="Brute Force" type="Power" internal-id="ID_TER_RACIALPOWER_0004" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0013,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		<Flavor> Eager for the fight, your initial strikes hit harder and throw your foes off. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Ibixian Racial Utility </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Trigger"> You make an attack </specific>
+		<specific name="Effect"> If you hit with the attack and it deals damage, you deal an additional 1d6 damage. In addition, you push the target one square or knock it prone.
+Level 11: Increase the damage to 2d6.
+Level 21: Increase the damage to 3d6. </specific>
+		<specific name="Class"> ID_TER_RACE_005 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0013 </specific>
+	</RulesElement>
+
+		<!-- Wookiee -->
+	<RulesElement name="Wookiee" type="Race" internal-id="ID_TER_RACE_006" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Wookiee </Prereqs>
+		<Flavor> Although primitive compared to us, they’re surprisingly capable warriors... </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 7 squares </specific>
+		<specific name="Characteristics"> Significantly stronger than humans, wookiees are often hardier as well. Their long legs enable them to cover ground quicker than most species, even in the dense woods they are most comfortable in. </specific>
+		<specific name="Physical Qualities"> Adult wookiees are tall, many over seven feet in height, and covered with a uniform, mid-length coat of thick hair in various shades of brown. Although albino wookiees are rare, they are not unheard of. However, such births are generally held to be a bad omen, as white hair does not blend in with the earth-tones of their forest surroundings. Wookiees sport retractable claws they use for climbing. </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Low-Light </specific>
+		<specific name="Average Height"> 6&apos; 10&quot;-7&apos; 6&quot; </specific>
+		<specific name="Average Weight"> 220-315 pounds </specific>
+		<specific name="Ability Scores"> +2 Strength, +2 Dexterity or +2 Wisdom </specific>
+		<specific name="Languages"> Shyriiwook, choice of one other </specific>
+		<specific name="Skill Bonuses"> +2 Athletics, +2 Nature </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0019, ID_TER_RACIAL_TRAIT_0021, ID_TER_RACIAL_TRAIT_0022, ID_TER_RACIAL_TRAIT_0020, ID_TER_RACIAL_TRAIT_0018 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_WOOKIEE" type="Grants" />
+			<statadd name="Speed" value="+7" />
+			<textstring name="Average Height" value="6&apos; 10&quot;-7&apos; 6&quot;" />
+			<textstring name="Average Weight" value="220-315 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Language" number="1" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Strength|Dexterity|Wisdom" />
+		</rules>
+Wookiees are widely recognized as one of the strongest and fiercest humanoid species in the world. Wookiees have many customs and traditions that revolve around honor and loyalty, including the special bond called the honor family and the sacred pledge called the life debt. A wookiee never uses his or her climbing claws in combat; doing this is considered dishonorable and a sign of madness.
+
+Play a wookiee if you want . . .
+
+• to bigger and stronger than most races.
+• to be good at surviving on your own and adapting to new environments.
+• to be a member of a race that favors the ranger, barbarian, druid and shaman classes.
+	</RulesElement>
+	<RulesElement name="Wookiee" type="Grants" internal-id="ID_INTERNAL_GRANTS_WOOKIEE" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_006 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0019" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0021" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0022" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0020" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0018" type="Racial Trait" />
+			<grant name="ID_TER_LANGUAGE_09" type="Language" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Wookiee Rage" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0018" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the let the wookiee win power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0006 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_006 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0006 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0006" type="Power" />
+		</rules>
+You have the let the wookiee win power.
+	</RulesElement>
+	<RulesElement name="Primitive Vocalization" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0019" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Can only speak Shyriiwook or supernatural tongue. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+Wookiees can learn to understand any language, but can only speak Shyriiwook or supernatural tongues.
+	</RulesElement>
+	<RulesElement name="Shifter Kin" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0020" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Can take shifter-specific feats. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_LONGTOOTH_SHIFTER" type="CountsAsRace" />
+			<grant name="ID_INTERNAL_COUNTSASRACE_RAZORCLAW_SHIFTER" type="CountsAsRace" />
+		</rules>
+You can take feats that have shifter as a prerequisite (as well as those specifically for Wookiees) as long as you meet any other requirements.
+	</RulesElement>
+	<RulesElement name="Extraordinary Recuperation" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0021" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Healing surge increased by 3/6/9 while bloodied/resting. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+Wookiees heal faster from injuries than most species. When bloodied or during a rest, your healing surge value is increased by 3 (6 at 11, 9 at 21).
+	</RulesElement>
+	<RulesElement name="Skillful Climber" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0022" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Climb at normal speed and only fall if you fail by 10 </specific>
+		<specific name="Level"> 1 </specific>
+		<rules />
+Your claws and heritage make it easier for you to climb. When climbing, it doesn't require any extra movement for you, and you only fall if you fail a check by 10 or more.
+	</RulesElement>
+
+	<RulesElement name="Let the Wookiee Win" type="Power" internal-id="ID_TER_RACIALPOWER_0006" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0018,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> An angry wookiee is as likely to rip your arms off as anything. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Wookiee Racial Utility </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Requirement"> You must be bloodied </specific>
+		<specific name="Trigger"> You attack an enemy </specific>
+		<specific name="Effect"> You gain a +2 bonus to the attack roll. If the attack roll hits, you regain hit points equal to 3 + one-half your level. </specific>
+		<specific name="Class"> ID_TER_RACE_006 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0018 </specific>
+	</RulesElement>
+
+		<!-- Minotaur (Alt) -->
+	<RulesElement name="Minotaur (Alt)" type="Race" internal-id="ID_TER_RACE_007" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Minotaur </Prereqs>
+		<Flavor> Caught between savagery and civilization, these warriors struggle against the beast within </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares </specific>
+		<specific name="Characteristics"> </specific>
+		<specific name="Physical Qualities"> </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Normal </specific>
+		<specific name="Average Height"> 7&apos; 1&quot;-7&apos; 5&quot; </specific>
+		<specific name="Average Weight"> 320-350 pounds </specific>
+		<specific name="Ability Scores"> +2 Strength, +2 Constitution or +2 Wisdom </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Endurance, +2 Nature </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0023, ID_TER_RACIAL_TRAIT_0024, ID_TER_RACIAL_TRAIT_0025, ID_FMP_RACIAL_TRAIT_2525 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_MINOTAUR_ALT" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="7&apos; 1&quot;-7&apos; 5&quot;" />
+			<textstring name="Average Weight" value="300-350 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Strength|Constitution|Wisdom" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Minotaur (Alt)" type="Grants" internal-id="ID_INTERNAL_GRANTS_MINOTAUR_ALT" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_007 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0023" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0024" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0025" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_2525" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_COUNTSASRACE_MINOTAUR" type="CountsAsRace" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Warstomp" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0023" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the warstomp power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0007 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_007 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0007 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0007" type="Power" />
+		</rules>
+You have the warstomp power.
+	</RulesElement>
+	<RulesElement name="Heedless Passage" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0024" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> +2 bonus to AC against opportunity attacks from moving. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="AC" value="+2" condition="against opportunity attacks from moving" />
+		</rules>
+You gain a +2 racial bonus to AC against opportunity attacks that you provoke when you move.
+	</RulesElement>
+	<RulesElement name="Nature's Lore" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0025" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> Can reroll Nature checks. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_MINOTAUR" type="CountsAsRace" />
+		</rules>
+You can reroll any Nature check, but you must keep the second result, even if it is worse.
+	</RulesElement>
+
+	<RulesElement name="Warstomp" type="Power" internal-id="ID_TER_RACIALPOWER_0007" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0023,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		<Flavor> You slam one mighty hoof against the ground, causing the ground around you to shake and throwing your foes off balance. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Minotaur Racial Utility </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Targets"> All creatures in area. </specific>
+      <specific name="Attack"> Primary ability + 2 vs. Fortitude.
+Level 11: The bonus increases to +4. 
+Level 21: The bonus increases to +6. </specific>
+		<specific name="Hit"> The target is unbalanced and takes a -2 penalty to its next attack roll </specific>
+		<specific name="Special" />
+		<specific name="Class"> ID_TER_RACE_007 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0023 </specific>
+	</RulesElement>
+
+		<!-- Kenku (Alt) -->
+	<RulesElement name="Kenku (Alt)" type="Race" internal-id="ID_TER_RACE_008" source="Terraism" revision-date="8/27/2010 12:39:05 PM" >
+		<Prereqs> ~Kenku </Prereqs>
+		<Flavor> Close-knit scavengers who survive on their wits and dark sense of humor, with a touch of shadow power </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares </specific>
+		<specific name="Characteristics"> </specific>
+		<specific name="Physical Qualities"> </specific>
+		<specific name="Playing"> </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 4&apos; 9&quot;-5&apos; 3&quot; </specific>
+		<specific name="Average Weight"> 90-130 pounds </specific>
+		<specific name="Ability Scores"> +2 Charisma, +2 Dexterity or +2 Intelligence </specific>
+		<specific name="Languages"> Choice of any two </specific>
+		<specific name="Skill Bonuses"> +2 Bluff, +2 Stealth </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description">  </specific>
+		<specific name="Racial Traits"> ID_TER_RACIAL_TRAIT_0026, ID_TER_RACIAL_TRAIT_0027, ID_FMP_RACIAL_TRAIT_1525,ID_FMP_RACIAL_TRAIT_641 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_KENKU_ALT" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="4&apos; 9&quot;-5&apos; 3&quot;" />
+			<textstring name="Average Weight" value="90-130 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Language" number="2" Category="Starting" />
+			<select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity|Intelligence" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Kenku (Alt)" type="Grants" internal-id="ID_INTERNAL_GRANTS_KENKU_ALT" source="Terraism" >
+		<specific name="_SupportsID"> ID_TER_RACE_008 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_TER_RACIAL_TRAIT_0001" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0026" type="Racial Trait" />
+			<grant name="ID_TER_RACIAL_TRAIT_0027" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_1525" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_COUNTSASRACE_KENKU" type="CountsAsRace" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Flock Effects" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0026" source="Terraism" revision-date="10/5/2010 1:47:14 PM" >
+		<specific name="Short Description"> +3 with aid another and an additional benefit. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_TER_RACIAL_TRAIT_0028, ID_TER_RACIAL_TRAIT_0029 </specific>
+		<rules>
+			<select type="Racial Trait" number="1" Category="Kenku Racial Feature" />
+		</rules>
+When you aid another, you grant your ally a +3 bonus instead of the normal +2 bonus. In addition, select one of the following benefits at character creation (this selection can be retrained):
+	</RulesElement>
+	<RulesElement name="Shadow Flicker" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0027" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<specific name="Short Description"> You have the shadow flicker power </specific>
+		<specific name="Level" />
+		<specific name="Powers"> ID_TER_RACIALPOWER_0008 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_TER_RACE_008 </specific>
+		<specific name="_DisplayPowers"> ID_TER_RACIALPOWER_0008 </specific>
+		<rules>
+			<grant name="ID_TER_RACIALPOWER_0008" type="Power" />
+		</rules>
+You have the shadow flicker power.
+	</RulesElement>
+   <RulesElement name="Flock Tactician" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0028" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<Category> Kenku Racial Feature </Category>
+		<specific name="Short Description"> Gain CA with against flanked enemies </specific>
+		<specific name="Level" />
+		<rules />
+When any of your allies have combat advantage against an enemy for flanking it, you gain combat advantage against that enemy as well.
+	</RulesElement>
+   <RulesElement name="Flock Experience" type="Racial Trait" internal-id="ID_TER_RACIAL_TRAIT_0029" source="Terraism" revision-date="10/5/2010 1:47:14 PM">
+		<Category> Kenku Racial Feature </Category>
+		<specific name="Short Description"> Gain +3 (instead of +2) to attack with combat advantage from flanking </specific>
+		<specific name="Level" />
+		<rules>
+			<statadd name="attack rolls" value="+3" condition="with combat advantage instead of the normal +2 bonus." />
+		</rules>
+When you have combat advantage against a creature for flanking it, you gain a +3 bonus to attack rolls against it, rather than the normal +2.
+	</RulesElement>
+
+	<RulesElement name="Shadow Flicker" type="Power" internal-id="ID_TER_RACIALPOWER_0008" source="Terraism" revision-date="8/27/2010 11:42:29 AM">
+		<Category> ID_TER_RACIAL_TRAIT_0027,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> At a dire moment, you draw forth a foe's shadow to menace it along with you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Kenku Racial Utility </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Trigger"> You make an attack against an enemy you or an ally is adjacent to. </specific>
+		<specific name="Effect"> You conjure a shadowy figure in an unoccupied square adjacent to the enemy you targeted with the triggering attack. The spirit lasts until the end of your next turn. You and your allies can flank with the shadowy figure. </specific>
+		<specific name="Special" />
+		<specific name="Class"> ID_TER_RACE_008 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_TER_RACIAL_TRAIT_0027 </specific>
+	</RulesElement>
+
+</D20Rules>

@@ -1,0 +1,139 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM MBA.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM MBA.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM MBA.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Power Source-->
+
+
+<AppendNodes name="Martial" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_1" source="Player's Handbook" revision-date="3/5/2008 9:39:31 AM">
+	<rules>
+		<modify name="Melee Basic Attack" Field="Keywords" list-addition="Martial" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Arcane" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_2" source="Player's Handbook" revision-date="3/5/2008 9:39:31 AM">
+	<rules>
+		<modify name="Melee Basic Attack" Field="Keywords" list-addition="Arcane" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Divine" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_3" source="Player's Handbook" revision-date="3/5/2008 9:39:31 AM">
+	<rules>
+		<modify name="Melee Basic Attack" Field="Keywords" list-addition="Divine" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Primal" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_4" source="Player's Handbook 2" revision-date="4/10/2008 9:27:59 AM">
+	<rules>
+		<modify name="Melee Basic Attack" Field="Keywords" list-addition="Primal" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Psionic" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_5" source="Player's Handbook 3" revision-date="4/10/2008 9:28:06 AM">
+	<rules>
+		<modify name="Melee Basic Attack" Field="Keywords" list-addition="Psionic" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Shadow" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_6" source="Dragon Magazine 379" revision-date="9/2/2009 9:50:28 AM">
+	<rules>
+	<modify name="Melee Basic Attack" Field="Keywords" list-addition="Shadow" />
+	</rules>
+</AppendNodes>
+
+
+<!--Melee Training-->
+
+<AppendNodes name="Ardent" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARDENT" source="Player&apos;s Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Charisma*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Ardent" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_ARDENT" source="Player&apos;s Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Charisma*" />
+      </rules>
+</AppendNodes><AppendNodes name="Artificer" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARTIFICER" source="Eberron Player's Guide" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Intelligence*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Artificer" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_ARTIFICER" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Intelligence*" />
+      </rules>
+</AppendNodes><AppendNodes name="Assassin" type="Grants" internal-id="ID_INTERNAL_GRANTS_ASSASSIN" source="Dragon Magazine 379" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Assassin" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_ASSASSIN" source="Dragon Magazine 385" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Avenger" type="Grants" internal-id="ID_INTERNAL_GRANTS_AVENGER" source="Player's Handbook 2" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Wisdom*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Avenger" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_AVENGER" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Wisdom*" />
+      </rules>
+</AppendNodes><AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD" source="Player's Handbook 2" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Charisma*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_BARD" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Charisma*" />
+      </rules>
+</AppendNodes><AppendNodes name="Battlemind" type="Grants" internal-id="ID_INTERNAL_GRANTS_BATTLEMIND" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="Constitution*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Battlemind" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_BATTLEMIND" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="Constitution*" />
+      </rules>
+</AppendNodes><AppendNodes name="Monk" type="Grants" internal-id="ID_INTERNAL_GRANTS_MONK" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Monk" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_MONK" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Rogue" type="Grants" internal-id="ID_INTERNAL_GRANTS_ROGUE" source="Player's Handbook" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Rogue" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_ROGUE" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Dexterity*" />
+      </rules>
+</AppendNodes><AppendNodes name="Sentinel" type="Grants" internal-id="ID_INTERNAL_GRANTS_SENTINEL" source="Player Essentials: Heroes of the Forgotten Kingdoms" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Wisdom*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Sentinel" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_SENTINEL" source="Dragon Magazine 400">
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Wisdom*" />
+      </rules>
+</AppendNodes><AppendNodes name="Swordmage" type="Grants" internal-id="ID_INTERNAL_GRANTS_SWORDMAGE" source="Forgotten Realms Player's Guide" >
+      <rules>
+         <textstring name="melee basic:key ability" value="Intelligence*" />
+      </rules>
+</AppendNodes><AppendNodes name="Hybrid Swordmage" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_SWORDMAGE" source="Player's Handbook 3" >
+      <rules>
+         <textstring name="melee basic:key ability" value="Intelligence*" />
+      </rules>
+</AppendNodes><AppendNodes name="Warpriest" type="Grants" internal-id="ID_INTERNAL_GRANTS_WARPRIEST" source="Player Essentials: Heroes of the Fallen Lands" >
+      <rules>
+         <textstring name="melee basic:key ability" value="HALF-DMG:Wisdom*" />
+      </rules>
+</AppendNodes>
+
+
+</D20Rules>

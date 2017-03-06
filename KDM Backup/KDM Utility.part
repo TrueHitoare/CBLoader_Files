@@ -1,0 +1,205 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+
+
+  <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Utility.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Utility.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Utility.txt</VersionAddress>
+  </UpdateInfo>
+  
+<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+      <rules>
+     <grant name="ID_KDM_NONCOMBAT_BONUS" type="Class Feature" />
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Noncombat Bonus" type="Class Feature" internal-id="ID_KDM_NONCOMBAT_BONUS" source="KDM" >
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Class Feature" number="1" Category="ID_KDM_NONCOMBAT_BONUS" optional="true" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Bonus Mix (Cumulative)" type="Class Feature" internal-id="ID_KDM_BONUS_MIX_(CUMULATIVE)" source="KDM" >	
+	<Category> ID_KDM_NONCOMBAT_BONUS </Category>
+	<specific name="ShortDescription"> Choose a utility power or feat each tier for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<grant name="ID_KDM_BONUS_SELECTION_(HEROIC)" type="Class Feature" />
+		<grant name="ID_KDM_BONUS_SELECTION_(PARAGON)" type="Class Feature" />
+		<grant name="ID_KDM_BONUS_SELECTION_(EPIC)" type="Class Feature" />
+	</rules>
+At 1st level, choose one:
+-A heroic-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 6th level or lower. This power cannot be used in combat.
+
+At 11th level, choose one:
+-A heroic or paragon-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 16th level or lower. This power cannot be used in combat.
+
+At 21st level, choose one:
+-A heroic, paragon, or epic-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 22nd level or lower. This power cannot be used in combat.
+
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Selection (Heroic)" type="Class Feature" internal-id="ID_KDM_BONUS_SELECTION_(HEROIC)" source="KDM" >
+	<specific name="ShortDescription"> Choose a utility power or feat each tier for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Class Feature" name="Noncombat Bonus (Heroic)" category="ID_KDM_BONUS_SKILL_FEAT_TIER_1|ID_KDM_BONUS_UTILITY_TIER_1" Level="1" />
+	</rules>
+Choose one:
+-A heroic-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 6th level or lower. This power cannot be used in combat.
+
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Selection (Paragon)" type="Class Feature" internal-id="ID_KDM_BONUS_SELECTION_(PARAGON)" source="KDM" >	
+	<specific name="ShortDescription"> Choose a utility power or feat each tier for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Class Feature" name="Noncombat Bonus (Paragon)" category="ID_KDM_BONUS_SKILL_FEAT_TIER_2|ID_KDM_BONUS_UTILITY_TIER_2" Level="11" />
+	</rules>
+Choose one:
+-A heroic or paragon-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 16th level or lower. This power cannot be used in combat.
+
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Selection (Epic)" type="Class Feature" internal-id="ID_KDM_BONUS_SELECTION_(EPIC)" source="KDM" >
+	<specific name="ShortDescription"> Choose a utility power or feat each tier for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Class Feature" name="Noncombat Bonus (Epic)" category="ID_KDM_BONUS_SKILL_FEAT_TIER_3|ID_KDM_BONUS_UTILITY_TIER_3" Level="21" />
+	</rules>
+Choose one:
+-A heroic, paragon, or epic-tier Skill Training, Skill Focus, or other noncombat feat.
+-A utility power of 22nd level or lower. This power cannot be used in combat.
+
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Utility" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY" source="KDM" >	
+	<Category> ID_KDM_NONCOMBAT_BONUS </Category>
+	<specific name="ShortDescription"> Choose a utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,6" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+Gain a utility power of 6th level or lower for use only outside of combat.
+	
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Utility (Scaling)" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY_(SCALING)" source="KDM" >	
+	<Category> ID_KDM_NONCOMBAT_BONUS </Category>
+	<specific name="ShortDescription"> Choose a utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,6" Level="1-10" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,16" Level="11-20" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,22" Level="21" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+Gain a utility power of 6th level or lower. At 11th level, you can replace this with a utility power of 16th level or lower, and at 21st level, you can replace this with a utility power of 22nd level or lower. Powers gained this way cannot be used in combat.
+	
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Utility Tier 1" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY_TIER_1" source="KDM" >	
+	<specific name="ShortDescription"> Choose a utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,6" Level="1" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+Gain a utility power of 6th level or lower. This power can't be used in combat.
+</RulesElement>
+
+<RulesElement name="Bonus Utility Tier 2" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY_TIER_2" source="KDM" >	
+	<specific name="ShortDescription"> Choose a utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,16" Level="11" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+Gain a utility power of 16th level or lower. This power can't be used in combat.
+</RulesElement>
+
+<RulesElement name="Bonus Utility Tier 3" type="Class Feature" internal-id="ID_KDM_BONUS_UTILITY_TIER_3" source="KDM" >	
+	<specific name="ShortDescription"> Choose a utility power for use only outside of combat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Power" name="Bonus Utility" number="1" Category="$$CLASS,Utility,22" Level="21" />
+		<modify field="Bonus Utility" value="This power can't be used in combat." />
+	</rules>
+Gain a utility power of 22nd level or lower. This power can't be used in combat.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT" source="KDM" >
+	<Category> ID_KDM_NONCOMBAT_BONUS </Category>
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Feat" number="1" />
+		<modify field="Special" value="This was chosen as a noncombat bonus feat." />
+	</rules>
+Gain a Skill Training, Skill Focus, or other noncombat feat.
+	
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat (Scaling)" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT_(SCALING)" source="KDM" >
+	<Category> ID_KDM_NONCOMBAT_BONUS </Category>
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<grant name="ID_KDM_BONUS_SKILL_FEAT_TIER_1" Level="1-10" />
+		<grant name="ID_KDM_BONUS_SKILL_FEAT_TIER_2" Level="11-20" />
+		<grant name="ID_KDM_BONUS_SKILL_FEAT_TIER_3" Level="21" />
+	</rules>
+Gain a Skill Training, Skill Focus, or other noncombat feat. At 11th and 21st levels, you may replace this feat with a different Skill Training, Skill Focus, or other noncombat feat for which you meet the prerequisites.
+	
+NOTE: This is an optional house rule. Consult your DM before selecting this option.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat Tier 1" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT_TIER_1" source="KDM" >
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Feat" name="Bonus Feat Tier 1" number="1" />
+		<modify field="Special" value="This was chosen as a noncombat bonus feat." />
+	</rules>
+Gain a heroic-tier Skill Training, Skill Focus, or other noncombat feat.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat Tier 2" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT_TIER_2" source="KDM" >
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Feat" name="Bonus Feat Tier 2" number="1" />
+		<modify field="Special" value="This was chosen as a noncombat bonus feat." />
+	</rules>
+Gain a heroic or paragon-tier Skill Training, Skill Focus, or other noncombat feat.
+</RulesElement>
+
+<RulesElement name="Bonus Skill Feat Tier 3" type="Class Feature" internal-id="ID_KDM_BONUS_SKILL_FEAT_TIER_3" source="KDM" >
+	<specific name="ShortDescription"> Choose a Skill Training, Skill Focus, or other noncombat feat. </specific>
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<select type="Feat" name="Bonus Feat Tier 3" number="1" />
+		<modify field="Special" value="This was chosen as a noncombat bonus feat." />
+	</rules>
+Gain a heroic, paragon, or epic-tier Skill Training, Skill Focus, or other noncombat feat.
+</RulesElement>
+
+</D20Rules>

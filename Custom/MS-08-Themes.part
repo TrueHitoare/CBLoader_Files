@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+	<Changelog>
+  Created 08-February-2016
+	</Changelog>
+<!--
+<RulesElement name="Phoenix Soul" type="Theme" internal-id="ID_MS_THEME_01" source="Mercenary Story">
+    <Flavor> "Within me burns the might of an infernal lineage. Those who stand against me face the wrath of the Nine Hells." </Flavor>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_16053,ID_FMP_POWER_16054,ID_FMP_POWER_16055 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4280,ID_FMP_CLASS_FEATURE_4281,ID_FMP_CLASS_FEATURE_4282 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_4280" type="Class Feature" />
+      <grant name="ID_FMP_CLASS_FEATURE_4281" type="Class Feature" level="5" />
+      <grant name="ID_FMP_CLASS_FEATURE_4282" type="Class Feature" level="10" />
+    </rules>
+Eager to extend their influence into the world, the lords of the Nine Hells have long mingled their essence with those of chosen mortals to create bloodlines tainted with infernal power. Although the link between an infernal progenitor and his or her fiendish scions might stretch over many generations, the strength of the bloodline persists, and those "blessed" with such a legacy are potent tools of evil. Inheritors of a hellish strength, these infernal princes can call upon an array of diabolical abilities.
+	Although many infernal lords have engendered mortal bloodlines, Asmodeus and Mephistopheles have been the most prolific. Infernal princes who can trace their lineage back to either archdevil are by far the most common of their ilk, and both Asmodeus and Mephistopheles actively involve themselves in the lives of their progeny. An infernal prince might be unaware that his or her blood and soul churns with the essence of an archdevil, and the diabolical power resulting from this union typically lies dormant until the character reaches young adulthood.
+	In the case of an infernal prince bearing the blood of Asmodeus or Mephistopheles, a tutor sent by the archdevil arrives when the dark urges that herald a diabolical awakening manifest in that individual. This tutor is often a cleric or a warlock devoted to the archdevil, and his or her first order of business is to remove the fledgling prince from home and the influence of parents, who remain unaware of their child's ancestry because, for whatever reason, their own potential was never great enough to warrant the attention of an archdevil. The tutor's goal is to ensure that the student embraces his or her heritage and serves the archdevil whose blood flows through his or her veins. An infernal prince is still mortal, however, and the decision to embrace evil and follow in the footsteps of one's progenitors is his or hers to make. An individual must consciously choose the diabolical path to gain access to its power.
+	Infernal princes can rise high in the service of the archdevil whose blood they share, and they are quite skilled at leading other mortals into darkness. Within an adventuring party, an infernal prince plays the part of a committed comrade and takes pains to keep his or her true allegiance a secret. The character works to lead companions into wickedness, subtly pushing them to commit acts of evil that seem innocuous but form a slippery slope into spiritual corruption. Once these companions are committed to evil, the infernal prince inducts them into the service of his or her patriarch, swelling the ranks of mortals who serve the interests of the Nine Hells.
+Creating: Infernal princes come from many walks of life, since the lords of the Nine Hells value a diverse set of skills and powers. That said, characters who specialize in arcane or martial trickery and have access to powers with the fire keyword stand to gain the most benefit.
+</RulesElement>
+<RulesElement name="Level 1 Infernal Prince Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4280" source="Dragon Magazine 406">
+    <Category> 1 </Category>
+    <Flavor> Your devilish ancestry provides you with an affinity for fire and a tenuous link to the Nine Hells. In times of great stress or peril, you can draw energy from the infernal realms in the form of blistering hellfire. This potent weapon withers flesh and strikes terror into the hearts of those who stand against you. </Flavor>
+    <specific name="Short Description"> gain a +1 bonus to fire attack rolls, In addition, you gain the hellfire heart power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16052 </specific>
+    <specific name="Type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_FMP_POWER_16052 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_16052" type="Power" />
+      <statadd name="fire:attack" value="+1" type="Power" />
+    </rules>
+You gain a +1 power bonus to fire attack rolls.
+	In addition, you gain the hellfire heart power.
+</RulesElement>
+<RulesElement name="Hellfire Heart" type="Power" internal-id="ID_FMP_POWER_16052" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_4280,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+    <Flavor> You bolster an attack with roiling hellfire, drawing upon your infernal heritage to burn and terrify your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Infernal Prince Attack  </specific>
+    <specific name="Keywords"> Divine, Fear, Fire </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special </specific>
+    <specific name="Trigger"> You hit an enemy with an attack. </specific>
+    <specific name="Effect"> The enemy takes fire damage equal to 1 + your Primary ability. Until the start of your next turn, the enemy takes a -2 penalty to the attack rolls of attacks that include you as a target.
+Level 11: 3 + your Primary ability fire damage.
+Level 21: 5 + your Primary ability fire damage. </specific>
+    <specific name="Class"> ID_FMP_THEME_942 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4280 </specific>
+  </RulesElement>
+  <RulesElement name="Level 5 Infernal Prince Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4281" source="Dragon Magazine 406">
+    <Category> 5 </Category>
+    <Flavor> Part of your infernal inheritance is a silver tongue, and your words are honeyed lies that sway the unperceptive and weak of will. Your deceit rings especially true in the ears of mortals, a devil's favored prey. </Flavor>
+    <specific name="Short Description"> Gain +2 power bonus to Bluff checks and Diplomacy checks; once per encounter, when you roll a 5 or lower on a Bluff check or a Diplomacy check made against a humanoid of the natural origin, you can reroll the check. You must use the second result.</specific>
+    <specific name="Level"> 5 </specific>
+		<rules>
+			<statadd name="Bluff Misc" value="+2" type="Class Feature" />
+			<statadd name="Diplomacy Misc" value="+2" type="Class Feature" />
+		</rules>
+You gain a +2 power bonus to Bluff checks and Diplomacy checks.
+	Once per encounter, when you roll a 5 or lower on a Bluff check or a Diplomacy check made against a humanoid of the natural origin, you can reroll the check. You must use the second result.
+</RulesElement>
+<RulesElement name="Level 10 Infernal Prince Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4282" source="Dragon Magazine 406">
+    <Category> 10 </Category>
+    <Flavor> Nothing brings out the devil within you like pain. When you are wounded, your rage boils forth in a tide of flame and vengeance. </Flavor>
+    <specific name="Short Description"> The first time you become bloodied each encounter, you regain the use of hellfire heart. If you then use hellfire heart on the creature that bloodied you, the power deals 5 extra fire damage. </specific>
+    <specific name="Level"> 10 </specific>
+The first time you become bloodied each encounter, you regain the use of hellfire heart. If you then use hellfire heart on the creature that bloodied you, the power deals 5 extra fire damage.
+</RulesElement>
+<RulesElement name="Devil's Due" type="Power" internal-id="ID_FMP_POWER_16053" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_NO_ACTION,2,ID_FMP_CLASS_0 </Category>
+    <Prereqs> ID_FMP_THEME_942 </Prereqs>
+    <Flavor> You offer vital aid to your companion-at a very fair price. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Infernal Prince Utility 2 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special </specific>
+    <specific name="Trigger"> You grant an ally a power bonus or enable him or her to spend a healing surge. </specific>
+    <specific name="Effect"> You gain a +2 power bonus to all defenses until the end of the encounter, and you gain temporary hit points equal to your healing surge value. The ally's healing surge value is then reduced by one-half your level until the end of the encounter. </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_942 </specific>
+    <specific name="Class"> ID_FMP_THEME_942 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+In the Nine Hells, nothing is given for free. Pathetic notions of compassion and camaraderie do not exist there, nor do they exist within you. You are more than willing to aid your companions in combat or offer them healing, but such assistance is not offered without compensation of equal value.
+</RulesElement>
+<RulesElement name="Liar's Lure" type="Power" internal-id="ID_FMP_POWER_16054" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION,6,ID_FMP_CLASS_0 </Category>
+    <Prereqs> ID_FMP_THEME_942 </Prereqs>
+    <Flavor> Your silver tongue and flawless feints create lethal opportunities for you and your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Infernal Prince Utility 6 </specific>
+    <specific name="Keywords"> Charm, Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Effect"> Make a single Bluff check and compare it to the passive Insight of each target. If your Bluff check exceeds a target's passive Insight, that target grants combat advantage until the end of your next turn. </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_942 </specific>
+    <specific name="Class"> ID_FMP_THEME_942 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+Your bloodline makes you a fiendishly adept liar, and you are skilled at misleading your foes with words or with subtle body language in combat.
+</RulesElement>
+  <RulesElement name="Infernal Inheritor" type="Power" internal-id="ID_FMP_POWER_16055" source="Dragon Magazine 406">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs> ID_FMP_THEME_942 </Prereqs>
+    <Flavor> You allow the devil within to emerge, temporarily transforming you into a font of infernal power. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Infernal Prince Utility 10 </specific>
+    <specific name="Keywords"> Divine, Fear, Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> All enemies that can see you take a -2 penalty to attack rolls until the end of your next turn, and you assume the form of the infernal inheritor until the end of the encounter. Until this form ends, you gain darkvision, resist 10 fire, and a +2 power bonus to Fortitude and Will. </specific>
+    <specific name="Class"> ID_FMP_THEME_942 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+When you let your diabolical lineage manifest, you exude a potent aura of hellish power. As a scion of a great infernal lord, you command fear and awe from your enemies.
+</RulesElement>
+-->
+</D20Rules>

@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<Changelog>
+  Created 31-May-2015
+  Updated 11-October-2015 Added Saber weapon feats
+  Updated 19-May-2016 Added changed Expertise feats with flat +1 attack bonus
+	</Changelog>
+	<RulesElement name="Weapon Proficiency (Ancient cannon)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" source="True Hitoare">
+		<specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+		<specific name="_RequiresID"> ID_AZT_WEAPON_01 </specific>
+		<Prereqs> Warforged </Prereqs>
+		<print-prereqs> Warforged </print-prereqs>
+		<specific name="Short Description"> Gain proficiency with the Ancient cannon </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Ancient cannon.
+	</RulesElement>
+	<RulesElement name="Weapon Proficiency (Saber)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SABER)" source="True Hitoare">
+    <specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+    <specific name="_RequiresID"> ID_AZT_WEAPON_SABER </specific>
+    <specific name="Short Description"> Gain proficiency with the Saber. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" type="Proficiency" />
+    </rules>
+  
+You gain proficiency with the Saber.
+</RulesElement>
+	
+	<!-- This is the part that makes the Weapon Proficiency feats actually do something -->
+	<RulesElement name="Weapon Proficiency (Ancient cannon)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" source="True Hitoare" >
+       <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW),ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_RANGED </Category>
+    </RulesElement>
+    <RulesElement name="Weapon Proficiency (Saber)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SABER)" source="True Hitoare">
+    <Category> ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HEAVY_BLADE),ID_INTERNAL_CATEGORY_MILITARY,ID_FMP_WEAPON_GROUP_7,ID_INTERNAL_CATEGORY_MELEE </Category>
+  </RulesElement>
+	
+	<!-- Redone Expertise feats with flat +1 attack bonuses -->
+	<RulesElement name="Axe Expertise" type="Feat" internal-id="ID_FMP_FEAT_3122" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> The axe is a weapon designed to cleave through armor and bone. You are trained to maximize the force you deliver with each hack of your axe. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with axes; reroll one damage die that shows 1 with axe weapon attack </specific>
+		<rules>
+			<statadd name="Axe Expertise" value="+1" />
+			<statadd name="weapon,axe group:attack" value="+Axe Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls you make with an axe.
+	Also, when rolling damage for a weapon attack you make with an axe, you can reroll one damage die that results in a 1, but you must use the second result.
+	</RulesElement>
+	<RulesElement name="Bludgeon Expertise" type="Feat" internal-id="ID_FMP_FEAT_3123" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> In your hands, a hammer or a mace delivers crushing blows that reverberate through the toughest armor. Even glancing blows are enough to wear down your enemy. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with hammers and maces; +1 sq. to push and slide distance with hammer and mace weapon attacks  </specific>
+		<rules>
+			<statadd name="Bludgeon Expertise" value="+1" />
+			<statadd name="weapon,mace group:attack" value="+Bludgeon Expertise" type="Expertise" />
+			<statadd name="weapon,hammer group:attack" value="+Bludgeon Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls you make with a hammer or a mace.
+	You also gain a +1 feat bonus to the number of squares you push or slide creatures with weapon attacks you make with a hammer or a mace.
+	</RulesElement>
+	<RulesElement name="Bow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3124" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> Your steady accuracy allows you to fire arrows with great precision. With training, you've learned to hone in on lone foes to deal out crippling strikes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with bows; +1/+2/+3 (by tier) to damage against isolated creatures with bow weapon attacks  </specific>
+		<rules>
+			<statadd name="Bow Expertise" value="+1" />
+			<statadd name="Bow Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Bow Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="weapon,bow group:attack" value="+1" type="Expertise" />
+			<statadd name="weapon,bow group:damage" value="+Bow Expertise" condition="against a single creature that is not adjacent to any other creature" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a bow.
+	You also gain a +1 bonus to the damage roll of any weapon attack you make with a bow against a single creature that is not adjacent to any other creature. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Crossbow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3126" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> In your steady hands, a crossbow is a precision weapon. You need to see only a small portion of your enemy to deliver a deadly attack. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with crossbows; ignore partial and superior cover with crossbow weapon attacks </specific>
+		<rules>
+			<statadd name="Crossbow Expertise" value="+1" />
+			<statadd name="weapon,crossbow group:attack" value="+Crossbow Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a crossbow.
+	Also, you ignore partial cover and superior cover with weapon attacks you make with a crossbow.
+	</RulesElement>
+	<RulesElement name="Heavy Blade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3141" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> The heavy blade blends accurate attacks and quick parries into a potent package. You have learned to use your weapon to deflect enemies' attacks as you move about the battlefield. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with heavy blades; +2 to defenses against OAs when wielding heavy blade </specific>
+		<rules>
+			<statadd name="AC" value="+2" condition="against opportunity attacks" />
+			<statadd name="Fortitude Defense" value="+2" condition="against opportunity attacks" />
+			<statadd name="Reflex Defense" value="+2" condition="against opportunity attacks" />
+			<statadd name="Will Defense" value="+2" condition="against opportunity attacks" />
+			<statadd name="Heavy Blade Expertise" value="+1" />
+			<statadd name="weapon,heavy blade group:attack" value="+Heavy Blade Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a heavy blade.
+	In addition, while wielding a heavy blade, you gain a +2 bonus to all defenses against opportunity attacks.
+	</RulesElement>
+	<RulesElement name="Light Blade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3144" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> What a light blade lacks in weight and power, it makes up in accuracy. In your hands, this advantage becomes even deadlier when your foe's defenses are down. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with light blades; +1/+2/+3 (by tier) to damage of light blade weapon attacks with CA </specific>
+		<rules>
+			<statadd name="Light Blade Expertise" value="+1" />
+			<statadd name="Light Blade Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Light Blade Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="weapon,light Blade group:attack" value="+1" type="Expertise" />
+			<statadd name="weapon,light blade group:damage" value="+Light Blade Expertise" condition="when you have combat advantage" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a light blade.
+	In addition, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a light blade against a creature granting combat advantage to you. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Master at Arms" type="Feat" internal-id="ID_FMP_FEAT_3145" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> Some warriors seek to master one or two weapons. You instead learned techniques to wield a variety of arms. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attack rolls; can sheathe and draw a weapon with the same minor action </specific>
+		<rules>
+			<statadd name="weapon:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to the attack rolls of weapon attacks.
+	Also, you can use a minor action to sheathe a weapon and then draw a weapon.
+	</RulesElement>
+	<RulesElement name="Orb Expertise" type="Feat" internal-id="ID_FMP_FEAT_3146" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> The orb is an implement of strength and durability. When you produce an effect, you can channel energy from the orb to empower your magic. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to orb implement attacks; +1 sq. to push, pull, and slide distance of orb attacks </specific>
+		<rules>
+			<statadd name="orb implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls that you make with an orb.
+	You also gain a +1 feat bonus to the number of squares you pull, push, or slide targets of attacks that you make with an orb.
+	</RulesElement>
+	<RulesElement name="Sling Expertise" type="Feat" internal-id="ID_FMP_FEAT_3149" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> The sling is a versatile weapon favored by melee combatants because it is fast and light, and it can be carried in one hand. You are a master of the sling and can use it without threat from nearby foes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with slings; ranged and area attacks with sling don't provoke OAs </specific>
+		<rules>
+			<statadd name="Sling Expertise" value="+1" />
+			<statadd name="weapon,sling group:attack" value="+Sling Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a sling.
+	In addition, when you make a ranged or an area attack with a sling, you don't provoke opportunity attacks for doing so.
+	</RulesElement>
+	<RulesElement name="Spear Expertise" type="Feat" internal-id="ID_FMP_FEAT_3150" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> Your talent with the spear is deadliest when you are advancing upon a foe. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to weapon attacks with spears; +1/+2/+3 (by tier) to weapon damage with spear when charging </specific>
+		<rules>
+			<statadd name="Spear Expertise" value="+1" />
+			<statadd name="Spear Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Spear Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="weapon,spear group:attack" value="+1" type="Expertise" />
+			<statadd name="weapon,spear group:damage" value="+Spear Expertise" condition="when you are charging" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a spear.
+	In addition, when charging, you gain a +1 bonus to damage rolls of weapon attacks that you make with a spear. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Staff Expertise" type="Feat" internal-id="ID_FMP_FEAT_3151" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> The staff is the most durable implement as well as a dependable weapon. You have learned to use the staff to defend yourself while unleashing your magical powers or to strike at enemies beyond your reach. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to staff attacks; ranged and area implement attacks with staff don't provoke OAs; +1 to reach with staff weapon attacks </specific>
+		<rules>
+			<statadd name="staff implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="weapon,staff group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to the attack rolls of implement powers and weapon powers that you use with a staff.
+	In addition, when you make a ranged or an area attack with a staff as an implement, you don't provoke opportunity attacks for doing so.
+	When you make a melee weapon attack with a staff, the weapon's reach for that attack increases by 1.
+	</RulesElement>
+	<RulesElement name="Wand Expertise" type="Feat" internal-id="ID_FMP_FEAT_3157" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Flavor> The wand is the most precise implement. You have learned to use it to deliver perfectly aimed attacks in spite of any cover your foes have. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to wand implement attacks; ignore partial and superior cover with wand implement attacks </specific>
+		<rules>
+			<statadd name="wand implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls that you make with a wand.
+	Also, you ignore partial cover and superior cover on implement attacks you make with a wand.
+	</RulesElement>
+	<RulesElement name="Rod Expertise" type="Feat" internal-id="ID_FMP_FEAT_3522" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Flavor> A rod is a useful conduit for arcane energy. It is also useful when defending yourself against your foes. The magic you draw from within a rod, along with your training and expertise, allows you to us it to parry attacks. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement attacks with rods; +1 to AC and Reflex when holding rod </specific>
+		<specific name="Rod Expertise" />
+		<rules>
+			<statadd name="AC" value="+1" requires="WearingRod" />
+			<statadd name="Reflex Defense" value="+1" requires="WearingRod" />
+			<statadd name="rod implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls that you make with a rod.
+	When you hold a rod, you gain a +1 shield bonus to AC and Reflex.
+	</RulesElement>
+	<RulesElement name="Holy Symbol Expertise" type="Feat" internal-id="ID_FMP_FEAT_3565" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:45:06 PM">
+		<Flavor> Holy symbols are signs of faith. Yours represents a god or a cause that is dear to you. Your resolve is strengthened whenever you smite a foe with your symbol. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to holy symbol implement attacks; when you attack with holy symbol, don't grant CA until SoNT unless you use effect that makes you grant CA </specific>
+		<specific name="Special" />
+		<specific name="Type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="holy symbol implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls that you make with a holy symbol.
+	When you attack an enemy with an implement attack using a holy symbol, your enemies cannot gain combat advantage against you until the start of your next turn, unless you use a power or another ability that states that you grant combat advantage.
+	</RulesElement>
+	<RulesElement name="Ki Focus Expertise" type="Feat" internal-id="ID_FMP_FEAT_3566" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:45:07 PM">
+		<Flavor> You have dedicated yourself to becoming as attuned to your ki focus as possible, heightening your prowess in battle. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to ki focus attacks; +1/+2/+3 (by tier) to damage with ki focus against bloodied enemies </specific>
+		<specific name="Special" />
+		<specific name="Type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Ki Focus Expertise" value="+1" />
+			<statadd name="Ki Focus Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Ki Focus Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="Ki Focuses implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="Ki Focuses implement,weapon:attack" value="+1" type="Expertise" />
+			<statadd name="Ki Focuses implement,implement:damage" value="+Ki Focus Expertise" condition="against bloodied targets" />
+			<statadd name="Ki Focuses implement,weapon:damage" value="+Ki Focus Expertise" condition="against bloodied targets" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls and weapon attack rolls that you make with your ki focus.
+	In addition, you gain a +1 bonus to the damage rolls of attacks that you make with your ki focus against a bloodied enemy. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Feyborn Charm" type="Feat" internal-id="ID_FMP_FEAT_1137" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM">
+		<Prereqs> Eladrin or gnome, bard </Prereqs>
+		<print-prereqs> Eladrin or gnome, bard </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to attacks and damage with arcane charm powers (damage +2 at 15th, +3 at 25st level); +1 to Bluff and Diplomacy </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="arcane,charm:attack" value="+1" type="Expertise" />
+			<statadd name="arcane,charm:damage" value="+1" type="Feat" />
+			<statadd name="arcane,charm:damage" value="+2" type="Feat" requires="15 level" />
+			<statadd name="arcane,charm:damage" value="+3" type="Feat" requires="25 level" />
+			<statadd name="Bluff Misc" value="+1" type="Feat" />
+			<statadd name="Diplomacy Misc" value="+1" type="Feat" />
+		</rules>
+When you use an arcane charm power, you gain a +1 expertise bonus to attack rolls.
+In addition, you gain a +1 feat bonus to damage rolls with arcane charm powers. This bonus increases to +2 at 15th level and to +3 at 25th level.
+You also gain a +1 feat bonus to Bluff checks and Diplomacy checks.
+	</RulesElement>
+	<RulesElement name="Gnome Phantasmist" type="Feat" internal-id="ID_FMP_FEAT_1140" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM">
+		<Prereqs> Gnome, wizard </Prereqs>
+		<print-prereqs> Gnome, wizard </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to attacks and damage with arcane illusion powers (damage +2 at 11th, +3 at 21st level) </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="arcane,illusion:attack" value="+1" type="Expertise" />
+			<statadd name="arcane,illusion:damage" value="+1" type="Feat" />
+			<statadd name="arcane,illusion:damage" value="+2" type="Feat" requires="15 level" />
+			<statadd name="arcane,illusion:damage" value="+3" type="Feat" requires="25 level" />
+		</rules>
+When you use an arcane illusion power, you gain a +1 expertise bonus to attack rolls.
+In addition, you gain a +1 feat bonus to damage rolls with arcane illusion powers. This bonus increases to +2 at 15th level and to +3 at 25th level.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Wand)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with wands </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="wand implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a wand.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Rod)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with rods </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="rod implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a rod.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Orb)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ORB)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with orbs </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="orb implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a orb.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(STAFF)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with staffs </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="staff implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a staff.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Holy Symbol)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HOLY_SYMBOL)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with holy symbols </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="holy symbol implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a holy symbol.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Totem)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(TOTEM)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with totems </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="totem implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a totem.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Tome)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(TOME)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with tomes </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="tome implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a tome.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Ki Focuses)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(KI_FOCUSES)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with ki focuses </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="ki focuses implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a ki focus.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Instrument)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(INSTRUMENT)" source="Player's Handbook 2">
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to implement power attacks with instruments </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<rules>
+			<statadd name="instrument implement,implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a musical instrument.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(MACE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Maces </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Mace implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Mace.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Light blades </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Light Blade implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Light Blade.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Heavy blades </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Heavy Blade implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Heavy Blade.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(AXE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Axes </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Axe implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Axe.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(FLAIL)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Flails </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Flail implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Flail.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HAMMER)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Hammers </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Hammer implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Hammer.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(PICK)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Picks </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Pick implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Pick.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(POLEARM)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Polearms </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Polearm implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Polearm.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(CROSSBOW)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Crossbows </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Crossbow implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Crossbow.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(SLING)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Slings </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Sling implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Sling.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(BOW)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Bows </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Bow implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Bow.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(SPEAR)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Spears </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Spear implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Spear.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(GARROTE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Garrotes </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Garrote implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Garrote.
+	</RulesElement>
+	<RulesElement name="Implement Expertise (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(BLOWGUN)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_734 </specific>
+		<specific name="Short Description"> +1 to implement attacks with Blowguns </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Blowgun implement group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any implement power you use through a Blowgun.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(MACE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_1 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with maces </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,mace group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a mace.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_2 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with light blades </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,light blade group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a light blade.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(STAFF)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_6 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with staffs </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,staff group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a staff.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_7 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with heavy blades </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,heavy blade group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a heavy blade.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(AXE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_8 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with axes </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,axe group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a axe.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(FLAIL)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_10 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with flails </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,flail group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a flail.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HAMMER)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_11 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with hammers </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,hammer group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a hammer.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(PICK)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_13 </specific>
+		<specific name="Short Description"> Gain +1 bonus to weapon attacks with picks </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,pick group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a pick.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(POLEARM)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_22 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with polearms </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,polearm group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a polearm.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Unarmed)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(UNARMED)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_27 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks when unarmed </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,unarmed group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use when unarmed.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(CROSSBOW)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_29 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with crossbows </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,crossbow group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a crossbow.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SLING)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_30 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with slings </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,sling group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a sling.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BOW)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_32 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with bows </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,bow group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a bow.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SPEAR)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_35 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with spears </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,spear group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a spear.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(GARROTE)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_47 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with garrotes </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,garrote group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a garrote.
+	</RulesElement>
+	<RulesElement name="Weapon Expertise (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BLOWGUN)" source="Player's Handbook 2">
+		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_48 </specific>
+		<specific name="Short Description"> Gain +1 to weapon attacks with blowguns </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="weapon,blowgun group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with any weapon power you use with a blowgun.
+	</RulesElement>
+	<RulesElement name="White Lotus Dueling Expertise" type="Feat" internal-id="ID_FMP_FEAT_3738" source="Dragon Magazine 402">
+		<Prereqs> Any arcane class </Prereqs>
+		<print-prereqs> Any arcane class </print-prereqs>
+		<Flavor> You have been trained to carry out an arcane duel using a variety of implements-often more than one at the same time. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain feat bonus to arcane attacks and basic attacks. Gain an additional implement. </specific>
+		<specific name="Special"/>
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="arcane:attack" value="+1" type="Expertise" />
+			<statadd name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK:attack" value="+1" type="Expertise" />
+			<statadd name="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK:attack" value="+1" type="Expertise" />
+			<select type="Class Feature" number="1" Category="White Lotus Dueling Expertise" >
+White Lotus Dueling Expertise: Choose Implement Proficiency
+			</select>	
+		</rules>
+You gain a +1 expertise bonus to the attack rolls of arcane powers and basic attacks that you make with any weapon or implement with which you have proficiency.
+	You also gain proficiency with orbs, rods, staffs, or wands.
+	</RulesElement>
+	<RulesElement name="White Lotus Dueling Expertise (Orb)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_ORB" source="Dragon Magazine 402">
+		<Category> ID_FMP_FEAT_3738 </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
+		<specific name="Short Description"> You gain proficiency with the Orb implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Orb implement.
+	</RulesElement>
+	<RulesElement name="White Lotus Dueling Expertise (Rod)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_ROD" source="Dragon Magazine 402">
+		<Category> ID_FMP_FEAT_3738 </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
+		<specific name="Short Description"> You gain proficiency with the Rod implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Rod implement.
+	</RulesElement>
+	<RulesElement name="White Lotus Dueling Expertise (Staff)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_STAFF" source="Dragon Magazine 402">
+		<Category> ID_FMP_FEAT_3738 </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
+		<specific name="Short Description"> You gain proficiency with the Staff implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Staff implement.
+	</RulesElement>
+	<RulesElement name="White Lotus Dueling Expertise (Wand)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_WAND" source="Dragon Magazine 402">
+		<Category> ID_FMP_FEAT_3738 </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
+		<specific name="Short Description"> You gain proficiency with the Wand implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Wand implement.
+	</RulesElement>
+	<RulesElement name="Eldritch Fusillade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3739" source="Dragon Magazine 402">
+		<Prereqs> Artificer, Crossbow Caster feat or Spell Commander paragon path </Prereqs>
+		<print-prereqs> Artificer, Crossbow Caster feat or Spell Commander paragon path </print-prereqs>
+		<Flavor> Your hands move with surety of purpose and economy of motion as you prepare to unleash a torrent of bolts, both magical and physical, against your enemies. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +1 expertise bonus to attack rolls that you make with a crossbow or wand. Draw or stow a wand and load crossbow as free action. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="weapon,crossbow group:attack" value="+1" type="Expertise" />
+			<statadd name="wand implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="implement,crossbow group:attack" value="+1" type="Expertise" />
+		</rules>	
+You gain a +1 expertise bonus to attack rolls that you make with a crossbow or a wand.
+	You can also draw or stow a wand once per round as a free action on your turn, and you can load a crossbow as a free action.
+	</RulesElement>
+	<RulesElement name="Battle Song Expertise" type="Feat" internal-id="ID_FMP_FEAT_3740" source="Dragon Magazine 402">
+		<Prereqs> Bard </Prereqs>
+		<print-prereqs> Bard </print-prereqs>
+		<Flavor> Magic creates and is created by song, a fact that few understand better than you do. You specialize in the tools of the bard, be they weapons or instruments. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a +1 expertise bonus to attack rolls you make with weapons and bard implements. You also gain a +1 bonus to the number of squares that you can push, pull, or slide creatures. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="instrument implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="wand implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="weapon:attack" value="+1" type="Expertise" />
+		</rules>	
+You gain a +1 expertise bonus to attack rolls you make with any weapon with which you have proficiency and with a wand or another item designated as a bard implement.
+	You also gain a +1 feat bonus to the number of squares that you can pull, push, or slide creatures with your bard attacks and bard paragon path attacks.
+	</RulesElement>
+	<RulesElement name="Devout Protector Expertise" type="Feat" internal-id="ID_FMP_FEAT_3741" source="Dragon Magazine 402">
+		<Flavor> The power of your faith shines from both your holy symbol and your weapon, enhancing your attacks and your shield at the same time. </Flavor>
+		<Prereqs> Can use the Holy Symbol implement </Prereqs>
+		<print-prereqs> Proficiency with holy symbols </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain +1 expertise bonus to weapon attack rolls you make with any one-handed melee weapon and a +1 expertise bonus to holy symbol implement attacks. While you use a shield, your allies gain a +1 shield bonus to AC. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="holy symbol implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="one-hand:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls you make with any one-handed melee weapon and a +1 expertise bonus to implement attack rolls you make with holy symbols.
+   In addition, while you use a shield, your allies gain a +1 shield bonus to AC.
+	</RulesElement>
+	<RulesElement name="War Wizard's Expertise" type="Feat" internal-id="ID_FMP_FEAT_3743" source="Dragon Magazine 402">
+		<Prereqs> Any arcane class </Prereqs>
+		<print-prereqs> Any arcane class </print-prereqs>
+		<Flavor> While the techniques of channeling arcane power with a bladed weapon were said to have been discovered by the race that became the elves, drow, and eladrin, variants have since spread far and wide. You have mastered one of these special talents that not only enhances your attacks but gives your friends a measure of protection from those same strikes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a +1 expertise bonus to the attack rolls of arcane attack powers and basic attacks made with a light blade or a heavy blade, and take a -5 penalty to hit your allies. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="War Wizard's Expertise" value="+1" />
+			<statadd name="arcane,heavy blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+			<statadd name="arcane,light blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+			<statadd name="melee basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+			<statadd name="melee basic,light blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+			<statadd name="ranged basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+			<statadd name="ranged basic,light blade group:attack" value="+War Wizard's Expertise" type="Expertise" />
+		</rules>	
+You gain a +1 expertise bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade.
+	Also, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies.
+	</RulesElement>
+	<RulesElement name="Flail Expertise" type="Feat" internal-id="ID_FMP_FEAT_3603" source="Mordenkainen's Magnificent Emporium">
+		<Flavor> The flail requires a mix of speed and power, a style that you have perfected over long hours of training. With a sweeping attack, you entangle a foe and send it tumbling to the ground. </Flavor>
+		<specific name="Short Description"> +1 to weapon attack rolls made with flail; choose to knock enemies prone instead of sliding enemy </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Flail Expertise" value="+1" />
+			<statadd name="weapon,flail group:attack" value="+Flail Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a flail.
+	In addition, when you hit with a melee weapon attack using a flail and the attack lets you slide the target, you can knock the target prone instead of sliding it.
+	</RulesElement>
+	<RulesElement name="Pick Expertise" type="Feat" internal-id="ID_FMP_FEAT_3609" source="Mordenkainen's Magnificent Emporium">
+		<Flavor> The pick is a favored weapon of dwarves, gnomes, and others that must battle giants. Its curved point makes it an excellent weapon for striking at a foe's feet, particularly against larger foes such as giants or ogres. Of course, to a halfling or gnome a human is a larger foe. </Flavor>
+		<specific name="Short Description"> +1 to weapon attack rolls made with pick; +1/2/3 by tier to damage rolls made with pick against enemies with larger size category </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Pick Expertise" value="+1" />
+			<statadd name="Pick Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Pick Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="weapon,pick group:attack" value="+1" type="Expertise" />
+			<statadd name="weapon,pick group:damage" value="+Pick Expertise" type="Feat" condition="against any enemy that has a size category larger than yours when using a pick" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a pick.
+	In addition, you gain a +1 bonus to pick damage rolls against any enemy that has a size category larger than yours. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Polearm Expertise" type="Feat" internal-id="ID_FMP_FEAT_3611" source="Mordenkainen's Magnificent Emporium">
+		<Flavor> With proper training, a polearm's length provides both an offensive and a defensive edge. When you attack, you keep your foes at a distance. When they close to attack, the polearm's size makes it ideal for parrying. </Flavor>
+		<specific name="Short Description"> +1 to weapon attack rolls made with polearms; gain a +2 bonus to all defenses against charge attacks </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="polearm Expertise" value="+1" />
+			<statadd name="weapon,polearm group:attack" value="+polearm Expertise" type="Expertise" />
+			<statadd name="AC" value="+2" type="Feat" condition="against charge attacks"/>
+			<statadd name="Fortitude Defense" value="+2" type="feat" condition="against charge attacks"/>
+			<statadd name="Reflex Defense" value="+2" type="feat" condition="against charge attacks"/>
+			<statadd name="Will Defense" value="+2" type="feat" condition="against charge attacks"/>
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls that you make with a polearm.
+	In addition, while you hold a two-handed polearm in both hands, you gain a +2 bonus to all defenses against charge attacks.
+	</RulesElement>
+	<RulesElement name="Mighty Crusader Expertise" type="Feat" internal-id="ID_FMP_FEAT_3742" source="Dragon Magazine 402">
+		<Flavor> You use your weapon to fend off attacks while you unleash your prayers through the symbol of your faith. </Flavor>
+		<Prereqs> Can use the Holy Symbol implement </Prereqs>
+		<print-prereqs> Proficiency with holy symbols </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain a +1 expertise bonus to weapon attack rolls you make with a two-handed melee weapon, and to implement attack rolls you make with a holy symbol. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="holy symbol implement,implement:attack" value="+1" type="Expertise" />
+			<statadd name="two-hands:attack" value="+1" type="Expertise" />
+		</rules>	
+You gain a +1 expertise bonus to weapon attack rolls you make with any two-handed melee weapon and a +1 expertise bonus to implement attack rolls you make with holy symbols.
+	In addition, while you wield a two-handed melee weapon, ranged and area attacks you make with a holy symbol do not provoke opportunity attacks.
+	</RulesElement>
+	<RulesElement name="Totem Expertise" type="Feat" internal-id="ID_FMP_FEAT_3671" source="Heroes of the Feywild">
+		<Flavor> As you master the use of totems, the primal spirits guide your attacks. </Flavor>
+		<specific name="Short Description"> +1 to attack rolls with totems, ignore partial cover and partial concealment on those attacks </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Totem Expertise" value="+1" />
+			<statadd name="totem implement,implement:attack" value="+Totem Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls you make with a totem.
+	Also, you ignore partial cover and partial concealment on implement attacks you make with a totem.
+	</RulesElement>
+	<RulesElement name="Two-Handed Weapon Expertise" type="Feat" internal-id="ID_FMP_FEAT_3672" source="Heroes of the Feywild">
+		<Flavor> You are a master of wielding two-handed melee weapons, and you can deal devastating amounts of damage when you charge. </Flavor>
+		<specific name="Short Description"> +1 to attack rolls with two-handed melee weapons, +1/2/3 to damage rolls of charge attacks with two-handed melee weapons </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Two-Handed Weapon Expertise" value="+1" />
+			<statadd name="Two-Handed Weapon Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Two-Handed Weapon Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="two-hands:attack" value="+1" type="Expertise" />
+			<statadd name="two-hands:damage" value="+Two-Handed Weapon Expertise" condition="on a charge" />
+		</rules>
+You gain a +1 expertise bonus to weapon attack rolls you make with a two-handed melee weapon.
+	In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Wand)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with wands </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="wand implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with wands.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Rod)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with rods </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="rod implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with rods.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Orb)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ORB)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with orbs </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="orb implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with orbs.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Holy Symbol)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(HOLY_SYMBOL)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with holy symbols </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="holy symbol implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with holy symbols.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Totem)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(TOTEM)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with totems </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="totem implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with totems.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Tome)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(TOME)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with tomes </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="tome implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with tomes.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Ki Focuses)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(KI_FOCUSES)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with ki focuses </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="ki focuses implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with ki focuses.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Instrument)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(INSTRUMENT)" source="Player's Handbook 3">
+		<Category> Versatile Expertise Implement </Category>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description">  +1 to attack rolls with instruments </specific>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<rules>
+			<statadd name="instrument implement:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls with musical instruments.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Mace)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(MACE)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Maces. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Mace group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Mace.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Light Blade)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Light Blades. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Light Blade group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Light Blade.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Staff)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(STAFF)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Staffs. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Staff group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Staff.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Heavy Blade)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Heavy Blades. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Heavy Blade group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Heavy Blade.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Axe)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(AXE)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Axes. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Axe group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Axe.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Flail)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(FLAIL)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Flails. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Flail group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Flail.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Hammer)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(HAMMER)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Hammers. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Hammer group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Hammer.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Pick)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(PICK)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Picks. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Pick group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Pick.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Polearm)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(POLEARM)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Polearms. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Polearm group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Polearm.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Unarmed)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(UNARMED)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Unarmeds. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Unarmed group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Unarmed.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Crossbow)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(CROSSBOW)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Crossbows. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="crossbow group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Crossbow.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Sling)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(SLING)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Slings. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="sling group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Sling.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Bow)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(BOW)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Bows. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Bow group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Bow.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Spear)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(SPEAR)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Spears. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Spear group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Spear.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Garrote)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(GARROTE)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Garrotes. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Garrote group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Garrote.
+	</RulesElement>
+	<RulesElement name="Versatile Expertise (Blowgun)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(BLOWGUN)" source="Player's Handbook 3">
+		<Category> ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT </Category>
+		<specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+		<specific name="Short Description">  +1 to attack rolls with Blowguns. </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Blowgun group:attack" value="+1" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls through a Blowgun.
+	</RulesElement>
+	<RulesElement name="Tome Expertise" type="Feat" internal-id="ID_FMP_FEAT_3736" source="Heroes of the Elemental Chaos">
+		<Flavor> The tomes you study reveal ancient and dangerous secrets. Your
+familiarity with these books lets you access their power more easily and make your conjurations and summoned monsters more fearsome. </Flavor>
+		<specific name="Short Description"> +1 to attack rolls with tomes, enemies adjacent to your conjurations or summoned creatures grant combat advantage </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="Tome Expertise" value="+1" />
+			<statadd name="tome,implement:attack" value="+Tome Expertise" type="Expertise" />
+		</rules>
+You gain a +1 expertise bonus to implement attack rolls that you make with a tome.
+	In addition, enemies adjacent to your conjurations or summoned creatures grant combat advantage. An enemy that is immune to fear is immune to this effect.
+	</RulesElement>
+	<RulesElement name="Draconic Spellcaster" type="Feat" internal-id="ID_FMP_FEAT_1125" source="Arcane Power" revision-date="8/27/2010 12:18:40 PM" >
+		<Prereqs> Dragonborn, any arcane class </Prereqs>
+		<print-prereqs> Dragonborn, any arcane class </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to attacks that have same damage type as your breath weapon </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Draconic Spellcaster" value="+1" />
+			<statadd name="Draconic Spellcaster" value="+1" requires="15 level" />
+			<statadd name="Draconic Spellcaster" value="+1" requires="25 level" />
+			<statadd name="arcane,acid:attack" value="+1" type="Expertise" requires="Dragon Breath Acid" />
+			<statadd name="arcane,cold:attack" value="+1" type="Expertise" requires="Dragon Breath Cold" />
+			<statadd name="arcane,fire:attack" value="+1" type="Expertise" requires="Dragon Breath Fire" />
+			<statadd name="arcane,lightning:attack" value="+1" type="Expertise" requires="Dragon Breath Lightning" />
+			<statadd name="arcane,poison:attack" value="+1" type="Expertise" requires="Dragon Breath Poison" />
+			<statadd name="arcane,radiant:attack" value="+1" type="Expertise" requires="Dragon Breath Radiant" />
+			<statadd name="arcane,thunder:attack" value="+1" type="Expertise" requires="Dragon Breath Thunder" />
+			<statadd name="arcane,acid:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Acid" />
+			<statadd name="arcane,cold:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Cold" />
+			<statadd name="arcane,fire:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Fire" />
+			<statadd name="arcane,lightning:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Lightning" />
+			<statadd name="arcane,poison:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Poison" />
+			<statadd name="arcane,radiant:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Radiant" />
+			<statadd name="arcane,thunder:damage" value="+Draconic Spellcaster" type="feat" requires="Dragon Breath Thunder" />
+		</rules>
+You gain a +1 expertise bonus to attack rolls when you use an arcane power that deals the same damage type as your breath weapon.
+In addition, you gain a +1 feat bonus to damage rolls with those powers. This bonus increases to +2 at 15th level and to +3 at 25th level.
+	</RulesElement>
+	
+</D20Rules>

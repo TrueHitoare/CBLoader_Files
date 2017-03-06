@@ -1,0 +1,193 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+<!--   <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Racial.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Racial.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Racial.txt</VersionAddress>
+  </UpdateInfo> -->
+
+	<RulesElement name="Darkfire" type="Power" internal-id="ID_FMP_POWER_1831" source="Forgotten Realms Player&apos;s Guide" revision-date="8/27/2010 11:26:29 AM" >
+      <Category> ID_FMP_RACIAL_TRAIT_565,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+      <Flavor> A flickering halo of purple light surrounds the target, making it easier to hit. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Drow Racial Power </specific>
+      <specific name="Keywords" />
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Primary ability +4 vs. Reflex
+Level 11: +6
+Level 21: +8 </specific>
+      <specific name="Hit"> Until the end of your next turn, all attacks against the target have combat advantage, and the target cannot benefit from invisibility or concealment. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_565 </specific>
+	  <rules>
+		<statadd name="Darkfire:attack" value="+4" type="Darkfire" />
+		<statadd name="Darkfire:attack" value="+6" type="Darkfire" requires="Paragon" />
+		<statadd name="Darkfire:attack" value="+8" type="Darkfire" requires="Epic" />
+	  </rules>
+   </RulesElement>
+   
+   <!-- <AppendNodes name="Dragon Breath" type="Power" internal-id="ID_FMP_POWER_1448" source="Player's Handbook" revision-date="8/27/2010 11:25:06 AM">
+	<rules>
+		<modify name="this" Field="Attack" value="Primary ability +2 vs. Reflex" />
+		<modify name="this" Field="Hit" value="1d6 + ability modifier damage. 
+Increase to +4 bonus and 2d6 + ability modifier damage at 11th level, and to +6 bonus and 3d6 + ability modifier damage at 21st level." />
+		<modify name="this" Field="Special" value="When you create your character, choose a damage type: acid, cold, fire, lightning, or poison. Your Dragon Breath deals that type of damage. This choice remains throughout your character's life and does not change the power's other effects." />
+		<drop select="Dragon Breath Key Ability" />
+	</rules>
+   </AppendNodes> -->
+   
+   <!-- <RulesElement name="Dragon Breath" type="Power" internal-id="ID_FMP_POWER_1448" source="Player's Handbook" revision-date="8/27/2010 11:25:06 AM">
+    <Category> ID_FMP_RACIAL_TRAIT_6,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> As you open your mouth with a roar, the deadly power of your draconic kin blasts forth to engulf your foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dragonborn Racial Power </specific>
+    <specific name="Keywords"></specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Targets"> All creatures in area. </specific>
+    <specific name="Attack"> Primary ability +2 vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + ability modifier damage. 
+Increase to +4 bonus and 2d6 + ability modifier damage at 11th level, and to +6 bonus and 3d6 + ability modifier damage at 21st level. </specific>
+    <specific name="Special"> When you create your character, choose a damage type: acid, cold, fire, lightning, or poison. Your Dragon Breath deals that type of damage. This choice remains throughout your character's life and does not change the power's other effects. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_6 </specific>
+    <rules>
+      <select type="Racial Trait" number="1" Category="Dragon Breath,Element Choice">
+Dragon Breath Damage Type
+         </select>
+    </rules>
+  </RulesElement> -->
+
+   <RulesElement name="Dragon Breath" type="Power" internal-id="ID_FMP_POWER_1448" source="Player&apos;s Handbook" revision-date="8/27/2010 11:25:06 AM" >
+      <Category> ID_FMP_RACIAL_TRAIT_6,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+      <Flavor> As you open your mouth with a roar, the deadly power of your draconic kin blasts forth to engulf your foes. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Dragonborn Racial Power </specific>
+      <specific name="Keywords">  </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close blast 3 </specific>
+      <specific name="Targets"> Each creature in blast. </specific>
+      <specific name="Attack"> Primary ability +2 vs. Reflex
+Level 11: +4
+Level 21: +6 </specific>
+      <specific name="Hit"> 1d6 + ability modifier damage.
+Level 11: 2d6 + ability modifier damage.
+Level 21: 3d6 + ability modifier damage.</specific>
+      <specific name="Special"> When you create your character, choose a damage type: acid, cold, fire, lightning, or poison. Your Dragon Breath deals that type of damage. This choice remains throughout your character's life and does not change the power's other effects. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_6 </specific>
+      <rules>
+         <select type="Racial Trait" number="1" Category="Dragon Breath,Element Choice" >
+Dragon Breath Damage Type
+         </select>
+	<statadd name="DragonBreathBonus" value="+2" />
+	<statadd name="DragonBreathBonus" value="+2" requires="Paragon" />
+	<statadd name="DragonBreathBonus" value="+2" requires="Epic" />
+	<statadd name="Dragon Breath:attack" value="+DragonBreathBonus" />
+      </rules>
+   </RulesElement>
+
+<RulesElement name="Argent Breath" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2556" source="Dragon Magazine 385" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 11 </Category>
+      <specific name="Short Description"> Deal cold damage with dragon breath; deal additional 1d6 damage (2d6 at 21st) and slow target </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+      <specific name="Level"> 11 </specific>
+      <rules>
+         <modify name="Dragon Breath" type="Power" Field="Keywords" list-addition="Cold" />
+         <grant name="Argent Breath (Paragon)" />
+         <grant name="Argent Breath (Epic)" Level="21" />
+	<grant name="Dragon Breath Cold" type="Racial Trait" />
+      </rules>
+Your dragon breath racial power deals cold damage in addition to any damage type it dealt previously. Also, when you hit a creature with dragon breath, the target takes 1d6 extra damage (2d6 extra at 21st level) and is slowed until the end of your next turn.
+   </RulesElement>
+
+<RulesElement name="Argent Breath (Paragon)" type="Class Feature" internal-id="ID_KDM_ARGENT_BREATH_(PARAGON)" source="KDM" >
+      <Category> 11 </Category>
+      <specific name="Short Description"> Deal cold damage with dragon breath; deal additional 1d6 damage (2d6 at 21st) and slow target </specific>
+      <specific name="Level"> 11 </specific>
+      <rules>
+         <textstring name="Dragon Breath:damage" value="+1d6" requires="!Epic Tier" />
+      </rules>
+Your dragon breath racial power deals cold damage in addition to any damage type it dealt previously. Also, when you hit a creature with dragon breath, the target takes 1d6 extra damage and is slowed until the end of your next turn.
+   </RulesElement>
+
+<RulesElement name="Argent Breath (Epic)" type="Class Feature" internal-id="ID_KDM_ARGENT_BREATH_(EPIC)" source="KDM" >
+      <Category> 21 </Category>
+      <specific name="Short Description"> Deal cold damage with dragon breath; deal additional 1d6 damage (2d6 at 21st) and slow target </specific>
+      <specific name="Level"> 21 </specific>
+      <rules>
+	 <drop name="Argent Breath (Paragon)" />
+         <textstring name="Dragon Breath:damage" value="+2d6" />
+      </rules>
+Your dragon breath racial power deals cold damage in addition to any damage type it dealt previously. Also, when you hit a creature with dragon breath, the target takes 2d6 extra damage and is slowed until the end of your next turn.
+   </RulesElement>
+
+   <RulesElement name="Reliable Breath" type="Feat" internal-id="ID_KDM_FEAT_TRUSTED_DRAGON_BREATH" source="KDM" >
+      <Prereqs> 21st level, dragonborn; Epic Tier </Prereqs>
+      <print-prereqs> 21st level, dragonborn </print-prereqs>
+      <specific name="Tier"> Epic </specific>
+      <specific name="Short Description"> Dragon Breath deals half damage on miss </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <modify name="Dragon Breath" Field="Miss" value="Half damage." />
+      </rules>
+Your dragon breath deals half damage on a miss.
+   </RulesElement>
+
+<AppendNodes name="Breath Mastery" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2163" source="Player&apos;s Handbook Races: Dragonborn" revision-date="10/5/2010 1:47:06 PM" >
+	<rules>
+	<grant name="Dragon Breath Acid" type="Racial Trait" requires="!Dragon Breath Acid" />
+	<grant name="Dragon Breath Cold" type="Racial Trait" requires="!Dragon Breath Cold" />
+	<grant name="Dragon Breath Fire" type="Racial Trait" requires="!Dragon Breath Fire" />
+	<grant name="Dragon Breath Lightning" type="Racial Trait" requires="!Dragon Breath Lightning" />
+	<grant name="Dragon Breath Poison" type="Racial Trait" requires="!Dragon Breath Poison" />
+	</rules>
+   </AppendNodes>
+
+   <AppendNodes name="Hurl Breath" type="Feat" internal-id="ID_FMP_FEAT_725" source="Player&apos;s Handbook Races: Dragonborn,Dragon Magazine 365" revision-date="8/27/2010 12:18:11 PM" >
+	<rules>
+		<modify name="Dragon Breath" Field="Attack Type" value="Close blast 3 or area burst 2 within 10" />
+	</rules>
+   </AppendNodes>
+
+<AppendNodes name="Empowered Dragon Breath" type="Feat" internal-id="ID_FMP_FEAT_313" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:58 PM" >
+      <rules>
+         <modify name="Dragon Breath" type="Power" Field="Hit" value="2d10 + ability modifier damage." />
+		 <grant name="Empowered Dragon Breath (Epic)" type="Feat" Level="21" />
+      </rules>
+   </AppendNodes>
+   
+<RulesElement name="Empowered Dragon Breath (Epic)" type="Feat" internal-id="ID_KDM_EMPOWERED_DRAGON_BREATH_(EPIC)" source="KDM" >
+      <Prereqs> Unselectable </Prereqs>
+      <specific name="Tier"> Paragon </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <modify name="Dragon Breath" type="Power" Field="Hit" value="3d10 + ability modifier damage." />
+      </rules>
+Use d10s for the damage roll of your dragon breath power instead of d6s.
+   </RulesElement>
+   
+<AppendNodes name="Bolstering Breath" type="Feat" internal-id="ID_FMP_FEAT_2176" source="Player&apos;s Handbook Races: Dragonborn" revision-date="8/27/2010 12:19:51 PM" >
+      	<rules>
+		<modify name="Dragon Breath" Field="Target" value="Each enemy in blast" />
+	</rules>
+</AppendNodes>
+
+<RulesElement name="Powerful Breath" type="Feat" internal-id="ID_FMP_FEAT_2206" source="Player&apos;s Handbook Races: Dragonborn" revision-date="8/27/2010 12:19:53 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+</D20Rules>

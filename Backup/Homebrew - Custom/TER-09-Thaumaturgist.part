@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>25-December-2013</Version>
+    <Filename>TER-09-Thaumaturgist.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Thaumaturgist.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Thaumaturgist.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Thaumaturgist -->
+  <!-- TER-09-Thaumaturgist.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 23-December-2013 Added the two at-will powers and all thaumaturge feats
+ Updated 25-December-2013 Fixed the class to pull all warlock powers appropriately.
+</Changelog>
+  <MassAppend ids="ID_INTERNAL_SKILL_TRAINING_BLUFF,ID_INTERNAL_SKILL_TRAINING_DIPLOMACY,ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING,ID_INTERNAL_SKILL_TRAINING_ENDURANCE,ID_INTERNAL_SKILL_TRAINING_HISTORY,ID_INTERNAL_SKILL_TRAINING_INSIGHT,ID_INTERNAL_SKILL_TRAINING_INTIMIDATE,ID_INTERNAL_SKILL_TRAINING_PERCEPTION,ID_INTERNAL_SKILL_TRAINING_RELIGION">
+    <Category>TER_CLASS_003</Category>
+  </MassAppend>
+	<AppendNodes name="Mind Shadows" type="Power" internal-id="ID_FMP_POWER_13913" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Echoing Dirge" type="Power" internal-id="ID_FMP_POWER_13902" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+		<Category> TER_CLASS_003,1 </Category>
+	</AppendNodes>
+	<AppendNodes name="Fascinating Shadows" type="Power" internal-id="ID_WOG_D404_BINDER_POWER_2" source="Dragon Magazine 406">
+		<Category> TER_CLASS_003,1 </Category>
+	</AppendNodes>
+  <!--
+  <MassAppend ids="ID_FMP_POWER_5902,ID_FMP_POWER_4052,ID_FMP_POWER_4170,ID_FMP_POWER_5903,ID_FMP_POWER_4062,ID_FMP_POWER_6856,ID_FMP_POWER_6857,ID_FMP_POWER_6855,ID_FMP_POWER_12889,ID_FMP_POWER_12888,ID_FMP_POWER_12887,ID_FMP_POWER_10378,ID_FMP_POWER_10379,ID_FMP_POWER_11303,ID_FMP_POWER_15902,ID_FMP_POWER_16256,ID_FMP_POWER_7402,ID_FMP_POWER_222,ID_FMP_POWER_1460,ID_FMP_POWER_1457,ID_FMP_POWER_1333,ID_FMP_POWER_1323,ID_FMP_POWER_1458,ID_FMP_POWER_1376,ID_FMP_POWER_4068,ID_FMP_POWER_4069,ID_FMP_POWER_5912,ID_FMP_POWER_12891,ID_FMP_POWER_15903,ID_FMP_POWER_1341,ID_FMP_POWER_1401,ID_FMP_POWER_4076,ID_FMP_POWER_6858,ID_FMP_POWER_6859,ID_FMP_POWER_12892,ID_FMP_POWER_10381,ID_FMP_POWER_11304,ID_FMP_POWER_1343,ID_FMP_POWER_62,ID_FMP_POWER_5919,ID_FMP_POWER_4177,ID_FMP_POWER_4094,ID_FMP_POWER_12894,ID_FMP_POWER_15904,ID_FMP_POWER_15905,ID_FMP_POWER_501,ID_FMP_POWER_1462,ID_FMP_POWER_4098,ID_FMP_POWER_6860,ID_FMP_POWER_6861,ID_FMP_POWER_12895,ID_FMP_POWER_7506,ID_FMP_POWER_10384,ID_FMP_POWER_11305,ID_FMP_POWER_4287,ID_FMP_POWER_16494,ID_FMP_POWER_1473,ID_FMP_POWER_1314,ID_FMP_POWER_5923,ID_FMP_POWER_5924,ID_FMP_POWER_12897,ID_FMP_POWER_15906,ID_FMP_POWER_1463,ID_FMP_POWER_35,ID_FMP_POWER_1335,ID_FMP_POWER_4216,ID_FMP_POWER_6862,ID_FMP_POWER_6863,ID_FMP_POWER_12898,ID_FMP_POWER_6957,ID_FMP_POWER_10386,ID_FMP_POWER_10387,ID_FMP_POWER_11306,ID_FMP_POWER_1304,ID_FMP_POWER_1317,ID_FMP_POWER_1405,ID_FMP_POWER_6864,ID_FMP_POWER_5933,ID_FMP_POWER_6865,ID_FMP_POWER_12900,ID_FMP_POWER_15907,ID_FMP_POWER_1465,ID_FMP_POWER_6866,ID_FMP_POWER_6867,ID_FMP_POWER_5935,ID_FMP_POWER_12901,ID_FMP_POWER_10389,ID_FMP_POWER_11307,ID_FMP_POWER_15908,ID_FMP_POWER_5939,ID_FMP_POWER_4303,ID_FMP_POWER_12903,ID_FMP_POWER_15909,ID_FMP_POWER_4296,ID_FMP_POWER_1470,ID_FMP_POWER_5940,ID_FMP_POWER_6870,ID_FMP_POWER_6871,ID_FMP_POWER_12904,ID_FMP_POWER_11308,ID_FMP_POWER_510,ID_FMP_POWER_1324,ID_FMP_POWER_5946,ID_FMP_POWER_5947,ID_FMP_POWER_5949,ID_FMP_POWER_12905,ID_FMP_POWER_15910,ID_FMP_POWER_1467,ID_FMP_POWER_1345,ID_FMP_POWER_5953,ID_FMP_POWER_6872,ID_FMP_POWER_6873,ID_FMP_POWER_12906,ID_FMP_POWER_11309,ID_FMP_POWER_1313,ID_FMP_POWER_505,ID_FMP_POWER_4055,ID_FMP_POWER_4051,ID_FMP_POWER_5905,ID_FMP_POWER_5904,ID_FMP_POWER_12889,ID_FMP_POWER_12888,ID_FMP_POWER_12887,ID_FMP_POWER_7428,ID_FMP_POWER_12307,ID_FMP_POWER_12308,ID_WOG_D404_BINDER_POWER_3,ID_FMP_POWER_4279,ID_FMP_POWER_4277,ID_FMP_POWER_4278,ID_FMP_POWER_1918,ID_FMP_POWER_1868,ID_FMP_POWER_3404,ID_FMP_POWER_1881,ID_FMP_POWER_3403,ID_FMP_POWER_13902,ID_FMP_POWER_13878,ID_FMP_POWER_13904,ID_FMP_POWER_13952,ID_FMP_POWER_13877,ID_FMP_POWER_13914,ID_FMP_POWER_13879,ID_FMP_POWER_16256,ID_FMP_POWER_16261,ID_FMP_POWER_13635,ID_FMP_POWER_13634,ID_FMP_POWER_13636,ID_FMP_POWER_13637,ID_FMP_POWER_7402,ID_FMP_POWER_1471,ID_FMP_POWER_1457,ID_FMP_POWER_1319,ID_FMP_POWER_1334,ID_FMP_POWER_1333,ID_FMP_POWER_1456,ID_FMP_POWER_1459,ID_FMP_POWER_5910,ID_FMP_POWER_5911,ID_FMP_POWER_4070,ID_FMP_POWER_12891,ID_FMP_POWER_12309,ID_WOG_D404_BINDER_POWER_4,ID_FMP_POWER_4281,ID_FMP_POWER_3405,ID_FMP_POWER_1886,ID_FMP_POWER_13905,ID_FMP_POWER_13915,ID_FMP_POWER_1400,ID_FMP_POWER_661,ID_FMP_POWER_5913,ID_FMP_POWER_5914,ID_FMP_POWER_5915,ID_FMP_POWER_12892,ID_FMP_POWER_6954,ID_FMP_POWER_4282,ID_FMP_POWER_3406,ID_FMP_POWER_1883,ID_FMP_POWER_13955,ID_FMP_POWER_13882,ID_FMP_POWER_13883,ID_FMP_POWER_13644,ID_FMP_POWER_13645,ID_FMP_POWER_1320,ID_FMP_POWER_1472,ID_FMP_POWER_13752,ID_WOG_D404_BINDER_POWER_5,ID_FMP_POWER_13672,ID_FMP_POWER_4093,ID_FMP_POWER_4095,ID_FMP_POWER_4097,ID_FMP_POWER_12894,ID_FMP_POWER_7437,ID_FMP_POWER_12310,ID_FMP_POWER_13449,ID_FMP_POWER_4285,ID_FMP_POWER_4286,ID_FMP_POWER_1872,ID_FMP_POWER_1871,ID_FMP_POWER_13916,ID_FMP_POWER_13906,ID_FMP_POWER_1461,ID_FMP_POWER_1351,ID_FMP_POWER_4115,ID_FMP_POWER_4109,ID_FMP_POWER_12895,ID_FMP_POWER_6955,ID_FMP_POWER_4287,ID_FMP_POWER_1873,ID_FMP_POWER_1921,ID_FMP_POWER_16494,ID_FMP_POWER_1474,ID_FMP_POWER_1408,ID_WOG_D404_MASTER_BINDER_POWER_1,ID_FMP_POWER_4189,ID_FMP_POWER_4193,ID_FMP_POWER_5925,ID_FMP_POWER_12897,ID_FMP_POWER_12311,ID_WOG_D404_BINDER_POWER_6,ID_FMP_POWER_4289,ID_FMP_POWER_1888,ID_FMP_POWER_1875,ID_FMP_POWER_13918,ID_FMP_POWER_13908,ID_FMP_POWER_1369,ID_FMP_POWER_5926,ID_FMP_POWER_4219,ID_FMP_POWER_12898,ID_FMP_POWER_6957,ID_FMP_POWER_4291,ID_FMP_POWER_4290,ID_FMP_POWER_1885,ID_FMP_POWER_3409,ID_FMP_POWER_13958,ID_FMP_POWER_13893,ID_FMP_POWER_16267,ID_FMP_POWER_13656,ID_FMP_POWER_13657,ID_FMP_POWER_1475,ID_FMP_POWER_4227,ID_FMP_POWER_5930,ID_FMP_POWER_12900,ID_FMP_POWER_12312,ID_WOG_D404_BINDER_POWER_7,ID_FMP_POWER_4293,ID_FMP_POWER_1876,ID_FMP_POWER_1892,ID_FMP_POWER_13909,ID_FMP_POWER_13919,ID_FMP_POWER_1466,ID_FMP_POWER_1464,ID_FMP_POWER_16269,ID_FMP_POWER_4248,ID_FMP_POWER_4246,ID_FMP_POWER_12901,ID_FMP_POWER_7507,ID_FMP_POWER_4294,ID_FMP_POWER_3411,ID_FMP_POWER_1890,ID_FMP_POWER_13960,ID_FMP_POWER_13896,ID_FMP_POWER_13897,ID_FMP_POWER_13663,ID_FMP_POWER_13664,ID_FMP_POWER_1312,ID_FMP_POWER_1374,ID_WOG_D404_BINDER_POWER_8,ID_FMP_POWER_6868,ID_FMP_POWER_6869,ID_FMP_POWER_12903,ID_FMP_POWER_12313,ID_FMP_POWER_3412,ID_FMP_POWER_1877,ID_FMP_POWER_13920,ID_FMP_POWER_13910,ID_FMP_POWER_426,ID_FMP_POWER_1469,ID_FMP_POWER_5941,ID_FMP_POWER_5945,ID_FMP_POWER_12904,ID_FMP_POWER_3413,ID_FMP_POWER_3414,ID_FMP_POWER_1381,ID_FMP_POWER_5948,ID_FMP_POWER_12905,ID_FMP_POWER_12314,ID_WOG_D404_BINDER_POWER_9,ID_FMP_POWER_4298,ID_FMP_POWER_1879,ID_FMP_POWER_13921,ID_FMP_POWER_13911,ID_FMP_POWER_1468,ID_FMP_POWER_5951,ID_FMP_POWER_5952,ID_FMP_POWER_12906,ID_FMP_POWER_4299,ID_FMP_POWER_1882,ID_FMP_POWER_3415,ID_FMP_POWER_13900,ID_FMP_POWER_13961,ID_FMP_POWER_16271,ID_FMP_POWER_13668,ID_FMP_POWER_1476,ID_FMP_POWER_6956,ID_FMP_POWER_4223,ID_FMP_POWER_1296,ID_FMP_POWER_4250,ID_FMP_POWER_12890,ID_FMP_POWER_13646,ID_FMP_POWER_1299,ID_FMP_POWER_4126,ID_FMP_POWER_13887,ID_FMP_POWER_10385,ID_FMP_POWER_4292,ID_FMP_POWER_5907,ID_FMP_POWER_12902,ID_FMP_POWER_16265,ID_FMP_POWER_10351,ID_FMP_POWER_208,ID_FMP_POWER_4125,ID_FMP_POWER_1326,ID_FMP_POWER_1926,ID_FMP_POWER_13658,ID_FMP_POWER_4120,ID_FMP_POWER_4063,ID_FMP_POWER_13659,ID_FMP_POWER_13650,ID_FMP_POWER_1336,ID_FMP_POWER_7404,ID_FMP_POWER_750,ID_FMP_POWER_1928,ID_FMP_POWER_1478,ID_FMP_POWER_5908,ID_FMP_POWER_12899,ID_FMP_POWER_10352,ID_FMP_POWER_4280,ID_FMP_POWER_5909,ID_FMP_POWER_2264,ID_FMP_POWER_729,ID_FMP_POWER_13660,ID_FMP_POWER_16268,ID_FMP_POWER_4226,ID_FMP_POWER_547,ID_FMP_POWER_13648,ID_FMP_POWER_12896,ID_FMP_POWER_4087,ID_FMP_POWER_13665,ID_FMP_POWER_4085,ID_FMP_POWER_13956,ID_FMP_POWER_16266,ID_FMP_POWER_13894,ID_FMP_POWER_4224,ID_FMP_POWER_5918,ID_FMP_POWER_235,ID_FMP_POWER_13959,ID_FMP_POWER_4283,ID_FMP_POWER_4284,ID_FMP_POWER_10380,ID_FMP_POWER_3410,ID_FMP_POWER_12893,ID_FMP_POWER_13957,ID_FMP_POWER_13880,ID_FMP_POWER_13888,ID_FMP_POWER_13954,ID_FMP_POWER_95,ID_FMP_POWER_13885,ID_FMP_POWER_380,ID_FMP_POWER_1924,ID_FMP_POWER_1328,ID_FMP_POWER_1402,ID_FMP_POWER_13652,ID_FMP_POWER_13895,ID_FMP_POWER_13638,ID_FMP_POWER_1368,ID_FMP_POWER_4083,ID_FMP_POWER_1923,ID_FMP_POWER_13653,ID_FMP_POWER_16262,ID_FMP_POWER_5922,ID_FMP_POWER_4288,ID_FMP_POWER_4295,ID_FMP_POWER_10383,ID_FMP_POWER_10388,ID_FMP_POWER_5937,ID_FMP_POWER_4251,ID_FMP_POWER_13886,ID_FMP_POWER_5938,ID_FMP_POWER_662,ID_FMP_POWER_4225,ID_FMP_POWER_207,ID_FMP_POWER_13640">
+    <Category>TER_CLASS_003</Category>
+  </MassAppend>
+  <AppendNodes name="Shadow Claws" type="Power" internal-id="ID_FMP_POWER_13877" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+    <Category>TER_CLASS_003</Category>
+  </AppendNodes>
+	<AppendNodes name="Chromatic Bolt" type="Power" internal-id="ID_FMP_POWER_16256" source="Heroes of the Elemental Chaos">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Hand of Blight" type="Power" internal-id="ID_FMP_POWER_12887" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:31:34 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Hateful Shade" type="Power" internal-id="ID_FMP_POWER_13878" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Web of Shadows" type="Power" internal-id="ID_FMP_POWER_13879" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shade Twin" type="Power" internal-id="ID_FMP_POWER_13880" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Spectral Fade" type="Power" internal-id="ID_FMP_POWER_13638" source="Player Essentials: Heroes of Shadow" revision-date="1/18/2011 4:08:07 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shard of Darkness" type="Power" internal-id="ID_FMP_POWER_13882" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Well of Shadows" type="Power" internal-id="ID_FMP_POWER_13883" source="Player Essentials: Heroes of Shadow" revision-date="3/14/2011 12:14:09 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Ride" type="Power" internal-id="ID_FMP_POWER_13885" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Walk Through Darkness" type="Power" internal-id="ID_FMP_POWER_13886" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM"> 
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Bridge of Shades" type="Power" internal-id="ID_FMP_POWER_13887" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Armor" type="Power" internal-id="ID_FMP_POWER_13888" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Pact Keeper's Pledge" type="Power" internal-id="ID_FMP_POWER_13890" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Menacing Shadow" type="Power" internal-id="ID_FMP_POWER_13891" source="Player Essentials: Heroes of Shadow" revision-date="3/14/2011 12:14:11 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Oubliette of the Void" type="Power" internal-id="ID_FMP_POWER_13893" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Offering of Blood" type="Power" internal-id="ID_FMP_POWER_13894" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Soul of the Void" type="Power" internal-id="ID_FMP_POWER_13895" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Mire" type="Power" internal-id="ID_FMP_POWER_13896" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Star of Death's Omen" type="Power" internal-id="ID_FMP_POWER_13897" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Offering of Magic" type="Power" internal-id="ID_FMP_POWER_13899" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Draining Void" type="Power" internal-id="ID_FMP_POWER_13900" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Legion" type="Power" internal-id="ID_FMP_POWER_13901" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Fascinating Shadows" type="Power" internal-id="ID_WOG_D404_BINDER_POWER_2" source="Dragon Magazine 406">
+		<Category> TER_CLASS_003,1 </Category>
+	</AppendNodes>
+	<AppendNodes name="Echoing Dirge" type="Power" internal-id="ID_FMP_POWER_13902" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+		<Category> TER_CLASS_003,1 </Category>
+	</AppendNodes>
+	<AppendNodes name="Shadow Warp" type="Power" internal-id="ID_FMP_POWER_13903" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Hound of Dark Omen" type="Power" internal-id="ID_FMP_POWER_13904" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Ebon Claws" type="Power" internal-id="ID_FMP_POWER_13905" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Pall of Darkness" type="Power" internal-id="ID_FMP_POWER_13906" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Tide of Night" type="Power" internal-id="ID_FMP_POWER_13907" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Haunting Shadow" type="Power" internal-id="ID_FMP_POWER_13908" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Devouring Tide" type="Power" internal-id="ID_FMP_POWER_13909" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Umbral Radiance" type="Power" internal-id="ID_FMP_POWER_13910" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Umbral Swap" type="Power" internal-id="ID_FMP_POWER_13911" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Hidden Lore" type="Power" internal-id="ID_FMP_POWER_13912" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Mind Shadows" type="Power" internal-id="ID_FMP_POWER_13913" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Tentacles" type="Power" internal-id="ID_FMP_POWER_13914" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Void Blast" type="Power" internal-id="ID_FMP_POWER_13915" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Cyst of Darkness" type="Power" internal-id="ID_FMP_POWER_13916" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Banish to Darkness" type="Power" internal-id="ID_FMP_POWER_13917" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Devouring Dark" type="Power" internal-id="ID_FMP_POWER_13918" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Greater Void Burst" type="Power" internal-id="ID_FMP_POWER_13919" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Inner Void" type="Power" internal-id="ID_FMP_POWER_13920" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Hungry Void" type="Power" internal-id="ID_FMP_POWER_13921" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Malicious Shadow" type="Power" internal-id="ID_FMP_POWER_13952" source="Player Essentials: Heroes of Shadow" revision-date="3/14/2011 12:14:15 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shadow Blend" type="Power" internal-id="ID_FMP_POWER_13954" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Deathly Conduit" type="Power" internal-id="ID_FMP_POWER_13955" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Mirror Darkly" type="Power" internal-id="ID_FMP_POWER_13956" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Shade Dance" type="Power" internal-id="ID_FMP_POWER_13957" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Darkening Fetch" type="Power" internal-id="ID_FMP_POWER_13958" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Reaper's Vengeance" type="Power" internal-id="ID_FMP_POWER_13959" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Darklands Eclipse" type="Power" internal-id="ID_FMP_POWER_13960" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	<AppendNodes name="Drawn to Darkness" type="Power" internal-id="ID_FMP_POWER_13961" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
+	<Category>TER_CLASS_003</Category></AppendNodes>
+	-->
+	<!-- Thaumaturgist Class Features -->
+	<RulesElement name="Thaumaturgist" type="Class" internal-id="TER_CLASS_003" source="Terra Advena" revision-date="8/27/2010 12:40:06 PM">
+		<Flavor> “I believe this calls for a touch of infernal fire... and then we'll splice it with some lingering decay.” </Flavor>
+		<specific name="Key Abilities"> Charisma, Constitution, Intelligence </specific>
+		<specific name="Implements"> Orbs, rods, tomes, wands </specific>
+		<specific name="Armor Proficiencies"> Cloth </specific>
+		<specific name="Weapon Proficiencies"> Dagger, quarterstaff </specific>
+		<specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+		<specific name="Hit Points at 1st Level"> 10+ Constitution Score </specific>
+		<specific name="Hit Points per Level Gained"> 4 </specific>
+		<specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+		<specific name="Trained Skills"> Arcana. From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+		<specific name="Class Skills"> Arcana (Int), Bluff (Cha), Diplomacy (Cha), Dungeoneering (Wis), Endurance (Con), History (Int), Insight (Wis), Intimidate (Cha), Perception (Wis), Religion (Int) </specific>
+		<specific name="Build Options"> Focused Arcanist, Overflowing Vessel </specific>
+		<specific name="_PARSED_CLASS_FEATURE"> Defensive Arcana, Metamagic, Ritual Casting, Thaumaturgic Specialty </specific>
+		<specific name="Role"> Controller. Your attack powers tend to be more focused than those of most controllers, but you have learned to empower your spells such that they have greater area or increased effects. </specific>
+		<specific name="Power Source"> Arcane. You gain your magical power from energy you draw from creatures not native to this world. </specific>
+		<specific name="Creating"> The two basic builds of thaumaturgist are focused arcanist and the overflowing vessel. Thaumaturgists rely on Charisma, Intelligence, and Constitution. No thaumaturgist powers or class features depend on Strength, Dexterity, or Wisdom. </specific>
+		<specific name="Class Features"> You have the following class features. </specific>
+		<specific name="Supplemental" />
+		<specific name="Implement"> </specific>
+		<specific name="Powers"> </specific>
+		<specific name="Power Name"> Spells </specific>
+		<specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+		<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+		<specific name="_SecondaryPowerSourceElement" />
+		<specific name="Secondary Abilities" />
+		<specific name="Hybrid Talent Options" />
+		<specific name="Short Description"> You draw on the abilities of supernatural entities, using their strengths to work your will. </specific>
+		<specific name="_ParentClass"> ID_FMP_CLASS_7,ID_FMP_CLASS_821 </specific>
+		<specific name="Trait Package" />
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_THAUMATURGIST" type="Grants" />
+			<select type="Power" number="2" Category="$$CLASS,at-will,1" />
+			<textstring name="_CLASSNAME" value="TER_CLASS_003" />
+			<statadd name="_LEVEL-ONE-HPS" value="+10" />
+			<statadd name="_PER-LEVEL-HPS" value="+4" />
+			<statadd name="Healing Surges" value="+6" />
+			<select type="Build" number="1" Category="TER_CLASS_003" optional="true" />
+			<statadd name="Fortitude Defense Class Bonus" value="+1" />
+			<statadd name="Will Defense Class Bonus" value="+1" />
+			<select type="Skill Training" number="4" Category="TER_CLASS_003" />
+		</rules>
+For many, the path of the warlock is one of easy power and instant gratification - at the cost of a part of oneself that becomes owed to a creature or energy not of this world. Indeed, for every bit of energy drawn by a warlock, some of it lingers within them, guiding and directing their actions for the betterment of their otherworldly benefactor. Thaumaturgists, however, are those who have learned to wrest power away from such entities, using it as they see fit.
+The thaumaturgist is a strange mix of warlock and wizard. While they draw their power from elsewhere, like warlocks, they do so in a way more typical of a wizard - via arcane ritual and practice, using long-forgotten Names and bindings to coerce and force energy from those distant powers. Where a wizard relies entirely on his knowledge, however, a thaumaturge must wrestle with the forces he commands, and thus prioritizes strength of body or spirit above - but only slightly - facility of the mind.
+Often, the unrepentant siphoning of power by a thaumaturge earns them the enmity of the very spirits they rely on - but just as often, the spirits accept such 'theft' as the price of doing business, and attempt to use more subtle ways to manipulate how a thaumaturge uses their power.
+Rarely, thaumaturgists are born, a sort of sorcererous variant. These thaumaturges are often considered dangerous by their more learned kin, as their natural gifts for calling and drawing upon power come without the years of caution and careful hedging that a trained thaumaturge would require before working such magic.		
+	</RulesElement>
+   <RulesElement name="Thaumaturgist" type="Grants" internal-id="ID_INTERNAL_GRANTS_THAUMATURGIST" source="Terra Advena">
+      <specific name="_SupportsID"> TER_CLASS_003 </specific>
+      <rules>
+         <grant name="ID_FMP_ROLE_1" type="Role" />
+         <grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" type="Proficiency" />
+         <grant name="TER_CLASS_FEATURE_THAUM01" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_THAUM02" type="Class Feature" />
+         <grant name="TER_CLASS_FEATURE_THAUM03" type="Class Feature" />
+         <grant name="ID_FMP_CLASS_FEATURE_683" type="Class Feature" />
+         <grant name="ID_INTERNAL_GRANTS_THAUMATURGIST_IMPLEMENTS" type="Grants" />
+         <statadd name="FREEBEE:ID_FMP_GEAR_31" value="+1" />
+         <grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		 <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass" />
+		 <grant name="ID_INTERNAL_COUNTSASCLASS_BINDER" type="CountsAsClass" />
+     </rules>
+   </RulesElement>
+   <RulesElement name="Thaumaturgist Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_THAUMATURGIST_IMPLEMENTS" source="Terra Advena">
+      <specific name="_SupportsID"> TER_CLASS_003 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TOME)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Defensive Arcana" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM01" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain a defense bonus when you hit with an arcane power </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+		<statadd name="AC" value="+2" condition="when you hit with an arcane power" />
+		<statadd name="Reflex" value="+2" condition="when you hit with an arcane power" />
+      </rules>
+When you hit an enemy with an arcane attack power during your turn, you gain a +2 bonus to AC and Reflex until the end of your next turn.
+   </RulesElement>
+   
+   <RulesElement name="Metamagic" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM02" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Can alter spells on the fly </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> TER_POWER_THAUM_01,TER_POWER_THAUM_02 </specific>
+      <rules>
+         <grant name="TER_POWER_THAUM_01" type="Power" />
+         <grant name="TER_POWER_THAUM_02" type="Power" />
+      </rules>
+Once per round when you make an attack with a thaumaturgist at-will or encounter power, you may opt to apply a metamagic enhancement you know to it. You gain the Explosive Spell and Twin Spell metamagic powers.
+   </RulesElement>
+
+   <RulesElement name="Thaumaturgic Specialty" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM03" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose a thaumaturgic specialty </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> TER_CLASS_FEATURE_THAUM04, TER_CLASS_FEATURE_THAUM05 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="TER_CLASS_FEATURE_THAUM03" />
+      </rules>
+Choose a thaumaturgic specialty. The choice you make gives you several benefits and also provides bonuses to certain thaumaturgist powers, as detailed in those powers.
+   </RulesElement>
+   
+   <RulesElement name="Focused Arcanist" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM04" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> TER_CLASS_FEATURE_THAUM03 </Category>
+      <specific name="Short Description"> Enhance metamagic effects on a specific pact boon </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+		<select type="Class Feature" number="1" Category="Hybrid Pact" />
+		<grant name="ID_INTERNAL_COUNTSASFEATURE_ELDRITCH_PACT" type="CountsAsFeature" />
+		<modify name="TER_POWER_THAUM_01" Field="Focused Arcanist" value="You do normal damage to a single target of the spell." />
+		<modify name="TER_POWER_THAUM_02" Field="Focused Arcanist" value="You gain a +2 power bonus to the attack roll of the secondary attack granted by Twin Spell" />
+	  </rules>
+Your interest lies in a specific form of magic and power, and you more easily draw energy from that source, allowing you to manipulate it to a greater degree than any simple warlock. Choose a pact from the following list: dark pact, elemental pact, fey pact, infernal pact, sorcerer-king pact, star pact, or vestige pact. You benefit from pact-specific rider effects on any powers you use.
+Whenever you apply a metamagic effect to a power that has a pact-specific rider from your chosen pact, you deal full damage to a single target of an explosive spell, and gain a +2 bonus to the repeat attack roll with a twinned spell.
+   </RulesElement>
+   <RulesElement name="Overflowing Vessel" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM05" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> TER_CLASS_FEATURE_THAUM03 </Category>
+      <specific name="Short Description"> Benefit from multiple pact-specific riders on powers </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_COUNTSASPACT_DARK_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_DARK_PACT" type="CountsAsFeature" />
+         <grant name="ID_INTERNAL_COUNTSASPACT_FEY_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_FEY_PACT" type="CountsAsFeature" />
+         <grant name="ID_INTERNAL_COUNTSASPACT_INFERNAL_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_INFERNAL_PACT" type="CountsAsFeature" />
+         <grant name="ID_INTERNAL_COUNTSASPACT_SORCERER-KING_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_SORCERER-KING_PACT" type="CountsAsFeature" />
+         <grant name="ID_INTERNAL_COUNTSASPACT_STAR_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_STAR_PACT" type="CountsAsFeature" />
+         <grant name="ID_INTERNAL_COUNTSASPACT_VESTIGE_PACT" type="CountsAsPact" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_VESTIGE_PACT" type="CountsAsFeature" />
+         <select type="Class Feature" number="1" Category="TER_CLASS_FEATURE_THAUM05" />
+      </rules>
+Where warlocks make deals with a single sponsor who provides them with power, you wrest arcane energy from wherever is most convenient. Whenever you take a short or an extended rest, choose a pact from the following list: dark pact, elemental pact, fey pact, infernal pact, sorcerer-king pact, star pact, or vestige pact. Until you choose another pact, you benefit from pact-specific rider effects on any powers you use.
+In addition, choose Charisma or Constitution. You can use your chosen attribute to replace any occurence of the other in thaumaturge or thaumaturge paragon path powers you use.
+   </RulesElement>
+   <RulesElement name="Charismatic Vessel" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM06" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> TER_CLASS_FEATURE_THAUM05 </Category>
+      <specific name="Short Description"> Use Charisma for all thaumaturge powers </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+		<textstring name="ID_FMP_POWER_4055:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4051:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5905:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5904:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12889:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12888:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12887:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7428:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12307:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12308:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_3:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4279:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4277:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4278:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1918:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1868:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3404:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1881:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3403:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13902:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13878:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13904:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13952:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13877:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13914:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13879:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16256:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16261:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13635:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13634:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13636:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13637:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7402:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1471:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1457:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1319:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1334:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1333:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1456:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1459:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5910:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5911:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4070:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12891:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12309:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_4:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4281:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3405:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1886:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13905:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13915:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1400:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_661:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5913:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5914:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5915:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12892:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6954:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4282:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3406:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1883:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13955:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13882:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13883:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13644:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13645:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1320:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1472:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13752:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_5:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13672:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4093:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4095:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4097:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12894:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7437:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12310:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13449:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4285:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4286:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1872:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1871:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13916:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13906:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1461:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1351:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4115:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4109:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12895:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6955:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4287:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1873:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1921:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16494:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1474:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1408:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_MASTER_BINDER_POWER_1:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4189:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4193:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5925:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12897:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12311:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_6:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4289:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1888:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1875:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13918:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13908:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1369:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5926:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4219:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12898:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6957:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4291:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4290:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1885:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3409:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13958:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13893:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16267:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13656:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13657:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1475:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4227:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5930:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12900:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12312:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_7:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4293:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1876:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1892:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13909:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13919:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1466:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1464:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16269:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4248:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4246:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12901:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7507:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4294:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3411:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1890:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13960:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13896:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13897:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13663:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13664:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1312:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1374:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_8:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6868:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6869:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12903:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12313:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3412:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1877:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13920:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13910:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_426:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1469:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5941:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5945:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12904:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3413:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3414:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1381:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5948:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12905:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12314:key ability" value="Charisma" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_9:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4298:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1879:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13921:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13911:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1468:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5951:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5952:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12906:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4299:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1882:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_3415:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13900:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13961:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16271:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_13668:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1476:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5902:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4052:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4170:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5903:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4062:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6856:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6857:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6855:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12889:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12888:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12887:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10378:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10379:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11303:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15902:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16256:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7402:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_222:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1460:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1457:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1333:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1323:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1458:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1376:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4068:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4069:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5912:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12891:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15903:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1341:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1401:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4076:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6858:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6859:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12892:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10381:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11304:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1343:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_62:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5919:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4177:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4094:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12894:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15904:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15905:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_501:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1462:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4098:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6860:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6861:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12895:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_7506:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10384:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11305:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4287:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_16494:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1473:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1314:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5923:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5924:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12897:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15906:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1463:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_35:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1335:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4216:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6862:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6863:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12898:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6957:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10386:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10387:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11306:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1304:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1317:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1405:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6864:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5933:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6865:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12900:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15907:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1465:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6866:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6867:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5935:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12901:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_10389:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11307:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15908:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5939:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4303:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12903:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15909:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_4296:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1470:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5940:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6870:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6871:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12904:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11308:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_510:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1324:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5946:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5947:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5949:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12905:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_15910:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1467:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1345:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_5953:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6872:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_6873:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_12906:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_11309:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_1313:key ability" value="Charisma" />
+		<textstring name="ID_FMP_POWER_505:key ability" value="Charisma" />
+		<textstring name="TER_POWER_THAUM_04:key ability" value="Charisma" />
+      </rules>
+You use Charisma as the key ability score for thaumaturge and thaumaturge paragon path powers.
+   </RulesElement>
+   <RulesElement name="Hardy Vessel" type="Class Feature" internal-id="TER_CLASS_FEATURE_THAUM07" source="Terra Advena" revision-date="10/5/2010 1:47:04 PM">
+      <Category> TER_CLASS_FEATURE_THAUM05 </Category>
+      <specific name="Short Description"> Use Constitution for all thaumaturge powers </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+		<textstring name="ID_FMP_POWER_4055:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4051:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5905:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5904:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12889:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12888:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12887:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7428:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12307:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12308:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_3:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4279:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4277:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4278:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1918:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1868:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3404:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1881:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3403:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13902:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13878:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13904:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13952:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13877:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13914:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13879:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16256:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16261:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13635:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13634:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13636:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13637:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7402:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1471:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1457:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1319:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1334:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1333:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1456:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1459:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5910:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5911:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4070:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12891:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12309:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_4:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4281:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3405:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1886:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13905:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13915:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1400:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_661:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5913:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5914:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5915:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12892:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6954:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4282:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3406:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1883:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13955:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13882:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13883:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13644:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13645:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1320:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1472:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13752:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_5:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13672:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4093:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4095:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4097:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12894:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7437:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12310:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13449:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4285:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4286:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1872:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1871:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13916:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13906:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1461:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1351:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4115:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4109:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12895:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6955:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4287:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1873:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1921:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16494:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1474:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1408:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_MASTER_BINDER_POWER_1:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4189:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4193:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5925:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12897:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12311:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_6:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4289:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1888:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1875:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13918:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13908:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1369:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5926:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4219:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12898:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6957:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4291:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4290:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1885:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3409:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13958:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13893:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16267:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13656:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13657:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1475:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4227:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5930:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12900:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12312:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_7:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4293:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1876:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1892:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13909:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13919:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1466:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1464:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16269:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4248:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4246:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12901:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7507:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4294:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3411:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1890:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13960:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13896:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13897:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13663:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13664:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1312:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1374:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_8:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6868:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6869:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12903:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12313:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3412:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1877:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13920:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13910:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_426:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1469:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5941:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5945:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12904:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3413:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3414:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1381:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5948:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12905:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12314:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_9:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4298:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1879:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13921:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13911:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1468:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5951:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5952:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12906:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4299:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1882:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_3415:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13900:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13961:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16271:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_13668:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1476:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5902:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4052:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4170:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5903:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4062:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6856:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6857:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6855:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12889:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12888:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12887:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10378:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10379:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11303:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15902:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16256:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7402:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_222:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1460:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1457:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1333:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1323:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1458:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1376:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4068:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4069:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5912:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12891:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15903:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1341:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1401:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4076:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6858:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6859:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12892:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10381:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11304:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1343:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_62:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5919:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4177:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4094:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12894:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15904:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15905:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_501:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1462:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4098:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6860:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6861:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12895:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_7506:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10384:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11305:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4287:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_16494:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1473:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1314:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5923:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5924:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12897:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15906:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1463:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_35:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1335:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4216:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6862:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6863:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12898:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6957:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10386:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10387:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11306:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1304:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1317:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1405:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6864:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5933:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6865:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12900:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15907:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1465:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6866:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6867:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5935:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12901:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_10389:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11307:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15908:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5939:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4303:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12903:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15909:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_4296:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1470:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5940:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6870:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6871:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12904:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11308:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_510:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1324:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5946:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5947:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5949:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12905:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_15910:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1467:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1345:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_5953:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6872:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_6873:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_12906:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_11309:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_1313:key ability" value="Constitution" />
+		<textstring name="ID_FMP_POWER_505:key ability" value="Constitution" />
+		<textstring name="ID_WOG_D404_BINDER_POWER_2:key ability" value="Constitution" />
+		<textstring name="TER_POWER_THAUM_03:key ability" value="Constitution" />
+      </rules>
+You use Constitution as the key ability score for thaumaturge and thaumaturge paragon path powers.
+   </RulesElement>
+   
+
+   <RulesElement name="Focused Arcanist Thaumaturge" type="Build" internal-id="TER_THAUM_BUILD_01" source="Terraism" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> TER_CLASS_003 </Category>
+      <specific name="Suggested"> Feat: Efficient Attunement
+Skills: Dungeoneering, History, Perception, Thievery
+At-Will Powers: magic weapon, tracing shot
+Encounter Power: halo of thorns
+Daily Power: life-tapping darts </specific>
+      <specific name="Key Abilities"> Cha, Int, Con </specific>
+      <specific name="_SUGGESTED_FEATS">  </specific>
+      <specific name="_SUGGESTED_POWERS">  </specific>
+      <specific name="Class"> TER_CLASS_003 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_FOCUSED_THAUMATURGE" type="Build Suggestions" />
+      </rules>
+Your interest in thaumaturgic lore is specific and focused - you choose a discipline and follow it wholeheartedly, allowing you to wrest more power out of it would otherwise be possible. Likewise, your ability to manipulate that energy is improved, giving you access to greater metamagic capabilities.
+   </RulesElement>
+   <RulesElement name="Focused Arcanist" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_FOCUSED_THAUMATURGE" source="Terraism" >
+      <specific name="_SupportsID"> TER_THAUM_BUILD_01 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_ARTI06" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_ARTI_04" type="Feat" />
+         <suggest name="TER_FEAT_ARTI_08" type="Feat" />
+         <suggest name="TER_POWER_ARTI_12" type="Power" />
+         <suggest name="TER_POWER_ARTI_15" type="Power" />
+         <suggest name="TER_POWER_ARTI_17" type="Power" />
+         <suggest name="TER_POWER_ARTI_21" type="Power" />
+         <suggest name="ID_FMP_SKILL_7" type="Skill" />
+         <suggest name="ID_FMP_SKILL_11" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Overflowing Vessel Thaumaturge" type="Build" internal-id="TER_THAUM_BUILD_02" source="Terraism" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> TER_CLASS_003 </Category>
+      <specific name="Suggested"> Feat: Alchemical Preparations
+Skills: Dungeoneering, Heal, Perception, Thievery
+At-Will Powers: ethereal chill, unbalancing force
+Encounter Power: shielding cube
+Daily Power: flameburst armor </specific>
+      <specific name="Key Abilities"> Cha, Int, Con </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_ARTI_04, TER_FEAT_ARTI_08 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_ARTI_12, TER_POWER_ARTI_15, TER_POWER_ARTI_17, TER_POWER_ARTI_21 </specific>
+      <specific name="Class"> TER_CLASS_003 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_OVERFLOWING_THAUMATURGE" type="Build Suggestions" />
+      </rules>
+You find the notion of limiting your arcane pursuits to a single source laughable - instead, you create and discard ties to whichever power source you find most effective at any given moment. You find your versatility is much improved, but at the cost of less control than your more focused brethren.
+   </RulesElement>
+   <RulesElement name="Overflowing Vessel" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_OVERFLOWING_THAUMATURGE" source="Terraism" >
+      <specific name="_SupportsID"> ID_FMP_BUILD_80 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_ARTI05" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_ARTI_04" type="Feat" />
+         <suggest name="TER_FEAT_ARTI_08" type="Feat" />
+         <suggest name="TER_POWER_ARTI_12" type="Power" />
+         <suggest name="TER_POWER_ARTI_15" type="Power" />
+         <suggest name="TER_POWER_ARTI_17" type="Power" />
+         <suggest name="TER_POWER_ARTI_21" type="Power" />
+         <suggest name="ID_FMP_SKILL_7" type="Skill" />
+         <suggest name="ID_FMP_SKILL_9" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+
+  <!-- Class Powers -->
+   <RulesElement name="Explosive Spell" type="Power" internal-id="TER_POWER_THAUM_01" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_003,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You weaken the energies of your spell, difusing their effect but allowing you to catch more targets in it. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Thaumaturge Utility </specific>
+      <specific name="Keywords"> Arcane, Metamagic </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Trigger"> You attack with a thaumaturge power that targets a single creature and deals damage on a hit </specific>
+      <specific name="Effect"> The triggering power gains a range of area burst 1 within the same distance that targets each creature in the burst, but you treat each die rolled for damage as though it rolled a 1. </specific>
+      <specific name="Special"> You can only use one metamagic effect each round </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> TER_CLASS_003 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Twin Spell" type="Power" internal-id="TER_POWER_THAUM_02" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_003,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You spin off excess energy from your spell - it'll barely sting, but the more subtle effects should still be intact. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Thaumaturge Utility </specific>
+      <specific name="Keywords"> Arcane, Metamagic </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Trigger"> You attack with a thaumaturge power that targets a single creature and deals damage on a hit </specific>
+      <specific name="Effect"> Make the attack against a second creature, but you deal no damage to the secondary target. </specific>
+      <specific name="Special"> You can only use one metamagic effect each round </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> TER_CLASS_003 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   
+	<!-- At-Wills -->
+   <RulesElement name="Howling Echoes" type="Power" internal-id="TER_POWER_THAUM_03" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,TER_CLASS_003,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You unleash the memories of long-dead spirits, which slow and confuse your enemies. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Warlock Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Implement, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Charisma vs. Will </specific>
+		<specific name="Hit"> 1d4 + Charisma modifier psychic damage, and the target is slowed and cannot take opportunity actions until the end of your next turn.
+Level 21: 2d4 + Charisma modifier psychic damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_7 </specific>
+		<specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Stinging Bolts" type="Power" internal-id="TER_POWER_THAUM_04" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+      <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,TER_CLASS_003,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Barbs of magical poison launch from your hands to strike a foe, stinging and crippling him momentarily. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Warlock Attack 1 </specific>
+      <specific name="Keywords"> Arcane, Implement, Poison </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Constitution vs. Fortitude </specific>
+		<specific name="Hit"> 1d4 + Constitution modifier poison damage, and the target takes a -2 penalty to its next attack roll before the end of your next turn. If the target's attack hits anyway, it takes 1d4 + Constitution modifier poison damage.
+Level 21: 2d4 + Constitution modifier poison damage in both cases. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_7 </specific>
+		<specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+	<!-- Level 2 Utility -->
+	<!-- Level 3 Encounters -->
+	
+  <!-- Thaumaturgist Feats -->
+	<RulesElement name="Battle Binder" type="Feat" internal-id="ID_TER_FEAT_THAUM_01" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> You rely on your siphoned power to cast short range spells in the middle of combat, trusting in your wards to keep you safe. </Flavor>
+		<Prereqs> Thaumaturgist, Defensive Arcana class feature, proficiency with a military or superior weapon </Prereqs>
+		<print-prereqs> Thaumaturgist, Defensive Arcana class feature, proficiency with a military or superior weapon </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain +1 shield bonus and don't provoke when casting with a military weapon. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="AC" value="+1" type="Shield" wearing="weapon:military" not-wearing="SLOT:off hand" />
+			<statadd name="AC" value="+1" type="Shield" wearing="weapon:superior" not-wearing="SLOT:off hand" />
+			<statadd name="Reflex" value="+1" type="Shield" wearing="weapon:military" not-wearing="SLOT:off hand" />
+			<statadd name="Reflex" value="+1" type="Shield" wearing="weapon:superior" not-wearing="SLOT:off hand" />
+		</rules>
+When you wield a military or superior weapon and have at least one hand free, you gain a +1 shield bonus to your AC and Reflex, and do not provoke opportunity attacks from casting ranged or area spells.
+	</RulesElement>
+	<RulesElement name="Defense in Shadows" type="Feat" internal-id="ID_TER_FEAT_THAUM_02" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> You use excess energy from your spells to pull a veil around yourself, making you more difficult to spot. </Flavor>
+		<Prereqs> Thaumaturgist, Defensive Arcana class feature </Prereqs>
+		<print-prereqs> Thaumaturgist, Defensive Arcana class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain concealment when you hit with an arcane attack. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+		</rules>
+When you hit an enemy with an arcane attack during your turn, you can choose to gain partial concealment until the end of your next turn instad of the +2 bonus to AC and Reflex from your Defensive Arcana feature. In addition, you count as having the warlock's Shadow Walk class feature, and concealment from this effect counts as being concealed by Shadow Walk.
+	</RulesElement>
+	<RulesElement name="Rapid Metamagic" type="Feat" internal-id="ID_TER_FEAT_THAUM_03" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Metamagical effects aren't an easy thing to perform, but your expertise allows you to manipulate your spells even faster than most. </Flavor>
+		<Prereqs> Thaumaturgist, Metamagic class feature </Prereqs>
+		<print-prereqs> Thaumaturgist, Metamagic class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Can use additional metamagic after spending an action point. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+		</rules>
+When you spend an action point to take an extra action, you can use an additional metamagic feat this round.
+	</RulesElement>
+	<RulesElement name="Versatile Binder" type="Feat" internal-id="ID_TER_FEAT_THAUM_04" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Even in the heat of battle, you can shift your focus from one aspect of your studies to another. </Flavor>
+		<Prereqs> Thaumaturgist, Overflowing Vessel class feature </Prereqs>
+		<print-prereqs> Thaumaturgist, Overflowing Vessel class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Can change chosen pact when you second wind or action point. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+		</rules>
+When you use your Second Wind or spend an action point to take an extra action, you can change the pact you have chosen with your Overflowing Vessel feature.
+	</RulesElement>
+	<RulesElement name="Expand Spell" type="Feat" internal-id="ID_TER_FEAT_THAUM_05" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Your dedication to a narrow field of study has taught you to enhance the area of powers you work, granting you great versatility with them. </Flavor>
+		<Prereqs> Thaumaturgist, Metamagic class feature </Prereqs>
+		<print-prereqs> Thaumaturgist, Metamagic class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain the Expand Spell metamagic power. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<specific name="_DisplayPowers"> TER_POWER_THAUM_05 </specific>
+		<rules>
+			<grant name="TER_POWER_THAUM_05" type="Power" />
+		</rules>
+You gain the Expand Spell metamagic power.
+	</RulesElement>
+	   <RulesElement name="Expand Spell" type="Power" internal-id="TER_POWER_THAUM_05" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+		  <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		  <Flavor> You warp reality, allowing you to send part of a spell you cast to a location farther away than would normally be possible. </Flavor>
+		  <specific name="Power Usage"> At-Will </specific>
+		  <specific name="_SkillPower" />
+		  <specific name="Display"> Feat Utility </specific>
+		  <specific name="Keywords"> Arcane, Metamagic </specific>
+		  <specific name="Action Type"> Free action </specific>
+		  <specific name="Attack Type"> Personal </specific>
+		  <specific name="Trigger"> You attack with a thaumaturge power that has a range of close. </specific>
+		  <specific name="Effect"> The triggering power gains a range of area 10, with a burst radius equal to the normal radius of the spell minus 1; if the spell was a blast, the radius is equal to the normal radius minus 2. </specific>
+		  <specific name="Special"> You can only use one metamagic effect each round. Example: You use the clarion call power, which is a close blast 3. You can instead cast it as an area burst 1 within 10 squares. </specific>
+		  <specific name="_Associated Feats" />
+		  <specific name="Power Type"> Utility </specific>
+	   </RulesElement>
+
+	<RulesElement name="Heighten Spell" type="Feat" internal-id="ID_TER_FEAT_THAUM_06" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Flavor> Sometimes, you only need to adjust your spells to provide a tighter focus. </Flavor>
+		<Prereqs> Thaumaturgist, Metamagic class feature </Prereqs>
+		<print-prereqs> Thaumaturgist, Metamagic class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You gain the Heighten Spell metamagic power. </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<specific name="_DisplayPowers"> TER_POWER_THAUM_06 </specific>
+		<rules>
+			<grant name="TER_POWER_THAUM_06" type="Power" />
+		</rules>
+You gain the Heighten Spell metamagic power.
+	</RulesElement>
+	   <RulesElement name="Heighten Spell" type="Power" internal-id="TER_POWER_THAUM_06" source="Terraism" revision-date="8/27/2010 11:33:05 AM">
+		  <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		  <Flavor> By pouring extra energy into your spell, you make it more difficult for the target to resist, but drain yourself at the same time. </Flavor>
+		  <specific name="Power Usage"> At-Will </specific>
+		  <specific name="_SkillPower" />
+		  <specific name="Display"> Feat Utility </specific>
+		  <specific name="Keywords"> Arcane, Metamagic </specific>
+		  <specific name="Action Type"> Free action </specific>
+		  <specific name="Attack Type"> Personal </specific>
+		  <specific name="Trigger"> You attack with a thaumaturge power. </specific>
+		  <specific name="Effect"> You gain a +1 bonus attacks made with the triggering spell, and the first saving throw the target makes against any effects of the spell is at a -2 penalty. </specific>
+		  <specific name="Special"> You can only use one metamagic effect each round. </specific>
+		  <specific name="_Associated Feats" />
+		  <specific name="Power Type"> Utility </specific>
+	   </RulesElement>
+
+</D20Rules>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>31-July-2013b</Version>
+    <Filename>TER-10-Items.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-10-Items.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-10-Items.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Items -->
+  <!-- TER-10-Items.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Created 03-August-2012
+ Updated 21-February-2013 Added the lucerne hammer
+ Updated 31-July-2013 Added the lucerne hammer
+</Changelog>
+<RulesElement name="Weapon Proficiency (Lochaber Axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOCHABERAXE)" source="Custom">
+	<Category> ID_FMP_WEAPON_GROUP_8,ID_FMP_WEAPON_GROUP_22,ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_MELEE </Category>
+</RulesElement>
+
+<RulesElement name="Weapon Proficiency (Lucerne Hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LUCERNEHAMMER)" source="Custom">
+	<Category> ID_FMP_WEAPON_GROUP_11,ID_FMP_WEAPON_GROUP_22,ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_MELEE </Category>
+</RulesElement>
+
+<RulesElement name="Weapon Proficiency (Lochaber Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LOCHABERAXE)" source="Custom">
+	<specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+	<specific name="_RequiresID"> TER_WEAPON_01 </specific>
+	<specific name="Short Description"> Gain proficiency with the Lochaber Axe </specific>
+	<specific name="Tier"> Heroic </specific>
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOCHABERAXE)" type="Proficiency" />
+	</rules>
+You gain proficiency with the Lochaber Axe.
+</RulesElement>
+
+<RulesElement name="Weapon Proficiency (Lucerne Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LUCERNEHAMMER)" source="Custom">
+	<specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+	<specific name="_RequiresID"> TER_WEAPON_02 </specific>
+	<specific name="Short Description"> Gain proficiency with the Lucerne Hammer </specific>
+	<specific name="Tier"> Heroic </specific>
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LUCERNEHAMMER)" type="Proficiency" />
+	</rules>
+You gain proficiency with the Lucerne Hammer.
+</RulesElement>
+
+<AppendNodes name="Weapon Group (Axe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)" source="Core" >
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOCHABERAXE)" type="Proficiency" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Weapon Group (Polearm)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(POLEARM)" source="Core">
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOCHABERAXE)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LUCERNEHAMMER)" type="Proficiency" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Weapon Group (Hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)" source="Core">
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LUCERNEHAMMER)" type="Proficiency" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Implement Proficiency (Proficient Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)" source="Core">
+	<rules>
+		<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LOCHABERAXE)" type="Proficiency" requires="Weapon Proficiency (Lochaber Axe)" />
+		<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LUCERNEHAMMER)" type="Proficiency" requires="Weapon Proficiency (Lochaber Axe)" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Deadly Axe" type="Feat" internal-id="ID_FMP_FEAT_243" source="Player's Handbook" revision-date="8/27/2010 12:17:54 PM">
+	<rules>
+		<modify name="Lochaber Axe" type="Weapon" Field="Properties" list-addition="High Crit" />
+	</rules>
+</AppendNodes>
+
+<RulesElement name="Lochaber Axe" type="Weapon" internal-id="TER_WEAPON_01" source="Terraism" revision-date="8/27/2010 1:16:15 PM">
+	<Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_GROUP_8,ID_FMP_WEAPON_GROUP_22,ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+	<specific name="Full Text"> Lochaber Axe
+Superior two-handed melee weapon
+Cost: 35 gp
+Damage: 1d10
+Proficient: +3
+Range: -
+Weight: 12 lb.
+
+This vicious-looking weapon is akin to a halberd, but exquisitely balanced and used for reaping.
+
+Properties: 
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy).
+
+Group: 
+Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe's weight makes it fine for delivering crushing blows.).
+Polearm (Polearms are weapons mounted at the end of long hafts. All polearms also fall into another category of weapon, usually axe, heavy blade, or spear. Polearms are reach weapons.). </specific>
+	<specific name="Weight"> 12 </specific>
+	<specific name="Gold"> 35 </specific>
+	<specific name="Range" />
+	<specific name="Damage"> 1d10 </specific>
+	<specific name="Proficiency Bonus"> 3 </specific>
+	<specific name="_Primary End" />
+	<specific name="Weapon Category"> Superior Melee </specific>
+	<specific name="Hands Required"> Two-Handed </specific>
+	<specific name="Item Slot"> Two-hands </specific>
+	<specific name="Group"> Axe, Polearm </specific>
+	<specific name="Properties"> Reach </specific>
+This vicious-looking weapon is akin to a halberd, but exquisitely balanced and used for reaping.
+</RulesElement>
+   
+<RulesElement name="Lochaber Axe (Large)" type="Weapon" internal-id="ID_INTERNAL_WEAPON_LARGE_LOCHABERAXE" source="Terraism">
+	<specific name="_SupportsID"> TER_WEAPON_01 </specific>
+	<specific name="Full Text"> Large Lochaber Axe
+Superior two-handed melee weapon
+Cost: 35 gp
+Damage: 1d12
+Proficient: +3
+Range: -
+Weight: 24 lb.
+
+This vicious-looking weapon is akin to a halberd, but exquisitely balanced and used for reaping.
+
+Properties: 
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy).
+
+Group: 
+Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe's weight makes it fine for delivering crushing blows.).
+Polearm (Polearms are weapons mounted at the end of long hafts. All polearms also fall into another category of weapon, usually axe, heavy blade, or spear. Polearms are reach weapons.). </specific>
+	<specific name="Weight"> 24 </specific>
+	<specific name="Gold"> 35 </specific>
+	<specific name="Range" />
+	<specific name="Damage"> 1d12 </specific>
+	<specific name="Proficiency Bonus"> 3 </specific>
+	<specific name="_Primary End" />
+	<specific name="Weapon Category"> Superior Melee </specific>
+	<specific name="Hands Required"> Two-Handed </specific>
+	<specific name="Item Slot"> Two-hands </specific>
+	<specific name="Group"> Axe, Polearm </specific>
+	<specific name="Properties"> Reach </specific>
+	<specific name="Size"> Large </specific>
+This vicious-looking weapon is akin to a halberd, but exquisitely balanced and used for reaping.
+</RulesElement>
+
+
+<RulesElement name="Lucerne Hammer" type="Weapon" internal-id="TER_WEAPON_02" source="Terraism" revision-date="8/27/2010 1:16:15 PM">
+	<Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_GROUP_11,ID_FMP_WEAPON_GROUP_22,ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+	<specific name="Full Text"> Lucerne Hammer
+Superior two-handed melee weapon
+Cost: 35 gp
+Damage: 1d12
+Proficient: +2
+Range: -
+Weight: 15 lb.
+
+The Lucerne hammer is a type of polearm with a three pronged hammer, a spiked tip, and a curved pick-like spike. When swung it is effective at puncturing or smashing armor and could be used for dismounting riders.
+
+Properties: 
+Dismounting (When you hit a mounted creature with a readied attack while wielding a dismounting weapon, the target must make a saving throw or fall prone).
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy).
+
+Group: 
+Hammer (A hammer has a blunt, heavy head with one or more flat striking surfaces attached to a haft.).
+Polearm (Polearms are weapons mounted at the end of long hafts. All polearms also fall into another category of weapon, usually axe, heavy blade, or spear. Polearms are reach weapons.). </specific>
+	<specific name="Weight"> 15 </specific>
+	<specific name="Gold"> 35 </specific>
+	<specific name="Range" />
+	<specific name="Damage"> 1d12 </specific>
+	<specific name="Proficiency Bonus"> 2 </specific>
+	<specific name="_Primary End" />
+	<specific name="Weapon Category"> Superior Melee </specific>
+	<specific name="Hands Required"> Two-Handed </specific>
+	<specific name="Item Slot"> Two-hands </specific>
+	<specific name="Group"> Hammer, Polearm </specific>
+	<specific name="Properties"> Dismounting, Reach </specific>
+The lucerne hammer is a type of polearm with a three pronged hammer, a spiked tip, and a curved pick-like spike. When swung it is effective at puncturing or smashing armor and could be used for dismounting riders.
+</RulesElement>
+   
+<RulesElement name="Lochaber Axe (Large)" type="Weapon" internal-id="ID_INTERNAL_WEAPON_LARGE_LUCERNEHAMMER" source="Terraism">
+	<specific name="_SupportsID"> TER_WEAPON_02 </specific>
+	<specific name="Full Text"> Large Lucerne Hammer
+Superior two-handed melee weapon
+Cost: 35 gp
+Damage: 246
+Proficient: +3
+Range: -
+Weight: 30 lb.
+
+The Lucerne hammer is a type of polearm with a three pronged hammer, a spiked tip, and a curved pick-like spike. When swung it is effective at puncturing or smashing armor and could be used for dismounting riders.
+
+Properties: 
+Dismounting (When you hit a mounted creature with a readied attack while wielding a dismounting weapon, the target must make a saving throw or fall prone).
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy).
+
+Group: 
+Hammer (A hammer has a blunt, heavy head with one or more flat striking surfaces attached to a haft.).
+Polearm (Polearms are weapons mounted at the end of long hafts. All polearms also fall into another category of weapon, usually axe, heavy blade, or spear. Polearms are reach weapons.). </specific>
+	<specific name="Weight"> 30 </specific>
+	<specific name="Gold"> 35 </specific>
+	<specific name="Range" />
+	<specific name="Damage"> 2d6 </specific>
+	<specific name="Proficiency Bonus"> 2 </specific>
+	<specific name="_Primary End" />
+	<specific name="Weapon Category"> Superior Melee </specific>
+	<specific name="Hands Required"> Two-Handed </specific>
+	<specific name="Item Slot"> Two-hands </specific>
+	<specific name="Group"> Hammer, Polearm </specific>
+	<specific name="Properties"> Dismounting, Reach </specific>
+	<specific name="Size"> Large </specific>
+The lucerne hammer is a type of polearm with a three pronged hammer, a spiked tip, and a curved pick-like spike. When swung it is effective at puncturing or smashing armor and could be used for dismounting riders.
+</RulesElement>
+
+<AppendNodes name="Weapon Master" type="Internal" internal-id="ID_INTERNAL_INTERNAL_WEAPON_MASTER" source="Dragon Magazine 382">
+	<rules>
+		<statadd name="Lochaber Axe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Lochaber Axe) proficiency" />
+		<statadd name="Lochaber Axe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Lochaber Axe) proficiency" />
+		<statadd name="Lucerne Hammer:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Lucerne Hammer) proficiency" />
+		<statadd name="Lucerne Hammer:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Lucerne Hammer) proficiency" />
+	</rules>
+</AppendNodes>
+
+<RulesElement name="Kensei Focus Lochaber Axe" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KENSEI_FOCUS_LOCHABERAXE" source="Player's Handbook">
+	<Category> ID_FMP_CLASS_FEATURE_452 </Category>
+	<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
+	<specific name="Level"> 11 </specific>
+	<rules>
+		<statadd name="Lochaber Axe,weapon:attack" value="+1" />
+		<statadd name="Lochaber Axe,weapon:damage" value="+4" requires="Kensei Mastery" />
+	</rules>
+You gain a +1 bonus to weapon attack rolls with a Lochaber Axe.
+</RulesElement>
+
+<RulesElement name="Kensei Focus Lucerne Hammer" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KENSEI_FOCUS_LUCERNEHAMMER" source="Player's Handbook">
+	<Category> ID_FMP_CLASS_FEATURE_452 </Category>
+	<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
+	<specific name="Level"> 11 </specific>
+	<rules>
+		<statadd name="Lucerne Hammer,weapon:attack" value="+1" />
+		<statadd name="Lucerne Hammer,weapon:damage" value="+4" requires="Kensei Mastery" />
+	</rules>
+You gain a +1 bonus to weapon attack rolls with a Lucerne Hammer.
+</RulesElement>
+
+<!-- Nonmagical Weapon Properties -->
+   <RulesElement name="Dismounting" type="Weapon Property" internal-id="ID_TER_WEAPON_PROPERTY_01" source="Terraism" revision-date="2/17/2009 9:51:30 AM">
+When you hit a mounted creature with a readied attack while wielding a dismounting weapon, the target must make a saving throw or fall prone.
+   </RulesElement>
+
+<!-- Magic Items -->
+	<RulesElement name="Silvery Lantern" type="Magic Item" internal-id="ID_JEG_111" source="Mordenkainen's Magnificent Emporium" >
+		<Flavor> This lantern floats in the air, illuminating with a silver light.</Flavor>
+		<specific name="Level"> 3 </specific>
+		<specific name="Gold"> 680 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Special"/>
+		<specific name="Property"> This lantern casts light up to a 10-square radius, and it never needs lighting or refilling. When you let go of the lantern, it continues to hang in the air where you leave it. If weight in excess of 1 pound if applied to the lantern, it falls to the ground. </specific>
+		<specific name="Utility Power (At-Will)"> Minor Action. Any creature holding the floating lantern or adjacent to it can set its light to be bright (10-square radius), dim (5-square radius), or off. </specific>
+		<specific name="Utility Power (At-Will)"> Move Action. The last creature to hold the lantern can mentally command it to move up to 10 squares in any direction, but not more than 10 squares from the commanding creature. </specific>
+		<specific name="Enhancement"/>
+		<specific name="Rarity"> Common </specific>
+	</RulesElement>
+   <RulesElement name="Bolt-Loaded Shield (heroic tier)" type="Weapon" internal-id="ID_INTERNAL_WEAPON_BOLT-LOADED_SHIELD_(HEROIC_TIER)" source="Terraism">
+      <specific name="InternalOnly"> 1 </specific>
+      <specific name="Range" />
+      <specific name="Damage"> 1d8 </specific>
+      <specific name="Proficiency Bonus"> 2 </specific>
+      <specific name="Weapon Category"> Simple Ranged </specific>
+      <specific name="Hands Required"> One-Handed </specific>
+      <specific name="Item Slot"> Off-hand </specific>
+      <specific name="Group"> Crossbow </specific>
+      <specific name="Properties"> Off-hand, Load Free </specific>
+      <specific name="Critical"> +1d6 damage </specific>
+      <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+      <specific name="_SupportsID"> ID_TER_MAGIC_ITEM_0001 </specific>
+   </RulesElement>
+   <RulesElement name="Bolt-Loaded Shield (heroic tier)" type="Magic Item" internal-id="ID_TER_MAGIC_ITEM_0001" source="Terraism">
+		<Flavor> This shield is a marvel of technical ingenuity, with an integrated repeating crossbow built inside so as to provide the wielder with the occassional ranged attack. </Flavor>
+		<specific name="Level"> 2 </specific>
+		<specific name="Gold"> 520 </specific>
+		<specific name="Magic Item Type"> Arms Slot Item </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Arms </specific>
+		<specific name="Requirement" />
+		<specific name="Critical" />
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> This shield can be used as a one-handed ranged weapon with +2 proficiency, 1d8 damage, crossbow, off-hand, and the load free properties. It grants a +1 enhancement bonus to attack rolls and damage rolls when used as a ranged weapon, and it deals 1d6 extra damage on a critical hit. A bolt-loaded shield does not need to be reloaded as long as it has ammunition in its magazine. A magazine costs 1 gp and holds 10 bolts. It takes a standard action to remove an empty magazine and load a new one, and requires a free hand.</specific>
+		<specific name="WeaponEquiv"> Bolt-Loaded Shield (heroic tier):weapon </specific>
+		<specific name="_IsEnchant"> Shield </specific>
+		<rules>
+			<modify name="this" Field="WeaponEquiv" value="Bolt-Loaded Shield (heroic tier):weapon" />
+		</rules>
+	</RulesElement>
+   <AppendNodes name="Corellon's Boon of Arcane Might (level 3)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8001" source="Dungeon Master's Guide 2">
+		<rules>
+			<select type="Power" name="Corellon's Boon of Arcane Might (level 3, encounter)" number="1" Category="encounter,arcane,1" />
+			<modify select="Corellon's Boon of Arcane Might (level 3, encounter)" Field="Power Usage" value="Daily" />
+		</rules>
+	</AppendNodes>
+</D20Rules>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<RulesElement name="Feline" type="Language" internal-id="ID_AZT_LANGUAGE_01" source="Sabre">
+		<Category> ID_INTERNAL_CATEGORY_STARTING </Category>
+		<rules>
+			<statadd name="Language Count" value="+1" />
+		</rules>
+Feline is the language of Catfolk.
+	</RulesElement>
+</D20Rules>

@@ -1,0 +1,43 @@
+Berserker
+---------
+Vengeful Guardian: Nothing that I can see?
+
+Binder
+------
+Probably more stuff I dunno
+
+Cleric
+------
+Healer's Lore: Works for non-surge healing (but not regen or zones), extra healing from the feature turns into temp HP if it would be wasted
+
+Elementalist
+------------
+Elemental Bolt: Nothing?
+Elemental Magic: More nothing?
+Air Elementalist: Elemental Bolt hit bonus changed from "vulnerable 3 you" to "slide 2", pierce resistance like an O-Sorcerer, F23 improves existing fly speed
+Earth Elementalist: Resistance piercing
+Fire Elementalist: Piercing for all!
+Water Elementalist: See above
+Something I can't follow with Elemental Escalation
+
+Fighter
+-------
+Class skills: Also add Insight
+
+Protector
+---------
+Too much there, too lazy to care
+
+Psion
+-----
+Less power points...? Not sure what's up with that, might delete that part unless I see a good reason for it in Powers.
+
+Sha'ir
+------
+Gen Servant: Bonus Familiar feat at levels 1, 6, 12, and 18
+Elemental Resistance: Works with passive familiar, also affects adjacent allies in active mode, resistance is always 2*ConMod
+
+Witch
+-----
+Covens: Replace +2 skill bonuses at level 5 with 2 cantrips at level 1 (plus normal cantrip choices)
+Witch's Familiar: Bonus Familiar feat at levels 1, 6, 12, and 18. Level 24 feature lets you regain Encounter power when spending AP, instead of replacing AP effect

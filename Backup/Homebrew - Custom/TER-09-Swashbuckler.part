@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>7-April-2013</Version>
+    <Filename>TER-09-Swashbuckler.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Swashbuckler.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-09-Swashbuckler.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Swashbuckler -->
+  <!-- TER-09-Swashbuckler.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+</Changelog>
+  <!-- Swashbuckler Class Feature Updates -->
+  <RulesElement name="Swashbuckler" type="Class" internal-id="TER_CLASS_002" source="Shadow Elf" revision-date="10/12/2010 1:39:31 PM">
+    <Flavor> "You, boy, are arrogant, hot tempered and entirely too bold. I like that. Reminds me of me." </Flavor>
+    <specific name="Key Abilities"> Charisma, Dexterity, Intelligence </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather, hide; light shields </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Reflex, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 14 + Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 6 </specific>
+    <specific name="Healing Surges"> 7 + Constitution Modifier </specific>
+    <specific name="Trained Skills"> From the class skills list below, choose 4 trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Acrobatics (Dex), Athletics (Str), Bluff (Cha), Diplomacy (Cha), History (Int), Insight (Wis), Intimidate (Cha), Perception (Wis), Stealth (Dex), Streetwise (Cha), Thievery (Dex) </specific>
+    <specific name="Build Options"> Dashing Swordsman, Magnificent Bastard </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Gambit, Parry, Swashbuckler's Taunt, Defensive Techniques, Weapon Finesse (Swashbuckler) </specific>
+    <specific name="Role"> Defender. Your taunts, jabs and witticisms attract the ire of your enemies, and your flamboyancy distracts opponents while your allies get into position. Depending on your choice of build or powers, you could serve as a Leader or Controller secondarily. </specific>
+    <specific name="Power Source"> Martial. You've achieved your talent through practice, experience and the conditioning of your body and mind through exercises mental and physical. </specific>
+    <specific name="Creating"> Swashbucklers rely on Charisma, Dexterity and Intelligence for their powers. You can take any power you prefer, but its often best to acquire powers that compliment your style of swordplay and method of taunting foes. </specific>
+    <specific name="Class Features"> Some of your most important characteristics are the ability to wear very good armor, your exceptional hit point total, and your mastery of all military weapons. In addition, you have three unique class features. </specific>
+    <specific name="Powers"> Your powers are called exploits. Some work better for great weapon fighters and some work better for guardian fighters, but you can choose any power you like when you reach a level that allows you to choose a new power. The choice of weapon you make also provides benefits to certain fighter powers. </specific>
+    <specific name="Power Name"> Exploits </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+    <specific name="Short Description"> You define the front line of combat, crushing foes in melee while protecting your allies. </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SWASHBUCKLER" type="Grants" />
+      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="TER_CLASS_002" />
+      <statadd name="_LEVEL-ONE-HPS" value="+14" />
+      <statadd name="_PER-LEVEL-HPS" value="+6" />
+      <statadd name="Healing Surges" value="+7" />
+      <select type="Build" number="1" Category="$$CLASS" optional="true" />
+      <statadd name="Reflex Defense Class Bonus" value="+1" />
+      <statadd name="Will Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="4" Category="TER_CLASS_002" />
+    </rules>
+Swashbucklers come from all walks of life. From pirates on the high seas, to noble heroes saving damsels from dragons, to the scheming villains of the world, the Swashbuckler is present, a taunt on his lips and a sword in his hands. They are masters of agility, swordplay and psychology, getting into their foes' heads while their blades slip into their foes' guts. They lure their foes into poor moves, parrying attempts and taking risks. As their gambits pay off and they gain the upper-hand, their taunts begin to sting even more, and their foes often cannot help but fight them to their deaths. As masters of swordplay, they can stop blows no one else can, their proficiency with their weapons outmatching any other. They are quintessential deceivers, using basic swordplay to keep foes off-guard while preparing their coup-de-grace.
+Sticks and stones may break your bones, but a swashbuckler's words will hurt you more than you can know. 
+   </RulesElement>
+  <RulesElement name="Swashbuckler" type="Grants" internal-id="ID_INTERNAL_GRANTS_SWASHBUCKLER" source="Shadow Elf">
+    <specific name="_SupportsID"> TER_CLASS_002 </specific>
+    <rules>
+      <grant name="ID_FMP_ROLE_4" type="Role" />
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+      <grant name="TER_CLASS_FEATURE_SWASH01" type="Class Feature" />
+      <grant name="TER_CLASS_FEATURE_SWASH02" type="Class Feature" />
+      <grant name="TER_CLASS_FEATURE_SWASH03" type="Class Feature" />
+      <grant name="TER_CLASS_FEATURE_SWASH06" type="Class Feature" />
+      <grant name="TER_CLASS_FEATURE_SWASH07" type="Class Feature" />
+	  <textstring name="melee basic:key ability" value="cha" />
+      <grant name="ID_INTERNAL_GRANTS_SWASHBUCKLER_IMPLEMENTS" type="Grants" />
+   </rules>
+  </RulesElement>
+  <AppendNodes name="Acrobatics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ACROBATICS" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+<AppendNodes name="Athletics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ATHLETICS" source="Core">
+  <Category> TER_CLASS_002 </Category>
+</AppendNodes>
+<AppendNodes name="Bluff" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_BLUFF" source="Core">
+  <Category> TER_CLASS_002 </Category>
+</AppendNodes>
+<AppendNodes name="Diplomacy" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+<AppendNodes name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+<AppendNodes name="Insight" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INSIGHT" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+ <AppendNodes name="Intimidate" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+ <AppendNodes name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+<AppendNodes name="Stealth" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STEALTH" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+ <AppendNodes name="Streetwise" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STREETWISE" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+ <AppendNodes name="Thievery" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_THIEVERY" source="Core">
+  <Category> TER_CLASS_002 </Category>
+ </AppendNodes>
+
+   <RulesElement name="Dashing Swordsman" type="Build" internal-id="TER_SWASH_BUILD_01" source="Shadow Elf" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> TER_CLASS_002 </Category>
+      <specific name="Suggested"> Feat: Hero's Sacrifice (Human Feat: Risky Action)
+Skills: Acrobatics, Bluff, Perception, Stealth
+At-Will Powers: slash and dash, hamstringing blow
+Encounter Power: flanker's lament
+Daily Power: nuisance strike </specific>
+      <specific name="Key Abilities"> Cha, Dex, Con </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_SWASH_06, TER_FEAT_SWASH_11 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_SWASH_14, TER_POWER_SWASH_13, TER_POWER_SWASH_19, TER_POWER_SWASH_20 </specific>
+      <specific name="Class"> TER_CLASS_002 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_DASHING_SWASHBUCKLER" type="Build Suggestions" />
+      </rules>
+You are quick on your feet and incredibly annoying and slippery. You confound your foes with flashy melee maneuvers and quick bladework. Your attacks and many of your skills use Charisma, so that should be your highest ability score. Second should come Dexterity, which you use as a part of your Swashbuckler's Taunt and for the secondary effects of some of your powers. You could choose Intelligence as your tertiary score, if you want to pick up some of the more tactical feats and powers of the Magnificent Bastard, but you would probably be better served with Constitution, to shore up your Fortitude defense and give you the extra hit points you need to survive.
+   </RulesElement>
+   <RulesElement name="Dashing Swordsman" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_DASHING_SWASHBUCKLER" source="Shadow Elf" >
+      <specific name="_SupportsID"> TER_SWASH_BUILD_01 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_SWASH05" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_3" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_SWASH_06" type="Feat" />
+         <suggest name="TER_FEAT_SWASH_11" type="Feat" />
+         <suggest name="TER_POWER_SWASH_14" type="Power" />
+         <suggest name="TER_POWER_SWASH_13" type="Power" />
+         <suggest name="TER_POWER_SWASH_19" type="Power" />
+         <suggest name="TER_POWER_SWASH_20" type="Power" />
+         <suggest name="ID_FMP_SKILL_1" type="Skill" />
+         <suggest name="ID_FMP_SKILL_3" type="Skill" />
+         <suggest name="ID_FMP_SKILL_17" type="Skill" />
+         <suggest name="ID_FMP_SKILL_20" type="Skill" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Magnificent Bastard" type="Build" internal-id="TER_SWASH_BUILD_02" source="Shadow Elf" revision-date="9/21/2010 10:53:28 AM" >
+      <Category> TER_CLASS_002 </Category>
+      <specific name="Suggested"> Feat: Master's Mockery (Human Feat: Deflect Arrows)
+Skills: Bluff, Diplomacy, History, Intimidate
+At-Will Powers: slick slash, magnificent blow
+Encounter Power: witty retort
+Daily Power: majestic strike </specific>
+      <specific name="Key Abilities"> Cha, Int, Con </specific>
+      <specific name="_SUGGESTED_FEATS"> TER_FEAT_SWASH_04, TER_FEAT_SWASH_08 </specific>
+      <specific name="_SUGGESTED_POWERS"> TER_POWER_SWASH_12, TER_POWER_SWASH_15, TER_POWER_SWASH_17, TER_POWER_SWASH_21 </specific>
+      <specific name="Class"> TER_CLASS_002 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_MAGNIFICENT_SWASHBUCKLER" type="Build Suggestions" />
+      </rules>
+You are charismatic and quick-witted, and your words and actions orchestrate the battle to the point where all eyes are centered on you - and your allies attack from behind. Like the Dashing Swordsman, you use Charisma for the vast majority of your attack and damage rolls, so that should be your highest ability score. Your second highest ability score should be Intelligence, as it makes your Swashbuckler's taunt effective and powers the rider effects of many of your most magnificent powers. You could take Dexterity as your tertiary score, to improve your Initiative bonus and benefit from some of the Dashing Swordsman's powers and feats, but you would also be well-served putting points into Constitution for some much-need health and fortitude defense.
+   </RulesElement>
+   <RulesElement name="Magnificent Bastard" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_MAGNIFICENT_SWASHBUCKLER" source="Martial Power" >
+      <specific name="_SupportsID"> TER_SWASH_BUILD_02 </specific>
+      <rules>
+         <suggest name="TER_CLASS_FEATURE_SWASH04" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_4" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="TER_FEAT_SWASH_04" type="Feat" />
+         <suggest name="TER_FEAT_SWASH_08" type="Feat" />
+         <suggest name="TER_POWER_SWASH_12" type="Power" />
+         <suggest name="TER_POWER_SWASH_15" type="Power" />
+         <suggest name="TER_POWER_SWASH_17" type="Power" />
+         <suggest name="TER_POWER_SWASH_21" type="Power" />
+         <suggest name="ID_FMP_SKILL_3" type="Skill" />
+         <suggest name="ID_FMP_SKILL_6" type="Skill" />
+         <suggest name="ID_FMP_SKILL_11" type="Skill" />
+         <suggest name="ID_FMP_SKILL_14" type="Skill" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="Swashbuckler Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_SWASHBUCKLER_IMPLEMENTS" source="Shadow Elf" >
+      <specific name="_SupportsID"> TER_CLASS_002 </specific>
+   </RulesElement>
+   <RulesElement name="Gambit" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH01" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Once per encounter, reroll an attack or skill check, but risk making it worse. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> TER_POWER_SWASH_01 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class" />
+      <specific name="_DisplayPowers"> TER_POWER_SWASH_01 </specific>
+      <rules>
+         <grant name="TER_POWER_SWASH_01" type="Power" />
+      </rules>
+Swashbucklers are more willing than most to take risks that could pay off in spades - or go horribly, horribly wrong.  You gain Gambit as an encounter power.
+   </RulesElement>
+   <RulesElement name="Parry" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH02" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> You gain Parry as an at-will power. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> TER_POWER_SWASH_02 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class" />
+      <specific name="_DisplayPowers"> TER_POWER_SWASH_02 </specific>
+      <rules>
+         <grant name="TER_POWER_SWASH_01" type="Power" />
+      </rules>
+You gain Parry as an at-will power.
+   </RulesElement>
+   <RulesElement name="Weapon Finesse (Swashbuckler)" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH06" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Use Charisma instead of Strength for melee basic attacks and shift when you parry an attack. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Class" />
+      <rules>
+		 <textstring name="melee basic:key ability" value="Charisma" />
+         <statadd name="weapon:attack" value="+1" wearing="weapon:" not-wearing="SLOT:off-hand" />  
+         <statadd name="Reflex Defense" value="+1" type="Shield" wearing="weapon:" not-wearing="SLOT:off-hand" />  
+      </rules>
+You can use Charisma instead of Strength for the attack and damage rolls of your melee basic attacks. In addition, whenever you successfully parry an attack with a light blade, you may shift one square as a free action and gain a +1 bonus to attack rolls made with combat advantage until the end of your next turn.
+Finally, when you wield a weapon in one-hand and your other hand is completely empty (no shield nor secondary weapon), you gain a +1 bonus to attacks and a +1 shield bonus to your Reflex defense.
+   </RulesElement>
+   <RulesElement name="Defensive Techniques" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH07" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain +1 to AC, +2 with shield or empty hand. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Class" />
+      <rules>
+         <statadd name="Defensive Techniques" value="+1" type="Defensive Techniques" />
+         <statadd name="Defensive Techniques" value="+2" type="Defensive Techniques" wearing="armor:shield" />
+		 <statadd name="Defensive Techniques" value="+2" type="Defensive Techniques" not-wearing="SLOT:off hand" />
+         <statadd name="AC" value="+Defensive Techniques" />
+      </rules>
+When you are wielding a weapon, you gain a +1 bonus to AC, or a +2 bonus to AC if you are wielding a shield or have one hand free (not wielding an off-hand weapon, a two-handed weapon, or carrying anything else).
+   </RulesElement>
+   <RulesElement name="Swashbuckler's Taunt" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH03" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> You gain a taunt </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> TER_CLASS_FEATURE_SWASH04, TER_CLASS_FEATURE_SWASH05 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="TER_CLASS_FEATURE_SWASH03" />
+      </rules>
+Each Swashbuckler has a favoured taunt that they use to attract the attention of their enemies. Featured below are the two types of Swashbuckler's Taunt; Magnificent Bastard's Mockery and Dashing Swordsman's Dare. You cannot use a Swashbuckler's Taunt against enemies already under the effect of your Swashbuckler's Taunt. 
+   </RulesElement>
+  <RulesElement name="Magnificent Bastard's Mockery" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH04" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM">
+    <Category> TER_CLASS_FEATURE_SWASH03,1 </Category>
+    <specific name="Short Description"> +1 on attacks with one-handed weapons. </specific>
+    <specific name="Level"> 1 </specific>
+      <specific name="Powers"> TER_POWER_SWASH_03 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class" />
+      <specific name="_DisplayPowers"> TER_POWER_SWASH_03 </specific>
+    <rules>
+         <grant name="TER_POWER_SWASH_03" type="Power" />
+    </rules>
+You gain Magnificent Bastard's Mockery as an at-will power.
+   </RulesElement>
+  <RulesElement name="Dashing Swordsman's Dare" type="Class Feature" internal-id="TER_CLASS_FEATURE_SWASH05" source="Shadow Elf" revision-date="10/5/2010 1:47:04 PM">
+    <Category> TER_CLASS_FEATURE_SWASH03,1 </Category>
+    <specific name="Short Description"> +1 on attacks with two-handed weapons. </specific>
+    <specific name="Level"> 1 </specific>
+      <specific name="Powers"> TER_POWER_SWASH_04 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class" />
+      <specific name="_DisplayPowers"> TER_POWER_SWASH_04 </specific>
+    <rules>
+         <grant name="TER_POWER_SWASH_04" type="Power" />
+    </rules>
+You gain Dashing Swordsman's Taunt as an at-will power.
+   </RulesElement>
+  <RulesElement name="Gambit" type="Power" internal-id="TER_POWER_SWASH_01" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+	  <Category> TER_CLASS_FEATURE_SWASH01,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+	  <Prereqs> Unselectable </Prereqs>
+    <Flavor> Luck is a fickle mistress, but often a benevolent one. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Feature 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You make an attack roll, skill check or parry attempt and dislike the result </specific>
+    <specific name="Effect"> Re-roll the triggering d20 roll with a +2 bonus. If the second attempt fails, you are dazed until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> TER_CLASS_FEATURE_SWASH01 </specific>
+  </RulesElement>
+  <RulesElement name="Parry" type="Power" internal-id="TER_POWER_SWASH_02" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+	  <Category> TER_CLASS_FEATURE_SWASH02,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
+	  <Prereqs> Unselectable </Prereqs>
+    <Flavor> You deflect a foe's melee attack with your own weapon. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Feature 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Requirement"> You must be wielding a melee weapon. You cannot use parry while in heavy armor or while wielding a heavy shield. </specific>
+    <specific name="Trigger"> An enemy makes a melee attack against you </specific>
+    <specific name="Effect"> Make a melee basic attack with the weapon you are wielding, and replace the target defense with the resulting value. You do no damage with this attack, and any effects that would be triggered on an attack are not. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> TER_CLASS_FEATURE_SWASH02 </specific>
+  </RulesElement>
+  <RulesElement name="Magnificent Bastard's Mockery" type="Power" internal-id="TER_POWER_SWASH_03" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+	  <Category> TER_CLASS_FEATURE_SWASH03,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+	  <Prereqs> Unselectable </Prereqs>
+    <Flavor> Your words cut deep into your foe's psyche. They find it impossibly hard to ignore your emotional assault. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Feature 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close Burst 10  </specific>
+    <specific name="Target"> One creature in burst </specific>
+    <specific name="Effect"> You mark the target. The target remains marked until you use this power against another target. If you mark other creatures using other powers, the target is still marked. A creature can be subjected to only one mark at a time. A new mark supersedes a mark that was already in place. 
+If your marked target makes an attack that doesn't include you as a target, it takes a -2 penalty to attack rolls. In addition, when your marked target makes an attack that doesn't include you as a target, you can, as an immediate reaction, invoke your magnificent bastard's mockery. When you do so, the next ally to hit the target before the end of the target's next turn deals extra damage equal to 6 + your intelligence modifier. This increases to 12 + your intelligence modifier at level 11, and to 18 + your intelligence modifier at level 21. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> TER_CLASS_FEATURE_SWASH03, TER_CLASS_FEATURE_SWASH04 </specific>
+  </RulesElement>
+  <RulesElement name="Dashing Swordsman's Taunt" type="Power" internal-id="TER_POWER_SWASH_04" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+	  <Category> TER_CLASS_FEATURE_SWASH03,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+	  <Prereqs> Unselectable </Prereqs>
+    <Flavor> Your words confuse your foe, allowing you to slip in around it and interrupt its attempted attacks. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Feature 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close Burst 10  </specific>
+    <specific name="Target"> One creature in burst </specific>
+    <specific name="Effect"> You mark the target. The target remains marked until you use this power against another target. If you mark other creatures using other powers, the target is still marked. A creature can be subjected to only one mark at a time. A new mark supersedes a mark that was already in place.
+If your marked target makes an attack that doesn't include you as a target, it takes a -2 penalty to attack rolls. In addition, when your marked target makes an attack that doesn't include you as a target, you can, as an immediate interrupt, shift a number of squares equal to your Dexterity modifier, and you must end this movement adjacent to the target of the triggering attack roll. You then use your parry at-will power as a free action to attempt to stop the foe's attack, regardless of the power's range and attack type. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> TER_CLASS_FEATURE_SWASH03, TER_CLASS_FEATURE_SWASH05 </specific>
+  </RulesElement>
+  
+ <!-- Class Powers -->
+
+  <RulesElement name="Touch and Go" type="Power" internal-id="TER_POWER_SWASH_10" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> You strike your foe, causing them to stumble past you as you switch places. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and you can switch spaces with the target. If the target cannot occupy your current square and be in a legal position, you do not switch spaces.
+Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dazzling Strike" type="Power" internal-id="TER_POWER_SWASH_11" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your dazzling display raises the ire of your foe. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the target is marked as if by your Swashbuckler's Taunt class feature until the end of your next turn. This does not remove your Swashbuckler's Taunt from its current target.
+Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="Special"> When you make an opportunity attack, you can use this power in place of a melee basic attack. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Magnificent Blow" type="Power" internal-id="TER_POWER_SWASH_12" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> A well placed and dramatic blow hampers your foe's guard for the next attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the next ally to hit the target with an attack before the end of your next turn deals extra damage equal to your Intelligence modifier.
+Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Hamstringing Blow" type="Power" internal-id="TER_POWER_SWASH_14" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your blade cuts in behind your enemy's ankle, hampering their movement. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the target is slowed until the end of your next turn.
+Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="Special"> When you make an opportunity attack, you can use this power in place of a melee basic attack. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Slick Slash" type="Power" internal-id="TER_POWER_SWASH_15" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> You stagger toward your foe, your slash appearing sloppily but truly unerring. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> Before the attack, you can shift one square. If you shift and have flanking for this attack, you gain a +1 bonus to the attack roll. </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and you can shift two squares.
+Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="Special"> When charging, you can use this power in place of a melee basic attack. You still have to end the charge movement within reach of the enemy before making the shift. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="All-In Strike" type="Power" internal-id="TER_POWER_SWASH_16" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your over-the-top attack inflicts a lot of pain, but leaves you open to attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma +2 vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier + Dexterity modifier damage.
+Level 21: 2[W] + Charisma modifier + Dexterity modifier damage. </specific>
+    <specific name="Effect"> You suffer a -2 penalty to parry attempts and all defenses until the end of your next turn. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  
+   <RulesElement name="Witty Retort" type="Power" internal-id="TER_POWER_SWASH_17" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your mock your foe's failures through sword and word, causing them to inadvertently repeat them. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One enemy who has missed with an attack since the start of your last turn </specific>
+    <specific name="Attack"> Charisma + 2 vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage and the target takes a -3 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="  Magnificent Bastard"> The penalty to attack rolls equals 1 + your intelligence modifier. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Vexing Flurry" type="Power" internal-id="TER_POWER_SWASH_18" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your quick swordplay mocks your foes and forces them to retaliate in kind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One, two, or three creatures </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] damage and the target is marked until the end of your next turn. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  
+   <RulesElement name="Flanker's Lament" type="Power" internal-id="TER_POWER_SWASH_19" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> You quickly jab at the foes flanking you and then escape them with a quick dash. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One or two enemies to whom you grant combat advantage </specific>
+	<specific name="Special"> You have combat advantage for the attack </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage. If both attacks hit, you can then shift 3 squares. </specific>
+    <specific name="  Dashing Swordsman"> On a hit, you instead shift 2 + your Dexterity modifier squares. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+
+  <RulesElement name="Nuisance Strike" type="Power" internal-id="TER_POWER_SWASH_20" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> Your words cut as deep as your sword with every cut you make. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 2[W] + charisma modifier damage. Make a secondary attack against the target. </specific>
+      <specific name="	Secondary Attack"> Charisma vs. Will </specific>
+      <specific name="	Hit"> 1[W] damage and the target takes a -2 penalty to all attack rolls (save ends) </specific>
+    <specific name="Effect"> Once before the end of the encounter, when you hit the target with an attack, you can make this power's secondary attack against the target as a free action. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  
+    <RulesElement name="Majestic Strike" type="Power" internal-id="TER_POWER_SWASH_21" source="Shadow Elf" revision-date="8/27/2010 11:25:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_22,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	  <Prereqs> Swashbuckler </Prereqs>
+    <Flavor> A blow your foe won't soon forget. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Reliable, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 2[W] + charisma modifier damage. </specific>
+    <specific name="Special"> This attack can score a critical hit on a natural roll of 16 or higher. You can chose to miss with this attack regardless of the die result. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Slash and Dash" type="Power" internal-id="TER_POWER_SWASH_13" source="Shadow Elf" revision-date="11/18/2011 8:25:50 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	<Prereqs> Swashbuckler </Prereqs>
+    <Flavor> You strike your foe from one side and quickly dart in the other direction. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and you can shift two squares.
+	Level 21: 2[W] + Charisma modifier damage. </specific>
+    <specific name="Special"> When charging, you can use this power in place of a melee basic attack. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+
+  <RulesElement name="Parry and Riposte (Swashbuckler)" type="Power" internal-id="TER_POWER_SWASH_22" source="Shadow Elf" revision-date="11/18/2011 8:25:50 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,TER_CLASS_002,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+	<Prereqs> Swashbuckler </Prereqs>
+    <Flavor> You use the momentum from a successful parry to send a foe staggering, then advance with an attack of your own. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Swashbuckler Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You successfully parry a melee attack </specific>
+	<specific name="Target"> The enemey that made the triggering attack </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage and you slide the target into any square adjacent to you. </specific>
+    <specific name="Effect"> Until the stance ends, you can make a melee basic attack against an attack who you parry, as a free action, provided they are within reach. </specific>
+    <specific name="_Associated Feats">  </specific>
+    <specific name="Class"> TER_CLASS_002 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+
+  
+  <!-- Swashbuckler Feats -->
+   <RulesElement name="Accurate Parry" type="Feat" internal-id="TER_FEAT_SWASH_01" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Elf, Elven Accuracy racial power, Parry class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Elf, Elven Accuracy racial power, Parry class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Use Elven Accuracy when parrying </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You can use your Elven Accuracy racial power to re-roll a failed parry attempt. If the new parry attempt still fails, you do not expend the use of Elven Accuracy.
+   </RulesElement>
+   <RulesElement name="Break the Conflict" type="Feat" internal-id="TER_FEAT_SWASH_02" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Dashing Swordsman's Dare class feature, Dex 15 </Prereqs>
+      <print-prereqs> Swashbuckler, Dashing Swordsman's Dare class feature, Dex 15 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Slide parried opponent </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you use your Dashing Swordsman's Dare immediate interrupt, and the resulting parry attempt succeeds, you can slide the triggering enemy and the triggering ally one square each.
+   </RulesElement>
+   <RulesElement name="Defensive Posture" type="Feat" internal-id="TER_FEAT_SWASH_03" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Parry class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Parry class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Slide parried opponent </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you take the total defense or second wind action, the bonus to defenses you gain as a result also applies to parry attempts you make until the end of your next turn.
+   </RulesElement>
+   <RulesElement name="Deflect Arrows" type="Feat" internal-id="TER_FEAT_SWASH_04" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Parry class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Parry class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You can Parry ranged attacks </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You can use your Parry class feature to attempt to stop ranged attacks, as well as melee attacks.
+   </RulesElement>
+   <RulesElement name="Fey Step Parry" type="Feat" internal-id="TER_FEAT_SWASH_05" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Eladrin, Parry class feature, Fey Step racial power </Prereqs>
+      <print-prereqs> Swashbuckler, Eladrin, Parry class feature, Fey Step racial power </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Fey Step to avoid attack </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You may expend the use of your Fey Step racial power as an immediate interrupt to make any attack automatically miss you, rather than gain Fey Step's normal effect. Miss effects from powers cancelled in this manner are also cancelled.
+   </RulesElement>
+   <RulesElement name="Hero's Sacrifice" type="Feat" internal-id="TER_FEAT_SWASH_06" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Dashing Swordsman's Dare class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Dashing Swordsman's Dare class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Take attack meant for ally </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you make a parry attempt as part of your Dashing Swordsman's Dare class feature and the parry attempt fails, you can make the attack hit you instead of the targeted ally.
+   </RulesElement>
+   <RulesElement name="Little Body, Big Mouth" type="Feat" internal-id="TER_FEAT_SWASH_07" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Small size, Swashbuckler's Taunt class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Small size, Swashbuckler's Taunt class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Penalize large foes </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Large and larger targets marked by your Swashbuckler's Taunt class feature take an additional -2 penalty to attacks that do not include you as a target.
+   </RulesElement>
+   <RulesElement name="Master's Mockery" type="Feat" internal-id="TER_FEAT_SWASH_08" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Magnificent Bastard's Mockery class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Magnificent Bastard's Mockery class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Ally gains +2 to attack taunted foe </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you invoke your magnificent bastard's mockery class feature, the next ally to attack the target before the end of the target's next turn gains a +2 power bonus to the attack roll.
+   </RulesElement>
+   <RulesElement name="Mocking Faerie Fire" type="Feat" internal-id="TER_FEAT_SWASH_09" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Drow, Darkfire racial power, Swashbuckler's Taunt class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Drow, Darkfire racial power, Swashbuckler's Taunt class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Taunt target of Darkfire </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+The target of your Darkfire racial power is also affected by your Swashbuckler's Taunt until the end of your next turn on a hit. If another target is already marked by your Swashbuckler's Taunt class feature, that mark is not removed.
+   </RulesElement>
+   <RulesElement name="Raise the Stakes" type="Feat" internal-id="TER_FEAT_SWASH_10" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Gambit class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Gambit class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Gain another +2 to Gambit roll </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you use your Gambit class feature, before making the second roll, you can chose to gain a +2 bonus to the re-roll. If you do so and the re-roll fails, you are stunned until the end of your next turn instead of dazed.
+   </RulesElement>
+   <RulesElement name="Risky Action" type="Feat" internal-id="TER_FEAT_SWASH_11" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Human, Gambit class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Human, Gambit class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Regain Gambit when you spend an action point </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you spend an action point for any reason, you also regain the use of your Gambit class feature if you have already used it.
+   </RulesElement>
+   <RulesElement name="Improved Parry" type="Feat" internal-id="TER_FEAT_SWASH_12" source="Shadow Elf" revision-date="8/27/2010 12:17:54 PM" >
+      <Prereqs> Swashbuckler, Parry class feature </Prereqs>
+      <print-prereqs> Swashbuckler, Parry class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Gain a +2 bonus to parry attempts. </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You gain a +2 bonus to parry attempts.
+   </RulesElement>
+  
+</D20Rules>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartIndex>
+	
+	<Changelog>
+  Created 22-October-2016
+  Updated 03-November-2016 Added parts
+	</Changelog>
+	
+  <UpdateInfo>
+    <Version>0.9</Version>
+    <Filename>KDM_Houserule_Pack.index</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Houserule%20Pack.index</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Houserule%20Pack.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- <Part>
+    <Filename>KDM Ability Scores.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Ability%20Scores.part</PartAddress>
+  </Part> -->
+  <Part>
+    <Filename>KDM Bugfix.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Bugfix.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Class Features.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Class%20Features.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Damage.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Damage.part</PartAddress>
+  </Part>
+  <!-- <Part>
+    <Filename>KDM Defense Stacking.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Defense%20Stacking.part</PartAddress>
+  </Part> -->
+  <Part>
+    <Filename>KDM Epic Destinies.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Epic%20Destinies.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Declutter.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Declutter.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Guild and Tribal.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Guild%20and%20Tribal.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Misc.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Misc.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Multiclass.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Multiclass.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Hybrid.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Hybrid.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Items.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Items.part</PartAddress>
+  </Part>
+  <!-- <Part>
+    <Filename>KDM Math Fix.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Math%20Fix.part</PartAddress>
+  </Part> -->
+  <Part>
+    <Filename>KDM MBA.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20MBA.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Paragon Paths.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Paragon%20Paths.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Power Source Skills.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Power%20Source%20Skills.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Powers.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Powers.part</PartAddress>
+  </Part>
+  <!-- <Part>
+    <Filename>KDM Racial.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Racial.part</PartAddress>
+  </Part> -->
+  <Part>
+    <Filename>KDM Readme.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Readme.part</PartAddress>
+  </Part>
+  <!-- <Part>
+    <Filename>KDM Themes.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Themes.part</PartAddress>
+  </Part> -->
+  <Part>
+    <Filename>KDM Utility.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Utility.part</PartAddress>
+  </Part>
+</PartIndex>

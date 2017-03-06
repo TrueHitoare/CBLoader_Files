@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">	
+	<!-- Tibbit -->
+	<RulesElement name="Tibbit" type="Race" internal-id="ID_FMP_RACE_165" source="Dragon Compendium">
+		<Prereqs> ~TIBBIT </Prereqs>
+		<Flavor> Wily beasts with the ability to assume humanoid form. </Flavor>
+		<specific name="Size"> Small </specific>
+		<specific name="Speed"> 7 squares </specific>
+		<specific name="Characteristics"> Agile, chaotic, elusive, independent, mischievous, quick, protective, reclusive, secretive, unpredictable, wild </specific>
+		<specific name="Physical Qualities"> Tibbits (also known as catweres) are small, humanoid creatures that have the ability to turn into a common house cat. They arose from felines kept as familiars in ages past. The powerful magic that allows a familiar to gain intelligence and magic abilities slowly filtered from one generation of cats to the next. Whether tibbits evolved from a natural process, divine intervention, or a sudden surge in the magic running through their ancestry, none can say. Tibbits have never existed in large numbers, and their tendency to spread across the world leaves them with a fractured, incomplete racial history.
+	In humanoid form, tibbits are small, stealthy, dark-skinned people with pointed ears and catlike eyes. Their hair tends to grow thick and long and males tend to grow sideburns. Their skin tones range from a tawny brown to black, but occasionally a tibbit has pure white skin. Their hair color matches the wide range of colors found in house cats, from pure white to striped silver to deep black.
+	In their cat form, tibbits look like fat but energetic house cats. They appear identical to-and indistinguishable from-any common, domesticated breed. </specific>
+		<specific name="Playing"> When creating a tibbit character, here are a few points to consider.
+	Tibbits, as befits their heritage, are moody, curious, and sometimes arrogant. Many tibbits prefer the comforts of a fine meal (whether a succulent rodent or a five-course feast in the lap of luxury), stiff drink, and a soft couch. Even the most decadent tibbit, however, eventually succumbs to the steady pull of its curiosity. A tibbit might spend years living off the treasures it won in adventure, only to suddenly strike out into the unknown once again.
+	When dealing with others, tibbits show a similar capability to change their attitudes and posture depending on their moods. A tibbit might act relaxed and languid one moment, alert and inquisitive the next. They tend to have a slightly distant, arrogant attitude toward others, as if as a race they share a colossal, secret joke over other intelligent creatures. Still, once a tibbit marks someone as a friend few other creatures match their devotion. A tibbit might complain about a friend's needs or tend toward laziness, but when trouble arises she is a dauntless ally.
+	Much like their feline ancestors tibbits exhibit independence, curiosity, and quickness of mind and body. They rarely form communities larger than two or three families, and even these small colonies rarely hold together for more than a few years. Shortly after reaching adulthood, a tibbit develops an intense desire to wander the world and satisfy her racial curiosity. Tibbits can be found wherever humans and other civilized humanoid races have established cities, towns, and colonies.
+	Among humans and other humanoids tibbits usually remain in their cat form. The stray cat that prowls a neighborhood, the mangy cat adopted as a temple's unofficial pet, and the lazy feline always close at hand at the local tavern might be tibbits. Driven by curiosity, tibbits love to remain in their animal form while observing humans.
+	Cynical observers contend that a tibbit seeks to spy on others. Tibbits hold that they merely like to keep an ear and eye out for any interesting bits of news. Tibbits are typically too chaotic, carefree, and impulsive to work as spies or hired killers. Upon overhearing a group of adventurers talking over a treasure map in hushed tones, a tibbit might be just as likely to shift into humanoid form on the spot and offer to join the adventure as she is to lose interest and chase down a juicy mouse she spotted across the tavern. </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 2&apos; 8&quot;-3&apos; 2&quot; </specific>
+		<specific name="Average Weight"> 30-40 lb. </specific>
+		<specific name="Ability Scores"> +2 Dexterity; +2 Charisma or +2 Wisdom </specific>
+		<specific name="Languages"> Common, choice of one other </specific>
+		<specific name="Skill Bonuses"> +2 Bluff, +2 Acrobatics </specific>
+		<specific name="Short Description"> Small humanoids who have the ability to shift into the form of an unobtrusive house cat. </specific>
+		<specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_4415, ID_FMP_RACIAL_TRAIT_641, ID_FMP_RACIAL_TRAIT_4416, ID_FMP_RACIAL_TRAIT_1568, ID_FMP_RACIAL_TRAIT_4418, ID_FMP_RACIAL_TRAIT_94419 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_TIBBIT" type="Grants" />
+			<statadd name="Speed" value="+7" />
+			<textstring name="Average Height" value="2&apos; 8&quot;-3&apos; 2&quot;" />
+			<textstring name="Average Weight" value="30-40 lb." />
+			<textstring name="Size" value="Small" />
+			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma" />
+			<select type="Language" number="1" Category="Starting" />
+		</rules>
+Play a Tibbit if you want ...
+ * to be a member of a race that favors the assassin, monk, rogue, or sorcerer classes.
+	</RulesElement>
+	<RulesElement name="Tibbit" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIBBIT" source="Dragon Compendium">
+		<specific name="_SupportsID"> ID_FMP_RACE_165 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+			<grant name="ID_FMP_LANGUAGE_1" type="Language" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_4415" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_4416" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_1568" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_4418" type="Racial Trait" />
+			<grant name="ID_FMP_RACIAL_TRAIT_94419" type="Racial Trait" />
+			<grant name="ID_INTERNAL_COUNTSASRACE_HENGEYOKAI" type="CountsAsRace" />
+			<grant name="ID_INTERNAL_COUNTSASRACE_HALFLING" type="CountsAsRace" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Elusive" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4415" source="Dragon Compendium">
+		<specific name="Short Description"> Gain +2 racial bonus to escape checks and saving throws against Immobilize, Restrain, or Slow effects </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_FMP_RACE_165 </specific>
+		<rules>
+			<statadd name="Saving Throws" value="+2" type="Racial" condition="against effects that immobilize, restrain, or slow you and to checks made to escape a grab." />
+		</rules>
+You have a +2 racial bonus to Acrobatics checks made to escape a grab, and to saving throws against effects that Immobilize, Restrain, or Slow you.
+	</RulesElement>
+	<RulesElement name="Beast Nature" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4416" source="Dragon Compendium">
+		<specific name="Short Description"> You considered both a magical beast and a humanoid </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_FMP_RACE_165 </specific>
+You are considered both a magical beast and a humanoid for the purpose of effects that relate to creature type.
+	</RulesElement>
+	<RulesElement name="Language of Beasts" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4418" source="Dragon Compendium">
+		<specific name="Short Description"> You can communicate with beasts that share your animal form </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_FMP_RACE_165 </specific>
+While you are in animal or hybrid form, you can communicate with any natural or fey beasts that share your animal form or a form that is closely related. In human form, you can understand these beasts but cannot directly communicate with them.
+	You can communicate simple concepts and commands to such creatures, but they are under no compulsion to obey you, and their knowledge is restricted by their experience and mobility. Beasts you talk to are not necessarily friendly; your DM may require skill checks to influence their attitude.
+	</RulesElement>
+	<RulesElement name="Cat Form" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_94419" source="Dragon Compendium">
+		<specific name="Short Description"> Gain the cat form power </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_916360 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_RACE_165 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_916360 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_916360" type="Power" />
+		</rules>
+You have the cat form power.
+	</RulesElement>
+	<RulesElement name="Cat Form" type="Power" internal-id="ID_FMP_POWER_916360" source="Dragon Compendium">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_RACIAL_TRAIT_94419,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_RACE_165,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		<Prereqs> Tibbit Race or Tibbit CountsAsRace </Prereqs>
+		<Flavor> You swiftly assume the guise of either humanoid or cat. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Tibbit Utility </specific>
+		<specific name="Keywords"> Polymorph </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You change into your humanoid, Tiny cat, or hybrid form. The new form lasts until you change forms again. While you are in humanoid or animal form, other creatures can attempt to discern your true nature by making an Insight check opposed by your Bluff check; you gain a +5 bonus to your check.
+	None of your game statistics change in humanoid or hybrid form. While in animal form, you cannot use any attack powers, although you can sustain such powers. Your equipment becomes part of the form, and you continue to gain the benefits of the equipment you wear, except for shields and item powers. While equipment is part of the form, it cannot be removed, and anything in a container that is part of the form is inaccessible. You otherwise retain your game statistics.
+	You gain a movement benefit based on your form.</specific>
+		<specific name="Animal Form"> You gain a climb speed equal to your speed.</specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_RACE_165 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_94419 </specific>
+	</RulesElement>
+</D20Rules>

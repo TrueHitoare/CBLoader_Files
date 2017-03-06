@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 17-November-2016
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>TRUE-Powers.part</Filename>
+		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Powers.part</PartAddress>
+		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Powers.txt</VersionAddress>
+	</UpdateInfo>
+
+	<!-- Applying PH Errata to Prismatic Spray -->
+	 <RulesElement name="Prismatic Spray" type="Power" internal-id="ID_FMP_POWER_1200" source="Player&apos;s Handbook" revision-date="8/27/2010 11:24:16 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
+      <Flavor> A dazzling spray of multicolored light springs from your hands, enveloping your enemies. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Wizard Attack 25 </specific>
+      <specific name="Keywords"> Arcane, Fear, Fire, Implement, Poison </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close blast 5 </specific>
+      <specific name="Target"> Each enemy in blast </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude, Reflex, Will </specific>
+	  <specific name="Special"> You make only one attack per target, but compare that attack result against all three defenses. A target might be subject to any, all, or none of the effects depending on how many of its defenses were hit. The target must make a saving throw against each ongoing effect separately. </specific>
+      <specific name="Hit"> 3d6 + Intelligence modifier fire damage, and ongoing 15 fire damage (save ends) if the attack hits the target&apos;s Reflex defense. The target is slowed and takes ongoing 15 poison damage (save ends) if the attack hits the target&apos;s Fortitude defense. The target is stunned (save ends) if the attack hits the target&apos;s Will defense. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_9 </specific>
+      <specific name="Level"> 25 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>   
+
+</D20Rules>

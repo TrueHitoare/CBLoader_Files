@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Readme.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Readme.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Readme.txt</VersionAddress>
+  </UpdateInfo>
+<Changelog>
+See KDM Readme.part for file info. (It's just a text file with a few tags added to make it update.)
+Updated 15-April-2012 Back again! Themes, Paragon powers, experimental Power Point scaling changes
+Updated 24-April-2012 Minor-ish update: Switches to disable elements, some extra bonus utility/feat options
+Updated 29-April-2012 Removed switches from previous patch, added a WIP Epic Destinies file for review
+Updated 30-April-2012 More work on Epic Destinies, updated Themes to include some bugfixes and new material
+Updated 2-May-2012 Started Epic powers (EDs aren't "done" but I'm not aware of any outstanding issues at the moment so done for now)
+Updated 14-May-2012 Epic powers done; tweaked KDM MBA.part (generates effects directly rather than granting feats)
+</Changelog>
+<!--
+KDM House Rule Pack v2.x
+
+This pack contains a few files that integrate some common (and some not-so-common) house-rules into the CB, so you don't have to scribble so much on your character sheets or repeatedly explain your house-rules to your players. As of 1.5, it also includes a growing collection of balance changes to remove trap options, promote real choice, and ease character creation. Feedback is always appreciated; contact me at KDM.Projects@gmail.com (email or Google Chat), or on EnemyOfFun's forum: http://enemyoffun.clanteam.com/viewforum.php?f=23.
+
+Note: Some files are completely modular, while others are best used in conjunction with each other.
+
+Modular:
+Ability Scores
+Damage
+Defense Stacking
+Feats - Declutter
+Feats - Guild and Tribal
+Hybrid
+Math Fix
+Power Source Skills
+Utility
+
+Best used together:
+Everything else
+
+
+FILES AND THEIR CONTENTS:
+
+
+KDM Ability Scores
+    Changes the rules for racial scores to every race getting +2 in any two scores of your choice. (You now select the bonuses on the Race tab rather than the Ability Scores tab.) Doesn't directly affect any race data, so the normal racial ability score info is still displayed and selectable but has no effect, and it automatically works on any custom races you install.
+
+
+KDM Class Features
+	Various balance fixes to class features.
+
+
+KDM Damage
+	Removes Dragonshard Augments and grants an equivalent scaling bonus to all damage rolls on all attacks.
+	Combines the Weapon Focus feats into a single Offensive Focus (All) feat that applies to all damage rolls.
+	Combines the Weapon Mastery and similar crit range feats into a single Critical Mastery feat that works on all attacks.
+	
+
+KDM Defense Stacking
+    Makes all attributes contribute to NADs, rather than only the highest. Basically a boost to classes that have both primary and secondary stats in the same group; now their high defense is very hard to hit, to compensate for their other two defenses being so low. Other classes are more or less unaffected.
+	
+
+KDM Epic Destinies
+    Reworks Epic Destinies somewhat:
+		-Ability Score increases stripped out of EDs (and features shifted around in those EDs to fill the gaps)
+		-Ability Scores like those at L4/8/14/18/24/28 granted at L16/26 as well. Hopefully this will:
+			1) Help make more EDs viable and more accessible
+			2) Smoothe out the primary stat mod jump at L21 (typical mod increases are now 8/14/18/24/28 rather than 8/14/21x2/28)
+		-EDs that are still subpar or now too good are reworked to be more in line with the rest. Shooting for roughly Destined Scion level.
+		-Not putting *too* much importance on L30 caps, since they won't be around long and hey, it's level 30.
+	
+KDM Feats
+    A series of files that modify or remove various feats.
+
+	* Declutter: Declutters the feat screen by removing obsolete feats and adding prereqs so that only feats you can use appear.
+    * Guild and Tribal: Removes the Guild and Tribal feats.
+    * Misc: Various adjustments to feats, mostly buffs to underpowered options.
+    * Multiclass: Relaxes restrictions on multiclass skill training and feat prereqs, combines the multiclass power swaps into one feat.
+
+
+KDM Hybrid
+    Gives Hybrid characters an easy way to adjust armor and shield proficiencies: an extra two feat choices from specialized feats that provide all proficiencies up to a chosen level. Useful if you want to, say, let Hybrid characters split the difference instead of taking the lowest set.
+ (Also contains some commented-out partial code for a mod that automatically calculated and granted the appropriate proficiencies; if you have any ideas on how to complete it, let me know!)
+
+
+KDM Items
+	Various item balance changes.
+
+
+KDM Math Fix
+    Gives scaling bonus to attack rolls and non-AC defenses, and removes or adjusts related feats (the so-called "math fix" feats) to compensate.
+
+
+KDM MBA
+    MBAs gain power source keywords.
+	Melee classes use their primary ability mod for MBA attack rolls, and half their primary ability mod for MBA damage rolls (or the full mod for Defender classes).
+    Note: If you pick two such hybrid classes, the primary ability from the class selected for the second hybrid box on the class screen takes precedence.
+	
+	
+KDM Paragon Paths
+	Rebalances Paragon Paths and Paragon Multiclassing, and reduces the entry requirements for the latter to any one multiclass feat + Acolyte Power. Also changes most deity requirements to domain requirements, e.g. Morninglord now requires you to worship a deity of the sun domain rather than Amaunator specifically.
+
+
+KDM Power Source Skills
+    Makes all Arcane classes use their highest mental ability score for Arcana checks. Likewise for Divine/Religion and Primal/Nature. No more Sorcerers who suck at magic or Clerics who suck at religion.
+
+
+KDM Powers
+	Rebalances powers. Currently updates powers for all classes*.
+		*Classes with augmentable powers are being saved for a later update. Edit: Now includes an experimental rework of paragon and
+		epic tier augmentable powers that should give some incentive to upgrade powers. Case-by-case balance tweaks on hold until this
+		gets nailed down or reverted.
+
+
+KDM Racial
+	Bugfixes to racial powers and related options to get them to work correctly and more intuitively.
+	
+	
+KDM Themes
+	Reworks Dark Sun themes to follow the same structure as later themes, and adjusts all themes for balance.
+	
+
+KDM Utility
+    Grants some options for bonus non-combat utilities/feats. Choices are not enforced, but a note is displayed on the character sheet and/or the builder.
+		-<Blank>: One feat or utility at 1st level.
+		-(Scaling): One feat or utility at 1st level that can be replaced each tier.
+		-(Cumulative): Three feats or utilities, one granted at each tier.
+	
+
+Credits:
+
+Production: KDM
+
+Special thanks:
+ghoti - Lead Tester and High QA Muck-a-muck
+Ferdil
+Greyhawk Fan (His Deluxe Missiles served as the basis for my own take on the missiles and related options.)
+MustacheRide
+Peraion Graufalke (P_G)
+SabreCat
+Spinecracker (Binder's Bane was his idea, which I blatantly stole without permission)
+Tanngrisnr
+Tivaan
+yeoldesteve
+...and all the contributors to the CBLoader wiki, the "official" WotC part files, and the WotC forum 4e CharOp guides
+-->
+</D20Rules>

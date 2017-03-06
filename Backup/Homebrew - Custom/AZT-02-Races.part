@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 24-May-2015
+ Updated 26-May-2015 Added missing Dex bonus to Catfolk
+</Changelog>
+
+    <!-- Races -->
+    <!-- Catfolk -->
+	<RulesElement name="Catfolk" type="Race" internal-id="ID_AZT_RACE_001" source="Sabre">
+		<Prereqs> ~Catfolk </Prereqs>
+		<Flavor> Graceful and agile predators of harsh lands, with a mysterious past indicated all around them </Flavor>
+		<specific name="Size"> Medium  </specific>
+		<specific name="Speed"> 6 squares  </specific>
+		<specific name="Physical Qualities"> Standing at anywhere from slightly over to to significantly under human height, Catfolk are rarely bulky or stocky, but sleek, smooth and perfectly balanced. They take after the forms of all cats- strong, stripey tigers, great and proud lions, lurking jaguars and intensely smooth and silent panthers.
+They are found all over the Aztunsarian lands, from the jungles to the savannahs and plains and even the deserts, living in mostly tribal societies, caring not for the trappings of civilisation... not yet, at least.
+While they currently mostly live the same as they have for thousands of years, many are starting to realise that nearly all the intruding races see them as little more than obstacles to be removed, and they must adapt if they are to survive as anything but slaves or curiosities. </specific>
+		<specific name="Vision"> Low-light </specific>
+		<specific name="Average Height"> 5&apos;2&quot;-6&apos; (160-180 cm) </specific>
+		<specific name="Average Weight"> 105-200 pounds (45-90 kg) </specific>
+		<specific name="Ability Scores"> +2 Dexterity; +2 Wisdom or +2 Charisma </specific>
+		<specific name="Languages"> Common, Feline </specific>
+		<specific name="Skill Bonuses"> +2 Acrobatics, +2 Stealth </specific>
+		<specific name="Male Names">  </specific>
+		<specific name="Female Names">  </specific>
+		<specific name="Short Description"> This isn&apos;t even used anywhere, why bother filling it in? (Though if you see this in the builder somewhere, let me know where it showed up.) </specific>
+		<specific name="Racial Traits"> ID_AZT_RACIAL_TRAIT_0001, ID_FMP_RACIAL_TRAIT_4415, ID_AZT_RACIAL_TRAIT_0003 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_CATFOLK" type="Grants" />
+			<statadd name="Speed" value="+6" />
+			<textstring name="Average Height" value="5&apos; 2&quot;-6&apos;" />
+			<textstring name="Average Weight" value="105-200 lb." />
+			<textstring name="Size" value="Medium" />
+			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma" />
+		</rules>
+
+Play a Catfolk if you want ...
+
+ * to have the graceful and stylish appearance of a cat.
+ * to be a dextrous, deadly and agile predator at home in nature, but easily adaptable.
+ * to be a member of a race with a mysterious history that may well come to light at your hands.
+ * to be a member of a race that favors the Sorceror, Rogue and Warlock classes.
+ * to be a cat. Everybody wants to.
+	</RulesElement>
+	<RulesElement name="Catfolk" type="Grants" internal-id="ID_INTERNAL_GRANTS_CATFOLK" source="Sabre" >
+		<specific name="_SupportsID"> ID_AZT_RACE_001 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+			<grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+			<grant name="ID_AZT_RACIAL_TRAIT_0001" type="Racial Trait" /> <!-- Righting Reflex -->
+			<grant name="ID_FMP_RACIAL_TRAIT_4415" type="Racial Trait" /> <!-- Elusive - From Hengeyokai -->
+			<grant name="ID_AZT_RACIAL_TRAIT_0003" type="Racial Trait" /> <!-- Predator's Pounce -->
+			<grant name="ID_FMP_LANGUAGE_1" type="Language" /> <!-- Common language -->
+			<grant name="ID_AZT_LANGUAGE_01" type="Language" /> <!-- Feline language -->
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+			<grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Righting Reflex" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0001" source="Sabre">
+		<specific name="Short Description"> Your catlike reflexes let you take falls more gracefully. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<rules />
+When falling or jumping down, you treat the fall as if it were 10 feet shorter than it actually is in regards to damage and how far you can try to jump down. Regardless of whether you take damage from a fall, you always land on your feet. 
+	</RulesElement>
+	<RulesElement name="Elusive" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_4415" source="True">
+		<specific name="Short Description"> Gain +2 racial bonus to escape checks and saving throws against Immobilize, Restrain, or Slow effects </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<rules>
+			<statadd name="Saving Throws" value="+2" type="Racial" condition="against effects that immobilize, restrain, or slow you and to checks made to escape a grab." />
+		</rules>
+You have a +2 racial bonus to Acrobatics checks made to escape a grab, and to saving throws against effects that Immobilize, Restrain, or Slow you.
+	</RulesElement>
+	<RulesElement name="Predator&apos;s Pounce" type="Racial Trait" internal-id="ID_AZT_RACIAL_TRAIT_0003" source="Sabre">
+		<specific name="Short Description"> You have the Predator&apos;s Pounce as an encounter power. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_AZT_RACIALPOWER_0001 </specific>
+		<specific name="Type"> Attack </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<specific name="_DisplayPowers"> ID_AZT_RACIALPOWER_0001 </specific>
+		<rules>
+			<grant name="ID_AZT_RACIALPOWER_0001" type="Power" />
+		</rules>
+You have the Predator&apos;s Pounce encounter power.
+	</RulesElement>
+	<RulesElement name="Predator&apos;s Pounce" type="Power" internal-id="ID_AZT_RACIALPOWER_0001" source="Sabre">
+		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_AZT_RACIAL_TRAIT_0003,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Flavor> Catfolk are well known for being able to make a flying leap from a standing start, to get into the fray or out of it. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Catfolk Racial Power </specific>
+		<specific name="Keywords"> Movement </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You end any Slow or Immobilized effects on you, then shift 5 squares. You can move through enemies with this shift, and ignore terrain effects, but you must move directly to the ending square. You may make a long jump as part of this movement without making an Athletics check. </specific>
+		<specific name="Class"> ID_AZT_RACE_001 </specific>
+		<specific name="Level" />
+		<specific name="_Associated Feats" />
+		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0003 </specific>
+	</RulesElement>
+	
+</D20Rules>

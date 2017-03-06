@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>27-April-2013</Version>
+    <Filename>TER-04-Classes.part</Filename>
+    <PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-04-Classes.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-04-Classes.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bug Fixes -->
+  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+<Changelog>
+ Created 31-August-2011
+ Updated 16-August-2012 Added Slayer ranged weapon specialization (level 7)
+ Updated 16-August-2012 Added Sorcerer elemental build
+ Updated 22-February-2013 Awarded free melee training (Charisma) to Ardents.
+ Updated 20-April-2013 Altered rogue sneak attack to apply to proficient weapons, but penalized for 2Hers
+</Changelog>
+
+	<!-- Assassin -->
+
+   <RulesElement name="Assassin" type="Class" internal-id="ID_FMP_CLASS_466" source="Dragon Magazine 379" revision-date="8/27/2010 12:43:11 PM" >
+      <Flavor> &apos;sBy the time you see me, it is too late to save yourself.&apos;s </Flavor>
+      <specific name="Key Abilities"> Dexterity, Charisma, Constitution </specific>
+      <specific name="Implements"> Ki focuses, weapons with which you have proficiency </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather </specific>
+      <specific name="Weapon Proficiencies"> Simple melee, simple ranged, military melee </specific>
+      <specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+      <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 5 </specific>
+      <specific name="Healing Surges"> 7+ Constitution Modifier </specific>
+      <specific name="Trained Skills"> Stealth. From the class skills list below, choose four more trained skills at 1st level. </specific>
+      <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Endurance (Con), Insight (Wis), Perception (Wis), Stealth (Dex), Streetwise (Cha), Thievery (Dex) </specific>
+      <specific name="Build Options"> Bleak Disciple Assassin, Night Stalker Assassin </specific>
+      <specific name="_PARSED_CLASS_FEATURE"> Assassin&apos;s Shroud, Guild Training, Shade Form, Shadow Armaments, Shadow Step </specific>
+      <specific name="Role"> Striker. You are the ghost in the night and the whisper on the wind. Barriers are worthless against you, and you strike your foes with sudden, precise force. You lean toward controller as a secondary role. </specific>
+      <specific name="Power Source"> Shadow. You have bound your soul to the Shadowfell and become a being of darkness. </specific>
+      <specific name="Creating"> Assassins rely on Dexterity, Charisma, and Constitution for their powers. You can choose any powers you like, but assassins typically choose powers that complement their choice of Guild Training. </specific>
+      <specific name="Class Features"> Assassins have the following class features. </specific>
+      <specific name="Supplemental"> Assassin Overview
+
+Characteristics: You can turn into an insubstantial creature of shadow. While you are in that form, even the most alert sentinel can overlook your approach, and attacks pass through you with little harm. When you spot your target, you study its weaknesses as you prepare to deliver a killing blow.
+
+Religion: Assassins who pursue evil creatures are often worshipers of the Raven Queen, who teaches that death is the great leveler, a tool the world needs to end abuses by powerful beings. Evil assassins wallow in the misery and fear they cause, or they revel in performing an exquisite kill. Such folk usually venerate Zehir or Lolth.
+
+Races: Revenants have the combination of implacability and physical ability needed to flourish as assassins. Half-orcs also excel as assassins, often having a brutish nature that makes the assassin&apos;s art palatable to them. Drow are superlative assassins, both because they grow up in a society that values skilled murder and because they are comfortable with working in darkness. Halflings make good assassins since they can combine their natural stealthiness with a native curiosity that makes hiding from them difficult. Changeling assassins possess an unsurpassed ability to infiltrate and kill from a position of trust.
+
+Assassins and the Ki Focus
+Assassins use ki focuses for the ability to augment mundane weapons. After all, a guard patrol is far more suspicious of the wanderer carrying a greatsword than of the unarmed peasant. Using ki focuses, assassins wield whatever weapons are at hand, or even unarmed strikes, to deliver shadow attacks.
+
+When you use your ki focus with a weapon attack, you focus shadow magic into your weapon. Some assassins carry a few different weapons to ensure that they have the right tool for the job. An accurate weapon, such as a longsword, is a good tool for taking down a heavily armored warrior. When an assassin battles a brute that relies on endurance rather than defense, a less accurate but devastating weapon such as a greataxe proves useful.
+	
+Since your ki focus augments your basic attacks, a thrown weapon wielded in your off hand serves as the perfect complement to your primary weapon. You can throw a dagger to cut down a fleeing guard, and feats such as Two-Weapon Fighting improve your melee abilities. </specific>
+      <specific name="Implement"> Assassins focus their shadow energy through a ki focus, which is not an object they wield but a reservoir of magical power within themselves. When using a ki focus, an assassin taps into the power of shadow magic and channels it into both implement and weapon attacks.
+
+You can imbue your ki focus with magic as if it were a physical implement. When you have a magic ki focus, you can add its enhancement bonus to the attack rolls and the damage rolls of assassin powers and assassin paragon path powers that have the implement keyword. You can also add its enhancement bonus to the attack rolls and the damage rolls of any weapon attack you make using a weapon with which you&apos;re proficient.
+
+You can also use a weapon with which you&apos;re proficient as an implement. While wielding the weapon as an implement, the characteristics of the weapon you use-proficiency bonus, damage die, and weapon properties (such as defensive or high crit)-are irrelevant to your implement powers.
+
+If you have a magic ki focus and wield a magic weapon, you choose before you use an attack power whether to draw on the magic of your ki focus or to employ the magic of your weapon. Your choice determines which enhancement bonus, critical hit effects, and magic item properties and powers you can apply to attacks with that power. You can&apos;t, for example, use the enhancement bonus of your ki focus and the property of your magic weapon with the same attack power. </specific>
+      <specific name="Powers"> Your powers are called hexes. They draw on your shadowed soul to enhance your combat techniques or harm your enemies directly. You can use shadows as distractions, weapons, and secret paths to destroy your enemies. </specific>
+      <specific name="Power Name"> Hexes </specific>
+      <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_6 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options" />
+      <specific name="Short Description"> The darkness within gives you the ability to capitalize on your enemy&apos;s weaknesses. </specific>
+      <specific name="_ParentClass" />
+      <specific name="Trait Package" />
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_ASSASSIN" type="Grants" />
+         <select type="Power" number="1" Category="$$CLASS,at-will,1" />
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_466" />
+         <statadd name="_LEVEL-ONE-HPS" value="+12" />
+         <statadd name="_PER-LEVEL-HPS" value="+5" />
+         <statadd name="Healing Surges" value="+7" />
+         <select type="Build" number="1" Category="$$CLASS" optional="true" />
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+         <statadd name="Will Defense Class Bonus" value="+1" />
+         <select type="Skill Training" number="4" Category="ID_FMP_CLASS_466" />
+         <statadd name="_WeaponsAsImplements" value="+1" />
+      </rules>
+Few creatures embrace shadow magic without both a compelling reason and a measure of desperation. Not many visit the Shadowfell willingly, let alone pledge a shard of their souls to it. Yet that is exactly what assassins, and other practitioners of shadow magic, do to gain their power.
+
+As an assassin, you cede a portion of yourself to the Shadowfell, replacing a fundamental part of your being with a dark reflection of your true self. At times, you can manifest this twisted image in place of your body so that you can face attacks with little cause for concern. Also, the infusion of shadow magic allows you to spot the weakest points in a victim&apos;s defenses. With a few moments of study, you can reduce even the stoutest warrior to a corpse.
+
+If others know that you are an assassin, you might find that few trust you. In some civilized realms, the study of shadow magic and assassination is banned on pain of death. In the past, and as a response to the outcry against them, assassins formed coteries, or guilds, of like-minded slayers, and each one delves into the study of shadow magic and develops unique methods of killing. A guild provides you with a measure of protection, and its grandmasters expect obedience and fealty. The wars between guilds, and the struggles within them, might never spill into mass battles, but they still leave dozens of slain folk in their wake.
+
+As an assassin, you are an outcast. You traded away part of your soul for the power of death. Perhaps you seek justice against a powerful enemy, or maybe you had no other way to preserve yourself in the face of a bleak, uncaring world. Whatever drew you onto the assassin&apos;s path, you are an avatar of death and a trained killer from whom few can escape unharmed.
+   </RulesElement>
+   <RulesElement name="Bleak Disciple Assassin" type="Build" internal-id="ID_FMP_BUILD_84" source="Dragon Magazine 379" revision-date="9/21/2010 10:53:47 AM" >
+      <Category> ID_FMP_CLASS_466 </Category>
+      <specific name="Suggested"> Class Feature: Bleak Disciple
+Feat: Shadow Veil Assassin
+Skills: Acrobatics, Athletics, Endurance, Stealth, Thievery
+At-Will Powers: executioner&apos;s noose, leaping shade
+Encounter Power: nightmare shades
+Daily Power: strangling shadow </specific>
+      <specific name="Key Abilities"> Dexterity, Constitution, Charisma </specific>
+      <specific name="_SUGGESTED_FEATS" />
+      <specific name="_SUGGESTED_POWERS" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BLEAK_DISCIPLE_ASSASSIN" type="Build Suggestions" />
+      </rules>
+You have studied the raw stuff of shadow and can use your abilities to manipulate and control the shadows cast by your enemies. At your command, shadows become physical objects that reach forth to grab and crush your foes, or hold them still while you ready a killing blow. Constitution should be your second highest ability score, after Dexterity. Charisma is a good third choice, to buoy your Will. Choose the Bleak Disciple option for your Guild Training class feature.
+   </RulesElement>
+   <RulesElement name="Night Stalker Assassin" type="Build" internal-id="ID_FMP_BUILD_85" source="Dragon Magazine 379" revision-date="9/21/2010 10:53:48 AM" >
+      <Category> ID_FMP_CLASS_466 </Category>
+      <specific name="Suggested"> Class Feature: Night Stalker
+Feat: Nightmare Killer
+Skills: Arcana, Bluff, Insight, Stealth, Thievery
+At-Will Powers: inescapable blade, shadow storm
+Encounter Power: smothering shadow
+Daily Power: terrifying visage </specific>
+      <specific name="Key Abilities"> Dexterity, Charisma, Constitution </specific>
+      <specific name="_SUGGESTED_FEATS" />
+      <specific name="_SUGGESTED_POWERS" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_NIGHT_STALKER_ASSASSIN" type="Build Suggestions" />
+      </rules>
+You tap into shadow magic to spread terror, cloud the reason of your enemies, drive away their allies, and leave all your foes vulnerable to your attack. After Dexterity, Charisma should be your second highest ability score. Constitution is a good third choice due to the additional hit points it grants. Choose the Night Stalker option for your Guild Training class feature, and focus on fear powers and powers that grant an additional benefit due to your Guild Training choice.
+   </RulesElement>
+   <RulesElement name="Assassin&apos;s Shroud" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1920" source="Dragon Magazine 379,Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain the assassin&apos;s shroud power </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9400 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9400" type="Power" />
+      </rules>
+You gain the assassin&apos;s shroud power. The dark magic of the Shadowfell courses through your veins, tainting your soul but granting you the ability to subject an enemy to invisible shrouds that reveal its weakest points. The more of your shrouds there are on a target, the deadlier a blow you can strike against it.
+   </RulesElement>
+   <RulesElement name="Guild Training" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1921" source="Dragon Magazine 379" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose a training method. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_1952, ID_FMP_CLASS_FEATURE_1953, ID_TER_CLASS_FEATURE_ASN01, ID_TER_CLASS_FEATURE_ASN02, ID_TER_CLASS_FEATURE_ASN03 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1921" />
+      </rules>
+Assassins gain their abilities by following a training regimen developed by a particular guild. Even an assassin taught by an individual master studies a set of teachings that were once developed by a guild.
+
+Assassins&apos; guilds claim towns and other territories as their hunting grounds. Nonguild assassins who seek to practice their art must first gain the permission of the local grandmaster of assassins. In some areas, particularly large cities that have many potential contracts, two guilds go to war for control of the slayers&apos; trade. In that situation, you must choose a side or face the wrath of both factions.
+
+Choose a method of training. The choice you make gives you the benefit described below and also provides bonuses to certain assassin powers, as detailed in those powers.
+   </RulesElement>
+   <RulesElement name="Shade Form" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1922" source="Dragon Magazine 379,Dragon Magazine 385,Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_641,1 </Category>
+      <specific name="Short Description"> Gain the shade form power. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_9402 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9402 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9402" type="Power" />
+      </rules>
+You gain the shade form power. When you gave part of your soul to the Shadowfell, the power of that dark realm fused with your material form. As a result, you can assume a shadowy form that allows you to pass through barriers and evade enemies that you could not normally avoid.
+
+When you adopt this form, you blur, your skin becomes gray, and all the gear you carry and the clothes you wear adopt similarly dull colors. Your eyes lose their pupils, becoming blank, white orbs. You cannot damage your foes without returning to your normal form, which prevents you from doing more than maneuvering in for the kill against your enemies.
+   </RulesElement>
+   <RulesElement name="Shadow Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1923" source="Dragon Magazine 379,Dragon Magazine 385,Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_641,1 </Category>
+      <specific name="Short Description"> Gain the shadow step power. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_9401 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9401 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9401" type="Power" />
+      </rules>
+You gain the shadow step power. The shadow energy surrounding every creature touches the Shadowfell slightly, for the realm of death is a creature&apos;s eventual destination. You have the ability to walk the shadow pathways from one creature to another.
+   </RulesElement>
+   <RulesElement name="Bleak Disciple" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1952" source="Dragon Magazine 379" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1921,1 </Category>
+      <specific name="Short Description"> Gain temporary hitpoints when you hit a shrouded target. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9406 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9406" type="Power" />
+      </rules>
+When you make an assassin or paragon path attack against a target subjected to at least one of your shrouds, you gain temporary hit points equal to 2 + the number of shrouds on the target. At 11th level, the bonus is equal to 2 + twice the number of shrouds on the target, and at 21st level, 2 + three times the number of shrouds on the target.
+
+Githyanki brought the tradition of the Bleak Disciple from the Astral Sea. It teaches its adherents to forge the stuff of shadow into a weapon they can use against their foes. Its strictest followers keep a white cloth that they dab in the blood of each slain foe, and before they attack a chosen target, they reflect on this memento of the foes they have defeated.
+   </RulesElement>
+   <RulesElement name="Night Stalker" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1953" source="Dragon Magazine 379" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1921,1 </Category>
+      <specific name="Short Description"> Deal bonus damage against shrouded targets that are adjacent to nobody but you. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9403 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9403" type="Power" />
+         <statadd name="damage rolls" value="+Charisma modifier" condition="if the target is adjacent to none of your enemies" />
+      </rules>
+When you make an assassin or paragon path attack against a target that is adjacent to no creatures other than you, you gain a bonus to damage rolls equal to twice the number of shrouds the target is subjected to. This bonus increases to three times the number of shrouds at level 11, and to four times the number of shrouds at level 21.
+
+The drow assassins who founded this guild at Lolth&apos;s instruction held that fear and misdirection are as deadly as a poisoned blade. This tradition teaches how best to draw on shadow magic to terrorize and deceive enemies.
+   </RulesElement>
+   <RulesElement name="Death&apos;s Whisper" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_ASN01" source="Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1921,1 </Category>
+      <specific name="Short Description"> Gain proficiency with military ranged weapons and deal extra damage with them while hidden. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_TER_POWER_ASN001 </specific>
+      <rules>
+         <grant name="ID_TER_POWER_ASN001" type="Power" />
+         <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+      </rules>
+You gain proficiency with Military Ranged weapons. While hidden, you gain a bonus to damage rolls you make as part of a ranged assassin or paragon path attack equal to twice the number of shrouds the target is subjected to. This bonus increases to three times the number of shrouds at level 11, and to four times the number of shrouds at level 21. In addition, if you miss all targets of an attack using a ranged weapon while you are hidden, you remain hidden.
+   </RulesElement>
+   <RulesElement name="Needle&apos;s Poison" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_ASN02" source="Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1921,1 </Category>
+      <specific name="Short Description"> Deal ongoing damage to shrouded targets. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_TER_POWER_ASN002 </specific>
+      <rules>
+         <grant name="ID_TER_POWER_ASN002" type="Power" />
+	  </rules>
+When a target is subjected to at least two of your shrouds, you can deal 5 ongoing damage (save ends) once per turn after you hit with an assassin or paragon path attack. Ongoing damage dealt in this way stacks with any existing ongoing damage the target may have, but one save ends all of it. This increases to 10 ongoing damage (save ends) at level 11, and to 15 ongoing damage (save ends) at level 21.
+   </RulesElement>
+   <RulesElement name="Twilight Hunter" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_ASN03" source="Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_1921,1 </Category>
+      <specific name="Short Description"> Deal extra damage to shrouded targets while wielding one weapon. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_DisplayPowers"> ID_TER_POWER_ASN003 </specific>
+      <rules>
+         <grant name="ID_TER_POWER_ASN003" type="Power" />
+	  </rules>
+While you are wielding a single melee weapon, you gain a bonus to damage rolls with assassin or paragon path attacks against targets subjected to at least one of your shrouds. The bonus is equal to the number of shrouds it is subjected to. This bonus increases to two times the number of shrouds at level 11, and to three times the number of shrouds at level 21.
+   </RulesElement>
+   <RulesElement name="Shadow Armaments" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_ASN04" source="Terraism,Kronoshifter" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain increased damage with certain weapons, and bonus to defenses. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="one-hand:die" value="+1" />
+		 <statadd name="Off-hand:die" value="+1" />
+         <modify name="Shuriken" type="Weapon" Field="Damage" die-increase="1" />
+         <modify name="Shuriken (Large)" type="Weapon" Field="Damage" die-increase="1" />
+         <modify name="Bola" type="Weapon" Field="Damage" die-increase="1" />
+         <modify name="Bola (Large)" type="Weapon" Field="Damage" die-increase="1" />
+         <modify name="Garotte" type="Weapon" Field="Damage" die-increase="1" />
+         <modify name="Garotte (Large)" type="Weapon" Field="Damage" die-increase="1" />
+         <statadd name="AC" value="+1" type="Shield" wearing="armor:light" />
+         <statadd name="Reflex" value="+1" type="Shield" wearing="armor:light" />
+         <statadd name="AC" value="+1" type="Shield" not-wearing="armor:" />
+         <statadd name="Reflex" value="+1" type="Shield" not-wearing="armor:" />
+      </rules>
+While wearing light armor, you gain a +1 shield bonus to AC and Reflex.
+
+Increase the damage die of any one-handed weapon, weapon with the off-hand property, bola, garotte, or shuriken you wield by 1 step. These increases stack.
+   </RulesElement>
+   <RulesElement name="Assassin&apos;s Shroud" type="Power" internal-id="ID_FMP_POWER_9400" source="Dragon Magazine 379,Kronoshifter" revision-date="8/27/2010 11:48:52 AM" >
+      <Prereqs> Unselectable </Prereqs>
+      <Flavor> You cause invisible shrouds to settle on your foe. At your command, the shrouds reveal the target&apos;s weak points to your keen gaze. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Feature  </specific>
+      <specific name="Keywords"> Shadow </specific>
+      <specific name="Action Type"> Free Action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Target"> One enemy you can see in burst </specific>
+      <specific name="Effect"> You subject the target to your shroud. If any of your shrouds are already on the target, you subject it to an additional shroud, up to a maximum of four. The shrouds last until you use this power against a different enemy or until the end of the encounter.
+	Before you make an attack roll against the target, you choose to invoke either all your shrouds on it or none of them. If you invoke your shrouds, the attack deals 1d6 damage per shroud, minus one shroud if the attack misses, and all your shrouds then vanish from the target. This damage roll never benefits from bonuses to damage rolls, and is in addition to the attack&apos;s damage, if any.
+	Level 11: 2d6 damage per shroud.
+Level 21: 3d6 damage per shroud. </specific>
+      <specific name="Special"> You can use this power only on your turn and only once per turn. One per round, as a free action when your shrouded target dies from an attack where you did not invoke your shrouds, you may move them to a different target within range. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Feature </specific>
+      <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2572 </specific>
+   </RulesElement>
+   <RulesElement name="Assassin&apos;s Shroud (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2572" source="Dragon Magazine 385" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Gain the assassin&apos;s shroud power, except target can only be subjected to a maximum of two shrouds </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_9400 </specific>
+      <specific name="type"> At-Will </specific>
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_9400 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_9400" type="Power" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_ASSASSIN&apos;S_SHROUD" type="CountsAsFeature" />
+      </rules>
+You gain the assassin power assassin&apos;s shroud, except you can subject a target to a maximum of two shrouds and you can invoke your shrouds on a target only when you attack with an assassin power or an assassin paragon path power.
+   </RulesElement>
+   <RulesElement name="Shadow Step" type="Power" internal-id="ID_FMP_POWER_9401" source="Dragon Magazine 379,Kronoshifter" revision-date="8/27/2010 11:48:52 AM" >
+      <Prereqs> Unselectable </Prereqs>
+      <Flavor> You vanish into the shadow energy around one creature and then step out of it near another creature. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Feature  </specific>
+      <specific name="Keywords"> Shadow, Teleportation </specific>
+      <specific name="Action Type"> Move Action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Requirement"> You must be adjacent to a creature. </specific>
+      <specific name="Effect"> You teleport 3 squares to a square adjacent to a creature.
+	Level 11: Teleport 4 squares.
+Level 21: Teleport 5 squares. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Feature </specific>
+      <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_1923 </specific>
+   </RulesElement>
+   <RulesElement name="Shade Form" type="Power" internal-id="ID_FMP_POWER_9402" source="Dragon Magazine 379,Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Flavor> You transform yourself into a being of shadow, becoming more difficult to notice and to harm. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Feature  </specific>
+      <specific name="Keywords"> Shadow </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Effect"> You assume a shadowy form that lasts until you make an attack roll or until the end of your next turn. While in this form, you are insubstantial, and you gain vulnerable 5 radiant. In addition, you can make Stealth checks to become hidden if you have any cover or concealment, and you can use cover granted by your allies both to become hidden and to remain hidden. </specific>
+      <specific name="Sustain Minor"> The form persists. </specific>
+      <specific name="Special"> If you reduce an enemy to 0 HP or less with an attack in which you invoked at least 2 shrouds, you gain one additional use of Shade Form until the end of your next short or extended rest. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level" />
+      <specific name="Power Type"> Feature </specific>
+      <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_1922 </specific>
+   </RulesElement>
+   <RulesElement name="Assassin" type="Grants" internal-id="ID_INTERNAL_GRANTS_ASSASSIN" source="Dragon Magazine 379" >
+      <specific name="_SupportsID"> ID_FMP_CLASS_466 </specific>
+      <rules>
+         <grant name="ID_FMP_ROLE_3" type="Role" />
+         <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+         <grant name="ID_FMP_CLASS_FEATURE_1920" type="Class Feature" />
+         <grant name="ID_FMP_CLASS_FEATURE_1921" type="Class Feature" />
+         <grant name="ID_FMP_CLASS_FEATURE_1922" type="Class Feature" />
+         <grant name="ID_FMP_CLASS_FEATURE_1923" type="Class Feature" />
+         <grant name="ID_TER_CLASS_FEATURE_ASN04" type="Class Feature" />
+         <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
+         <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+         <grant name="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" type="Grants" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Assassin Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" source="Dragon Magazine 379" >
+      <specific name="_SupportsID"> ID_FMP_CLASS_466 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KI_FOCUSES)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)" type="Proficiency" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Bleak Disciple Assassin" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_BLEAK_DISCIPLE_ASSASSIN" source="Dragon Magazine 379" >
+      <specific name="_SupportsID"> ID_FMP_BUILD_84 </specific>
+      <rules>
+         <suggest name="ID_FMP_CLASS_FEATURE_1952" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_3" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_SKILL_1" type="Skill" />
+         <suggest name="ID_FMP_SKILL_27" type="Skill" />
+         <suggest name="ID_FMP_SKILL_8" type="Skill" />
+         <suggest name="ID_FMP_SKILL_20" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Night Stalker Assassin" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_NIGHT_STALKER_ASSASSIN" source="Dragon Magazine 379" >
+      <specific name="_SupportsID"> ID_FMP_BUILD_85 </specific>
+      <rules>
+         <suggest name="ID_FMP_CLASS_FEATURE_1953" type="Class Feature" />
+         <suggest name="ID_FMP_ABILITY_SCORE_3" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+         <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
+         <suggest name="ID_FMP_SKILL_2" type="Skill" />
+         <suggest name="ID_FMP_SKILL_3" type="Skill" />
+         <suggest name="ID_FMP_SKILL_13" type="Skill" />
+         <suggest name="ID_FMP_SKILL_20" type="Skill" />
+         <suggest name="ID_FMP_SKILL_23" type="Skill" />
+      </rules>
+   </RulesElement>
+   
+   <!-- Powers, At-Wills -->
+   
+   <RulesElement name="Shadow Flurry" type="Power" internal-id="ID_TER_POWER_ASN003" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You lash out at your foe with such blinding speed that it doesn&apos;t notice the second blow. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Primary Target"> One creature </specific>
+      <specific name="Primary Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier damage, and you make a secondary attack using your implement.
+Level 21: 2[W] + Dexterity modifier force damage. </specific>
+      <specific name="Secondary Target"> The primary target </specific>
+      <specific name="Secondary Attack"> Dexterity vs. Reflex </specific>
+      <specific name="Hit"> 1d10 damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Shadow Venom" type="Power" internal-id="ID_TER_POWER_ASN002" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> The shadow magic in your weapon flows into your victim, poisoning their very life force. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Necrotic, Poison, Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee or Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Dexterity vs. AC. </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier necrotic and poison damage, and the target takes a -2 penalty to save against ongoing damage.
+Level 21: 2[W] + Dexterity modifier necrotic and poison damage, and the target takes a -4 penalty to save against ongoing damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Silent Arrow" type="Power" internal-id="ID_TER_POWER_ASN001" source="Kronoshifter" revision-date="8/27/2010 11:48:54 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You let loose an arrow, all the while weaving shadows around yourself, silencing your actions and keeping yourself hidden from your enemies. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier damage. If you were hidden when you made this attack, you can make a stealth check to hide if you have cover or partial concealment until the end of your turn, with a -2 penalty to the stealth check.
+Level 21: 2[W] + Dexterity modifier damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Shrouding Cut" type="Power" internal-id="ID_TER_POWER_ASN004" source="Kronoshifter" revision-date="8/27/2010 11:48:54 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> As you channel shadow magic through your blade, you melt into your shadow. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier cold damage and you gain partial concealment from the target until the end of your next turn.
+Level 21: 2[W] + Dexterity modifier cold damage. </specific>
+      <specific name="Special"> This power can be used as a melee basic attack. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Shadow Bolt" type="Power" internal-id="ID_TER_POWER_ASN005" source="Kronoshifter" revision-date="8/27/2010 11:48:54 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You fire a bolt of pure shadow at your target, piercing through its defenses and leaving it vulnerable to attack. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Implement, Shadow </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 20 </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Dexterity vs. Reflex </specific>
+      <specific name="Hit"> 1d10 + Dexterity modifier cold damage and the target takes a -2 penalty to all defenses until the end of your next turn.
+Level 21: 2d10 + Dexterity modifier cold damage. </specific>
+      <specific name="Special"> This power can be used as a ranged basic attack. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+   <!-- Powers, Encounters -->
+   <RulesElement name="Dusk Fangs" type="Power" internal-id="ID_TER_POWER_ASN006" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You can kill with anything, be it blade or shadow. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Necrotic, Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Primary Target"> One creature </specific>
+      <specific name="Primary Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier cold and necrotic damage and the target grants combat advantage to you for the secondary attack. </specific>
+      <specific name="Effect"> Make a close burst 1 secondary attack using your implement. </specific>
+      <specific name="Secondary Target"> The primary target </specific>
+      <specific name="Secondary Attack"> Dexterity vs. Fortitude </specific>
+      <specific name="Hit"> 1d8 + Dexterity modifier cold and necrotic damage. </specific>
+      <specific name="	Twilight Hunter"> If both attacks hit, deal extra damage equal to your Charisma modifier. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+   <!-- Powers, Dailies -->
+   <RulesElement name="Shadow Spike" type="Power" internal-id="ID_TER_POWER_ASN007" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You mortally wound your victim with a heavy blow, then finish the job with nothing but solid shadows. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Shadow, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Primary Target"> One creature </specific>
+      <specific name="Primary Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier cold damage and the target grants combat advantage to you for the secondary attack. </specific>
+      <specific name="Effect"> Make a close burst 1 secondary attack using your implement. </specific>
+      <specific name="Secondary Target"> The primary target </specific>
+      <specific name="Secondary Attack"> Dexterity vs. Reflex </specific>
+      <specific name="Hit"> 1d10 + Dexterity modifier cold damage and the target is knocked prone. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Black Venom" type="Power" internal-id="ID_TER_POWER_ASN008" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> You mortally wound your victim with a heavy blow, then finish the job with nothing but solid shadows. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Implement, Necrotic, Psychic, Shadow </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 10 </specific>
+      <specific name="Target"> One creature in burst </specific>
+      <specific name="Attack"> Dexterity vs. Will </specific>
+      <specific name="Hit"> 3d10 + Dexterity modifier necrotic and psychic damage and the target takes a -2 penalty to saving throws (save ends). </specific>
+      <specific name="Miss"> Half damage and the target takes a -2 penalty to saving throws against ongoing damage until the end of your next turn. </specific>
+      <specific name="Effect"> If the target is subjected to at least three of your shrouds, deal 5 ongoing damage (save ends). </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Whisper in the Dark" type="Power" internal-id="ID_TER_POWER_ASN009" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> Your target turns its head, thinking that it heard something, only to see an arrow heading straight for its eye. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Shadow, Necrotic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 2[W] + Dexterity modifier cold and necrotic damage. </specific>
+      <specific name="Effect"> You make a stealth check to become hidden. If you were hidden when you made this attack, you remain hidden. In addition, if the target is subjected to at least 3 of your shrouds, the target is blinded (save ends). </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Dark Flourish" type="Power" internal-id="ID_TER_POWER_ASN010" source="Kronoshifter" revision-date="8/27/2010 11:48:53 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,1 </Category>
+      <Flavor> Your foe thinks it hits you. Then it finds its own weapon buried in its back. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Assassin Attack 1 </specific>
+      <specific name="Keywords"> Cold, Shadow, Weapon </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Trigger"> You are hit by an attack. </specific>
+      <specific name="Target"> The creature that hit you. </specific>
+      <specific name="Attack"> Dexterity vs. AC </specific>
+      <specific name="Hit"> 1[W] + Dexterity modifier damage, and the triggering attack hits the target instead. </specific>
+      <specific name="Effect"> If the target is subjected to at least 3 of your shrouds, deal an extra 1[W] damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_466 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+   <!-- Slayer -->
+	<RulesElement name="Hobbling Shots" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_716_01" source="Terraism" revision-date="10/14/2010 9:29:04 AM">
+		<Category> ID_FMP_CLASS_FEATURE_2856,7 </Category>
+		<Flavor> Your skill with a ranged weapon gives you control over the battlefield - and you've developed a technique that prevents foes from ever reaching you... or running away. </Flavor>
+		<specific name="Short Description"> When you use power strike with a bow or crossbow, you can slow the target (save ends). </specific>
+		<specific name="Level"> 7 </specific>
+		<rules>
+		  <modify name="Power Strike" type="Power" Field="Hobbling Shots" value="When you use power strike with a bow or crossbow, you can slow the target (save ends)." />
+		</rules>
+	You can use Power Strike after hitting with a ranged basic attack as well as melee attacks. In addition, when you use power strike with a bow or crossbow, the target is slowed (save ends).
+	</RulesElement>
+	
+	<!-- Cleric -->
+	<RulesElement name="Battle Cleric's Lore" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4058" source="Dragon Magazine 400">
+		<Category> 1,ID_FMP_CLASS_FEATURE_395_FIX </Category>
+		<specific name="Short Description"> Gain bonus to AC, proficiency with scale armor.  Grant +2 bonus until the end of next turn to attack rolls on target of cleric healing powers that spend a surge. </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+			<statadd name="AC" value="+2" not-wearing="armor:shield" />
+<!--
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+			<statadd name="Heavy Shield Defense Bonus" value="2" type="Heavy Shield Defense Bonus" />
+			<statadd name="Armor Class" value="Heavy Shield Defense Bonus" type="Shield" />
+			<statadd name="Shield Bonus" value="2" type="Shield Contribution" />
+-->
+			<textstring name="Healing" value="If this power allows the target to spend a healing surge, that target gains a +2 bonus to attack rolls until the end of your next turn." />
+		</rules>
+Your study of warfare and divine magic has granted you the gods' blessings in battle. You can choose this class feature in place of Healer's Lore. You gain a +2 shield bonus to AC, and you have proficiency with scale armor. In addition, whenever you use a cleric healing power to allow a target to spend a healing surge, that target gains a +2 bonus to attack rolls until the end of your next turn.
+	</RulesElement>
+	
+	
+	<!-- Sorcerer -->
+   <RulesElement name="Spell Source" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_850" source="Player&apos;s Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Each sorcerer has a Spell Source </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_851, ID_FMP_CLASS_FEATURE_852, ID_FMP_CLASS_FEATURE_1367, ID_FMP_CLASS_FEATURE_1368 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_850" />
+      </rules>
+As a sorcerer, you gain power through an instinctive or inborn connection to an ancient arcane source. Choose either Dragon Magic or Wild Magic. The choice you make grants you specific features and also provides bonuses to certain sorcerer powers, as detailed in those powers.
+   </RulesElement>
+   <RulesElement name="Elemental Magic" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR01" source="Terraism" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_850,1 </Category>
+      <specific name="Short Description"> Gain the Elemental Magic class features </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_CHILD_FEATURES"> ID_TER_CLASS_FEATURE_SOR02, ID_TER_CLASS_FEATURE_SOR03, ID_TER_CLASS_FEATURE_SOR04 </specific>
+      <rules>
+         <grant name="ID_TER_CLASS_FEATURE_SOR02" type="Class Feature" />
+         <grant name="ID_TER_CLASS_FEATURE_SOR03" type="Class Feature" />
+         <grant name="ID_TER_CLASS_FEATURE_SOR04" type="Class Feature" />
+      </rules>
+Elemental power flows through you, infusing your spells with raw strength and potency. They may not be subtle, but your spells pack a punch.
+   </RulesElement>
+	
+   <RulesElement name="Elemental Power" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR02" source="Terraism" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Add Constitution modifier to damage, +2 at 11th, +4 at 21st </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="arcane:damage" value="+Constitution modifier" />
+         <statadd name="arcane:damage" value="+2" requires="Paragon Tier" />
+         <statadd name="arcane:damage" value="+2" requires="Epic Tier" />
+         <statadd name="Elemental Power" value="+2" requires="Paragon Tier" />
+         <statadd name="Elemental Power" value="+2" requires="Epic Tier" />
+      </rules>
+You gain a bonus to the damage rolls of arcane powers equal to your Constitution modifier. The bonus increases to your Constitution modifier +2 at 11th level and your Constitution modifier +4 at 21st level.
+   </RulesElement>
+   <RulesElement name="Elemental Resilience" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR03" source="Terraism" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Use Constitution modifier for AC </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
+   
+   <RulesElement name="Elemental Soul" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR04" source="Player&apos;s Handbook 2,Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Choose a resistance to gain and pierce that resistance with your spells </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_TER_CLASS_FEATURE_SOR04" />
+      </rules>
+Choose an elemental damage type: air (lightning), earth (acid), fire (fire), or water (cold). You gain resist 5 to that damage type. The resistance increases to 10 at 11th level and 15 at 21st level. Your arcane powers ignore any target&apos;s resistance to that damage type up to the value of your resistance.
+   </RulesElement>
+   
+   <RulesElement name="Air Soul" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR05" source="Terraism" >
+      <Category> ID_TER_CLASS_FEATURE_SOR04 </Category>
+      <specific name="Short Description"> Resist lightning damage </specific>
+      <specific name="_SupportsID"> ID_TER_CLASS_FEATURE_SOR04 </specific>
+      <rules>
+         <statadd name="Air Soul Lightning Resist" value="+Spell Source Resist" />
+         <statadd name="Air Soul Lightning Resist" value="+5" />
+         <statadd name="resist:lightning" value="+Air Soul Lightning Resist" type="resist" />
+         <statadd name="Air Soul Lightning Resist" value="+5" requires="Paragon Tier" />
+         <statadd name="Air Soul Lightning Resist" value="+5" requires="Epic Tier" />
+      </rules>
+You gain resist 5 to lightning damage. The resistance increases to 10 at 11th level and 15 at 21st level.
+   </RulesElement>
+   <RulesElement name="Earth Soul" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR06" source="Terraism" >
+      <Category> ID_TER_CLASS_FEATURE_SOR04 </Category>
+      <specific name="Short Description"> Resist acid damage </specific>
+      <specific name="_SupportsID"> ID_TER_CLASS_FEATURE_SOR04 </specific>
+      <rules>
+         <statadd name="Earth Soul Acid Resist" value="+Spell Source Resist" />
+         <statadd name="Earth Soul Acid Resist" value="+5" />
+         <statadd name="resist:acid" value="+Earth Soul Acid Resist" type="resist" />
+         <statadd name="Earth Soul Acid Resist" value="+5" requires="Paragon Tier" />
+         <statadd name="Earth Soul Acid Resist" value="+5" requires="Epic Tier" />
+      </rules>
+You gain resist 5 to acid damage. The resistance increases to 10 at 11th level and 15 at 21st level.
+   </RulesElement>
+   <RulesElement name="Fire Soul" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR07" source="Terraism" >
+      <Category> ID_TER_CLASS_FEATURE_SOR04 </Category>
+      <specific name="Short Description"> Resist fire damage </specific>
+      <specific name="_SupportsID"> ID_TER_CLASS_FEATURE_SOR04 </specific>
+      <rules>
+         <statadd name="Fire Soul Fire Resist" value="+Spell Source Resist" />
+         <statadd name="Fire Soul Fire Resist" value="+5" />
+         <statadd name="resist:fire" value="+Fire Soul Fire Resist" type="resist" />
+         <statadd name="Fire Soul Fire Resist" value="+5" requires="Paragon Tier" />
+         <statadd name="Fire Soul Fire Resist" value="+5" requires="Epic Tier" />
+      </rules>
+You gain resist 5 to fire damage. The resistance increases to 10 at 11th level and 15 at 21st level.
+   </RulesElement>
+   <RulesElement name="Water Soul" type="Class Feature" internal-id="ID_TER_CLASS_FEATURE_SOR08" source="Terraism" >
+      <Category> ID_TER_CLASS_FEATURE_SOR04 </Category>
+      <specific name="Short Description"> Resist cold damage </specific>
+      <specific name="_SupportsID"> ID_TER_CLASS_FEATURE_SOR04 </specific>
+      <rules>
+         <statadd name="Water Soul Cold Resist" value="+Spell Source Resist" />
+         <statadd name="Water Soul Cold Resist" value="+5" />
+         <statadd name="resist:cold" value="+Water Soul Cold Resist" type="resist" />
+         <statadd name="Water Soul Cold Resist" value="+5" requires="Paragon Tier" />
+         <statadd name="Water Soul Cold Resist" value="+5" requires="Epic Tier" />
+      </rules>
+You gain resist 5 to cold damage. The resistance increases to 10 at 11th level and 15 at 21st level.
+   </RulesElement>
+	
+	<RulesElement name="Elemental Bolt (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16222" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You hurl a spear of elemental energy at your foe. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement, Varies </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 10 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d12 + Charisma modifier damage.
+Level 21: 2d12 + Charisma modifier damage. </specific>
+		<specific name="Special"> This power can be used as a ranged basic attack. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_BasicAttack"> Ranged </specific>
+	</RulesElement>
+	<RulesElement name="Elemental Escalation (Air) (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16224" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> The tempest's power surges through you, wrathfully striking your enemies and lifting you aloft. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Varies </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You use a sorcerer at-will attack power. </specific>
+		<specific name="Effect"> You can make one additional creature a target of the triggering attack. If the attack's range is melee or ranged, the additional target must be within 5 squares of you. If the attack's range is area or close, the additional target must be adjacent to the burst or blast.
+	Each target hit by the attack takes 1d10 extra damage of the type dealt by the triggering attack In addition, you fly up to half your speed as a free action.
+	Level 17: 2d10 extra damage, and you also slide the target up to 2 squares.
+	Level 27: 3d10 extra damage, and the target is also blinded until the end of your next turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Elemental Escalation (Earth) (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16225" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> Earth energy infuses you with resilience. It allows you to deliver mighty blows and great hindrances to your foes. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Varies </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You use a sorcerer at-will attack power. </specific>
+		<specific name="Effect"> You can make one additional creature a target of the triggering attack. If the attack's range is melee or ranged, the additional target must be within 5 squares of you. If the attack's range is area or close, the additional target must be adjacent to the burst or blast.
+	Each target hit by the attack takes 1d10 extra damage of the type dealt by the triggering attack. In addition, you gain temporary hit points equal to your Charisma modifier.
+	Level 17: 2d10 extra damage, and the target is also immobilized until the end of your next turn.
+	Level 27: 3d10 extra damage, and you also gain resistance to all damage equal to one-half your level until the end of your next turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Elemental Escalation (Fire) (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16226" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> As elemental energy flows through you, the rage of your internal inferno infuses it, and you move like a wildfire. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Varies </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You use a sorcerer at-will attack power. </specific>
+		<specific name="Effect"> You can make one additional creature a target of the triggering attack. If the attack's range is melee or ranged, the additional target must be within 5 squares of you. If the attack's range is area or close, the additional target must be adjacent to the burst or blast.
+	Each target hit by the attack takes 1d10 extra damage of the type dealt by the triggering attack. In addition, you shift up to half your speed as a free action.
+	Level 17: 2d10 extra damage, and ongoing 10 fire damage (save ends).
+	Level 27: 3d10 extra damage, and the attack also deals half damage on a miss. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Elemental Escalation (Water) (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16227" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+		<Flavor> A whirlpool wells up within, deflecting harm from you and  overwhelming your enemies. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Varies </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You use a sorcerer at-will attack power. </specific>
+		<specific name="Effect"> You can make one additional creature a target of the triggering attack. If the attack's range is melee or ranged, the additional target must be within 5 squares of you. If the attack's range is area or close, the additional target must be adjacent to the burst or blast.
+	Each target hit by the attack takes 1d10 extra damage of the type dealt by the triggering attack. In addition, you gain a +2 power bonus to all defenses until the end of your next turn.
+	Level 17: 2d10 extra damage, and the target is also dazed until the end of your next turn.
+	Level 27: 3d10 extra damage, and the target also falls prone. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Blazing Cloud (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16228" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You surround yourself in a nimbus of roaring flames. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Fire, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier fire damage.
+Level 21: 2d8 + Charisma modifier fire damage. </specific>
+		<specific name="Effect"> You gain a +2 power bonus to AC and Reflex until the start of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+By concentrating your blistering flames in a sphere around yourself, you can attack numerous close-up foes at once. Better yet, this spell's effects linger, creating a ring of fire that helps to turn away incoming attacks.
+	</RulesElement>
+	<RulesElement name="Deluge (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16229" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You pull a mass of water from the elemental plane, hammering your enemies and sweeping them off their feet. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier damage, and you push the target 1 square.
+Level 21: 2d8 + Charisma modifier damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+Water is the lifeblood of living creatures. It is a subtle element, one able to sustain life, dissolve solids, and scour worlds over thousands of years to create amazing terrain. It can also be used as a blunt attack when an area is suddenly flooded with it.
+	</RulesElement>
+	<RulesElement name="Erupting Earth (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16230" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You bring forth a mass of earth and rock from the elemental plane, battering your enemies and pinning them in place. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d6 + Charisma modifier damage.
+Level 21: 2d6 + Charisma modifier damage. </specific>
+		<specific name="Effect"> The area becomes difficult terrain until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+Wherever you stand, you can call up stones, pebbles, and slabs of rock, and smash your enemies from below, and perhaps pin them beneath earthy debris.
+	</RulesElement>
+	<RulesElement name="Howling Zephyr (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16231" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You command the air to swirl violently, creating a short-lived zephyr of thunderous wind that sweeps away your enemy. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier thunder damage, and you can slide the target 1 square.
+Level 21: 2d8 + Charisma modifier thunder damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+A sorcerer of the air knows how to summon screaming winds from the Elemental Chaos and send them against foes. Creatures caught in the zephyr are moved every which way.
+	</RulesElement>
+	<RulesElement name="Ice Prison (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16232" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You create a cloud of intense cold and swift-growing icicles that chills your foes for a time. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Cold, Elemental, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier cold damage, and the target is slowed until the end of your next turn.
+Level 21: 2d8 + Charisma modifier cold damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+A lethal swirl of icicles forms out of the air when you cast this spell. The icicles partially encase creatures in the area for a short time, slowing their movements.
+	</RulesElement>
+	<RulesElement name="Ignition (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16233" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You hurl a concussive blast, causing everything in the area to smoke, smolder, and then burst into flame. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Fire, Implement, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d10 + Charisma modifier damage.
+Level 21: 2d10 + Charisma modifier damage. </specific>
+		<specific name="Effect"> The burst creates a zone that lasts until the start of your next turn. Any creature that enters the zone or ends its turn there takes fire damage equal to your Constitution modifier. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+The fires that burn in the Elemental Chaos are so hot that they can radiate even across dimensional walls when you stoke them. When an area begins to smolder, the roar of catching fire soon follows.
+	</RulesElement>
+	<RulesElement name="Seismic Shock (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16234" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You strike the ground, creating an abrupt tremor of seismic activity. Enemies in the area are disoriented. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Charisma modifier thunder damage, and the target grants combat advantage until the end of your next turn.
+Level 21: 2d8 + Charisma modifier thunder damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+This spell unleashes intense vibrations all around you, shaking the ground and disorienting your foes. Even if you aren't in contact with the ground, you can channel the seismic energy through almost any medium.
+	</RulesElement>
+	<RulesElement name="Static Charge (Sorcerer)" type="Power" internal-id="ID_TER_POWER_SOR_16235" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You create a shaped pulse of lightning that shocks foes standing near you, arcing to additional enemies near them. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Elemental, Implement, Lightning </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each enemy in the blast </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d8 lightning damage, and one enemy adjacent to the target takes lightning damage equal to your Charisma modifier.
+Level 21: 2d8 lightning damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+Lightning arcs from one conductor to another. You take advantage of that characteristic with this spell.
+	</RulesElement>
+
+<!-- Ardent -->
+<!-- Grant free melee training effect -->
+   <AppendNodes name="Ardent" type="Grants" internal-id="ID_INTERNAL_GRANTS_ARDENT" source="Player's Handbook 3">
+      <rules>
+		<textstring name="melee basic:key ability" value="Charisma*" />
+		<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Charisma vs. AC" />
+		<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Charisma modifier damage. Increase damage to 2[W] + Charisma modifier damage at 21st level." />
+      </rules>
+   </AppendNodes>
+
+
+<!-- Rogue -->
+	<!-- Allow use of any proficient weapon -->
+   <RulesElement name="Sharpshooter Talent" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2238" source="Martial Power 2" revision-date="10/5/2010 1:47:06 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)|ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)|ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(BOW)" />
+         <grant name="ID_FMP_FEAT_139" type="Feat" />
+      </rules>
+This class feature replaces the Rogue Weapon Talent class feature.
+
+Choose crossbows, slings, or bows. You gain a +1 bonus to attack rolls with any weapon of the chosen group. You gain Far Shot as a bonus feat, even if you don't meet the prerequisites.
+   </RulesElement>
+   <RulesElement name="Sharpshooter Talent (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2540" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+      <Category> ID_FMP_CLASS_FEATURE_2469,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)|ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)|ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(BOW)" />
+         <grant name="ID_FMP_FEAT_139" type="Feat" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_SHARPSHOOTER_TALENT" type="CountsAsFeature" />
+      </rules>
+This class feature replaces the Rogue Weapon Talent class feature.
+
+Choose crossbows, slings, or bows. You gain a +1 bonus to attack rolls with any weapon of the chosen group. You gain Far Shot as a bonus feat, even if you don't meet the prerequisites.
+   </RulesElement>
+   <RulesElement name="Sharpshooter Talent (Bow)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(BOW)" source="Terraism">
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2238 </specific>
+      <rules>
+         <statadd name="bow group:attack" value="+1" />
+      </rules>
+You gain a +1 bonus to attack rolls with bows.
+   </RulesElement>
+   <RulesElement name="Sneak Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_322" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <Flavor> As a rogue, you fight fair only when you have no other choice. You are at your best when you have the advantage over an enemy, such as when you and an ally attack the foe from opposite sides or you deliver a surprise assault. </Flavor>
+      <specific name="Short Description"> Once per turn, if you have combat advantage and hit with a weapon you are proficient with, deal extra damage. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Usage"> turn </specific>
+      <rules>
+         <statadd name="Sneak Attack Dice" value="+2" />
+         <statadd name="Sneak Attack Dice" value="+1" requires="Paragon Tier" />
+         <statadd name="Sneak Attack Dice" value="+2" requires="Epic Tier" />
+         <modify name="this" Field="Usage" value="turn" />
+         <grant name="TER_SNEAKATTACKWEAPONS" type="Class Feature" />
+      </rules>
+When you make an attack with a weapon you are proficient with and hit an enemy granting combat advantage to you, that enemy takes extra damage based on your level (see the Sneak Attack table). You can deal this extra damage only once per turn.
+
+SNEAK ATTACK
+&lt;table&gt;Level	Extra Damage
+1–10	2d6
+11–20	3d6
+21–30	5d6&lt;/table&gt;
+If you are using a melee two-handed weapon other than a garrote or a quarterstaff, or a versatile weapon in two hands, you deal one fewer dice of sneak attack damage.
+   </RulesElement>
+   <RulesElement name="Sneak Attack (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1531" source="Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> When using rogue powers, deal bonus damage when you have combat advantage </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="Sneak Attack Dice" value="+2" />
+         <statadd name="Sneak Attack Dice" value="+1" requires="Paragon Tier" />
+         <statadd name="Sneak Attack Dice" value="+2" requires="Epic Tier" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_SNEAK_ATTACK" type="CountsAsFeature" />
+         <grant name="TER_SNEAKATTACKWEAPONS" type="Class Feature" />
+      </rules>
+This class feature functions as the rogue class feature, except that you can deal the extra damage only when you hit with a rogue power or a rogue paragon path power.
+   </RulesElement>
+	<RulesElement name="Rogue Sneak Attack Weapons" type="Class Feature" internal-id="TER_SNEAKATTACKWEAPONS" source="Terraism">
+		<rules>
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="axe group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="flail group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="garrote group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="hammer group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="heavy blade group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="mace group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="Monk Unarmed Strike" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="pick group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="spear group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="staff group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="unarmed group one-handed" />
+			<textstring name="ID_FMP_CLASS_6-Light Blade" value="whip group one-handed" />
+			<textstring name="Sneak Attack Weapons" value="Axe group" />
+			<textstring name="Sneak Attack Weapons" value="Flail group" />
+			<textstring name="Sneak Attack Weapons" value="Garrote group" />
+			<textstring name="Sneak Attack Weapons" value="Hammer group" />
+			<textstring name="Sneak Attack Weapons" value="Heavy Blade group" />
+			<textstring name="Sneak Attack Weapons" value="Mace group" />
+			<textstring name="Sneak Attack Weapons" value="Monk Unarmed Strike" />
+			<textstring name="Sneak Attack Weapons" value="Pick group" />
+			<textstring name="Sneak Attack Weapons" value="Spear group" />
+			<textstring name="Sneak Attack Weapons" value="Staff group" />
+			<textstring name="Sneak Attack Weapons" value="Unarmed group" />
+			<textstring name="Sneak Attack Weapons" value="Whip group" />
+			<textstring name="ID_FMP_CLASS_6-Crossbow" value="Bow group" />
+			<textstring name="ID_FMP_CLASS_6-Sling" value="Blowgun group" />
+			<textstring name="ID_FMP_CLASS_6-Crossbow" value="Crossbow group" />
+			<textstring name="Sneak Attack Weapons" value="Bow group" />
+			<textstring name="Sneak Attack Weapons" value="Blowgun group" />
+			<textstring name="Sneak Attack Weapons" value="Crossbow group" />
+			<statadd name="Sneak Attack Dice" value="-1" type="Reduction" wearing="SLOT:off-hand" not-wearing="DUAL-WIELDING:" />
+			<statadd name="Sneak Attack Dice" value="+1" type="Addition" wearing="weapon:bow"/>
+			<statadd name="Sneak Attack Dice" value="+1" type="Addition" wearing="weapon:crossbow"/>
+			<statadd name="Sneak Attack Dice" value="+1" type="Addition" wearing="weapon:garrote"/>
+			<statadd name="Sneak Attack Dice" value="+1" type="Addition" wearing="weapon:quarterstaff"/>
+			<statadd name="Sneak Attack Dice" value="-1" type="Reduction" wearing="weapon:hand crossbow"/>
+		</rules>
+	</RulesElement>
+	
+	
+</D20Rules>

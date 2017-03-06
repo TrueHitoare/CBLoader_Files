@@ -1,0 +1,752 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Math Fix.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Math Fix.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Math Fix.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Attack Rolls-->
+
+<AppendNodes name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" source="Core" >
+      <rules>
+     <grant name="Expertise Replacement (Heroic)" type="Class Feature" Level="1" />
+     <grant name="Expertise Replacement (Paragon)" type="Class Feature" Level="11" />
+     <grant name="Expertise Replacement (Epic)" type="Class Feature" Level="21" />
+     <grant name="Expertise Replacement" type="Class Feature" />
+     <grant name="ID_KDM_MATH_FIX_(DEFENSES)" type="Class Feature" />
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Expertise Replacement (Heroic)" type="Class Feature" internal-id="ID_KDM_EXPERTISE1" source="KDM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+     <statadd name="ExpertiseBonus" value="+1" type="Expertise" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Expertise Replacement (Paragon)" type="Class Feature" internal-id="ID_KDM_EXPERTISE2" source="KDM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+     <statadd name="ExpertiseBonus" value="+2" type="Expertise" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Expertise Replacement (Epic)" type="Class Feature" internal-id="ID_KDM_EXPERTISE3" source="KDM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+     <statadd name="ExpertiseBonus" value="+3" type="Expertise" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Expertise Replacement" type="Class Feature" internal-id="ID_KDM_EXPERTISE" source="KDM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+     <statadd name="attack rolls" value="ExpertiseBonus" />
+	</rules>
+</RulesElement>
+
+   <RulesElement name="Inherent Bonuses" type="Internal" internal-id="ID_INTERNAL_INTERNAL_INHERENT_BONUSES" source="Core" >
+      <rules>
+         <statadd name="Inherent Power Bonus" value="+1" requires="1 level" />
+         <statadd name="Inherent Power Bonus" value="+1" requires="6 level" />
+         <statadd name="Inherent Power Bonus" value="+1" requires="11 level" />
+         <statadd name="Inherent Power Bonus" value="+1" requires="16 level" />
+         <statadd name="Inherent Power Bonus" value="+1" requires="21 level" />
+         <statadd name="Inherent Power Bonus" value="+1" requires="26 level" />
+         <statadd name="weapon:attack" value="Inherent Power Bonus" type="Enhancement" />
+         <statadd name="implement:attack" value="Inherent Power Bonus" type="Enhancement" />
+         <statadd name="damage rolls" value="Inherent Power Bonus" type="Enhancement" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="2 level" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="7 level" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="12 level" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="17 level" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="22 level" />
+         <statadd name="Inherent Defense Bonus" value="+1" requires="27 level" />
+         <statadd name="AC" value="Inherent Defense Bonus" type="Enhancement" />
+         <statadd name="Fortitude Defense" value="Inherent Defense Bonus" type="Enhancement" />
+         <statadd name="Reflex Defense" value="Inherent Defense Bonus" type="Enhancement" />
+         <statadd name="Will Defense" value="Inherent Defense Bonus" type="Enhancement" />
+      </rules>
+   </RulesElement>
+
+<RulesElement name="Implement Expertise (Wand)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Rod)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Orb)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ORB)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(STAFF)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Holy Symbol)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HOLY_SYMBOL)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Totem)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(TOTEM)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Tome)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(TOME)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Ki Focuses)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(KI_FOCUSES)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Instrument)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(INSTRUMENT)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(MACE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(AXE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(FLAIL)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(HAMMER)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(PICK)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(POLEARM)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(CROSSBOW)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(SLING)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(BOW)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(SPEAR)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(GARROTE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Implement Expertise (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(BLOWGUN)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(MACE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(AXE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(FLAIL)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HAMMER)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(PICK)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(POLEARM)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(CROSSBOW)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SLING)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BOW)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SPEAR)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(GARROTE)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BLOWGUN)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(STAFF)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Weapon Expertise (Unarmed)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(UNARMED)" source="Player's Handbook 2">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise" type="Feat" internal-id="VERSATILE_EXPERTISE" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise II" type="Feat" internal-id="VERSATILE_EXPERTISE_II" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise III" type="Feat" internal-id="VERSATILE_EXPERTISE_III" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise IV" type="Feat" internal-id="VERSATILE_EXPERTISE_IV" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise V" type="Feat" internal-id="VERSATILE_EXPERTISE_V" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Versatile Expertise VI" type="Feat" internal-id="VERSATILE_EXPERTISE_VI" source="Player's Handbook 3">
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Axe Expertise" type="Feat" internal-id="ID_FMP_FEAT_3122" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+  <Flavor> The axe is a weapon designed to cleave through armor and bone. You are trained to maximize the force you deliver with each hack of your axe. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using an axe: May reroll one damage that results in a 1. </specific>
+When rolling damage for a weapon attack you make with an axe, you can reroll one damage die that results in a 1, but you must use the second result.
+</RulesElement>
+
+<RulesElement name="Bludgeon Expertise" type="Feat" internal-id="ID_FMP_FEAT_3123" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+  <Flavor> In your hands, a hammer or a mace delivers crushing blows that reverberate through the toughest armor. Even glancing blows are enough to wear down your enemy. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a hammer or mace: +1 bonus to push/slide effects from your attacks </specific>
+	You gain a +1 feat bonus to the number of squares you push or slide creatures with weapon attacks you make with a hammer or a mace.
+</RulesElement>
+
+<RulesElement name="Bow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3124" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+  <Flavor> Your steady accuracy allows you to fire arrows with great precision. With training, you've learned to hone in on lone foes to deal out crippling strikes. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a bow: +1/2/3 (by tier) to damage to one creature that isn't adjacent to other creatures </specific>
+  <rules>
+    <statadd name="Bow Expertise" value="+1" />
+    <statadd name="Bow Expertise" value="+1" requires="Paragon Tier" />
+    <statadd name="Bow Expertise" value="+1" requires="Epic Tier" />
+    <statadd name="weapon,bow group:damage" value="+Bow Expertise" condition="against a single creature that is not adjacent to any other creature" />
+  </rules>
+You gain a +1 bonus to the damage roll of any weapon attack you make with a bow against a single creature that is not adjacent to any other creature. This bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+
+<RulesElement name="Crossbow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3126" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+  <Flavor> In your steady hands, a crossbow is a precision weapon. You need to see only a small portion of your enemy to deliver a deadly attack. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a crossbow: Ignore partial and superior cover. </specific>
+You ignore partial cover and superior cover with weapon attacks you make with a crossbow.
+</RulesElement>
+
+<RulesElement name="Heavy Blade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3141" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+  <Flavor> The heavy blade blends accurate attacks and quick parries into a potent package. You have learned to use your weapon to deflect enemies' attacks as you move about the battlefield. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When wielding a heavy blade: +2 to all defenses vs. opportunity attacks </specific>
+While wielding a heavy blade, you gain a +2 bonus to all defenses against opportunity attacks.
+</RulesElement>
+
+<RulesElement name="Light Blade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3144" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> What a light blade lacks in weight and power, it makes up in accuracy. In your hands, this advantage becomes even deadlier when your foe's defenses are down. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When wielding a light blade: +1/2/3 (by tier) to damage vs. creature granting combat advantage </specific>
+  <rules>
+    <statadd name="Light Blade Expertise" value="+1" />
+    <statadd name="Light Blade Expertise" value="+1" requires="Paragon Tier" />
+    <statadd name="Light Blade Expertise" value="+1" requires="Epic Tier" />
+    <statadd name="weapon,light blade group:damage" value="+Light Blade Expertise" condition="when you have combat advantage" />
+  </rules>
+You gain a +1 bonus to the damage rolls of weapon attacks that you make with a light blade against a creature granting combat advantage to you. This bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+
+<RulesElement name="Master at Arms" type="Feat" internal-id="ID_FMP_FEAT_3145" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> Some warriors seek to master one or two weapons. You instead learned techniques to wield a variety of arms. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Minor action: sheathe one weapon and draw one weapon </specific>
+You can use a minor action to sheathe a weapon and then draw a weapon.
+</RulesElement>
+
+<RulesElement name="Sling Expertise" type="Feat" internal-id="ID_FMP_FEAT_3149" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> The sling is a versatile weapon favored by melee combatants because it is fast and light, and it can be carried in one hand. You are a master of the sling and can use it without threat from nearby foes. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a sling: Ranged and area attacks with a sling don't provoke opportunity attacks </specific>
+When you make a ranged or an area attack with a sling, you don't provoke opportunity attacks for doing so.
+</RulesElement>
+
+<RulesElement name="Orb Expertise" type="Feat" internal-id="ID_FMP_FEAT_3146" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> The orb is an implement of strength and durability. When you produce an effect, you can channel energy from the orb to empower your magic. </Flavor>
+  <Prereqs> Implement Proficiency (Orb) </Prereqs>
+  <print-prereqs> Implement Proficiency (Orb) </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using an orb implement: +1 to push, pull, or slide effects you cause </specific>
+	You also gain a +1 feat bonus to the number of squares you pull, push, or slide targets of attacks that you make with an orb.
+</RulesElement>
+
+<RulesElement name="Rod Expertise" type="Feat" internal-id="ID_DBB_FEAT_10000114" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Prereqs> Implement Proficiency (Rod) </Prereqs>
+  <Flavor> A rod is a useful conduit for arcane energy. It is also useful when defending yourself against your foes. The magic you draw from within a rod, along with your training and expertise, allows you to us it to parry attacks. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> While using a rod as an implement: +1 shield bonus to AC and Reflex </specific>
+  <specific name="Rod Expertise" />
+    <rules>  
+      <statadd name="AC" value="+1" requires="WearingRod" />  
+      <statadd name="Reflex Defense" value="+1" requires="WearingRod" />
+    </rules>  
+When you hold a rod, you gain a +1 shield bonus to AC and Reflex.
+</RulesElement>
+
+<RulesElement name="Totem Expertise" type="Feat" internal-id="ID_FMP_FEAT_3671" source="Heroes of the Feywild">
+    <Flavor> As you master the use of totems, the primal spirits guide your attacks. </Flavor>
+    <specific name="Short Description"> Ignore partial cover and partial concealment with totem </specific>
+    <specific name="Tier"> Heroic </specific>
+You ignore partial cover and partial concealment on implement attacks you make with a totem.
+</RulesElement>
+
+<RulesElement name="Spear Expertise" type="Feat" internal-id="ID_FMP_FEAT_3150" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> Your talent with the spear is deadliest when you are advancing upon a foe. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a spear: +1/2/3 (by tier) to damage rolls made following a charge </specific>
+  <rules>
+    <statadd name="Spear Expertise" value="+1" />
+    <statadd name="Spear Expertise" value="+1" requires="Paragon Tier" />
+    <statadd name="Spear Expertise" value="+1" requires="Epic Tier" />
+    <statadd name="weapon,spear group:damage" value="+Spear Expertise" condition="when you are charging" />
+  </rules>
+When charging, you gain a +1 bonus to damage rolls of weapon attacks that you make with a spear. This bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+
+<RulesElement name="Staff Expertise" type="Feat" internal-id="ID_FMP_FEAT_3151" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> The staff is the most durable implement as well as a dependable weapon. You have learned to use the staff to defend yourself while unleashing your magical powers or to strike at enemies beyond your reach. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> While using a staff as a weapon or implement: Ranged attacks don't provoke opportunity attacks, +1 reach </specific>
+When you make a ranged attack with a staff as an implement, you don't provoke opportunity attacks for doing so.
+	When you make a melee attack with a staff, the weapon's reach for that attack increases by 1.
+</RulesElement>
+
+<RulesElement name="Wand Expertise" type="Feat" internal-id="ID_FMP_FEAT_3157" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+  <Flavor> The wand is the most precise implement. You have learned to use it to deliver perfectly aimed attacks in spite of any cover your foes have. </Flavor>
+  <Prereqs> Implement Proficiency (Wand) </Prereqs>
+  <print-prereqs> Implement Proficiency (Wand) </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> When using a wand implement: Ignore partial cover and superior cover </specific>
+You ignore partial cover and superior cover on implement attacks you make with a wand.
+</RulesElement>
+
+<RulesElement name="Holy Symbol Expertise" type="Feat" internal-id="ID_FMP_FEAT_3565" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:45:06 PM">  
+    <Flavor> Holy symbols are signs of faith. Yours represents a god or a cause that is dear to you. Your resolve is strengthened whenever you smite a foe with your symbol. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> +1/+2/+3 (by tier) to holy symbol implement attacks; when you attack with holy symbol, don't grant CA until SoNT unless you use effect that makes you grant CA </specific>  
+    <specific name="Special" />  
+    <specific name="Type" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+When you attack an enemy with an implement attack using a holy symbol, your enemies cannot gain combat advantage against you until the start of your next turn, unless you use a power or another ability that states that you grant combat advantage.  
+</RulesElement>  
+  <RulesElement name="Ki Focus Expertise" type="Feat" internal-id="ID_FMP_FEAT_3566" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:45:07 PM">  
+    <Flavor> You have dedicated yourself to becoming as attuned to your ki focus as possible, heightening your prowess in battle. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> +1/+2/+3 (by tier) to ki focus attacks; +1/+2/+3 (by tier) to damage with ki focus against bloodied enemies </specific>  
+    <specific name="Special" />  
+    <specific name="Type" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+    <rules>
+      <statadd name="Ki Focuses implement,implement:damage" value="Ki Focus Expertise" condition="against bloodied targets" />  
+      <statadd name="Ki Focuses implement,weapon:damage" value="Ki Focus Expertise" condition="against bloodied targets" />  
+    </rules>   
+You gain a +1 bonus to the damage rolls of attacks that you make with your ki focus against a bloodied enemy. This bonus increases to +2 at 11th level and +3 at 21st level.  
+</RulesElement>  
+
+<RulesElement name="Flail Expertise" type="Feat" internal-id="ID_GREMLIN_FEAT_1" source="Mordenkainens Magnificent Emporium" revision-date="09/30/2011 9:30:01 PM">
+	<Flavor> Flail Expertise The flail requires a mix of speed and power, a style that you have perfected over long hours of training. With a sweeping attack, you entangle a foe and send it tumbling to the ground.</Flavor>
+	<specific name="Tier"> Heroic </specific>
+	<specific name="Short Description"> Knock prone with melee slide attacks with flail</specific>
+When you hit with a melee weapon attack using a flail and the attack lets you slide the target, you can knock the target prone instead of sliding it.
+</RulesElement> 
+
+<RulesElement name="Polearm Expertise" type="Feat" internal-id="ID_TIV_FEAT_MORDS_MAG_EMP_09" source="Mordenkainens Magnificent Emporium" revision-date="00/00/0000 00:00:00 PM">
+	<Flavor> With proper training, a polearm's length provides both an offensive and a defensive edge. When you attack, you keep your foes at a distance. When they close to attack, the polearm's size makes it ideal for parrying. </Flavor>
+	<specific name="Tier"> Heroic </specific>
+	<specific name="Short Description"> While you hold a two-handed polearm in both hands, you gain a +2 bonus to all defenses against charge attacks </specific>
+		<rules>
+			<statadd name="AC" value="+2" type="Feat" condition="against charge attacks"/>
+			<statadd name="Fortitude Defense" value="+2" type="feat" condition="against charge attacks"/>
+			<statadd name="Reflex Defense" value="+2" type="feat" condition="against charge attacks"/>
+			<statadd name="Will Defense" value="+2" type="feat" condition="against charge attacks"/>
+		</rules>
+While you hold a two-handed polearm in both hands, you gain a +2 bonus to all defenses against charge attacks.
+</RulesElement>
+
+<RulesElement name="Pick Expertise" type="Feat" internal-id="ID_TIV_FEAT_MORDS_MAG_EMP_07" source="Mordenkainens Magnificent Emporium" revision-date="00/00/0000 00:00:00 PM">
+	<Flavor> The pick is a favored weapon of dwarves, gnomes, and others that must battle giants. Its curved point makes it an excellent weapon for striking at a foe's feet, particularly against larger foes such as giants or ogres. Of course, to a halfling or gnome a human is a larger foe. </Flavor>
+	<specific name="Tier"> Heroic </specific>
+	<specific name="Short Description"> Gain a +1 bonus to pick damage rolls against any enemy that has a size category larger than yours </specific>
+		<rules>
+			<statadd name="Pick Expertise" value="+1" />
+			<statadd name="Pick Expertise" value="+1" requires="Paragon Tier" />
+			<statadd name="Pick Expertise" value="+1" requires="Epic Tier" />
+			<statadd name="damage rolls" value="+Pick Expertise" type="Feat" condition="against any enemy that has a size category larger than yours" />
+		</rules>
+You gain a +1 bonus to pick damage rolls against any enemy that has a size category larger than yours. This bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+
+<RulesElement name="White Lotus Dueling Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-01" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Any arcane class </Prereqs>
+<print-prereqs> Any Arcane Class </print-prereqs>
+      <Flavor> You have been trained to carry out an arcane duel using a variety of implements-often more than one at the same time. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Gain a +2 bonus to Arcana checks and Diplomacy checks until the end of your next turn, when you hit an enemy with an arcane at-will attack power or basic attack. </specific>
+      <specific name="Special"/>
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you hit an enemy with an arcane at-will attack power or basic attack on your turn, you gain a +2 bonus to skill checks until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Eldritch Fusillade Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-02" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+      <Flavor> Your hands move with surety of purpose and economy of motion as you prepare to unleash a torrent of bolts, both magical and physical, against your enemies. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You can treat the hand holding a wand as if it were empty for the purpose of loading the crossbow. </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+While you wield both a wand and a crossbow, you can treat the hand holding the wand as if it were empty for the purpose of loading the crossbow.
+</RulesElement>
+
+<RulesElement name="Dwarven Rod Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-03" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Proficiency with rods </Prereqs>
+<print-prereqs> Proficiency with rods </print-prereqs>
+      <Flavor> You have learned a dwarven technique for wielding a rod for both magical and martial purposes. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Treat a rod as a club when making weapon attacks. </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you wield a rod, you can treat it as a club when making weapon attacks. You can use the enhancement bonus and critical dice of the rod when making weapon attacks or damage rolls with it.
+</RulesElement>
+
+<RulesElement name="Battle Song Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-04" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Bard </Prereqs>
+<print-prereqs> Bard </print-prereqs>
+      <Flavor> Magic creates and is created by song, a fact that few understand better than you do. You specialize in the tools of the bard, be they weapons or instruments. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You gain a +1 bonus to the number of squares that you can push, pull, or slide creatures. </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	You gain a +1 feat bonus to the number of squares that you can push, pull, or slide creatures.
+</RulesElement>
+
+<RulesElement name="Devoted Priest Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-05" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+      <Flavor> Even when you wade into battle with your weapon at the ready, your enemies still feel the sting of the symbol of your faith. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +1/2/3 damage against creatures vulnerable to radiant if you have a holy symbol </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+        <rules>
+			<statadd name="Devoted Priest" value="+1" />
+			<statadd name="Devoted Priest" value="+1" requires="11 level" />
+			<statadd name="Devoted Priest" value="+1" requires="21 level" />
+			<statadd name="damage rolls" value="+Devoted Priest" type="Feat" condition="when you hit a creature vulnerable to radiant damage"/>
+		</rules>	  
+When you hit a creature vulnerable to radiant damage with a weapon or implement attack while you are using a holy symbol, you gain a +1 bonus to the damage roll. This bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+
+<RulesElement name="Devout Protector Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-06" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+      <Flavor> The power of your faith shines from both your holy symbol and your weapon, enhancing your attacks and your shield at the same time. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +1 to all defenses until EONT when you hit with a divine at-will attack while using melee weapon, shield, and holy symbol </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you hit with a divine at-will attack power or a basic attack while wielding a melee weapon, using a shield, and using a holy symbol, you gain a +1 power bonus to all defenses until the start of your next turn.
+</RulesElement>
+
+<RulesElement name="Hex Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-07" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Warlock, Warlock's Curse class feature </Prereqs>
+<print-prereqs> Warlock, Warlock's Curse class feature </print-prereqs>
+      <Flavor> You call upon a symbol of your warlock's pact to strengthen your connection with your patron-and increase your control over your Warlock's Curse. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You can place your Warlock's Curse on any enemy you can see, rather than the nearest enemy you can see. </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You can place your Warlock's Curse on any enemy you can see, rather than the nearest enemy you can see.
+</RulesElement>
+
+<RulesElement name="War Wizard's Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-08" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Any arcane class </Prereqs>
+<print-prereqs> Any arcane class </print-prereqs>
+      <Flavor> While the techniques of channeling arcane power with a bladed weapon were said to have been discovered by the race that became the elves, drow, and eladrin, variants have since spread far and wide. You have mastered one of these special talents that not only enhances your attacks but gives your friends a measure of protection from those same strikes. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You reduce the damage you deal to allies by 4/6/8 (by tier). </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you use an arcane attack power with a light blade or a heavy blade and hit one or more allies, you reduce the damage dealt to those allies by that attack by 4. This reduction becomes 6 at 11th level and 8 at 21st level.
+</RulesElement>
+
+<RulesElement name="Weapon Ki Technique" type="Feat" internal-id="ID_TIV_FEAT_D402-09" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Mighty Crusader Expertise" type="Feat" internal-id="ID_TIV_FEAT_D402-10" source="Dragon Magazine 402" revision-date="00/00/0000 00:00:00 PM" >
+      <Flavor> You use your weapon to fend off attacks while you unleash your prayers through the symbol of your faith. </Flavor>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> When wielding weapon in two hands, ranged and area attacks with holy symbol don't provoke OAs </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	Also, when you use two hands to wield a melee weapon with which you have proficiency, ranged and area attacks that you make with a holy symbol do not provoke attacks of opportunity.
+</RulesElement>
+
+<RulesElement name="Draconic Spellcaster" type="Feat" internal-id="ID_FMP_FEAT_1125" source="Arcane Power" revision-date="8/27/2010 12:18:40 PM" >
+      <Prereqs> Dragonborn, any arcane class </Prereqs>
+      <print-prereqs> Dragonborn, any arcane class </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +1 to attacks that have same damage type as your breath weapon </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="Draconic Spellcaster" value="+1" />
+         <statadd name="Draconic Spellcaster" value="+1" requires="15 level" />
+         <statadd name="Draconic Spellcaster" value="+1" requires="25 level" />
+         <statadd name="arcane,acid:attack" value="+1" type="Feat" requires="Dragon Breath Acid" />
+         <statadd name="arcane,cold:attack" value="+1" type="Feat" requires="Dragon Breath Cold" />
+         <statadd name="arcane,fire:attack" value="+1" type="Feat" requires="Dragon Breath Fire" />
+         <statadd name="arcane,lightning:attack" value="+1" type="Feat" requires="Dragon Breath Lightning" />
+         <statadd name="arcane,poison:attack" value="+1" type="Feat" requires="Dragon Breath Poison" />
+         <statadd name="arcane,thunder:attack" value="+1" type="Feat" requires="Thundering Breath" />
+         <statadd name="arcane,acid:damage" value="+Draconic Spellcaster" type="Feat" requires="Dragon Breath Acid" />
+         <statadd name="arcane,cold:damage" value="+Draconic Spellcaster" type="Feat" requires="Dragon Breath Cold" />
+         <statadd name="arcane,fire:damage" value="+Draconic Spellcaster" type="Feat" requires="Dragon Breath Fire" />
+         <statadd name="arcane,lightning:damage" value="+Draconic Spellcaster" type="Feat" requires="Dragon Breath Lightning" />
+         <statadd name="arcane,poison:damage" value="+Draconic Spellcaster" type="Feat" requires="Dragon Breath Poison" />
+         <statadd name="arcane,thunder:damage" value="+Draconic Spellcaster" type="Feat" requires="Thundering Breath" />
+      </rules>
+You gain a +1 feat bonus to attack and damage rolls when you use an arcane power that deals the same damage type as your breath weapon. The bonus to damage increases to +2 at 15th level and to +3 at 25th level.
+</RulesElement>
+
+<RulesElement name="Feyborn Charm" type="Feat" internal-id="ID_FMP_FEAT_1137" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM" >
+      <Prereqs> Eladrin or gnome, bard </Prereqs>
+      <print-prereqs> Eladrin or gnome, bard </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Bonus to attack and damage with charm powers, +1 to Bluff, Diplomacy </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="charm:attack" value="+1" type="Feat" />
+         <statadd name="charm:damage" value="+1" type="Feat" />
+         <statadd name="charm:damage" value="+2" type="Feat" requires="15 level" />
+         <statadd name="charm:damage" value="+3" type="Feat" requires="25 level" />
+         <statadd name="Bluff Misc" value="+1" type="Feat" />
+         <statadd name="Diplomacy Misc" value="+1" type="Feat" />
+      </rules>
+When you use an arcane charm power, you gain a +1 feat bonus to attack rolls and damage rolls. The bonus to damage increases to +2 at 15th level and to +3 at 25th level. You also gain a +1 feat bonus to Bluff checks and Diplomacy checks.
+</RulesElement>
+
+<RulesElement name="Gnome Phantasmist" type="Feat" internal-id="ID_FMP_FEAT_1140" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM" >
+      <Prereqs> Gnome, wizard </Prereqs>
+      <print-prereqs> Gnome, wizard </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +1 to attack and damage with illusion powers </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="illusion:attack" value="+1" type="Feat" />
+         <statadd name="illusion:damage" value="+1" type="Feat" />
+         <statadd name="illusion:damage" value="+2" type="Feat" requires="15 level" />
+         <statadd name="illusion:damage" value="+3" type="Feat" requires="25 level" />
+      </rules>
+When you use an arcane illusion power, you gain a +1 feat bonus to attack rolls and damage rolls. The bonus to damage increases to +2 at 15th level and to +3 at 25th level.
+</RulesElement>
+   
+   
+<!--Defenses-->
+   
+	
+	<RulesElement name="Math Fix (Defenses)" type="Class Feature" internal-id="ID_KDM_MATH_FIX_(DEFENSES)" source="KDM" >
+  <specific name="_CS_ShortDescription"> @ </specific>
+      <rules>
+     <statadd name="Defensive Math Fix" value="+1" />
+     <statadd name="Defensive Math Fix" value="+1" requires="Paragon Tier" />
+     <statadd name="Defensive Math Fix" value="+1" requires="Epic Tier" />
+     <statadd name="Fortitude Defense" value="+Defensive Math Fix" />
+     <statadd name="Reflex Defense" value="+Defensive Math Fix" />
+     <statadd name="Will Defense" value="+Defensive Math Fix" />
+      </rules>
+	  Adjust defenses as a replacement for the Paragon Defenses, Robust Defenses, and Improved Defenses feats, which have been made unselectable and altered to no longer raise defenses.
+	
+	NOTE: This is an optional house rule. Consult your DM before selecting this option.
+	</RulesElement>
+
+	<RulesElement name="Paragon Defenses" type="Feat" internal-id="ID_FMP_FEAT_530" source="Player's Handbook 2" revision-date="8/27/2010 12:18:04 PM" >
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+
+	<RulesElement name="Robust Defenses" type="Feat" internal-id="ID_FMP_FEAT_540" source="Player's Handbook 2" revision-date="8/27/2010 12:18:04 PM" >
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+
+	<RulesElement name="Improved Defenses" type="Feat" internal-id="ID_FMP_FEAT_3143" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+
+	<RulesElement name="Great Fortitude" type="Feat" internal-id="ID_FMP_FEAT_145" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+	  <Flavor> You are tough enough to withstand poisons, disease, and harsh environmental conditions. You can endure brutal attacks meant to overcome your body's resilience. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> +2 to Fortitude defense </specific>
+	  <specific name="Special" />
+	  <specific name="type" />
+	  <specific name="Associated Power Info" />
+	  <specific name="Associated Powers" />
+	  <rules>
+		<statadd name="Great Fortitude" value="+2" />
+		<statadd name="Fortitude Defense" value="+Great Fortitude" type="Feat" />
+	  </rules>
+	You gain a +2 feat bonus to Fortitude.
+	   </RulesElement>
+
+	<RulesElement name="Iron Will" type="Feat" internal-id="ID_FMP_FEAT_148" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+	  <Flavor> Your mind is as tough and resilient as iron. You effortlessly resist powerful attacks aimed at breaking your will or penetrating your psyche. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> +2 to Will defense </specific>
+	  <specific name="Special" />
+	  <specific name="type" />
+	  <specific name="Associated Power Info" />
+	  <specific name="Associated Powers" />
+	  <rules>
+		<statadd name="Iron Will" value="+2" />
+		<statadd name="Will Defense" value="+Iron Will" type="Feat" />
+	  </rules>
+	You gain a +2 feat bonus to Will.
+	   </RulesElement>
+
+	<RulesElement name="Lightning Reflexes" type="Feat" internal-id="ID_FMP_FEAT_149" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+	  <Flavor> A combination of battle awareness, tactical planning, and agility ensure that you dodge most attacks. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> +2 to Reflex defense </specific>
+	  <specific name="Special" />
+	  <specific name="type" />
+	  <specific name="Associated Power Info" />
+	  <specific name="Associated Powers" />
+	  <rules>
+		<statadd name="Lightning Reflexes" value="+2" />
+		<statadd name="Reflex Defense" value="+Lightning Reflexes" type="Feat" />
+	  </rules>
+	You gain a +2 feat bonus to Reflex.
+	   </RulesElement>
+
+	<RulesElement name="Superior Fortitude" type="Feat" internal-id="ID_FMP_FEAT_3152" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+	  <Prereqs> Strength 15 or Constitution 15 </Prereqs>
+	  <print-prereqs> Strength 15 or Constitution 15 </print-prereqs>
+	  <Flavor> Your natural endurance is so great that you can ignore lasting injuries. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> Gain +2 to Fortitude, and resist 3/6/9 to ongoing damage </specific>
+	  <rules>
+		<statadd name="Superior Fortitude" value="+2" />
+		<statadd name="Fortitude Defense" value="+Superior Fortitude" type="Feat" />
+		<statadd name="Superior Fortitude Resist" value="+3" />
+		<statadd name="Superior Fortitude Resist" value="+3" requires="Paragon Tier" />
+		<statadd name="Superior Fortitude Resist" value="+3" requires="Epic Tier" />
+		<statadd name="resist:ongoing" value="+Superior Fortitude Resist" type="resist" />
+	  </rules>
+	You gain a +2 feat bonus to Fortitude.
+		You also gain resist 3 to ongoing damage. This resistance increases to 6 at 11th level and 9 at 21st level.
+	</RulesElement>
+
+	<RulesElement name="Superior Reflexes" type="Feat" internal-id="ID_FMP_FEAT_3153" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+	  <Prereqs> Dexterity 15 or Intelligence 15 </Prereqs>
+	  <print-prereqs> Dexterity 15 or Intelligence 15 </print-prereqs>
+	  <Flavor> Your speed and agility give you the upper hand at the start of combat as well as an advantage against certain attacks. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> +2 to Reflex. Gain combat advantage against all enemies during your first turn in an encounter. </specific>
+	  <rules>
+		<statadd name="Superior Reflex" value="+2" />
+		<statadd name="Reflex Defense" value="+Superior Reflex" type="Feat" />
+	  </rules>
+	You gain a +2 feat bonus to Reflex.
+		You also gain combat advantage against all enemies during your first turn in an encounter.
+	</RulesElement>
+
+	<RulesElement name="Superior Will" type="Feat" internal-id="ID_FMP_FEAT_3154" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+	  <Prereqs> Wisdom 15 or Charisma 15 </Prereqs>
+	  <print-prereqs> Wisdom 15 or Charisma 15 </print-prereqs>
+	  <Flavor> You can shrug off attacks that try to seize your mind or leave you senseless. </Flavor>
+	  <specific name="Tier"> Heroic </specific>
+	  <specific name="Short Description"> +2 to Will. Additional saving throw vs. dazed or stunned at start of turn, even if condition is not (save ends) </specific>
+	  <rules>
+		<statadd name="Superior Will" value="+2" />
+		<statadd name="Will Defense" value="+Superior Will" type="Feat" />
+	  </rules>
+	You gain a +2 feat bonus to Will.
+		In addition, if you are dazed or stunned, you can make a saving throw at the start of your turn to end that effect, even if the effect doesn't normally end on a save.
+	</RulesElement>
+	
+	
+</D20Rules>

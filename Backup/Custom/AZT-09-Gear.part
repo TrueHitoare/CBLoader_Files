@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<RulesElement name="Ancient Cannon" type="Weapon" internal-id="ID_AZT_WEAPON_01" source="True Hitoare" >
+	    <Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+	    <specific name="Full Text"> Ancient Cannon
+	Superior one-handed melee weapon
+	Cost: 10 gp
+	Damage: 1d6
+	Proficient: +2
+	Range: -
+	Weight: 1 lb.
+	
+	Originating from the mysterious lands of Sarlona, the cutting wheel is a bladed disk with a guarded handle at one side. Many wheels feature spikes or barbs to protect the wielder&apos;s hand.
+	
+	Properties: 
+	Defensive (A defensive weapon grants you a +1 bonus to AC while you wield the defensive weapon in one hand and wield another melee weapon in your other hand. Wielding more than one defensive weapon does not increase this bonus. To gain this benefit, you need not attack with the defensive weapon, but you must be proficient with it.).
+	Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can&apos;t attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
+	
+	Group: 
+	Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons.). </specific>
+	    <specific name="Weight"> 6 </specific>
+	    <specific name="Gold"> 30 </specific>
+	    <specific name="Range"> 20/40 </specific>
+	    <specific name="Damage"> 1d10 </specific>
+	    <specific name="Proficiency Bonus"> 3 </specific>
+	    <specific name="_Primary End" />
+	    <specific name="Weapon Category"> Superior Ranged </specific>
+	    <specific name="Hands Required"> One-Handed </specific>
+	    <specific name="Item Slot"> Off-hand </specific>
+	    <specific name="Group"> Crossbow </specific>
+	    <specific name="Properties"> Load Free </specific>
+	    <!--<specific name="Proficient As"> Superior Crossbow </specific>
+		<rules>
+			<modify name="this" Field="Proficient As" value="Superior Crossbow" />
+		</rules>-->
+	Originating from the mysterious lands of Sarlona, the cutting wheel is a bladed disk with a guarded handle at one side. Many wheels feature spikes or barbs to protect the wielder&apos;s hand.
+	</RulesElement>
+	   
+	<AppendNodes name="Weapon Group (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW)" source="Core">
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" type="Proficiency" />
+	    </rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Weapon Proficiency (Superior Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)" source="Player's Handbook">
+		
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ANCIENT_CANNON)" type="Proficiency" />
+		</rules>
+You gain proficiency with the Double axe.
+	</AppendNodes>
+</D20Rules>

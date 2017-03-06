@@ -1,0 +1,41 @@
+Roll back Werewolf, Savage Frenzy
+Check other Themes, see which ones are salvageable
+
+Remove stupid Cormyr requirements
+
+Fix Sneak Attack - Nothing to be done
+
+Make Mixed Heritage mermaid feat (count as human and mer for prereqs, gain class skill, mer trait?)
+
+Fix:
+Sprightly Rhythm (miss effect forced movement type)
+
+Buff:
+Seeker's Due (readd Bloodbond rider)
+
+Nerf:
+Spider Technique (bump up to level 6)
+
+
+SoA Themes:
+Guardian
+Magical Girl
+Fey Beast Tamer
+Werewolf
+Unseelie Agent
+Seer
+(NPCs:)
+Spy
+Explorer
+Treasure Hunter
+
+
+
+Fix themes:
+Black-Hearted Knave
+Brazen Ambassador
+Chaosmade
+Escaped Slave
+Halaster's Clone
+Masked Lord
+(more)

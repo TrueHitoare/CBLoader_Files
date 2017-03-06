@@ -1,0 +1,114 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Readme.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Readme.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Readme.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--
+KDM House Rule Pack v1.8j
+
+This pack contains a few files that integrate some common (and some not-so-common) house-rules into the CB, so you don't have to scribble so much on your character sheets or repeatedly explain your house-rules to your players. Constructive feedback is always appreciated; contact me at KDM.Projects@gmail.com (email or Google Chat), or on EnemyOfFun's forum: http://enemyoffun.clanteam.com/viewforum.php?f=23.
+
+v1.8 changelog
+-Back from the dead
+-Complete overhaul, loads of bugfixes, and the beginning of a complete rebalancing of all mechanical options. As of 1.8h, the first draft of heroic powers and class features, as well as paragon paths, is complete.
+
+v1.6 changelog
+-Added KDM Ability Scores
+
+v1.5 changelog
+-Separate Hexblade Implements file removed; new section added to KDM Attack that removes the incompatible elements from the new HotFK file.
+-More obsolete feats added (removed?); other obsolete or nearly obsolete feats given a boost in Misc.
+-Multi-class feat prereqs relaxed.
+-Included the beginnings of a mod (KDM Feats - Prereq Declutter) to declutter the feat screen by adding prerequisites equal to what is actually required to make the feat useful. If a feat affects a class/racial feature, that feature is a prerequisite. If it requires an investment in an ability score to be useful, a respectable modifier for that score is a prerequisite. So far only the first 900 or so feats (by internal ID) have been processed, and it's barely tested. Help with getting through all those feats, or testing the modified feats, would be appreciated.
+
+
+FILES AND THEIR CONTENTS:
+
+
+KDM Ability Scores
+    Changes the rules for racial scores to every race getting +2 in any two scores of your choice. (You now select the bonuses on the Race tab rather than the Ability Scores tab.) Doesn't directly affect any race data, so racial ability score info is still displayed, but has no effect, and it automatically works on any custom races you install.
+
+
+KDM Class Features
+	Various balance fixes to class features.
+
+
+KDM Damage
+	Removes Dragonshard Augments and grants an equivalent scaling bonus to all damage rolls on all attacks.
+	Combines the Weapon Focus feats into a single Offensive Focus (All) feat that applies to all damage rolls.
+	Combines the Weapon Mastery and similar crit range feats into a single Critical Mastery feat that works on all attacks.
+	
+
+KDM Defense Stacking
+    Makes all attributes contribute to NADs, rather than only the highest. Basically a boost to classes that have both primary and secondary stats in the same group; now their high defense is very hard to hit, to compensate for their other two defenses being so low. Other classes are more or less unaffected.
+
+	
+KDM Feats
+    A series of files that modify or remove various feats.
+
+	* Declutter: Declutters the feat screen by removing obsolete feats and adding prereqs so that only feats you can use appear.
+    * Guild and Tribal: Removes the Guild and Tribal feats.
+    * Misc: Buffs some miscellaneous underpowered feats and removes racial requirements on some on some powerful feats that open up new archetypes.
+    * Multiclass: Relaxes restrictions on multiclass skill training and feat prereqs, combines the multiclass power swaps into one feat.
+
+
+KDM Hybrid
+    Gives Hybrid characters an easy way to adjust armor and shield proficiencies: an extra two feat choices from specialized feats that provide all proficiencies up to a chosen level. Useful if you want to, say, let Hybrid characters split the difference instead of taking the lowest set.
+ (Also contains some commented-out partial code for a mod that automatically calculated and granted the appropriate proficiencies; if you have any ideas on how to complete it, let me know!)
+
+
+KDM Items
+	Various item balance changes.
+
+
+KDM Math Fix
+    Gives scaling bonus to attack rolls and non-AC defenses, and removes or adjusts related feats (the so-called "math fix" feats) to compensate.
+
+
+KDM MBA
+    MBAs gain power source keywords.
+	Gives all melee classes w/o a primary STR score or MBA at-will the appropriate Melee Training feat. Swordmages and Hybrid Swordmages receive Intelligent Blademaster instead.
+    Note: If you pick two such hybrid classes, the feat from the class selected for the second hybrid box on the class screen takes precedence. However, Melee Training always overrides Intelligent Blademaster.
+	
+	
+KDM Paragon Paths
+	Rebalances Paragon Paths and Paragon Multiclassing, and reduces the entry requirements for the latter to any one multiclass feat + Acolyte Power. Also changes most deity requirements to domain requirements, e.g. Morninglord now requires you to worship a deity of the sun domain rather than Amaunator specifically.
+
+
+KDM Power Source Skills
+    Makes all Arcane classes use their highest mental ability score for Arcana checks. Likewise for Divine/Religion and Primal/Nature. No more Sorcerers who suck at magic or Clerics who suck at religion.
+
+
+KDM Powers
+	Rebalances powers. Currently only heroic powers have been changed; now working on paragon powers. Psionic classes aside from the monk are also being saved for a later update.
+
+
+KDM Racial
+	Bugfixes to racial powers and related options to get them to work correctly and more intuitively.
+	
+
+KDM Utility
+    Grants a free L2 utility power or a bonus feat. Personally I require players to choose a non-combat option for this, just to give them a little more utility outside of combat without sacrificing combat effectiveness.
+	
+	
+
+Credits: KDM
+
+Special thanks:
+Ferdil
+Greyhawk Fan (His Deluxe Missiles served as the basis for my own take on the missiles and related options.)
+ghoti
+MustacheRide
+Peraion Graufalke (P_G)
+SabreCat
+Spinecracker
+Tanngrisnr
+Tivaan
+yeoldesteve
+...and all the contributors to the CBLoader wiki
+-->
+</D20Rules>

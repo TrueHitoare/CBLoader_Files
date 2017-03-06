@@ -1,0 +1,597 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Damage.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Damage.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Damage.txt</VersionAddress>
+  </UpdateInfo>
+  
+
+<!--Crit Feats-->
+
+
+<RulesElement name="Critical Mastery" type="Feat" internal-id="ID_KDM_FEAT_CRITICAL_MASTERY" source="KDM" >
+	<Prereqs> 21st level; Epic Tier </Prereqs>
+	<print-prereqs> 21st level </print-prereqs>
+	<specific name="Tier"> Epic </specific>
+	<specific name="Short Description"> Critical hit with attack roll of 19-20 </specific>
+	<specific name="Special" />
+	<specific name="type" />
+	<specific name="Associated Power Info" />
+	<specific name="Associated Powers" />
+When you make an attack, you can score a critical hit on a natural roll of 19-20.
+</RulesElement>
+
+<RulesElement name="Axe Mastery" type="Feat" internal-id="ID_FMP_FEAT_184" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Heavy Blade Mastery" type="Feat" internal-id="ID_FMP_FEAT_249" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Bludgeon Mastery" type="Feat" internal-id="ID_FMP_FEAT_250" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Light Blade Mastery" type="Feat" internal-id="ID_FMP_FEAT_251" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Spear Mastery" type="Feat" internal-id="ID_FMP_FEAT_253" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Pick Mastery" type="Feat" internal-id="ID_FMP_FEAT_255" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Flail Mastery" type="Feat" internal-id="ID_FMP_FEAT_329" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Bard Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_1192" source="Arcane Power" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Sorcerer Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_1208" source="Arcane Power" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Warlock Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_1215" source="Arcane Power" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Wizard Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_1216" source="Arcane Power" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Swordmage Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_2966" source="Dragon Magazine 387" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Invoker Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_3011" source="Dragon Magazine 387" revision-date="8/27/2010 12:20:53 PM">  
+  <Prereqs> Unselectable </Prereqs>
+   </RulesElement>  
+   
+   <RulesElement name="Psion Implement Expertise" type="Feat" internal-id="ID_FMP_FEAT_3384" source="Psionic Power" revision-date="9/21/2010 1:43:32 PM">  
+      <Prereqs> Unselectable </Prereqs>  
+   </RulesElement>  
+   
+   <RulesElement name="Hand of Divine Guidance" type="Feat" internal-id="ID_FMP_FEAT_2172" source="Dragon Magazine 382" revision-date="8/27/2010 12:19:51 PM" >
+      <Prereqs> 21st level, avenger, oath of enmity power; Epic Tier </Prereqs>
+      <print-prereqs> 21st level, avenger, oath of enmity power </print-prereqs>
+      <specific name="Tier"> Epic </specific>
+      <specific name="Short Description"> Score crits on 18–20 against oath target </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You score critical hits on a roll of 18-20 against your oath of enmity target.
+   </RulesElement>
+   
+   
+<!--Focus Feats-->
+   
+   
+   <RulesElement name="Offensive Focus" type="Category" internal-id="ID_INTERNAL_CATEGORY_OFFENSIVE_FOCUS" source="KDM" />
+
+   <RulesElement name="Offensive Focus (All)" type="Feat" internal-id="ID_INTERNAL_FEAT_OFFENSIVE_FOCUS_(ALL)" source="KDM" >
+   <Category> ID_INTERNAL_CATEGORY_OFFENSIVE_FOCUS </Category>
+	<Prereqs>  </Prereqs>
+      <specific name="Short Description"> Gain +1 damage per tier. </specific>
+      <rules>
+         <statadd name="Offensive Focus" value="+1" />
+         <statadd name="Offensive Focus" value="+1" requires="Paragon Tier" />
+         <statadd name="Offensive Focus" value="+1" requires="Epic Tier" />
+         <statadd name="damage rolls" value="+Offensive Focus" type="Feat" />
+      </rules>
+You gain a +1 per tier feat bonus to damage rolls.
+   </RulesElement>
+
+<RulesElement name="Weapon Focus (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(MACE)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(LIGHT_BLADE)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(STAFF)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(AXE)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(FLAIL)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HAMMER)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(PICK)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(POLEARM)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Unarmed)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(UNARMED)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(CROSSBOW)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SLING)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BOW)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SPEAR)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(GARROTE)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   <RulesElement name="Weapon Focus (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BLOWGUN)" source="Player&apos;s Handbook" >
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+	<RulesElement name="Implement Focus (Club)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CLUB)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Dagger)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DAGGER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Javelin)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(JAVELIN)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(MACE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Sickle)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SICKLE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SPEAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Greatclub)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GREATCLUB)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Morningstar)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(MORNINGSTAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Quarterstaff)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(QUARTERSTAFF)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Scythe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SCYTHE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Battleaxe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BATTLEAXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Handaxe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HANDAXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(FLAIL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Throwing hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(THROWING_HAMMER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Warhammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WARHAMMER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (War Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAR_PICK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Scimitar)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SCIMITAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Longsword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(LONGSWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Short sword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SHORT_SWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Greataxe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GREATAXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Heavy flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HEAVY_FLAIL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Glaive)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GLAIVE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Halberd)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HALBERD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Maul)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(MAUL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Longspear)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(LONGSPEAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Greatsword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GREATSWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Katar)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(KATAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Rapier)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(RAPIER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Bastard sword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BASTARD_SWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Whip)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WHIP)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Spiked chain)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SPIKED_CHAIN)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Hand Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HAND_CROSSBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SLING)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CROSSBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Shortbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SHORTBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Longbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(LONGBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Shuriken)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SHURIKEN)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Falchion)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(FALCHION)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Spiked gauntlet)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SPIKED_GAUNTLET)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Broadsword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BROADSWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Khopesh)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(KHOPESH)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Light war pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(LIGHT_WAR_PICK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Scourge)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SCOURGE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Trident)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TRIDENT)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Heavy war pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HEAVY_WAR_PICK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Craghammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CRAGHAMMER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Kukri)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(KUKRI)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Parrying dagger)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(PARRYING_DAGGER)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Spiked shield)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SPIKED_SHIELD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Tratnyr)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TRATNYR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Triple-headed flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TRIPLE-HEADED_FLAIL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Waraxe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WARAXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Execution axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(EXECUTION_AXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Fullblade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(FULLBLADE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Greatspear)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GREATSPEAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Mordenkrad)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(MORDENKRAD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Double axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DOUBLE_AXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Double flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DOUBLE_FLAIL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Double sword)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DOUBLE_SWORD)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Urgrosh)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(URGROSH)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Repeating crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(REPEATING_CROSSBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Greatbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GREATBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Superior crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SUPERIOR_CROSSBOW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Net)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(NET)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Bola)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BOLA)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BLOWGUN)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GARROTE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Cutting Wheel)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CUTTING_WHEEL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Drow Long Knife)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DROW_LONG_KNIFE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Talenta Tangat)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TALENTA_TANGAT)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Double Scimitar)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DOUBLE_SCIMITAR)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Zulaat)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ZULAAT)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Talenta Boomerang)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TALENTA_BOOMERANG)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Xen'drik Boomerang)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(XEN'DRIK_BOOMERANG)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Alhulak)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ALHULAK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Cahulaks)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CAHULAKS)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Carrikal)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CARRIKAL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Chatkcha)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CHATKCHA)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Dejada)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DEJADA)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Dragon Paw)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(DRAGON_PAW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Gauntlet Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GAUNTLET_AXE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Gouge)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GOUGE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Gythka)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(GYTHKA)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Lotulis)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(LOTULIS)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Puchik)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(PUCHIK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Singing Stick)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(SINGING_STICK)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Talid)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TALID)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Tortoise Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TORTOISE_BLADE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Trikal)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TRIKAL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Widow's Knife)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WIDOW'S_KNIFE)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Wrist Razors)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WRIST_RAZORS)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Zadatl)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ZADATL)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Battlefist)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(BATTLEFIST)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Claw Fighter Claw)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(CLAW_FIGHTER_CLAW)" source="Player Essentials: Heroes of the Fallen Lands">
+	  <Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Ki focuses)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(KI_FOCUSES)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Orb)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ORB)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Tome)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TOME)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(STAFF)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Holy Symbol)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(HOLY_SYMBOL)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Totem)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(TOTEM)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>
+	<RulesElement name="Implement Focus (Wand)" type="Feat" internal-id="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)" source="Player Essentials: Heroes of the Fallen Lands">  
+		<Prereqs> Unselectable </Prereqs>
+	</RulesElement>  
+	
+	
+<!--Dragonshard Augments-->
+   
+   
+   <AppendNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core" >
+      <rules>
+     <grant name="Dragonshard Replacement (Heroic)" type="Class Feature" Level="5" />
+     <grant name="Dragonshard Replacement (Paragon)" type="Class Feature" Level="15" />
+     <grant name="Dragonshard Replacement (Epic)" type="Class Feature" Level="25" />
+     <grant name="Dragonshard Replacement" type="Class Feature" />
+      </rules>
+	</AppendNodes>
+
+	<RulesElement name="Dragonshard Replacement (Heroic)" type="Class Feature" internal-id="ID_KDM_DRAGONSHARD1" source="KDM" >
+	<Prereqs> Unselectable </Prereqs>
+	  <specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+		 <statadd name="DragonshardBonus" value="+1" type="Dragonshard" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Dragonshard Replacement (Paragon)" type="Class Feature" internal-id="ID_KDM_DRAGONSHARD2" source="KDM" >
+	<Prereqs> Unselectable </Prereqs>
+	  <specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+		 <statadd name="DragonshardBonus" value="+3" type="Dragonshard" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Dragonshard Replacement (Epic)" type="Class Feature" internal-id="ID_KDM_DRAGONSHARD3" source="KDM" >
+	<Prereqs> Unselectable </Prereqs>
+	  <specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+		 <statadd name="DragonshardBonus" value="+5" type="Dragonshard" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Dragonshard Replacement" type="Class Feature" internal-id="ID_KDM_DRAGONSHARD" source="KDM" >
+	<Prereqs> Unselectable </Prereqs>
+	  <specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+		 <statadd name="damage rolls" value="DragonshardBonus" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Eberron Shard of Animosity (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5294" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:04 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Animosity (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5296" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:04 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Animosity (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5298" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:04 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Bleeding Wounds (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5300" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:04 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Lightning (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5301" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:04 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Lightning (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5303" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Lightning (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5305" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Ruin (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5307" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Ruin (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5309" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Eberron Shard of Ruin (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5311" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Death&apos;s Embrace (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5313" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Death&apos;s Embrace (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5315" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Death&apos;s Embrace (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5317" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Life Drinking (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5318" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Life Drinking (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5320" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of Life Drinking (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5322" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:05 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of the Fiery Depth (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5323" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of the Fiery Depth (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5325" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Khyber Shard of the Fiery Depth (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5327" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Merciless Cold (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5329" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Merciless Cold (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5331" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Merciless Cold (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5333" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Radiance (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5335" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Radiance (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5337" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of Radiance (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5339" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of the Mage (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5341" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:06 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of the Mage (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5343" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:07 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+	   <RulesElement name="Siberys Shard of the Mage (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_5345" source="Eberron Player&apos;s Guide" revision-date="9/1/2010 10:37:07 AM" >
+	<Prereqs> Unselectable </Prereqs>
+	   </RulesElement>
+   
+   
+</D20Rules>

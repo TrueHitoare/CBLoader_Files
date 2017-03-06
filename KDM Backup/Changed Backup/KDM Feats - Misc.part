@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>2.0</Version>
+    <Filename>KDM Feats - Misc.part</Filename>
+    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Misc.part</PartAddress>
+    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Misc.txt</VersionAddress>
+  </UpdateInfo>
+
+<RulesElement name="Armor Proficiency: Chainmail" type="Feat" internal-id="ID_FMP_FEAT_111" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Proficiency with hide armor, Str 13 or Con 13 </Prereqs>
+      <print-prereqs> Proficiency with hide armor, Str 13 or Con 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with chainmail armor </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+      </rules>
+You gain proficiency with chainmail.
+   </RulesElement>
+   <RulesElement name="Armor Proficiency: Hide" type="Feat" internal-id="ID_FMP_FEAT_112" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Proficiency with leather armor, Str 13 or Con 13 </Prereqs>
+      <print-prereqs> Proficiency with leather armor, Str 13 or Con 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with hide armor </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      </rules>
+You gain proficiency with hide armor.
+   </RulesElement>
+   <RulesElement name="Armor Proficiency: Leather" type="Feat" internal-id="ID_FMP_FEAT_113" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with leather armor </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      </rules>
+You gain proficiency with leather armor.
+   </RulesElement>
+   <RulesElement name="Armor Proficiency: Plate" type="Feat" internal-id="ID_FMP_FEAT_114" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Proficiency with scale armor, Str 15 or Con 15 </Prereqs>
+      <print-prereqs> Proficiency with scale armor, Str 15 or Con 15 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with plate armor </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" type="Proficiency" />
+      </rules>
+You gain proficiency with plate armor.
+   </RulesElement>
+   <RulesElement name="Armor Proficiency: Scale" type="Feat" internal-id="ID_FMP_FEAT_115" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
+      <Prereqs> Proficiency with chainmail, Str 13 or Con 13 </Prereqs>
+      <print-prereqs> Proficiency with chainmail, Str 13 or Con 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Training with scale armor </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+      </rules>
+You gain proficiency with scale armor.
+   </RulesElement>
+
+<!-- <RulesElement name="Combat Virtuoso" type="Feat" internal-id="ID_FMP_FEAT_1120" source="Arcane Power" revision-date="8/27/2010 12:18:40 PM" >
+      <Prereqs> Bard </Prereqs>
+      <print-prereqs> Bard </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Use Charisma for attack rolls of all multiclass powers </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <textstring name="multiclass:key ability" value="cha" />
+      </rules>
+When you use any attack power from another class, you can use Charisma for the power&apos;s attack and damage rolls rather than the ability score normally used to make the attack.
+   </RulesElement> -->
+
+<RulesElement name="Dagger Specialist" type="Feat" internal-id="ID_KDM_FEAT_DAGGER_SPECIALIST" source="KDM" >
+  <Prereqs> Thief, Sneak Attack class feature </Prereqs>
+  <print-prereqs> Thief, Sneak Attack class feature </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Extra sneak attack die with dagger </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+      <rules>
+         <statadd name="Sneak Attack Dice" value="+1" wearing="dagger" />
+         <statadd name="Sneak Attack Dice" value="+1" wearing="dagger" requires="21 level"/>
+      </rules>
+When you make an attack with a dagger, you deal an extra die of damage from your Sneak Attack class feature. At 21st level, this increases to two extra dice.
+</RulesElement>
+
+<RulesElement name="Improved Swordbond" type="Feat" internal-id="ID_FMP_FEAT_612" source="Forgotten Realms Player&apos;s Guide" revision-date="8/27/2010 12:18:07 PM" >
+      <Prereqs> Unselectable </Prereqs>
+      <print-prereqs> Unselectable </print-prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Greater Swordmage Warding" type="Feat" internal-id="ID_FMP_FEAT_1175" source="Arcane Power" revision-date="8/27/2010 12:18:43 PM" >
+      <Prereqs> 11th level, swordmage, Swordmage Warding class feature; Paragon Tier </Prereqs>
+      <print-prereqs> 11th level, swordmage, Swordmage Warding class feature </print-prereqs>
+      <specific name="Tier"> Paragon </specific>
+      <specific name="Short Description"> +1 to defenses with Swordmage Warding </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="AC" value="+1" type="Feat" />
+         <statadd name="Fortitude Defense" value="+1" type="Feat" />
+         <statadd name="Reflex Defense" value="+1" type="Feat" />
+         <statadd name="Will Defense" value="+1" type="Feat" />
+         <statadd name="AC" value="+2" type="Feat" requires="Epic Tier" />
+         <statadd name="Fortitude Defense" value="+2" type="Feat" requires="Epic Tier" />
+         <statadd name="Reflex Defense" value="+2" type="Feat" requires="Epic Tier" />
+         <statadd name="Will Defense" value="+2" type="Feat" requires="Epic Tier" />
+      </rules>
+While your Swordmage Warding is active, you gain a +1 feat bonus to all defenses.
+At 21st level, this bonus increases to +2.
+   </RulesElement>
+   
+   <RulesElement name="Improved Swordmage Warding" type="Feat" internal-id="ID_FMP_FEAT_1143" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM" >
+      <Prereqs> swordmage, Swordmage Warding class feature </Prereqs>
+      <print-prereqs> swordmage, Swordmage Warding class feature </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Increase AC bonus from Swordmage Warding </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="Swordmage Warding" value="+1" type="Improved Swordmage Warding" not-wearing="armor:" />
+         <statadd name="Swordmage Warding" value="+1" type="Improved Swordmage Warding" wearing="armor:leather" />
+         <statadd name="Swordmage Warding" value="+1" type="Improved Swordmage Warding" wearing="armor:cloth" />
+      </rules>
+While you are wearing cloth armor, leather armor, or no armor, the bonus to AC from your Swordmage Warding increases by 1.
+   </RulesElement>
+
+<RulesElement name="Blessed Strength" type="Feat" internal-id="ID_FMP_FEAT_2909" source="Dragon Magazine 386" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Mighty Challenge" type="Feat" internal-id="ID_FMP_FEAT_1544" source="Divine Power" revision-date="8/27/2010 12:19:12 PM">
+  <Prereqs> Paladin, divine challenge power </Prereqs>
+  <print-prereqs> Paladin, divine challenge power </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Divine challenge and sanctions deal extra radiant damage </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="Divine Challenge:damage" value="+Strength modifier" />
+    <statadd name="Divine Sanction:damage" value="+Strength modifier" />
+  </rules>
+Whenever a target of your divine challenge or a creature affected by your divine sanction takes damage from that power or feature, it takes extra radiant damage equal to your Strength modifier.
+   </RulesElement>
+
+<RulesElement name="Mark of Scribing" type="Feat" internal-id="ID_FMP_FEAT_1394" source="Eberron Player's Guide" revision-date="1/26/2011 12:17:55 PM">
+  <Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+  <Prereqs> ~DRAGONMARK </Prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Gain additional languages, +2 to Diplomacy checks, perform certain rituals </specific>
+  <specific name="Special" />
+  <specific name="type"> Dragonmark </specific>
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <select type="Language" number="4" />
+    <select type="Language" number="1" level="5" />
+    <select type="Language" number="1" level="10" />
+    <select type="Language" number="1" level="15" />
+    <select type="Language" number="1" level="20" />
+    <select type="Language" number="1" level="25" />
+    <select type="Language" number="1" level="30" />
+    <statadd name="Diplomacy Misc" value="+2" />
+  </rules>
+Choose four languages. You can speak, read, and write those languages fluently. You gain one additional language for every 5 levels you have.
+You gain a +2 bonus to Diplomacy checks.
+You can master and perform rituals as if you had the Ritual Caster feat. Furthermore, you can create scrolls in half the normal time (that is, the same amount of time it takes create a ritual book).
+</RulesElement>
+
+<RulesElement name="Linguist" type="Feat" internal-id="ID_FMP_FEAT_150" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Intelligence 13, Wisdom 13, or Charisma 13 </Prereqs>
+  <print-prereqs> Int 13, Wis 13, or Cha 13 </print-prereqs>
+  <Flavor> Through study or extensive travel, you have mastered several languages. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Learn three new languages, +1 per 5 levels</specific>
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <select type="Language" number="3" />
+    <select type="Language" number="1" level="5" />
+    <select type="Language" number="1" level="10" />
+    <select type="Language" number="1" level="15" />
+    <select type="Language" number="1" level="20" />
+    <select type="Language" number="1" level="25" />
+    <select type="Language" number="1" level="30" />
+  </rules>
+Choose three languages. You can now speak, read, and write those languages fluently. You gain one additional language for every 5 levels you have.
+</RulesElement>
+
+<RulesElement name="Improved Grab" type="Feat" internal-id="ID_FMP_FEAT_658" source="Player's Handbook 2" revision-date="1/26/2011 12:17:55 PM">
+  <Prereqs> Str 13 </Prereqs>
+  <print-prereqs> Str 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +4 to grab attacks; 1/encounter, grab as minor action </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+When you use the grab action, you gain a +4 feat bonus to the attack roll. The bonus increases to +6 at 11th level and +8 at 21st level.
+	Once per encounter, you can make a grab attack as a minor action.
+</RulesElement>
+
+<RulesElement name="Alchemist" type="Feat" internal-id="ID_FMP_FEAT_652" source="Eberron Player's Guide" revision-date="1/26/2011 12:17:55 PM">
+  <Category> ID_FMP_CLASS_FEATURE_683 </Category>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> Alchemist bonus feat replaces Ritual Caster class feature. </specific>
+  <specific name="Special"> You can take this feat instead of the Ritual Caster feat granted by your class feature. </specific>
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <grant name="ID_INTERNAL_INTERNAL_ALCHEMICAL_ITEMS" type="Internal" />
+  </rules>
+You can make alchemical items of your level or lower. You must have the correct formula and an appropriate skill.
+	At the end of an extended rest, you can create one alchemical item of your level or lower at no cost. You can have only one such item prepared at a time.
+</RulesElement>
+
+<RulesElement name="Human Perseverance" type="Feat" internal-id="ID_FMP_FEAT_47" source="Player's Handbook" revision-date="8/27/2010 12:17:49 PM">
+  <Prereqs> Human </Prereqs>
+  <print-prereqs> Human </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +2 to saving throws </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="Saving Throws" value="+2" type="Feat" />
+  </rules>
+You gain a +2 feat bonus to saving throws.
+   </RulesElement>
+   
+   <RulesElement name="Don&apos;t Count Me Out" type="Feat" internal-id="ID_FMP_FEAT_2569" source="Dragon Magazine 383" revision-date="8/27/2010 12:20:23 PM" >
+      <Prereqs> Human </Prereqs>
+      <print-prereqs> Human </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> While bloodied, +2 to saving throws vs immobilize, daze, stun, weaken </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="Saving Throws" value="+2" condition="while you are bloodied against effects that immobilize, daze, stun, or weaken you" />
+      </rules>
+While you are bloodied, you gain a +2 bonus to saving throws against effects that immobilize, daze, stun, or weaken you.
+   </RulesElement>
+   
+<!-- <RulesElement name="Pain Doesn&apos;t Hurt" type="Feat" internal-id="ID_FMP_FEAT_2571" source="Dragon Magazine 383" revision-date="8/27/2010 12:20:23 PM" >
+    <Prereqs> Unselectable </Prereqs>
+    <print-prereqs> Unselectable </print-prereqs>
+</RulesElement> -->
+
+	<RulesElement name="Pain Doesn't Hurt" type="Feat" internal-id="ID_FMP_FEAT_2571" source="Dragon Magazine 383" revision-date="8/27/2010 12:20:23 PM">
+		<Prereqs> 11th level, Human; Paragon Tier </Prereqs>
+		<print-prereqs> 11th level, Human </print-prereqs>
+		<specific name="Tier"> Paragon </specific>
+		<specific name="Short Description"> +2 to saving throws vs. ongoing damage when bloodied; ignore ongoing damage until EoNT when first bloodied </specific>
+		<specific name="Special" />
+		<specific name="type" />
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Pain Doesn't Hurt" value="+2" />
+			<statadd name="Saving Throws" value="+Pain Doesn't Hurt" condition="against ongoing damage" />
+			<!-- <statadd name="Pain Doesn't Hurt" value="+1" requires="Human Perseverance feat" /> -->
+		</rules>
+While you are bloodied, you gain a +2 bonus to saving throws against ongoing damage. In addition, the first time you are bloodied in each encounter, you ignore all ongoing damage until the end of your next turn.
+	</RulesElement>
+
+<RulesElement name="Fated Survival" type="Feat" internal-id="ID_FMP_FEAT_2139" source="Dragon Magazine 381" revision-date="8/27/2010 12:19:48 PM">
+  <Prereqs> 11th level, Cha 13; Paragon Tier </Prereqs>
+  <print-prereqs> 11th level, Cha 13 </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description" />
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+When you fail a saving throw, you gain a +2 bonus to the next saving throw you make against the same effect.
+   </RulesElement>
+
+<RulesElement name="Liberating Teleport" type="Feat" internal-id="ID_FMP_FEAT_2651" source="Player's Handbook 3" revision-date="8/27/2010 12:20:28 PM">
+  <Prereqs> 11th level; Paragon Tier </Prereqs>
+  <print-prereqs> 11th level </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description"> +2 to saving throws at end of turn after you teleport </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+If you teleport on your turn, you gain a +2 bonus to saving throws at the end of that turn.
+   </RulesElement>
+
+<RulesElement name="Two-Weapon Fighting" type="Feat" internal-id="ID_FMP_FEAT_173" source="Player's Handbook" revision-date="8/27/2010 12:17:53 PM">
+  <Prereqs> Dexterity 13 </Prereqs>
+  <print-prereqs> Dex 13 </print-prereqs>
+  <Flavor> Your two weapons form a deadly combination. You slash and stab with both in unison, delivering punishing strikes as you press the attack. </Flavor>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 damage while holding a melee weapon in each hand </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="two-weapon:damage" value="+1" />
+  </rules>
+While wielding a melee weapon in each hand, you gain a +1 bonus to the damage rolls of attacks that you make with a melee weapon.
+   </RulesElement>
+
+<RulesElement name="Astral Fire" type="Feat" internal-id="ID_FMP_FEAT_282" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+  <Prereqs> Dex 13, Cha 13 </Prereqs>
+  <print-prereqs> Dex 13, Cha 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 damage with fire or radiant power </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="fire:damage" value="+1" type="elemental" />
+    <statadd name="fire:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="fire:damage" value="+3" type="elemental" requires="Epic Tier" />
+    <statadd name="radiant:damage" value="+1" type="elemental" />
+    <statadd name="radiant:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="radiant:damage" value="+3" type="elemental" requires="Epic Tier" />
+  </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the fire or the radiant keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+
+<RulesElement name="Burning Blizzard" type="Feat" internal-id="ID_FMP_FEAT_284" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+  <Prereqs> Int 13, Wis 13 </Prereqs>
+  <print-prereqs> Int 13, Wis 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 damage with acid or cold power </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="acid:damage" value="+1" type="elemental" />
+    <statadd name="acid:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="acid:damage" value="+3" type="elemental" requires="Epic Tier" />
+    <statadd name="cold:damage" value="+1" type="elemental" />
+    <statadd name="cold:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="cold:damage" value="+3" type="elemental" requires="Epic Tier" />
+  </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the acid or the cold keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+
+<RulesElement name="Dark Fury" type="Feat" internal-id="ID_FMP_FEAT_285" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+  <Prereqs> Con 13, Wis 13 </Prereqs>
+  <print-prereqs> Con 13, Wis 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 damage with necrotic or psychic power </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="necrotic:damage" value="+1" type="elemental" />
+    <statadd name="necrotic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="necrotic:damage" value="+3" type="elemental" requires="Epic Tier" />
+    <statadd name="psychic:damage" value="+1" type="elemental" />
+    <statadd name="psychic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="psychic:damage" value="+3" type="elemental" requires="Epic Tier" />
+  </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the necrotic or the psychic keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+
+<RulesElement name="Raging Storm" type="Feat" internal-id="ID_FMP_FEAT_303" source="Player's Handbook" revision-date="8/27/2010 12:17:57 PM">
+  <Prereqs> Con 13, Dex 13 </Prereqs>
+  <print-prereqs> Con 13, Dex 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 damage with lightning or thunder power </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="lightning:damage" value="+1" type="elemental" />
+    <statadd name="lightning:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="lightning:damage" value="+3" type="elemental" requires="Epic Tier" />
+    <statadd name="thunder:damage" value="+1" type="elemental" />
+    <statadd name="thunder:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="thunder:damage" value="+3" type="elemental" requires="Epic Tier" />
+  </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the lightning or the thunder keyword.
+	At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+
+<RulesElement name="Student of Moil" type="Feat" internal-id="ID_FMP_FEAT_1092" source="Dragon Magazine 371" revision-date="8/27/2010 12:18:38 PM">
+  <Prereqs> Con 13, Int 13 </Prereqs>
+  <print-prereqs> Con 13, Int 13 </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> +1 on damage rolls with cold or necrotic powers </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="cold:damage" value="+1" type="elemental" />
+    <statadd name="cold:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="cold:damage" value="+3" type="elemental" requires="Epic Tier" />
+    <statadd name="necrotic:damage" value="+1" type="elemental" />
+    <statadd name="necrotic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+    <statadd name="necrotic:damage" value="+3" type="elemental" requires="Epic Tier" />
+  </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the cold or necrotic keyword.
+	At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+
+<RulesElement name="Retribution Seeker" type="Feat" internal-id="ID_FMP_FEAT_2114" source="Dragon Magazine 381" revision-date="8/27/2010 12:19:47 PM">
+  <Prereqs> 11th level, artificer; Paragon Tier </Prereqs>
+  <print-prereqs> 11th level, artificer </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description" />
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+  <rules>
+    <statadd name="arcane:damage" value="+2" condition="against enemies adjacent to at least on of your allies" />
+  </rules>
+You gain a +2 bonus to damage rolls with arcane attack powers against enemies adjacent to at least one of your allies.
+   </RulesElement>
+
+<!-- <RulesElement name="Catspaw Style" type="Feat" internal-id="ID_FMP_FEAT_975" source="Dragon Magazine Annual 2009,Dragon Magazine 368" revision-date="8/27/2010 12:18:29 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ARENA_FIGHTING </Category>
+      <Prereqs> Any martial class </Prereqs>
+      <print-prereqs> Any martial class </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Augment at-will exploits </specific>
+      <specific name="Special" />
+      <specific name="type"> Arena Fighting </specific>
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You gain a benefit with any of the following exploits you possess.
+
+Footwork Lure (Fighter): If you hit with this exploit, you can forgo shifting and instead slide the target 1 square to any space adjacent to you.
+
+Predator Strike (Ranger): If your beast companion has combat advantage against the target, and you hit with this exploit, you knock the target prone.
+
+Sly Flourish (Rogue): If you score a critical hit with this exploit, the next ally that hits the target before the end of your next turn deals extra damage equal to your Charisma modifier.
+
+Wolf Pack Tactics (Warlord): If you score a critical hit with this exploit, an ally adjacent to you or the target can shift 1 square.
+   </RulesElement> -->
+
+<RulesElement name="Surging Flame" type="Feat" internal-id="ID_FMP_FEAT_517" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:18:04 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +1/3/5 to ongoing fire damage, fire damage reduces fire resistance </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Whenever you impose ongoing fire damage, increase that damage by 1. This bonus increases to +3 at 11th level and +5 at 21st level.
+In addition, you treat immunity to fire as if it were resist 20 fire, and whenever you deal fire damage to a creature that has fire resistance, that resistance decreases by 5 until the end of the encounter.
+   </RulesElement>
+
+   <RulesElement name="Sibling to the Stars" type="Feat" internal-id="ID_FMP_FEAT_2774" source="Dragon Magazine 384" revision-date="8/27/2010 12:20:37 PM" >
+      <Prereqs> 11th level, warlock, multiclass divine class, star pact, eldritch blast; Paragon Tier </Prereqs>
+      <print-prereqs> 11th level, warlock, multiclass divine class, star pact, eldritch blast </print-prereqs>
+      <specific name="Tier"> Paragon </specific>
+      <specific name="Short Description"> Deal curse damage and eldritch blast damage as radiant damage </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	<rules>
+		<modify name="Eldritch Blast" type="Power" field="Keywords" list-addition="Radiant" />
+	</rules>
+Whenever you would deal Warlock&apos;s Curse damage against an enemy, you can choose to treat that damage as radiant damage. In addition, you can have your eldritch blast deal radiant damage.
+   </RulesElement>
+
+<!-- <RulesElement name="Healer&apos;s Implement" type="Feat" internal-id="ID_FMP_FEAT_1531" source="Divine Power" revision-date="8/27/2010 12:19:11 PM" >
+      <Prereqs> Cleric </Prereqs>
+      <print-prereqs> Cleric </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Add holy symbol enhancement bonus to healing powers </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you grant healing with any of your cleric healing powers, add your holy symbol's enhancement bonus to the hit points the recipient regains.
+   </RulesElement> -->
+   
+   <RulesElement name="Against All Odds" type="Feat" internal-id="ID_FMP_FEAT_449" source="Dragon Magazine 364" revision-date="8/27/2010 12:18:02 PM" >
+      <Prereqs> Wis 13 </Prereqs>
+      <print-prereqs> Wis 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> If 3+ foes adjacent to you, +1 to attacks and +1/2/3 damage </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="attack rolls" value="+1" condition="if three or more enemies are adjacent to you" />
+         <statadd name="AgainstAllOdds" value="+1" />
+         <statadd name="AgainstAllOdds" value="+1" requires="Paragon Tier" />
+         <statadd name="AgainstAllOdds" value="+1" requires="Epic Tier" />
+         <statadd name="damage rolls" value="+AgainstAllOdds" condition="if three or more enemies are adjacent to you" />
+      </rules>
+If three or more enemies are adjacent to you, you gain a +1 bonus to attack rolls and damage rolls. The bonus to damage increases to +2 at 11th level and +3 at 21st level.
+   </RulesElement>
+   
+<!--    <RulesElement name="Beneath Notice" type="Feat" internal-id="ID_FMP_FEAT_3464" source="Dragon Magazine 391" revision-date="10/14/2010 9:17:47 AM">  
+    <Flavor> You know how to use your enemy's size against it. </Flavor>  
+    <specific name="Tier"> Paragon </specific>  
+    <specific name="Short Description"> Larger enemies grant CA to you </specific>  
+When you are adjacent to an enemy that is larger than you, you gain combat advantage against that enemy.  
+</RulesElement>   -->
+
+<RulesElement name="Battle Trample" type="Feat" internal-id="ID_FMP_FEAT_3539" source="Dragon Magazine 393" revision-date="8/27/2010 12:17:48 PM">  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> Mount's movement doesn't provoke OAs; 1/encounter, push adjacent enemies 1 square as minor action </specific>  
+    <specific name="Special" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+    <specific name="_DisplayPowers" />  
+While you are mounted, you and your mount's movement does not provoke opportunity attacks. Additionally, once per encounter as a minor action, you can push each creature adjacent to you 1 square.
+</RulesElement>  
+	
+	<RulesElement name="Bloodthirsty Mien" type="Feat" internal-id="ID_FMP_FEAT_941" source="Dragon Magazine Annual 2009,Dragon Magazine 368" revision-date="8/27/2010 12:18:25 PM" >
+      <Prereqs> Cha 15 or trained in Intimidate </Prereqs>
+      <print-prereqs> Cha 15 or trained in Intimidate </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> On crit, +5 to Intimidate for the encounter and make a free action Intimidate check </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Whenever you score a critical hit, you gain a +5 bonus to Intimidate checks until the end of the encounter, and can immediately make one Intimidate check as a free action.
+   </RulesElement>
+	
+	<RulesElement name="Cascading Rush" type="Feat" internal-id="ID_FMP_FEAT_2585" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:24 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Push enemy adjacent to target you pushed </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	Whenever you push a target, you can also push one enemy adjacent to that target 1 square. The enemy can be adjacent to the target either before or after you resolve the push. This effect can't trigger itself.
+	</RulesElement>
+	
+	<RulesElement name="Combat Intuition" type="Feat" internal-id="ID_FMP_FEAT_2587" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:24 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +2 to opportunity attacks against enemy you attack </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	Whenever you hit or miss an enemy with a melee attack, you gain a +2 bonus to opportunity attack rolls against that enemy until the start of your next turn.
+	</RulesElement>
+	
+	<RulesElement name="Demonbane" type="Feat" internal-id="ID_FMP_FEAT_1509" source="Divine Power" revision-date="8/27/2010 12:19:09 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Devilbane" type="Feat" internal-id="ID_FMP_FEAT_1511" source="Divine Power" revision-date="8/27/2010 12:19:10 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Directed Bull Rush" type="Feat" internal-id="ID_FMP_FEAT_2592" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:24 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+	
+   <RulesElement name="Eager Advance" type="Feat" internal-id="ID_FMP_FEAT_3138" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">  
+    <Flavor> Your impetuous nature, quick reflexes, and tactical awareness give you an extra few steps in the opening moments of battle. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> +4 to speed on your first turn during encounter </specific>
+	<rules>
+		<statadd name="Initiative Misc" value="+3" type="Feat" />
+	</rules>
+You gain a +4 feat bonus to speed on your first turn during an encounter, and a +3 feat bonus to initiative.  
+</RulesElement> 
+	
+   <RulesElement name="Executioner of Undeath" type="Feat" internal-id="ID_FMP_FEAT_3561" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:44:59 PM">  
+      <Prereqs> Proficiency with any axe or heavy blade </Prereqs>  
+      <print-prereqs> Proficiency with any axe or heavy blade </print-prereqs> 
+    <Flavor> As a hero sworn to destroy the undead, you can draw on ancient combat tactics to maximize the effect of your deadliest weapon attacks. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> Can reroll any damage dice with axe or heavy blade weapon attack against undead </specific>  
+    <specific name="Special" />  
+    <specific name="Type" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+Whenever you make a weapon attack using an axe or a heavy blade against an undead creature, you can roll each damage die twice and use either result.  
+	</RulesElement> 
+   
+   <RulesElement name="Expert Trample" type="Feat" internal-id="ID_FMP_FEAT_3540" source="Dragon Magazine 393" revision-date="8/27/2010 12:17:48 PM">  
+      <Prereqs> Unselectable </Prereqs>
+	</RulesElement> 
+	
+	<RulesElement name="Far Thought" type="Feat" internal-id="ID_FMP_FEAT_3176" source="Dragon Magazine 389" revision-date="8/27/2010 12:21:03 PM">  
+      <specific name="Tier"> Heroic </specific>  
+      <specific name="Short Description"> Gain range 5 telepathy </specific>  
+      <specific name="Special" />  
+      <specific name="type" />  
+      <specific name="Associated Power Info" />  
+      <specific name="Associated Powers" />  
+      <rules>  
+         <grant name="ID_INTERNAL_VISION_TELEPATHY" type="Vision" />  
+      </rules>  
+You can telepathically communicate with any creature within 5 squares of you that has a language and that you can see. This telepathy allows for two-way communication.  
+   </RulesElement> 
+   
+   <RulesElement name="Far Shot" type="Feat" internal-id="ID_FMP_FEAT_139" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:51 PM" >
+      <Prereqs> Dex 13 </Prereqs>
+      <print-prereqs> Dex 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Increase projectile weapon range by 5/10 squares </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you use a projectile weapon such as a bow or a crossbow, increase the normal range by 5 squares and the long range by 10 squares.
+   </RulesElement>
+   
+   <RulesElement name="Far Throw" type="Feat" internal-id="ID_FMP_FEAT_140" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:51 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Double thrown weapon range </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you use a thrown weapon such as a dagger or a javelin, double both the normal and long ranges.
+   </RulesElement>
+   
+   <RulesElement name="Foreign Memories" type="Feat" internal-id="ID_FMP_FEAT_3177" source="Dragon Magazine 389" revision-date="8/27/2010 12:21:03 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +5 to knowledge checks about and +1/2/3 damage against aberrant creatures </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="ForeignMemories" value="+1" />
+         <statadd name="ForeignMemories" value="+1" requires="Paragon Tier" />
+         <statadd name="ForeignMemories" value="+1" requires="Epic Tier" />
+         <statadd name="damage rolls" value="+ForeignMemories" condition="against aberrant creatures" />
+      </rules>
+You gain a +5 feat bonus to Arcana, Insight, History, and Dungeoneering checks as they relate to aberrant creatures or their works, and a +1 bonus to damage rolls against aberrant creatures. The bonus to damage increases to +2 at 11th level and +3 at 21st level.
+   </RulesElement>
+   
+   <RulesElement name="Giant Killer" type="Feat" internal-id="ID_FMP_FEAT_3467" source="Dragon Magazine 391" revision-date="10/14/2010 9:17:49 AM">  
+    <Flavor> You know how to cut your enemies down to size. Larger foes mean bigger weak spots. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> Deal +2d10/3d10/4d10 damage (by tier) with crit against Large or greater creature </specific>  
+When you score a critical hit against a creature of Large or greater size, you deal an extra 2d10 damage. This increases to 3d10 at 11th level and 4d10 at 21st level
+	</RulesElement>  
+	
+	<RulesElement name="Heroes Make Their Own Luck" type="Feat" internal-id="ID_FMP_FEAT_3107" source="Dragon Magazine 388" revision-date="8/27/2010 12:20:59 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> After action point spent to take an extra action: +1 all defenses until start of your next turn </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <textstring name="Action Point" value="Heroes Make Their Own Luck:When you spend an action point to take an extra action, you gain a +4 bonus to all defenses until the start of your next turn." />
+      </rules>
+When you spend an action point to take an extra action, you gain a +4 bonus to all defenses until the start of your next turn.
+   </RulesElement>
+   
+   <RulesElement name="Improved Bull Rush" type="Feat" internal-id="ID_FMP_FEAT_419" source="Player&apos;s Handbook 2" revision-date="8/27/2010 12:18:02 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Last Legion Ambusher" type="Feat" internal-id="ID_FMP_FEAT_3551" source="Dragon Magazine 396" revision-date="8/27/2010 12:19:30 PM">  
+    <Prereqs></Prereqs>  
+    <print-prereqs></print-prereqs>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> When you miss enemy, next ally to hit it before SoNT deals +2/+4/+6 (by tier) damage </specific>  
+    <specific name="Special" />  
+    <specific name="type" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+When you miss an enemy with an attack, the next attack from your allies that hits the enemy before the start of your next turn deals 2 extra damage. The extra damage increases to 4 at 11th level and 6 at 21st level.  
+   </RulesElement>  
+   
+<!--    <RulesElement name="Low Crawl" type="Feat" internal-id="ID_FMP_FEAT_2604" source="Player's Handbook 3" revision-date="8/27/2010 12:20:25 PM"> 
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>   -->
+   
+   <RulesElement name="Lucky Start" type="Feat" internal-id="ID_FMP_FEAT_2720" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:34 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Nimble Runner" type="Feat" internal-id="ID_FMP_FEAT_2606" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:25 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Opportunistic Shove" type="Feat" internal-id="ID_FMP_FEAT_2607" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:25 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Push 1 square on hit with opportunity attack </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+When you hit a creature with an opportunity attack, you can push that creature 1 square.
+   </RulesElement>
+   
+   <RulesElement name="Passage of Mael Arn&apos;dreygh" type="Feat" internal-id="ID_FMP_FEAT_3452" source="Dragon Magazine 390" revision-date="9/14/2010 9:53:49 AM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> You gain blindsight 2 </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+You gain blindsight out to a distance of 2 squares.
+   </RulesElement>
+   
+   <RulesElement name="Poison Adaptation" type="Feat" internal-id="ID_FMP_FEAT_3471" source="Dragon Magazine 391" revision-date="10/14/2010 9:17:52 AM">  
+    <Flavor> Due to frequent exposure or unusual stamina, you've become inured to poison. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> Gain resist 5/10/15 (by tier) poison </specific>  
+    <rules>  
+      <statadd name="Saving Throws" value="+5" condition="against poison effects" />
+      <statadd name="resist:poison" value="+5" />  
+      <statadd name="resist:poison" value="+5" requires="Paragon Tier" />  
+      <statadd name="resist:poison" value="+5" requires="Epic Tier" />  
+    </rules>  
+You gain a +5 bonus to saving throws against poison effects, as well as resist 5 poison. The resistance increases to 10 at 11th level and 15 at 21st level.  
+</RulesElement>  
+
+<RulesElement name="Poison Inured" type="Feat" internal-id="ID_FMP_FEAT_1260" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:48 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <!-- <RulesElement name="Polearm Flanker" type="Feat" internal-id="ID_FMP_FEAT_2609" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:25 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Flank from 1 square away when using polearm </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Each square adjacent to you is considered to be part of your space for the purpose of determining whether you flank a creature.
+   </RulesElement> -->
+   
+   <RulesElement name="Polearm Flanker" type="Feat" internal-id="ID_FMP_FEAT_2609" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:25 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Flank from 1 square away when using polearm </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+While you wield a melee weapon with reach, each unoccupied square adjacent to you is considered to be part of your space for the purpose of determining whether you flank a creature that is not adjacent to you (determine flanking against adjacent creatures normally).
+   </RulesElement>
+   
+   <RulesElement name="Powerful Charge" type="Feat" internal-id="ID_FMP_FEAT_9" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:48 PM" >
+      <Prereqs> Str 13 </Prereqs>
+      <print-prereqs> Str 13 </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +2/3/4 damage, +2 to bull rush on a charge </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <rules>
+         <statadd name="PowerfulCharge" value="+2" />
+         <statadd name="PowerfulCharge" value="+3" requires="Paragon Tier" />
+         <statadd name="PowerfulCharge" value="+4" requires="Epic Tier" />
+         <statadd name="damage rolls" value="+PowerfulCharge" condition="when you charge" />
+         <statadd name="bull rush" value="+2" condition="when you charge" />
+      </rules>
+When you charge, you gain a +2 bonus to damage and a +2 bonus to bull rush attempts. The bonus to damage increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+   
+   <RulesElement name="Shield Fighting" type="Feat" internal-id="ID_FMP_FEAT_949" source="Dragon Magazine Annual 2009,Dragon Magazine 368" revision-date="8/27/2010 12:18:26 PM" >
+      <Prereqs> Dex 15, proficient with a shield </Prereqs>
+      <print-prereqs> Dex 15, proficient with a shield </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Forgo shield bonus to gain +2/3/4 damage </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Until the start of your next turn, you can forgo the shield bonus to AC and Reflex granted by a shield you wield. If you do, you gain a +2 bonus to damage rolls. This bonus increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+   
+   <RulesElement name="Shield Finesse" type="Feat" internal-id="ID_FMP_FEAT_3148" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">  
+      <Prereqs> Unselectable </Prereqs>
+</RulesElement>  
+
+	<RulesElement name="Armor Finesse" type="Feat" internal-id="ID_FMP_FEAT_3121" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">  
+    <Flavor> You are trained so extensively in the use of armor that it has become like a second skin to you. Its weight and bulk no longer inhibit some of your actions. </Flavor>  
+    <specific name="Tier"> Heroic </specific>  
+    <specific name="Short Description"> Ignore the check penalty for wearing armor and shields </specific>  
+    <rules>  
+      <statadd name="Armor Penalty" value="0" type="Heavy Shields" />  
+      <statadd name="Armor Penalty" value="0" type="Light Shields" />  
+      <statadd name="Armor Penalty" value="0" type="Hide" />  
+      <statadd name="Armor Penalty" value="0" type="Chain" />  
+      <statadd name="Armor Penalty" value="0" type="Scale" />  
+      <statadd name="Armor Penalty" value="0" type="Plate" />  
+    </rules>  
+	You ignore the check penalty for wearing armor and shields.  
+	</RulesElement>  
+	
+	<RulesElement name="Snake Blooded" type="Feat" internal-id="ID_FMP_FEAT_3175" source="Dragon Magazine 389" revision-date="8/27/2010 12:21:03 PM" >
+      <Prereqs> Unselectable </Prereqs>   
+   </RulesElement>
+   
+   <RulesElement name="Stoneroot's Endurance" type="Feat" internal-id="ID_FMP_FEAT_3523" source="Player Essentials: Heroes of the Forgotten Kingdoms">  
+    <Prereqs></Prereqs>  
+    <print-prereqs></print-prereqs>  
+    <specific name="Tier"></specific>  
+    <specific name="Short Description"> Enemies can't score critical hits against you </specific>  
+    <specific name="Special" />  
+    <specific name="type" />  
+    <specific name="Associated Power Info" />  
+    <specific name="Associated Powers" />  
+    <rules></rules>  
+Despite the ravages of gods, primordials, and even the implacable hand of time itself, Stoneroot survives. You take comfort in the spirit of the mountains and draw on its power to endure even the most vicious attacks.  
+Enemies can't score critical hits against you.  
+</RulesElement> 
+
+<RulesElement name="Tainted Wounds" type="Feat" internal-id="ID_FMP_FEAT_3576" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:45:23 PM"> 
+      <Prereqs> Unselectable </Prereqs>   
+</RulesElement>  
+
+<RulesElement name="Teamwork Defense" type="Feat" internal-id="ID_FMP_FEAT_2625" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:26 PM" >
+      <Prereqs> Unselectable </Prereqs>   
+   </RulesElement> 
+   
+   <RulesElement name="Tymora&apos;s Smile" type="Feat" internal-id="ID_FMP_FEAT_3109" source="Dragon Magazine 388" revision-date="9/30/2010 1:27:29 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> 1/encounter, reroll a d20 and keep the second result </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+Once per encounter, you can reroll a d20 roll you just made, but you must keep the second result.
+   </RulesElement>
+   
+   <RulesElement name="Warding Defense" type="Feat" internal-id="ID_FMP_FEAT_2630" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:27 PM" >
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> Give up shield bonus to give it to adjacent allies </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+On your turn, you can forgo your shield bonus to AC and Reflex until the start of your next turn. If you do, for the same duration, any allies adjacent to you gain a bonus to AC and Reflex equal to your usual shield bonus.
+   </RulesElement>
+   
+   <RulesElement name="Watchful Redoubt" type="Feat" internal-id="ID_FMP_FEAT_2632" source="Player&apos;s Handbook 3" revision-date="8/27/2010 12:20:27 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Death's Ancient Master" type="Feat" internal-id="ID_KDM_FEAT_DEATH'S_ANCIENT_MASTER" source="KDM" >
+      <Prereqs> 11th level, Vampire; Paragon Tier </Prereqs>
+      <print-prereqs> 11th level, Vampire </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +3/6 damage to Vampire melee attacks </specific>
+      <specific name="Special" />
+      <specific name="type" />
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+	  <rules>
+		<statadd name="Death's Ancient Master" value="+3" />
+		<statadd name="Death's Ancient Master" value="+3" requires="25 level" />
+		<statadd name="Vampire,melee:damage" value="Death's Ancient Master" />
+	  </rules>
+You gain a +3 bonus to damage rolls of Vampire melee attacks. This bonus increases to +6 at 25th level.
+   </RulesElement>
+   
+   <RulesElement name="Swift Turning" type="Feat" internal-id="ID_FMP_FEAT_1589" source="Divine Power" revision-date="8/27/2010 12:19:14 PM" >
+      <Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   <RulesElement name="Reaving Axe Student" type="Feat" internal-id="ID_FMP_FEAT_1321" source="Martial Power 2" revision-date="8/27/2010 12:18:53 PM" >
+      <Category> ID_INTERNAL_CATEGORY_LESSER_STYLE </Category>
+      <Prereqs> Fighter, ranger, or warlord; proficiency with any one-handed axe </Prereqs>
+      <print-prereqs> Fighter, ranger, or warlord; proficiency with any one-handed axe </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description"> +2 Athletics; augment at-wills </specific>
+      <specific name="Special" />
+      <specific name="type"> Lesser Style </specific>
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers"> Brash Assault, Marauder&apos;s Rush, Reaping Strike </specific>
+      <rules>
+         <statadd name="Athletics Misc" value="+2" type="Feat" />
+      </rules>
+You gain a +2 feat bonus to Athletics checks.
+When you are attacking with a one-handed axe and you have proficiency with that weapon, you also gain the following benefit.
+When you hit an unbloodied enemy with a power associated with this feat, it takes damage equal to your Strength modifier or your Constitution modifier if it moves more than 2 squares before the end of its next turn.
+   </RulesElement>
+   
+   <RulesElement name="Savage Takedown" type="Feat" internal-id="ID_KDM_FEAT_SAVAGE_TAKEDOWN" source="KDM" >
+  <Prereqs> Druid, wild shape power, Wis 19; Paragon Tier </Prereqs>
+  <print-prereqs> Druid, wild shape power, Wis 19 </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description"> Enemies you slide are knocked prone </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+Whenever you push, pull, or slide a creature 2 or more squares with a melee or close attack while in beast form, you may knock that creature prone at the end of the forced movement.
+</RulesElement>
+
+<RulesElement name="Natural Spell" type="Feat" internal-id="ID_KDM_FEAT_NATURAL_FLEXIBILITY" source="KDM" >
+  <Prereqs> Druid, wild shape power; Paragon Tier </Prereqs>
+  <print-prereqs> Druid, wild shape power </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description"> Use a humanoid power in beast form. </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+	<rules>
+		<select name="Natural Spell" type="Power" category="Attack,!Beast Form" />
+		<modify field="keywords" list-addition="Beast Form" />
+	</rules>
+When you select this feat, choose one attack power you know. That power gains the Beast Form keyword.
+</RulesElement>
+
+<RulesElement name="Crippling Defense" type="Feat" internal-id="ID_KDM_FEAT_CRIPPLING_DEFENSE" source="KDM" >
+  <Prereqs> Druid, wild shape power; Paragon Tier </Prereqs>
+  <print-prereqs> Druid, wild shape power </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description"> Gain resist against slowed or immobilized enemies </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+You gain resist 2 to damage from slowed or immobilized enemies. If you would already have resistance to an attack by such a creature, increase that resistance by 2. Increase the resistance or bonus to resistance to 4 at 11th level and 6 at 21st level.
+</RulesElement>
+
+<RulesElement name="Forceful Totem" type="Feat" internal-id="ID_KDM_FEAT_FORCEFUL_TOTEM" source="KDM" >
+  <Prereqs> </Prereqs>
+  <print-prereqs> </print-prereqs>
+  <specific name="Tier"> Heroic </specific>
+  <specific name="Short Description"> While using a totem as an implement, increase forced movement </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+While using a totem as an implement, whenever you push, pull, or slide a creature, you may increase the distance of that forced movement by 1 square.
+</RulesElement>
+
+<RulesElement name="Master Hunter" type="Feat" internal-id="ID_KDM_FEAT_MASTER_HUNTER" source="KDM" >
+  <Prereqs> 11th level, Hunter, Expert Archer class feature; Paragon Tier </Prereqs>
+  <print-prereqs> 11th level, Hunter, Expert Archer </print-prereqs>
+  <specific name="Tier"> Paragon </specific>
+  <specific name="Short Description"> Combine Expert Archer powers into Trick Shot  </specific>
+  <specific name="Special" />
+  <specific name="type" />
+  <specific name="Associated Power Info" />
+  <specific name="Associated Powers" />
+      <rules>
+         <grant name="Trick Shot" type="Power" />
+         <drop name="Aimed Shot" type="Power" />
+         <drop name="Clever Shot" type="Power" />
+         <drop name="Rapid Shot" type="Power" />
+      </rules>
+You trade your Aimed Shot, Clever Shot, and Rapid Shot powers for Trick Shot.
+</RulesElement>
+
+<RulesElement name="Keep Them Close" type="Feat" internal-id="ID_FMP_FEAT_3272" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <Prereqs>21st level, Defender role</Prereqs>
+    <print-prereqs>21st level, Defender role</print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Enemies marked by you are also slowed </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Any enemy marked by you is also slowed until the mark ends.
+</RulesElement>
+	
+</D20Rules>

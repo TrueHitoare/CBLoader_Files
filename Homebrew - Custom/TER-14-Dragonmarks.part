@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>12-December-2013</Version>
+    <Filename>TER-14-Dragonmarks.part</Filename>
+	<PartAddress>http://personal.lightandlinedesign.com/charbuilder/TER-14-Dragonmarks.part</PartAddress>
+    <VersionAddress>http://personal.lightandlinedesign.com/charbuilder/TER-14-Dragonmarks.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Items -->
+  <!-- TER-10-Items.part, version 1.0 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+ Created 28-March-2013 Added the marks of Finding and Warding
+ Updated 12-May-2013 Updated with the other 10 basic dragonmarks
+ Updated 12-December-2013 Updated with the Cannith heir theme
+	</Changelog>
+
+<!-- Dragonmark Feats -->
+	<RulesElement name="Lesser Mark of Detection" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_01" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Insight, can act during a surprise round, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Insight Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_23" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_183" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_366" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_359" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Insight skill, and you can always act during a surprise round. If you are not surprised, you can instead take a standard, move, and minor action during the surprise round. Furthermore, you can use the Arcana skill to detect magic even if you are not trained in the skill, and gain a +5 bonus to the check.
+In addition, you know each of and can perform one of the Delver's Glimpse, Last Sight Vision, Find Traps, or Breach Disguise rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Finding" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_02" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Perception, can ignore penalties to attack, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Perception Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_43" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_260" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_262" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_73" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Perception skill, and once per encounter, as a free action, you can ignore all penalties to your next attack roll.
+In addition, you know each of and can perform one of the Detect Object, Find the Path, Inquisitive's Eyes, or Scent of Blood rituals once per day at no cost. You can use Perception instead of Arcana for any of those rituals.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Handling" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_03" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Nature, grant bonuses to animal companions, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Nature Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_40" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_BINDING_100_04" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_216" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_62" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Nature skill, and any natural beast you are riding or you control - such as a beast companion or pet - gains a +2 feat bonus to speed and a +1 feat bonus to all defenses. Furthermore, during a short rest, you can expend a healing surge to allow up to eight natural beasts under your care to regain hit points as though they expended a healing surge.
+In addition, you know each of and can perform one of the Animal Messenger, Bonded Mount, Beast Growth, or Animal Friendship rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Healing" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_04" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Heal, can perform first aid quicker, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Heal Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_297" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_6" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_107" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_RESTORATION_100_8" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Heal skill, and once per encounter you can use the First Aid ability as a minor action instead of a standard action. Furthermore, whenever you enable an ally to spend a healing surge, that ally heals an additional 1/2/3 hit points.
+In addition, you know each of and can perform one of the Comrades' Succor, Cure Disease, Delay Affliction, or Extended Vitality rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Hospitality" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_05" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Streetwise, restore extra hit points during rests, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Streetwise Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_101" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_203" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_32" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_230" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Streetwise skill, and whenever you or an ally uses a healing power during a short rest, that power restores the maximum number of hit points possible. In addition, after an extended rest, you and each ally gain 5/10/15 temporary hit points.
+Furthermore, you know each of and can perform one of the Banish Vermin, Song of Restfulness, Travelers' Feast or Unseen Servant rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Making" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_06" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Arcana, use magic items more proficiently, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Arcana Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_CREATION_100_7" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_DECEPTION_100_06" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_51" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_212" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Arcana skill, and you treat the enhancement bonus of any magic item as one greater for the purposes of any properties or powers granted by the item that depend upon its enhancement bonus. When you create a magic item or alchemical item, you can create items of up to your level + 1.
+In addition, you know each of and can perform one of the Craft Talisman, Create Glamer Object, Make Whole, or Transfer Enchantment rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Passage" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_07" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Athletics, can shift as a minor action, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Athletics Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_91" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_206" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_FEAT_60" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_59" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Athletics skill, and once per encounter you can shift one square, ignoring difficult terrain, as a minor action. Furthermore, whenever a power allows you to shift, you can shift 1 extra square.
+In addition, you know each of and can perform one of the Easy Climb, Traveler's Chant, Light Step, or Nature's Road rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Scribing" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_08" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Diplomacy, can use scrolls more proficiently, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Diplomacy Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_75" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_54" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_365" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_389" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Diplomacy skill, and once per day you can use a ritual scroll of your level or lower without expending the scroll. Furthermore, you can create scrolls of rituals you know at half the normal time and cost, and you can perform rituals of up to four levels higher than your own.
+In addition, you know each of and can perform one of the Amanuensis, Secret Page, Explosive Runes, or Wind Words rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Sentinel" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_09" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Endurance, can a marking aura, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Endurance Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_357" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_276" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_CREATION_100_24" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_76" value="+1" />
+		</rules>
+You gain a +2 feat bonus to Endurance skill. In addition, unmarked enemies adjacent to you take a -1 penalty with attack rolls that do not include you.
+In addition, you know each of and can perform one of the Alarm, Iron Vigil, Liquid Courage, or Sentinel's Devotion rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Shadow" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_10" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Stealth, can go invisible in shadows, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Stealth Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_291" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_EXPLORATION_100_10" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_DECEPTION_100_27" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_79" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Stealth skill, and whenever you have concealment and use your second wind or take the total defense action, you become invisible until you attack or the end of your next turn.
+In addition, you know each of and can perform one of the Traveler's Camouflage, Battlesigns, Steal the Voice, or Dark Light rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Storm" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_11" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Acrobatics, can slide instead of pushing, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Acrobatics Misc" value="+2" type="Feat" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_287" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_191" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_61" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_269" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Acrobatics skill, and once per encounter, when you hit with an attack, you can slide the target three squares. In addition, whenever you would push or pull a creature, you may slide that creature one fewer square, instead.
+In addition, you know each of and can perform one of the Portend Weather, Bloom, Water Walk, or Summon Winds rituals once per day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Lesser Mark of Warding" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_12" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+		<Prereqs> ~DRAGONMARK </Prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain a +2 bonus to Thievery, defensive burst when using your second wind, and can perform specific rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Thievery Misc" value="+2" type="Feat" />
+			<modify name="Second Wind" field="Lesser Mark of Warding" value="You and all allies within 2 squares of you gain a +1 power bonus to all defenses until the start of your next turn." />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_23" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_48" value="+1" />
+			<statadd name="FREEBEE:ID_FMP_RITUAL_202" value="+1" />
+			<statadd name="FREEBEE:ID_TIV_RITUAL_WARDING_100_3" value="+1" />
+		</rules>
+You gain a +2 feat bonus to the Thievery skill, and whenever you take the total defense action or use your second wind, you and all allies within 2 squares of you gain a +1 power bonus to all defenses until the start of your next turn.
+In addition, you know each of and can perform one of the Arcane Lock, Assassin's Foil, Leomund's Secret Chest, or Snare rituals once per day at no cost. You can use the Thievery skill as the key skill for rituals in the Warding category.
+	</RulesElement>
+	
+<!-- Dragonmark Augment Feats -->
+	<RulesElement name="Protective Dragonmark" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_XC01" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Prereqs> Lesser Mark of Sentinel feat or Lesser Mark of Warding feat </Prereqs>
+		<print-prereqs> Lesser Mark of Sentinel or Lesser Mark of Warding </print-prereqs>
+		<Flavor> Your dragonmark enhances your ability to protect and defend your allies. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Increase marked penalty by 1 and can perform more rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules />
+Whenever you mark an enemy, the penalty to attack rolls against targets other than you is increased by 1. In addition, you can perform an additional ritual provided by your dragonmark each day at no cost.
+	</RulesElement>
+	
+	<RulesElement name="Defensive Dragonmark" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_XC02" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Prereqs> Lesser Mark of Hospitality feat or Lesser Mark of Warding feat </Prereqs>
+		<print-prereqs> Lesser Mark of Hospitality or Lesser Mark of Warding </print-prereqs>
+		<Flavor> Your dragonmark enhances your ability to stay safe from harm and threats. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Increase defensive bonuses by 1 and can perform more rituals. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules />
+Whenever one of your powers grants a bonus to a defense, or you are granted a bonus to a defense by a power used on you, increase that bonus by 1. In addition, you can perform an additional ritual provided by your dragonmark each day at no cost.
+	</RulesElement>
+	<RulesElement name="Crafter's Dragonmark" type="Feat" internal-id="ID_TER_FEAT_DRAGONMARK_XC03" source="Terraism" revision-date="8/27/2010 12:19:31 PM">
+		<Prereqs> Lesser Mark of Making feat or Lesser Mark of Scribing feat </Prereqs>
+		<print-prereqs> Lesser Mark of Making or Lesser Mark of Scribing </print-prereqs>
+		<Flavor> Your dragonmark empowers items you create, making them stronger. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Increase the effect of scrolls and magic items you craft. </specific>
+		<specific name="Special" />
+		<specific name="type"> Dragonmark </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules />
+When you create a permanent magic item, you can empower a single aspect of it. Choose one numeric designation in the item other than its enhancement bonus, and increase it by 50%. When you create a scroll, it grants a +4 bonus to all skill checks involved in performing the ritual. In addition, you can perform an additional ritual provided by your dragonmark each day at no cost.
+	</RulesElement>
+	
+
+<!-- Dragonmark Themes -->
+<RulesElement name="Tharashk Heir" type="Theme" internal-id="ID_TER_THEME_DRAGONMARK_2" source="Terraism">
+<Prereqs> Lesser Mark of Finding feat </Prereqs>
+<print-prereqs> Lesser Mark of Finding. </print-prereqs>
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-2-1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TER_THEME_DRAGONMARK_FEATURE-2-1,ID_TER_THEME_DRAGONMARK_FEATURE-2-2,ID_TER_THEME_DRAGONMARK_FEATURE-2-3 </specific>
+    <rules>
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-2-1" type="Class Feature" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-2-2" type="Class Feature" level="5" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-2-3" type="Class Feature" level="10" />
+    </rules>
+Requirements: 
+Lesser Mark of Finding.
+</RulesElement>
+<RulesElement name="Level 1 Tharashk Heir Starting Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-2-1" source="Terraism">
+    <Category> 1 </Category>
+    <Flavor> Your dragonmark lets you hunt and find things with supernatural ability. </Flavor>
+    <specific name="Short Description"> You gain the Designate Prey and the Inescapable Hunter powers.  </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TER_POWER_DRAGONMARK-2-1 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-2-1,ID_TER_POWER_DRAGONMARK-2-2 </specific>
+    <rules>
+      <grant name="ID_TER_POWER_DRAGONMARK-2-1" type="Power" />
+      <grant name="ID_TER_POWER_DRAGONMARK-2-2" type="Power" />
+    </rules>
+You gain the Designate Prey and the Inescapable Hunter powers.
+</RulesElement>
+<RulesElement name="Designate Prey" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-2-1" source="Terraism">
+    <Category> ID_TER_THEME_DRAGONMARK_FEATURE-2-1,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+    <Flavor> You know your quarry, and will be able to chase it to the ends of the earth. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Tharashk Heir Feature </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Close burst 20 </specific>
+    <specific name="Target"> One creature or object in burst you can see </specific>	
+    <specific name="Effect"> You designate the target as your prey. Your bond with the prey lasts for 24 hours or until you designate a new prey. You gain a +3 bonus to Perception checks made to detect or track your prey. </specific>
+	<specific name="Special"> At level 11, your bond with the prey lasts for one week or until you use the power again. At level 21, the bond lasts indefinitely. </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_FEATURE-2-1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_DRAGONMARK_FEATURE-2-1 </specific>
+</RulesElement>
+<RulesElement name="Inescapable Hunter" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-2-2" source="Terraism">
+    <Category> ID_TER_THEME_DRAGONMARK_FEATURE-2-1,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+    <Flavor> Once you have a target in your sights, it finds it almost impossible to get away. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Tharashk Heir Feature </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Target"> Personal </specific>
+	<specific name="Trigger"> Your prey moves (or is moved) and ends up farther away from you than when it started. </specific>
+    <specific name="Effect"> You shift up to one-half your speed, ignoring difficult terrain and the slowed and immobilized conditions. You must end the shift closer to your prey than you started. </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_FEATURE-2-1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_DRAGONMARK_FEATURE-2-1 </specific>
+</RulesElement>
+
+<RulesElement name="Level 5 Tharashk Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-2-2" source="Terraism">
+    <Category> 5 </Category>
+    <Flavor> Your actions have earned notoriety for your house, and your dragonmark increases your natural aptitude at finding people and things. </Flavor>
+    <specific name="Short Description"> Gain a +2 bonus to Perception and Streetwise checks. </specific>
+    <specific name="Level"> 5 </specific>
+    <rules>
+	  <statadd name="Perception Misc" value="+2" type="Power" />
+	  <statadd name="Streetwise Misc" value="+2" type="Power" />
+    </rules>
+You gain a +2 power bonus to Perception checks and Streetwise checks and you are eligible to take the Favored in House background trait.
+</RulesElement>
+
+<RulesElement name="Level 10 Tharashk Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-2-3" source="Terraism">
+    <Category> 10 </Category>
+    <Flavor> The strength of your dragonmark has grown, allowing you to use it to greater effect. </Flavor>
+    <specific name="Short Description"> You can use your powers more often and they are stronger. </specific>
+    <specific name="Level"> 10 </specific>
+You can use the Inescapable Hunter power twice per encounter, and when you use the Designate Prey power you can target an object owned by or part of a creature for at least a month in order to designate that creature as your prey.
+In addition, you always know the direction of your prey as long as it is on the same plane.
+</RulesElement>
+
+<RulesElement name="Kundarak Heir" type="Theme" internal-id="ID_TER_THEME_DRAGONMARK_12" source="Terraism">
+<Prereqs> Lesser Mark of Warding feat </Prereqs>
+<print-prereqs> Lesser Mark of Warding. </print-prereqs>
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-12-1, ID_TER_POWER_DRAGONMARK-12-2, ID_TER_POWER_DRAGONMARK-12-3, ID_TER_POWER_DRAGONMARK-12-4 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TER_THEME_DRAGONMARK_FEATURE-12-1,ID_TER_THEME_DRAGONMARK_FEATURE-12-2,ID_TER_THEME_DRAGONMARK_FEATURE-12-3 </specific>
+    <rules>
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-12-1" type="Class Feature" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-12-2" type="Class Feature" level="5" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-12-3" type="Class Feature" level="10" />
+    </rules>
+Requirements: 
+Lesser Mark of Warding.
+</RulesElement>
+<RulesElement name="Level 1 Kundarak Heir Starting Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-12-1" source="Terraism">
+    <Category> 1 </Category>
+    <Flavor> Your dragonmark lets you send out a quick burst of protective power. </Flavor>
+    <specific name="Short Description"> You gain the kundarak ward power.  </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TER_POWER_DRAGONMARK-12-1 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-12-1 </specific>
+    <rules>
+      <grant name="ID_TER_POWER_DRAGONMARK-12-1" type="Power" />
+    </rules>
+You gain the kundarak ward power.
+</RulesElement>
+<RulesElement name="Kundarak Ward" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-12-1" source="Terraism">
+    <Category> ID_TER_THEME_DRAGONMARK_FEATURE-12-1,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Your dragonmark flashes a protective ward around an ally or confounds a foe's attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Kundarak Heir Feature </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 3 </specific>
+    <specific name="Target"> One creature in burst </specific>	
+    <specific name="Effect"> The target gains a +2 power bonus to all defenses until the end of your next turn or the target is marked until the end of your next turn. </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_FEATURE-12-1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_DRAGONMARK_FEATURE-12-1 </specific>
+</RulesElement>
+
+<RulesElement name="Level 5 Kundarak Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-12-2" source="Terraism">
+    <Category> 5 </Category>
+    <Flavor> Your actions have earned notoriety for your house, and your dragonmark increases your natural aptitude at dealing with traps and wards. </Flavor>
+    <specific name="Short Description"> Gain a +2 bonus to Endurance and Thievery checks. </specific>
+    <specific name="Level"> 5 </specific>
+    <rules>
+	  <statadd name="Endurance Misc" value="+2" type="Power" />
+	  <statadd name="Thievery Misc" value="+2" type="Power" />
+    </rules>
+You gain a +2 power bonus to Thievery checks and Endurance checks and you are eligible to take the Favored in House background trait.
+</RulesElement>
+
+<RulesElement name="Level 10 Kundarak Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-12-3" source="Terraism">
+    <Category> 10 </Category>
+    <Flavor> The strength of your dragonmark has grown, allowing you to use it to greater effect. </Flavor>
+    <specific name="Short Description"> Your kundarak ward affects all potential targets. </specific>
+    <specific name="Level"> 10 </specific>
+When you use your Kundarak Ward ability, you can choose to effect either all enemies in burst, all allies in burst, or a single enemy and a single ally.
+</RulesElement>
+
+<RulesElement name="Warding Arcana" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-12-2" source="Terraism">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_0,2 </Category>
+    <Prereqs> ID_TER_THEME_DRAGONMARK_12 </Prereqs>
+    <Flavor> You send a surge of power from your dragonmark to protect an ally, preventing enemies from approaching your ward. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Kundarak Heir Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> One ally in burst </specific>	
+    <specific name="Effect"> The target gains an aura 1 until the end of your next turn. While the aura persists, enemies cannot willingly enter the aura. </specific>
+    <specific name="_ThemePower"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Inhibiting Field" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-12-3" source="Terraism">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_0,6 </Category>
+    <Prereqs> ID_TER_THEME_DRAGONMARK_12 </Prereqs>
+    <Flavor> The air where you direct thickens and weighs down on those within it, preventing movement. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Kundarak Heir Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 </specific>
+    <specific name="Effect"> The burst creates a zone that hinders movement. It costs one more square of movement than normal to enter or exit any square in the zone, and creatures cannot shift within it. In addition, ranged attacks made through the zone suffer a -2 penalty to the attack.
+	You are immune to the effects of your own Forcefield. The zone lasts until the end of your next turn or you end the effect as a minor action. </specific>
+    <specific name="_ThemePower"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Kundarak Barrier" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-12-4" source="Terraism">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CLASS_0,10 </Category>
+    <Prereqs> ID_TER_THEME_DRAGONMARK_12 </Prereqs>
+    <Flavor> A selective barrier of force springs into existence, creating safety for your allies while hindering your foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Kundarak Heir Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area wall 4 within 5 squares </specific>
+    <specific name="Effect"> You create an arcane-empowered wall in the area, barely visible to your allies but appearing as thick stone to your foes. The wall blocks line of sight and effect for your enemies. In addition, enemies cannot shift into or out of a square occupied by the wall. Whenever an enemy enters a square occupied by the wall, its movement ends even if it had some squares of movement remaining (the enemy can still move out of the square using another action).
+	The wall lasts until the end of your next turn. </specific>
+    <specific name="Sustain Move"> The wall persists. </specific>
+    <specific name="_ThemePower"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_12 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Cannith Heir" type="Theme" internal-id="ID_TER_THEME_DRAGONMARK_3" source="Terraism">
+<Prereqs> Lesser Mark of Making feat </Prereqs>
+<print-prereqs> Lesser Mark of Making. </print-prereqs>
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-3-1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TER_THEME_DRAGONMARK_FEATURE-3-1,ID_TER_THEME_DRAGONMARK_FEATURE-3-2,ID_TER_THEME_DRAGONMARK_FEATURE-3-3 </specific>
+    <rules>
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-3-1" type="Class Feature" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-3-2" type="Class Feature" level="5" />
+      <grant name="ID_TER_THEME_DRAGONMARK_FEATURE-3-3" type="Class Feature" level="10" />
+    </rules>
+Requirements: 
+Lesser Mark of Making.
+</RulesElement>
+<RulesElement name="Level 1 Cannith Heir Starting Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-3-1" source="Terraism">
+    <Category> 1 </Category>
+    <Flavor> Your dragonmark lets you create small items out of pure energy - for a short time. </Flavor>
+    <specific name="Short Description"> You gain the Dragonmark Fabrication power.  </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TER_POWER_DRAGONMARK-3-1 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-3-1 </specific>
+    <rules>
+      <grant name="ID_TER_POWER_DRAGONMARK-3-1" type="Power" />
+    </rules>
+You gain the Dragonmark Fabrication power.
+</RulesElement>
+<RulesElement name="Dragonmark Fabrication" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-3-1" source="Terraism">
+    <Category> ID_TER_THEME_DRAGONMARK_FEATURE-3-1,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> With just a little visualization, you can command your dragonmark to create an arcane replica of a tool or other useful object. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Cannith Heir Feature </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You create a simple object, worth no more than 50 gp, that lasts for five minutes or until you dismiss it as a minor action. Objects created by this power do not have to be contiguous - a small collection of identical objects, such as caltrops or coins, is manageable, though the total volume and size of conjured objects cannot be greater than two cubic feet. The object appears in your hand or a square adjacent to you. You can determine the rough position of the object you fabricate when you use this power (a book open or closed, for instance, or a rope with a loose knot tied into it). </specific>
+	<specific name="Special"> The object created by this power is obviously a magical construct, being semi-transparent and pulsing with energy. As a general rule, you cannot sell items created with this power. </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_FEATURE-3-1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_DRAGONMARK_FEATURE-3-1 </specific>
+</RulesElement>
+
+<RulesElement name="Level 5 Cannith Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-3-2" source="Terraism">
+    <Category> 5 </Category>
+    <Flavor> Your actions have earned notoriety for your house, and your dragonmark increases your natural aptitude at working with magic and creating wonders. </Flavor>
+    <specific name="Short Description"> Gain a +2 bonus to Arcana and Crafting checks. </specific>
+    <specific name="Level"> 5 </specific>
+    <rules>
+	  <statadd name="Arcana Misc" value="+2" type="Power" />
+    </rules>
+You gain a +2 power bonus to Arcana checks and to all crafting talents and you are eligible to take the Favored in House background trait.
+</RulesElement>
+
+<RulesElement name="Level 10 Cannith Heir Feature" type="Class Feature" internal-id="ID_TER_THEME_DRAGONMARK_FEATURE-3-3" source="Terraism">
+    <Category> 10 </Category>
+    <Flavor> The strength of your dragonmark has grown, allowing you to use it to greater effect. </Flavor>
+    <specific name="Short Description"> You create short-term magical items, and nonmagical items you create can be much larger. </specific>
+    <specific name="Level"> 10 </specific>
+When you use the Dragonmark Fabrication power, you can create objects worth up to 100 gold and up to 25 cubic feet in size. In addition, you gain the Infuse Enchantment power.
+    <specific name="_DisplayPowers"> ID_TER_POWER_DRAGONMARK-3-2 </specific>
+    <rules>
+      <grant name="ID_TER_POWER_DRAGONMARK-3-2" type="Power" />
+    </rules>
+</RulesElement>
+<RulesElement name="Infuse Enchantment" type="Power" internal-id="ID_TER_POWER_DRAGONMARK-3-2" source="Terraism">
+    <Category> ID_TER_THEME_DRAGONMARK_FEATURE-3-3,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> For a few minutes, you can infuse an item with an enchantment using the power of your dragonmark. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Cannith Heir Feature </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee touch </specific>
+    <specific name="Target"> One item </specific>
+    <specific name="Effect"> You imbue a nonmagical item you touch with a short-term enchantment, transforming it into a magical item of no greater than half your level. It remains enchanted until the end of the encounter or five minutes, whichever comes first. </specific>
+	<specific name="Special"> The DM may require you to have some experience or familiarity with the enchantment created by this power - whether having read about it in-character, or created one yourself in the past, or a similar qualification. </specific>
+    <specific name="Class"> ID_TER_THEME_DRAGONMARK_FEATURE-3-3 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TER_THEME_DRAGONMARK_FEATURE-3-3 </specific>
+</RulesElement>
+
+
+</D20Rules>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PartIndex>
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Houserule Pack.index</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Houserule Pack.index</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Houserule Pack.txt</VersionAddress>
+  </UpdateInfo>
+  <Part>
+    <Filename>KDM Ability Scores.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Ability Scores.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Bugfix.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Bugfix.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Class Features.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Class Features.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Damage.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Damage.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Defense Stacking.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Defense Stacking.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Epic Destinies.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Epic Destinies.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Declutter.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Declutter.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Guild and Tribal.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Guild and Tribal.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Misc.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Misc.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Feats - Multiclass.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Multiclass.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Hybrid.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Hybrid.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Items.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Items.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Math Fix.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Math Fix.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM MBA.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM MBA.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Paragon Paths.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Paragon Paths.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Power Source Skills.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Power Source Skills.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Powers.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Powers.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Racial.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Racial.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Readme.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Readme.part</PartAddress>
+  </Part>
+  <Part>
+    <Filename>KDM Utility.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Utility.part</PartAddress>
+  </Part>
+</PartIndex>

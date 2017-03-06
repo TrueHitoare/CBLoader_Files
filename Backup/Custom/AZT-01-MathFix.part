@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <!-- Bug Fixes -->
+	<Changelog>
+  Created 31-August-2011
+  Updated 03-August-2012 Altered the inherent expertise/defense bonuses to be feat bonuses so that they automatically don't stack with expertise/defense feats
+  Updated 22-February-2013 House ruled the psionic classes to use the same "don't forget" system
+	</Changelog>
+
+	<!-- Alters the Inherent Bonuses checkbox to also include bonuses covered by feat taxes -->
+	<RulesElement name="Inherent Bonuses" type="Internal" internal-id="ID_INTERNAL_INTERNAL_INHERENT_BONUSES" source="Core">
+		<rules>
+			<!-- Enhancement bonuses -->
+			<!-- Attacks & Damage: +1 at levels x2/x7 -->
+			<statadd name="Inherent Power Bonus" value="+1" requires="2 level" />
+			<statadd name="Inherent Power Bonus" value="+1" requires="7 level" />
+			<statadd name="Inherent Power Bonus" value="+1" requires="12 level" />
+			<statadd name="Inherent Power Bonus" value="+1" requires="17 level" />
+			<statadd name="Inherent Power Bonus" value="+1" requires="22 level" />
+			<statadd name="Inherent Power Bonus" value="+1" requires="27 level" />
+			<statadd name="attack rolls" value="Inherent Power Bonus" type="Enhancement" />
+			<statadd name="damage rolls" value="Inherent Power Bonus" type="Enhancement" />
+			<!-- AC: +1 at levels x3/x8 -->
+			<statadd name="AC Math Fix" value="+1" requires="3 level" />
+			<statadd name="AC Math Fix" value="+1" requires="8 level" />
+			<statadd name="AC Math Fix" value="+1" requires="13 level" />
+			<statadd name="AC Math Fix" value="+1" requires="18 level" />
+			<statadd name="AC Math Fix" value="+1" requires="23 level" />
+			<statadd name="AC Math Fix" value="+1" requires="28 level" />
+			<statadd name="AC" value="AC Math Fix" type="Enhancement" />
+			<!-- All NADs: +1 at levels x4/x9 -->
+			<statadd name="NAD Math Fix" value="+1" requires="4 level" />
+			<statadd name="NAD Math Fix" value="+1" requires="9 level" />
+			<statadd name="NAD Math Fix" value="+1" requires="14 level" />
+			<statadd name="NAD Math Fix" value="+1" requires="19 level" />
+			<statadd name="NAD Math Fix" value="+1" requires="24 level" />
+			<statadd name="NAD Math Fix" value="+1" requires="29 level" />
+			<statadd name="Fortitude Defense" value="NAD Math Fix" type="Enhancement" />
+			<statadd name="Reflex Defense" value="NAD Math Fix" type="Enhancement" />
+			<statadd name="Will Defense" value="NAD Math Fix" type="Enhancement" />
+			<!-- Math fix bonuses -->
+			<!-- Attack math fix: untyped +1 at levels x5 -->
+			<statadd name="Attack Math Fix" value="+1" requires="5 level" />
+			<statadd name="Attack Math Fix" value="+1" requires="15 level" />
+			<statadd name="Attack Math Fix" value="+1" requires="25 level" />
+			<statadd name="attack rolls" value="Attack Math Fix" />
+			<statadd name="damage rolls" value="Attack Math Fix" />
+			<!-- General NAD fix: untyped +1 at levels x7 -->
+			<statadd name="General NAD Math Fix" value="+1" requires="7 level" />
+			<statadd name="General NAD Math Fix" value="+1" requires="17 level" />
+			<statadd name="General NAD Math Fix" value="+1" requires="27 level" />
+			<statadd name="Fortitude Defense" value="General NAD Math Fix" />
+			<statadd name="Reflex Defense" value="General NAD Math Fix" />
+			<statadd name="Will Defense" value="General NAD Math Fix" />
+			<!-- Weakest NAD fix: untyped +1 to lowest NAD at 17, 22, 27 -->
+			<!-- TODO: Figure out how to do this! -->
+			<!-- Masterwork bonuses to armor -->
+			<!-- Masterwork bonuses reduced by 1 to account for alternate MW armors -->
+			<statadd name="MWCloth" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWCloth" type="Armor" wearing="armor:cloth" />
+			<statadd name="MWLeath" value="+2" requires="1 level" />
+			<statadd name="MWLeath" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWLeath" type="Armor" wearing="armor:leather" />
+			<statadd name="MWHide" value="+3" requires="1 level" />
+			<statadd name="MWHide" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWHide" type="Armor" wearing="armor:hide" />
+			<statadd name="MWChain" value="+6" requires="1 level" />
+			<statadd name="MWChain" value="+1" requires="13 level" />
+			<statadd name="MWChain" value="+1" requires="18 level" />
+			<statadd name="MWChain" value="+1" requires="23 level" />
+			<statadd name="MWChain" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWChain" type="Armor" wearing="armor:chain" />
+			<statadd name="MWScale" value="+7" requires="1 level" />
+			<statadd name="MWScale" value="+1" requires="13 level" />
+			<statadd name="MWScale" value="+1" requires="18 level" />
+			<statadd name="MWScale" value="+1" requires="23 level" />
+			<statadd name="MWScale" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWScale" type="Armor" wearing="armor:scale" />
+			<statadd name="MWPlate" value="+8" requires="1 level" />
+			<statadd name="MWPlate" value="+1" requires="13 level" />
+			<statadd name="MWPlate" value="+1" requires="18 level" />
+			<statadd name="MWPlate" value="+1" requires="23 level" />
+			<statadd name="MWPlate" value="+1" requires="28 level" />
+			<statadd name="Armor Class" value="MWPlate" type="Armor" wearing="armor:plate" />
+		</rules>
+	</RulesElement>
+	<!-- TODO: Alter feats in the Feats file to have flat bonuses. -->
+</D20Rules>

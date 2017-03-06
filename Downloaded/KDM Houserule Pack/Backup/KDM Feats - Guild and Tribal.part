@@ -1,0 +1,97 @@
+﻿<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.9</Version>
+    <Filename>KDM Feats - Guild and Tribal.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Guild and Tribal.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/50055576/KDM%20Houserule%20Pack/KDM Feats - Guild and Tribal.txt</VersionAddress>
+  </UpdateInfo>
+
+<!--Guild Feats-->
+
+
+<RulesElement name="Furtive Signals" type="Feat" internal-id="ID_FMP_FEAT_1270" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+</RulesElement>
+
+<RulesElement name="Grasping Magpies" type="Feat" internal-id="ID_FMP_FEAT_1271" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Roof Runners" type="Feat" internal-id="ID_FMP_FEAT_1272" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Silent Shadows" type="Feat" internal-id="ID_FMP_FEAT_1273" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Street Eyes" type="Feat" internal-id="ID_FMP_FEAT_1274" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Wall Crawlers" type="Feat" internal-id="ID_FMP_FEAT_1275" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:49 PM">
+  <Category> ID_INTERNAL_CATEGORY_GUILD </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+   
+   
+<!--Tribal Feats-->
+   
+
+<RulesElement name="Swift Jaguar" type="Feat" internal-id="ID_FMP_FEAT_1325" source="Primal Power" revision-date="8/27/2010 12:18:53 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Audacious Crow" type="Feat" internal-id="ID_FMP_FEAT_1326" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Bloodied Spear" type="Feat" internal-id="ID_FMP_FEAT_1327" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Courageous Heart" type="Feat" internal-id="ID_FMP_FEAT_1328" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Enduring Mountain" type="Feat" internal-id="ID_FMP_FEAT_1329" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Fearsome Host" type="Feat" internal-id="ID_FMP_FEAT_1330" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Four Winds" type="Feat" internal-id="ID_FMP_FEAT_1331" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Midnight Stalker" type="Feat" internal-id="ID_FMP_FEAT_1332" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Watchful Owl" type="Feat" internal-id="ID_FMP_FEAT_1333" source="Primal Power" revision-date="8/27/2010 12:18:54 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+<RulesElement name="Blood Cousin's Tribe" type="Feat" internal-id="ID_FMP_FEAT_1991" source="Dragon Magazine 380" revision-date="8/27/2010 12:19:39 PM">
+  <Category> ID_INTERNAL_CATEGORY_TRIBAL </Category>
+	<Prereqs> Unselectable </Prereqs>
+   </RulesElement>
+
+</D20Rules>
