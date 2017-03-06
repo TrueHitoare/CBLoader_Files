@@ -3,13 +3,14 @@
 
 	<Changelog>
   Created 05-March-2017
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>1.0</Version>
+		<Version>2.0</Version>
 		<Filename>TRUE-Class-Features.part</Filename>
-		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Class-Features.part</PartAddress>
-		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Class-Features.txt</VersionAddress>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.txt</VersionAddress>
 	</UpdateInfo>
 
 	<!-- Making Improved Backstab change the description instead of adding a new detail -->

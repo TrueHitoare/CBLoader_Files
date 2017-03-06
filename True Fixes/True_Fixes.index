@@ -7,38 +7,39 @@
   Updated 12-November-2016 Added Bug Fixes file, which may not make much sense in a set specifically for bug fixes, but I dunno, maybe just obvious typos go there or something
   Updated 17-November-2016 Added Powers file
   Updated 05-March-2017 Added Class Features file
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 	
   <UpdateInfo>
-    <Version>1.2</Version>
+    <Version>2.0</Version>
     <Filename>True_Fixes.index</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/True_Fixes.index</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/True_Fixes.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.index</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.txt</VersionAddress>
   </UpdateInfo>
   
   <Part>
     <Filename>TRUE-Bug-Fixes.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Bug-Fixes.part</PartAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Bug-Fixes.part</PartAddress>
   </Part>
   
   <Part>
     <Filename>TRUE-Class-Features.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Class-Features.part</PartAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.part</PartAddress>
   </Part>
   
   <Part>
     <Filename>TRUE-Hybrid.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Hybrid.part</PartAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Hybrid.part</PartAddress>
   </Part>
   
   <Part>
     <Filename>TRUE-Items.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Items.part</PartAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Items.part</PartAddress>
   </Part>
   
   <Part>
     <Filename>TRUE-Powers.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Powers.part</PartAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
   </Part>
   
 </PartIndex>

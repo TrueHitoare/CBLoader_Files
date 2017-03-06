@@ -4,13 +4,14 @@
 	<Changelog>
   Created 01-October-2016
   Updated 06-November-2016 Added fix for Primordial Shards
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>1.0</Version>
+		<Version>2.0</Version>
 		<Filename>TRUE-Items.part</Filename>
-		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Items.part</PartAddress>
-		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Items.txt</VersionAddress>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Items.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Items.txt</VersionAddress>
 	</UpdateInfo>
 	
 	<!-- Armbow fix -->

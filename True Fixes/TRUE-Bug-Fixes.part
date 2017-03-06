@@ -4,13 +4,14 @@
 	<Changelog>
   Created 12-November-2016
   Updated 05-March-2017 Fixed filename ^^;
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>1.1</Version>
+		<Version>2.0</Version>
 		<Filename>TRUE-Bug-Fixes.part</Filename>
-		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Bug-Fixes.part</PartAddress>
-		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Bug-Fixes.txt</VersionAddress>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Bug-Fixes.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Bug-Fixes.txt</VersionAddress>
 	</UpdateInfo>
 
 	<!-- Scorpion Carapace Armor +5 - base-items has it only give a +4 bonus -->

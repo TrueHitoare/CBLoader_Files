@@ -3,13 +3,14 @@
 
 	<Changelog>
   Created 17-November-2016
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>1.0</Version>
+		<Version>2.0</Version>
 		<Filename>TRUE-Powers.part</Filename>
-		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Powers.part</PartAddress>
-		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Powers.txt</VersionAddress>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.txt</VersionAddress>
 	</UpdateInfo>
 
 	<!-- Applying PH Errata to Prismatic Spray -->

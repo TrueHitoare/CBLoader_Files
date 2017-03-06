@@ -5,13 +5,14 @@
   Created 02-October-2016
   Updated 08-October-2016 Moved Desert Wind Hybrid Monk option over from MS-04-Classes
   Updated 12-November-2016 Added Eternal Tide Hybrid Monk option
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 
   <UpdateInfo>
-    <Version>1.3</Version>
+    <Version>2.0</Version>
     <Filename>TRUE-Hybrid.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Hybrid.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Hybrid.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Hybrid.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Hybrid.txt</VersionAddress>
   </UpdateInfo>
   
   <!-- Monastic Tradition Hybrid Options -->
