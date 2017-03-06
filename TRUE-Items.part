@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 01-October-2016
+  Updated 06-November-2016 Added fix for Primordial Shards
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>TRUE-Items.part</Filename>
+		<PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Items.part</PartAddress>
+		<VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/TRUE-Items.txt</VersionAddress>
+	</UpdateInfo>
+	
+	<!-- Armbow fix -->
+	
+	<AppendNodes name="Armbow +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1204" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" category="ID_INTERNAL_CATEGORY_ONE-HAND,ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+			<!-- <modify name="BaseItem" Field="Category" value="ID_INTERNAL_CATEGORY_ONE-HAND,ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Armbow +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1205" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HAND" />
+			<modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Armbow +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1206" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HAND" />
+			<modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Armbow +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1207" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HAND" />
+			<modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Armbow +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1208" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HAND" />
+			<modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<AppendNodes name="Armbow +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_1209" source="Eberron Player's Guide">
+		<rules>
+			<modify name="BaseItem" Field="Hands Required" value="One-Handed" />
+			<modify name="BaseItem" Field="Item Slot" value="One-hand" />
+			<!-- <modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HAND" />
+			<modify name="BaseItem" Field="Category" list-addition="ID_INTERNAL_CATEGORY_ONE-HANDED" /> -->
+		</rules>
+	</AppendNodes>
+	
+	<!-- Primordial Shards -->
+	<!-- "Primordial Shard" isn't a real item slot, so slot removed to make these actually work -->
+	<RulesElement name="Cinder of Gazra (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149898.12" source="Heroes of the Elemental Chaos">
+		<Flavor> Black soot and ash covers your body when you claim this shard and enemies who subject you to force or flame do so at their peril. </Flavor>
+		<specific name="Level"> 12 </specific>
+		<specific name="Gold"> 13000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain resist 10 fire. </specific>
+		<specific name="Power"> Attack Power * At-Will (Immediate Interrupt)
+Trigger: An adjacent enemy pulls, pushes, or slides you.
+Effect: The triggering enemy grants combat advantage until the end of your next turn. </specific>
+		<specific name="Power"> Attack Power (Fire) * Daily (Immediate Reaction Action)
+Trigger: You take fire damage from an enemy attack.
+Attack: Close burst 1 (enemies in the burst); the shard's level + 5 vs. Reflex
+Hit: The target takes ongoing 5 fire damage (save ends). </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="resist:fire" value="+10" type="resist" zero="true"/>
+			<statadd name="resist:fire" value="+10" type="resist" non-zero="true"/>
+		</rules>
+	</RulesElement>
+	<RulesElement name="Cinder of Gazra (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149898.22" source="Heroes of the Elemental Chaos">
+		<Flavor> Black soot and ash covers your body when you claim this shard and enemies who subject you to force or flame do so at their peril. </Flavor>
+		<specific name="Level"> 22 </specific>
+		<specific name="Gold"> 325000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain resist 20 fire. </specific>
+		<specific name="Power"> Attack Power * At-Will (Immediate Interrupt)
+Trigger: An adjacent enemy pulls, pushes, or slides you.
+Effect: The triggering enemy grants combat advantage until the end of your next turn. </specific>
+		<specific name="Power"> Attack Power (Fire) * Daily (Immediate Reaction Action)
+Trigger: You take fire damage from an enemy attack.
+Attack: Close burst 1 (enemies in the burst); the shard's level + 5 vs. Reflex
+Hit: The target takes ongoing 10 fire damage (save ends). </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="resist:fire" value="+20" type="resist" zero="true"/>
+			<statadd name="resist:fire" value="+20" type="resist" non-zero="true"/>
+		</rules>
+	</RulesElement>
+	<RulesElement name="Echo of Ty'h'kadi (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149899.7" source="Heroes of the Elemental Chaos">
+		<Flavor> Light worms through this violet shard, as if somehow it contained the very essence of lightning. </Flavor>
+		<specific name="Level"> 7 </specific>
+		<specific name="Gold"> 2600 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +1 item bonus to the damage rolls of lightning powers and thunder powers. </specific>
+		<specific name="Power"> Attack Power (Thunder) * Encounter (Immediate Reaction Action)
+Trigger: You take lightning damage from an enemy attack.
+Effect: Close burst 1 (enemies in the burst). Each target takes 3 thunder damage. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="lightning:damage" value="+1" type="item" />
+			<statadd name="thunder:damage" value="+1" type="item" />			
+		</rules>
+	</RulesElement>
+	<RulesElement name="Echo of Ty'h'kadi (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149899.17" source="Heroes of the Elemental Chaos">
+		<Flavor> Light worms through this violet shard, as if somehow it contained the very essence of lightning. </Flavor>
+		<specific name="Level"> 17 </specific>
+		<specific name="Gold"> 65000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +2 item bonus to the damage rolls of lightning powers and thunder powers. </specific>
+		<specific name="Power"> Attack Power (Thunder) * Encounter (Immediate Reaction Action)
+Trigger: You take lightning damage from an enemy attack.
+Effect: Close burst 1 (enemies in the burst). Each target takes 5 thunder damage. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="lightning:damage" value="+2" type="item" />
+			<statadd name="thunder:damage" value="+2" type="item" />			
+		</rules>
+	</RulesElement>
+	<RulesElement name="Echo of Ty'h'kadi (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149899.27" source="Heroes of the Elemental Chaos">
+		<Flavor> Light worms through this violet shard, as if somehow it contained the very essence of lightning. </Flavor>
+		<specific name="Level"> 27 </specific>
+		<specific name="Gold"> 1625000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +3 item bonus to the damage rolls of lightning powers and thunder powers. </specific>
+		<specific name="Power"> Attack Power (Thunder) * Encounter (Immediate Reaction Action)
+Trigger: You take lightning damage from an enemy attack.
+Effect: Close burst 1 (enemies in the burst). Each target takes 10 thunder damage. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="lightning:damage" value="+3" type="item" />
+			<statadd name="thunder:damage" value="+3" type="item" />			
+		</rules>
+	</RulesElement>
+	<RulesElement name="Obsidian Sliver (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149900.8" source="Heroes of the Elemental Chaos">
+		<Flavor> Heat radiates out from this primordial shard, promising power over earth and fire should you take it up. </Flavor>
+		<specific name="Level"> 8 </specific>
+		<specific name="Gold"> 3400 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain earth walk, which allows you to ignore difficult terrain that is rubble, uneven stone, or earthen construction </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take fire damage from an enemy attack.
+Effect: You shift up to half your speed. Each enemy adjacent to you at the end of the shift gains vulnerable 5 fire (save ends). </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />		
+		</rules>
+	</RulesElement>
+	<RulesElement name="Obsidian Sliver (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149900.18" source="Heroes of the Elemental Chaos">
+		<Flavor> Heat radiates out from this primordial shard, promising power over earth and fire should you take it up. </Flavor>
+		<specific name="Level"> 18 </specific>
+		<specific name="Gold"> 85000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain earth walk, which allows you to ignore difficult terrain that is rubble, uneven stone, or earthen construction </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take fire damage from an enemy attack.
+Effect: You shift up to half your speed. Each enemy adjacent to you at the end of the shift gains vulnerable 10 fire (save ends). </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />		
+		</rules>
+	</RulesElement>
+	<RulesElement name="Obsidian Sliver (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149900.28" source="Heroes of the Elemental Chaos">
+		<Flavor> Heat radiates out from this primordial shard, promising power over earth and fire should you take it up. </Flavor>
+		<specific name="Level"> 28 </specific>
+		<specific name="Gold"> 2125000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain earth walk, which allows you to ignore difficult terrain that is rubble, uneven stone, or earthen construction </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take fire damage from an enemy attack.
+Effect: You shift up to half your speed. Each enemy adjacent to you at the end of the shift gains vulnerable 15 fire (save ends). </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />		
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pale Tooth (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149901.7" source="Heroes of the Elemental Chaos">
+		<Flavor> This milky white shard is cool to the touch, hinting at the elemental power contained within. </Flavor>
+		<specific name="Level"> 7 </specific>
+		<specific name="Gold"> 2600 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain ice walk, which allows you to ignore difficult terrain that is ice or snow. </specific>
+		<specific name="Property"> You gain a +1 item bonus to cold damage rolls. </specific>
+		<specific name="Power"> Attack Power * Daily (Free Action)
+Trigger: You take cold damage from an enemy attack.
+Attack: Close burst 1 (enemies in the burst); the shard's level + 5 vs. Fortitude </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="cold:damage" value="+1" type="item" />			
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pale Tooth (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149901.17" source="Heroes of the Elemental Chaos">
+		<Flavor> This milky white shard is cool to the touch, hinting at the elemental power contained within. </Flavor>
+		<specific name="Level"> 17 </specific>
+		<specific name="Gold"> 65000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain ice walk, which allows you to ignore difficult terrain that is ice or snow. </specific>
+		<specific name="Property"> You gain a +2 item bonus to cold damage rolls. </specific>
+		<specific name="Power"> Attack Power * Daily (Free Action)
+Trigger: You take cold damage from an enemy attack.
+Attack: Close burst 2 (enemies in the burst); the shard's level + 5 vs. Fortitude </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="cold:damage" value="+2" type="item" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pale Tooth (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149901.27" source="Heroes of the Elemental Chaos">
+		<Flavor> This milky white shard is cool to the touch, hinting at the elemental power contained within. </Flavor>
+		<specific name="Level"> 27 </specific>
+		<specific name="Gold"> 1625000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain ice walk, which allows you to ignore difficult terrain that is ice or snow. </specific>
+		<specific name="Property"> You gain a +3 item bonus to cold damage rolls. </specific>
+		<specific name="Power"> Attack Power * Daily (Free Action)
+Trigger: You take cold damage from an enemy attack.
+Attack: Close burst 3 (enemies in the burst); the shard's level + 5 vs. Fortitude
+		</specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="cold:damage" value="+3" type="item" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pitted Flowstone (heroic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149902.9" source="Heroes of the Elemental Chaos">
+		<Flavor> Your skin gains an unhealthy pallor, and a glistening sheen covers your body. </Flavor>
+		<specific name="Level"> 9 </specific>
+		<specific name="Gold"> 4200 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +5 item bonus to skill checks made as part of the escape action. </specific>
+		<specific name="Property"> You can shift through enemies' spaces. Once per turn, you can deal 5 acid damage to an enemy when you enter its space by shifting. </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take acid damage from an enemy attack.
+Effect: You shift up to half your speed. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="check:Escape" value="+5" type="item" condition="as part of the escape action"/>
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pitted Flowstone (paragon tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149902.19" source="Heroes of the Elemental Chaos">
+		<Flavor> Your skin gains an unhealthy pallor, and a glistening sheen covers your body. </Flavor>
+		<specific name="Level"> 19 </specific>
+		<specific name="Gold"> 105000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +5 item bonus to skill checks made as part of the escape action. </specific>
+		<specific name="Property"> You can shift through enemies' spaces. Once per turn, you can deal 10 acid damage to an enemy when you enter its space by shifting. </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take acid damage from an enemy attack.
+Effect: You shift up to half your speed. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="check:Escape" value="+5" type="item" condition="as part of the escape action"/>
+		</rules>
+	</RulesElement>
+	<RulesElement name="Pitted Flowstone (epic tier)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_149902.29" source="Heroes of the Elemental Chaos">
+		<Flavor> Your skin gains an unhealthy pallor, and a glistening sheen covers your body. </Flavor>
+		<specific name="Level"> 29 </specific>
+		<specific name="Gold"> 2625000 </specific>
+		<specific name="Magic Item Type"> Wondrous Item </specific>
+		<specific name="Item Slot" />
+		<specific name="Property"> Your origin changes to elemental. </specific>
+		<specific name="Property"> You can benefit from only one primordial shard at a time. If you carry more than one, none of them function. </specific>
+		<specific name="Property"> You gain a +5 item bonus to skill checks made as part of the escape action. </specific>
+		<specific name="Property"> You can shift through enemies' spaces. Once per turn, you can deal 15 acid damage to an enemy when you enter its space by shifting. </specific>
+		<specific name="Power"> Utility Power * Encounter (Immediate Reaction Action)
+Trigger: You take acid damage from an enemy attack.
+Effect: You shift up to half your speed. </specific>
+		<specific name="Rarity"> Rare </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<statadd name="check:Escape" value="+5" type="item" condition="as part of the escape action"/>
+		</rules>
+	</RulesElement>
+	
+</D20Rules>
