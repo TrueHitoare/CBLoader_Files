@@ -3,13 +3,14 @@
 <Changelog>
  Created 21-May-2016
  Updated 19-November-2016 Added automatic update info
+  Updated 06-March-2017 Migrated to GitHub
 </Changelog>
 
   <UpdateInfo>
-    <Version>1.0</Version>
+    <Version>1.0.1</Version>
     <Filename>AZT-36-Companion.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-36-Companion.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-36-Companion.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-36-Companion.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-36-Companion.txt</VersionAddress>
   </UpdateInfo>
 
 <!-- Djinnling approved for use by Arielle -->

@@ -4,13 +4,14 @@
 	<Changelog>
   Created 25-March-2016
   Updated 19-November-2016 Added automatic update info
+  Updated 06-March-2017 Migrated to GitHub
 	</Changelog>
 
   <UpdateInfo>
-    <Version>1.0</Version>
+    <Version>1.0.1</Version>
     <Filename>AZT-11-Misc.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-11-Misc.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/AZT/AZT-11-Misc.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-11-Misc.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-11-Misc.txt</VersionAddress>
   </UpdateInfo>
   
 	<RulesElement name="Feline" type="Language" internal-id="ID_AZT_LANGUAGE_01" source="Sabre">
