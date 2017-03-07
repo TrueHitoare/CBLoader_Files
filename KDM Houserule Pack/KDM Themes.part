@@ -8,10 +8,10 @@
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.0.2</Version>
+    <Version>2.0.2.1</Version>
     <Filename>KDM Themes.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Themes.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Themes.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.txt</VersionAddress>
   </UpdateInfo>
   
   <!-- Alchemist Theme -->

@@ -2,10 +2,10 @@
 <D20Rules game-system="D&amp;D4E">
 
   <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
     <Filename>KDM Power Source Skills.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Power%20Source%20Skills.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Power%20Source%20Skills.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Power%20Source%20Skills.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Power%20Source%20Skills.txt</VersionAddress>
   </UpdateInfo>
 
 <AppendNodes name="Bard" type="Class" internal-id="ID_FMP_CLASS_104" source="Player's Handbook 2" revision-date="8/27/2010 12:40:38 PM">

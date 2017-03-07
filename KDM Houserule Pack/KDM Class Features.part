@@ -9,10 +9,10 @@
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.1</Version>
+    <Version>2.1.1</Version>
     <Filename>KDM Class Features.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Class%20Features.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Class%20Features.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Class%20Features.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Class%20Features.txt</VersionAddress>
   </UpdateInfo>
 
 <!--Artificer-->

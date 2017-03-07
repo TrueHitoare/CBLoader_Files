@@ -2,10 +2,10 @@
 <D20Rules game-system="D&amp;D4E">
 
   <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
     <Filename>KDM Feats - Declutter.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Declutter.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Declutter.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Declutter.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Declutter.txt</VersionAddress>
   </UpdateInfo>
 
 <RulesElement name="Armored Endurance Training" type="Feat" internal-id="ID_FMP_FEAT_2394" source="Martial Power 2" revision-date="8/27/2010 12:20:12 PM">

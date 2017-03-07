@@ -2,10 +2,10 @@
 <D20Rules game-system="D&amp;D4E">
 
   <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
     <Filename>KDM Paragon Paths.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Paragon%20Paths.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Paragon%20Paths.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Paragon%20Paths.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Paragon%20Paths.txt</VersionAddress>
   </UpdateInfo>
 	
 	<RulesElement name="Paragon Multiclassing" type="Paragon Path" internal-id="ID_INTERNAL_PARAGON_PATH_PARAGON_MULTICLASSING" source="Player's Handbook">

@@ -8,10 +8,10 @@
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.2</Version>
+    <Version>2.2.1</Version>
     <Filename>KDM Epic Destinies.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Epic%20Destinies.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Epic%20Destinies.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Epic%20Destinies.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Epic%20Destinies.txt</VersionAddress>
   </UpdateInfo>
   
 <!--Epic Heroism Replacement-->

@@ -2,10 +2,10 @@
 <D20Rules game-system="D&amp;D4E">
 
 <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
     <Filename>KDM Bugfix.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Bugfix.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Bugfix.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Bugfix.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Bugfix.txt</VersionAddress>
   </UpdateInfo>
   
   <AppendNodes name="Level 1 Apprentice Mage" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2867" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">

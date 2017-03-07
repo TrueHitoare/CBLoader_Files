@@ -7,10 +7,10 @@
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.1</Version>
+    <Version>2.1.1</Version>
     <Filename>KDM Math Fix.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Math%20Fix.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Math%20Fix.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Math%20Fix.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Math%20Fix.txt</VersionAddress>
   </UpdateInfo>
   
 <!-- Automatic increases to NADs with low ability mods -->

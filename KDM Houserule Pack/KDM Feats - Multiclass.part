@@ -2,10 +2,10 @@
 <D20Rules game-system="D&amp;D4E">
 
   <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.0.1</Version>
     <Filename>KDM Feats - Multiclass.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Multiclass.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Multiclass.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Multiclass.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Multiclass.txt</VersionAddress>
   </UpdateInfo>
   
   <RulesElement name="Multiclass Power" type="Feat" internal-id="ID_KDM_FEAT_MULTICLASS_POWER" source="KDM" >

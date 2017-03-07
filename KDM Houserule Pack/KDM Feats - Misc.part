@@ -7,10 +7,10 @@
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.0.1</Version>
+    <Version>2.0.1.1</Version>
     <Filename>KDM Feats - Misc.part</Filename>
-    <PartAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Misc.part</PartAddress>
-    <VersionAddress>https://dl.dropboxusercontent.com/u/15288257/CBLoader_Files/KDM/KDM%20Feats%20-%20Misc.txt</VersionAddress>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Misc.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Misc.txt</VersionAddress>
   </UpdateInfo>
 
 <RulesElement name="Armor Proficiency: Chainmail" type="Feat" internal-id="ID_FMP_FEAT_111" source="Player&apos;s Handbook" revision-date="8/27/2010 12:17:50 PM" >
