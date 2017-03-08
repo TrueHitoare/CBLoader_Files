@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
+	
+	<Changelog>
+  Created 05-November-2016
+  Updated 08-March-2017 Hopefully fixed strange Multiclass Power bug where swaps weren't working correctly before their normally-available levels.
+	</Changelog>
 
   <UpdateInfo>
-    <Version>2.0.1</Version>
+    <Version>2.1</Version>
     <Filename>KDM Feats - Multiclass.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Multiclass.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Feats%20-%20Multiclass.txt</VersionAddress>
@@ -39,9 +44,6 @@ Note: You can't swap a power you don't have.
       <specific name="Associated Power Info" />
       <specific name="Associated Powers" />
       <rules>
-         <replace name="encounter swap" Level="1" multiclass="Encounter" optional="true" />
-         <replace name="encounter swap" Level="2" multiclass="Encounter" optional="true" />
-         <replace name="encounter swap" Level="3" multiclass="Encounter" optional="true" />
          <replace name="encounter swap" Level="4" multiclass="Encounter" optional="true" />
          <replace name="encounter swap" Level="5" multiclass="Encounter" optional="true" />
          <replace name="encounter swap" Level="6" multiclass="Encounter" optional="true" />
@@ -86,11 +88,6 @@ Note: If you have no encounter attack powers, this feat grants no benefit to you
       <specific name="Associated Power Info" />
       <specific name="Associated Powers" />
       <rules>
-         <replace name="utility swap" Level="1" multiclass="Utility" optional="true" />
-         <replace name="utility swap" Level="2" multiclass="Utility" optional="true" />
-         <replace name="utility swap" Level="3" multiclass="Utility" optional="true" />
-         <replace name="utility swap" Level="4" multiclass="Utility" optional="true" />
-         <replace name="utility swap" Level="5" multiclass="Utility" optional="true" />
          <replace name="utility swap" Level="6" multiclass="Utility" optional="true" />
          <replace name="utility swap" Level="7" multiclass="Utility" optional="true" />
          <replace name="utility swap" Level="8" multiclass="Utility" optional="true" />
@@ -132,14 +129,6 @@ You can swap one utility power you know for one utility power of the same level 
       <specific name="Associated Power Info" />
       <specific name="Associated Powers" />
       <rules>
-         <replace name="daily swap" Level="1" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="2" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="3" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="4" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="5" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="6" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="7" multiclass="Daily" optional="true" />
-         <replace name="daily swap" Level="8" multiclass="Daily" optional="true" />
          <replace name="daily swap" Level="9" multiclass="Daily" optional="true" />
          <replace name="daily swap" Level="10" multiclass="Daily" optional="true" />
          <replace name="daily swap" Level="11" multiclass="Daily" optional="true" />
