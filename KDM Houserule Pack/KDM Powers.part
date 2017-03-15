@@ -6,7 +6,7 @@
   Updated 09-November-2016 Changed Rising Storm to something more balanced
   Updated 10-November-2016 Scaled back Deadly Cobra Strike
   Updated 13-November-2016 Fixed Rogue power Preparatory Shot not registering the damage roll properly. Fixed missed change on Seeker power Flickering Arrow.
-  Updated 14-March-2017 Fixed wording of Target entry in Storm Walk Sorcerer power.
+  Updated 14-March-2017 Fixed attack type in Storm Walk Sorcerer power.
 	</Changelog>
 
   <UpdateInfo>
@@ -27663,8 +27663,8 @@ Level 21: 2d8 + Charisma modifier lightning damage, and two enemies within 5 squ
 	  <specific name="Display"> Sorcerer Attack 1 </specific>
 	  <specific name="Keywords"> Arcane, Implement, Thunder </specific>
 	  <specific name="Action Type"> Standard action </specific>
-	  <specific name="Attack Type"> Close blast 2 </specific>
-	  <specific name="Target"> Each creature in blast </specific>
+	  <specific name="Attack Type"> Close burst 2 </specific>
+	  <specific name="Target"> Each creature in burst </specific>
 	  <specific name="Attack"> Charisma vs. Reflex </specific>
 	  <specific name="Hit"> 1d4 thunder damage.
 Level 21: 2d4 thunder damage. </specific>
