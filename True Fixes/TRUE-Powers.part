@@ -4,10 +4,11 @@
 	<Changelog>
   Created 17-November-2016
   Updated 06-March-2017 Migrated to GitHub
+  Updated 19-March-2017 Added fix for Psychic Anomaly power
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.0</Version>
+		<Version>2.1</Version>
 		<Filename>TRUE-Powers.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.txt</VersionAddress>
@@ -31,6 +32,55 @@
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 25 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
+   
+   <!-- Rewriting the Psychic Anomaly power to reflect how it's actually written in the book, and to make it work with Hybrid Psion -->
+   <RulesElement name="Psychic Anomaly" type="Power" internal-id="ID_FMP_POWER_13320" source="Psionic Power" revision-date="9/21/2010 2:15:40 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> You conjure a shimmering anomaly of pure psionic energy, which disrupts the minds of nearby foes. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13321 </specific>
+      <specific name="Display"> Psion Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Effect"> As above, and your allies can flank with the psychic anomaly. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Special"> Change the secondary power's Hit line to: 1d8 + Intelligence modifier psychic damage, and the target is dazed until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13321 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13321" type="Power" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Psychic Anomaly Attack" type="Power" internal-id="ID_FMP_POWER_13321" source="Psionic Power" revision-date="9/21/2010 2:07:56 PM" >
+      <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>
+      <Prereqs> Unselectable; Unselectable </Prereqs>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Opportunity Action </specific>
+      <specific name="Attack Type"> Melee 1 </specific>
+      <specific name="Requirement"> The power Psychic Anomaly must be active in order to use this power. </specific>
+      <specific name="Trigger"> An enemy starts its turn in a square adjacent to the anomaly </specific>
+      <specific name="Target"> The triggering enemy </specific>
+      <specific name="Attack"> Intelligence vs. Will </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier psychic damage, and you slide the target 3 squares to a square adjacent to the anomaly. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Effect"> Your allies can flank with the psychic anomaly. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Hit"> 1d8 + Intelligence modifier psychic damage, and the target is dazed until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_0),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_1),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_2) </specific>
+      <specific name="_ParentPower"> ID_FMP_POWER_13320 </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
 
 </D20Rules>
