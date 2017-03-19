@@ -54,6 +54,7 @@
       <specific name="Class"> ID_FMP_CLASS_437 </specific>
       <specific name="Level"> 3 </specific>
       <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_0),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_1),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_2) </specific>
       <specific name="_DisplayPowers"> ID_FMP_POWER_13321 </specific>
       <rules>
          <grant name="ID_FMP_POWER_13321" type="Power" />
@@ -81,6 +82,58 @@
       <specific name="_AugmentVersions"> ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_0),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_1),ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_2) </specific>
       <specific name="_ParentPower"> ID_FMP_POWER_13320 </specific>
       <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Psychic Anomaly (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_0)" source="Psionic Power" revision-date="9/21/2010 2:07:56 PM" >
+      <specific name="_SupportsID"> ID_FMP_POWER_13320 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Psion Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13320 </specific>
+   </RulesElement>
+   <RulesElement name="Psychic Anomaly (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_1)" source="Psionic Power" revision-date="9/21/2010 2:07:56 PM" >
+      <specific name="_SupportsID"> ID_FMP_POWER_13320 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Psion Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. Your allies can flank with the psychic anomaly. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13320 </specific>
+   </RulesElement>
+   <RulesElement name="Psychic Anomaly (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_2)" source="Psionic Power" revision-date="9/21/2010 2:07:56 PM" >
+      <specific name="_SupportsID"> ID_FMP_POWER_13320 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Psion Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. Your allies can flank with the psychic anomaly. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13320 </specific>
+   </RulesElement>
+   <RulesElement name="Psychic Anomaly Attack (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_PSYCHIC_ANOMALY_ATTACK_(AUGMENT_1)" source="Psionic Power" revision-date="9/21/2010 2:07:56 PM" >
+      <specific name="_SupportsID"> ID_FMP_POWER_13321 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+      <specific name="Action Type"> Opportunity Action </specific>
+      <specific name="Attack Type"> Melee 1 </specific>
+      <specific name="Requirement"> The power Psychic Anomaly must be active in order to use this power. </specific>
+      <specific name="Trigger"> An enemy starts its turn in a square adjacent to the anomaly </specific>
+      <specific name="Target"> The triggering enemy </specific>
+      <specific name="Attack"> Intelligence vs. Will </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier psychic damage, and you slide the target 3 squares to a square adjacent to the anomaly. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13321 </specific>
    </RulesElement>
 
 </D20Rules>
