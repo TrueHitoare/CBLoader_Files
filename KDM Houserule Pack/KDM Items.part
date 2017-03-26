@@ -4,10 +4,11 @@
 	<Changelog>
   Created 01-October-2016
   Updated 12-November-2016 Put exotic armors back to their old types, since they weren't actually registering as two types
+  Updated 25-March-2017 Modified Orb of Nimble Thoughts to a compromise property
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.0.1.1</Version>
+    <Version>2.0.2</Version>
     <Filename>KDM Items.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Items.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Items.txt</VersionAddress>
@@ -439,9 +440,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
    <RulesElement name="Orb of Nimble Thoughts +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8764" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:53 AM" >
@@ -461,9 +462,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
    <RulesElement name="Orb of Nimble Thoughts +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8765" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:53 AM" >
@@ -483,9 +484,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
    <RulesElement name="Orb of Nimble Thoughts +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8766" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
@@ -505,9 +506,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
    <RulesElement name="Orb of Nimble Thoughts +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8767" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
@@ -527,9 +528,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
    <RulesElement name="Orb of Nimble Thoughts +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8768" source="Player&apos;s Handbook 3" revision-date="9/1/2010 10:41:54 AM" >
@@ -549,9 +550,9 @@ This effect lasts until the end of the encounter or until the battle standard is
       <specific name="_Rarity"> Uncommon </specific>
       <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
       <specific name="Granted Powers" />
-      <specific name="Property"> You gain an item bonus to initiative checks equal to your Intelligence modifier. </specific>
+      <specific name="Property"> You gain an item bonus to initiative checks equal to half your Intelligence modifier. </specific>
       <rules>
-         <statadd name="Initiative Misc" value="+Intelligence modifier" type="item" />
+         <statadd name="Initiative Misc" value="+HALFMOD(Intelligence)" type="item" />
       </rules>
    </RulesElement>
 <!--
