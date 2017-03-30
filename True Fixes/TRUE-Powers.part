@@ -5,10 +5,11 @@
   Created 17-November-2016
   Updated 06-March-2017 Migrated to GitHub
   Updated 19-March-2017 Added fix for Psychic Anomaly power
+  Updated 30-March-2017 More bugfixes for the excessively buggy Psychic Anomaly
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.1</Version>
+		<Version>2.2</Version>
 		<Filename>TRUE-Powers.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.txt</VersionAddress>
@@ -36,7 +37,7 @@
    
    <!-- Rewriting the Psychic Anomaly power to reflect how it's actually written in the book, and to make it work with Hybrid Psion -->
    <RulesElement name="Psychic Anomaly" type="Power" internal-id="ID_FMP_POWER_13320" source="Psionic Power" revision-date="9/21/2010 2:15:40 PM" >
-      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
       <Flavor> You conjure a shimmering anomaly of pure psionic energy, which disrupts the minds of nearby foes. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
       <specific name="_SkillPower" />

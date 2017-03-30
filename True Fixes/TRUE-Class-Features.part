@@ -5,10 +5,11 @@
   Created 05-March-2017
   Updated 06-March-2017 Migrated to GitHub
   Updated 26-March-2017 Added CountsAsFeature for Shaper Focus. Fixed formatting on Discipline Focus (Hybrid).
+  Updated 30-March-2017 Realized it was actually Expanded Discipline Focus that needed fixing and fixed that instead.
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.1</Version>
+		<Version>2.2</Version>
 		<Filename>TRUE-Class-Features.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.txt</VersionAddress>
@@ -49,17 +50,18 @@ You gain one more use of backstab per encounter, but you can still use it only o
    <RulesElement name="Shaper Focus" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_SHAPER_FOCUS" source="Core" >
    </RulesElement>
    
-   <!-- Fixed formatting on Discipline Focus (Hybrid) -->
-  <RulesElement name="Discipline Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2415" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
-    <Category> 1 </Category>
+   <!-- Fixed formatting on Expanded Discipline Focus -->
+  <RulesElement name="Expanded Discipline Focus" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2416" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_HYBRID_CLASS_610,1 </Category>
     <specific name="Short Description" />
     <specific name="Level"> 1 </specific>
-    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2534,ID_FMP_CLASS_FEATURE_2535, ID_FMP_CLASS_FEATURE_SF </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13300,ID_FMP_POWER_11268,ID_FMP_POWER_8224  </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2415" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_DISCIPLINE_FOCUS" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_13300" type="Power" requires="Shaper Focus" />
+      <grant name="ID_FMP_POWER_11268" type="Power" requires="Telekinesis Focus" />
+      <grant name="ID_FMP_POWER_8224" type="Power" requires="Telepathy Focus" />
     </rules>
-Choose a Discipline Focus option. If you choose Telekinesis Focus, you gain the far hand power. If you choose Telepathy Focus, you gain the send thoughts power. If you choose Shaper Focus, you gain the minor creation power.
+If you have Shaper Focus, you gain the shaped consciousness power. If you have Telekinesis Focus, you gain the forceful push power. If you have Telepathy Focus, you gain the distract power.
    </RulesElement>
 
 </D20Rules>
