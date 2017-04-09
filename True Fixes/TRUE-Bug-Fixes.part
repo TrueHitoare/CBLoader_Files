@@ -5,10 +5,11 @@
   Created 12-November-2016
   Updated 05-March-2017 Fixed filename ^^;
   Updated 06-March-2017 Migrated to GitHub
+  Updated 07-April-2017 Fixed Spirit Infusion for Hybrid Shamans.
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.0</Version>
+		<Version>2.1</Version>
 		<Filename>TRUE-Bug-Fixes.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Bug-Fixes.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Bug-Fixes.txt</VersionAddress>
@@ -21,5 +22,23 @@
 			<statadd name="Armor Enhancement Bonus" value="+5" />
 		</rules>
 	</AppendNodes>
+	
+	<!-- Spirit Infusion wasn't limited by spirit for Hybrid Shamans, unlike the other spirit-related at-wills -->
+	<RulesElement name="Spirit Infusion" type="Power" internal-id="ID_FMP_POWER_12866" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:31:23 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2894,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_57,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+	<Prereqs> Elemental Spirit or !Hybrid Shaman </Prereqs>
+    <Flavor> You dismiss your spirit companion, which flows into an ally and enables him or her to make a swift and sudden attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Shaman Attack 1 </specific>
+    <specific name="Keywords"> Primal, Spirit </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee spirit 1 </specific>
+    <specific name="Target"> One ally </specific>
+    <specific name="Effect"> Your spirit companion disappears, and the target can make a basic attack with a +2 power bonus to the attack roll and a power bonus to the damage roll equal to your Intelligence modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_147 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2894 </specific>
+  </RulesElement>
 
 </D20Rules>

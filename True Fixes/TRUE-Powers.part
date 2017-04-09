@@ -6,10 +6,11 @@
   Updated 06-March-2017 Migrated to GitHub
   Updated 19-March-2017 Added fix for Psychic Anomaly power
   Updated 30-March-2017 More bugfixes for the excessively buggy Psychic Anomaly
+  Updated 08-April-2017 Minor formatting change for Psychic Anomaly.
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.2</Version>
+		<Version>2.2.1</Version>
 		<Filename>TRUE-Powers.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.txt</VersionAddress>
@@ -50,7 +51,7 @@
       <specific name="Augment"> 1 </specific>
       <specific name="	Effect"> As above, and your allies can flank with the psychic anomaly. </specific>
       <specific name="Augment"> 2 </specific>
-      <specific name="	Special"> Change the secondary power's Hit line to: 1d8 + Intelligence modifier psychic damage, and the target is dazed until the end of your next turn. </specific>
+      <specific name="	Hit"> 1d8 + Intelligence modifier psychic damage, and the target is dazed until the end of your next turn. </specific>
       <specific name="_Associated Feats" />
       <specific name="Class"> ID_FMP_CLASS_437 </specific>
       <specific name="Level"> 3 </specific>

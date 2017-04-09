@@ -5,10 +5,11 @@
   Created 01-October-2016
   Updated 16-January-2017 Updated Windlord for KDM
   Updated 17-January-2017 Reduced power of Windlord F10 to be closer to the original design
+  Updated 07-April-2017 Updated Noble Adept with KDM changes.
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.0.2.1</Version>
+    <Version>2.1</Version>
     <Filename>KDM Themes.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.txt</VersionAddress>
@@ -2957,7 +2958,7 @@ Tymora's Luck: No Action. Trigger: You fail a saving throw. Effect: Reroll the s
 You can use your Harper Pin's Harper's Blessing to trigger Lliira's grace.
 	</RulesElement>
 	<RulesElement name="Lliira's Grace" type="Power" internal-id="ID_MSR_POWER_LLIIRAS_GRACE" source="Neverwinter Campaign Guide">
-	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Prereqs> Unselectable </Prereqs>
   <specific name="Power Usage"> Encounter </specific>
   <specific name="Display"> Harper Agent Feature </specific>
@@ -2980,7 +2981,7 @@ You can use your Harper Pin's Harper's Blessing to trigger Lliira's grace.
 You can use your Harper Pin's Harper's Blessing to trigger Mielikki's endurance.
 </RulesElement>
 	<RulesElement name="Mielikki's Endurance" type="Power" internal-id="ID_MSR_POWER_MIELIKKIS_ENDURANCE" source="Neverwinter Campaign Guide">
-	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
+	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
   <Prereqs> Unselectable </Prereqs>
   <specific name="Power Usage"> Encounter </specific>
   <specific name="Display"> Harper Agent Feature </specific>
@@ -3003,7 +3004,7 @@ You can use your Harper Pin's Harper's Blessing to trigger Mielikki's endurance.
 You can use your Harper Pin's Harper's Blessing to trigger Tymora's luck.
 </RulesElement>
 	<RulesElement name="Tymora's Luck" type="Power" internal-id="ID_MSR_POWER_TYMORAS_LUCK" source="Neverwinter Campaign Guide">
-	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+	<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Prereqs> Unselectable </Prereqs>
   <specific name="Power Usage"> Encounter </specific>
   <specific name="Display"> Harper Agent Feature </specific>
@@ -16346,4 +16347,148 @@ Although you might use your slang to swindle gullible townsfolk, you can also us
     <specific name="Power Type"> Utility </specific>
 The toughest river rats gain reserves of strength through their defiance. Unafraid of going toe to toe with larger foes, a wounded river rat relents only when the opponent is face down at the river's edge. 
 </RulesElement>
+
+<!-- Noble Adept -->
+
+  <RulesElement name="Noble Adept" type="Theme" internal-id="ID_FMP_THEME_658" source="Dark Sun Campaign Setting" >
+    <Flavor> “Sometimes I envy the little people-the common citizens and slaves. No need to worry about political assassinations, no lessons to keep up with, no property to protect. All they need to do is survive.” </Flavor>
+	<specific name="_PARSED_SUB_FEATURES"> ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L1,ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L5,ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L10 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_12244,ID_FMP_POWER_12245,ID_FMP_POWER_12246,ID_FMP_POWER_12247,ID_FMP_POWER_12248,ID_FMP_POWER_12249,ID_FMP_POWER_12250,ID_FMP_POWER_12251 </specific>
+    <rules>
+	  <grant name="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L1" type="Class Feature" />
+      <grant name="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L5" type="Class Feature" level="5" />
+      <grant name="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L10" type="Class Feature" level="10" />
+    </rules>
+Within the city-states, noble castes own more land and more slaves than anyone except the sorcererkings. The members of this social class are largely ineffectual puppets who have no real power, and only rarely do they muster the courage to oppose the plans of the sorcerer-kings. Even when they do so, it's not for the greater good. Most nobles watch out only for their own interests. They care nothing about what happens to people of lower castes, with the possible exception of people they own.
+	Though nobles lack true power, they gain many advantages due to their wealth. Nobles can read and write and can easily acquire food and water, which isn't true for much of the Athasian population. Every noble receives a basic education in psionics, either through a school or from a tutor hired by the noble's family, learning an array of psionic talents to better defend himself or herself against enemies or to command minions. Most lose interest in their training and fall into the same decadent malaise that pervades the noble caste. Only a rare few nobles fully develop their psionic talents, but those who do so are among the most capable and dangerous practitioners of the Way.
+Creating: Usually, nobles who become adventurers do so after being expelled (or removing themselves) from society. Your character might be a fugitive hiding from assassins working for other noble families or for the templars, a combat leader for your house who seeks new troops or more combat experience, or a rebel who left a noble family because he or she felt sympathy for common people.
+	Power Points: If you choose a noble adept attack power of level 3 or 7 instead of a nonaugmentable encounter attack power at that level, you also gain 2 power points. If you do so with a power of level 13 or 17, you instead gain 4 power points, and if you do so with a power of level 23 or 27, you instead gain 6 power points. If you later relinquish your noble adept attack powers through retraining, you lose the power points you gained from the earlier choice.
+</RulesElement>
+
+  <RulesElement name="Noble Adept L1" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L1" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> You gain the Adept's Insight power and 1 PP </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	<specific name="_DisplayPowers"> ID_FMP_POWER_12244 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_12244" type="Power" />
+      <statadd name="Power Points" value="+1" />
+    </rules>
+You gain the Adept's Insight power, and 1 power point. You regain this power point after a short rest or an extended rest.
+</RulesElement>
+
+  <RulesElement name="Noble Adept L5" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L5" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> +2 Diplomacy; obtain transportation or an audience with authorities </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	<rules>
+      <statadd name="Diplomacy Misc" value="+2" type="power" />
+	</rules>
+You gain a +2 power bonus to Diplomacy checks.
+Whenever you are in a village, town, or city where the nobility holds influence, you can receive an audience with someone representing the ruling power within 24 hours, and you are guaranteed safe passage to that audience by the local authorities. You can use this ability no more than once a month in a particular settlement.
+Whenever you are in a village, town, or other civilized location where horses, carts, and carriages can be obtained and where the nobility holds influence, you can procure horses for you and up to seven of your allies, plus a single cart or carriage at no cost, from someone in that location. Before you can use this ability again, you must return the horses and cart or carriage, leave them at a predetermined location, or pay for them.
+	At the DM's discretion, you can obtain other modes of transportation of a similar value when available.
+</RulesElement>
+
+  <RulesElement name="Noble Adept L10" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L10" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> Adept’s Insight adds 2 (if unaugmented) or 1d6+2 (if augmented) to triggering roll </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	<rules>
+		<modify name="ID_INTERNAL_POWER_ADEPT'S_INSIGHT_(AUGMENT_0)" field="Effect" value="You add 2 to the triggering roll." />
+		<modify name="ID_INTERNAL_POWER_ADEPT'S_INSIGHT_(AUGMENT_1)" field="Effect" value="You add 1d6+2 to the triggering roll." />
+	</rules>
+When you modify an attack roll, saving throw, or skill check with your adept’s insight, you add 2 to the triggering roll (instead of 1) if adept’s insight is unaugmented, or add 1d6+2 to the triggering roll (instead of 1d4+1) if adept’s insight is augmented.
+</RulesElement>
+  <RulesElement name="Unnerving Suggestion" type="Power" internal-id="ID_FMP_POWER_12246" source="Dark Sun Campaign Setting">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Prereqs> ID_FMP_THEME_658 </Prereqs>
+    <Flavor> You stagger an enemy with a mental attack, then send your underling forth to take advantage with a well-timed attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Noble Adept Attack 3 </specific>
+    <specific name="Keywords"> Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Requirement"> You must expend 2 power points each time you use this power. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Primary ability vs. Will </specific>
+    <specific name="Hit"> 1d8 + ability modifier psychic damage, and the target is dazed the end of your next turn. In addition, one ally within 3 squares of the target gains a +1d6 bonus to damage rolls against the target until the end of your next turn.
+Increase damage to 2d8 + ability modifier at 13th level, and +2d6 bonus to damage rolls.
+Increase damage to 3d8 + ability modifier at 23rd level, and +3d6 bonus to damage rolls. </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_658 </specific>
+    <specific name="Class"> ID_FMP_THEME_658 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+	<!-- <rules> -->
+      <!-- <statadd name="Power Points" value="+2" requires="Psionic Augmentation (Hybrid)" /> -->
+	<!-- </rules> -->
+  </RulesElement>
+  
+  <!-- <RulesElement name="Unnerving Suggestion (encounter)" type="Power" internal-id="ID_FMP_POWER_12246-1" source="Dark Sun Campaign Setting"> -->
+    <!-- <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category> -->
+    <!-- <Prereqs> ID_FMP_THEME_658 </Prereqs> -->
+    <!-- <Flavor> You stagger an enemy with a mental attack, then send your underling forth to take advantage with a well-timed attack. </Flavor> -->
+    <!-- <specific name="Power Usage"> Encounter </specific> -->
+    <!-- <specific name="Display"> Noble Adept Attack 3 </specific> -->
+    <!-- <specific name="Keywords"> Implement, Psionic, Psychic </specific> -->
+    <!-- <specific name="Action Type"> Standard Action </specific> -->
+    <!-- <specific name="Attack Type"> Ranged 10 </specific> -->
+    <!-- <specific name="Requirement"> You must expend 2 power points each time you use this power. </specific> -->
+    <!-- <specific name="Target"> One creature </specific> -->
+    <!-- <specific name="Attack"> Primary ability vs. Will </specific> -->
+    <!-- <specific name="Hit"> 1d8 + ability modifier psychic damage, and the target is dazed the end of your next turn. In addition, one ally within 3 squares of the target gains a +1d6 bonus to damage rolls against the target until the end of your next turn. -->
+<!-- Increase damage to 2d8 + ability modifier at 13th level, and +2d6 bonus to damage rolls. -->
+<!-- Increase damage to 3d8 + ability modifier at 23rd level, and +3d6 bonus to damage rolls. </specific> -->
+    <!-- <specific name="_ThemePower"> ID_FMP_THEME_658 </specific> -->
+    <!-- <specific name="Class"> ID_FMP_THEME_658 </specific> -->
+    <!-- <specific name="Level"> 3 </specific> -->
+    <!-- <specific name="Power Type"> Attack </specific> -->
+	<!-- <rules> -->
+      <!-- <statadd name="Power Points" value="+2" /> -->
+	<!-- </rules> -->
+  <!-- </RulesElement> -->
+  <RulesElement name="Cruel Decree" type="Power" internal-id="ID_FMP_POWER_12249" source="Dark Sun Campaign Setting">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Prereqs> ID_FMP_THEME_658 </Prereqs>
+    <Flavor> With the voice of authority, you call for your allies to take the fight to your enemies. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Noble Adept Attack 7 </specific>
+    <specific name="Keywords"> Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Requirement"> You must expend 2 power points each time you use this power. </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Primary ability vs. Will </specific>
+    <specific name="Hit"> 2d6 + ability modifier psychic damage, and the target is slowed until the end of your next turn. Each ally in the burst gains a +2 power bonus to damage rolls against the target until the end of your next turn.
+Increase damage to 3d6 + ability modifier at 17th level, and +4 power bonus to damage rolls.
+Increase damage to 4d6 + ability modifier at 27th level, and +6 power bonus to damage rolls. </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_658 </specific>
+    <specific name="Class"> ID_FMP_THEME_658 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Psionic Sustenance" type="Power" internal-id="ID_FMP_POWER_12251" source="Dark Sun Campaign Setting">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs> ID_FMP_THEME_658 </Prereqs>
+    <Flavor> Your ally sacrifices his or her well-being to renew your psionic strength. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Noble Adept Utility 10 </specific>
+    <specific name="Keywords"> Psionic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One willing ally </specific>
+    <specific name="Effect"> The target loses a healing surge, and you regain 2 power points. </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_658 </specific>
+    <specific name="Class"> ID_FMP_THEME_658 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  
 </D20Rules>
