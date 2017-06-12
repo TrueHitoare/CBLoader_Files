@@ -5,10 +5,11 @@
   Created 01-October-2016
   Updated 06-November-2016 Added fix for Primordial Shards
   Updated 06-March-2017 Migrated to GitHub
+  Updated 11-June-2017 Added fix for Final Sleep Ki Focus
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.0</Version>
+		<Version>2.1</Version>
 		<Filename>TRUE-Items.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Items.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Items.txt</VersionAddress>
@@ -340,6 +341,141 @@ Effect: You shift up to half your speed. </specific>
 			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
 			<statadd name="check:Escape" value="+5" type="item" condition="as part of the escape action"/>
 		</rules>
+	</RulesElement>
+	
+	<!-- Non-WotC official content set used wrong crit die for Final Sleep Ki Focus -->
+	
+	<RulesElement name="Final Sleep Ki Focus +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8414" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 3 </specific>
+		<specific name="Gold"> 680 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +1d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
+	</RulesElement>
+	<RulesElement name="Final Sleep Ki Focus +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8415" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 8 </specific>
+		<specific name="Gold"> 3400 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +2d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
+	</RulesElement>
+	<RulesElement name="Final Sleep Ki Focus +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8416" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 13 </specific>
+		<specific name="Gold"> 17000 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +3d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
+	</RulesElement>
+	<RulesElement name="Final Sleep Ki Focus +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8417" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 18 </specific>
+		<specific name="Gold"> 85000 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +4d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
+	</RulesElement>
+	<RulesElement name="Final Sleep Ki Focus +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8418" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 23 </specific>
+		<specific name="Gold"> 425000 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +5d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
+	</RulesElement>
+	<RulesElement name="Final Sleep Ki Focus +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_8419" source="Dragon Magazine 382,Player Essentials: Heroes of Shadow">
+		<Flavor> This small manual's plain, black leather covers contain illustrations of the vulnerable points on a variety of creatures. The contents change each time you open the book, and as you flip from page to page you never seem to reach the book's end. </Flavor>
+		<specific name="Level"> 28 </specific>
+		<specific name="Gold"> 2125000 </specific>
+		<specific name="Magic Item Type"> Ki Focus </specific>
+		<specific name="Tier" />
+		<specific name="_Item_Set_ID" />
+		<specific name="Armor" />
+		<specific name="Weapon" />
+		<specific name="Item Slot"> Ki Focus </specific>
+		<specific name="Requirement"> Must be able to use Ki Focuses as an implement. </specific>
+		<specific name="Prerequisite" />
+		<specific name="Critical"> +6d12 damage </specific>
+		<specific name="Special" />
+		<specific name="Power" />
+		<specific name="_Rarity" />
+		<specific name="_Monster" />
+		<specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+		<specific name="Granted Powers" />
+		<specific name="Rarity"> Uncommon </specific>
+		<specific name="Property"> Right after you reduce an enemy to 0 hit points with an implement attack or a weapon attack using this ki focus, you can shift 1 square as a free action. </specific>
 	</RulesElement>
 	
 </D20Rules>
