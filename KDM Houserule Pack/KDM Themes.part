@@ -6,10 +6,11 @@
   Updated 16-January-2017 Updated Windlord for KDM
   Updated 17-January-2017 Reduced power of Windlord F10 to be closer to the original design
   Updated 07-April-2017 Updated Noble Adept with KDM changes.
+  Updated 20-June-2017 Updated Gladiator for KDM
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.1</Version>
+    <Version>2.2</Version>
     <Filename>KDM Themes.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Themes.txt</VersionAddress>
@@ -16365,7 +16366,7 @@ Creating: Usually, nobles who become adventurers do so after being expelled (or 
 	Power Points: If you choose a noble adept attack power of level 3 or 7 instead of a nonaugmentable encounter attack power at that level, you also gain 2 power points. If you do so with a power of level 13 or 17, you instead gain 4 power points, and if you do so with a power of level 23 or 27, you instead gain 6 power points. If you later relinquish your noble adept attack powers through retraining, you lose the power points you gained from the earlier choice.
 </RulesElement>
 
-  <RulesElement name="Noble Adept L1" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L1" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+  <RulesElement name="Level 1 Noble Adept Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L1" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
     <specific name="Short Description"> You gain the Adept's Insight power and 1 PP </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <specific name="Special" />
@@ -16380,7 +16381,7 @@ Creating: Usually, nobles who become adventurers do so after being expelled (or 
 You gain the Adept's Insight power, and 1 power point. You regain this power point after a short rest or an extended rest.
 </RulesElement>
 
-  <RulesElement name="Noble Adept L5" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L5" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+  <RulesElement name="Level 5 Noble Adept Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L5" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
     <specific name="Short Description"> +2 Diplomacy; obtain transportation or an audience with authorities </specific>
     <specific name="Special" />
     <specific name="type" />
@@ -16395,7 +16396,7 @@ Whenever you are in a village, town, or other civilized location where horses, c
 	At the DM's discretion, you can obtain other modes of transportation of a similar value when available.
 </RulesElement>
 
-  <RulesElement name="Noble Adept L10" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L10" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+  <RulesElement name="Level 10 Noble Adept Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_NOBLE_ADEPT_L10" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
     <specific name="Short Description"> Adept’s Insight adds 2 (if unaugmented) or 1d6+2 (if augmented) to triggering roll </specific>
     <specific name="Special" />
     <specific name="type" />
@@ -16489,6 +16490,69 @@ Increase damage to 4d6 + ability modifier at 27th level, and +6 power bonus to d
     <specific name="Class"> ID_FMP_THEME_658 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  
+  <!-- Gladiator - Converting from Dark Sun style -->
+  
+  <RulesElement name="Gladiator" type="Theme" internal-id="ID_FMP_THEME_655" source="Dark Sun Campaign Setting" >
+    <Flavor> “I have no quarrel with you, friend, but circumstances make us enemies. Only one of us will leave the arena this day, and it's going to be me.” </Flavor>
+    <specific name="Role"> ID_FMP_ROLE_4 </specific>
+    <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_KDM_CLASS_FEATURE_GLADIATOR_L1,ID_KDM_CLASS_FEATURE_GLADIATOR_L5,ID_KDM_CLASS_FEATURE_GLADIATOR_L10 </specific>
+    <specific name="Granted Powers"/>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_11869,ID_FMP_POWER_11870,ID_FMP_POWER_11871,ID_FMP_POWER_12234,ID_FMP_POWER_12235,ID_FMP_POWER_12236,ID_FMP_POWER_12237 </specific>
+    <rules>
+        <grant name="ID_KDM_CLASS_FEATURE_GLADIATOR_L1" type="Class Feature" />
+        <grant name="ID_KDM_CLASS_FEATURE_GLADIATOR_L5" type="Class Feature" level="5" />
+        <grant name="ID_KDM_CLASS_FEATURE_GLADIATOR_L10" type="Class Feature" level="10" />
+    </rules>
+Life under the sorcerer-kings is hard. Water, food, and shelter are never guaranteed, and one misstep can result in a public flogging by an overambitious templar or a swift execution to serve as warning to others who might overstep their bounds. But the sorcerer-kings know that even with loyal templars and vast armies at their command, they rule with their subjects' consent. To distract the masses from their misery, to divert public attention from oppressive laws and heavy taxes, the sorcerer-kings decree the incessant spectacle of gladiatorial games.
+	Each city-state boasts an impressive arena, with enough seating to hold most of its citizens. Each week, or more often depending on weather or political conditions, nobles and commoners gather to watch the drama unfold, cheering madly as their favorite warriors duel with other gladiators, work in teams to claim the contest's great prize, or fight en masse to defeat whatever new horror the arena masters have plucked, no doubt at great expense and loss of life, from the desert wastes.
+	Naturally, most gladiators are slaves. Chosen for this fate because of their strength or skill, they live and die at the crowd's favor, pitting what training they acquire against myriad foes, never knowing when they will face an insurmountable foe, never sure when their opponent will be their equal. Arena masters understand that their warriors fight with passion when they have something to fight for, and so they offer freedom, wealth, pleasure, or some other incentive to stoke the fires and keep their captive warriors eager for victory. Freedom is the greatest prize, of course-but the games are so violent that few gladiators live long enough to earn the victories they need to escape.
+	The life of a gladiator is brutish and brief, but it is the one occupation a slave can hold that also brings respect. Gladiators are heroes to the common people. Their trials and victories are the stuff of legend, and many slaves grow comfortable from the accolades their conquests bring.
+Creating: Some gladiators are born to the arena, raised from an early age to fight in front of the crowd. Others find themselves in the pit through no intention of their own-sentenced for a crime or sold into slavery, perhaps-only to discover that they were meant for the blood-soaked sands. A few individuals volunteer to fight in the arena, desperate (or cocky) enough to risk life and limb for a purse of high value.
+	The gladiator theme is a common choice for fighters, battleminds, and other defenders. The theme powers offer several good options for establishing control over enemies in close combat, a useful talent for any defender. In addition, any tough melee combatants-for example, barbarians or melee rangers-interested in locking down enemies in melee can benefit from these powers.
+</RulesElement>
+
+  <RulesElement name="Level 1 Gladiator Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GLADIATOR_L1" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> You gain the Disrupting Advance power </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	<specific name="_DisplayPowers"> ID_FMP_POWER_11868 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_11868" type="Power" />
+    </rules>
+You gain the Disrupting Advance power.
+  </RulesElement>
+
+  <RulesElement name="Level 5 Gladiator Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GLADIATOR_L5" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> Target of disrupting advance falls prone on hit </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <modify name="ID_FMP_POWER_11868" field="Gladiator Level 5" value="On hit, the target is knocked prone." />
+    </rules>
+ 	When you hit a target with your disrupting advance, the target falls prone at the end of the push.
+  </RulesElement>
+
+  <RulesElement name="Level 10 Gladiator Feature" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_GLADIATOR_L10" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:18:27 PM">
+    <specific name="Short Description"> When you hit a creature marked by you it is slowed until the end of your next turn </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	Whenever you hit a creature that is marked by you, that creature is slowed until the end of your next turn.
+  </RulesElement>
+  
+  <!-- Feats - removing feats whose effects were rolled into Dark Sun Themes -->
+  
+  <RulesElement name="Disrupting Shove" type="Feat" internal-id="ID_FMP_FEAT_3191" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:17:48 PM">
+    <Prereqs> Unselectable </Prereqs>
   </RulesElement>
   
 </D20Rules>
