@@ -6,10 +6,11 @@
   Updated 09-November-2016 Removed poorly-implemented attempt to make Sneak Attack show up on implement powers
   Updated 13-November-2016 Fixed incorrectly-hidden Hide Armor Expertise feat
   Updated 15-January-2017 Replaced Knight Shield Finesse class feature option with Armor Finesse since the former feat was obsoleted
+  Updated 15-August-2017 Made Hybrid Divine Challenge a bit stronger to go along with the non-hybrid damage boost.
 	</Changelog>
 
   <UpdateInfo>
-    <Version>2.1.1</Version>
+    <Version>2.2</Version>
     <Filename>KDM Class Features.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Class%20Features.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/KDM%20Houserule%20Pack/KDM%20Class%20Features.txt</VersionAddress>
@@ -680,6 +681,28 @@ Paladins are indomitable warriors who&apos;ve pledged their prowess to something
   <specific name="Class"> ID_FMP_CLASS_4 </specific>
   <specific name="Power Type"> Feature </specific>
 	</RulesElement> 
+	
+<!--Hybrid Paladin-->
+
+<RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
+    <Category> 1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_7436 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_FMP_POWER_805 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_805" type="Power" />
+      <modify name="Divine Challenge" type="Power" Field="Effect" value="You mark the target. The mark lasts until you use this power again. The mark also ends at the end of your turn if you didn't engage the target, meaning you neither attacked it during your turn nor are adjacent to it at the end of your turn. Until the mark ends, the target takes radiant damage the first time each round when it targets any of your allies with an attack power that doesn't include you as a target. The damage equals 3 + your Charisma modifier. Level 11: 6 + your Charisma modifier radiant damage.   Level 21: 9 + your Charisma modifier radiant damage. " />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DIVINE_CHALLENGE" type="CountsAsFeature" />
+    </rules>
+You gain the paladin power divine challenge. The power
+functions as normal, except that the radiant damage
+equals 3 + your Charisma modifier. The damage
+increases to 6 + your Charisma modifier at 11th level
+and 9 + your Charisma modifier at 21st level.
+   </RulesElement>
    
 <!--Protector-->
    
