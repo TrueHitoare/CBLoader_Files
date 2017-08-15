@@ -4,7 +4,15 @@
 	<Changelog>
   Created 25-March-2016
   Updated 02-October-2016 Made Ancient Cannon a two-handed weapon again since I fixed Armbow
+  Updated 15-August-2017 Added flavor text to Saber for Sabre =P
 	</Changelog>
+	
+	<UpdateInfo>
+    <Version>1.3</Version>
+    <Filename>AZT-09-Gear.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.part</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.txt</VersionAddress>
+  </UpdateInfo>
 
 	<RulesElement name="Ancient Cannon" type="Weapon" internal-id="ID_AZT_WEAPON_01" source="True Hitoare" >
 		<Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_INTERNAL_CATEGORY_TWO-HANDED,ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
@@ -48,6 +56,9 @@ Cost: 15 gp
 Damage: 1d8
 Proficient: +3
 Weight: 3 lb.
+
+A lighter, curved variant of the longsword, easier to wield in one hand, popular among cavalrymen.
+
 Group: 
 Heavy blade (Blades are balanced edged weapons. Heavy blades share some of the precision of light blades and some of the mass of axes. Heavy blades are used primarily for slashing cuts rather than stabs and thrusts.).
 		</specific>

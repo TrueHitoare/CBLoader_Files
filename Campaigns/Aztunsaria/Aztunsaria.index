@@ -4,10 +4,11 @@
 	<Changelog>
   Created 19-November-2016
   Updated 06-March-2017 Migrated to GitHub, activated
+  Updated 15-August-2017 Added Gear file
 	</Changelog>
 	
   <UpdateInfo>
-    <Version>1.0.1</Version>
+    <Version>1.1</Version>
     <Filename>Aztunsaria.index</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/Aztunsaria.index</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/Aztunsaria.txt</VersionAddress>
@@ -38,10 +39,10 @@
     <!-- <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-08-Themes.part</PartAddress> -->
   <!-- </Part> -->
   
-  <!-- <Part> -->
-    <!-- <Filename>AZT-09-Gear.part</Filename> -->
-    <!-- <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.part</PartAddress> -->
-  <!-- </Part> -->
+  <Part>
+    <Filename>AZT-09-Gear.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.part</PartAddress>
+  </Part>
   
   <Part>
     <Filename>AZT-11-Misc.part</Filename>
