@@ -6,10 +6,11 @@
   Updated 06-March-2017 Migrated to GitHub
   Updated 26-March-2017 Added CountsAsFeature for Shaper Focus. Fixed formatting on Discipline Focus (Hybrid).
   Updated 30-March-2017 Realized it was actually Expanded Discipline Focus that needed fixing and fixed that instead.
+  Updated 18-August-2017 Made short description of Pyromancy Action more accurate.
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.2</Version>
+		<Version>2.3</Version>
 		<Filename>TRUE-Class-Features.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.txt</VersionAddress>
@@ -63,5 +64,17 @@ You gain one more use of backstab per encounter, but you can still use it only o
     </rules>
 If you have Shaper Focus, you gain the shaped consciousness power. If you have Telekinesis Focus, you gain the forceful push power. If you have Telepathy Focus, you gain the distract power.
    </RulesElement>
+   
+   <!-- Made short description of Pyromancy Action more accurate -->
+   <RulesElement name="Pyromancy Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3220" source="Dragon Magazine 391" revision-date="10/14/2010 9:29:04 AM">
+    <Category> 11 </Category>
+    <Flavor> Your first steps along the path of pyromancy mastery required you to relinquish some control. In doing so, you learned the secrets of fire magic. Now, when you draw upon your reserves of energy and effort, you exercise precise, deadly control of your magic. </Flavor>
+    <specific name="Short Description"> Action point (extra action), select 1 enemy in 10 sq. Next non-daily fire attack vs. enemy this turn: instead of rolling damage, deal maximum. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Pyromancy Action:When you spend an action point to take an extra action, pick an enemy within 10 squares of you. The next time you damage that enemy with an at-will or encounter fire attack this turn, that enemy takes damage as if you rolled the maximum result on all dice for that damage roll. If you score a critical hit, the extra damage is instead maximized. You gain no benefit if the damage you inflict does not require a damage roll." />
+    </rules>
+When you spend an action point to take an extra action, pick an enemy within 10 squares of you. The next time you damage that enemy with an at-will or encounter fire attack this turn, that enemy takes damage as if you rolled the maximum result on all dice for that damage roll. If you score a critical hit, the extra damage is instead maximized. You gain no benefit if the damage you inflict does not require a damage roll.
+</RulesElement>
 
 </D20Rules>
