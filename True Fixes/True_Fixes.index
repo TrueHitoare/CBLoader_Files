@@ -8,10 +8,11 @@
   Updated 17-November-2016 Added Powers file
   Updated 05-March-2017 Added Class Features file
   Updated 06-March-2017 Migrated to GitHub
+  Updated 31-August-2017 Added Feats file
 	</Changelog>
 	
   <UpdateInfo>
-    <Version>2.0</Version>
+    <Version>2.1</Version>
     <Filename>True_Fixes.index</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.index</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.txt</VersionAddress>
@@ -25,6 +26,11 @@
   <Part>
     <Filename>TRUE-Class-Features.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Class-Features.part</PartAddress>
+  </Part>
+  
+  <Part>
+    <Filename>TRUE-Feats.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.part</PartAddress>
   </Part>
   
   <Part>

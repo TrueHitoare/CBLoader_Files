@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 31-August-2017 <!-- Added Associated Powers to Champion of Raam -->
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>TRUE-Feats.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.txt</VersionAddress>
+	</UpdateInfo>
+
+	<RulesElement name="Champion of Raam" type="Feat" internal-id="ID_FMP_FEAT_3425" source="Dragon Magazine 390" revision-date="9/14/2010 9:53:09 AM">
+		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
+		<Prereqs> Warlock, Sorcerer-King Pact class feature, Favored of Raam feat </Prereqs>
+		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Favored of Raam feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers </specific>
+		<specific name="Special" />
+		<specific name="type"> Greater Pact </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers"> Otherwind Stride, Sign of Ill Omen, Dark Reach of Xevut, Strand of Fate, Dark Transport, Envoy of Nihal </specific>
+In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you can shift a number of squares equal to 3 + your Intelligence modifier.
+	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, the target cannot include you as a target in its attacks until the start of your next turn.
+	</RulesElement>
+	
+</D20Rules>
