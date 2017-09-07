@@ -9,10 +9,11 @@
   Updated 05-March-2017 Added Class Features file
   Updated 06-March-2017 Migrated to GitHub
   Updated 31-August-2017 Added Feats file
+  Updated 09-September-2017 Added Companion and Gear files
 	</Changelog>
 	
   <UpdateInfo>
-    <Version>2.1</Version>
+    <Version>2.2</Version>
     <Filename>True_Fixes.index</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.index</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/True_Fixes.txt</VersionAddress>
@@ -29,8 +30,18 @@
   </Part>
   
   <Part>
+    <Filename>TRUE-Companion.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Companion.part</PartAddress>
+  </Part>
+  
+  <Part>
     <Filename>TRUE-Feats.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.part</PartAddress>
+  </Part>
+  
+  <Part>
+    <Filename>TRUE-Gear.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Gear.part</PartAddress>
   </Part>
   
   <Part>
