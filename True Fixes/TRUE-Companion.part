@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 07-September-2017 <!-- Fixed addition of power cards to late-added familiars -->
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>TRUE-Companion.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Companion.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Companion.txt</VersionAddress>
+	</UpdateInfo>
+
+<!-- Shadow Raven Card -->
+
+<AppendNodes name="Shadow Raven" type="Familiar" internal-id="ID_FMP_FAMILIAR_92" source="Player Essentials: Heroes of Shadow">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-88" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Critic Lizard Card -->
+
+<AppendNodes name="Critic Lizard" type="Familiar" internal-id="ID_FMP_FAMILIAR_93" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-79" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Floating Polyp Card -->
+
+<AppendNodes name="Floating Polyp" type="Familiar" internal-id="ID_FMP_FAMILIAR_94" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-80" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Hurrum Card -->
+
+<AppendNodes name="Hurrum" type="Familiar" internal-id="ID_FMP_FAMILIAR_95" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-81" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Jank Card -->
+
+<AppendNodes name="Jank" type="Familiar" internal-id="ID_FMP_FAMILIAR_96" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-82" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Kes'trekel Card -->
+<!-- Already applied in TRUE-Gear -->
+
+<!-- <AppendNodes name="Kes'trekel" type="Familiar" internal-id="ID_FMP_FAMILIAR_97" source="Dragon Magazine 397"> -->
+      <!-- <rules> -->
+         <!-- <grant name="ID_TIV_FAMILIAR-83" type="Power"/> -->
+      <!-- </rules> -->
+<!-- </AppendNodes> -->
+
+<!-- Kivit Card -->
+
+<AppendNodes name="Kivit" type="Familiar" internal-id="ID_FMP_FAMILIAR_98" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-84" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Sitak Card -->
+
+<AppendNodes name="Sitak" type="Familiar" internal-id="ID_FMP_FAMILIAR_99" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-85" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Wrab Card -->
+
+<AppendNodes name="Wrab" type="Familiar" internal-id="ID_FMP_FAMILIAR_100" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-86" type="Power"/>
+      </rules>
+</AppendNodes>
+
+<!-- Z'tal Card -->
+
+<AppendNodes name="Z'tal" type="Familiar" internal-id="ID_FMP_FAMILIAR_101" source="Dragon Magazine 397">
+      <rules>
+         <grant name="ID_TIV_FAMILIAR-87" type="Power"/>
+      </rules>
+</AppendNodes>
+	
+</D20Rules>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 07-September-2017 <!-- Added damage display to powers with Kes'trekel -->
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>TRUE-Gear.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Gear.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Gear.txt</VersionAddress>
+	</UpdateInfo>
+	
+	<!-- Kes'trekel familiar - conditional damage -->
+
+  <RulesElement name="Kes'trekel" type="Familiar" internal-id="ID_FMP_FAMILIAR_97" source="Dragon Magazine 397" revision-date="5/9/2011 1:46:17 PM">
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Power"> Horrific Aversion: Once per encounter as a minor action, the  kes'trekel can push one creature adjacent to it 1 square.
+	Augment 1: As above, except that the kes'trekel can push all creatures adjacent to it. </specific>
+    <specific name="Constant Benefits"> • You gain a +2 bonus to Intimidate checks and Perception checks.
+• You gain a +1 bonus to damage rolls against bloodied creatures.
+	Level 11: +2 bonus.
+	Level 21: +4 bonus. </specific>
+    <specific name="Secondary Speed"> fly 6 </specific>
+    <specific name="Senses" />
+    <specific name="Tier"> Heroic Tier </specific>
+    <specific name="Quirks"> • The kes'trekel pecks at the corpses of slain enemies
+• It squawks hungrily at bloodied allies. </specific>
+    <rules>
+      <statadd name="Intimidate Misc" value="+2" />
+      <statadd name="Perception Misc" value="+2" />
+	  <statadd name="Kes'trekel" value="+1" />
+	  <statadd name="Kes'trekel" value="+1" requires="Paragon Tier" />
+	  <statadd name="Kes'trekel" value="+2" requires="Epic Tier" />
+	  <statadd name="damage rolls" value="+Kes'trekel" condition="against bloodied creatures" />
+	  <grant name="ID_TIV_FAMILIAR-83" type="Power"/>
+    </rules>
+  </RulesElement>
+	
+</D20Rules>
