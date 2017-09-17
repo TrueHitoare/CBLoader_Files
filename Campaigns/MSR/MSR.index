@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PartIndex>
+	
+	<Changelog>
+  Created 17-September-2017
+	</Changelog>
+	
+  <UpdateInfo>
+    <Version>1.0</Version>
+    <Filename>MSR.index</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/MSR/MSR.index</PartAddress>
+    <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/MSR/MSR.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <Part>
+    <Filename>MSR-07-Feats.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/MSR/MSR-07-Feats.part</PartAddress>
+  </Part>
+  
+</PartIndex>

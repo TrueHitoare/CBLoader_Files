@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 09-September-2017 <!-- Start of Master Pact feats -->
+  Updated 17-September-2017 Master Pact feats half-done
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>0.4</Version>
+		<Filename>MSR-07-Feats.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/MSR/MSR-07-Feats.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/MSR/MSR-07-Feats.txt</VersionAddress>
+	</UpdateInfo>
+
+	<!-- Master Pact feats -->
+	
+	<RulesElement name="Master&apos;s Harem Girl" type="Feat" internal-id="ID_MSR_FEAT_001" source="Mercenary Story Reboot">
+		<Category> ID_INTERNAL_CATEGORY_LESSER_PACT </Category>
+		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
+		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +2 to Stealth; can forgo augmented hand of blight's extra damage to force target move its speed away </specific>
+		<specific name="Special" />
+		<specific name="type"> Lesser Pact </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers" />
+		<rules>
+			<statadd name="Stealth Misc" value="+2" type="Feat" />
+			<modify name="Hand of Blight" type="Power" Field="Master&apos;s Harem Girl" value="When you augment hand of blight, you can forgo the extra damage the augment would deal to force the target to make one immediate move action away from you at its full speed and along the safest, fastest path." />
+		</rules>
+You gain a +2 feat bonus to Stealth checks.
+	When you augment hand of blight, you can forgo the extra damage the augment would deal to force the target to make one immediate move action away from you at its full speed and along the safest, fastest path.
+	</RulesElement>
+	
+	<RulesElement name="Master&apos;s Favored Lieutenant" type="Feat" internal-id="ID_MSR_FEAT_002" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
+		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
+		<Prereqs> Warlock, Sorcerer-King Pact class feature, Master&apos;s Harem Girl feat </Prereqs>
+		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Master&apos;s Harem Girl feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain extra benefit when cursed enemy drops; can augment associated powers with fell might; can use Con for associated powers </specific>
+		<specific name="Special" />
+		<specific name="type"> Greater Pact </specific>
+		<specific name="Associated Power Info" />
+		<specific name="Associated Powers"> Fortune Binding, Far Realm Phantasm, Skirmisher&apos;s Volley (other 3 picked later) </specific>
+		<rules>
+			<textstring name="ID_MSR_FEAT_002 association:key ability" value="DMG:Constitution" />
+			<!-- Fortune Binding -->
+			<textstring name="ID_FMP_POWER_4069:key ability" value="DMG:Constitution" />
+			<modify name="ID_FMP_POWER_4069" type="Power" Field="Master&apos;s Favored Lieutenant" value="If you spend your fell might, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier." />
+			<!-- Far Realm Phantasm -->
+			<textstring name="ID_FMP_POWER_4285:key ability" value="DMG:Constitution" />
+			<modify name="ID_FMP_POWER_4285" type="Power" Field="Master&apos;s Favored Lieutenant" value="If you spend your fell might, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier." />
+			<!-- Skirmisher's Volley -->
+			<textstring name="ID_FMP_POWER_5924:key ability" value="DMG:Constitution" />
+			<modify name="ID_FMP_POWER_5924" type="Power" Field="Master&apos;s Favored Lieutenant" value="If you spend your fell might, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier." />
+		</rules>
+Whenever an enemy you have cursed drops to 0 hit points, you gain the following benefit in addition to regaining the use of your fell might. The next ally you can see that hits with a damaging attack before the start of your next turn subjects its target to your Warlock's Curse. If the target is already under your curse, the ally's attack instead deals extra damage equal to 3 + your Intelligence modifier.
+	You can also expend your fell might to augment any power associated with this feat. When you hit at least one enemy with an associated power augmented by this feat, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier.
+	Finally, you can use Constitution instead of Charisma for attack rolls and damage rolls with any power associated with this feat.
+	</RulesElement>
+	
+</D20Rules>
