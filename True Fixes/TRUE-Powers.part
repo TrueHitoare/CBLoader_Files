@@ -7,10 +7,11 @@
   Updated 19-March-2017 Added fix for Psychic Anomaly power
   Updated 30-March-2017 More bugfixes for the excessively buggy Psychic Anomaly
   Updated 08-April-2017 Minor formatting change for Psychic Anomaly.
+  Updated 11-November-2017 Remove Unselectable from Flurry powers so they're usable with Monastic Disciple.
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>2.2.1</Version>
+		<Version>2.3</Version>
 		<Filename>TRUE-Powers.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Powers.txt</VersionAddress>
@@ -137,5 +138,48 @@
       <specific name="Class"> ID_FMP_CLASS_437 </specific>
       <specific name="_AugmentParent"> ID_FMP_POWER_13321 </specific>
    </RulesElement>
+   
+   <!-- Remove Unselectable from Flurry powers so they're usable with Monastic Disciple -->
+   <RulesElement name="Desert Wind Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16131" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
+		<Flavor> A successful attack ignites your mind's power, causing lambent flames to dance across your body and sear your enemies. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Elemental, Fire, Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn. </specific>
+		<specific name="Target"> One creature
+	Level 11: One or two creatures
+	Level 21: Each enemy adjacent to you </specific>
+		<specific name="Effect"> The target takes 2 + your Charisma modifier fire damage. If the target wasn't targeted by the triggering attack, it also takes a -2 penalty to attack rolls for any attack that includes you as a target until the end of your next turn. You can then shift 1 square. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4331 </specific>
+You are as a screaming blast of heat that blisters anything in your path. Your strikes release elemental flame that you can hurl against your enemies.
+	</RulesElement>
+	
+	<RulesElement name="Eternal Tide Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16132" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
+		<Flavor> You unleash psionic energy in the wake of your initial attack to wrench another enemy into your reach. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Elemental, Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 2 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn. </specific>
+		<specific name="Target"> One creature
+	Level 11: One or two creatures
+	Level 21: One, two, or three creatures </specific>
+		<specific name="Effect"> The target takes damage equal to your Strength modifier, and you can pull the target 1 square. If the target wasn't targeted by the triggering attack, it is slowed until the end of your next turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4332 </specific>
+When you strike a foe, you can compel another to face you. The stronger you become, the greater the number of enemies that find themselves drawn toward you.
+	</RulesElement>
 
 </D20Rules>

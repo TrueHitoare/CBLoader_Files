@@ -3,10 +3,11 @@
 
 	<Changelog>
   Created 31-August-2017 <!-- Added Associated Powers to Champion of Raam -->
+  Updated 11-November-2017 <!-- Expanded Monastic Disciple feat -->
 	</Changelog>
 	
 	<UpdateInfo>
-		<Version>1.0</Version>
+		<Version>1.1</Version>
 		<Filename>TRUE-Feats.part</Filename>
 		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.part</PartAddress>
 		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/True Fixes/TRUE-Feats.txt</VersionAddress>
@@ -25,5 +26,32 @@
 In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you can shift a number of squares equal to 3 + your Intelligence modifier.
 	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, the target cannot include you as a target in its attacks until the start of your next turn.
 	</RulesElement>
+	
+  <!-- Monastic Disciple expansion -->
+  <RulesElement name="Monastic Disciple" type="Feat" internal-id="ID_FMP_FEAT_2694" source="Player's Handbook 3" revision-date="8/27/2010 12:20:31 PM">
+    <Category> ID_INTERNAL_CATEGORY_MULTICLASS_MONK,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
+    <Prereqs> Dex 13; ~MULTICLASS or Unlimited Multiclass or Monk CountsAsClass; !ID_FMP_CLASS_362; !ID_FMP_HYBRID_CLASS_609 </Prereqs>
+    <print-prereqs> Dex 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Monk: Skill training; one Flurry of Blows power 1/encounter </specific>
+    <specific name="Special" />
+    <specific name="type"> Multiclass Monk </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Skill Training" number="1" Category="monk class" />
+      <select type="Power" number="1" Category="ID_FMP_POWER_7448|ID_FMP_POWER_11207|ID_FMP_POWER_13123|ID_FMP_POWER_16131|ID_FMP_POWER_16132" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_GRANTS_MONK_IMPLEMENTS" type="Grants" />
+      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+      <grant name="ID_INTERNAL_COUNTSASCLASS_MONK" type="CountsAsClass" />
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+    </rules>
+You gain training in one skill from the monk's class skills list.
+Choose one of the monk's Flurry of Blows powers. You can use that power once per encounter.
+	In addition, you can wield monk implements.
+   </RulesElement>
 	
 </D20Rules>
