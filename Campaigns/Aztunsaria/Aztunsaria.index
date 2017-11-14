@@ -5,10 +5,11 @@
   Created 19-November-2016
   Updated 06-March-2017 Migrated to GitHub, activated
   Updated 15-August-2017 Added Gear file
+  Updated 13-November-2017 Added Sorcerer file
 	</Changelog>
 	
   <UpdateInfo>
-    <Version>1.1</Version>
+    <Version>1.2</Version>
     <Filename>Aztunsaria.index</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/Aztunsaria.index</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/Aztunsaria.txt</VersionAddress>
@@ -47,6 +48,11 @@
   <Part>
     <Filename>AZT-11-Misc.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-11-Misc.part</PartAddress>
+  </Part>
+  
+  <Part>
+    <Filename>AZT-24-Sorcerer.part</Filename>
+    <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-24-Sorcerer.part</PartAddress>
   </Part>
   
   <Part>

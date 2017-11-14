@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+	<Changelog>
+  Created 13-November-2017 <!-- Arielle lvl 7 element swaps -->
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.0</Version>
+		<Filename>AZT-24-Sorcerer.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-24-Sorcerer.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-24-Sorcerer.txt</VersionAddress>
+	</UpdateInfo>
+	
+	<!-- Arielle element swaps -->
+	
+	<!-- Blazing Starfall: Fire and Radiant to Lightning and Thunder -->
+	<RulesElement name="Thunderclap" type="Power" internal-id="ID_AZT_POWER_0001" source="Arcane Power">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> A ball of stormy clouds falls upon your enemies and then bursts out, creating a cage of flickering sparks that are painful to pass through. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Sorcerer Attack 1 </specific>
+		<specific name="Keywords"> Arcane, Implement, Lightning, Thunder, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Charisma vs. Reflex </specific>
+		<specific name="Hit"> 1d4 + Charisma modifier thunder damage.
+Level 21: 2d4 + Charisma modifier thunder damage. </specific>
+		<specific name=" Storm Magic"> The burst creates a zone bounded by sparking electricity that lasts until the end of your next turn. The first time each turn that an enemy within the zone leaves it, that enemy takes lightning damage equal to your Dexterity modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_128 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	
+</D20Rules>
