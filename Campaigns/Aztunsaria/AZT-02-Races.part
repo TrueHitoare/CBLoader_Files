@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
-  <!-- Bug Fixes -->
-  <!-- Original release: 31-August-2011; Last modified: 31-August-2011 -->
-  <!-- Test compiled with CBLoader build V1.3.0 -->
-<Changelog>
- Created 24-May-2015
- Updated 26-May-2015 Added missing Dex bonus to Catfolk
- Updated 19-May-2016 Updated Sharkfolk Blood In The Water trait to +2/+4/+6
-</Changelog>
 
-    <!-- Races -->
+	<Changelog>
+  Created 24-May-2015
+  Updated 26-May-2015 Added missing Dex bonus to Catfolk
+  Updated 19-May-2016 Updated Sharkfolk Blood In The Water trait to +2/+4/+6
+  Updated 25-November-2017 Added "Birth - Among Another Race" entries for new races
+	</Changelog>
+	
+	<UpdateInfo>
+		<Version>1.3</Version>
+		<Filename>AZT-02-Races.part</Filename>
+		<PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-02-Races.part</PartAddress>
+		<VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-02-Races.txt</VersionAddress>
+	</UpdateInfo>
+
     <!-- Catfolk -->
 	<RulesElement name="Catfolk" type="Race" internal-id="ID_AZT_RACE_000" source="Secrets of Aztunsaria">
 		<Prereqs> ~Catfolk </Prereqs>
@@ -111,6 +116,18 @@ You have the Predator&apos;s Pounce encounter power.
 		<specific name="_Associated Feats" />
 		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0003 </specific>
 	</RulesElement>
+	
+	<!-- Background options -->
+<RulesElement name="Among Another Race (Catfolk)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_AMONG_ANOTHER_RACE_(CATFOLK)" source="Player's Handbook 2">
+    <Category> ID_FMP_BACKGROUND_88 </Category>
+    <Prereqs> ~CATFOLK </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
+  </rules>    
+You were raised like a Catfolk.
+</RulesElement>
 	
 	<!-- Sharkfolk -->
 	<RulesElement name="Sharkfolk" type="Race" internal-id="ID_AZT_RACE_001" source="Secrets of Aztunsaria">
@@ -253,6 +270,18 @@ You use Dexterity as your key ability with &lt;i&gt;Charging Chomp&lt;/i&gt;.
     <specific name="_SupportsID"> ID_AZT_RACIALPOWER_0011 </specific>
 You use Constitution as your key ability with &lt;i&gt;Charging Chomp&lt;/i&gt;.
    </RulesElement>
+   
+	<!-- Background options -->
+<RulesElement name="Among Another Race (Sharkfolk)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_AMONG_ANOTHER_RACE_(SHARKFOLK)" source="Player's Handbook 2">
+    <Category> ID_FMP_BACKGROUND_88 </Category>
+    <Prereqs> ~SHARKFOLK </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
+  </rules>    
+You were raised like a Sharkfolk.
+</RulesElement>
 	
 	<!-- Mermaid -->
 	<RulesElement name="Mermaid" type="Race" internal-id="ID_AZT_RACE_002" source="Secrets of Aztunsaria">
@@ -392,4 +421,16 @@ You have the Mermaid's Song encounter power.
 		<specific name="_ParentFeature"> ID_AZT_RACIAL_TRAIT_0024 </specific>
 	</RulesElement>
 	
+	<!-- Background options -->
+<RulesElement name="Among Another Race (Mermaid)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_AMONG_ANOTHER_RACE_(MERMAID)" source="Player's Handbook 2">
+    <Category> ID_FMP_BACKGROUND_88 </Category>
+    <Prereqs> ~MERMAID </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
+  </rules>    
+You were raised like a Mermaid.
+</RulesElement>
+
 </D20Rules>
