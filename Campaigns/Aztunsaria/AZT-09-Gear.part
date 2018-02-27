@@ -5,10 +5,11 @@
   Created 25-March-2016
   Updated 02-October-2016 Made Ancient Cannon a two-handed weapon again since I fixed Armbow
   Updated 15-August-2017 Added flavor text to Saber for Sabre =P
+  Updated 27-February-2018 Added Saber to Unseelie Agent weapon list
 	</Changelog>
 	
 	<UpdateInfo>
-    <Version>1.3</Version>
+    <Version>1.4</Version>
     <Filename>AZT-09-Gear.part</Filename>
     <PartAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.part</PartAddress>
     <VersionAddress>https://raw.githubusercontent.com/TrueHitoare/CBLoader_Files/master/Campaigns/Aztunsaria/AZT-09-Gear.txt</VersionAddress>
@@ -120,4 +121,13 @@ Heavy blade (Blades are balanced edged weapons. Heavy blades share some of the p
 		</rules>
 	</AppendNodes>
 	-->
+	<!-- Add to Unseelie Agent Starting Feature weapon list -->
+	<RulesElement name="Unseelie Agent Starting Feature (Saber)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_UNSEELIE_AGENT_STARTING_FEATURE_(SABER)" source="Heroes of the Feywild">
+    <Category> ID_FMP_CLASS_FEATURE_4206 </Category>
+    <Prereqs> Weapon Proficiency (Saber) </Prereqs>
+    <print-prereqs> Weapon Proficiency (Saber) </print-prereqs>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4206 </specific>
+    <specific name="Short Description"> Create shadow-wrought weapon power creates a Saber </specific>
+Your Create shadow-wrought weapon power creates a Saber.
+</RulesElement>
 </D20Rules>

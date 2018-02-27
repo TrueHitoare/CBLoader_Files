@@ -656,42 +656,6 @@ White Lotus Dueling Expertise: Choose Implement Proficiency
 You gain a +1 expertise bonus to the attack rolls of arcane powers and basic attacks that you make with any weapon or implement with which you have proficiency.
 	You also gain proficiency with orbs, rods, staffs, or wands.
 	</RulesElement>
-	<RulesElement name="White Lotus Dueling Expertise (Orb)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_ORB" source="Dragon Magazine 402">
-		<Category> ID_FMP_FEAT_3738 </Category>
-		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
-		<specific name="Short Description"> You gain proficiency with the Orb implement </specific>
-		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency" />
-		</rules>
-You gain proficiency with the Orb implement.
-	</RulesElement>
-	<RulesElement name="White Lotus Dueling Expertise (Rod)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_ROD" source="Dragon Magazine 402">
-		<Category> ID_FMP_FEAT_3738 </Category>
-		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
-		<specific name="Short Description"> You gain proficiency with the Rod implement </specific>
-		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
-		</rules>
-You gain proficiency with the Rod implement.
-	</RulesElement>
-	<RulesElement name="White Lotus Dueling Expertise (Staff)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_STAFF" source="Dragon Magazine 402">
-		<Category> ID_FMP_FEAT_3738 </Category>
-		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
-		<specific name="Short Description"> You gain proficiency with the Staff implement </specific>
-		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
-		</rules>
-You gain proficiency with the Staff implement.
-	</RulesElement>
-	<RulesElement name="White Lotus Dueling Expertise (Wand)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TIV_FEAT_D402-01_WAND" source="Dragon Magazine 402">
-		<Category> ID_FMP_FEAT_3738 </Category>
-		<specific name="_SupportsID"> ID_FMP_FEAT_3738 </specific>
-		<specific name="Short Description"> You gain proficiency with the Wand implement </specific>
-		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
-		</rules>
-You gain proficiency with the Wand implement.
-	</RulesElement>
 	<RulesElement name="Eldritch Fusillade Expertise" type="Feat" internal-id="ID_FMP_FEAT_3739" source="Dragon Magazine 402">
 		<Prereqs> Artificer, Crossbow Caster feat or Spell Commander paragon path </Prereqs>
 		<print-prereqs> Artificer, Crossbow Caster feat or Spell Commander paragon path </print-prereqs>
